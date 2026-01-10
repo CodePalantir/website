@@ -1,7 +1,7 @@
 title: ApexPalantir
 description: "Salesforce Technical Architects building robust, scalable architectures for sustained growth"
-url: "https://apexpalantir.com" # Update this with your actual domain
-baseurl: ""
+url: "https://codepalantir.github.io"
+baseurl: "/website"
 theme: minima
 
 # Author defaults for SEO
