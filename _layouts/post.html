@@ -9,7 +9,7 @@ layout: default
   "@type": "BlogPosting",
   "headline": "{{ page.title }}",
   "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}",
-  "image": "{{ site.url }}/assets/images/logos/APEX-PALANTIR_LARGE.png",
+  "image": "{{ '/assets/images/logos/APEX-PALANTIR_LARGE.png' | absolute_url }}",
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{{ page.date | date_to_xmlschema }}",
   "author": {
@@ -23,7 +23,7 @@ layout: default
     "name": "ApexPalantir",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/images/logos/APEX-PALANTIR_LARGE.png"
+      "url": "{{ '/assets/images/logos/APEX-PALANTIR_LARGE.png' | absolute_url }}"
     }
   },
   "mainEntityOfPage": {

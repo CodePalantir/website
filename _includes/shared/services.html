@@ -25,7 +25,7 @@
         </div>
         <span class="text-[10px] font-black text-purple-600 uppercase tracking-[0.2em] mb-3 block">{{ service.homepage_tagline }}</span>
         <h3 class="text-2xl font-bold mb-4">{{ service.title }}</h3>
-        <p class="text-slate-600 leading-relaxed mb-6 text-sm">{{ service.homepage_description }} {% if service.url %}<a href="{{ service.url }}" class="text-purple-600 font-bold hover:underline">Read full scope.</a>{% else %}<a href="/services" class="text-purple-600 font-bold hover:underline">Read full scope.</a>{% endif %}</p>
+        <p class="text-slate-600 leading-relaxed mb-6 text-sm">{{ service.homepage_description }} {% if service.url %}<a href="{{ service.url | relative_url }}" class="text-purple-600 font-bold hover:underline">Read full scope.</a>{% else %}<a href="{{ site.baseurl }}/services" class="text-purple-600 font-bold hover:underline">Read full scope.</a>{% endif %}</p>
       </div>
       <div class="p-4 pt-0">
         <button onclick="window.location.href='#book-call'" class="bg-purple-gradient w-full py-2.5 rounded-xl text-white font-semibold flex items-center justify-center gap-2 shadow-md hover:scale-[1.01] transition-transform text-sm cursor-pointer">
@@ -39,7 +39,7 @@
   </div>
 
   <div class="mt-16 text-center">
-    <button onclick="window.location.href='/services'" class="px-8 py-4 rounded-xl border-2 border-slate-200 text-slate-700 font-bold hover:border-purple-600 hover:text-purple-600 transition-all inline-flex items-center gap-2 group text-lg cursor-pointer">
+    <button onclick="window.location.href='{{ site.baseurl }}/services'" class="px-8 py-4 rounded-xl border-2 border-slate-200 text-slate-700 font-bold hover:border-purple-600 hover:text-purple-600 transition-all inline-flex items-center gap-2 group text-lg cursor-pointer">
         View All Services
         <i data-lucide="chevron-right" class="group-hover:translate-x-1 transition-transform"></i>
     </button>

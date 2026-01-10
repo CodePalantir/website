@@ -17,7 +17,7 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
       <div class="space-y-8">
         <div class="flex items-center gap-2">
-          <img src="/assets/images/logos/APEX-PALANTIR_WHITE_WHITE_TOP_LARGE.png" alt="Apex Palantir Logo" class="h-auto w-30">
+          <img src="{{ '/assets/images/logos/APEX-PALANTIR_WHITE_WHITE_TOP_LARGE.png' | relative_url }}" alt="Apex Palantir Logo" class="h-auto w-30">
         </div>
       </div>
       <div class="space-y-6">
@@ -45,8 +45,8 @@
     <div class="pt-10 border-t border-white/5 flex flex-col md:row items-center justify-between gap-6 text-slate-600 text-[10px] font-bold uppercase tracking-widest">
       <p>© 2026 ApexPalantir. Engineering Excellence.</p>
       <div class="flex gap-10">
-        <a href="/privacy" class="hover:text-white transition-colors">Privacy</a>
-        <a href="/legal-notice" class="hover:text-white transition-colors">Legal Notice</a>
+        <a href="{{ site.baseurl }}/privacy" class="hover:text-white transition-colors">Privacy</a>
+        <a href="{{ site.baseurl }}/legal-notice" class="hover:text-white transition-colors">Legal Notice</a>
       </div>
     </div>
   </div>
