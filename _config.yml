@@ -1,0 +1,34 @@
+title: ApexPalantir
+description: "Salesforce Technical Architects building robust, scalable architectures for sustained growth"
+url: "https://apexpalantir.com" # Update this with your actual domain
+baseurl: ""
+theme: minima
+
+# Author defaults for SEO
+author:
+  name: ApexPalantir Team
+  twitter: apexpalantir # Update with your Twitter handle
+
+# Social profiles for SEO
+social:
+  name: ApexPalantir
+  links:
+    - https://www.linkedin.com/company/apexpalantir
+
+# Clean URL structure for blog posts
+permalink: /blog/:title/
+
+# Collections configuration
+collections:
+  services:
+    output: true
+    permalink: /services/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md

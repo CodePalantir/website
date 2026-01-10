@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font Family Override */
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  /* Handwriting Font (GDPR-compliant system fonts) */
+  --font-handwriting: "Brush Script MT", "Segoe Script", "Mistral", cursive;
+
+  /* Custom Container Widths */
+  --container-navbar: 90rem;
+
+  /* Custom Animations */
+  --animate-infinite-scroll: infinite-scroll 30s linear infinite;
+
+  @keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+}
+
+/* Custom Utilities */
+@utility text-gradient {
+  background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility bg-purple-gradient {
+  background: linear-gradient(to right, #8E2DE2, #4A00E0);
+}
+
+/* Component Logic (Dropdowns) */
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+.group:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+.group:hover .chevron-icon {
+  transform: rotate(180deg);
+}
+
+@layer utilities {
+  /* High-fidelity gradient text utility */
+  .text-gradient {
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Primary action gradient */
+  .bg-purple-gradient {
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  }
+}
+
+
+
+/* Map Image Styles */
+.map-container {
+    position: relative;
+    overflow: visible;
+    display: block;
+    background-color: rgba(255,255,255,0.02);
+    border-radius: 1rem;
+}
+.map-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Dot Markers */
+.map-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+}
+.map-dot::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: #F5F2EC;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(142, 45, 226, 0.6), 0 0 3px rgba(0, 0, 0, 0.8);
+}
+.map-ping {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    margin-left: -6px;
+    margin-top: -6px;
+    border-radius: 50%;
+    background-color: #c72de2;
+    opacity: 0.5;
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Horizontal Scroll Hide Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.prose p {
+    margin-bottom: 2rem;
+    line-height: 1.9;
+    color: #475569;
+    font-size: 1.125rem; /* Larger font for long reads */
+}
+.prose h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+}
+.prose h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.prose ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    color: #475569;
+    font-size: 1.125rem;
+}
+.prose li {
+    margin-bottom: 0.75rem;
+}
+.prose blockquote {
+    border-left: 4px solid #8E2DE2;
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: #1e293b;
+    font-size: 1.25rem;
+    margin: 3rem 0;
+}
+.sticky-sidebar {
+    position: sticky;
+    top: 8rem;
+}
+/* Article Breakout Components */
+.article-callout {
+    background-color: #F0F9FF;
+    border-left: 4px solid #0EA5E9;
+    padding: 2rem;
+    border-radius: 0 1rem 1rem 0;
+    margin: 3rem 0;
+}
+.article-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+.article-stat-box {
+    border: 1px solid #E2E8F0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+/* Default background for stat boxes (can be overridden with utility classes) */
+.article-stat-box:not([class*="bg-"]) {
+    background: #F8FAFC;
+}
+
+/* Smooth scroll with offset for fixed navbar */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px; /* Accounts for navbar + some breathing room */
+}
+
+/* Table of Contents Active Link */
+.toc-active {
+    color: #8E2DE2 !important;
+    border-left-color: #8E2DE2 !important;
+    font-weight: 600;
+}

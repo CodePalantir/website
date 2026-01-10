@@ -1,0 +1,23 @@
+{
+  "name": "apex-palantir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/tailwind.css",
+    "watch": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/tailwind.css --watch",
+    "start": "bundle exec jekyll serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  }
+}

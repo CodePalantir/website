@@ -1,0 +1,150 @@
+categories:
+  - name: "Diagnostics & Strategy"
+    id: "diagnostics"
+    pricing_type: "Fixed Price"
+    services:
+      - title: "Technical Health Audit"
+        icon: "search"
+        price: "€2,450"
+        price_subtext: "One-time Audit"
+        description: "Messy, unstable, fragile org? We analyze your metadata, Apex code, and process flows to expose the cracks before they break."
+        short_description: "Complete system analysis."
+        cta: "Book This Audit"
+        show_in_navbar: true
+        show_on_homepage: true
+        homepage_tagline: "Protect Your Investment"
+        homepage_description: "We identify the hidden technical debt slowing down your Sales and Marketing teams."
+        url: "/services/technical-health-audit"
+
+      - title: "Data Quality Check"
+        icon: "database"
+        price: "From €800"
+        price_subtext: ""
+        description: "Drowning in duplicates? We analyze your full data model to show what's bloated, broken, or quietly killing performance."
+        short_description: "Clean data architecture."
+        cta: "Book This Check"
+        show_in_navbar: true
+        url: "/services/data-quality-check"
+
+      - title: "GDPR Compliance"
+        icon: "shield-alert"
+        price: "~ €1,200"
+        price_subtext: ""
+        description: "One privacy complaint away from disaster. We identify personal data exposure and risky access patterns."
+        short_description: "Privacy compliance."
+        cta: "Book Compliance Check"
+        show_in_navbar: true
+        url: "/services/gdpr-compliance"
+
+  - name: "Core Cloud Implementation"
+    id: "core-cloud"
+    pricing_type: "Project Based"
+    services:
+      - title: "Sales Cloud Velocity"
+        icon: "cloud-lightning"
+        price: "€5k - €15k"
+        price_subtext: ""
+        description: "Turn your CRM into a revenue engine. We configure Pipeline management, Forecasting, and Lead-to-Cash workflows designed for speed."
+        short_description: "Pipeline acceleration."
+        cta: "Configure Sales Cloud"
+        show_in_navbar: true
+        url: "/services/sales-cloud-setup"
+
+
+      - title: "Service Cloud Console"
+        icon: "headphones"
+        price: "€5k - €15k"
+        price_subtext: ""
+        description: "Stop losing customers to slow support. We implement Omni-Channel routing, Case Management, and SLAs to turn support into retention."
+        short_description: "Support optimization."
+        cta: "Setup Service Cloud"
+        show_in_navbar: true
+        url: "/services/service-cloud-console"
+
+      - title: "Marketing Cloud"
+        icon: "mail"
+        price: "Custom Quote"
+        price_subtext: ""
+        description: "Ensure your leads are nurtured before they hit Sales. We architect data-driven Journeys, Automations, and personalized engagement."
+        short_description: "Marketing automation."
+        cta: "Discuss Marketing"
+        show_in_navbar: true
+        url: "/services/marketing-cloud"
+
+  - name: "Engineering & Integration"
+    id: "engineering"
+    pricing_type: "Project / Hourly"
+    services:
+      - title: "Custom Development"
+        icon: "code-2"
+        price: "€100-150"
+        price_suffix: "/hr"
+        price_subtext: "Agile Dev"
+        description: "Salesforce should adapt to you. We build clean, maintainable Apex, LWC, and Flows tailored to your exact use case."
+        short_description: "High-performance logic."
+        cta: "Request Developer"
+        show_in_navbar: true
+        show_on_homepage: true
+        homepage_tagline: "Accelerate Velocity"
+        homepage_description: "Custom-built workflows and integrations that actually work."
+        url: "/services/custom-development"
+
+      - title: "System Integrations"
+        icon: "plug"
+        price: "€15k - €30k"
+        price_subtext: ""
+        description: "Data silos kill momentum. We wire Salesforce to your ERP, Marketing Stack, or internal tools using robust APIs."
+        short_description: "Connecting tech stacks."
+        cta: "Discuss Integration"
+        show_in_navbar: true
+        url: "/services/custom-integration"
+
+      - title: "Mulesoft Architecture"
+        icon: "network"
+        price: "€5k - €30k"
+        price_subtext: ""
+        description: "Need enterprise-scale connectivity? We architect Mulesoft flows that move clean, validated data across your entire ecosystem."
+        short_description: "Enterprise connectivity."
+        cta: "Consult Mulesoft"
+        show_in_navbar: true
+        url: "/services/mulesoft-architecture"
+
+  - name: "Stability & Scale"
+    id: "stability"
+    pricing_type: "Retainer"
+    services:
+      - title: "Managed Support"
+        icon: "life-buoy"
+        price: "€28,800"
+        price_suffix: "/yr"
+        price_subtext: ""
+        description: "The silent backbone of your CRM. We monitor, triage, and resolve user issues, bugs, and permission errors within 24 hours. No ticketing chaos."
+        short_description: "24hr support coverage."
+        cta: "Get Support Plan"
+        show_in_navbar: true
+        special_styling: "featured"
+        url: "/services/managed-support"
+
+      - title: "Managed Partner"
+        icon: "crown"
+        price: "Retainer"
+        price_subtext: "Fractional"
+        description: "We take over your full CRM organization and scaling strategy. From daily operations to long-term architectural roadmapping."
+        short_description: "Strategic roadmap."
+        cta: "Partner With Us"
+        show_in_navbar: true
+        show_on_homepage: true
+        homepage_tagline: "Scalable Foundation"
+        homepage_description: "Strategic technical leadership for RevOps and CEOs."
+        special_styling: "premium"
+        url: "/services/managed-partner"
+
+      - title: "Tech Debt Monitor"
+        icon: "activity"
+        price: "SaaS"
+        price_subtext: ""
+        description: "Automated, real-time monitoring of your Salesforce org's technical health. Detect accumulated debt and slow automations."
+        short_description: "Continuous monitoring."
+        cta: "Join Waitlist"
+        show_in_navbar: false
+        special_styling: "coming_soon"

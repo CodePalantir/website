@@ -1,0 +1,88 @@
+<!-- SYMPTOMS: THE ECONOMIC ARGUMENT -->
+<section class="py-32 px-6 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div class="space-y-8">
+                <span class="text-purple-600 font-bold uppercase tracking-widest text-xs mb-4 block">Empirical Revenue Risk</span>
+                
+                <h2 class="text-5xl font-black text-slate-900 leading-[1.05]">
+                    Technical Debt is a <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0] italic">Profit Leak.</span>
+                </h2>
+                <p class="text-xl text-slate-600 leading-relaxed">
+                    Research shows that unmanaged technical debt doesn't just slow down IT—it directly impacts your bottom line. Without aggressive management, your CRM becomes a liability within 60 months.
+                </p>
+                
+                <div class="space-y-4 pt-4 border-t border-slate-100">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center shrink-0 border border-slate-200">
+                            <span class="font-black text-slate-900 text-sm">16%</span>
+                        </div>
+                        <p class="text-slate-500 text-sm font-medium">Estimated reduction in Gross Return on Assets (GROA) for every 10% increase in technical debt. <br/><span class="text-[10px] text-slate-400">Source: Banker et al., SSRN-3476765</span></p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center shrink-0 border border-slate-200">
+                            <i data-lucide="calendar-x" class="w-5 h-5 text-slate-900"></i>
+                        </div>
+                        <p class="text-slate-500 text-sm font-medium">The 5-Year Wall: The point where unmanaged system complexity forces the net benefit of a CRM system to zero or negative.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Visualization: Financial Depreciation Model (Strict Brand Colors) -->
+            <div class="bg-slate-900 p-10 rounded-[2.5rem] border border-slate-800 shadow-2xl relative overflow-hidden text-white">
+                <div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
+                    <div>
+                        <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest block">Financial Model: CRM Asset</span>
+                        <span class="text-sm font-bold text-white">5-Year Valuation</span>
+                    </div>
+                    <span class="px-2 py-1 bg-slate-800 border border-slate-700 text-slate-300 text-[10px] font-bold rounded font-mono">RISK ZONE DETECTED</span>
+                </div>
+                
+                <div class="relative h-64 w-full">
+                    <!-- Grid Lines -->
+                    <div class="absolute inset-0 flex flex-col justify-between">
+                        <div class="w-full h-px bg-white/5"></div>
+                        <div class="w-full h-px bg-white/5"></div>
+                        <div class="w-full h-px bg-white/5"></div>
+                        <div class="w-full h-px bg-white/5"></div>
+                        <div class="w-full h-px bg-white/20"></div>
+                    </div>
+
+                    <!-- Chart Curves -->
+                    <svg viewBox="0 0 400 200" class="w-full h-full overflow-visible absolute inset-0">
+                        <defs>
+                            <linearGradient id="badGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.3"/> <!-- Slate 400 -->
+                                <stop offset="100%" stop-color="#94a3b8" stop-opacity="0"/>
+                            </linearGradient>
+                            <linearGradient id="goodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#8E2DE2" stop-opacity="0.5"/>
+                                <stop offset="100%" stop-color="#8E2DE2" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Standard Decay (Slate/Gray - The Status Quo) -->
+                        <path d="M0,50 C100,50 150,80 200,120 C250,160 350,190 400,210" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="4 4" />
+                        <path d="M0,50 C100,50 150,80 200,120 C250,160 350,190 400,210 V 220 H 0 Z" fill="url(#badGrad)" stroke="none" />
+
+                        <!-- Managed Partner (Purple - The Apex Way) -->
+                        <path d="M0,50 C100,45 200,40 300,30 C350,25 380,10 400,0" fill="none" stroke="#8E2DE2" stroke-width="4" />
+                        <path d="M0,50 C100,45 200,40 300,30 C350,25 380,10 400,0 V 220 H 0 Z" fill="url(#goodGrad)" stroke="none" opacity="0.3" />
+                        
+                        <!-- Annotations -->
+                        <text x="300" y="190" font-family="monospace" font-size="10" fill="#94a3b8" font-weight="bold">Net Negative Value</text>
+                        <text x="300" y="20" font-family="monospace" font-size="10" fill="#d8b4fe" font-weight="bold">Strategic Asset</text>
+                    </svg>
+                    
+                    <div class="absolute bottom-0 w-full flex justify-between text-[9px] text-slate-500 font-mono pt-2">
+                        <span>Year 1</span>
+                                           <span class="text-purple-600 font-bold uppercase tracking-widest text-xs mb-4 block">Strategic Impact</span>
+ <span>Year 3</span>
+                        <span>Year 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

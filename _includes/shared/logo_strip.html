@@ -1,0 +1,37 @@
+<section class="py-12 border-y border-slate-100 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 mb-8 text-center text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Trusted by Forward-Thinking Leaders</div>
+  <div class="flex overflow-hidden whitespace-nowrap relative">
+    <div class="flex gap-16 items-center opacity-40 grayscale logo-scroll">
+      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">GT</div>GlobalTech #1</div>
+      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">AF</div>ApexFlow</div>
+      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">CS</div>CloudScale</div>
+      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">DB</div>DataBridge</div>
+      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">LG</div>LogicGate</div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    const scrollContainer = document.querySelector('.logo-scroll');
+    const scrollContent = scrollContainer.innerHTML;
+    scrollContainer.innerHTML = scrollContent + scrollContent + scrollContent;
+
+    let scrollAmount = 0;
+    const scrollSpeed = 0.5;
+
+    function animate() {
+      scrollAmount += scrollSpeed;
+      const maxScroll = scrollContainer.scrollWidth / 3;
+
+      if (scrollAmount >= maxScroll) {
+        scrollAmount = 0;
+      }
+
+      scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  })();
+  </script>
+</section>

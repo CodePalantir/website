@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Custom Salesforce Integration"
+---
+
+{% include services/devx/integration_hero.html %}
+{% include shared/logo_strip.html %}
+{% include services/devx/integration_symptoms.html %}
+{% include services/devx/integration_method.html %}
+{% include services/devx/integration_deliverables.html %}
+{% include services/devx/integration_cta.html %}
+{% include home/about_us_home.html %}

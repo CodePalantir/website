@@ -1,0 +1,56 @@
+<header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-white py-4">
+  <div class="max-w-navbar mx-auto px-8 md:px-12 flex items-center justify-between">
+    <div onclick="window.location.href='/'" class="flex items-center gap-2 cursor-pointer group">
+      <img src="/assets/images/logos/APEX-PALANTIR_LARGE.png" alt="Apex Palantir Logo" class="h-10 w-auto group-hover:scale-105 transition-transform">
+    </div>
+
+    <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+      <a href="/" class="hover:text-purple-600 transition-colors {% if page.url == '/' %}text-transparent bg-clip-text bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0]{% endif %}">Home</a>
+
+      <!-- Services Mega Menu -->
+      <div class="relative group h-full flex items-center">
+        <a href="/services" class="flex items-center gap-1 hover:text-purple-600 transition-colors py-2 {% if page.url contains '/services' %}text-transparent bg-clip-text bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0]{% endif %}">
+          Services <i data-lucide="chevron-down" class="w-4 h-4 chevron-icon {% if page.url contains '/services' %}text-purple-600{% endif %}"></i>
+        </a>
+        
+        <div class="dropdown-menu absolute top-full -left-20 w-[600px] bg-white rounded-3xl shadow-2xl border border-slate-100 p-8 origin-top-left mt-2">
+          <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+            <!-- Service Items -->
+            {% for category in site.data.services.categories %}
+              {% for service in category.services %}
+                {% if service.show_in_navbar %}
+            <a href="{% if service.url %}{{ service.url }}{% else %}/services{% endif %}" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="{{ service.icon }}" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">{{ service.title }}</p>
+                <p class="text-xs text-slate-500 mt-0.5">{{ service.short_description }}</p>
+              </div>
+            </a>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-100 flex justify-between items-center">
+            <p class="text-xs text-slate-400 font-medium italic">Engineering Excellence for Salesforce.</p>
+            <a href="/services" class="text-xs font-bold text-purple-600 flex items-center gap-1">View All Services <i data-lucide="arrow-up-right" class="w-3"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="/about" class="hover:text-purple-600 transition-colors {% if page.url contains '/about' %}text-transparent bg-clip-text bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0]{% endif %}">About</a>
+      <a href="/blog" class="hover:text-purple-600 transition-colors {% if page.url contains '/blog' %}text-transparent bg-clip-text bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0]{% endif %}">Blog</a>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-3">
+      <button class="px-5 py-2 rounded-full border border-slate-200 text-slate-700 font-semibold hover:border-purple-200 hover:text-purple-700 hover:bg-purple-50 transition-all text-sm cursor-pointer">
+        Book a Call
+      </button>
+      <a href="tel:+491732375183" class="bg-purple-gradient text-white px-5 py-2 rounded-full font-semibold flex items-center gap-2 shadow-md shadow-purple-200 hover:scale-105 transition-transform text-sm">
+        <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+        +49 173 237 518 3
+      </a>
+    </div>
+  </div>
+</header>

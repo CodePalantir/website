@@ -1,0 +1,3049 @@
+JEKYLL SITE BUNDLE
+Generated on Fri Dec 26 16:04:50 CET 2025
+==========================================
+
+==========================================
+FILE PATH: ./_includes/hero.html
+==========================================
+<section class="pt-32 pb-20 px-6 relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-1/2 h-full bg-white -z-10 rounded-l-[100px]"></div>
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="space-y-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-100 text-sm font-semibold">
+        <span class="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span>
+        Salesforce Technical Architects
+      </div>
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight text-slate-900">
+        Laying the <span class="text-gradient">Technical Foundation</span> for Sustained Growth.
+      </h1>
+      <p class="text-xl text-slate-600 leading-relaxed max-w-xl">
+        Most Salesforce instances have a 5-year shelf life due to compounding technical debt. We build robust, scalable architectures that empower Sales, Marketing, and Service teams to win—forever.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <button class="bg-purple-gradient text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-purple-200 hover:opacity-90 transition-all flex items-center justify-center gap-2 group">
+          Start Your Tech Audit
+          <i data-lucide="chevron-right" class="group-hover:translate-x-1 transition-transform"></i>
+        </button>
+        <button class="px-8 py-4 rounded-xl font-bold border border-slate-200 hover:bg-slate-50 transition-all text-slate-700">
+          Our Development Approach
+        </button>
+      </div>
+    </div>
+    
+    <div class="relative">
+      <div class="aspect-square bg-white rounded-3xl shadow-2xl p-8 border border-slate-100 relative overflow-hidden group">
+        <div class="absolute inset-0 bg-slate-50/50 -z-10"></div>
+        <div class="space-y-6">
+          <div class="flex items-center justify-between">
+            <div class="h-4 w-32 bg-slate-200 rounded-full animate-pulse"></div>
+            <div class="h-8 w-8 rounded-lg bg-purple-100"></div>
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="h-24 rounded-2xl bg-white border border-slate-100 shadow-sm flex flex-col p-3 gap-2">
+               <div class="h-2 w-full bg-slate-100 rounded"></div>
+               <div class="h-2 w-2/3 bg-slate-100 rounded"></div>
+               <div class="mt-auto h-6 w-6 rounded bg-purple-50 self-end"></div>
+            </div>
+            <div class="h-24 rounded-2xl bg-white border border-slate-100 shadow-sm flex flex-col p-3 gap-2">
+               <div class="h-2 w-full bg-slate-100 rounded"></div>
+               <div class="h-2 w-2/3 bg-slate-100 rounded"></div>
+               <div class="mt-auto h-6 w-6 rounded bg-purple-50 self-end"></div>
+            </div>
+            <div class="h-24 rounded-2xl bg-white border border-slate-100 shadow-sm flex flex-col p-3 gap-2">
+               <div class="h-2 w-full bg-slate-100 rounded"></div>
+               <div class="h-2 w-2/3 bg-slate-100 rounded"></div>
+               <div class="mt-auto h-6 w-6 rounded bg-purple-50 self-end"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-slate-900 rounded-2xl shadow-inner font-mono text-sm text-purple-400 overflow-hidden">
+            <div class="flex gap-2 text-slate-500 mb-2">
+              <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+            </div>
+            <p>public class SalesforceArchitect {</p>
+            <p class="pl-4">public void deployCleanCode() {</p>
+            <p class="pl-8 text-white">System.debug('Scaling Success...');</p>
+            <p class="pl-4">}</p>
+            <p>}</p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 max-w-[200px] hidden md:block">
+        <div class="flex items-center gap-3 mb-2">
+          <i data-lucide="clock" class="text-purple-600 w-5 h-5"></i>
+          <span class="font-bold text-slate-800">5-Year Limit</span>
+        </div>
+        <p class="text-xs text-slate-500">Break the cycle of technical debt before it breaks your CRM.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+==========================================
+FILE PATH: ./_includes/revenue_velocity.html
+==========================================
+<section class="py-24 px-6 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+    <div class="space-y-10">
+      <div class="space-y-4">
+        <h2 class="text-4xl font-bold leading-tight">Designed for <span class="text-gradient">Revenue Velocity.</span></h2>
+        <p class="text-lg text-slate-600 leading-relaxed">Salesforce technical debt is a compounding interest tax on your revenue. We map your technical vulnerabilities against business impact.</p>
+      </div>
+      <div class="grid gap-6">
+        <div class="flex gap-5 p-6 rounded-2xl border border-slate-50 bg-slate-50/50 hover:bg-white hover:shadow-lg hover:border-slate-100 transition-all group">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-white border border-slate-100 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform"><i data-lucide="trending-up" class="text-blue-600"></i></div>
+          <div><h4 class="font-bold mb-1 text-slate-800">Velocity Gains</h4><p class="text-sm text-slate-500">Removing 'Process Debt' increases productivity by ~22%.</p></div>
+        </div>
+        <div class="flex gap-5 p-6 rounded-2xl border border-slate-50 bg-slate-50/50 hover:bg-white hover:shadow-lg hover:border-slate-100 transition-all group">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-white border border-slate-100 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform"><i data-lucide="users-2" class="text-purple-600"></i></div>
+          <div><h4 class="font-bold mb-1 text-slate-800">Operational Clarity</h4><p class="text-sm text-slate-500">Unified data leads to 40% more accurate forecasting.</p></div>
+        </div>
+        <div class="flex gap-5 p-6 rounded-2xl border border-slate-50 bg-slate-50/50 hover:bg-white hover:shadow-lg hover:border-slate-100 transition-all group">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-white border border-slate-100 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform"><i data-lucide="shield-check" class="text-emerald-600"></i></div>
+          <div><h4 class="font-bold mb-1 text-slate-800">Platform Stability</h4><p class="text-sm text-slate-500">Robust Apex engineering prevents costly downtime.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="bg-slate-900 rounded-[3rem] p-12 shadow-2xl relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+          <svg width="100%" height="100%" viewBox="0 0 400 400"><path d="M0 300 Q100 280 200 150 T400 50" stroke="white" stroke-width="2" fill="none" /></svg>
+        </div>
+        <div class="relative z-10 space-y-10">
+          <div class="flex justify-between items-center">
+            <h4 class="text-xl font-bold text-white tracking-tight">The Growth Correlation</h4>
+            <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">Live Projection</span>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="p-6 rounded-3xl bg-white/5 border border-white/10">
+              <p class="text-slate-400 text-xs font-bold uppercase mb-2">Technical Debt</p>
+              <p class="text-3xl font-black text-red-400">-42%</p>
+              <p class="text-[10px] text-slate-500 mt-1 italic">Resource Waste</p>
+            </div>
+            <div class="p-6 rounded-3xl bg-purple-600 border border-purple-500 shadow-xl shadow-purple-900/40">
+              <p class="text-purple-200 text-xs font-bold uppercase mb-2">Revenue ROI</p>
+              <p class="text-3xl font-black text-white">+118%</p>
+              <p class="text-[10px] text-purple-200 mt-1 italic">Efficiency Multiplier</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="flex justify-between text-xs font-bold text-slate-400 uppercase"><span>Implementation Health</span><span>92% (Optimal)</span></div>
+            <div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 w-[92%] rounded-full shadow-[0_0_10px_rgba(168,85,247,0.5)]"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+==========================================
+FILE PATH: ./_includes/early_warnings.html
+==========================================
+<section class="py-24 px-6 bg-slate-50 overflow-hidden text-left">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+    <div class="text-left">
+      <h2 class="text-4xl md:text-5xl font-black mb-8 leading-tight text-left">
+        Detect the <span class="text-purple-600 italic text-left">Early Warning</span> Signals.
+      </h2>
+      <div class="space-y-8 text-left">
+        <div class="flex gap-5 text-left">
+          <div class="shrink-0 w-12 h-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-slate-400 shadow-sm"><i data-lucide="timer"></i></div>
+          <div class="text-left"><h4 class="font-bold text-lg mb-1 text-left">Sluggish Innovation</h4><p class="text-slate-500 text-sm text-left">Minor changes now take weeks of testing because "everything is connected."</p></div>
+        </div>
+        <div class="flex gap-5 text-left">
+          <div class="shrink-0 w-12 h-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-slate-400 shadow-sm"><i data-lucide="shield-alert"></i></div>
+          <div class="text-left"><h4 class="font-bold text-lg mb-1 text-left">The Security Trap</h4><p class="text-slate-500 text-sm text-left">Older configurations no longer align with GDPR or global privacy requirements.</p></div>
+        </div>
+        <div class="flex gap-5 text-left">
+          <div class="shrink-0 w-12 h-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-slate-400 shadow-sm"><i data-lucide="database"></i></div>
+          <div class="text-left"><h4 class="font-bold text-lg mb-1 text-left">Data Entropy</h4><p class="text-slate-500 text-sm text-left">Duplicate records and fragmented reporting are eroding leadership's trust in the dashboard.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-slate-900 p-12 rounded-[3rem] text-white shadow-2xl relative text-left">
+      <div class="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-transparent pointer-events-none"></div>
+      <h3 class="text-2xl font-bold mb-8 text-center relative z-10 text-left">Diagnostic Profile</h3>
+      <div class="space-y-8 relative z-10 text-left">
+        <div class="space-y-3 text-left">
+          <div class="flex justify-between text-[10px] font-black uppercase tracking-[0.2em] text-white/40"><span>Infrastructure Debt</span><span class="text-red-400">Critical</span></div>
+          <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-red-500 w-[78%]"></div></div>
+        </div>
+        <div class="space-y-3 text-left">
+          <div class="flex justify-between text-[10px] font-black uppercase tracking-[0.2em] text-white/40"><span>Operational Velocity</span><span class="text-yellow-400">Limited</span></div>
+          <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-yellow-500 w-[42%]"></div></div>
+        </div>
+        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl text-center text-left">
+           <p class="text-white/60 text-xs mb-1 text-center">Hidden Resource Leakage</p>
+           <p class="text-2xl font-black text-white text-center">~$8,400 <span class="text-sm font-normal text-white/30">/ mo</span></p>
+        </div>
+        <button class="w-full py-4 rounded-xl bg-purple-600 text-white font-bold hover:bg-purple-500 transition-colors shadow-lg shadow-purple-900/40">Book Technical Audit</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+==========================================
+FILE PATH: ./_includes/debt_hook.html
+==========================================
+<section class="py-24 px-6 bg-slate-900 text-white overflow-hidden">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
+        Is Your Salesforce Instance Ticking Toward its <span class="text-purple-400">Expiration Date?</span>
+      </h2>
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="shrink-0 w-8 h-8 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 font-bold">1</div>
+          <div><h4 class="font-bold text-lg">The Performance Drop</h4><p class="text-slate-400 text-sm">Complex triggers and unoptimized queries slowing down your team.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <div class="shrink-0 w-8 h-8 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 font-bold">2</div>
+          <div><h4 class="font-bold text-lg">The Integration Wall</h4><p class="text-slate-400 text-sm">Data silos preventing a true 360-degree view of your customer.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <div class="shrink-0 w-8 h-8 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 font-bold">3</div>
+          <div><h4 class="font-bold text-lg">The Security Gap</h4><p class="text-slate-400 text-sm">Aging configurations that no longer meet global privacy standards.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-lg">
+      <h3 class="text-2xl font-bold mb-6 text-center">Tech Audit Dashboard</h3>
+      <div class="space-y-6">
+        <div class="space-y-2">
+          <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-400"><span>Code Efficiency</span><span class="text-red-400">Low (32%)</span></div>
+          <div class="h-2 bg-slate-800 rounded-full"><div class="h-full bg-red-500 rounded-full w-[32%]"></div></div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-400"><span>Data Integrity</span><span class="text-yellow-400">Moderate (54%)</span></div>
+          <div class="h-2 bg-slate-800 rounded-full"><div class="h-full bg-yellow-500 rounded-full w-[54%]"></div></div>
+        </div>
+        <div class="p-4 bg-purple-600/20 border border-purple-500/30 rounded-xl mt-8">
+          <p class="text-center font-semibold text-purple-200">Estimated Technical Debt: $45,000+</p>
+        </div>
+        <button class="w-full py-4 rounded-xl bg-white text-slate-900 font-bold hover:bg-slate-100 transition-colors">Get Your Free Audit</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+==========================================
+FILE PATH: ./_includes/footer.html
+==========================================
+<footer class="bg-[#0A0A0B] text-white pt-32 pb-12 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-white/10 pb-20 mb-20 gap-12">
+      <div class="max-w-2xl space-y-6">
+         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/50 text-[10px] font-black uppercase tracking-[0.2em]">The Next Chapter</div>
+         <h2 class="text-5xl md:text-8xl font-bold tracking-tight leading-[0.9]">Ready to Build <br/><span class="opacity-30 italic">Your Foundation?</span></h2>
+      </div>
+      <div class="group cursor-pointer">
+         <a href="#" class="flex items-center gap-6 text-2xl md:text-3xl font-bold group-hover:text-purple-400 transition-colors">
+            Get in touch
+            <div class="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-purple-600 group-hover:border-purple-600 transition-all">
+               <i data-lucide="arrow-right" class="w-8 h-8 group-hover:translate-x-1 transition-transform"></i>
+            </div>
+         </a>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
+      <div class="space-y-8">
+        <div class="flex items-center gap-2">
+          <img src="/assets/images/logos/APEX-PALANTIR_WHITE_WHITE_TOP_LARGE.png" alt="Apex Palantir Logo" class="h-auto w-30">
+        </div>
+      </div>
+      <div class="space-y-6">
+        <h4 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">Navigation</h4>
+        <ul class="space-y-3 text-lg font-medium">
+          <li><a href="#" class="hover:text-purple-400 transition-colors">Services</a></li>
+          <li><a href="#" class="hover:text-purple-400 transition-colors">Methodology</a></li>
+          <li><a href="#" class="hover:text-purple-400 transition-colors">About</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h4 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">Contact</h4>
+        <ul class="space-y-3 text-lg font-medium">
+          <li><a href="#" class="hover:text-purple-400 transition-colors">Email Us</a></li>
+          <li><a href="#" class="hover:text-purple-400 transition-colors">+49 173 237 518 3</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h4 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">Social</h4>
+        <div class="flex flex-wrap gap-4">
+          <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer"><i data-lucide="linkedin" class="w-5"></i></div>
+          <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer"><i data-lucide="instagram" class="w-5"></i></div>
+          <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer"><i data-lucide="youtube" class="w-5"></i></div>
+          <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer"><i data-lucide="facebook" class="w-5"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="pt-10 border-t border-white/5 flex flex-col md:row items-center justify-between gap-6 text-slate-600 text-[10px] font-bold uppercase tracking-widest">
+      <p>© 2024 ApexPalantir. Engineering Excellence.</p>
+      <div class="flex gap-10">
+        <a href="#" class="hover:text-white transition-colors">Privacy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms</a>
+        <a href="#" class="hover:text-white transition-colors">Imprint</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+==========================================
+FILE PATH: ./_includes/services.html
+==========================================
+<section class="py-24 px-6 bg-slate-50">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+    <div class="max-w-2xl">
+      <h2 class="text-4xl font-bold mb-4">Core <span class="text-gradient">Strategic Solutions</span></h2>
+      <p class="text-slate-600 text-lg leading-relaxed">We provide engineering excellence that turns Salesforce from a bottleneck into a catalyst. Transparent pricing models for every scale of business.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-3xl border border-slate-100 hover:shadow-2xl transition-all flex flex-col h-full group overflow-hidden">
+      <div class="p-10 flex-grow">
+        <div class="flex justify-between items-start mb-8">
+          <div class="w-14 h-14 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+            <i data-lucide="search" class="w-7 h-7"></i>
+          </div>
+          <div class="text-right">
+            <p class="text-2xl font-black text-slate-900 tracking-tight">€2,450</p>
+            <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">One-time Audit</p>
+          </div>
+        </div>
+        <span class="text-[10px] font-black text-purple-600 uppercase tracking-[0.2em] mb-3 block">Protect Your Investment</span>
+        <h3 class="text-2xl font-bold mb-4">Technical Health Audit</h3>
+        <p class="text-slate-600 leading-relaxed mb-6 text-sm">We identify the hidden technical debt slowing down your Sales and Marketing teams. <a href="#" class="text-purple-600 font-bold hover:underline">Read full scope.</a></p>
+      </div>
+      <div class="p-4 pt-0">
+        <button class="bg-purple-gradient w-full py-2.5 rounded-xl text-white font-semibold flex items-center justify-center gap-2 shadow-md hover:scale-[1.01] transition-transform text-sm">
+          Book a Call
+        </button>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="bg-white rounded-3xl border border-slate-100 hover:shadow-2xl transition-all flex flex-col h-full group overflow-hidden">
+      <div class="p-10 flex-grow">
+        <div class="flex justify-between items-start mb-8">
+          <div class="w-14 h-14 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+            <i data-lucide="target" class="w-7 h-7"></i>
+          </div>
+          <div class="text-right">
+            <p class="text-2xl font-black text-slate-900 tracking-tight">€145/hr</p>
+            <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Agile Dev</p>
+          </div>
+        </div>
+        <span class="text-[10px] font-black text-purple-600 uppercase tracking-[0.2em] mb-3 block">Accelerate Velocity</span>
+        <h3 class="text-2xl font-bold mb-4">Revenue Ops Engineering</h3>
+        <p class="text-slate-600 leading-relaxed mb-6 text-sm">Custom-built workflows and integrations that actually work. <a href="#" class="text-purple-600 font-bold hover:underline">Read full scope.</a></p>
+      </div>
+      <div class="p-4 pt-0">
+        <button class="bg-purple-gradient w-full py-2.5 rounded-xl text-white font-semibold flex items-center justify-center gap-2 shadow-md hover:scale-[1.01] transition-transform text-sm">
+          Book a Call
+        </button>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="bg-white rounded-3xl border border-slate-100 hover:shadow-2xl transition-all flex flex-col h-full group overflow-hidden">
+      <div class="p-10 flex-grow">
+        <div class="flex justify-between items-start mb-8">
+          <div class="w-14 h-14 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+            <i data-lucide="bar-chart-3" class="w-7 h-7"></i>
+          </div>
+          <div class="text-right">
+            <p class="text-2xl font-black text-slate-900 tracking-tight">Retainer</p>
+            <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Fractional</p>
+          </div>
+        </div>
+        <span class="text-[10px] font-black text-purple-600 uppercase tracking-[0.2em] mb-3 block">Scalable Foundation</span>
+        <h3 class="text-2xl font-bold mb-4">Architectural Advisory</h3>
+        <p class="text-slate-600 leading-relaxed mb-6 text-sm">Strategic technical leadership for RevOps and CEOs. <a href="#" class="text-purple-600 font-bold hover:underline">Read full scope.</a></p>
+      </div>
+      <div class="p-4 pt-0">
+        <button class="bg-purple-gradient w-full py-2.5 rounded-xl text-white font-semibold flex items-center justify-center gap-2 shadow-md hover:scale-[1.01] transition-transform text-sm">
+          Book a Call
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-16 text-center">
+    <button class="px-8 py-4 rounded-xl border-2 border-slate-200 text-slate-700 font-bold hover:border-purple-600 hover:text-purple-600 transition-all inline-flex items-center gap-2 group text-lg">
+        View All Services 
+        <i data-lucide="chevron-right" class="group-hover:translate-x-1 transition-transform"></i>
+    </button>
+  </div>
+</section>
+
+==========================================
+FILE PATH: ./_includes/lifecycle_paradox.html
+==========================================
+<section class="py-24 px-6 bg-white overflow-hidden text-left">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-20 items-center mb-24">
+       <div>
+          <span class="text-purple-600 font-bold uppercase tracking-widest text-xs mb-4 block">The Lifecycle Paradox</span>
+          <h2 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-8 text-left">
+             Salesforce Degradation is <br/><span class="text-gradient italic text-left">Predictable.</span>
+          </h2>
+          <p class="text-lg text-slate-600 leading-relaxed max-w-lg text-left">
+             Most CRM failures aren't caused by bad tools or incompetent teams. They are caused by the **Inflection Point**—where the debt of short-term growth finally exceeds the capacity of the original architecture.
+          </p>
+       </div>
+       <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100">
+          <div class="space-y-4">
+             <div class="flex justify-between items-end">
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Platform Agility</div>
+                <div class="text-xs font-bold text-slate-900 italic">Declining</div>
+             </div>
+             <div class="h-32 w-full flex items-end gap-2 px-2 pb-2 border-b border-l border-slate-200">
+                <div class="w-full bg-slate-200 h-[90%] rounded-t-sm"></div>
+                <div class="w-full bg-slate-200 h-[75%] rounded-t-sm"></div>
+                <div class="w-full bg-purple-200 h-[50%] rounded-t-sm"></div>
+                <div class="w-full bg-purple-400 h-[30%] rounded-t-sm"></div>
+                <div class="w-full bg-purple-600 h-[10%] rounded-t-sm"></div>
+             </div>
+             <div class="flex justify-between text-[10px] font-bold text-slate-400 uppercase tracking-widest px-2">
+                <span>Year 1</span>
+                <span>Year 3</span>
+                <span>Year 5</span>
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 text-left">
+       <!-- Stage 1 -->
+       <div class="inflection-card bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm text-left">
+          <div class="w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center mb-8 text-slate-400">
+             <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <div class="mb-8">
+             <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest text-left">Stage 1 (Years 1-2)</span>
+             <h3 class="text-2xl font-bold mt-2 text-left">The High-Velocity Honeymoon</h3>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed mb-10 text-left">
+             Everything is fast. You use standard features. Your developers are happy. Complexity is low, and speed is high.
+          </p>
+          <div class="pt-6 border-t border-slate-50 flex justify-between items-center">
+             <span class="text-xs font-bold text-slate-400">Risk Profile</span>
+             <span class="text-xs font-black text-emerald-500 uppercase tracking-widest">Low</span>
+          </div>
+       </div>
+
+       <!-- Stage 2 -->
+       <div class="inflection-card bg-white p-10 rounded-[2.5rem] border-2 border-purple-100 shadow-xl shadow-purple-50 relative text-left">
+          <div class="absolute -top-4 left-10 bg-purple-600 text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg shadow-purple-200">
+             Critical Catch Window
+          </div>
+          <div class="w-12 h-12 rounded-2xl bg-purple-50 flex items-center justify-center mb-8 text-purple-600">
+             <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+          </div>
+          <div class="mb-8">
+             <span class="text-[10px] font-black uppercase text-purple-400 tracking-widest text-left">Stage 2 (Years 3-4)</span>
+             <h3 class="text-2xl font-bold mt-2 text-left">The Strategic Inflection Point</h3>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed mb-10 text-left">
+             Complexity starts to bite. Deployments slow down. You begin hearing "we can't do that" from your tech team. **This is where you optimize or decay.**
+          </p>
+          <div class="pt-6 border-t border-slate-50 flex justify-between items-center">
+             <span class="text-xs font-bold text-slate-400">Risk Profile</span>
+             <span class="text-xs font-black text-yellow-500 uppercase tracking-widest">Rising</span>
+          </div>
+       </div>
+
+       <!-- Stage 3 -->
+       <div class="inflection-card bg-slate-900 p-10 rounded-[2.5rem] text-white text-left">
+          <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-8 text-white/50">
+             <i data-lucide="lock" class="w-6 h-6"></i>
+          </div>
+          <div class="mb-8 text-left">
+             <span class="text-[10px] font-black uppercase text-white/30 tracking-widest text-left">Stage 3 (Year 5+)</span>
+             <h3 class="text-2xl font-bold mt-2 text-left">The Architectural Ceiling</h3>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed mb-10 text-left">
+             Innovation stops. The system breaks under its own weight. Total re-implementation is usually the only advice given—unless you surgically refactor.
+          </p>
+          <div class="pt-6 border-t border-white/5 flex justify-between items-center">
+             <span class="text-xs font-bold text-white/30">Risk Profile</span>
+             <span class="text-xs font-black text-red-400 uppercase tracking-widest text-left">Severe</span>
+          </div>
+       </div>
+    </div>
+    
+    <div class="mt-20 flex flex-col items-center">
+       <p class="text-slate-400 text-sm font-bold mb-6 italic">Preventative architecture is 4.5x more cost-effective than a rip-and-replace project.</p>
+       <button class="bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold flex items-center gap-3 hover:scale-105 transition-all">
+          Get a Risk Assessment <i data-lucide="arrow-right"></i>
+       </button>
+    </div>
+  </div>
+</section>
+
+==========================================
+FILE PATH: ./_includes/logo_strip.html
+==========================================
+<section class="py-12 border-y border-slate-100 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 mb-8 text-center text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Trusted by Forward-Thinking Leaders</div>
+  <div class="flex overflow-hidden whitespace-nowrap">
+    <div class="animate-infinite-scroll flex gap-16 items-center opacity-40 grayscale will-change-transform">
+      <div class="flex gap-16 items-center">
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">GT</div>GlobalTech</div>
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">AF</div>ApexFlow</div>
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">CS</div>CloudScale</div>
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">DB</div>DataBridge</div>
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">LG</div>LogicGate</div>
+      </div>
+      <div class="flex gap-16 items-center" aria-hidden="true">
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">GT</div>GlobalTech</div>
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">AF</div>ApexFlow</div>
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">CS</div>CloudScale</div>
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">DB</div>DataBridge</div>
+        <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] not-italic">LG</div>LogicGate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+==========================================
+FILE PATH: ./_includes/header.html
+==========================================
+<header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-white py-4">
+  <div class="max-w-navbar mx-auto px-8 md:px-12 flex items-center justify-between">
+    <div class="flex items-center gap-2 cursor-pointer group">
+      <img src="/assets/images/logos/APEX-PALANTIR_LARGE.png" alt="Apex Palantir Logo" class="h-10 w-auto group-hover:scale-105 transition-transform">
+    </div>
+
+    <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+      <a href="/" class="hover:text-purple-600 transition-colors">Home</a>
+      
+      <!-- Services Mega Menu -->
+      <div class="relative group h-full flex items-center">
+        <button class="flex items-center gap-1 hover:text-purple-600 transition-colors py-2">
+          Services <i data-lucide="chevron-down" class="w-4 h-4 chevron-icon"></i>
+        </button>
+        
+        <div class="dropdown-menu absolute top-full -left-20 w-[600px] bg-white rounded-3xl shadow-2xl border border-slate-100 p-8 origin-top-left mt-2">
+          <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+            <!-- Service Items -->
+            <a href="#" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="search" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">Technical Health Audit</p>
+                <p class="text-xs text-slate-500 mt-0.5">Complete system analysis.</p>
+              </div>
+            </a>
+            <a href="#" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="target" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">RevOps Engineering</p>
+                <p class="text-xs text-slate-500 mt-0.5">Workflow automation.</p>
+              </div>
+            </a>
+            <a href="#" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="bar-chart-3" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">Architectural Advisory</p>
+                <p class="text-xs text-slate-500 mt-0.5">Strategic roadmap.</p>
+              </div>
+            </a>
+            <a href="#" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="code-2" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">Custom Apex</p>
+                <p class="text-xs text-slate-500 mt-0.5">High-performance logic.</p>
+              </div>
+            </a>
+            <a href="#" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="database" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">Data Strategy</p>
+                <p class="text-xs text-slate-500 mt-0.5">Clean data architecture.</p>
+              </div>
+            </a>
+            <a href="#" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="lock" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">Security Hardening</p>
+                <p class="text-xs text-slate-500 mt-0.5">Privacy compliance.</p>
+              </div>
+            </a>
+            <a href="#" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="boxes" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">System Integrations</p>
+                <p class="text-xs text-slate-500 mt-0.5">Connecting tech stacks.</p>
+              </div>
+            </a>
+            <a href="#" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="zap" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">Performance Tuning</p>
+                <p class="text-xs text-slate-500 mt-0.5">Speed optimization.</p>
+              </div>
+            </a>
+            <a href="#" class="flex gap-4 p-2 rounded-2xl hover:bg-slate-50 transition-colors group/item text-left">
+              <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover/item:bg-purple-600 group-hover/item:text-white transition-all shrink-0">
+                <i data-lucide="monitor-smartphone" class="w-[18px]"></i>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">User Training</p>
+                <p class="text-xs text-slate-500 mt-0.5">Adoption enablement.</p>
+              </div>
+            </a>
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-100 flex justify-between items-center">
+            <p class="text-xs text-slate-400 font-medium italic">Engineering Excellence for Salesforce.</p>
+            <a href="#" class="text-xs font-bold text-purple-600 flex items-center gap-1">View All Services <i data-lucide="arrow-up-right" class="w-3"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="hover:text-purple-600 transition-colors">About</a>
+      <a href="#" class="hover:text-purple-600 transition-colors">Blog</a>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-3">
+      <button class="px-5 py-2 rounded-full border border-slate-200 text-slate-700 font-semibold hover:border-purple-200 hover:text-purple-700 hover:bg-purple-50 transition-all text-sm">
+        Book a Call
+      </button>
+      <a href="tel:+491732375183" class="bg-purple-gradient text-white px-5 py-2 rounded-full font-semibold flex items-center gap-2 shadow-md shadow-purple-200 hover:scale-105 transition-transform text-sm">
+        <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+        +49 173 237 518 3
+      </a>
+    </div>
+  </div>
+</header>
+
+==========================================
+FILE PATH: ./_includes/crm_lifecycle.html
+==========================================
+<section class="py-24 px-6 bg-white overflow-hidden text-left">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header & Chart -->
+        <div class="grid md:grid-cols-2 gap-20 items-center mb-24">
+            <div>
+                <span class="text-[#8E2DE2] font-bold uppercase tracking-widest text-xs mb-4 block">The CRM Lifecycle</span>
+                <h2 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-8">
+                    Salesforce Degradation is <br/><span class="text-gradient italic">Predictable.</span>
+                </h2>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-lg mb-6">
+                    Technical shortcuts expedite initial deployment but systematically decrease system reliability. Eventually, maintenance obligations exceed new feature value, creating a net negative asset.
+                </p>
+            </div>
+            
+            <!-- Chart Visualization -->
+            <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 shadow-inner relative">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-end">
+                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Firm CRM Performance</div>
+                        <div class="text-xs font-bold text-slate-900 italic">Declining</div>
+                    </div>
+                    <div class="h-32 w-full flex items-end gap-2 px-2 pb-2 border-b border-l border-slate-200">
+                        <div class="w-full bg-slate-200 h-[95%] rounded-t-sm"></div>
+                        <div class="w-full bg-slate-200 h-[80%] rounded-t-sm"></div>
+                        <div class="w-full bg-purple-300 h-[55%] rounded-t-sm"></div>
+                        <div class="w-full bg-purple-500 h-[30%] rounded-t-sm relative">
+                            <div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[8px] font-black text-[#8E2DE2] whitespace-nowrap">BREAKING POINT</div>
+                        </div>
+                        <div class="w-full bg-slate-900 h-[12%] rounded-t-sm relative">
+                            <div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[8px] font-black text-slate-900 whitespace-nowrap bg-slate-200 px-1 py-0.5 rounded">NET NEGATIVE</div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between text-[10px] font-bold text-slate-400 uppercase tracking-widest px-2">
+                        <span>Year 1</span>
+                        <span>Year 3</span>
+                        <span>Year 5+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 Stages Cards -->
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Stage 1 -->
+            <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-100/30 flex flex-col">
+                <div class="w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center mb-8 text-slate-400">
+                    <i data-lucide="rocket" class="w-6 h-6"></i>
+                </div>
+                <div class="mb-6 flex-grow">
+                    <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest block mb-2">Stage 1 (Years 1-2)</span>
+                    <h3 class="text-2xl font-bold mb-4">The Sprint</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        "Expediting system deployment" maximizes short-term gains. You use standard features. Reliability is high, but shortcuts are taken to meet market speed.
+                    </p>
+                </div>
+                <div class="pt-6 border-t border-slate-50 flex justify-between items-center mt-auto">
+                    <span class="text-xs font-bold text-slate-400">Status</span>
+                    <span class="text-xs font-black text-emerald-500 uppercase tracking-widest">Optimal</span>
+                </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="bg-white p-10 rounded-[2.5rem] border-2 border-purple-100 shadow-xl shadow-purple-50 relative transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                <div class="absolute -top-4 left-10 bg-[#8E2DE2] text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg shadow-purple-200 z-10">
+                    Strategic Window
+                </div>
+                <div class="w-12 h-12 rounded-2xl bg-purple-50 flex items-center justify-center mb-8 text-[#8E2DE2]">
+                    <i data-lucide="trending-up" class="w-6 h-6"></i>
+                </div>
+                <div class="mb-6 flex-grow">
+                    <span class="text-[10px] font-black uppercase text-purple-400 tracking-widest block mb-2">Stage 2 (Years 3-4)</span>
+                    <h3 class="text-2xl font-bold mb-4 text-left">The Maintenance Tax</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed text-left">
+                        <strong>Fact:</strong> The net benefit of the system to the firm turns negative after five years. Maintenance obligations now exceed new feature value.
+                    </p>
+                </div>
+                <div class="pt-6 border-t border-purple-50 flex justify-between items-center mt-auto">
+                    <span class="text-xs font-bold text-slate-400">Action</span>
+                    <span class="text-xs font-black text-[#8E2DE2] uppercase tracking-widest">Optimize</span>
+                </div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="bg-slate-900 p-10 rounded-[2.5rem] text-white flex flex-col transition-all duration-300 hover:-translate-y-2">
+                <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-8 text-white/50">
+                    <i data-lucide="lock" class="w-6 h-6"></i>
+                </div>
+                <div class="mb-6 flex-grow">
+                    <span class="text-[10px] font-black uppercase text-white/30 tracking-widest block mb-2 text-left">Stage 3 (Year 5+)</span>
+                    <h3 class="text-2xl font-bold mb-4 text-left">Performance Impairment</h3>
+                    <p class="text-white/60 text-sm leading-relaxed text-left">
+                        <strong>Fact:</strong> A 10% increase in technical debt reduces GROA (Gross Return on Assets) by 16%. Innovation halts as resources shift to fixing disruptions.
+                    </p>
+                </div>
+                <div class="pt-6 border-t border-white/5 flex justify-between items-center mt-auto">
+                    <span class="text-xs font-bold text-white/30">Status</span>
+                    <span class="text-xs font-black text-slate-400 uppercase tracking-widest">Critical</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-16 text-center">
+            <p class="text-slate-400 text-sm font-bold italic mb-8">
+                "Technical debt negatively affects Return on Assets (ROA) and sales growth." (Banker et al.)
+            </p>
+            <button class="bg-purple-gradient text-white px-10 py-4 rounded-2xl font-bold flex items-center gap-3 hover:scale-105 transition-all mx-auto group shadow-lg shadow-purple-200">
+                Assess Your Inflection Point 
+                <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+            </button>
+        </div>
+    </div>
+
+  <!-- SCRIPT: Trigger Chart Animations on Scroll
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Simple Intersection Observer to animate bars when scrolled into view
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const bars = entry.target.querySelectorAll('#lifecycle-chart-bars > div');
+            bars.forEach(bar => {
+              // Read the data-height attribute and apply it to the style
+              const targetHeight = bar.getAttribute('data-height');
+              bar.style.height = targetHeight;
+            });
+            // Stop observing once animated
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      const chartContainer = document.querySelector('#crm-lifecycle-section');
+      if (chartContainer) observer.observe(chartContainer);
+    });
+  </script>
+-->
+</section>
+
+==========================================
+FILE PATH: ./_layouts/index.html
+==========================================
+---
+layout: default
+title: ApexPalantir | Salesforce Technical Architects
+---
+
+{% include hero.html %}
+{% include logo_strip.html %}
+{% include lifecycle_paradox.html %}
+{% include debt_hook.html %}
+{% include services.html %}
+{% include revenue_velocity.html %}
+
+==========================================
+FILE PATH: ./_layouts/default.html
+==========================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  
+  <!-- Tailwind Output -->
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  
+  <!-- Fonts & Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-white text-slate-900 selection:bg-purple-100">
+
+  {% include header.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Scroll Logic (Glass Effect)
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-slate-100', 'shadow-sm', 'py-3');
+        navbar.classList.remove('py-4', 'bg-white');
+      } else {
+        navbar.classList.remove('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-slate-100', 'shadow-sm', 'py-3');
+        navbar.classList.add('py-4', 'bg-white');
+      }
+    });
+  </script>
+</body>
+</html>
+
+==========================================
+FILE PATH: ./index.md
+==========================================
+---
+layout: default
+title: ApexPalantir | Salesforce Technical Architects
+---
+
+{% include hero.html %}
+{% include logo_strip.html %}
+{% include crm_lifecycle.html %}
+{% include debt_hook.html %}
+{% include services.html %}
+{% include revenue_velocity.html %}
+
+==========================================
+FILE PATH: ./_config.yml
+==========================================
+title: ApexPalantir
+description: "Salesforce Technical Architects"
+url: ""
+baseurl: ""
+theme: minima
+plugins:
+  - jekyll-seo-tag
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+
+==========================================
+FILE PATH: ./_sass/base.scss
+==========================================
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+
+==========================================
+FILE PATH: ./assets/css/tailwind.css
+==========================================
+/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-yellow-400: oklch(85.2% 0.199 91.936);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-emerald-500: oklch(69.6% 0.17 162.48);
+    --color-emerald-600: oklch(59.6% 0.145 163.225);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-purple-50: oklch(97.7% 0.014 308.299);
+    --color-purple-100: oklch(94.6% 0.033 307.174);
+    --color-purple-200: oklch(90.2% 0.063 306.703);
+    --color-purple-300: oklch(82.7% 0.119 306.383);
+    --color-purple-400: oklch(71.4% 0.203 305.504);
+    --color-purple-500: oklch(62.7% 0.265 303.9);
+    --color-purple-600: oklch(55.8% 0.288 302.321);
+    --color-purple-700: oklch(49.6% 0.265 301.924);
+    --color-purple-900: oklch(38.1% 0.176 304.987);
+    --color-slate-50: oklch(98.4% 0.003 247.858);
+    --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-slate-200: oklch(92.9% 0.013 255.508);
+    --color-slate-400: oklch(70.4% 0.04 256.788);
+    --color-slate-500: oklch(55.4% 0.046 257.417);
+    --color-slate-600: oklch(44.6% 0.043 257.281);
+    --color-slate-700: oklch(37.2% 0.044 257.287);
+    --color-slate-800: oklch(27.9% 0.041 260.031);
+    --color-slate-900: oklch(20.8% 0.042 265.755);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-lg: 32rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-5xl: 64rem;
+    --container-7xl: 80rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+    --tracking-tighter: -0.05em;
+    --tracking-tight: -0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
+    --leading-tight: 1.25;
+    --leading-relaxed: 1.625;
+    --radius-sm: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --blur-md: 12px;
+    --blur-lg: 16px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --container-navbar: 90rem;
+    --animate-infinite-scroll: infinite-scroll 30s linear infinite;
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .-top-4 {
+    top: calc(var(--spacing) * -4);
+  }
+  .-top-6 {
+    top: calc(var(--spacing) * -6);
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-full {
+    top: 100%;
+  }
+  .-right-6 {
+    right: calc(var(--spacing) * -6);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .-bottom-6 {
+    bottom: calc(var(--spacing) * -6);
+  }
+  .-left-20 {
+    left: calc(var(--spacing) * -20);
+  }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
+  }
+  .left-10 {
+    left: calc(var(--spacing) * 10);
+  }
+  .-z-10 {
+    z-index: calc(10 * -1);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
+  .mt-0\.5 {
+    margin-top: calc(var(--spacing) * 0.5);
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-auto {
+    margin-top: auto;
+  }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
+  .mb-24 {
+    margin-bottom: calc(var(--spacing) * 24);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline {
+    display: inline;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .table {
+    display: table;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-1\.5 {
+    height: calc(var(--spacing) * 1.5);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-3\.5 {
+    height: calc(var(--spacing) * 3.5);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+  .h-\[10\%\] {
+    height: 10%;
+  }
+  .h-\[12\%\] {
+    height: 12%;
+  }
+  .h-\[30\%\] {
+    height: 30%;
+  }
+  .h-\[50\%\] {
+    height: 50%;
+  }
+  .h-\[55\%\] {
+    height: 55%;
+  }
+  .h-\[75\%\] {
+    height: 75%;
+  }
+  .h-\[80\%\] {
+    height: 80%;
+  }
+  .h-\[90\%\] {
+    height: 90%;
+  }
+  .h-\[95\%\] {
+    height: 95%;
+  }
+  .h-auto {
+    height: auto;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\/3 {
+    width: calc(2/3 * 100%);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\.5 {
+    width: calc(var(--spacing) * 3.5);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
+  .w-\[18px\] {
+    width: 18px;
+  }
+  .w-\[32\%\] {
+    width: 32%;
+  }
+  .w-\[42\%\] {
+    width: 42%;
+  }
+  .w-\[54\%\] {
+    width: 54%;
+  }
+  .w-\[78\%\] {
+    width: 78%;
+  }
+  .w-\[92\%\] {
+    width: 92%;
+  }
+  .w-\[600px\] {
+    width: 600px;
+  }
+  .w-auto {
+    width: auto;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
+  }
+  .max-w-7xl {
+    max-width: var(--container-7xl);
+  }
+  .max-w-\[200px\] {
+    max-width: 200px;
+  }
+  .max-w-lg {
+    max-width: var(--container-lg);
+  }
+  .max-w-navbar {
+    max-width: var(--container-navbar);
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .origin-top-left {
+    transform-origin: 0 0;
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-infinite-scroll {
+    animation: var(--animate-infinite-scroll);
+  }
+  .animate-pulse {
+    animation: var(--animate-pulse);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .resize {
+    resize: both;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-8 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-10 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 10) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .gap-x-8 {
+    column-gap: calc(var(--spacing) * 8);
+  }
+  .gap-y-4 {
+    row-gap: calc(var(--spacing) * 4);
+  }
+  .self-end {
+    align-self: flex-end;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-\[2\.5rem\] {
+    border-radius: 2.5rem;
+  }
+  .rounded-\[3rem\] {
+    border-radius: 3rem;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-t-sm {
+    border-top-left-radius: var(--radius-sm);
+    border-top-right-radius: var(--radius-sm);
+  }
+  .rounded-l-\[100px\] {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-y {
+    border-block-style: var(--tw-border-style);
+    border-block-width: 1px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-l {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
+  .border-purple-50 {
+    border-color: var(--color-purple-50);
+  }
+  .border-purple-100 {
+    border-color: var(--color-purple-100);
+  }
+  .border-purple-500 {
+    border-color: var(--color-purple-500);
+  }
+  .border-purple-500\/20 {
+    border-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-purple-500) 20%, transparent);
+    }
+  }
+  .border-purple-500\/30 {
+    border-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-purple-500) 30%, transparent);
+    }
+  }
+  .border-slate-50 {
+    border-color: var(--color-slate-50);
+  }
+  .border-slate-100 {
+    border-color: var(--color-slate-100);
+  }
+  .border-slate-200 {
+    border-color: var(--color-slate-200);
+  }
+  .border-white {
+    border-color: var(--color-white);
+  }
+  .border-white\/5 {
+    border-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .border-white\/10 {
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .border-white\/20 {
+    border-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .bg-\[\#0A0A0B\] {
+    background-color: #0A0A0B;
+  }
+  .bg-\[\#8E2DE2\] {
+    background-color: #8E2DE2;
+  }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
+  .bg-green-500\/50 {
+    background-color: color-mix(in srgb, oklch(72.3% 0.219 149.579) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-green-500) 50%, transparent);
+    }
+  }
+  .bg-purple-50 {
+    background-color: var(--color-purple-50);
+  }
+  .bg-purple-100 {
+    background-color: var(--color-purple-100);
+  }
+  .bg-purple-200 {
+    background-color: var(--color-purple-200);
+  }
+  .bg-purple-300 {
+    background-color: var(--color-purple-300);
+  }
+  .bg-purple-400 {
+    background-color: var(--color-purple-400);
+  }
+  .bg-purple-500 {
+    background-color: var(--color-purple-500);
+  }
+  .bg-purple-500\/10 {
+    background-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-purple-500) 10%, transparent);
+    }
+  }
+  .bg-purple-500\/20 {
+    background-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-purple-500) 20%, transparent);
+    }
+  }
+  .bg-purple-600 {
+    background-color: var(--color-purple-600);
+  }
+  .bg-purple-600\/20 {
+    background-color: color-mix(in srgb, oklch(55.8% 0.288 302.321) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-purple-600) 20%, transparent);
+    }
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
+  .bg-red-500\/50 {
+    background-color: color-mix(in srgb, oklch(63.7% 0.237 25.331) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+    }
+  }
+  .bg-slate-50 {
+    background-color: var(--color-slate-50);
+  }
+  .bg-slate-50\/50 {
+    background-color: color-mix(in srgb, oklch(98.4% 0.003 247.858) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-50) 50%, transparent);
+    }
+  }
+  .bg-slate-100 {
+    background-color: var(--color-slate-100);
+  }
+  .bg-slate-200 {
+    background-color: var(--color-slate-200);
+  }
+  .bg-slate-800 {
+    background-color: var(--color-slate-800);
+  }
+  .bg-slate-900 {
+    background-color: var(--color-slate-900);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-white\/5 {
+    background-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .bg-white\/80 {
+    background-color: color-mix(in srgb, #fff 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 80%, transparent);
+    }
+  }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
+  }
+  .bg-yellow-500\/50 {
+    background-color: color-mix(in srgb, oklch(79.5% 0.184 86.047) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-yellow-500) 50%, transparent);
+    }
+  }
+  .bg-gradient-to-br {
+    --tw-gradient-position: to bottom right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-blue-500 {
+    --tw-gradient-from: var(--color-blue-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-purple-600 {
+    --tw-gradient-from: var(--color-purple-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-purple-600\/20 {
+    --tw-gradient-from: color-mix(in srgb, oklch(55.8% 0.288 302.321) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-purple-600) 20%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-purple-500 {
+    --tw-gradient-to: var(--color-purple-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-transparent {
+    --tw-gradient-to: transparent;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-2\.5 {
+    padding-block: calc(var(--spacing) * 2.5);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-32 {
+    padding-top: calc(var(--spacing) * 32);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[8px\] {
+    font-size: 8px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .leading-\[0\.9\] {
+    --tw-leading: 0.9;
+    line-height: 0.9;
+  }
+  .leading-\[1\.1\] {
+    --tw-leading: 1.1;
+    line-height: 1.1;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[0\.2em\] {
+    --tw-tracking: 0.2em;
+    letter-spacing: 0.2em;
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .tracking-tighter {
+    --tw-tracking: var(--tracking-tighter);
+    letter-spacing: var(--tracking-tighter);
+  }
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  .text-\[\#8E2DE2\] {
+    color: #8E2DE2;
+  }
+  .text-blue-600 {
+    color: var(--color-blue-600);
+  }
+  .text-emerald-500 {
+    color: var(--color-emerald-500);
+  }
+  .text-emerald-600 {
+    color: var(--color-emerald-600);
+  }
+  .text-purple-200 {
+    color: var(--color-purple-200);
+  }
+  .text-purple-400 {
+    color: var(--color-purple-400);
+  }
+  .text-purple-600 {
+    color: var(--color-purple-600);
+  }
+  .text-purple-700 {
+    color: var(--color-purple-700);
+  }
+  .text-red-400 {
+    color: var(--color-red-400);
+  }
+  .text-slate-400 {
+    color: var(--color-slate-400);
+  }
+  .text-slate-500 {
+    color: var(--color-slate-500);
+  }
+  .text-slate-600 {
+    color: var(--color-slate-600);
+  }
+  .text-slate-700 {
+    color: var(--color-slate-700);
+  }
+  .text-slate-800 {
+    color: var(--color-slate-800);
+  }
+  .text-slate-900 {
+    color: var(--color-slate-900);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .text-white\/30 {
+    color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .text-white\/40 {
+    color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+  }
+  .text-white\/50 {
+    color: color-mix(in srgb, #fff 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 50%, transparent);
+    }
+  }
+  .text-white\/60 {
+    color: color-mix(in srgb, #fff 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 60%, transparent);
+    }
+  }
+  .text-yellow-400 {
+    color: var(--color-yellow-400);
+  }
+  .text-yellow-500 {
+    color: var(--color-yellow-500);
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .not-italic {
+    font-style: normal;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .opacity-10 {
+    opacity: 10%;
+  }
+  .opacity-30 {
+    opacity: 30%;
+  }
+  .opacity-40 {
+    opacity: 40%;
+  }
+  .shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_10px_rgba\(168\,85\,247\,0\.5\)\] {
+    --tw-shadow: 0 0 10px var(--tw-shadow-color, rgba(168,85,247,0.5));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-inner {
+    --tw-shadow: inset 0 2px 4px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-purple-50 {
+    --tw-shadow-color: oklch(97.7% 0.014 308.299);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-purple-50) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .shadow-purple-200 {
+    --tw-shadow-color: oklch(90.2% 0.063 306.703);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-purple-200) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .shadow-purple-900 {
+    --tw-shadow-color: oklch(38.1% 0.176 304.987);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-purple-900) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .shadow-purple-900\/40 {
+    --tw-shadow-color: color-mix(in srgb, oklch(38.1% 0.176 304.987) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-purple-900) 40%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .grayscale {
+    --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .backdrop-blur-lg {
+    --tw-backdrop-blur: blur(var(--blur-lg));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-filter {
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .will-change-transform {
+    will-change: transform;
+  }
+  .text-gradient {
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .bg-purple-gradient {
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  }
+  .group-hover\:translate-x-1 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-translate-x: calc(var(--spacing) * 1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .group-hover\:scale-105 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:scale-110 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:border-purple-600 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        border-color: var(--color-purple-600);
+      }
+    }
+  }
+  .group-hover\:bg-purple-600 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: var(--color-purple-600);
+      }
+    }
+  }
+  .group-hover\:text-purple-400 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-purple-400);
+      }
+    }
+  }
+  .group-hover\:text-white {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .group-hover\/item\:bg-purple-600 {
+    &:is(:where(.group\/item):hover *) {
+      @media (hover: hover) {
+        background-color: var(--color-purple-600);
+      }
+    }
+  }
+  .group-hover\/item\:text-white {
+    &:is(:where(.group\/item):hover *) {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .selection\:bg-purple-100 {
+    & *::selection {
+      background-color: var(--color-purple-100);
+    }
+    &::selection {
+      background-color: var(--color-purple-100);
+    }
+  }
+  .hover\:-translate-y-2 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * -2);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .hover\:scale-105 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-\[1\.01\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.01;
+      }
+    }
+  }
+  .hover\:border-purple-200 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-purple-200);
+      }
+    }
+  }
+  .hover\:border-purple-600 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-purple-600);
+      }
+    }
+  }
+  .hover\:border-slate-100 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-slate-100);
+      }
+    }
+  }
+  .hover\:bg-purple-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-purple-50);
+      }
+    }
+  }
+  .hover\:bg-purple-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-purple-500);
+      }
+    }
+  }
+  .hover\:bg-purple-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-purple-600);
+      }
+    }
+  }
+  .hover\:bg-slate-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-50);
+      }
+    }
+  }
+  .hover\:bg-slate-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-100);
+      }
+    }
+  }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-purple-400 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-purple-400);
+      }
+    }
+  }
+  .hover\:text-purple-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-purple-600);
+      }
+    }
+  }
+  .hover\:text-purple-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-purple-700);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .hover\:opacity-90 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 90%;
+      }
+    }
+  }
+  .hover\:shadow-2xl {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-lg {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-xl {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-purple-100\/30 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow-color: color-mix(in srgb, oklch(94.6% 0.033 307.174) 30%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-purple-100) 30%, transparent) var(--tw-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-4 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:items-end {
+    @media (width >= 48rem) {
+      align-items: flex-end;
+    }
+  }
+  .md\:px-12 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:text-3xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .md\:text-5xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .md\:text-7xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .md\:text-8xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
+  }
+}
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+.group:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+.group:hover .chevron-icon {
+  transform: rotate(180deg);
+}
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-purple-gradient {
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+    }
+  }
+}
+
+
+==========================================
+FILE PATH: ./assets/css/input.css
+==========================================
+@import "tailwindcss";
+
+@theme {
+  /* Font Family Override */
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  /* Custom Container Widths */
+  --container-navbar: 90rem;
+
+  /* Custom Animations */
+  --animate-infinite-scroll: infinite-scroll 30s linear infinite;
+
+  @keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+/* Custom Utilities */
+@utility text-gradient {
+  background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility bg-purple-gradient {
+  background: linear-gradient(to right, #8E2DE2, #4A00E0);
+}
+
+/* Component Logic (Dropdowns) */
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+.group:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+.group:hover .chevron-icon {
+  transform: rotate(180deg);
+}
+
+@layer utilities {
+  /* High-fidelity gradient text utility */
+  .text-gradient {
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Primary action gradient */
+  .bg-purple-gradient {
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  }
+}
+
+
+==========================================
+FILE PATH: ./assets/css/main.scss
+==========================================
+---
+---
+
+@import "base";
+

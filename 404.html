@@ -1,0 +1,107 @@
+---
+layout: default
+title: 404 - Page Not Found | ApexPalantir
+permalink: /404.html
+---
+
+<section class="min-h-screen pt-32 pb-24 px-6 bg-slate-50 flex items-center">
+    <div class="max-w-7xl mx-auto text-center w-full">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-100 text-sm font-semibold mb-8">
+            <span class="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span>
+            Error 404
+        </div>
+
+        <div class="mb-12">
+            <h1 class="text-8xl md:text-9xl font-black text-slate-900 mb-4 tracking-tight">404</h1>
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Page Not Found</h2>
+        </div>
+
+        <div class="max-w-2xl mx-auto mb-12">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-8">
+                <p class="text-xl text-slate-600 leading-relaxed mb-4">
+                    Looks like this page got lost somewhere between
+                    <span class="text-gradient font-bold">dev</span>,
+                    <span class="text-gradient font-bold">staging</span>, and
+                    <span class="text-gradient font-bold">production</span>.
+                </p>
+                <p class="text-lg text-slate-500 italic">
+                    Even our technical architects couldn't find this one.
+                </p>
+            </div>
+
+            <div class="bg-slate-900 text-white p-6 rounded-xl font-mono text-left text-sm mb-8">
+                <div class="flex items-start gap-2 mb-2">
+                    <span class="text-purple-400">$</span>
+                    <span class="text-slate-300">locate --page "<span class="text-green-400">{{ page.url }}</span>"</span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <span class="text-red-400">✗</span>
+                    <span class="text-slate-400">Error: Resource not found in any environment</span>
+                </div>
+                <div class="flex items-start gap-2 mt-4">
+                    <span class="text-yellow-400">!</span>
+                    <span class="text-slate-400">Suggestion: Try navigating to a valid endpoint below</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto mb-12">
+            <p class="text-slate-600 mb-6 font-medium">Here's where you might actually want to go:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="/" class="group bg-white p-6 rounded-xl border-2 border-slate-200 hover:border-purple-400 transition-all hover:shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class="text-left">
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-purple-600 transition-colors">Home</h3>
+                            <p class="text-sm text-slate-500">Back to the foundation</p>
+                        </div>
+                        <i data-lucide="home" class="w-6 h-6 text-slate-400 group-hover:text-purple-600 transition-colors"></i>
+                    </div>
+                </a>
+
+                <a href="/services" class="group bg-white p-6 rounded-xl border-2 border-slate-200 hover:border-purple-400 transition-all hover:shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class="text-left">
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-purple-600 transition-colors">Services</h3>
+                            <p class="text-sm text-slate-500">What we actually do</p>
+                        </div>
+                        <i data-lucide="briefcase" class="w-6 h-6 text-slate-400 group-hover:text-purple-600 transition-colors"></i>
+                    </div>
+                </a>
+
+                <a href="/about" class="group bg-white p-6 rounded-xl border-2 border-slate-200 hover:border-purple-400 transition-all hover:shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class="text-left">
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-purple-600 transition-colors">About</h3>
+                            <p class="text-sm text-slate-500">Who we are</p>
+                        </div>
+                        <i data-lucide="users" class="w-6 h-6 text-slate-400 group-hover:text-purple-600 transition-colors"></i>
+                    </div>
+                </a>
+
+                <a href="/blog" class="group bg-white p-6 rounded-xl border-2 border-slate-200 hover:border-purple-400 transition-all hover:shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class="text-left">
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-purple-600 transition-colors">Blog</h3>
+                            <p class="text-sm text-slate-500">Engineering insights</p>
+                        </div>
+                        <i data-lucide="book-open" class="w-6 h-6 text-slate-400 group-hover:text-purple-600 transition-colors"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="pt-8">
+            <p class="text-sm text-slate-500 mb-4">Still can't find what you're looking for?</p>
+            <a href="mailto:info@apexpalantir.com" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full font-bold hover:shadow-xl hover:scale-105 transition-all">
+                <span>Get in Touch</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+
+        <div class="mt-16 pt-8 border-t border-slate-200">
+            <p class="text-xs text-slate-400 font-mono">
+                // TODO: Implement better error handling in production 🚀
+            </p>
+        </div>
+    </div>
+</section>
