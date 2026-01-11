@@ -32,3 +32,5 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
+  - catalog
+  - GEMINI_SERVICE_CATALOG_PROMPT.md

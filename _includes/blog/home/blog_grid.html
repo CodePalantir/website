@@ -5,7 +5,7 @@
 
             {% for post in site.posts offset:1 limit:9 %}
             <!-- POST {{ forloop.index }} -->
-            <a href="{{ post.url }}" class="group cursor-pointer">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="group cursor-pointer">
                     <div class="aspect-[4/3] {% cycle 'bg-purple-50/50', 'bg-slate-50', 'bg-purple-50/50' %} rounded-3xl mb-6 border {% cycle 'border-purple-50', 'border-slate-100', 'border-purple-50' %} overflow-hidden relative flex items-center justify-center transition-colors {% cycle 'hover:bg-purple-100/50', 'hover:bg-slate-100', 'hover:bg-purple-100/50' %}">
                         <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm">
                         <i data-lucide="{{ post.hero_icon }}" class="w-8 h-8 {% cycle 'text-purple-400', 'text-slate-400', 'text-purple-400' %}"></i>

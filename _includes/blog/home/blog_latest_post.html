@@ -4,7 +4,7 @@
     <div class="max-w-7xl mx-auto">
     <div class="grid md:grid-cols-2 gap-12 items-center">
         <!-- Conceptual Abstract Art Container -->
-        <a href="{{ latest_post.url }}" class="aspect-[16/9] bg-slate-50 rounded-[2.5rem] overflow-hidden border border-slate-100 relative group cursor-pointer pattern-grid flex items-center justify-center">
+        <a href="{{ site.baseurl }}{{ latest_post.url }}" class="aspect-[16/9] bg-slate-50 rounded-[2.5rem] overflow-hidden border border-slate-100 relative group cursor-pointer pattern-grid flex items-center justify-center">
                 <div class="absolute inset-0 bg-gradient-to-tr from-purple-100/50 to-transparent"></div>
                 <div class="relative w-32 h-32 bg-white rounded-3xl shadow-xl flex items-center justify-center border border-slate-50 transform group-hover:scale-110 transition-transform duration-500">
                     <i data-lucide="{{ latest_post.hero_icon }}" class="w-12 h-12 text-[#8E2DE2]"></i>
@@ -16,11 +16,11 @@
                 <span>•</span>
                 <span>{{ latest_post.category }}</span>
             </div>
-            <a href="{{ latest_post.url }}"><h2 class="text-4xl font-black text-slate-900 mb-6 leading-tight hover:text-purple-600 transition-colors cursor-pointer">{{ latest_post.title }}</h2></a>
+            <a href="{{ site.baseurl }}{{ latest_post.url }}"><h2 class="text-4xl font-black text-slate-900 mb-6 leading-tight hover:text-purple-600 transition-colors cursor-pointer">{{ latest_post.title }}</h2></a>
             <p class="text-lg text-slate-600 mb-8 leading-relaxed">
                 {{ latest_post.excerpt | strip_html | truncatewords: 30 }}
             </p>
-            <a href="{{ latest_post.url }}" class="text-[#8E2DE2] font-bold flex items-center gap-2 hover:gap-4 transition-all">
+            <a href="{{ site.baseurl }}{{ latest_post.url }}" class="text-[#8E2DE2] font-bold flex items-center gap-2 hover:gap-4 transition-all">
                 Read the Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
         </div>
