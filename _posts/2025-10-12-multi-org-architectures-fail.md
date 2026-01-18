@@ -80,9 +80,9 @@ Move one business unit at a time to minimize disruption and prove ROI incrementa
 The payoff? One client went from four orgs to one and saw forecast accuracy improve from 62% to 89% within two quarters.
 
 <div class="my-12 p-8 bg-[#0A0A0B] rounded-3xl text-white text-center">
-    <h3 class="text-2xl font-bold mb-4">Drowning in Multi-Org Complexity?</h3>
-    <p class="text-slate-400 mb-6">Get a free consolidation feasibility assessment for your Salesforce ecosystem.</p>
-    <button class="bg-[#8E2DE2] hover:bg-[#7a25c6] text-white px-8 py-3 rounded-full font-bold transition-all w-full md:w-auto">
+    <h3 class="text-2xl font-bold text-purple-400 mb-4">Drowning in Multi-Org Complexity?</h3>
+    <p class="text-slate-300 mb-6">Get a free consolidation feasibility assessment for your Salesforce ecosystem.</p>
+    <a href="mailto:info@apexpalantir.com?subject=Multi-Org%20Assessment%20Request" class="bg-[#8E2DE2] hover:bg-[#7a25c6] text-white px-8 py-3 rounded-full font-bold transition-all inline-block cursor-pointer">
         Schedule Assessment
-    </button>
+    </a>
 </div>

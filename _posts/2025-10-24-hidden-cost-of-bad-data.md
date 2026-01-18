@@ -57,8 +57,8 @@ In data quality management, the 1-10-100 rule is a widely accepted concept that 
     </div>
     <div class="article-stat-box col-span-2 bg-slate-900 border-slate-800">
         <p class="text-3xl font-black text-white mb-1">$100</p>
-        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Failure</p>
-        <p class="text-xs text-slate-500 mt-2">Cost of lost revenue & churn</p>
+        <p class="text-xs text-red-400 uppercase font-bold tracking-widest">Failure</p>
+        <p class="text-xs text-slate-300 mt-2">Cost of lost revenue & churn</p>
     </div>
 </div>
 
