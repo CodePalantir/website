@@ -1,5 +1,5 @@
 <!-- Service Grid -->
-<section class="py-20 px-6 bg-white">
+<section class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
     <div class="max-w-7xl mx-auto">
         {% for category in site.data.services.categories %}
         <!-- Category Section -->
@@ -7,7 +7,7 @@
             <h3 class="text-2xl font-bold text-slate-900">{{ forloop.index | prepend: '0' }}. {{ category.name }}</h3>
             <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">{{ category.pricing_type }}</span>
         </div>
-        <div class="grid md:grid-cols-3 gap-8 mb-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20">
             {% for service in category.services %}
                 {% if service.special_styling == 'featured' %}
                 <!-- Featured Service: {{ service.title }} -->

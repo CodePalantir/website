@@ -1,7 +1,7 @@
 <!-- POSTS GRID -->
-<section class="py-24 px-6 bg-white">
+<section class="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-white">
     <div class="max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-x-8 gap-y-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8 sm:gap-x-8 sm:gap-y-12 md:gap-y-16">
 
             {% for post in site.posts offset:1 limit:9 %}
             <!-- POST {{ forloop.index }} -->
@@ -16,7 +16,7 @@
                     <span>•</span>
                     <span>{{ post.category }}</span>
                 </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-purple-600 transition-colors">{{ post.title }}</h3>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-3 group-hover:text-purple-600 transition-colors">{{ post.title }}</h3>
                     <p class="text-slate-500 text-sm leading-relaxed mb-4">
                         {{ post.excerpt | strip_html | truncatewords: 25 }}
                     </p>
