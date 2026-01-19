@@ -1,5 +1,5 @@
 title: ApexPalantir
-description: "Salesforce Technical Architects building robust, scalable architectures for sustained growth"
+description: "Salesforce Experts building robust, scalable solutions for sustained growth"
 url: "https://codepalantir.github.io"
 baseurl: "/website"
 theme: minima
@@ -13,7 +13,7 @@ author:
 social:
   name: ApexPalantir
   links:
-    - https://www.linkedin.com/company/apexpalantir
+    - https://www.linkedin.com/company/apexpalantir/
 
 # Clean URL structure for blog posts
 permalink: /blog/:title/

@@ -41,7 +41,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
                     Germany
                 </p>
                 <p class="text-slate-600 leading-relaxed">
-                    <strong class="text-slate-900">Phone:</strong> +49 173 237 518 3<br/>
+                    <strong class="text-slate-900">Phone:</strong> +49 221 2929 7318<br/>
                     <strong class="text-slate-900">Email:</strong> <a href="mailto:privacy@apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">privacy@apexpalantir.com</a>
                 </p>
             </div>
@@ -235,7 +235,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
                 </p>
                 <p class="text-slate-600 leading-relaxed">
                     <strong class="text-slate-900">Email:</strong> <a href="mailto:privacy@apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">privacy@apexpalantir.com</a><br/>
-                    <strong class="text-slate-900">Phone:</strong> +49 173 237 518 3<br/>
+                    <strong class="text-slate-900">Phone:</strong> +49 221 2929 7318<br/>
                     <strong class="text-slate-900">Mail:</strong> ApexPalantir, [Complete Address]
                 </p>
             </div>
