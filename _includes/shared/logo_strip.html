@@ -12,14 +12,23 @@
 
   <script>
   (function() {
+    // Respect reduced motion preference
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
     const scrollContainer = document.querySelector('.logo-scroll');
+    if (!scrollContainer) return;
+
     const scrollContent = scrollContainer.innerHTML;
     scrollContainer.innerHTML = scrollContent + scrollContent + scrollContent;
 
     let scrollAmount = 0;
     const scrollSpeed = 0.5;
+    let isVisible = false;
+    let animationId = null;
 
     function animate() {
+      if (!isVisible) return;
+
       scrollAmount += scrollSpeed;
       const maxScroll = scrollContainer.scrollWidth / 3;
 
@@ -28,10 +37,23 @@
       }
 
       scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
-      requestAnimationFrame(animate);
+      animationId = requestAnimationFrame(animate);
     }
 
-    animate();
+    // Use IntersectionObserver to only animate when visible
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        isVisible = entry.isIntersecting;
+        if (isVisible && !animationId) {
+          animationId = requestAnimationFrame(animate);
+        } else if (!isVisible && animationId) {
+          cancelAnimationFrame(animationId);
+          animationId = null;
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(scrollContainer.parentElement);
   })();
   </script>
 </section>

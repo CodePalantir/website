@@ -11,13 +11,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
 
+  <!-- Preload critical resources for faster rendering -->
+  <link rel="preload" href="{{ '/assets/css/tailwind.css' | relative_url }}" as="style">
+  <link rel="preload" href="{{ '/assets/fonts/plus-jakarta-sans.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+
   <!-- Tailwind Output -->
   <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | relative_url }}">
-
-  <!-- Preconnect for Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://unpkg.com">
 
   <!-- Preconnect for external images (team photos) -->
   <link rel="dns-prefetch" href="https://media.licdn.com">
@@ -25,12 +24,12 @@
   <link rel="preconnect" href="https://media.licdn.com" crossorigin>
   <link rel="preconnect" href="https://i.pravatar.cc" crossorigin>
 
-  <!-- Preload critical logo -->
-  <link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_LARGE.png' | relative_url }}">
+  <!-- Preload critical logo (mobile gets smaller version) -->
+  <link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_MOBILE.webp' | relative_url }}" media="(max-width: 767px)">
+  <link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_72ppi.png' | relative_url }}" media="(min-width: 768px)">
 
-  <!-- Fonts & Icons -->
-  <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Icons (fonts now self-hosted in tailwind.css) -->
+  <script src="{{ '/assets/js/lucide.min.js' | relative_url }}" defer></script>
 
   <!-- Fathom - beautiful, simple website analytics -->
   <script src="https://cdn.usefathom.com/script.js" data-site="SSUCTAAP" defer></script>
@@ -47,10 +46,12 @@
   {% include shared/footer.html %}
 
   <script>
-    // Initialize Lucide Icons
-    if (typeof lucide !== 'undefined') {
-      lucide.createIcons();
-    }
+    // Initialize Lucide Icons (after deferred script loads)
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
 
     // Scroll Logic (Glass Effect)
     const navbar = document.getElementById('navbar');

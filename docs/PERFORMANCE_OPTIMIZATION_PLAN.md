@@ -486,3 +486,49 @@ After implementation:
 - 53% of mobile users abandon sites that take >3s to load
 - Current 6.8s LCP is costing you conversions
 - Team images are likely the culprit - prioritize Phase 1.2
+
+---
+
+## Implementation Log
+
+### 2026-01-18: JavaScript Performance Optimizations
+
+#### ✅ Fixed: Infinite RAF Loop in Logo Strip
+**File:** `_includes/shared/logo_strip.html`
+
+- Added `IntersectionObserver` to pause animation when not visible
+- Added `prefers-reduced-motion` support for accessibility
+- Animation now only runs at 60fps when element is in viewport
+- **Impact:** Significant CPU/battery savings on mobile devices
+
+#### ✅ Fixed: Consolidated Scroll Handlers
+**File:** `_layouts/default.html`
+
+- Merged 4 separate scroll listeners into 1 consolidated handler
+- Added `{ passive: true }` for better scroll performance
+- Implemented RAF batching to prevent layout thrashing
+- Cached DOM elements to avoid repeated queries
+- Added state tracking to minimize DOM writes
+- **Impact:** Smoother scrolling, reduced jank, better INP scores
+
+#### ✅ Fixed: Duplicate CSS Utilities Removed
+**File:** `assets/css/input.css`
+
+- Removed duplicate gradient utilities from `@layer utilities`
+- Kept Tailwind v4 `@utility` definitions only
+- **Impact:** Smaller CSS output, cleaner codebase
+
+#### ✅ Fixed: Font & Icon Loading Optimization
+**File:** `_layouts/default.html`
+
+- Changed Lucide icons from sync to `defer` loading
+- Added font fallback stack in inline style to reduce CLS
+- Improved Lucide initialization to handle deferred loading
+- **Impact:** Faster First Contentful Paint, no render-blocking JS
+
+### Remaining High-Priority Items
+
+1. **Map Images (7.6MB)** - Replace with SVG or WebP
+2. **Logo Images (1.5MB)** - Convert to WebP format
+3. **Team Images** - Host locally instead of LinkedIn CDN
+4. **Critical CSS** - Extract and inline above-fold styles
