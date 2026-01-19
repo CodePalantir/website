@@ -28,6 +28,11 @@
   <link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_MOBILE.webp' | relative_url }}" media="(max-width: 767px)">
   <link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_72ppi.png' | relative_url }}" media="(min-width: 768px)">
 
+  {% if page.url == '/about' or page.url == '/about/' %}
+  <!-- Preload LCP image for about page -->
+  <link rel="preload" as="image" href="{{ '/assets/images/people/alex-knoll.webp' | relative_url }}" type="image/webp">
+  {% endif %}
+
   <!-- Icons (fonts now self-hosted in tailwind.css) -->
   <script src="{{ '/assets/js/lucide.min.js' | relative_url }}" defer></script>
 
