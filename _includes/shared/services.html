@@ -28,9 +28,9 @@
         <p class="text-slate-600 leading-relaxed mb-6 text-sm">{{ service.homepage_description }} {% if service.url %}<a href="{{ service.url | relative_url }}" class="text-purple-600 font-bold hover:underline">Read full scope.</a>{% else %}<a href="{{ site.baseurl }}/services" class="text-purple-600 font-bold hover:underline">Read full scope.</a>{% endif %}</p>
       </div>
       <div class="p-4 pt-0">
-        <button onclick="window.location.href='#book-call'" class="bg-purple-gradient w-full py-2.5 rounded-xl text-white font-semibold flex items-center justify-center gap-2 shadow-md hover:scale-[1.01] transition-transform text-sm cursor-pointer">
+        <a href="{{ service.calendly }}" target="_blank" rel="noopener noreferrer" class="bg-purple-gradient w-full py-2.5 rounded-xl text-white font-semibold flex items-center justify-center gap-2 shadow-md hover:scale-[1.01] transition-transform text-sm cursor-pointer">
           Book a Call
-        </button>
+        </a>
       </div>
     </div>
         {% endif %}

@@ -15,6 +15,7 @@ categories:
         homepage_tagline: "Protect Your Investment"
         homepage_description: "We identify the hidden technical debt slowing down your Sales and Marketing teams."
         url: "/services/technical-health-audit"
+        calendly: "https://calendly.com/d/ctr7-n87-4hw/salesforce-technical-health-audit"
 
       - title: "Data Quality Check"
         icon: "database"
@@ -25,6 +26,7 @@ categories:
         cta: "Book This Check"
         show_in_navbar: true
         url: "/services/data-quality-check"
+        calendly: "https://calendly.com/d/cx6s-v9y-7wp/salesforce-data-quality-check"
 
       - title: "GDPR Compliance"
         icon: "shield-alert"
@@ -35,6 +37,7 @@ categories:
         cta: "Book Compliance Check"
         show_in_navbar: true
         url: "/services/gdpr-compliance"
+        calendly: "https://calendly.com/d/cxm4-2s3-bcp/salesforce-gdpr-check"
 
   - name: "Core Cloud Implementation"
     id: "core-cloud"
@@ -49,6 +52,7 @@ categories:
         cta: "Configure Sales Cloud"
         show_in_navbar: true
         url: "/services/sales-cloud-setup"
+        calendly: "https://calendly.com/d/cxhp-73b-c5y/salesforce-sales-cloud-velocity"
 
 
       - title: "Service Cloud Console"
@@ -60,6 +64,7 @@ categories:
         cta: "Setup Service Cloud"
         show_in_navbar: true
         url: "/services/service-cloud-console"
+        calendly: "https://calendly.com/d/ctqn-xnb-4b2/salesforce-service-cloud-console"
 
       - title: "Marketing Cloud"
         icon: "mail"
@@ -70,6 +75,7 @@ categories:
         cta: "Discuss Marketing"
         show_in_navbar: true
         url: "/services/marketing-cloud"
+        calendly: "https://calendly.com/d/cx6d-wj7-9g7/salesforce-marketing-cloud"
 
   - name: "Engineering & Integration"
     id: "engineering"
@@ -88,6 +94,7 @@ categories:
         homepage_tagline: "Accelerate Velocity"
         homepage_description: "Custom-built workflows and integrations that actually work."
         url: "/services/custom-development"
+        calendly: "https://calendly.com/d/ct96-tzf-nvg/salesforce-custom-development"
 
       - title: "System Integrations"
         icon: "plug"
@@ -98,6 +105,7 @@ categories:
         cta: "Discuss Integration"
         show_in_navbar: true
         url: "/services/custom-integration"
+        calendly: "https://calendly.com/d/cxpd-p3r-k5h/salesforce-system-integration"
 
       - title: "Mulesoft Architecture"
         icon: "network"
@@ -108,6 +116,7 @@ categories:
         cta: "Consult Mulesoft"
         show_in_navbar: true
         url: "/services/mulesoft-architecture"
+        calendly: "https://calendly.com/d/ct8w-6qf-2p7/mulesoft"
 
   - name: "Stability & Scale"
     id: "stability"
@@ -124,6 +133,7 @@ categories:
         show_in_navbar: true
         special_styling: "featured"
         url: "/services/managed-support"
+        calendly: "https://calendly.com/d/cxm6-42v-d7d/managed-support"
 
       - title: "Managed Partner"
         icon: "crown"
@@ -138,6 +148,7 @@ categories:
         homepage_description: "Strategic technical leadership for RevOps and CEOs."
         special_styling: "premium"
         url: "/services/managed-partner"
+        calendly: "https://calendly.com/d/ct8z-ypp-bbd/managed-partner"
 
       - title: "Tech Debt Monitor"
         icon: "activity"
