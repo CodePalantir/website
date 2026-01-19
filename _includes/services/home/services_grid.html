@@ -18,7 +18,7 @@
                     <h4 class="text-xl font-bold text-slate-900 mb-1">{{ service.title }}</h4>
                     <p class="text-3xl font-black text-[#8E2DE2] mb-4">{{ service.price }}{% if service.price_suffix %}<span class="text-lg font-bold text-slate-400">{{ service.price_suffix }}</span>{% endif %}</p>
                     <p class="text-sm text-slate-600 leading-relaxed mb-8 flex-grow">
-                        {{ service.description }}
+                        {{ service.description }} <a href="{{ service.url | relative_url }}" class="text-[#8E2DE2] font-bold hover:underline">Read full scope.</a>
                     </p>
                     <button onclick="window.location.href='#book-call'" class="w-full py-4 rounded-xl bg-purple-gradient text-white font-bold shadow-lg shadow-purple-200 hover:opacity-90 transition-all flex items-center justify-center gap-2 cursor-pointer">
                         {{ service.cta }}
@@ -33,7 +33,7 @@
                     <h4 class="text-xl font-bold text-slate-900 mb-1">{{ service.title }}</h4>
                     <p class="text-3xl font-black text-slate-900 mb-4">{{ service.price }}</p>
                     <p class="text-sm text-slate-500 leading-relaxed mb-8 flex-grow">
-                        {{ service.description }}
+                        {{ service.description }} <a href="{{ service.url | relative_url }}" class="text-[#8E2DE2] font-bold hover:underline">Read full scope.</a>
                     </p>
                     <button onclick="window.location.href='#book-call'" class="w-full py-4 rounded-xl border-2 border-slate-900 bg-slate-900 text-white font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 cursor-pointer">
                         {{ service.cta }}
@@ -68,7 +68,7 @@
                     <h4 class="text-xl font-bold text-slate-900 mb-1">{{ service.title }}</h4>
                     <p class="text-3xl font-black text-slate-900 mb-4">{{ service.price }}{% if service.price_suffix %}<span class="text-lg font-bold text-slate-400">{{ service.price_suffix }}</span>{% endif %}</p>
                     <p class="text-sm text-slate-500 leading-relaxed mb-8 flex-grow">
-                        {{ service.description }}
+                        {{ service.description }} <a href="{{ service.url | relative_url }}" class="text-[#8E2DE2] font-bold hover:underline">Read full scope.</a>
                     </p>
                     <button onclick="window.location.href='#book-call'" class="w-full py-4 rounded-xl bg-purple-gradient text-white font-bold shadow-lg shadow-purple-200 hover:opacity-90 transition-all flex items-center justify-center gap-2 cursor-pointer">
                         {{ service.cta }}

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Privacy Policy | ApexPalantir
+description: "ApexPalantir Privacy Policy - GDPR compliant data protection information. Learn how we collect, use, and protect your personal data."
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 <section class="pt-32 pb-24 px-6 bg-slate-50">

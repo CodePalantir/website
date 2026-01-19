@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Legal Notice | ApexPalantir
+title: Legal Notice (Impressum) | ApexPalantir
+description: "ApexPalantir Legal Notice (Impressum) - Company information in accordance with German Telemedia Act (TMG). Contact details and legal information."
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 <section class="pt-32 pb-24 px-6 bg-slate-50">

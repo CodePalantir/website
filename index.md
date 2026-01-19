@@ -1,6 +1,8 @@
 ---
 layout: default
-title: ApexPalantir | Salesforce Technical Architects
+title: ApexPalantir | Salesforce Technical Experts
+description: "Expert Salesforce technical architects delivering health audits, custom development, integrations, and managed support. We transform your CRM into a revenue engine."
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 {% include home/hero.html %}

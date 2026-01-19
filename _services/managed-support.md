@@ -1,6 +1,10 @@
 ---
-layout: default
-title: "Managed Support"
+layout: service
+title: "Managed Support | ApexPalantir"
+description: "The silent backbone of your CRM. We monitor, triage, and resolve user issues, bugs, and permission errors within 24 hours. No ticketing chaos."
+service_type: "Salesforce Managed Support"
+price: "28800"
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 {% include services/support/support_hero.html %}

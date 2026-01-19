@@ -44,7 +44,7 @@ categories:
         icon: "cloud-lightning"
         price: "€5k - €15k"
         price_subtext: ""
-        description: "Turn your CRM into a revenue engine. We configure Pipeline management, Forecasting, and Lead-to-Cash workflows designed for speed."
+        description: "Turn Salesforce into a revenue engine. We configure Pipeline management, Forecasting, and Lead-to-Cash workflows designed for speed."
         short_description: "Pipeline acceleration."
         cta: "Configure Sales Cloud"
         show_in_navbar: true
