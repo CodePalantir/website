@@ -6,344 +6,332 @@
     <title>ApexPalantir - Service Catalog Page 2</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        mono: ['"JetBrains Mono"', 'monospace'],
-                    },
-                    colors: {
-                        slate: {
-                            900: '#0F172A', // Primary Dark
-                            800: '#1E293B',
-                            600: '#475569', // Body Text
-                            400: '#94A3B8',
-                            50: '#F8FAFC',  // Section BG
-                        },
-                        purple: {
-                            50: '#FAF5FF',  // Light BG
-                            600: '#9333EA', // Accents
-                            brand: '#8E2DE2', 
-                            dark: '#4A00E0',
-                        }
-                    },
-                    boxShadow: {
-                        'soft': '0 4px 12px rgba(15, 23, 42, 0.08)', // Matches "Subtle shadows" brief
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        /* Document Setup */
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        :root {
+            --brand-gradient-start: #8E2DE2;
+            --brand-gradient-end: #4A00E0;
+        }
+
         body {
-            background-color: #525659; /* PDF Viewer Grey */
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #e2e8f0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
             padding: 20px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* A4 Landscape Container */
-        .page-a4 {
-            width: 297mm;
-            height: 210mm; /* Fixed height for A4 landscape */
+        /* A4 Landscape Dimensions: 297mm x 210mm */
+        .a4-landscape {
+            width: 1123px;
+            height: 794px;
             background-color: white;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
             position: relative;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            padding: 10mm; 
-            box-sizing: border-box;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
-            overflow: hidden; /* Strict sizing */
         }
 
-        /* Brand Gradient */
-        .bg-brand-gradient {
-            background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
-        }
-        .text-brand-gradient {
-            background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+        .brand-gradient-text {
+            background: linear-gradient(to right, #8E2DE2, #4A00E0);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        /* Responsive Scaling for Viewer */
-        @media (max-width: 1150px) {
-            .page-a4 {
-                transform: scale(0.8);
-                transform-origin: top center;
-                height: auto;
-                aspect-ratio: 297/210;
-            }
+        .brand-gradient-bg {
+            background: linear-gradient(135deg, #8E2DE2, #4A00E0);
         }
 
-        /* Print Override */
-        @media print {
-            body { background: none; padding: 0; margin: 0; }
-            .page-a4 { width: 100%; height: 100%; box-shadow: none; margin: 0; page-break-after: always; }
+        .shadow-soft {
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            50: '#F8FAFC',
+                            100: '#F1F5F9',
+                            200: '#E2E8F0',
+                            300: '#CBD5E1',
+                            400: '#94A3B8',
+                            500: '#64748B',
+                            600: '#475569',
+                            800: '#1E293B',
+                            900: '#0F172A',
+                        },
+                        purple: {
+                            50: '#FAF5FF',
+                            100: '#F3E8FF',
+                            600: '#9333EA',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
 
-    <div class="page-a4">
-        
-        <!-- Header -->
-        <header class="flex justify-between items-end border-b border-slate-200 pb-3 mb-3 shrink-0">
+    <!-- A4 Landscape Page Container -->
+    <div class="a4-landscape text-slate-900">
+
+        <!-- Header (10%) -->
+        <header class="h-[10%] px-12 flex justify-between items-end border-b border-slate-200 pb-3">
             <div>
                 <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight leading-none mb-1">Complete Service Catalog</h1>
                 <p class="text-slate-600 text-xs font-medium">Fixed-price diagnostics. Project-based implementations. Retainer partnerships.</p>
             </div>
             <div class="text-right">
                 <div class="flex items-center gap-2 justify-end mb-1">
-                    <div class="h-6 w-6 rounded bg-brand-gradient flex items-center justify-center text-white font-bold text-xs shadow-md">
-                        AP
-                    </div>
+                    <img src="logo_single.png" alt="Apex Palantir" class="h-6">
                 </div>
                 <p class="text-[9px] text-slate-400 uppercase tracking-[0.2em] font-bold mt-1">Service Catalog 2026</p>
             </div>
         </header>
 
-        <!-- Main Content Grid -->
-        <div class="grid grid-cols-4 gap-3 h-full mb-4">
+        <!-- Main Content Grid (85%) -->
+        <section class="h-[85%] px-12 py-4">
+            <div class="grid grid-cols-4 gap-4 h-full">
 
-            <!-- COL 1: Diagnostics & Strategy (Light Purple BG) -->
-            <div class="bg-purple-50 rounded-xl p-3 flex flex-col h-full border border-purple-100/50">
-                <div class="flex items-center gap-2 mb-2.5">
-                    <div class="w-1 h-5 bg-purple-600 rounded-full"></div>
-                    <h2 class="font-bold text-slate-900 text-[10px] uppercase tracking-widest">Diagnostics</h2>
-                </div>
-                
-                <div class="flex flex-col gap-2.5 flex-grow">
-                    <!-- 1.1 -->
-                    <div class="bg-white p-3 rounded-lg shadow-soft border border-purple-100 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">Technical Health Audit</h3>
-                                <i class="fas fa-search text-purple-600 text-xs"></i>
-                            </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">We analyze metadata, Apex code, and flows to expose the cracks before they break.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-50 flex justify-between items-end">
-                            <span class="font-bold text-slate-900 text-base">€2,450</span>
-                            <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">One-Time</span>
-                        </div>
+                <!-- COL 1: Diagnostics & Strategy (Light Purple BG) -->
+                <div class="bg-purple-50 rounded-xl p-3 flex flex-col h-full border border-purple-100/50">
+                    <div class="flex items-center gap-2 mb-2.5">
+                        <div class="w-1 h-5 bg-purple-600 rounded-full"></div>
+                        <h2 class="font-bold text-slate-900 text-[10px] uppercase tracking-widest">Diagnostics</h2>
                     </div>
-                    <!-- 1.2 -->
-                    <div class="bg-white p-3 rounded-lg shadow-soft border border-purple-100 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">Data Quality Check</h3>
-                                <i class="fas fa-database text-purple-600 text-xs"></i>
-                            </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Analyze full data model for bloat, broken refs, and performance killers.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-50 flex justify-between items-end">
-                            <span class="font-bold text-slate-900 text-base">From €800</span>
-                            <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Audit</span>
-                        </div>
-                    </div>
-                    <!-- 1.3 -->
-                    <div class="bg-white p-3 rounded-lg shadow-soft border border-purple-100 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">GDPR Compliance</h3>
-                                <i class="fas fa-user-shield text-purple-600 text-xs"></i>
-                            </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Identify personal data exposure and risky access patterns.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-50 flex justify-between items-end">
-                            <span class="font-bold text-slate-900 text-base">~€1,200</span>
-                            <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Check Risk</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- COL 2: Core Cloud Implementation (White BG) -->
-            <div class="bg-white rounded-xl p-3 flex flex-col h-full border border-slate-200">
-                <div class="flex items-center gap-2 mb-2.5">
-                    <div class="w-1 h-5 bg-slate-300 rounded-full"></div>
-                    <h2 class="font-bold text-slate-900 text-[10px] uppercase tracking-widest">Core Cloud</h2>
-                </div>
-
-                <div class="flex flex-col gap-2.5 flex-grow">
-                    <!-- 2.1 -->
-                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">Sales Cloud Velocity</h3>
-                                <i class="fas fa-bolt text-purple-600 text-xs"></i>
-                            </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Configure Pipeline management & Lead-to-Cash workflows for speed.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-200 flex justify-between items-end">
-                            <span class="font-bold text-slate-900 text-base">€5k - €15k</span>
-                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Configure</span>
-                        </div>
-                    </div>
-                    <!-- 2.2 -->
-                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">Service Console</h3>
-                                <i class="fas fa-headset text-purple-600 text-xs"></i>
-                            </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Implement Omni-Channel routing, Case Management, and SLAs.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-200 flex justify-between items-end">
-                            <span class="font-bold text-slate-900 text-base">€5k - €15k</span>
-                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Setup</span>
-                        </div>
-                    </div>
-                    <!-- 2.3 -->
-                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">Marketing Cloud</h3>
-                                <i class="fas fa-envelope text-purple-600 text-xs"></i>
-                            </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Architect data-driven Journeys, Automations, and engagement.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-200 flex justify-between items-end">
-                            <span class="font-bold text-slate-400 text-xs italic">Custom Quote</span>
-                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Discuss</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- COL 3: Engineering & Integration (Light Slate BG) -->
-            <div class="bg-slate-50 rounded-xl p-3 flex flex-col h-full border border-slate-200">
-                <div class="flex items-center gap-2 mb-2.5">
-                    <div class="w-1 h-5 bg-slate-600 rounded-full"></div>
-                    <h2 class="font-bold text-slate-900 text-[10px] uppercase tracking-widest">Engineering</h2>
-                </div>
-
-                <div class="flex flex-col gap-2.5 flex-grow">
-                    <!-- 3.1 FEATURED -->
-                    <div class="bg-white p-3 rounded-lg shadow-md border border-yellow-400 relative flex-1 flex flex-col justify-between overflow-hidden">
-                        <div class="absolute top-0 right-0 bg-yellow-400 text-white text-[8px] font-extrabold px-1.5 py-0.5 rounded-bl">FEATURED</div>
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">Custom Dev</h3>
-                                <i class="fas fa-code text-purple-600 text-xs"></i>
-                            </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Clean, maintainable Apex, LWC, and Flows tailored to your exact use case.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-end">
+                    <div class="flex flex-col gap-2.5 flex-grow">
+                        <!-- 1.1 -->
+                        <div class="bg-white p-3 rounded-lg shadow-soft border border-purple-100 flex-1 flex flex-col justify-between">
                             <div>
-                                <span class="font-bold text-slate-900 text-base">€100-150</span>
-                                <span class="text-[10px] text-slate-400 font-medium">/hr</span>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">Technical Health Audit</h3>
+                                    <i class="fas fa-search text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">We analyze metadata, Apex code, and flows to expose the cracks before they break.</p>
                             </div>
-                            <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Agile Dev</span>
-                        </div>
-                    </div>
-                    <!-- 3.2 -->
-                    <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">System Integrations</h3>
-                                <i class="fas fa-plug text-purple-600 text-xs"></i>
+                            <div class="mt-2 pt-2 border-t border-slate-50 flex justify-between items-end">
+                                <span class="font-bold text-slate-900 text-base">€2,450</span>
+                                <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">One-Time</span>
                             </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Wire Salesforce to ERP, Marketing Stack, or internal tools using robust APIs.</p>
                         </div>
-                        <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-end">
-                            <span class="font-bold text-slate-900 text-base">€15k - €30k</span>
-                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Integrate</span>
-                        </div>
-                    </div>
-                    <!-- 3.3 -->
-                    <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">Mulesoft Arch.</h3>
-                                <i class="fas fa-network-wired text-purple-600 text-xs"></i>
-                            </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Architect Mulesoft flows moving clean, validated data across ecosystems.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-end">
-                            <span class="font-bold text-slate-900 text-base">€5k - €30k</span>
-                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Consult</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- COL 4: Stability & Scale (Light Purple BG) -->
-            <div class="bg-purple-50 rounded-xl p-3 flex flex-col h-full border border-purple-100/50">
-                <div class="flex items-center gap-2 mb-2.5">
-                    <div class="w-1 h-5 bg-brand-gradient rounded-full"></div>
-                    <h2 class="font-bold text-slate-900 text-[10px] uppercase tracking-widest">Stability & Scale</h2>
-                </div>
-
-                <div class="flex flex-col gap-2.5 flex-grow">
-                    <!-- 4.1 -->
-                    <div class="bg-white p-3 rounded-lg shadow-soft border border-purple-100 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">Managed Support</h3>
-                                <i class="fas fa-life-ring text-purple-600 text-xs"></i>
-                            </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Monitor, triage, and resolve user issues and bugs within 24 hours.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-50 flex justify-between items-end">
+                        <!-- 1.2 -->
+                        <div class="bg-white p-3 rounded-lg shadow-soft border border-purple-100 flex-1 flex flex-col justify-between">
                             <div>
-                                <span class="font-bold text-slate-900 text-base">€28.8k</span>
-                                <span class="text-[10px] text-slate-400 font-medium">/yr</span>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">Data Quality Check</h3>
+                                    <i class="fas fa-database text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Analyze full data model for bloat, broken refs, and performance killers.</p>
                             </div>
-                            <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Annual</span>
-                        </div>
-                    </div>
-                    <!-- 4.2 PREMIUM -->
-                    <div class="bg-gradient-to-br from-white to-purple-50 p-3 rounded-lg shadow-md border border-yellow-400 relative flex-1 flex flex-col justify-between overflow-hidden">
-                        <div class="absolute top-0 right-0 bg-yellow-400 text-white text-[8px] font-extrabold px-1.5 py-0.5 rounded-bl">PREMIUM</div>
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-900 text-sm">Managed Partner</h3>
-                                <i class="fas fa-crown text-purple-600 text-xs"></i>
+                            <div class="mt-2 pt-2 border-t border-slate-50 flex justify-between items-end">
+                                <span class="font-bold text-slate-900 text-base">From €800</span>
+                                <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Audit</span>
                             </div>
-                            <p class="text-[10px] text-slate-600 leading-snug">Full CRM organization takeover. Strategic technical leadership for RevOps.</p>
                         </div>
-                        <div class="mt-2 pt-2 border-t border-purple-100 flex justify-between items-end">
-                            <span class="font-bold text-slate-900 text-base">Retainer</span>
-                            <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Strategic</span>
-                        </div>
-                    </div>
-                    <!-- 4.3 WAITLIST -->
-                    <div class="bg-white p-3 rounded-lg border-2 border-dashed border-slate-300 opacity-75 relative flex-1 flex flex-col justify-between">
-                        <div class="absolute top-1 right-1 bg-slate-200 text-slate-500 text-[7px] font-bold px-1 py-0.5 rounded">COMING SOON</div>
-                        <div>
-                            <div class="flex justify-between items-start mb-1.5">
-                                <h3 class="font-bold text-slate-500 text-sm">Tech Debt Monitor</h3>
-                                <i class="fas fa-heartbeat text-slate-400 text-xs"></i>
+                        <!-- 1.3 -->
+                        <div class="bg-white p-3 rounded-lg shadow-soft border border-purple-100 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">GDPR Compliance</h3>
+                                    <i class="fas fa-user-shield text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Identify personal data exposure and risky access patterns.</p>
                             </div>
-                            <p class="text-[10px] text-slate-400 leading-snug">Automated real-time monitoring of org technical health.</p>
-                        </div>
-                        <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-end">
-                            <span class="font-bold text-slate-400 text-base">SaaS</span>
-                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Waitlist</span>
+                            <div class="mt-2 pt-2 border-t border-slate-50 flex justify-between items-end">
+                                <span class="font-bold text-slate-900 text-base">~€1,200</span>
+                                <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Check Risk</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- COL 2: Core Cloud Implementation (White BG) -->
+                <div class="bg-white rounded-xl p-3 flex flex-col h-full border border-slate-200">
+                    <div class="flex items-center gap-2 mb-2.5">
+                        <div class="w-1 h-5 bg-slate-300 rounded-full"></div>
+                        <h2 class="font-bold text-slate-900 text-[10px] uppercase tracking-widest">Core Cloud</h2>
+                    </div>
+
+                    <div class="flex flex-col gap-2.5 flex-grow">
+                        <!-- 2.1 -->
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">Sales Cloud Velocity</h3>
+                                    <i class="fas fa-bolt text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Configure Pipeline management & Lead-to-Cash workflows for speed.</p>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-slate-200 flex justify-between items-end">
+                                <span class="font-bold text-slate-900 text-base">€5k - €15k</span>
+                                <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Configure</span>
+                            </div>
+                        </div>
+                        <!-- 2.2 -->
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">Service Console</h3>
+                                    <i class="fas fa-headset text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Implement Omni-Channel routing, Case Management, and SLAs.</p>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-slate-200 flex justify-between items-end">
+                                <span class="font-bold text-slate-900 text-base">€5k - €15k</span>
+                                <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Setup</span>
+                            </div>
+                        </div>
+                        <!-- 2.3 -->
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">Marketing Cloud</h3>
+                                    <i class="fas fa-envelope text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Architect data-driven Journeys, Automations, and engagement.</p>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-slate-200 flex justify-between items-end">
+                                <span class="font-bold text-slate-400 text-xs italic">Custom Quote</span>
+                                <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Discuss</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COL 3: Engineering & Integration (Light Slate BG) -->
+                <div class="bg-slate-50 rounded-xl p-3 flex flex-col h-full border border-slate-200">
+                    <div class="flex items-center gap-2 mb-2.5">
+                        <div class="w-1 h-5 bg-slate-600 rounded-full"></div>
+                        <h2 class="font-bold text-slate-900 text-[10px] uppercase tracking-widest">Engineering</h2>
+                    </div>
+
+                    <div class="flex flex-col gap-2.5 flex-grow">
+                        <!-- 3.1 FEATURED -->
+                        <div class="bg-white p-3 rounded-lg shadow-md border border-yellow-400 relative flex-1 flex flex-col justify-between overflow-hidden">
+                            <div class="absolute top-0 right-0 bg-yellow-400 text-white text-[8px] font-extrabold px-1.5 py-0.5 rounded-bl">FEATURED</div>
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">Custom Dev</h3>
+                                    <i class="fas fa-code text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Clean, maintainable Apex, LWC, and Flows tailored to your exact use case.</p>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-end">
+                                <div>
+                                    <span class="font-bold text-slate-900 text-base">€100-150</span>
+                                    <span class="text-[10px] text-slate-400 font-medium">/hr</span>
+                                </div>
+                                <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Agile Dev</span>
+                            </div>
+                        </div>
+                        <!-- 3.2 -->
+                        <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">System Integrations</h3>
+                                    <i class="fas fa-plug text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Wire Salesforce to ERP, Marketing Stack, or internal tools using robust APIs.</p>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-end">
+                                <span class="font-bold text-slate-900 text-base">€15k - €30k</span>
+                                <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Integrate</span>
+                            </div>
+                        </div>
+                        <!-- 3.3 -->
+                        <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">Mulesoft Arch.</h3>
+                                    <i class="fas fa-network-wired text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Architect Mulesoft flows moving clean, validated data across ecosystems.</p>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-end">
+                                <span class="font-bold text-slate-900 text-base">€5k - €30k</span>
+                                <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Consult</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COL 4: Stability & Scale (Light Purple BG) -->
+                <div class="bg-purple-50 rounded-xl p-3 flex flex-col h-full border border-purple-100/50">
+                    <div class="flex items-center gap-2 mb-2.5">
+                        <div class="w-1 h-5 brand-gradient-bg rounded-full"></div>
+                        <h2 class="font-bold text-slate-900 text-[10px] uppercase tracking-widest">Stability & Scale</h2>
+                    </div>
+
+                    <div class="flex flex-col gap-2.5 flex-grow">
+                        <!-- 4.1 -->
+                        <div class="bg-white p-3 rounded-lg shadow-soft border border-purple-100 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">Managed Support</h3>
+                                    <i class="fas fa-life-ring text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Monitor, triage, and resolve user issues and bugs within 24 hours.</p>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-slate-50 flex justify-between items-end">
+                                <div>
+                                    <span class="font-bold text-slate-900 text-base">€28.8k</span>
+                                    <span class="text-[10px] text-slate-400 font-medium">/yr</span>
+                                </div>
+                                <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Annual</span>
+                            </div>
+                        </div>
+                        <!-- 4.2 PREMIUM -->
+                        <div class="bg-gradient-to-br from-white to-purple-50 p-3 rounded-lg shadow-md border border-yellow-400 relative flex-1 flex flex-col justify-between overflow-hidden">
+                            <div class="absolute top-0 right-0 bg-yellow-400 text-white text-[8px] font-extrabold px-1.5 py-0.5 rounded-bl">PREMIUM</div>
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-900 text-sm">Managed Partner</h3>
+                                    <i class="fas fa-crown text-purple-600 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Full CRM organization takeover. Strategic technical leadership for RevOps.</p>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-purple-100 flex justify-between items-end">
+                                <span class="font-bold text-slate-900 text-base">Retainer</span>
+                                <span class="text-[9px] font-bold text-purple-600 uppercase tracking-wide">Strategic</span>
+                            </div>
+                        </div>
+                        <!-- 4.3 WAITLIST -->
+                        <div class="bg-white p-3 rounded-lg border-2 border-dashed border-slate-300 opacity-75 relative flex-1 flex flex-col justify-between">
+                            <div class="absolute top-1 right-1 bg-slate-200 text-slate-500 text-[7px] font-bold px-1 py-0.5 rounded">COMING SOON</div>
+                            <div>
+                                <div class="flex justify-between items-start mb-1.5">
+                                    <h3 class="font-bold text-slate-500 text-sm">Tech Debt Monitor</h3>
+                                    <i class="fas fa-heartbeat text-slate-400 text-xs"></i>
+                                </div>
+                                <p class="text-xs text-slate-400 leading-relaxed">Automated real-time monitoring of org technical health.</p>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-end">
+                                <span class="font-bold text-slate-400 text-base">SaaS</span>
+                                <span class="text-[9px] font-bold text-slate-500 uppercase tracking-wide">Waitlist</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </section>
 
-        </div>
-
-        <!-- Footer - Full Width at Bottom -->
-        <footer class="bg-slate-900 flex justify-between items-center px-10 py-3 text-slate-400 text-sm shrink-0 mt-auto -mx-[10mm] -mb-[10mm] w-[calc(100%+20mm)]">
+        <!-- Footer (5%) -->
+        <footer class="h-[5%] bg-slate-900 flex justify-between items-center px-16 text-slate-400 text-sm">
             <div class="flex gap-6">
-                <span>info@apexpalantir.com</span>
+                <span>support@apex-palantir.com</span>
                 <span>•</span>
-                <span>+49 173 237 518 3</span>
+                <span>+49 221 2919 7318</span>
             </div>
             <div class="flex gap-2 items-center">
                 <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
