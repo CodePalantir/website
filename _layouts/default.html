@@ -7,21 +7,34 @@
   {% seo %}
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+
+  <!-- Preload critical resources for faster rendering -->
+  <link rel="preload" href="{{ '/assets/css/tailwind.css' | relative_url }}" as="style">
+  <link rel="preload" href="{{ '/assets/fonts/plus-jakarta-sans.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 
   <!-- Tailwind Output -->
-  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | relative_url }}">
 
-  <!-- Preconnect for Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://unpkg.com">
+  <!-- Preconnect for external images (team photos) -->
+  <link rel="dns-prefetch" href="https://media.licdn.com">
+  <link rel="dns-prefetch" href="https://i.pravatar.cc">
+  <link rel="preconnect" href="https://media.licdn.com" crossorigin>
+  <link rel="preconnect" href="https://i.pravatar.cc" crossorigin>
 
-  <!-- Fonts & Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Preload critical logo (mobile gets smaller version) -->
+  <link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_MOBILE.webp' | relative_url }}" media="(max-width: 767px)">
+  <link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_72ppi.png' | relative_url }}" media="(min-width: 768px)">
+
+  {% if page.url == '/about' or page.url == '/about/' %}
+  <!-- Preload LCP image for about page -->
+  <link rel="preload" as="image" href="{{ '/assets/images/people/alex-knoll.webp' | relative_url }}" type="image/webp">
+  {% endif %}
+
+  <!-- Icons (fonts now self-hosted in tailwind.css) -->
+  <script src="{{ '/assets/js/lucide.min.js' | relative_url }}" defer></script>
 
   <!-- Fathom - beautiful, simple website analytics -->
   <script src="https://cdn.usefathom.com/script.js" data-site="SSUCTAAP" defer></script>
@@ -38,8 +51,12 @@
   {% include shared/footer.html %}
 
   <script>
-    // Initialize Lucide Icons
-    lucide.createIcons();
+    // Initialize Lucide Icons (after deferred script loads)
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
 
     // Scroll Logic (Glass Effect)
     const navbar = document.getElementById('navbar');

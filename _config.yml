@@ -1,7 +1,7 @@
 title: ApexPalantir
-description: "Salesforce Technical Architects building robust, scalable architectures for sustained growth"
-url: "https://codepalantir.github.io"
-baseurl: "/website"
+description: "Salesforce Experts building robust, scalable solutions for sustained growth"
+url: "https://apex-palantir.com"
+baseurl: ""
 theme: minima
 
 # Author defaults for SEO
@@ -13,7 +13,7 @@ author:
 social:
   name: ApexPalantir
   links:
-    - https://www.linkedin.com/company/apexpalantir
+    - https://www.linkedin.com/company/apexpalantir/
 
 # Clean URL structure for blog posts
 permalink: /blog/:title/
@@ -32,3 +32,5 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
+  - catalog
+  - GEMINI_SERVICE_CATALOG_PROMPT.md

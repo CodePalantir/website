@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Quality Check Report - ApexPalantir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #8E2DE2, #4A00E0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-purple-gradient {
+            background: linear-gradient(to right, #8E2DE2, #4A00E0);
+        }
+
+        .a4-page {
+            width: 21cm;
+            min-height: 29.7cm;
+            padding: 0;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-35deg);
+            font-size: 12rem;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.05);
+            pointer-events: none;
+            user-select: none;
+            z-index: 100;
+            white-space: nowrap;
+        }
+
+        @media print {
+            body { background: white; margin: 0; padding: 0; }
+            .a4-page { margin: 0; box-shadow: none; width: 100%; height: 100%; page-break-after: always; }
+            .no-print { display: none; }
+            .watermark { color: rgba(0, 0, 0, 0.05) !important; -webkit-print-color-adjust: exact; }
+        }
+
+        .status-badge-evaluate { background-color: rgba(142, 45, 226, 0.1); color: #8E2DE2; border: 1px solid rgba(142, 45, 226, 0.3); }
+        .status-badge-plan { background-color: rgba(74, 0, 224, 0.1); color: #4A00E0; border: 1px solid rgba(74, 0, 224, 0.3); }
+        
+        /* Metric Dial for IST Situation */
+        .health-ring {
+            stroke-dasharray: 251.2;
+            stroke-dashoffset: 145.7; /* 42% of 251.2 */
+            transition: stroke-dashoffset 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: EXECUTIVE SUMMARY -->
+    <div class="a4-page">
+        <div class="watermark">SAMPLE</div>
+        <div class="h-2 bg-purple-gradient w-full"></div>
+
+        <div class="p-12 flex-grow">
+            <header class="flex justify-between items-start mb-12 border-b border-gray-100 pb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <img src="APEX-PALANTIR_72ppi.png" alt="ApexPalantir" class="h-8">
+                    </div>
+                    <h1 class="text-4xl font-extrabold text-gray-900 mt-6 leading-tight">
+                        Data Quality Check:<br/>
+                        <span class="text-gray-500 font-light">Global Retailer</span>
+                    </h1>
+                </div>
+                
+                <div class="text-right space-y-1 text-sm text-gray-500">
+                    <div class="mb-2">
+                        <span class="bg-purple-gradient text-white px-4 py-1.5 rounded text-xs font-bold uppercase tracking-wider">
+                            Confidential
+                        </span>
+                    </div>
+                    <div class="text-gray-900 font-medium">January 2024</div>
+                    <div class="text-xs">
+                        Prepared for: <span class="font-semibold text-gray-700">Joen Doeh</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="mb-12">
+                <h2 class="text-lg font-bold text-gray-900 uppercase tracking-widest mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-[#8E2DE2]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    Introduction
+                </h2>
+                <div class="text-gray-600 leading-relaxed text-justify text-base">
+                    We provide a clear, executive-ready report that shows exactly where your data is broken, what it's costing you, and how to fix it systematically. This analysis focuses on the data integrity issues currently impacting revenue predictability and marketing ROI.
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-lg font-bold text-gray-900 uppercase tracking-widest mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-[#4A00E0]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Priority Roadmap
+                </h2>
+                <div class="grid grid-cols-4 gap-6">
+                    <div class="border border-gray-100 bg-gray-50 p-4 rounded-xl text-center shadow-sm">
+                        <div class="mx-auto w-10 h-10 rounded-full bg-white border border-[#8E2DE2]/20 flex items-center justify-center text-[#8E2DE2] mb-3 shadow-sm">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                        </div>
+                        <div class="text-sm font-bold text-gray-900 mb-1">Deduplication</div>
+                        <div class="text-[10px] font-bold text-[#4A00E0] uppercase tracking-wide">Evaluate</div>
+                    </div>
+                    <div class="border border-gray-100 bg-gray-50 p-4 rounded-xl text-center shadow-sm">
+                        <div class="mx-auto w-10 h-10 rounded-full bg-white border border-[#8E2DE2]/20 flex items-center justify-center text-[#8E2DE2] mb-3 shadow-sm">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        </div>
+                        <div class="text-sm font-bold text-gray-900 mb-1">Lead Attribution</div>
+                        <div class="text-[10px] font-bold text-[#4A00E0] uppercase tracking-wide">Evaluate</div>
+                    </div>
+                    <div class="border border-gray-100 bg-gray-50 p-4 rounded-xl text-center shadow-sm">
+                        <div class="mx-auto w-10 h-10 rounded-full bg-white border border-[#8E2DE2]/20 flex items-center justify-center text-[#8E2DE2] mb-3 shadow-sm">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                        </div>
+                        <div class="text-sm font-bold text-gray-900 mb-1">Data Completeness</div>
+                        <div class="text-[10px] font-bold text-[#4A00E0] uppercase tracking-wide">Evaluate</div>
+                    </div>
+                    <div class="border border-gray-100 bg-gray-50 p-4 rounded-xl text-center shadow-sm">
+                        <div class="mx-auto w-10 h-10 rounded-full bg-white border border-[#8E2DE2]/20 flex items-center justify-center text-[#8E2DE2] mb-3 shadow-sm">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <div class="text-sm font-bold text-gray-900 mb-1">Validation Rules</div>
+                        <div class="text-[10px] font-bold text-[#4A00E0] uppercase tracking-wide">Plan</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex-grow">
+                <h2 class="text-lg font-bold text-gray-900 uppercase tracking-widest mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-[#8E2DE2]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    Executive Summary
+                </h2>
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Metric</th>
+                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Business Impact</th>
+                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Duplicate Account Rate</td>
+                                <td class="px-6 py-4 text-sm text-gray-500 truncate max-w-[300px]">Overstated TAM and split customer history.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><span class="px-2.5 py-0.5 rounded-full text-xs font-bold border uppercase tracking-wide status-badge-evaluate">Evaluate</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Lead Source Attribution</td>
+                                <td class="px-6 py-4 text-sm text-gray-500 truncate max-w-[300px]">Inability to accurately measure marketing ROI.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><span class="px-2.5 py-0.5 rounded-full text-xs font-bold border uppercase tracking-wide status-badge-evaluate">Evaluate</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Email Bounce Rate</td>
+                                <td class="px-6 py-4 text-sm text-gray-500 truncate max-w-[300px]">Reduced sales productivity and domain reputation risk.</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><span class="px-2.5 py-0.5 rounded-full text-xs font-bold border uppercase tracking-wide status-badge-evaluate">Evaluate</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <div class="px-12 pb-8 pt-4 border-t-2 border-gray-100 flex justify-between items-center text-[10px] text-gray-400 mt-auto">
+            <div class="flex items-center gap-2">
+                <img src="logo_single.png" alt="ApexPalantir" class="w-3 h-3">
+                <span>Produced by ApexPalantir</span>
+            </div>
+            <div class="flex gap-4">
+                <span>Data Quality Report 2024</span>
+                <span>•</span>
+                <span>Page 1 of 4</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: IST SITUATION ASSESSMENT -->
+    <div class="a4-page">
+        <div class="watermark">SAMPLE</div>
+        <div class="h-2 bg-purple-gradient w-full"></div>
+
+        <div class="p-12 flex-grow">
+            <div class="mb-10 border-b border-gray-100 pb-4">
+                <h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-tight flex items-center gap-3">
+                    <svg class="w-8 h-8 text-[#8E2DE2]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"></path><path d="m17 7 5 5-5 5M7 7l-5 5 5 5"></path></svg>
+                    Current State (IST) Assessment
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-2 gap-12 mb-12">
+                <!-- Health Dial -->
+                <div class="flex flex-col items-center justify-center bg-gray-50 rounded-2xl p-8 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-[#8E2DE2]/5 rounded-full blur-2xl"></div>
+                    <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Overall Data Health Score</h3>
+                    <div class="relative flex items-center justify-center">
+                        <svg class="w-48 h-48 transform -rotate-90">
+                            <circle cx="96" cy="96" r="40" stroke="currentColor" stroke-width="8" fill="transparent" class="text-gray-200" />
+                            <circle cx="96" cy="96" r="40" stroke="url(#health-gradient)" stroke-width="8" fill="transparent" stroke-linecap="round" class="health-ring" />
+                            <defs>
+                                <linearGradient id="health-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#8E2DE2" />
+                                    <stop offset="100%" stop-color="#4A00E0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="absolute text-4xl font-black text-gray-900">42%</span>
+                    </div>
+                    <p class="mt-6 text-center text-xs text-gray-500 max-w-[200px]">Data integrity is below threshold for reliable automated forecasting.</p>
+                </div>
+
+                <!-- Strategic Summary -->
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Macro Situation Judgment</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        The current "IST" data state presents a significant barrier to scaling. While basic records exist, the <strong>consistency</strong> and <strong>connectivity</strong> across Lead, Account, and Campaign objects are fractured.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-[#8E2DE2]"></div>
+                            <span class="text-sm font-semibold text-gray-800">40% of Marketing spend has no clear attribution link.</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-[#4A00E0]"></div>
+                            <span class="text-sm font-semibold text-gray-800">Sales productivity is down 22% due to data verification.</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-[#8E2DE2]"></div>
+                            <span class="text-sm font-semibold text-gray-800">Forecasting delta is ±15% due to duplicate pipeline.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Macro Category Benchmarking -->
+            <h3 class="text-lg font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">Key Data Categories vs. Industry Standard</h3>
+            <div class="space-y-8">
+                <!-- Accuracy -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-bold text-gray-700">Data Accuracy (Title, Phone, Email)</span>
+                        <span class="text-sm font-bold text-[#8E2DE2]">58%</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2 overflow-hidden">
+                        <div class="bg-purple-gradient h-full rounded-full" style="width: 58%"></div>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-1 italic">Industry Benchmark: 85%+</p>
+                </div>
+
+                <!-- Completeness -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-bold text-gray-700">Data Completeness (Required Fields)</span>
+                        <span class="text-sm font-bold text-[#8E2DE2]">64%</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2 overflow-hidden">
+                        <div class="bg-purple-gradient h-full rounded-full" style="width: 64%"></div>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-1 italic">Industry Benchmark: 95%+</p>
+                </div>
+
+                <!-- Consistency -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-bold text-gray-700">System Consistency (Duplicate Rate)</span>
+                        <span class="text-sm font-bold text-red-500">18% Duplicates</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2 overflow-hidden">
+                        <div class="bg-red-400 h-full rounded-full" style="width: 70%"></div>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-1 italic">Industry Benchmark: <3%</p>
+                </div>
+            </div>
+
+            <!-- Conclusion for CRO -->
+            <div class="mt-12 p-6 rounded-xl border-2 border-dashed border-[#4A00E0]/20 bg-[#4A00E0]/5">
+                <p class="text-sm text-gray-700 font-medium italic">
+                    "The IST situation indicates that for every $1,000 spent on marketing, roughly $400 is flying blind. Sales teams are spending 1.5 days a week verifying data instead of selling. This is an immediate operational efficiency bottleneck."
+                </p>
+            </div>
+        </div>
+
+        <div class="px-12 pb-8 pt-4 border-t-2 border-gray-100 flex justify-between items-center text-[10px] text-gray-400 mt-auto">
+            <div class="flex items-center gap-2">
+                <img src="logo_single.png" alt="ApexPalantir" class="w-3 h-3">
+                <span>Produced by ApexPalantir</span>
+            </div>
+            <div class="flex gap-4">
+                <span>Data Quality Report 2024</span>
+                <span>•</span>
+                <span>Page 2 of 4</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: DETAILED FINDINGS -->
+    <div class="a4-page">
+        <div class="watermark">SAMPLE</div>
+        <div class="h-2 bg-purple-gradient w-full"></div>
+
+        <div class="p-12 flex-grow">
+            <div class="mb-10 border-b border-gray-100 pb-4">
+                <h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-tight flex items-center gap-3">
+                    <svg class="w-8 h-8 text-[#4A00E0]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    Detailed Findings
+                </h2>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Finding 01 -->
+                <div class="break-inside-avoid bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-gray-900"><span class="text-[#8E2DE2] mr-3 font-mono">01</span>Duplicate Record Management</h3>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border uppercase tracking-wide status-badge-evaluate">Evaluate</span>
+                    </div>
+                    <p class="text-sm text-gray-600 italic border-l-4 border-[#8E2DE2] pl-4 mb-6 bg-white py-3 pr-4 rounded-r-lg shadow-sm">
+                        High volume of duplicate accounts and contacts leads to fragmented customer engagement and inaccurate territory assignments.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-[10px] font-bold text-red-400 uppercase tracking-widest mb-3 flex items-center gap-2">Revenue Risks</h4>
+                            <ul class="space-y-2 text-xs text-gray-700">
+                                <li class="flex items-start gap-2"><span class="text-red-300 mt-1 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0"></span>Inaccurate TAM and forecasting.</li>
+                                <li class="flex items-start gap-2"><span class="text-red-300 mt-1 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0"></span>Multiple reps calling the same accounts.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-[10px] font-bold text-[#4A00E0] uppercase tracking-widest mb-3 flex items-center gap-2">Strategic Recommendations</h4>
+                            <ul class="space-y-2 text-xs text-gray-700">
+                                <li class="flex items-start gap-2">→ Implement automated cross-object matching rules.</li>
+                                <li class="flex items-start gap-2">→ Pilot third-party deduplication tools.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Finding 02 -->
+                <div class="break-inside-avoid bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-gray-900"><span class="text-[#8E2DE2] mr-3 font-mono">02</span>Marketing Source Attribution</h3>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border uppercase tracking-wide status-badge-evaluate">Evaluate</span>
+                    </div>
+                    <p class="text-sm text-gray-600 italic border-l-4 border-[#8E2DE2] pl-4 mb-6 bg-white py-3 pr-4 rounded-r-lg shadow-sm">
+                        Lack of strict UTM tracking and lead source inheritance causes 40% of leads to be labeled "Unknown".
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-[10px] font-bold text-red-400 uppercase tracking-widest mb-3 flex items-center gap-2">Revenue Risks</h4>
+                            <ul class="space-y-2 text-xs text-gray-700">
+                                <li class="flex items-start gap-2"><span class="text-red-300 mt-1 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0"></span>Misallocation of marketing budget.</li>
+                                <li class="flex items-start gap-2"><span class="text-red-300 mt-1 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0"></span>Inability to prove marketing ROI.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-[10px] font-bold text-[#4A00E0] uppercase tracking-widest mb-3 flex items-center gap-2">Strategic Recommendations</h4>
+                            <ul class="space-y-2 text-xs text-gray-700">
+                                <li class="flex items-start gap-2">→ Enforce UTM parameters via campaign rules.</li>
+                                <li class="flex items-start gap-2">→ Build "First Touch" logic in Salesforce.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Finding 03 -->
+                <div class="break-inside-avoid bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-gray-900"><span class="text-[#8E2DE2] mr-3 font-mono">03</span>Contact Data Decay</h3>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border uppercase tracking-wide status-badge-evaluate">Evaluate</span>
+                    </div>
+                    <p class="text-sm text-gray-600 italic border-l-4 border-[#8E2DE2] pl-4 mb-6 bg-white py-3 pr-4 rounded-r-lg shadow-sm">
+                        Estimated 30% of contact info is outdated due to job changes, slowing down SDR reachout.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-[10px] font-bold text-red-400 uppercase tracking-widest mb-3 flex items-center gap-2">Revenue Risks</h4>
+                            <ul class="space-y-2 text-xs text-gray-700">
+                                <li class="flex items-start gap-2"><span class="text-red-300 mt-1 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0"></span>High bounce rates affecting deliverability.</li>
+                                <li class="flex items-start gap-2"><span class="text-red-300 mt-1 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0"></span>Wasted sales efforts on cold records.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-[10px] font-bold text-[#4A00E0] uppercase tracking-widest mb-3 flex items-center gap-2">Strategic Recommendations</h4>
+                            <ul class="space-y-2 text-xs text-gray-700">
+                                <li class="flex items-start gap-2">→ Integrate real-time data enrichment.</li>
+                                <li class="flex items-start gap-2">→ Deploy "Last Verified" date logic.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-12 pb-8 pt-4 border-t-2 border-gray-100 flex justify-between items-center text-[10px] text-gray-400 mt-auto">
+            <div class="flex items-center gap-2">
+                <img src="logo_single.png" alt="ApexPalantir" class="w-3 h-3">
+                <span>Produced by ApexPalantir</span>
+            </div>
+            <div class="flex gap-4">
+                <span>Data Quality Report 2024</span>
+                <span>•</span>
+                <span>Page 3 of 4</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: SERVICES & CTA -->
+    <div class="a4-page">
+        <div class="watermark">SAMPLE</div>
+        <div class="h-4 bg-purple-gradient w-full"></div>
+
+        <div class="flex-grow flex flex-col px-12 py-16">
+            <div class="mb-16 text-center">
+                <div class="inline-flex items-center justify-center p-3 bg-[#4A00E0]/10 rounded-full mb-6">
+                    <svg class="w-8 h-8 text-[#4A00E0]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Ready to turn your <br/>
+                    <span class="text-gradient">Data</span> into a strategic asset?
+                </h2>
+                <p class="text-lg text-gray-500 font-light max-w-2xl mx-auto">
+                    Bad data isn't just a technical problem—it's a massive drag on your revenue. Let us fix it systematically so your teams can focus on growth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-6 mb-16 items-stretch">
+                <div class="flex flex-col p-6 rounded-2xl border border-gray-200 bg-white hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-[#8E2DE2]/10 flex items-center justify-center text-[#8E2DE2] mb-6">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Data Enrichment</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                        Automated enrichment engines to verify decision-makers, update titles, and provide direct-dial numbers.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <span class="text-xs font-semibold text-[#8E2DE2] uppercase tracking-wider">For VP Sales</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col p-6 rounded-2xl border border-gray-200 bg-white hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-[#4A00E0]/10 flex items-center justify-center text-[#4A00E0] mb-6">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Attribution Cleanup</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                        Full-funnel models that finally show you exactly which campaigns are driving closed-won revenue.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <span class="text-xs font-semibold text-[#4A00E0] uppercase tracking-wider">For VP Marketing</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col p-6 rounded-2xl border border-gray-200 bg-white hover:shadow-lg transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 mb-6">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"></path><path d="M21 9H3"></path><path x="9" y="3" d="M9 3v18"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Strategic Deduplication</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed flex-grow">
+                        Clean up your TAM and customer history using custom fuzzy-matching logic for one source of truth.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <span class="text-xs font-semibold text-blue-500 uppercase tracking-wider">For CRO</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-auto bg-gray-900 rounded-2xl p-8 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-[#4A00E0] rounded-full blur-3xl opacity-20 translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#8E2DE2] rounded-full blur-3xl opacity-20 -translate-x-1/2 translate-y-1/2"></div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <h4 class="text-xl font-bold mb-1">Let's fix these data issues together.</h4>
+                        <p class="text-gray-400 text-sm">Reach out to schedule your data strategy session.</p>
+                    </div>
+                    
+                    <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm font-medium">
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            <span>apex-palantir.com</span>
+                        </div>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>support@apex-palantir.com</span>
+                        </div>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>+49 221 2913 7318</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-12 pb-8 pt-4 border-t-2 border-gray-100 flex justify-between items-center text-[10px] text-gray-400 mt-auto">
+            <div class="flex items-center gap-2">
+                <img src="logo_single.png" alt="ApexPalantir" class="w-3 h-3">
+                <span>Produced by ApexPalantir</span>
+            </div>
+            <div class="flex gap-4">
+                <span>Data Quality Report 2024</span>
+                <span>•</span>
+                <span>Page 4 of 4</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

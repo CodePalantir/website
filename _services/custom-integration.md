@@ -1,6 +1,10 @@
 ---
-layout: default
-title: "Custom Salesforce Integration"
+layout: service
+title: "System Integrations | ApexPalantir"
+description: "Break down data silos. We wire Salesforce to your ERP, Marketing Stack, or internal tools using robust APIs and proven integration patterns."
+service_type: "Salesforce Integration"
+price: "15000"
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 {% include services/devx/integration_hero.html %}

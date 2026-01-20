@@ -1,6 +1,9 @@
 ---
-layout: default
-title: "Marketing Cloud"
+layout: service
+title: "Marketing Cloud Implementation | ApexPalantir"
+description: "Ensure your leads are nurtured before they hit Sales. We architect data-driven Journeys, Automations, and personalized engagement at scale."
+service_type: "Salesforce Marketing Cloud Implementation"
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 {% include services/marketing-cloud/marketing_cloud_hero.html %}

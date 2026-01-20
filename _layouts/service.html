@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<!-- Service Schema Markup for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | escape }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "ApexPalantir",
+    "url": "https://apexpalantir.com"
+  },
+  "serviceType": "{{ page.service_type | default: 'Salesforce Consulting' }}",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.1109,
+      "longitude": 8.6821
+    },
+    "geoRadius": "2000 km"
+  }{% if page.price %},
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ page.price }}",
+    "priceCurrency": "EUR",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "{{ page.price }}",
+      "priceCurrency": "EUR"
+    }
+  }{% endif %}
+}
+</script>
+
+<!-- BreadcrumbList Schema for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://apexpalantir.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://apexpalantir.com/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.title }}",
+      "item": "{{ page.url | absolute_url }}"
+    }
+  ]
+}
+</script>
+
+{{ content }}

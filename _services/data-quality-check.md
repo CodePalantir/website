@@ -1,6 +1,10 @@
 ---
-layout: default
-title: "Data Quality Check"
+layout: service
+title: "Data Quality Check | ApexPalantir"
+description: "Salesforce data quality analysis to identify duplicates, bloated data models, and performance issues. Clean data architecture for better CRM performance."
+service_type: "Salesforce Data Quality"
+price: "800"
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 {% include services/data-quality/data_quality_hero.html %}

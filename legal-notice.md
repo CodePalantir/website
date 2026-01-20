@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Legal Notice | ApexPalantir
+title: Legal Notice (Impressum) | ApexPalantir
+description: "ApexPalantir Legal Notice (Impressum) - Company information in accordance with German Telemedia Act (TMG). Contact details and legal information."
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 <section class="pt-32 pb-24 px-6 bg-slate-50">
@@ -34,7 +36,7 @@ title: Legal Notice | ApexPalantir
             <h2 class="text-3xl font-bold text-slate-900 mb-6">Contact</h2>
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
-                    <strong class="text-slate-900">Phone:</strong> +49 173 237 518 3<br/>
+                    <strong class="text-slate-900">Phone:</strong> +49 221 2929 7318<br/>
                     <strong class="text-slate-900">Email:</strong> <a href="mailto:info@apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">info@apexpalantir.com</a><br/>
                     <strong class="text-slate-900">Website:</strong> <a href="https://www.apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">www.apexpalantir.com</a>
                 </p>

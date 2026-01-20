@@ -1,11 +1,11 @@
 <!-- POSTS GRID -->
-<section class="py-24 px-6 bg-white">
+<section class="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-white">
     <div class="max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-x-8 gap-y-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8 sm:gap-x-8 sm:gap-y-12 md:gap-y-16">
 
             {% for post in site.posts offset:1 limit:9 %}
             <!-- POST {{ forloop.index }} -->
-            <a href="{{ post.url }}" class="group cursor-pointer">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="blog-post-card group cursor-pointer" data-title="{{ post.title }}" data-category="{{ post.category }}" data-excerpt="{{ post.excerpt | strip_html | truncatewords: 50 | escape }}">
                     <div class="aspect-[4/3] {% cycle 'bg-purple-50/50', 'bg-slate-50', 'bg-purple-50/50' %} rounded-3xl mb-6 border {% cycle 'border-purple-50', 'border-slate-100', 'border-purple-50' %} overflow-hidden relative flex items-center justify-center transition-colors {% cycle 'hover:bg-purple-100/50', 'hover:bg-slate-100', 'hover:bg-purple-100/50' %}">
                         <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm">
                         <i data-lucide="{{ post.hero_icon }}" class="w-8 h-8 {% cycle 'text-purple-400', 'text-slate-400', 'text-purple-400' %}"></i>
@@ -16,7 +16,7 @@
                     <span>•</span>
                     <span>{{ post.category }}</span>
                 </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-purple-600 transition-colors">{{ post.title }}</h3>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-3 group-hover:text-purple-600 transition-colors">{{ post.title }}</h3>
                     <p class="text-slate-500 text-sm leading-relaxed mb-4">
                         {{ post.excerpt | strip_html | truncatewords: 25 }}
                     </p>

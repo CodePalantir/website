@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Privacy Policy | ApexPalantir
+description: "ApexPalantir Privacy Policy - GDPR compliant data protection information. Learn how we collect, use, and protect your personal data."
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 <section class="pt-32 pb-24 px-6 bg-slate-50">
@@ -39,7 +41,7 @@ title: Privacy Policy | ApexPalantir
                     Germany
                 </p>
                 <p class="text-slate-600 leading-relaxed">
-                    <strong class="text-slate-900">Phone:</strong> +49 173 237 518 3<br/>
+                    <strong class="text-slate-900">Phone:</strong> +49 221 2929 7318<br/>
                     <strong class="text-slate-900">Email:</strong> <a href="mailto:privacy@apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">privacy@apexpalantir.com</a>
                 </p>
             </div>
@@ -233,7 +235,7 @@ title: Privacy Policy | ApexPalantir
                 </p>
                 <p class="text-slate-600 leading-relaxed">
                     <strong class="text-slate-900">Email:</strong> <a href="mailto:privacy@apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">privacy@apexpalantir.com</a><br/>
-                    <strong class="text-slate-900">Phone:</strong> +49 173 237 518 3<br/>
+                    <strong class="text-slate-900">Phone:</strong> +49 221 2929 7318<br/>
                     <strong class="text-slate-900">Mail:</strong> ApexPalantir, [Complete Address]
                 </p>
             </div>

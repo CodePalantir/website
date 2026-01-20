@@ -1,6 +1,10 @@
 ---
-layout: default
-title: "Mulesoft Architecture"
+layout: service
+title: "Mulesoft Architecture | ApexPalantir"
+description: "Enterprise-scale connectivity with Mulesoft. We architect flows that move clean, validated data across your entire ecosystem reliably."
+service_type: "Mulesoft Integration Architecture"
+price: "5000"
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 {% include services/mulesoft/mulesoft_hero.html %}

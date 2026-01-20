@@ -1,6 +1,10 @@
 ---
-layout: default
-title: "Custom Salesforce Development"
+layout: service
+title: "Custom Salesforce Development | ApexPalantir"
+description: "Custom Apex, Lightning Web Components, and Flows tailored to your exact use case. Clean, maintainable code that scales with your business."
+service_type: "Salesforce Custom Development"
+price: "100"
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 {% include services/custom-dev/custom_dev_hero.html %}

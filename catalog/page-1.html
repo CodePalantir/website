@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexPalantir Service Catalog - Page 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        :root {
+            --brand-gradient-start: #8E2DE2;
+            --brand-gradient-end: #4A00E0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #e2e8f0; /* Slate 200 for preview background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* A4 Landscape Dimensions: 297mm x 210mm */
+        /* Aspect Ratio approx 1.414 */
+        .a4-landscape {
+            width: 1123px; /* 96 DPI pixel equivalent */
+            height: 794px;
+            background-color: white;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-gradient-text {
+            background: linear-gradient(to right, #8E2DE2, #4A00E0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-gradient-bg {
+            background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* Decorative Grid */
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(148, 163, 184, 0.1) 1px, transparent 1px);
+        }
+        
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            50: '#F8FAFC',
+                            400: '#94A3B8',
+                            600: '#475569',
+                            800: '#1E293B',
+                            900: '#0F172A',
+                        },
+                        purple: {
+                            50: '#FAF5FF',
+                            600: '#9333EA',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- A4 Landscape Page Container -->
+    <div class="a4-landscape grid-bg text-slate-900">
+        
+        <!-- Header (Reduced to 10%) -->
+        <header class="h-[10%] px-16 flex justify-between items-center border-b border-slate-100 bg-white/80">
+            <div class="flex items-center gap-3 -ml-4">
+                <!-- Logo Image -->
+                <img src="APEX-PALANTIR_72ppi.png" alt="Apex Palantir" class="h-10">
+            </div>
+            <div class="text-slate-400 font-medium tracking-wide text-sm uppercase">
+                Service Catalog 2026
+            </div>
+        </header>
+
+        <!-- Hero Section (Reduced to 55% to give space to footer cards) -->
+        <section class="h-[55%] px-16 flex flex-row items-center justify-between relative">
+            
+            <!-- Left: Copy -->
+            <div class="w-1/2 z-10 pr-8">
+                <h1 class="text-[52px] leading-[1.1] font-extrabold text-slate-900 mb-6">
+                    Engineering Discipline for <span class="brand-gradient-text">Salesforce That Scales</span>
+                </h1>
+                <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
+                    Most Salesforce instances collapse under technical debt within 5 years. We architect systems built to last—and grow—forever.
+                </p>
+                
+                <div class="mt-8 flex gap-4">
+                     <!-- Visual decorative line -->
+                    <div class="h-1 w-24 brand-gradient-bg rounded-full"></div>
+                </div>
+            </div>
+
+            <!-- Right: Visual (Code/Architecture Abstract) -->
+            <div class="w-1/2 h-full flex items-center justify-center relative">
+                <!-- Background decorative blob -->
+                <div class="absolute w-[400px] h-[400px] bg-purple-200 rounded-full blur-3xl opacity-20 -top-10 -right-10"></div>
+                
+                <!-- Terminal Window Graphic -->
+                <div class="relative w-[480px] bg-slate-900 rounded-xl shadow-2xl shadow-purple-900/20 overflow-hidden border border-slate-700 transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700">
+                    <!-- Window Controls -->
+                    <div class="bg-slate-800 px-4 py-3 flex gap-2 border-b border-slate-700">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                    </div>
+                    <!-- Code Content -->
+                    <div class="p-6 code-font text-sm">
+                        <div class="flex">
+                            <span class="text-slate-500 w-6 select-none">1</span>
+                            <span class="text-purple-400">class</span> <span class="text-yellow-300 ml-2">RevOpsArchitecture</span> <span class="text-slate-300">{</span>
+                        </div>
+                        <div class="flex">
+                            <span class="text-slate-500 w-6 select-none">2</span>
+                            <span class="text-slate-400 ml-4">// Stop patching. Start architecting.</span>
+                        </div>
+                        <div class="flex">
+                            <span class="text-slate-500 w-6 select-none">3</span>
+                            <span class="text-purple-400 ml-4">public static void</span> <span class="text-blue-400"> scaleGrowth</span><span class="text-slate-300">() {</span>
+                        </div>
+                        <div class="flex">
+                            <span class="text-slate-500 w-6 select-none">4</span>
+                            <span class="text-purple-400 ml-8">if</span> <span class="text-slate-300">(</span><span class="text-slate-200">technicalDebt</span> <span class="text-purple-400">></span> <span class="text-orange-400">LIMIT</span><span class="text-slate-300">) {</span>
+                        </div>
+                        <div class="flex">
+                            <span class="text-slate-500 w-6 select-none">5</span>
+                            <span class="text-slate-400 ml-12">// This is what we prevent</span>
+                        </div>
+                        <div class="flex">
+                            <span class="text-slate-500 w-6 select-none">6</span>
+                            <span class="text-red-400 ml-12">throw new SystemCollapseException();</span>
+                        </div>
+                        <div class="flex">
+                            <span class="text-slate-500 w-6 select-none">7</span>
+                            <span class="text-slate-300 ml-8">}</span>
+                        </div>
+                        <div class="flex">
+                            <span class="text-slate-500 w-6 select-none">8</span>
+                            <span class="text-emerald-400 ml-8">return</span> <span class="text-yellow-300"> SustainedRevenue</span><span class="text-slate-300">;</span>
+                        </div>
+                        <div class="flex">
+                            <span class="text-slate-500 w-6 select-none">9</span>
+                            <span class="text-slate-300">}</span>
+                        </div>
+                    </div>
+                    <!-- Status Bar -->
+                    <div class="bg-slate-900 border-t border-slate-700 px-4 py-2 text-xs text-slate-400 flex justify-between code-font">
+                        <span>main.apex</span>
+                        <span class="text-emerald-400">● No Errors Found</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Blocks (Increased to 30% to prevent overlap) -->
+        <section class="h-[30%] px-16 pb-6">
+            <div class="grid grid-cols-3 gap-8 h-full">
+                
+                <!-- Block 1: Revenue Risk -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-center hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="p-2 bg-white rounded-lg shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8E2DE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg">Eliminate Revenue Risk</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Stop fearing your own CRM. We map every hidden dependency so you can scale without breaking critical sales flows.
+                    </p>
+                </div>
+
+                <!-- Block 2: Strategic Agility -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-center hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="p-2 bg-white rounded-lg shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8E2DE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg">Unblock Strategy</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Never let IT be the bottleneck. We build flexible architectures that let you launch new products and territories instantly.
+                    </p>
+                </div>
+
+                <!-- Block 3: Growth Scale -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-center hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="p-2 bg-white rounded-lg shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8E2DE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg">Sustained Growth</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Break the 5-year technical debt cycle. We build a foundation that supports your company from $10M to $100M+ revenue.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer (5%) -->
+        <footer class="h-[5%] bg-slate-900 flex justify-between items-center px-16 text-slate-400 text-sm">
+            <div class="flex gap-6">
+                <span>support@apex-palantir.com</span>
+                <span>•</span>
+                <span>+49 221 2919 7318</span>
+            </div>
+            <div class="flex gap-2 items-center">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span class="text-slate-300 font-medium">Remote First. Europe Wide.</span>
+                <span class="mx-3 text-slate-600">•</span>
+                <span class="text-slate-500 text-xs">Page 01</span>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

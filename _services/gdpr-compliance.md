@@ -1,6 +1,10 @@
 ---
-layout: default
-title: "GDPR Compliance"
+layout: service
+title: "GDPR Compliance Check | ApexPalantir"
+description: "Salesforce GDPR compliance audit. Identify personal data exposure, risky access patterns, and privacy vulnerabilities in your CRM before regulators do."
+service_type: "Salesforce GDPR Compliance"
+price: "1200"
+image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 ---
 
 {% include services/gdpr/gdpr_hero.html %}
