@@ -1,12 +1,13 @@
 <section class="py-12 border-y border-slate-100 bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 mb-8 text-center text-xs font-bold uppercase tracking-[0.2em] text-slate-600">Trusted by Forward-Thinking Leaders</div>
   <div class="flex overflow-hidden whitespace-nowrap relative">
-    <div class="flex gap-16 items-center grayscale logo-scroll text-slate-500">
-      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] text-slate-800 font-bold not-italic">GT</div>GlobalTech #1</div>
-      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] text-slate-800 font-bold not-italic">AF</div>ApexFlow</div>
-      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] text-slate-800 font-bold not-italic">CS</div>CloudScale</div>
-      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] text-slate-800 font-bold not-italic">DB</div>DataBridge</div>
-      <div class="flex items-center gap-2 text-2xl font-black italic tracking-tighter px-4 select-none whitespace-nowrap"><div class="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-[10px] text-slate-800 font-bold not-italic">LG</div>LogicGate</div>
+    <div class="flex gap-16 items-center logo-scroll">
+      <img src="{{ '/assets/images/clients/zech.webp' | relative_url }}" alt="Zech" class="h-10 w-auto grayscale opacity-60" loading="lazy" decoding="async">
+      <img src="{{ '/assets/images/clients/eigenherd.webp' | relative_url }}" alt="Eigenherd" class="h-10 w-auto grayscale opacity-60" loading="lazy" decoding="async">
+      <img src="{{ '/assets/images/clients/liqid.webp' | relative_url }}" alt="LIQID" class="h-10 w-auto grayscale opacity-60" loading="lazy" decoding="async">
+      <img src="{{ '/assets/images/clients/eventinc_log.webp' | relative_url }}" alt="EventInc" class="h-10 w-auto grayscale opacity-60" loading="lazy" decoding="async">
+      <img src="{{ '/assets/images/clients/iu.webp' | relative_url }}" alt="IU" class="h-16 w-auto grayscale opacity-60" loading="lazy" decoding="async">
+      <img src="{{ '/assets/images/clients/hauser.webp' | relative_url }}" alt="Hauser Maschinen" class="h-10 w-auto grayscale opacity-60" loading="lazy" decoding="async">
     </div>
   </div>
 
@@ -22,7 +23,7 @@
     scrollContainer.innerHTML = scrollContent + scrollContent + scrollContent;
 
     let scrollAmount = 0;
-    const scrollSpeed = 0.5;
+    const scrollSpeed = 0.25;
     let isVisible = false;
     let animationId = null;
 
