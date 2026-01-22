@@ -41,8 +41,8 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
                     Germany
                 </p>
                 <p class="text-slate-600 leading-relaxed">
-                    <strong class="text-slate-900">Phone:</strong> +49 221 2929 7318<br/>
-                    <strong class="text-slate-900">Email:</strong> <a href="mailto:privacy@apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">privacy@apexpalantir.com</a>
+                    <strong class="text-slate-900">Phone:</strong> +49 402 2632 0690<br/>
+                    <strong class="text-slate-900">Email:</strong> <a href="mailto:privacy@apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">privacy@apex-palantir.com</a>
                 </p>
             </div>
 
@@ -182,7 +182,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
                 </div>
 
                 <p class="text-slate-600 leading-relaxed mt-6">
-                    To exercise any of these rights, please contact us at <a href="mailto:privacy@apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors font-semibold">privacy@apexpalantir.com</a>
+                    To exercise any of these rights, please contact us at <a href="mailto:privacy@apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors font-semibold">privacy@apex-palantir.com</a>
                 </p>
             </div>
 
@@ -234,8 +234,8 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
                     If you have any questions, concerns, or requests regarding this Privacy Policy or our data processing practices, please contact us:
                 </p>
                 <p class="text-slate-600 leading-relaxed">
-                    <strong class="text-slate-900">Email:</strong> <a href="mailto:privacy@apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">privacy@apexpalantir.com</a><br/>
-                    <strong class="text-slate-900">Phone:</strong> +49 221 2929 7318<br/>
+                    <strong class="text-slate-900">Email:</strong> <a href="mailto:privacy@apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">privacy@apex-palantir.com</a><br/>
+                    <strong class="text-slate-900">Phone:</strong> +49 402 2632 0690<br/>
                     <strong class="text-slate-900">Mail:</strong> ApexPalantir, [Complete Address]
                 </p>
             </div>
