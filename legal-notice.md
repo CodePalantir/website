@@ -36,9 +36,9 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
             <h2 class="text-3xl font-bold text-slate-900 mb-6">Contact</h2>
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
-                    <strong class="text-slate-900">Phone:</strong> +49 221 2929 7318<br/>
-                    <strong class="text-slate-900">Email:</strong> <a href="mailto:info@apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">info@apexpalantir.com</a><br/>
-                    <strong class="text-slate-900">Website:</strong> <a href="https://www.apexpalantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">www.apexpalantir.com</a>
+                    <strong class="text-slate-900">Phone:</strong> +49 402 2632 0690<br/>
+                    <strong class="text-slate-900">Email:</strong> <a href="mailto:info@apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">info@apex-palantir.com</a><br/>
+                    <strong class="text-slate-900">Website:</strong> <a href="https://www.apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">www.apex-palantir.com</a>
                 </p>
             </div>
 

@@ -80,7 +80,7 @@ Establish the rule: If you can't explain why it exists, it gets archived.
 <div class="my-12 p-8 bg-[#0A0A0B] rounded-3xl text-white text-center">
     <h3 class="text-2xl font-bold text-purple-400 mb-4">Buried in Technical Debt?</h3>
     <p class="text-slate-300 mb-6">Get a legacy system stabilization roadmap tailored to your org.</p>
-    <a href="mailto:info@apexpalantir.com?subject=Legacy%20System%20Roadmap%20Request" class="bg-[#8E2DE2] hover:bg-[#7a25c6] text-white px-8 py-3 rounded-full font-bold transition-all inline-block cursor-pointer">
+    <a href="mailto:support@apex-palantir.com?subject=Legacy%20System%20Roadmap%20Request" class="bg-[#8E2DE2] hover:bg-[#7a25c6] text-white px-8 py-3 rounded-full font-bold transition-all inline-block cursor-pointer">
         Get Your Roadmap
     </a>
 </div>
