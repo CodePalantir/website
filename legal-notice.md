@@ -26,9 +26,9 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-900 font-semibold mb-4">ApexPalantir</p>
                 <p class="text-slate-600 leading-relaxed">
-                    [Company Legal Name]<br/>
-                    [Street Address]<br/>
-                    [Postal Code] [City]<br/>
+                    Alexander Knoll<br/>
+                    Strehlowweg 16<br/>
+                    22605 Hamburg<br/>
                     Germany
                 </p>
             </div>
@@ -37,7 +37,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
                     <strong class="text-slate-900">Phone:</strong> +49 402 2632 0690<br/>
-                    <strong class="text-slate-900">Email:</strong> <a href="mailto:info@apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">info@apex-palantir.com</a><br/>
+                    <strong class="text-slate-900">Email:</strong> <a href="mailto:support@apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">info@apex-palantir.com</a><br/>
                     <strong class="text-slate-900">Website:</strong> <a href="https://www.apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">www.apex-palantir.com</a>
                 </p>
             </div>
@@ -45,15 +45,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
             <h2 class="text-3xl font-bold text-slate-900 mb-6">Represented by</h2>
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
-                    [Managing Director(s) / Authorized Representative(s)]
-                </p>
-            </div>
-
-            <h2 class="text-3xl font-bold text-slate-900 mb-6">Register Entry</h2>
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
-                <p class="text-slate-600 leading-relaxed">
-                    <strong class="text-slate-900">Registration court:</strong> [Court Name]<br/>
-                    <strong class="text-slate-900">Registration number:</strong> [HRB/HRA Number]
+                    Alexander Knoll
                 </p>
             </div>
 
@@ -61,7 +53,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
                     VAT identification number in accordance with § 27 a of the German Value Added Tax Act:<br/>
-                    <strong class="text-slate-900">[VAT ID Number]</strong>
+                    <strong class="text-slate-900">DE314976133</strong>
                 </p>
             </div>
 
@@ -69,8 +61,8 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
                     Responsible for the content in accordance with § 55 Para. 2 RStV:<br/>
-                    <strong class="text-slate-900">[Name]</strong><br/>
-                    [Address]
+                    <strong class="text-slate-900">Alexander Knoll</strong><br/>
+                    Strehlowweg 16, 22605 Hamburg, Germany
                 </p>
             </div>
 
