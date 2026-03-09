@@ -103,7 +103,24 @@
 
     w.addEventListener('popstate', track);
 
+    // Calendly link interceptor - append visitor ID for lead attribution
+    d.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href*="calendly.com"]');
+        if (!link) return;
+
+        var url = new URL(link.href);
+        url.searchParams.set('utm_source', siteId);
+        url.searchParams.set('utm_medium', 'website');
+        url.searchParams.set('utm_campaign', location.pathname);
+        // Use ApexPalantir UUID if available, fall back to hashed fingerprint
+        var uuid = localStorage.getItem('ap_uid');
+        url.searchParams.set('utm_content', uuid || getVisitorId());
+
+        link.href = url.toString();
+        console.log('[APX Lumos] Calendly link enhanced:', link.href);
+    });
+
     // Public API
-    w.ApxLumos = { track: track };
+    w.ApxLumos = { track: track, getVisitorId: getVisitorId };
 
 })(window, document);
