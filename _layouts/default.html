@@ -43,10 +43,14 @@
   <!-- / Fathom -->
 
   <!-- APX Lumos Light -->
-  <script>window.APX_SITE='apex-palantir.com';</script>
-  {% if jekyll.environment == 'development' %}
-  <script>window.AP_ENDPOINT='http://localhost:3000/api/ingest';window.AP_DEBUG=true;</script>
-  {% endif %}
+  <script>
+    window.APX_SITE='apex-palantir.com';
+    window.AP_ENDPOINT='https://lumos.apex-stack.com/api/ingest';
+    {% if jekyll.environment == 'development' %}
+    window.AP_ENDPOINT='http://localhost:3000/api/ingest';
+    window.AP_DEBUG=true;
+    {% endif %}
+  </script>
   <script src="{{ '/assets/js/apx-lumos-light.js' | relative_url }}" defer></script>
 </head>
 <body class="min-h-screen bg-white text-slate-900 selection:bg-purple-100">
