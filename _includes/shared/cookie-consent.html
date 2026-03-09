@@ -1,0 +1,119 @@
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent" class="fixed bottom-0 left-0 right-0 z-50 p-4 transform translate-y-full transition-transform duration-300">
+  <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl border border-slate-200 p-6">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      <div class="flex-1">
+        <p class="text-slate-700 text-sm">
+          We use cookies to analyze site usage and improve your experience.
+          <a href="{{ site.baseurl }}/privacy" class="text-purple-600 hover:underline">Learn more</a>
+        </p>
+      </div>
+      <div class="flex gap-3 shrink-0">
+        <button id="cookie-decline" class="px-4 py-2 text-sm font-semibold text-slate-600 hover:text-slate-800 transition-colors">
+          Decline
+        </button>
+        <button id="cookie-accept" class="px-5 py-2 bg-purple-gradient text-white text-sm font-semibold rounded-full shadow-md shadow-purple-200 hover:scale-105 transition-transform">
+          Accept
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Cookie Consent Management
+(function() {
+  const CONSENT_COOKIE = 'apx_analytics_consent';
+  const CONSENT_DURATION = 365; // days
+
+  // Cookie utilities
+  function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/; SameSite=Lax';
+  }
+
+  function getCookie(name) {
+    const value = document.cookie.split('; ').find(row => row.startsWith(name + '='));
+    return value ? decodeURIComponent(value.split('=')[1]) : null;
+  }
+
+  // Initialize custom analytics (called after consent)
+  function initCustomAnalytics() {
+    // Load ApexPalantir tracker
+    const script = document.createElement('script');
+    script.src = '{{ "/assets/js/apx-lumos.js" | relative_url }}';
+    script.onload = function() {
+      if (window.ApexPalantir) {
+        window.ApexPalantir.init();
+        console.log('[Analytics] ApexPalantir tracker initialized');
+      }
+    };
+    document.head.appendChild(script);
+
+    // Dispatch event for external listeners
+    window.dispatchEvent(new CustomEvent('analyticsConsent', { detail: { accepted: true } }));
+  }
+
+  // Show/hide banner
+  function showBanner() {
+    const banner = document.getElementById('cookie-consent');
+    if (banner) {
+      setTimeout(() => banner.classList.remove('translate-y-full'), 500);
+    }
+  }
+
+  function hideBanner() {
+    const banner = document.getElementById('cookie-consent');
+    if (banner) {
+      banner.classList.add('translate-y-full');
+    }
+  }
+
+  // Handle consent
+  function acceptCookies() {
+    setCookie(CONSENT_COOKIE, 'accepted', CONSENT_DURATION);
+    hideBanner();
+    initCustomAnalytics();
+  }
+
+  function declineCookies() {
+    setCookie(CONSENT_COOKIE, 'declined', CONSENT_DURATION);
+    hideBanner();
+    window.dispatchEvent(new CustomEvent('analyticsConsent', { detail: { accepted: false } }));
+  }
+
+  // Check existing consent on load
+  function checkConsent() {
+    const consent = getCookie(CONSENT_COOKIE);
+
+    if (consent === 'accepted') {
+      initCustomAnalytics();
+    } else if (consent === 'declined') {
+      // User previously declined, do nothing
+    } else {
+      // No decision yet, show banner
+      showBanner();
+    }
+  }
+
+  // Initialize
+  document.addEventListener('DOMContentLoaded', function() {
+    const acceptBtn = document.getElementById('cookie-accept');
+    const declineBtn = document.getElementById('cookie-decline');
+
+    if (acceptBtn) acceptBtn.addEventListener('click', acceptCookies);
+    if (declineBtn) declineBtn.addEventListener('click', declineCookies);
+
+    checkConsent();
+  });
+
+  // Expose for external use
+  window.CookieConsent = {
+    hasConsent: function() { return getCookie(CONSENT_COOKIE) === 'accepted'; },
+    reset: function() {
+      document.cookie = CONSENT_COOKIE + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+      location.reload();
+    }
+  };
+})();
+</script>
