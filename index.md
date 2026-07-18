@@ -11,4 +11,5 @@ image: /assets/images/logos/APX_LOGO.png
 {% include sections/lifecycle-mobius.html %}
 {% include sections/featured-services.html %}
 {% include sections/app-grid.html %}
-{% include sections/cta-band.html %}
+{% include sections/revshorts-feature.html %}
+{% include sections/about-signature.html %}

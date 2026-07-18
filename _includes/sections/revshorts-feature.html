@@ -1,0 +1,35 @@
+{%- comment -%}
+  Featured RevShorts. Three most recent short reads pulled from the
+  _revshorts collection, in the site's warm card language.
+{%- endcomment -%}
+{% assign shorts = site.revshorts | sort: 'date' | reverse %}
+<section id="revshorts" class="apx-section px-6 bg-paper scroll-mt-24">
+  <div class="max-w-wide mx-auto">
+    <div class="max-w-[760px] mx-auto text-center rv">
+      <span class="apx-eyebrow">RevShorts</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">Sharp takes on the messy parts of RevOps.</h2>
+      <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">Two-minute reads on the unglamorous truths of revenue operations, from the field, not the brochure.</p>
+    </div>
+
+    <div class="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+      {% for s in shorts limit: 3 %}
+        {% assign hi = s.hero_icon | default: "zap" %}
+        <a href="{{ s.url | relative_url }}" class="apx-card group flex flex-col p-6 md:p-7 rv">
+          <div class="flex items-center gap-3">
+            <span class="inline-grid place-items-center w-10 h-10 rounded-lg bg-accent-tint text-accent shrink-0">{% include ui/icon.html name=hi class="w-5 h-5" %}</span>
+            <span class="text-[11px] font-bold uppercase tracking-[0.12em] text-faint">{{ s.category }}</span>
+          </div>
+          <h3 class="mt-5 font-bold text-ink tracking-[-0.01em] leading-snug text-[1.2rem] flex-1">{{ s.title }}</h3>
+          <div class="mt-6 flex items-center justify-between text-sm">
+            <span class="text-faint font-medium">{{ s.read_time }}</span>
+            <span class="text-accent font-semibold inline-flex items-center gap-1.5">Read <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+
+    <div class="mt-10 text-center rv">
+      <a href="{{ '/revshorts' | relative_url }}" class="apx-btn apx-btn-ghost">All RevShorts</a>
+    </div>
+  </div>
+</section>
