@@ -23,21 +23,6 @@
   <!-- Tailwind Output -->
   <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | relative_url }}">
 
-  <!-- Preconnect for external images (team photos) -->
-  <link rel="dns-prefetch" href="https://media.licdn.com">
-  <link rel="dns-prefetch" href="https://i.pravatar.cc">
-  <link rel="preconnect" href="https://media.licdn.com" crossorigin>
-  <link rel="preconnect" href="https://i.pravatar.cc" crossorigin>
-
-  <!-- Preload critical logo (mobile gets smaller version) -->
-  <link rel="preload" as="image" href="{{ '/assets/images/logos/APX_LOGO_MOBILE.webp' | relative_url }}" media="(max-width: 767px)">
-  <link rel="preload" as="image" href="{{ '/assets/images/logos/APX_LOGO.png' | relative_url }}" media="(min-width: 768px)">
-
-  {% if page.url == '/about' or page.url == '/about/' %}
-  <!-- Preload LCP image for about page -->
-  <link rel="preload" as="image" href="{{ '/assets/images/people/alex-knoll.webp' | relative_url }}" type="image/webp">
-  {% endif %}
-
   <!-- Icons are inlined server-side via _includes/ui/icon.html (no JS icon library) -->
 
   <!-- Fathom - beautiful, simple website analytics -->
