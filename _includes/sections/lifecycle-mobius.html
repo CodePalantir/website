@@ -5,7 +5,7 @@
   activates and the panel crossfades. Click a node to glide to it. Runs only while
   in the viewport; reduced-motion safe. Full-viewport, scales with the viewport.
 {%- endcomment -%}
-<section id="lifecycle" class="lc-section apx-vh px-6 bg-paper overflow-hidden">
+<section id="lifecycle" class="lc-section apx-section px-6 bg-paper overflow-hidden scroll-mt-24">
   <div class="max-w-[min(112rem,96vw)] mx-auto w-full">
     <div class="grid lg:grid-cols-[1.25fr_0.75fr] gap-[clamp(1.5rem,3vw,3.5rem)] items-start">
 
@@ -128,7 +128,7 @@
 
 <style>
   .lc-stage { display:flex; align-items:center; justify-content:center; }
-  .lc-svg { width:100%; height:auto; aspect-ratio:1/1; max-height:min(var(--apx-content-h),840px); display:block; margin-inline:auto; overflow:visible; }
+  .lc-svg { width:100%; height:auto; aspect-ratio:1/1; max-height:min(58vh,600px); display:block; margin-inline:auto; overflow:visible; }
   .lc-node { cursor:pointer; transition:opacity .4s ease; }
   .lc-node-inner { transform-box:fill-box; transform-origin:center; transition:transform .4s cubic-bezier(.2,.8,.2,1); }
   .lc-halo { transform-box:fill-box; transform-origin:center; opacity:0; transform:scale(.6); transition:opacity .4s ease, transform .4s ease; }

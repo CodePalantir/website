@@ -12,7 +12,7 @@ manufacturing.webp :: Manufacturing & industry :: From quote to machine to servi
 education.webp :: Education :: Enrolment funnels students actually finish :: University campus
 events.webp :: Events & hospitality :: High-volume bookings, zero lost leads :: Conference event audience
 {% endcapture %}
-<section id="work" class="apx-vh px-6 bg-paper">
+<section id="work" class="apx-section px-6 bg-paper scroll-mt-24">
   <div class="max-w-wide mx-auto w-full">
     <div class="max-w-[720px] mx-auto text-center rv">
       <span class="apx-eyebrow">Who we work with</span>
@@ -20,8 +20,7 @@ events.webp :: Events & hospitality :: High-volume bookings, zero lost leads :: 
       <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">B2B and B2C, from fast-growing software teams to established industrial groups, the same calm, careful way of working.</p>
     </div>
 
-    {%- comment -%} On lg the grid width is capped by viewport height so the two rows of square cards always fit one screen and scale with it. {%- endcomment -%}
-    <div class="mt-8 sm:mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:mx-auto lg:w-full lg:max-w-[min(80rem,calc((100vh-28rem)*1.5))]">
+    <div class="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
       {% assign rows = industry_cards | strip | newline_to_br | split: "<br />" %}
       {% for row in rows %}
         {% assign parts = row | strip | split: " :: " %}

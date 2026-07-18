@@ -126,22 +126,6 @@
     .apx-section { padding-top: var(--spacing-section); padding-bottom: var(--spacing-section); }
   }
 
-  /* Full-viewport primary section. One consistent height for every primary
-     section, with the top padding sized to clear the fixed header so centred
-     content is never hidden behind it. --apx-header is the header allowance. */
-  .apx-vh {
-    --apx-header: clamp(5.5rem, 9vh, 7rem);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: calc(var(--apx-header) + clamp(0.5rem, 1.5vh, 1.5rem));
-    padding-bottom: clamp(2rem, 5vh, 4rem);
-    scroll-margin-top: var(--apx-header);
-  }
-  /* Height budget left for a primary section's content, after header + padding. */
-  :root { --apx-content-h: calc(100vh - clamp(6rem, 10.5vh, 8.5rem) - clamp(2rem, 5vh, 4rem)); }
-
   /* Gradient eyebrow — small uppercase kicker above section heads */
   .apx-eyebrow {
     display: inline-block;
