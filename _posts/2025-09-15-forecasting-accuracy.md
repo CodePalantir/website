@@ -89,10 +89,8 @@ Build flows or Einstein AI to flag deals that deviate from historical patterns.
 
 Don't set-it-and-forget-it. Review forecast vs. actuals weekly and refine your model.
 
-<div class="my-12 p-8 bg-[#0A0A0B] rounded-3xl text-white text-center">
-    <h3 class="text-2xl font-bold mb-4">Tired of Missed Forecasts?</h3>
-    <p class="text-slate-400 mb-6">Get a predictive accuracy model built for your pipeline.</p>
-    <button class="bg-[#8E2DE2] hover:bg-[#7a25c6] text-white px-8 py-3 rounded-full font-bold transition-all w-full md:w-auto">
-        Build Your Model
-    </button>
+<div class="my-12 p-8 md:p-10 bg-surface border border-line rounded-[2rem] text-center">
+    <h3 class="text-2xl font-bold text-ink mb-3 tracking-[-0.01em]">Tired of Missed Forecasts?</h3>
+    <p class="text-muted mb-7 max-w-md mx-auto">Get a predictive accuracy model built for your pipeline.</p>
+    <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="post-inline" class="apx-btn apx-btn-primary">Build Your Model</a>
 </div>

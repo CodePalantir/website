@@ -5,49 +5,63 @@ description: "RevShorts are 400 to 500 word reads on a single RevOps idea: one p
 image: /assets/images/logos/APX_LOGO.png
 ---
 
-<!-- REVSHORTS HERO -->
-<section class="pt-28 sm:pt-32 md:pt-36 pb-10 md:pb-14 px-4 sm:px-6 bg-white">
-  <div class="max-w-7xl mx-auto">
-    <span class="text-[#8E2DE2] font-bold uppercase tracking-widest text-xs mb-4 block">RevShorts</span>
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight text-slate-900">
-      One idea. Two minutes<span class="text-gradient">.</span>
-    </h1>
-    <p class="text-slate-600 mt-6 text-lg leading-relaxed max-w-2xl">Short reads on a single RevOps idea: one pattern, one failure mode, one fix. No filler, no consulting cycle. For the longer pieces, see the <a href="{{ site.baseurl }}/blog" class="font-bold text-purple-600 hover:text-purple-700">blog</a>.</p>
+<!-- ── 1 · Hero — same grid+glow ground as the homepage ─────────── -->
+<section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
+  <div class="apx-hero-grid"></div>
+  <div class="apx-hero-glow"></div>
+
+  <div class="relative z-[4] px-6 pt-40 pb-16 md:pt-48 md:pb-20 text-center">
+    <div class="w-full max-w-[880px] mx-auto">
+      <span class="apx-eyebrow">RevShorts</span>
+      <h1 class="mt-5 font-bold text-ink tracking-[-0.025em] leading-[1.06] text-[clamp(2.4rem,5vw,4rem)]" style="text-wrap:balance">
+        One idea. <span class="text-gradient">Two minutes.</span>
+      </h1>
+      <p class="mt-6 mx-auto max-w-[600px] text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted">
+        Short reads on a single RevOps idea: one pattern, one failure mode, one fix. No filler, no consulting cycle.
+      </p>
+      <p class="mt-4 text-[15.5px] font-medium text-faint">
+        For the longer pieces, see the <a href="{{ site.baseurl }}/blog/" class="font-semibold text-accent hover:text-accent-strong transition-colors">blog</a>.
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- REVSHORTS GRID -->
-<section class="pb-16 md:pb-24 px-4 sm:px-6 bg-white">
-  <div class="max-w-7xl mx-auto">
+<!-- ── 2 · All shorts ───────────────────────────────────────────── -->
+<section class="px-6 pb-16 md:pb-24 bg-paper">
+  <div class="max-w-wide mx-auto">
     {% assign shorts = site.revshorts | sort: 'date' | reverse %}
     {% if shorts.size > 0 %}
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+    <div class="rv">
+      <span class="apx-label"><span class="idx">{{ shorts.size }}</span>Shorts — newest first</span>
+      <hr class="apx-rule mt-4">
+    </div>
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
       {% for item in shorts %}
-      <a href="{{ site.baseurl }}{{ item.url }}" class="group flex flex-col p-7 rounded-3xl border border-slate-100 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-100/40 transition-all">
-        <div class="flex items-center justify-between mb-6">
-          <div class="w-11 h-11 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all">
-            {% assign _ic = item.hero_icon | default: 'zap' %}{% include ui/icon.html name=_ic class="w-5 h-5" %}
+      <a href="{{ site.baseurl }}{{ item.url }}" class="apx-card group p-6 md:p-7">
+        <div class="flex items-center justify-between gap-3">
+          <div class="w-10 h-10 rounded-xl bg-accent-tint flex items-center justify-center text-accent">
+            {% assign _ic = item.hero_icon | default: 'zap' %}{% include ui/icon.html name=_ic class="w-[18px] h-[18px]" %}
           </div>
-          <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-slate-400">{{ item.read_time | default: "2 Min" }}</span>
+          <span class="apx-label">{{ item.read_time | default: "2 Min Read" }}</span>
         </div>
-        <div class="flex items-center gap-2 mb-2 text-[11px] font-bold uppercase tracking-widest text-slate-400">
-          <span>{{ item.date | date: "%b %d, %Y" }}</span>
-          {% if item.category %}<span>•</span><span>{{ item.category }}</span>{% endif %}
+        <h2 class="mt-5 text-[1.15rem] font-bold text-ink tracking-[-0.01em] leading-snug group-hover:text-accent-strong transition-colors" style="text-wrap:balance">{{ item.title }}</h2>
+        <div class="mt-auto pt-5 flex items-center gap-2 text-[12.5px] font-medium text-faint">
+          {% if item.category %}<span class="font-semibold text-accent">{{ item.category }}</span><span aria-hidden="true">&middot;</span>{% endif %}
+          <span>{{ item.date | date: "%b %-d, %Y" }}</span>
+          <span class="ml-auto inline-flex items-center gap-1 text-[13px] font-semibold text-ink group-hover:text-accent transition-colors">
+            Read {% include ui/icon.html name="arrow-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" %}
+          </span>
         </div>
-        <h2 class="text-xl font-bold text-slate-900 mb-3 leading-snug group-hover:text-purple-600 transition-colors">{{ item.title }}</h2>
-        <p class="text-slate-500 text-sm leading-relaxed mb-5 flex-grow">{{ item.description | default: item.excerpt | strip_html | truncatewords: 24 }}</p>
-        <span class="font-mono text-sm font-bold text-slate-900 flex items-center gap-1 group-hover:gap-2 group-hover:text-purple-600 transition-all">read {% include ui/icon.html name="arrow-right" class="w-3.5 h-3.5" %}</span>
       </a>
       {% endfor %}
     </div>
     {% else %}
-    <div class="max-w-md rounded-3xl border border-dashed border-slate-200 p-10 text-center">
-      <div class="w-12 h-12 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 mx-auto mb-4">{% include ui/icon.html name="zap" class="w-6 h-6" %}</div>
-      <p class="text-slate-600">First RevShorts are on the way. In the meantime, the <a href="{{ site.baseurl }}/blog" class="font-bold text-purple-600 hover:text-purple-700">blog</a> has the long-form pieces.</p>
+    <div class="max-w-md mx-auto apx-card p-10 text-center border-dashed">
+      <div class="w-12 h-12 rounded-2xl bg-accent-tint flex items-center justify-center text-accent mx-auto mb-4">{% include ui/icon.html name="zap" class="w-6 h-6" %}</div>
+      <p class="text-muted">First RevShorts are on the way. In the meantime, the <a href="{{ site.baseurl }}/blog/" class="font-semibold text-accent hover:text-accent-strong">blog</a> has the long-form pieces.</p>
     </div>
     {% endif %}
   </div>
 </section>
 
-{% include blog/home/blog_subscribe.html %}
-{% include home/about_us_home.html %}
+{% include sections/cta-band.html %}

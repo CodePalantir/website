@@ -16,11 +16,11 @@ layout: default
     "@type": "Person",
     "name": "{{ page.author }}",
     "jobTitle": "{{ page.author_role }}",
-    "image": "{{ page.author_image }}"
+    "image": "{{ page.author_image | absolute_url }}"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "ApexPalantir",
+    "name": "APX",
     "logo": {
       "@type": "ImageObject",
       "url": "{{ '/assets/images/logos/APX_LOGO.png' | absolute_url }}"
@@ -34,90 +34,186 @@ layout: default
   "keywords": "Salesforce, {{ page.category }}, Revenue Operations, Technical Architecture"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ '/' | absolute_url }}" },
+    { "@type": "ListItem", "position": 2, "name": "Insights", "item": "{{ '/blog/' | absolute_url }}" },
+    { "@type": "ListItem", "position": 3, "name": "{{ page.title | escape }}", "item": "{{ page.url | absolute_url }}" }
+  ]
+}
+</script>
+
+<!-- Page-scoped: warm the legacy article body components (callouts) to the
+     locked design system without touching input.css -->
+<style>
+  .prose .article-callout {
+    background-color: var(--color-accent-tint);
+    border-left-color: var(--color-accent);
+    border-radius: 0 1.5rem 1.5rem 0;
+  }
+  .prose .article-callout p { font-size: 0.95rem; line-height: 1.7; margin-bottom: 0; }
+  /* The global .prose p rules flatten the stat tiles — restore their hierarchy */
+  .prose .article-stat-box { border-radius: 1.25rem; }
+  .prose .article-stat-box p { margin-bottom: 0; line-height: 1.4; }
+  .prose .article-stat-box p:nth-child(1) { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--color-ink); }
+  .prose .article-stat-box p:nth-child(2) { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-faint); margin-top: 0.3rem; }
+  .prose .article-stat-box p:nth-child(3) { font-size: 0.85rem; color: var(--color-faint); margin-top: 0.55rem; }
+  .prose .article-stat-box p.stat-accent { color: var(--color-accent); }
+  .prose .article-stat-box.bg-plum { border-color: transparent; }
+  .prose .article-stat-box.bg-plum p:nth-child(1) { color: #fff; }
+  .prose .article-stat-box.bg-plum p:nth-child(2) { color: #FF8A94; }
+  .prose .article-stat-box.bg-plum p:nth-child(3) { color: rgba(255, 255, 255, 0.72); }
+  /* Inline conversion card injected from post markdown */
+  .prose .apx-inline-cta p { font-size: 1.05rem; line-height: 1.7; }
+</style>
 
 <!-- READING PROGRESS BAR -->
-<div id="reading-progress" class="fixed top-[72px] left-0 h-1 bg-[#8E2DE2] z-40 w-0 transition-all duration-100 ease-out"></div>
+<div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-purple-gradient z-50 w-0 transition-all duration-100 ease-out"></div>
 
-{% include shared/breadcrumbs.html %}
+<!-- ── 1 · Article header — same grid+glow ground as the homepage ── -->
+<section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
+  <div class="apx-hero-grid"></div>
+  <div class="apx-hero-glow"></div>
 
-<!-- ARTICLE HEADER -->
-<section class="py-12 px-6 bg-white">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <div class="lg:col-span-8">
-                <h1 class="text-4xl md:text-6xl font-black text-slate-900 mb-8 leading-tight">{{ page.title }}</h1>
-                <div class="flex items-center gap-6 mb-12">
-                <div class="flex items-center gap-3">
-                    <img src="{{ page.author_image }}" class="w-10 h-10 rounded-full object-cover border border-slate-100" alt="{{ page.author }}">
-                    <div>
-                        <p class="text-sm font-bold text-slate-900">{{ page.author }}</p>
-                        <p class="text-xs text-slate-500">{{ page.author_role }}</p>
-                    </div>
-                </div>
-                <div class="h-8 w-px bg-slate-200"></div>
-                <p class="text-sm font-medium text-slate-500">{{ page.date | date: "%b %d, %Y" }}</p>
-                <div class="h-8 w-px bg-slate-200"></div>
-                <p class="text-sm font-medium text-slate-500">{{ page.read_time }}</p>
-                </div>
-
-                <!-- Abstract Hero Image -->
-                <div class="aspect-video bg-slate-50 rounded-3xl border border-slate-100 mb-12 flex items-center justify-center pattern-grid relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-r from-purple-100/30 to-blue-50/30"></div>
-                <div class="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center relative z-10">
-                    {% include ui/icon.html name=page.hero_icon class="w-10 h-10 text-[#8E2DE2]" %}
-                </div>
-                </div>
-
-                <!-- KEY TAKEAWAYS -->
-                {% if page.key_takeaways %}
-                <div class="bg-slate-50 border-l-4 border-[#8E2DE2] p-8 rounded-r-2xl mb-12">
-                    <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        {% include ui/icon.html name="lightbulb" class="w-5 h-5 text-[#8E2DE2]" %} Key Takeaways
-                    </h3>
-                    <ul class="space-y-3 text-slate-600">
-                        {% for takeaway in page.key_takeaways %}
-                        <li class="flex gap-3">
-                            {% include ui/icon.html name="check" class="w-5 h-5 text-green-500 shrink-0" %}
-                            <span>{{ takeaway }}</span>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                {% endif %}
-
-                <!-- ARTICLE CONTENT -->
-                <div class="prose max-w-none text-slate-600 text-lg leading-relaxed">
-                    {{ content }}
-                </div>
-        </div>
-
-        <!-- SIDEBAR -->
-        <div class="lg:col-span-4 space-y-8 sticky top-24 self-start">
-            <!-- TABLE OF CONTENTS -->
-            {% if page.toc %}
-            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                <h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Table of Contents</h4>
-                <ul class="space-y-3 text-sm font-medium text-slate-500">
-                    {% for item in page.toc %}
-                    <li><a href="#{{ item.id }}" class="toc-link hover:text-[#8E2DE2] transition-colors block border-l-2 border-transparent hover:border-[#8E2DE2] pl-3">{{ item.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-
-            <!-- SHARE -->
-            <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
-                <h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Share this Insight</h4>
-                <div class="flex gap-2">
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-[#0077b5] hover:text-white transition-all cursor-pointer">{% include ui/icon.html name="linkedin" class="w-4 h-4" %}</a>
-                    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-black hover:text-white transition-all cursor-pointer">{% include ui/icon.html name="twitter" class="w-4 h-4" %}</a>
-                    <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url | url_encode }}" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all cursor-pointer">{% include ui/icon.html name="mail" class="w-4 h-4" %}</a>
-                    <button onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.classList.add('bg-green-500', 'text-white'); setTimeout(() => { this.classList.remove('bg-green-500', 'text-white'); }, 1500);" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-green-500 hover:text-white transition-all cursor-pointer">{% include ui/icon.html name="link" class="w-4 h-4" %}</button>
-                </div>
-            </div>
-        </div>
+  <div class="relative z-[4] px-6 pt-36 md:pt-44 pb-12 md:pb-16 text-center">
+    <div class="w-full max-w-[840px] mx-auto">
+      <nav class="flex items-center justify-center gap-2.5 text-[13.5px] font-medium text-faint">
+        <a href="{{ site.baseurl }}/blog/" class="hover:text-accent transition-colors">Insights</a>
+        <span aria-hidden="true">/</span>
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-tint text-accent text-[11px] font-bold uppercase tracking-[0.14em]">{{ page.category }}</span>
+      </nav>
+      <h1 class="mt-6 font-bold text-ink tracking-[-0.025em] leading-[1.08] text-[clamp(2rem,4.4vw,3.4rem)]" style="text-wrap:balance">{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="mt-6 mx-auto max-w-[640px] text-[17px] md:text-[18px] leading-relaxed font-medium text-muted">{{ page.description | truncatewords: 28 }}</p>
+      {% endif %}
+      <div class="mt-8 inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-3">
+        <span class="inline-flex items-center gap-3">
+          <img src="{{ site.baseurl }}{{ page.author_image }}" alt="{{ page.author }}" class="w-11 h-11 rounded-full object-cover border border-line">
+          <span class="text-left">
+            <span class="block text-[15px] font-semibold text-ink leading-tight">{{ page.author }}</span>
+            <span class="block mt-0.5 text-[13px] font-medium text-faint">{{ page.author_role | default: "APX Team" }}</span>
+          </span>
+        </span>
+        <span class="hidden sm:block h-6 w-px bg-line-strong"></span>
+        <span class="text-[14px] font-medium text-faint">{{ page.date | date: "%b %-d, %Y" }}</span>
+        <span class="hidden sm:block h-6 w-px bg-line-strong"></span>
+        <span class="text-[14px] font-medium text-faint">{{ page.read_time }}</span>
+      </div>
     </div>
+  </div>
 </section>
 
-{% include blog/article/related_posts.html %}
-{% include blog/home/blog_subscribe.html %}
-{% include home/about_us_home.html %}
+<!-- ── 2 · Article body + sidebar ───────────────────────────────── -->
+<section class="px-6 pt-2 pb-16 md:pb-24 bg-paper">
+  <div class="max-w-wide mx-auto lg:grid lg:grid-cols-12 lg:gap-14">
+
+    <article class="lg:col-span-8 min-w-0">
+      <!-- Abstract hero tile -->
+      <div class="relative aspect-[2/1] rounded-[1.5rem] border border-line bg-accent-tint overflow-hidden mb-10 md:mb-14">
+        <div class="absolute inset-0 opacity-70" style="background-image:linear-gradient(rgba(74,0,224,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(74,0,224,.08) 1px,transparent 1px);background-size:44px 44px"></div>
+        <div class="absolute inset-0" style="background:radial-gradient(60% 70% at 50% 50%, rgba(142,45,226,.16) 0%, transparent 72%)"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-20 h-20 md:w-24 md:h-24 rounded-[1.35rem] bg-white shadow-[0_18px_44px_rgba(74,0,224,.18)] flex items-center justify-center">
+            {% include ui/icon.html name=page.hero_icon class="w-9 h-9 md:w-10 md:h-10 text-accent" %}
+          </div>
+        </div>
+      </div>
+
+      <!-- KEY TAKEAWAYS -->
+      {% if page.key_takeaways %}
+      <div class="bg-surface border border-line rounded-[1.5rem] p-7 md:p-9 mb-10 md:mb-14">
+        <span class="apx-label"><span class="idx">TL;DR</span>Key takeaways</span>
+        <ul class="mt-5 space-y-4">
+          {% for takeaway in page.key_takeaways %}
+          <li class="flex gap-3.5 text-[16px] leading-relaxed text-muted">
+            <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-accent-tint flex items-center justify-center text-accent">
+              {% include ui/icon.html name="check" class="w-3 h-3" %}
+            </span>
+            <span>{{ takeaway }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <!-- ARTICLE CONTENT -->
+      <div class="prose max-w-none">
+        {{ content }}
+      </div>
+
+      <!-- SHARE -->
+      <div class="mt-12 pt-8 border-t border-line flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <div class="flex items-center gap-2.5">
+          <span class="apx-label mr-1">Share</span>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors">{% include ui/icon.html name="linkedin" class="w-4 h-4" %}</a>
+          <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on X" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors">{% include ui/icon.html name="twitter" class="w-4 h-4" %}</a>
+          <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url | url_encode }}" aria-label="Share via email" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors">{% include ui/icon.html name="mail" class="w-4 h-4" %}</a>
+          <button onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.classList.add('text-ok'); setTimeout(() => { this.classList.remove('text-ok'); }, 1500);" aria-label="Copy link" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors cursor-pointer">{% include ui/icon.html name="link" class="w-4 h-4" %}</button>
+        </div>
+        <a href="{{ site.baseurl }}/blog/" class="inline-flex items-center gap-2 text-[15px] font-semibold text-accent hover:text-accent-strong transition-colors">
+          {% include ui/icon.html name="arrow-left" class="w-4 h-4" %} All insights
+        </a>
+      </div>
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="hidden lg:block lg:col-span-4">
+      <div class="sticky top-28 space-y-6">
+        {% if page.toc %}
+        <div class="bg-surface border border-line rounded-[1.5rem] p-7">
+          <span class="apx-label">On this page</span>
+          <ul class="mt-5 space-y-1 text-[14.5px] font-medium text-muted">
+            {% for item in page.toc %}
+            <li><a href="#{{ item.id }}" class="toc-link block py-1.5 pl-4 border-l-2 border-line hover:border-accent hover:text-accent transition-colors">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        <div class="apx-panel p-8">
+          <div class="relative z-[2]">
+            <p class="text-[19px] font-bold text-white leading-snug" style="text-wrap:balance">Numbers you don&#8217;t have to double&#8209;check.</p>
+            <p class="mt-3 text-[14.5px] leading-relaxed text-white/75">A five-day, fixed-price audit of your revenue stack — one prioritised fix-list, priced in euros.</p>
+            <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="post-sidebar" class="apx-btn apx-btn-light apx-btn-sm mt-6">Book the audit</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ── 3 · Related posts ────────────────────────────────────────── -->
+{% assign same_cat = site.posts | where: "category", page.category | where_exp: "p", "p.url != page.url" %}
+{% assign other = site.posts | where_exp: "p", "p.url != page.url and p.category != page.category" %}
+{% assign related = same_cat | concat: other %}
+{% if related.size > 0 %}
+<section class="px-6 pb-16 md:pb-24 bg-paper">
+  <div class="max-w-wide mx-auto">
+    {% include ui/eyebrow.html text="Keep reading" %}
+    <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(1.6rem,2.8vw,2.25rem)]">Related insights</h2>
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+      {% for post in related limit:3 %}
+      <a href="{{ site.baseurl }}{{ post.url }}" class="apx-card group">
+        <div class="flex items-center justify-between gap-3">
+          <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-tint text-accent text-[11px] font-bold uppercase tracking-[0.14em]">{{ post.category }}</span>
+          <span class="apx-label">{{ post.read_time }}</span>
+        </div>
+        <h3 class="mt-5 text-[1.2rem] font-bold text-ink tracking-[-0.015em] leading-snug group-hover:text-accent-strong transition-colors" style="text-wrap:balance">{{ post.title }}</h3>
+        <div class="mt-auto pt-6 border-t border-line flex items-center gap-3">
+          <img src="{{ site.baseurl }}{{ post.author_image }}" alt="{{ post.author }}" class="w-9 h-9 rounded-full object-cover border border-line" loading="lazy">
+          <div class="min-w-0">
+            <p class="text-[14px] font-semibold text-ink leading-tight">{{ post.author }}</p>
+            <p class="mt-0.5 text-[12.5px] font-medium text-faint">{{ post.date | date: "%b %-d, %Y" }}</p>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% include sections/cta-band.html %}

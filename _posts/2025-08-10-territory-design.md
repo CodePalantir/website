@@ -90,10 +90,8 @@ Use Salesforce Territory Management to model changes before deploying them. Show
 
 Don't rip accounts away from reps overnight. Use transition periods and grandfather clauses to maintain trust.
 
-<div class="my-12 p-8 bg-[#0A0A0B] rounded-3xl text-white text-center">
-    <h3 class="text-2xl font-bold mb-4">Are Your Territories Holding You Back?</h3>
-    <p class="text-slate-400 mb-6">Get a territory balance analysis and rebalancing strategy.</p>
-    <button class="bg-[#8E2DE2] hover:bg-[#7a25c6] text-white px-8 py-3 rounded-full font-bold transition-all w-full md:w-auto">
-        Analyze My Territories
-    </button>
+<div class="my-12 p-8 md:p-10 bg-surface border border-line rounded-[2rem] text-center">
+    <h3 class="text-2xl font-bold text-ink mb-3 tracking-[-0.01em]">Are Your Territories Holding You Back?</h3>
+    <p class="text-muted mb-7 max-w-md mx-auto">Get a territory balance analysis and rebalancing strategy.</p>
+    <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="post-inline" class="apx-btn apx-btn-primary">Book the Audit</a>
 </div>

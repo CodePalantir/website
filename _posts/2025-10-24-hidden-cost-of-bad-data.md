@@ -46,19 +46,19 @@ In data quality management, the 1-10-100 rule is a widely accepted concept that 
 
 <div class="article-stat-grid">
     <div class="article-stat-box">
-        <p class="text-3xl font-black text-slate-900 mb-1">$1</p>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Prevention</p>
-        <p class="text-xs text-slate-400 mt-2">Cost to verify at entry</p>
+        <p>$1</p>
+        <p>Prevention</p>
+        <p>Cost to verify at entry</p>
     </div>
     <div class="article-stat-box">
-        <p class="text-3xl font-black text-[#8E2DE2] mb-1">$10</p>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Correction</p>
-        <p class="text-xs text-slate-400 mt-2">Cost to clean later</p>
+        <p class="stat-accent">$10</p>
+        <p>Correction</p>
+        <p>Cost to clean later</p>
     </div>
-    <div class="article-stat-box col-span-2 bg-slate-900 border-slate-800">
-        <p class="text-3xl font-black text-white mb-1">$100</p>
-        <p class="text-xs text-red-400 uppercase font-bold tracking-widest">Failure</p>
-        <p class="text-xs text-slate-300 mt-2">Cost of lost revenue & churn</p>
+    <div class="article-stat-box col-span-2 bg-plum">
+        <p>$100</p>
+        <p>Failure</p>
+        <p>Cost of lost revenue & churn</p>
     </div>
 </div>
 
@@ -77,8 +77,8 @@ They will retreat to "Shadow CRM"—their own private Excel spreadsheets, notes 
 This creates a data blackout for leadership. You cannot forecast revenue if the deals are living in a spreadsheet on a rep's laptop. You cannot automate marketing nurture campaigns if the contacts aren't in the system. The "Shadow CRM" is the ultimate symptom of a failed data strategy.
 
 <div class="article-callout">
-    <h4 class="text-lg font-bold text-[#0EA5E9] mb-2 flex items-center gap-2">{% include ui/icon.html name="info" class="w-5 h-5" %} Pro Tip: The 365-Day Rule</h4>
-    <p class="mb-0 text-slate-600 text-sm">
+    <h4 class="text-lg font-bold text-accent mb-2 flex items-center gap-2">{% include ui/icon.html name="info" class="w-5 h-5" %} Pro Tip: The 365-Day Rule</h4>
+    <p class="mb-0 text-muted text-sm">
         If a contact record hasn't been touched in 365 days, move it to a "Cold Storage" custom object or archive it. Keeping it in the main table slows down search, skews reporting, and increases storage costs. A lean CRM is a fast CRM.
     </p>
 </div>
@@ -121,17 +121,12 @@ Data integrity is not an IT ticket to be closed. It is a strategic revenue lever
 
 Don't let your revenue engine stall because you put cheap fuel in the tank.
 
-<div class="my-16 p-10 md:p-16 bg-slate-50 rounded-[2.5rem] border border-slate-100 relative overflow-hidden group">
-<div class="absolute top-0 right-0 w-64 h-64 bg-purple-100/50 blur-3xl -z-10 transition-transform duration-700 group-hover:scale-125"></div>
-<div class="relative z-10 max-w-xl">
-    <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-6 leading-tight tracking-tight">Is your data <span class="text-gradient">leaking revenue?</span></h3>
-    <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+<div class="my-16 p-10 md:p-14 bg-surface border border-line rounded-[2.25rem]">
+<div class="max-w-xl">
+    <h3 class="text-3xl md:text-4xl font-bold text-ink mb-5 leading-tight tracking-[-0.02em]">Is your data <span class="text-gradient">leaking revenue?</span></h3>
+    <p class="text-lg text-muted mb-9 leading-relaxed">
         Stop guessing. Our 50-point Technical Audit uncovers the architectural flaws and technical debt preventing your revenue team from scaling.
     </p>
-    <div class="flex flex-col sm:flex-row gap-4">
-        <button class="bg-purple-gradient text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-purple-200 hover:opacity-90 transition-all flex items-center justify-center gap-2 group/btn">
-            Request Strategy Audit
-            {% include ui/icon.html name="chevron-right" class="group-hover/btn:translate-x-1 transition-transform w-5 h-5" %}
-        </button>
-    </div>
+    <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="post-inline" class="apx-btn apx-btn-primary">Request Strategy Audit {% include ui/icon.html name="chevron-right" class="w-5 h-5" %}</a>
+</div>
 </div>

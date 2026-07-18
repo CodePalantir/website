@@ -28,58 +28,69 @@ layout: default
 }
 </script>
 
-<!-- REVSHORT ARTICLE -->
-<article class="pt-28 sm:pt-32 md:pt-36 pb-16 md:pb-20 px-4 sm:px-6 bg-white">
-  <div class="max-w-3xl mx-auto">
+<!-- ── 1 · Short header — same grid+glow ground as the homepage ──── -->
+<section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
+  <div class="apx-hero-grid"></div>
+  <div class="apx-hero-glow"></div>
 
-    <a href="{{ site.baseurl }}/revshorts" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-purple-600 transition-colors mb-8">
-      {% include ui/icon.html name="arrow-left" class="w-4 h-4" %} All RevShorts
-    </a>
-
-    <div class="flex items-center gap-3 mb-5">
-      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-100 text-[11px] font-bold uppercase tracking-widest">
-        {% include ui/icon.html name="zap" class="w-3 h-3" %} RevShort
-      </span>
-      {% if page.category %}<span class="text-xs font-bold uppercase tracking-widest text-slate-400">{{ page.category }}</span>{% endif %}
+  <div class="relative z-[4] px-6 pt-36 md:pt-44 pb-10 md:pb-14">
+    <div class="w-full max-w-content mx-auto">
+      <a href="{{ site.baseurl }}/revshorts/" class="inline-flex items-center gap-2 text-[14px] font-semibold text-faint hover:text-accent transition-colors">
+        {% include ui/icon.html name="arrow-left" class="w-4 h-4" %} All RevShorts
+      </a>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-gradient text-white text-[11px] font-bold uppercase tracking-[0.14em]">
+          {% include ui/icon.html name="zap" class="w-3 h-3" %} RevShort
+        </span>
+        {% if page.category %}<span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-tint text-accent text-[11px] font-bold uppercase tracking-[0.14em]">{{ page.category }}</span>{% endif %}
+      </div>
+      <h1 class="mt-6 font-bold text-ink tracking-[-0.025em] leading-[1.08] text-[clamp(2rem,4.2vw,3.1rem)]" style="text-wrap:balance">{{ page.title }}</h1>
+      <div class="mt-6 flex items-center gap-3 text-[14px] font-medium text-faint">
+        <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+        <span class="h-4 w-px bg-line-strong"></span>
+        <span>{{ page.read_time | default: "2 Min Read" }}</span>
+        {% if page.author %}<span class="h-4 w-px bg-line-strong"></span><span>{{ page.author }}</span>{% endif %}
+      </div>
     </div>
+  </div>
+</section>
 
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] tracking-tight mb-6">{{ page.title }}</h1>
+<!-- ── 2 · Body ─────────────────────────────────────────────────── -->
+<article class="px-6 pt-2 pb-16 md:pb-20 bg-paper">
+  <div class="w-full max-w-content mx-auto">
 
-    <div class="flex items-center gap-4 text-sm font-medium text-slate-500 mb-10 pb-8 border-b border-slate-100">
-      <span>{{ page.date | date: "%b %d, %Y" }}</span>
-      <span class="h-4 w-px bg-slate-200"></span>
-      <span>{{ page.read_time | default: "2 Min Read" }}</span>
-      {% if page.author %}<span class="h-4 w-px bg-slate-200"></span><span>{{ page.author }}</span>{% endif %}
-    </div>
-
-    <div class="prose max-w-none text-slate-600 text-lg leading-relaxed">
+    <div class="prose max-w-none">
       {{ content }}
     </div>
 
     <!-- Share + audit nudge -->
-    <div class="mt-12 pt-8 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-      <div class="flex items-center gap-2">
-        <span class="font-mono text-xs text-slate-500 mr-1">share:</span>
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-[#0077b5] hover:text-white transition-all">{% include ui/icon.html name="linkedin" class="w-4 h-4" %}</a>
-        <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-black hover:text-white transition-all">{% include ui/icon.html name="twitter" class="w-4 h-4" %}</a>
-        <button onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.classList.add('bg-green-500','text-white'); setTimeout(()=>{this.classList.remove('bg-green-500','text-white');},1500);" class="w-9 h-9 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-green-500 hover:text-white transition-all">{% include ui/icon.html name="link" class="w-4 h-4" %}</button>
+    <div class="mt-12 pt-8 border-t border-line flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+      <div class="flex items-center gap-2.5">
+        <span class="apx-label mr-1">Share</span>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors">{% include ui/icon.html name="linkedin" class="w-4 h-4" %}</a>
+        <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on X" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors">{% include ui/icon.html name="twitter" class="w-4 h-4" %}</a>
+        <button onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.classList.add('text-ok'); setTimeout(()=>{this.classList.remove('text-ok');},1500);" aria-label="Copy link" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors cursor-pointer">{% include ui/icon.html name="link" class="w-4 h-4" %}</button>
       </div>
-      <a href="{{ site.cta.primary_url }}" class="inline-flex items-center gap-2 font-mono text-sm font-bold text-purple-600 hover:text-purple-700">book the €2,450 audit {% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</a>
+      <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="revshort" class="inline-flex items-center gap-2 text-[15px] font-semibold text-accent hover:text-accent-strong transition-colors">
+        Book the €2,450 audit {% include ui/icon.html name="arrow-right" class="w-4 h-4" %}
+      </a>
     </div>
 
     <!-- More revshorts -->
     {% assign more = site.revshorts | where_exp: "item", "item.url != page.url" | sort: 'date' | reverse %}
     {% if more.size > 0 %}
     <div class="mt-16">
-      <span class="text-[#8E2DE2] font-bold uppercase tracking-widest text-xs mb-6 block">More RevShorts</span>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      {% include ui/eyebrow.html text="More RevShorts" %}
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
         {% for item in more limit:2 %}
-        <a href="{{ site.baseurl }}{{ item.url }}" class="group block p-6 rounded-2xl border border-slate-100 hover:border-purple-200 hover:bg-purple-50/40 transition-all">
-          <div class="flex items-center gap-2 mb-3">
-            {% assign _ic = item.hero_icon | default: 'zap' %}{% include ui/icon.html name=_ic class="w-4 h-4 text-purple-500" %}
-            <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">{{ item.category }}</span>
+        <a href="{{ site.baseurl }}{{ item.url }}" class="apx-card group p-6">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 shrink-0 rounded-xl bg-accent-tint flex items-center justify-center text-accent">
+              {% assign _ic = item.hero_icon | default: 'zap' %}{% include ui/icon.html name=_ic class="w-4 h-4" %}
+            </div>
+            <span class="apx-label">{{ item.category }}</span>
           </div>
-          <h3 class="font-bold text-slate-900 group-hover:text-purple-600 transition-colors leading-snug">{{ item.title }}</h3>
+          <h3 class="mt-4 text-[1.05rem] font-bold text-ink leading-snug group-hover:text-accent-strong transition-colors" style="text-wrap:balance">{{ item.title }}</h3>
         </a>
         {% endfor %}
       </div>
@@ -89,5 +100,4 @@ layout: default
   </div>
 </article>
 
-{% include blog/home/blog_subscribe.html %}
-{% include home/about_us_home.html %}
+{% include sections/cta-band.html %}
