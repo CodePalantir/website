@@ -488,14 +488,23 @@ html:has(.apx-fv-root) {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* vh is the robust base — works in every browser and survives minify */
   min-height: 100vh;
-  min-height: 100svh;
   scroll-snap-align: start;
   scroll-snap-stop: normal;
   scroll-margin-top: 0;
   /* clear the fixed header, then breathe with the viewport */
-  padding-top: calc(5.25rem + clamp(1rem, 3svh, 2.5rem));
-  padding-bottom: clamp(2.25rem, 5svh, 4.25rem);
+  padding-top: calc(5.25rem + clamp(1rem, 3vh, 2.5rem));
+  padding-bottom: clamp(2.25rem, 5vh, 4.25rem);
+}
+/* svh as progressive enhancement (kept in its own block so minification
+   can't collapse it into — and delete — the vh fallback above). */
+@supports (min-height: 100svh) {
+  .apx-fv-root > section {
+    min-height: 100svh;
+    padding-top: calc(5.25rem + clamp(1rem, 3svh, 2.5rem));
+    padding-bottom: clamp(2.25rem, 5svh, 4.25rem);
+  }
 }
 /* flex children with mx-auto would otherwise shrink to fit-content
    (auto cross-axis margins suppress stretch) — keep containers full width */
