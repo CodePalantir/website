@@ -1,0 +1,30 @@
+<!-- LATEST POST — restored split feature, warm surface band -->
+{% assign latest_post = site.posts | first %}
+<section class="py-12 px-6 bg-surface border-y border-line">
+  <div class="max-w-wide mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Conceptual abstract art tile -->
+      <a href="{{ site.baseurl }}{{ latest_post.url }}" class="aspect-[16/9] bg-accent-tint rounded-[2.5rem] overflow-hidden border border-line relative group cursor-pointer flex items-center justify-center">
+        <div class="absolute inset-0 opacity-70" style="background-image:linear-gradient(rgba(74,0,224,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(74,0,224,.08) 1px,transparent 1px);background-size:44px 44px"></div>
+        <div class="absolute inset-0" style="background:radial-gradient(60% 60% at 50% 50%, rgba(142,45,226,.16) 0%, transparent 72%)"></div>
+        <div class="relative w-32 h-32 bg-white rounded-3xl shadow-[0_18px_44px_rgba(74,0,224,.18)] flex items-center justify-center transform group-hover:scale-110 transition-transform duration-500">
+          {% include ui/icon.html name=latest_post.hero_icon class="w-12 h-12 text-accent" %}
+        </div>
+      </a>
+      <div>
+        <div class="flex items-center gap-4 mb-4 text-sm font-semibold text-faint uppercase tracking-wider">
+          <span>{{ latest_post.date | date: "%b %d, %Y" }}</span>
+          <span aria-hidden="true">&bull;</span>
+          <span>{{ latest_post.category }}</span>
+        </div>
+        <a href="{{ site.baseurl }}{{ latest_post.url }}"><h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-ink tracking-[-0.02em] mb-6 leading-tight hover:text-accent-strong transition-colors cursor-pointer" style="text-wrap:balance">{{ latest_post.title }}</h2></a>
+        <p class="text-lg text-muted mb-8 leading-relaxed">
+          {{ latest_post.excerpt | strip_html | truncatewords: 30 }}
+        </p>
+        <a href="{{ site.baseurl }}{{ latest_post.url }}" class="text-accent font-bold flex items-center gap-2 hover:gap-4 hover:text-accent-strong transition-all">
+          Read the Article {% include ui/icon.html name="arrow-right" class="w-4 h-4" %}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

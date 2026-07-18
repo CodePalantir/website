@@ -1,0 +1,85 @@
+<!-- SEARCH BAR — restored search + category filter pills, warm surface -->
+<section class="px-6 pb-12 bg-paper">
+  <div class="max-w-2xl mx-auto">
+    <div class="relative group">
+      <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+        {% include ui/icon.html name="search" class="h-5 w-5 text-faint group-focus-within:text-accent transition-colors" %}
+      </div>
+      <input type="text"
+              id="blog-search-input"
+              class="block w-full pl-11 pr-4 py-4 border border-line rounded-2xl leading-5 bg-surface text-ink placeholder-faint focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent sm:text-sm shadow-sm transition-all cursor-text"
+              placeholder="Search for strategies, topics, or keywords..."
+      >
+      <div class="absolute inset-y-0 right-0 pr-2 flex items-center">
+        <button id="clear-search" class="p-2 text-faint hover:text-ink cursor-pointer hidden">
+          {% include ui/icon.html name="x" class="h-5 w-5" %}
+        </button>
+      </div>
+    </div>
+    <div id="category-filters" class="flex gap-2 mt-4 justify-center overflow-x-auto no-scrollbar">
+      <button data-category="all" class="category-filter-btn px-4 py-1.5 rounded-full border text-xs font-bold transition-colors whitespace-nowrap cursor-pointer bg-purple-gradient border-transparent text-white">All</button>
+      <button data-category="Strategy" class="category-filter-btn px-4 py-1.5 rounded-full bg-surface border border-line text-xs font-bold text-muted hover:border-accent hover:text-accent transition-colors whitespace-nowrap cursor-pointer">Strategy</button>
+      <button data-category="ROI" class="category-filter-btn px-4 py-1.5 rounded-full bg-surface border border-line text-xs font-bold text-muted hover:border-accent hover:text-accent transition-colors whitespace-nowrap cursor-pointer">ROI</button>
+      <button data-category="Leadership" class="category-filter-btn px-4 py-1.5 rounded-full bg-surface border border-line text-xs font-bold text-muted hover:border-accent hover:text-accent transition-colors whitespace-nowrap cursor-pointer">Leadership</button>
+      <button data-category="Data" class="category-filter-btn px-4 py-1.5 rounded-full bg-surface border border-line text-xs font-bold text-muted hover:border-accent hover:text-accent transition-colors whitespace-nowrap cursor-pointer">Data</button>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('blog-search-input');
+    const clearBtn = document.getElementById('clear-search');
+    const categoryBtns = document.querySelectorAll('.category-filter-btn');
+    const postCards = document.querySelectorAll('.blog-post-card');
+    let activeCategory = 'all';
+
+    // Search functionality
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+            if (clearBtn) clearBtn.classList.toggle('hidden', query.length === 0);
+            filterPosts(query, activeCategory);
+        });
+    }
+
+    // Clear search
+    if (clearBtn) {
+        clearBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            clearBtn.classList.add('hidden');
+            filterPosts('', activeCategory);
+        });
+    }
+
+    // Category filter functionality
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            activeCategory = this.dataset.category;
+
+            // Update button styles (active pill carries the brand gradient)
+            categoryBtns.forEach(b => {
+                b.classList.remove('bg-purple-gradient', 'border-transparent', 'text-white');
+                b.classList.add('bg-surface', 'border-line', 'text-muted');
+            });
+            this.classList.remove('bg-surface', 'border-line', 'text-muted');
+            this.classList.add('bg-purple-gradient', 'border-transparent', 'text-white');
+
+            filterPosts(searchInput ? searchInput.value.toLowerCase().trim() : '', activeCategory);
+        });
+    });
+
+    function filterPosts(query, category) {
+        postCards.forEach(card => {
+            const title = (card.dataset.title || '').toLowerCase();
+            const cardCategory = card.dataset.category || '';
+            const excerpt = (card.dataset.excerpt || '').toLowerCase();
+
+            const matchesSearch = query === '' || title.includes(query) || excerpt.includes(query);
+            const matchesCategory = category === 'all' || cardCategory === category;
+
+            card.style.display = (matchesSearch && matchesCategory) ? '' : 'none';
+        });
+    }
+});
+</script>

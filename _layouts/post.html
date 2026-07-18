@@ -73,65 +73,56 @@ layout: default
 <!-- READING PROGRESS BAR -->
 <div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-purple-gradient z-50 w-0 transition-all duration-100 ease-out"></div>
 
-<!-- ── 1 · Article header — same grid+glow ground as the homepage ── -->
-<section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
+<!-- BREADCRUMBS — restored bar, warm ground -->
+<div class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_70%,#FAF8F5_100%)]">
   <div class="apx-hero-grid"></div>
-  <div class="apx-hero-glow"></div>
-
-  <div class="relative z-[4] px-6 pt-36 md:pt-44 pb-12 md:pb-16 text-center">
-    <div class="w-full max-w-[840px] mx-auto">
-      <nav class="flex items-center justify-center gap-2.5 text-[13.5px] font-medium text-faint">
-        <a href="{{ site.baseurl }}/blog/" class="hover:text-accent transition-colors">Insights</a>
-        <span aria-hidden="true">/</span>
-        <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-tint text-accent text-[11px] font-bold uppercase tracking-[0.14em]">{{ page.category }}</span>
-      </nav>
-      <h1 class="mt-6 font-bold text-ink tracking-[-0.025em] leading-[1.08] text-[clamp(2rem,4.4vw,3.4rem)]" style="text-wrap:balance">{{ page.title }}</h1>
-      {% if page.description %}
-      <p class="mt-6 mx-auto max-w-[640px] text-[17px] md:text-[18px] leading-relaxed font-medium text-muted">{{ page.description | truncatewords: 28 }}</p>
-      {% endif %}
-      <div class="mt-8 inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-3">
-        <span class="inline-flex items-center gap-3">
-          <img src="{{ site.baseurl }}{{ page.author_image }}" alt="{{ page.author }}" class="w-11 h-11 rounded-full object-cover border border-line">
-          <span class="text-left">
-            <span class="block text-[15px] font-semibold text-ink leading-tight">{{ page.author }}</span>
-            <span class="block mt-0.5 text-[13px] font-medium text-faint">{{ page.author_role | default: "APX Team" }}</span>
-          </span>
-        </span>
-        <span class="hidden sm:block h-6 w-px bg-line-strong"></span>
-        <span class="text-[14px] font-medium text-faint">{{ page.date | date: "%b %-d, %Y" }}</span>
-        <span class="hidden sm:block h-6 w-px bg-line-strong"></span>
-        <span class="text-[14px] font-medium text-faint">{{ page.read_time }}</span>
-      </div>
+  <div class="relative z-[4] pt-32 pb-8 px-6 border-b border-line">
+    <div class="max-w-wide mx-auto flex items-center gap-2 text-xs font-bold text-faint uppercase tracking-widest">
+      <a href="{{ site.baseurl }}/blog" class="hover:text-accent transition-colors">Insights</a>
+      {% include ui/icon.html name="chevron-right" class="w-3 h-3" %}
+      <span class="text-accent">{{ page.category | default: "Article" }}</span>
     </div>
   </div>
-</section>
+</div>
 
-<!-- ── 2 · Article body + sidebar ───────────────────────────────── -->
-<section class="px-6 pt-2 pb-16 md:pb-24 bg-paper">
-  <div class="max-w-wide mx-auto lg:grid lg:grid-cols-12 lg:gap-14">
+<!-- ARTICLE HEADER + BODY — restored 12-col article/sidebar layout -->
+<section class="py-12 px-6 bg-paper">
+  <div class="max-w-wide mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-8 min-w-0">
+      <h1 class="text-[clamp(2.2rem,4.6vw,3.6rem)] font-bold text-ink tracking-[-0.025em] mb-8 leading-[1.1]" style="text-wrap:balance">{{ page.title }}</h1>
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-12">
+        <div class="flex items-center gap-3">
+          <img src="{{ site.baseurl }}{{ page.author_image }}" class="w-10 h-10 rounded-full object-cover border border-line" alt="{{ page.author }}">
+          <div>
+            <p class="text-sm font-bold text-ink">{{ page.author }}</p>
+            <p class="text-xs text-faint">{{ page.author_role | default: "APX Team" }}</p>
+          </div>
+        </div>
+        <div class="hidden sm:block h-8 w-px bg-line-strong"></div>
+        <p class="text-sm font-medium text-faint">{{ page.date | date: "%b %d, %Y" }}</p>
+        <div class="hidden sm:block h-8 w-px bg-line-strong"></div>
+        <p class="text-sm font-medium text-faint">{{ page.read_time }}</p>
+      </div>
 
-    <article class="lg:col-span-8 min-w-0">
-      <!-- Abstract hero tile -->
-      <div class="relative aspect-[2/1] rounded-[1.5rem] border border-line bg-accent-tint overflow-hidden mb-10 md:mb-14">
+      <!-- Abstract Hero Image -->
+      <div class="aspect-video bg-accent-tint rounded-3xl border border-line mb-12 flex items-center justify-center relative overflow-hidden">
         <div class="absolute inset-0 opacity-70" style="background-image:linear-gradient(rgba(74,0,224,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(74,0,224,.08) 1px,transparent 1px);background-size:44px 44px"></div>
         <div class="absolute inset-0" style="background:radial-gradient(60% 70% at 50% 50%, rgba(142,45,226,.16) 0%, transparent 72%)"></div>
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="w-20 h-20 md:w-24 md:h-24 rounded-[1.35rem] bg-white shadow-[0_18px_44px_rgba(74,0,224,.18)] flex items-center justify-center">
-            {% include ui/icon.html name=page.hero_icon class="w-9 h-9 md:w-10 md:h-10 text-accent" %}
-          </div>
+        <div class="w-24 h-24 bg-white rounded-full shadow-[0_18px_44px_rgba(74,0,224,.18)] flex items-center justify-center relative z-10">
+          {% include ui/icon.html name=page.hero_icon class="w-10 h-10 text-accent" %}
         </div>
       </div>
 
       <!-- KEY TAKEAWAYS -->
       {% if page.key_takeaways %}
-      <div class="bg-surface border border-line rounded-[1.5rem] p-7 md:p-9 mb-10 md:mb-14">
-        <span class="apx-label"><span class="idx">TL;DR</span>Key takeaways</span>
-        <ul class="mt-5 space-y-4">
+      <div class="bg-surface border border-line border-l-4 border-l-accent p-8 rounded-r-3xl mb-12">
+        <h3 class="text-lg font-bold text-ink mb-4 flex items-center gap-2">
+          {% include ui/icon.html name="lightbulb" class="w-5 h-5 text-accent" %} Key Takeaways
+        </h3>
+        <ul class="space-y-3 text-muted">
           {% for takeaway in page.key_takeaways %}
-          <li class="flex gap-3.5 text-[16px] leading-relaxed text-muted">
-            <span class="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-accent-tint flex items-center justify-center text-accent">
-              {% include ui/icon.html name="check" class="w-3 h-3" %}
-            </span>
+          <li class="flex gap-3">
+            {% include ui/icon.html name="check" class="w-5 h-5 text-ok shrink-0" %}
             <span>{{ takeaway }}</span>
           </li>
           {% endfor %}
@@ -143,77 +134,45 @@ layout: default
       <div class="prose max-w-none">
         {{ content }}
       </div>
-
-      <!-- SHARE -->
-      <div class="mt-12 pt-8 border-t border-line flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-        <div class="flex items-center gap-2.5">
-          <span class="apx-label mr-1">Share</span>
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors">{% include ui/icon.html name="linkedin" class="w-4 h-4" %}</a>
-          <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on X" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors">{% include ui/icon.html name="twitter" class="w-4 h-4" %}</a>
-          <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url | url_encode }}" aria-label="Share via email" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors">{% include ui/icon.html name="mail" class="w-4 h-4" %}</a>
-          <button onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.classList.add('text-ok'); setTimeout(() => { this.classList.remove('text-ok'); }, 1500);" aria-label="Copy link" class="w-10 h-10 rounded-full bg-surface border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors cursor-pointer">{% include ui/icon.html name="link" class="w-4 h-4" %}</button>
-        </div>
-        <a href="{{ site.baseurl }}/blog/" class="inline-flex items-center gap-2 text-[15px] font-semibold text-accent hover:text-accent-strong transition-colors">
-          {% include ui/icon.html name="arrow-left" class="w-4 h-4" %} All insights
-        </a>
-      </div>
-    </article>
+    </div>
 
     <!-- SIDEBAR -->
-    <aside class="hidden lg:block lg:col-span-4">
-      <div class="sticky top-28 space-y-6">
-        {% if page.toc %}
-        <div class="bg-surface border border-line rounded-[1.5rem] p-7">
-          <span class="apx-label">On this page</span>
-          <ul class="mt-5 space-y-1 text-[14.5px] font-medium text-muted">
-            {% for item in page.toc %}
-            <li><a href="#{{ item.id }}" class="toc-link block py-1.5 pl-4 border-l-2 border-line hover:border-accent hover:text-accent transition-colors">{{ item.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-        <div class="apx-panel p-8">
-          <div class="relative z-[2]">
-            <p class="text-[19px] font-bold text-white leading-snug" style="text-wrap:balance">Numbers you don&#8217;t have to double&#8209;check.</p>
-            <p class="mt-3 text-[14.5px] leading-relaxed text-white/75">A five-day, fixed-price audit of your revenue stack — one prioritised fix-list, priced in euros.</p>
-            <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="post-sidebar" class="apx-btn apx-btn-light apx-btn-sm mt-6">Book the audit</a>
-          </div>
+    <div class="lg:col-span-4 space-y-8 lg:sticky lg:top-28 self-start">
+      <!-- TABLE OF CONTENTS -->
+      {% if page.toc %}
+      <div class="hidden lg:block p-6 bg-surface rounded-2xl border border-line">
+        <h4 class="font-bold text-ink mb-4 uppercase text-xs tracking-widest">Table of Contents</h4>
+        <ul class="space-y-3 text-sm font-medium text-muted">
+          {% for item in page.toc %}
+          <li><a href="#{{ item.id }}" class="toc-link hover:text-accent transition-colors block border-l-2 border-transparent hover:border-accent pl-3">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <!-- SHARE -->
+      <div class="p-6 bg-surface rounded-2xl border border-line shadow-sm">
+        <h4 class="font-bold text-ink mb-4 uppercase text-xs tracking-widest">Share this Insight</h4>
+        <div class="flex gap-2">
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" class="w-10 h-10 rounded-full bg-paper border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors cursor-pointer">{% include ui/icon.html name="linkedin" class="w-4 h-4" %}</a>
+          <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on X" class="w-10 h-10 rounded-full bg-paper border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors cursor-pointer">{% include ui/icon.html name="twitter" class="w-4 h-4" %}</a>
+          <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url | url_encode }}" aria-label="Share via email" class="w-10 h-10 rounded-full bg-paper border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors cursor-pointer">{% include ui/icon.html name="mail" class="w-4 h-4" %}</a>
+          <button onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.classList.add('text-ok'); setTimeout(() => { this.classList.remove('text-ok'); }, 1500);" aria-label="Copy link" class="w-10 h-10 rounded-full bg-paper border border-line flex items-center justify-center text-muted hover:text-accent hover:border-line-strong transition-colors cursor-pointer">{% include ui/icon.html name="link" class="w-4 h-4" %}</button>
         </div>
       </div>
-    </aside>
 
-  </div>
-</section>
-
-<!-- ── 3 · Related posts ────────────────────────────────────────── -->
-{% assign same_cat = site.posts | where: "category", page.category | where_exp: "p", "p.url != page.url" %}
-{% assign other = site.posts | where_exp: "p", "p.url != page.url and p.category != page.category" %}
-{% assign related = same_cat | concat: other %}
-{% if related.size > 0 %}
-<section class="px-6 pb-16 md:pb-24 bg-paper">
-  <div class="max-w-wide mx-auto">
-    {% include ui/eyebrow.html text="Keep reading" %}
-    <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(1.6rem,2.8vw,2.25rem)]">Related insights</h2>
-    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-      {% for post in related limit:3 %}
-      <a href="{{ site.baseurl }}{{ post.url }}" class="apx-card group">
-        <div class="flex items-center justify-between gap-3">
-          <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-tint text-accent text-[11px] font-bold uppercase tracking-[0.14em]">{{ post.category }}</span>
-          <span class="apx-label">{{ post.read_time }}</span>
+      <!-- AUDIT NUDGE -->
+      <div class="hidden lg:block apx-panel p-8">
+        <div class="relative z-[2]">
+          <p class="text-[19px] font-bold text-white leading-snug" style="text-wrap:balance">Numbers you don&#8217;t have to double&#8209;check.</p>
+          <p class="mt-3 text-[14.5px] leading-relaxed text-white/75">A five-day, fixed-price audit of your revenue stack — one prioritised fix-list, priced in euros.</p>
+          <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="post-sidebar" class="apx-btn apx-btn-light apx-btn-sm mt-6">Book the audit</a>
         </div>
-        <h3 class="mt-5 text-[1.2rem] font-bold text-ink tracking-[-0.015em] leading-snug group-hover:text-accent-strong transition-colors" style="text-wrap:balance">{{ post.title }}</h3>
-        <div class="mt-auto pt-6 border-t border-line flex items-center gap-3">
-          <img src="{{ site.baseurl }}{{ post.author_image }}" alt="{{ post.author }}" class="w-9 h-9 rounded-full object-cover border border-line" loading="lazy">
-          <div class="min-w-0">
-            <p class="text-[14px] font-semibold text-ink leading-tight">{{ post.author }}</p>
-            <p class="mt-0.5 text-[12.5px] font-medium text-faint">{{ post.date | date: "%b %-d, %Y" }}</p>
-          </div>
-        </div>
-      </a>
-      {% endfor %}
+      </div>
     </div>
   </div>
 </section>
-{% endif %}
 
+{% include blog/article/related_posts.html %}
+{% include blog/home/blog_subscribe.html %}
 {% include sections/cta-band.html %}

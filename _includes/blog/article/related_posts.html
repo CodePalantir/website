@@ -1,0 +1,21 @@
+<!-- RELATED POSTS — restored tile row, warm surfaces (now real links) -->
+{% assign same_cat = site.posts | where: "category", page.category | where_exp: "p", "p.url != page.url" %}
+{% assign other = site.posts | where_exp: "p", "p.url != page.url and p.category != page.category" %}
+{% assign related = same_cat | concat: other %}
+{% if related.size > 0 %}
+<section class="py-16 md:py-24 px-6 bg-paper border-t border-line">
+  <div class="max-w-wide mx-auto">
+    <h2 class="text-2xl font-bold text-ink tracking-[-0.015em] mb-12">Related Strategic Insights</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      {% for post in related limit:3 %}
+      <a href="{{ site.baseurl }}{{ post.url }}" class="group cursor-pointer">
+        <div class="aspect-video bg-surface rounded-2xl mb-4 border border-line overflow-hidden flex items-center justify-center transition-colors group-hover:border-line-strong">
+          {% include ui/icon.html name=post.hero_icon class="w-8 h-8 text-faint/60 group-hover:text-accent transition-colors" %}
+        </div>
+        <h3 class="font-bold text-ink group-hover:text-accent-strong transition-colors">{{ post.title }}</h3>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
