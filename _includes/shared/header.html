@@ -11,7 +11,7 @@
 
     <nav class="hidden md:flex items-center gap-9 text-[15.5px] font-medium text-muted">
       <a href="{{ site.baseurl }}/services" class="hover:text-ink transition-colors {% if page.url contains '/services' %}text-ink{% endif %}">Services</a>
-      <a href="{{ site.baseurl }}/#work" class="hover:text-ink transition-colors">Work</a>
+      <a href="{{ site.baseurl }}/work" class="hover:text-ink transition-colors {% if page.url contains '/work' or page.url contains '/cases' %}text-ink{% endif %}">Work</a>
       <a href="{{ site.baseurl }}/about" class="hover:text-ink transition-colors {% if page.url contains '/about' %}text-ink{% endif %}">About</a>
       <a href="{{ site.baseurl }}/blog" class="hover:text-ink transition-colors {% if page.url contains '/blog' or page.url contains '/revshorts' %}text-ink{% endif %}">Insights</a>
     </nav>
@@ -46,7 +46,7 @@
 
     <nav class="flex flex-col gap-1 text-lg font-semibold text-ink">
       <a href="{{ site.baseurl }}/services" class="py-3 border-b border-line">Services</a>
-      <a href="{{ site.baseurl }}/#work" class="py-3 border-b border-line">Work</a>
+      <a href="{{ site.baseurl }}/work" class="py-3 border-b border-line">Work</a>
       <a href="{{ site.baseurl }}/about" class="py-3 border-b border-line">About</a>
       <a href="{{ site.baseurl }}/blog" class="py-3 border-b border-line">Insights</a>
     </nav>
