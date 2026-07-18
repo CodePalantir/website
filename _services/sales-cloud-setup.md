@@ -1,16 +1,22 @@
 ---
 layout: service
-title: "Sales Cloud Velocity Setup | ApexPalantir"
-description: "Turn Salesforce into a revenue engine. We configure Pipeline management, Forecasting, and Lead-to-Cash workflows designed for speed and scalability."
+title: "Sales Cloud Velocity Setup"
+description: "Sales Cloud configured around how you actually sell: clean pipeline stages, forecasting your board can trust, and lead-to-cash that runs without a spreadsheet on the side."
 service_type: "Salesforce Sales Cloud Implementation"
+category: "Salesforce"
+icon: "cloud-lightning"
 price: "5000"
-image: /assets/images/logos/APEX-PALANTIR_LARGE.png
+price_display: "€5k–15k"
+price_subtext: "Fixed-scope build"
+price_note: "Scoped and priced in writing after a short discovery — the number you sign is the number you pay."
+calendly: "https://calendly.com/d/cxhp-73b-c5y/salesforce-sales-cloud-velocity"
+cta: "Scope the build"
+headline: "A pipeline that matches reality."
+capabilities:
+  - "Pipeline stages and required fields that enforce hygiene without slowing reps"
+  - "Forecasting configured for how you actually close — not the default template"
+  - "Lead routing and assignment that never drops a hand-raise"
+  - "Automation reps adopt because it removes work instead of adding it"
+  - "Reporting that reconciles with finance at quarter end"
+image: /assets/images/logos/APX_LOGO.png
 ---
-
-{% include services/setup/setup_hero.html %}
-{% include shared/logo_strip.html %}
-{% include services/setup/setup_symptoms.html %}
-{% include services/setup/setup_method.html %}
-{% include services/setup/setup_deliverables.html %}
-{% include services/setup/setup_cta.html %}
-{% include home/about_us_home.html %}

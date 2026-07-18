@@ -1,6 +1,20 @@
 ---
 layout: default
 ---
+{%- comment -%}
+  Unified service-detail layout (W2 warm-premium system).
+  Renders every service entirely from front matter:
+    title, description, category, icon, price (numeric, for schema),
+    price_display / price_suffix / price_note, headline, capabilities[],
+    calendly, cta — plus an optional Markdown body styled as .prose.
+{%- endcomment -%}
+
+{%- comment -%} Booking link: front matter may carry a literal liquid string — fall back safely. {%- endcomment -%}
+{%- assign book_url = page.calendly -%}
+{%- if book_url == nil or book_url == "" or book_url contains "site.cta" -%}
+  {%- assign book_url = site.cta.secondary_url -%}
+{%- endif -%}
+{%- assign price_text = page.price_display | default: page.price | default: "Custom Quote" -%}
 
 <!-- Service Schema Markup for SEO -->
 <script type="application/ld+json">
@@ -8,13 +22,13 @@ layout: default
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "{{ page.title }}",
-  "description": "{{ page.description | escape }}",
+  "description": "{{ page.description | strip_html | strip_newlines | escape }}",
   "provider": {
     "@type": "Organization",
-    "name": "ApexPalantir",
-    "url": "https://apex-palantir.com"
+    "name": "APX",
+    "url": "https://apx-revops.com"
   },
-  "serviceType": "{{ page.service_type | default: 'Salesforce Consulting' }}",
+  "serviceType": "{{ page.service_type | default: page.category | default: 'RevOps Engineering' }}",
   "areaServed": {
     "@type": "GeoCircle",
     "geoMidpoint": {
@@ -23,7 +37,7 @@ layout: default
       "longitude": 8.6821
     },
     "geoRadius": "2000 km"
-  }{% if page.price %},
+  }{% assign price_num = page.price | plus: 0 %}{% if price_num > 0 %},
   "offers": {
     "@type": "Offer",
     "price": "{{ page.price }}",
@@ -47,13 +61,13 @@ layout: default
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://apex-palantir.com/"
+      "item": "https://apx-revops.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Services",
-      "item": "https://apex-palantir.com/services"
+      "item": "https://apx-revops.com/services"
     },
     {
       "@type": "ListItem",
@@ -65,4 +79,143 @@ layout: default
 }
 </script>
 
-{{ content }}
+<!-- HERO — compact, warm, same atmosphere as the homepage -->
+<section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
+  <div class="apx-hero-grid opacity-70"></div>
+  <div class="relative z-[4] px-6 pt-32 md:pt-40 pb-14 md:pb-20">
+    <div class="max-w-wide mx-auto">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-[13px] font-semibold text-faint">
+        <a href="{{ site.baseurl }}/" class="hover:text-ink transition-colors">Home</a>
+        {% include ui/icon.html name="chevron-right" class="w-3.5 h-3.5 opacity-60" %}
+        <a href="{{ site.baseurl }}/services/" class="hover:text-ink transition-colors">Services</a>
+        {% include ui/icon.html name="chevron-right" class="w-3.5 h-3.5 opacity-60" %}
+        <span class="text-muted">{{ page.title }}</span>
+      </nav>
+
+      <div class="mt-10 md:mt-12 flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-16">
+        <!-- Left: identity -->
+        <div class="max-w-[680px]">
+          {% if page.category %}<span class="apx-eyebrow">{{ page.category }}</span>{% endif %}
+          <div class="mt-4 flex items-start gap-5">
+            {% if page.icon %}
+            <span class="hidden sm:flex w-14 h-14 rounded-2xl bg-accent-tint text-accent items-center justify-center shrink-0 mt-1.5">
+              {% include ui/icon.html name=page.icon class="w-7 h-7" %}
+            </span>
+            {% endif %}
+            <h1 class="font-bold text-ink tracking-[-0.025em] leading-[1.06] text-[clamp(2.25rem,5vw,3.5rem)]" style="text-wrap:balance">{{ page.title }}</h1>
+          </div>
+          <p class="mt-6 text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted">{{ page.description }}</p>
+          <div class="mt-9 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+            <a href="{{ book_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="service-hero" class="apx-btn apx-btn-primary">
+              {{ page.cta | default: "Book a call" }}
+              {% include ui/icon.html name="arrow-right" class="w-[18px] h-[18px]" %}
+            </a>
+            {% unless page.url contains "technical-health-audit" %}
+            <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="service-hero-audit" class="apx-btn apx-btn-ghost">
+              Start with the €2,450 audit
+            </a>
+            {% endunless %}
+          </div>
+        </div>
+
+        <!-- Right: price card -->
+        <div class="shrink-0 w-full lg:w-[300px]">
+          <div class="apx-card p-7">
+            <span class="apx-label"><span class="idx">€</span>{{ page.price_subtext | default: "Engagement" }}</span>
+            <p class="mt-3 text-[2rem] leading-none font-bold tracking-[-0.02em] text-ink">
+              {{ price_text }}{% if page.price_suffix %}<span class="text-lg font-semibold text-muted">{{ page.price_suffix }}</span>{% endif %}
+            </p>
+            <p class="mt-2.5 text-sm leading-relaxed text-muted">{{ page.price_note | default: "Scoped and priced before we start — no surprises later." }}</p>
+            <hr class="apx-rule my-5">
+            <ul class="space-y-2.5 text-sm text-muted">
+              <li class="flex items-center gap-2.5">{% include ui/icon.html name="check" class="w-4 h-4 text-accent shrink-0" %}Fixed scope, in writing</li>
+              <li class="flex items-center gap-2.5">{% include ui/icon.html name="check" class="w-4 h-4 text-accent shrink-0" %}Senior engineers only</li>
+              <li class="flex items-center gap-2.5">{% include ui/icon.html name="check" class="w-4 h-4 text-accent shrink-0" %}Everything documented</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% if page.capabilities %}
+<!-- WHAT YOU GET -->
+<section class="apx-section px-6 bg-paper">
+  <div class="max-w-wide mx-auto grid lg:grid-cols-[1fr_1.35fr] gap-12 lg:gap-20 items-start">
+    <div class="lg:sticky lg:top-32 rv">
+      <span class="apx-eyebrow">What you get</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(1.875rem,3.2vw,2.625rem)]" style="text-wrap:balance">{{ page.headline | default: "Engineered, not clicked together." }}</h2>
+      <p class="mt-4 max-w-[440px] text-lg leading-relaxed text-muted">Every item below is delivered working, documented, and owned by your team — not left as a slide in a deck.</p>
+    </div>
+    <div class="divide-y divide-line border-y border-line rv">
+      {% for cap in page.capabilities %}
+      <div class="flex items-start gap-4 py-5">
+        <span class="w-8 h-8 rounded-xl bg-accent-tint text-accent flex items-center justify-center shrink-0 mt-0.5">
+          {% include ui/icon.html name="check" class="w-4 h-4" %}
+        </span>
+        <p class="text-[17px] leading-relaxed text-ink-soft font-medium pt-1">{{ cap }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% assign body = content | strip %}
+{% if body != "" %}
+<!-- LONG-FORM BODY -->
+<section class="px-6 pb-20 md:pb-[7.5rem] bg-paper">
+  <div class="max-w-content mx-auto">
+    <hr class="apx-rule mb-14">
+    <div class="prose max-w-none">{{ content }}</div>
+  </div>
+</section>
+{% endif %}
+
+{%- comment -%} Related services in the same category (from _data/services.yml). {%- endcomment -%}
+{% assign related = "" | split: "" %}
+{% for cat in site.data.services.categories %}
+  {% if cat.name == page.category %}
+    {% for s in cat.services %}
+      {% assign s_url = s.url | append: "/" %}
+      {% unless page.url contains s.url or s_url == page.url %}
+        {% assign related = related | push: s %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% if related.size > 0 %}
+<!-- RELATED SERVICES -->
+<section class="px-6 pb-20 md:pb-[7.5rem] bg-paper">
+  <div class="max-w-wide mx-auto rv">
+    <div class="flex items-end justify-between gap-6 mb-8">
+      <h2 class="text-xl md:text-2xl font-bold tracking-[-0.01em] text-ink">More in {{ page.category }}</h2>
+      <a href="{{ site.baseurl }}/services/" class="group inline-flex items-center gap-1.5 text-sm font-semibold text-muted hover:text-ink transition-colors whitespace-nowrap">
+        All services {% include ui/icon.html name="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-0.5" %}
+      </a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {% for s in related limit: 3 %}
+      <a href="{{ site.baseurl }}{{ s.url }}/" class="apx-card p-6 group">
+        <div class="flex items-center gap-3.5">
+          <span class="w-10 h-10 rounded-xl bg-accent-tint text-accent flex items-center justify-center shrink-0">
+            {% include ui/icon.html name=s.icon class="w-5 h-5" %}
+          </span>
+          <div class="min-w-0">
+            <p class="font-bold text-ink leading-tight">{{ s.title }}</p>
+            <p class="mt-0.5 text-[13px] font-semibold text-faint">{{ s.price }}{{ s.price_suffix }}</p>
+          </div>
+        </div>
+        <p class="mt-3.5 text-sm leading-relaxed text-muted">{{ s.short_description }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% include sections/cta-band.html %}

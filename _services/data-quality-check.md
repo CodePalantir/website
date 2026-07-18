@@ -1,16 +1,22 @@
 ---
 layout: service
-title: "Data Quality Check | ApexPalantir"
-description: "Salesforce data quality analysis to identify duplicates, bloated data models, and performance issues. Clean data architecture for better CRM performance."
+title: "Data Quality Check"
+description: "A focused audit of what's actually in your CRM: duplicates, dead records, broken ownership, and the data-model debt that turns every report into an argument."
 service_type: "Salesforce Data Quality"
+category: "Audits"
+icon: "database"
 price: "800"
-image: /assets/images/logos/APEX-PALANTIR_LARGE.png
+price_display: "From €800"
+price_subtext: "Scoped audit"
+price_note: "Priced on org size before we start. Most checks land between €800 and €2,000."
+calendly: "https://calendly.com/d/cx6s-v9y-7wp/salesforce-data-quality-check"
+cta: "Book the check"
+headline: "Reports your team stops arguing about."
+capabilities:
+  - "Duplicate and dead-record analysis with a concrete cleanup plan"
+  - "Field usage audit: what's filled, what's ignored, what's lying"
+  - "Ownership and routing gaps that quietly lose leads"
+  - "A data-model review that names the debt slowing you down"
+  - "Validation and hygiene rules so it stays clean after we leave"
+image: /assets/images/logos/APX_LOGO.png
 ---
-
-{% include services/data-quality/data_quality_hero.html %}
-{% include shared/logo_strip.html %}
-{% include services/data-quality/data_quality_symptoms.html %}
-{% include services/data-quality/data_quality_method.html %}
-{% include services/data-quality/data_quality_deliverables.html %}
-{% include services/data-quality/data_quality_cta.html %}
-{% include home/about_us_home.html %}
