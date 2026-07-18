@@ -1,94 +1,163 @@
+# Service taxonomy for nav mega-menu, homepage grid, and /services pages.
+# Existing services keep their rich pages under /services/*. New tool-level
+# services use the lightweight `service-lite` layout. "Managed" houses the RUN offering.
+meeting_calendly: &meeting "https://calendly.com/d/cxgf-5fr-vxz/meet-apexpalantir"
+
 categories:
-  - name: "Diagnostics & Strategy"
-    id: "diagnostics"
-    pricing_type: "Fixed Price"
+  - name: "Audits"
+    id: "audits"
     services:
-      - title: "Technical Health Audit"
+      - title: "Tech Health Check"
         icon: "search"
         price: "€2,450"
         price_subtext: "One-time Audit"
-        description: "Messy, unstable, fragile org? We analyze your metadata, Apex code, and process flows to expose the cracks before they break."
         short_description: "Complete system analysis."
-        cta: "Book This Audit"
         show_in_navbar: true
         show_on_homepage: true
         homepage_tagline: "Protect Your Investment"
         homepage_description: "We identify the hidden technical debt slowing down your Sales and Marketing teams."
         url: "/services/technical-health-audit"
         calendly: "https://calendly.com/d/ctr7-n87-4hw/salesforce-technical-health-audit"
-
-      - title: "Data Quality Check"
+      - title: "Data Quality Audit"
         icon: "database"
         price: "From €800"
-        price_subtext: ""
-        description: "Drowning in duplicates? We analyze your full data model to show what's bloated, broken, or quietly killing performance."
         short_description: "Clean data architecture."
-        cta: "Book This Check"
         show_in_navbar: true
         url: "/services/data-quality-check"
         calendly: "https://calendly.com/d/cx6s-v9y-7wp/salesforce-data-quality-check"
-
-      - title: "GDPR Compliance"
+      - title: "GDPR Check"
         icon: "shield-alert"
         price: "~ €1,200"
-        price_subtext: ""
-        description: "One privacy complaint away from disaster. We identify personal data exposure and risky access patterns."
         short_description: "Privacy compliance."
-        cta: "Book Compliance Check"
         show_in_navbar: true
         url: "/services/gdpr-compliance"
         calendly: "https://calendly.com/d/cxm4-2s3-bcp/salesforce-gdpr-check"
 
-  - name: "Core Cloud Implementation"
-    id: "core-cloud"
-    pricing_type: "Project Based"
+  - name: "Outbound"
+    id: "outbound"
     services:
-      - title: "Sales Cloud Velocity"
+      - title: "Smartlead"
+        icon: "send"
+        price: "Custom Quote"
+        short_description: "Deliverability at scale."
+        show_in_navbar: true
+        url: "/services/smartlead"
+        calendly: *meeting
+      - title: "Instantly"
+        icon: "mail-check"
+        price: "Custom Quote"
+        short_description: "Sending engine setup."
+        show_in_navbar: true
+        url: "/services/instantly"
+        calendly: *meeting
+
+  - name: "Enrichment"
+    id: "enrichment"
+    services:
+      - title: "Apollo"
+        icon: "telescope"
+        price: "Custom Quote"
+        short_description: "Sourcing and enrichment."
+        show_in_navbar: true
+        url: "/services/apollo"
+        calendly: *meeting
+      - title: "Clay"
+        icon: "layers"
+        price: "Custom Quote"
+        short_description: "Signal to enriched record."
+        show_in_navbar: true
+        url: "/services/clay"
+        calendly: *meeting
+      - title: "Datagma"
+        icon: "user-search"
+        price: "Custom Quote"
+        short_description: "Contact data enrichment."
+        show_in_navbar: true
+        url: "/services/datagma"
+        calendly: *meeting
+
+  - name: "Integration"
+    id: "integration"
+    services:
+      - title: "MuleSoft"
+        icon: "network"
+        price: "€5k - €30k"
+        short_description: "Enterprise connectivity."
+        show_in_navbar: true
+        url: "/services/mulesoft-architecture"
+        calendly: "https://calendly.com/d/ct8w-6qf-2p7/mulesoft"
+      - title: "Custom Integration"
+        icon: "plug"
+        price: "€15k - €30k"
+        short_description: "Bespoke API integration."
+        show_in_navbar: true
+        url: "/services/custom-integration"
+        calendly: "https://calendly.com/d/cxpd-p3r-k5h/salesforce-system-integration"
+      - title: "Workato"
+        icon: "workflow"
+        price: "Custom Quote"
+        short_description: "Governed automation."
+        show_in_navbar: true
+        url: "/services/workato"
+        calendly: *meeting
+      - title: "n8n"
+        icon: "git-branch"
+        price: "Custom Quote"
+        short_description: "Self-hosted workflows."
+        show_in_navbar: true
+        url: "/services/n8n"
+        calendly: *meeting
+      - title: "Make"
+        icon: "puzzle"
+        price: "Custom Quote"
+        short_description: "Visual automation."
+        show_in_navbar: true
+        url: "/services/make"
+        calendly: *meeting
+      - title: "Zapier"
+        icon: "zap"
+        price: "Custom Quote"
+        short_description: "Quick-win automation."
+        show_in_navbar: true
+        url: "/services/zapier"
+        calendly: *meeting
+
+  - name: "Salesforce"
+    id: "salesforce"
+    services:
+      - title: "Sales Cloud"
         icon: "cloud-lightning"
         price: "€5k - €15k"
-        price_subtext: ""
-        description: "Turn Salesforce into a revenue engine. We configure Pipeline management, Forecasting, and Lead-to-Cash workflows designed for speed."
         short_description: "Pipeline acceleration."
-        cta: "Configure Sales Cloud"
         show_in_navbar: true
         url: "/services/sales-cloud-setup"
         calendly: "https://calendly.com/d/cxhp-73b-c5y/salesforce-sales-cloud-velocity"
-
-
-      - title: "Service Cloud Console"
+      - title: "Service Cloud"
         icon: "headphones"
         price: "€5k - €15k"
-        price_subtext: ""
-        description: "Stop losing customers to slow support. We implement Omni-Channel routing, Case Management, and SLAs to turn support into retention."
         short_description: "Support optimization."
-        cta: "Setup Service Cloud"
         show_in_navbar: true
         url: "/services/service-cloud-console"
         calendly: "https://calendly.com/d/ctqn-xnb-4b2/salesforce-service-cloud-console"
-
       - title: "Marketing Cloud"
         icon: "mail"
         price: "Custom Quote"
-        price_subtext: ""
-        description: "Ensure your leads are nurtured before they hit Sales. We architect data-driven Journeys, Automations, and personalized engagement."
         short_description: "Marketing automation."
-        cta: "Discuss Marketing"
         show_in_navbar: true
         url: "/services/marketing-cloud"
         calendly: "https://calendly.com/d/cx6d-wj7-9g7/salesforce-marketing-cloud"
-
-  - name: "Engineering & Integration"
-    id: "engineering"
-    pricing_type: "Project / Hourly"
-    services:
+      - title: "CPQ"
+        icon: "receipt"
+        price: "Custom Quote"
+        short_description: "Quote-to-cash logic."
+        show_in_navbar: true
+        url: "/services/salesforce-cpq"
+        calendly: *meeting
       - title: "Custom Development"
         icon: "code-2"
         price: "€100-150"
         price_suffix: "/hr"
-        price_subtext: "Agile Dev"
-        description: "Salesforce should adapt to you. We build clean, maintainable Apex, LWC, and Flows tailored to your exact use case."
         short_description: "High-performance logic."
-        cta: "Request Developer"
         show_in_navbar: true
         show_on_homepage: true
         homepage_tagline: "Accelerate Velocity"
@@ -96,66 +165,75 @@ categories:
         url: "/services/custom-development"
         calendly: "https://calendly.com/d/ct96-tzf-nvg/salesforce-custom-development"
 
-      - title: "System Integrations"
-        icon: "plug"
-        price: "€15k - €30k"
-        price_subtext: ""
-        description: "Data silos kill momentum. We wire Salesforce to your ERP, Marketing Stack, or internal tools using robust APIs."
-        short_description: "Connecting tech stacks."
-        cta: "Discuss Integration"
+  - name: "HubSpot"
+    id: "hubspot"
+    services:
+      - title: "Marketing Hub"
+        icon: "megaphone"
+        price: "Custom Quote"
+        short_description: "Demand engine setup."
         show_in_navbar: true
-        url: "/services/custom-integration"
-        calendly: "https://calendly.com/d/cxpd-p3r-k5h/salesforce-system-integration"
-
-      - title: "Mulesoft Architecture"
-        icon: "network"
-        price: "€5k - €30k"
-        price_subtext: ""
-        description: "Need enterprise-scale connectivity? We architect Mulesoft flows that move clean, validated data across your entire ecosystem."
-        short_description: "Enterprise connectivity."
-        cta: "Consult Mulesoft"
+        url: "/services/hubspot-marketing-hub"
+        calendly: *meeting
+      - title: "Sales Hub"
+        icon: "trending-up"
+        price: "Custom Quote"
+        short_description: "Pipeline and forecasting."
         show_in_navbar: true
-        url: "/services/mulesoft-architecture"
-        calendly: "https://calendly.com/d/ct8w-6qf-2p7/mulesoft"
+        url: "/services/hubspot-sales-hub"
+        calendly: *meeting
+      - title: "Service Hub"
+        icon: "life-buoy"
+        price: "Custom Quote"
+        short_description: "Support and retention."
+        show_in_navbar: true
+        url: "/services/hubspot-service-hub"
+        calendly: *meeting
+      - title: "Operations Hub"
+        icon: "settings-2"
+        price: "Custom Quote"
+        short_description: "Data sync and quality."
+        show_in_navbar: true
+        url: "/services/hubspot-operations-hub"
+        calendly: *meeting
 
-  - name: "Stability & Scale"
-    id: "stability"
-    pricing_type: "Retainer"
+  - name: "Connected Tools"
+    id: "connected-tools"
+    services:
+      - title: "Aircall"
+        icon: "phone-call"
+        price: "Custom Quote"
+        short_description: "Telephony in the CRM."
+        show_in_navbar: true
+        url: "/services/aircall"
+        calendly: *meeting
+      - title: "DocuSign"
+        icon: "file-signature"
+        price: "Custom Quote"
+        short_description: "Signature in the flow."
+        show_in_navbar: true
+        url: "/services/docusign"
+        calendly: *meeting
+
+  - name: "Managed"
+    id: "managed"
     services:
       - title: "Managed Support"
         icon: "life-buoy"
         price: "€28,800"
         price_suffix: "/yr"
-        price_subtext: ""
-        description: "The silent backbone of your CRM. We monitor, triage, and resolve user issues, bugs, and permission errors within 24 hours. No ticketing chaos."
         short_description: "24hr support coverage."
-        cta: "Get Support Plan"
         show_in_navbar: true
-        special_styling: "featured"
         url: "/services/managed-support"
         calendly: "https://calendly.com/d/cxm6-42v-d7d/managed-support"
-
       - title: "Managed Partner"
         icon: "crown"
         price: "Retainer"
         price_subtext: "Fractional"
-        description: "We take over your full CRM organization and scaling strategy. From daily operations to long-term architectural roadmapping."
         short_description: "Strategic roadmap."
-        cta: "Partner With Us"
         show_in_navbar: true
         show_on_homepage: true
         homepage_tagline: "Scalable Foundation"
         homepage_description: "Strategic technical leadership for RevOps and CEOs."
-        special_styling: "premium"
         url: "/services/managed-partner"
         calendly: "https://calendly.com/d/ct8z-ypp-bbd/managed-partner"
-
-      - title: "Tech Debt Monitor"
-        icon: "activity"
-        price: "SaaS"
-        price_subtext: ""
-        description: "Automated, real-time monitoring of your Salesforce org's technical health. Detect accumulated debt and slow automations."
-        short_description: "Continuous monitoring."
-        cta: "Join Waitlist"
-        show_in_navbar: false
-        special_styling: "coming_soon"
