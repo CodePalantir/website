@@ -19,8 +19,8 @@
         <a href="{{ site.baseurl }}/services" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/services' %}text-ink{% endif %}">
           Services {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
         </a>
-        <div class="dropdown-menu fixed top-[70px] inset-x-0 z-50 px-4 before:content-[''] before:absolute before:-top-6 before:inset-x-0 before:h-6">
-          <div class="max-w-[1260px] mx-auto bg-surface rounded-[1.5rem] border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-6">
+        <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[min(1180px,calc(100vw-2.5rem))] z-50 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
+          <div class="w-full bg-surface rounded-[1.5rem] border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-6">
             <div class="flex gap-3 overflow-x-auto no-scrollbar">
               {% for category in site.data.services.categories %}
                 {% assign nav_services = category.services | where: "show_in_navbar", true %}

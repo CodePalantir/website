@@ -469,6 +469,48 @@ html, body {
     overflow-x: clip;
 }
 
+/* ─────────────────────────────────────────────────────────────
+   Homepage full-viewport flow (.apx-fv-root on <main>).
+   Each major section owns one viewport: min-height 100svh (vh
+   fallback), content vertically centred, gentle y-proximity
+   scroll-snap so content-heavy sections never trap scrolling.
+   Unlayered on purpose — must win over layered utility padding.
+   ───────────────────────────────────────────────────────────── */
+html:has(.apx-fv-root) {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 0; /* fv sections carry their own header offset */
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+.apx-fv-root > section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  scroll-margin-top: 0;
+  /* clear the fixed header, then breathe with the viewport */
+  padding-top: calc(5.25rem + clamp(1rem, 3svh, 2.5rem));
+  padding-bottom: clamp(2.25rem, 5svh, 4.25rem);
+}
+/* flex children with mx-auto would otherwise shrink to fit-content
+   (auto cross-axis margins suppress stretch) — keep containers full width */
+.apx-fv-root > section > :not([class*="absolute"]) {
+  width: 100%;
+}
+
+/* Short viewports (1366×768-class laptops): pull the section heads in a
+   notch so every section still fits one screen. Headline hierarchy is
+   preserved — this only trims the top end of the clamp. */
+@media (max-height: 850px) {
+  .apx-fv-root section h2 { font-size: clamp(1.75rem, 2.9vw, 2.375rem); }
+  .apx-fv-root section .text-lg { font-size: 1.0625rem; }
+}
+
 /* Table of Contents Active Link */
 .toc-active {
     color: #8E2DE2 !important;

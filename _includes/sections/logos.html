@@ -1,8 +1,9 @@
 {%- comment -%}
   Quiet client logo strip — grayscale, multiply-blended onto the warm ground.
+  Pass bare=true to render just the strip (no <section> wrapper) so a
+  neighbouring section (e.g. the homepage cta-band) can fold it in.
 {%- endcomment -%}
-<section class="px-6 pb-20 md:pb-[7.5rem] bg-paper">
-  <div class="max-w-wide mx-auto rv">
+{% capture logo_strip %}
     <p class="text-center text-sm font-semibold uppercase tracking-[0.1em] text-faint">Trusted by teams at</p>
     <div class="mt-9 flex items-center justify-center flex-wrap gap-x-8 gap-y-6 md:gap-x-16">
       <img class="h-9 md:h-12 w-auto grayscale opacity-60 mix-blend-multiply hover:opacity-90 transition-opacity" src="{{ '/assets/images/clients/zech.webp' | relative_url }}" alt="Zech Group" loading="lazy">
@@ -12,5 +13,13 @@
       <img class="h-16 md:h-[84px] w-auto grayscale opacity-60 mix-blend-multiply hover:opacity-90 transition-opacity" src="{{ '/assets/images/clients/iu.webp' | relative_url }}" alt="IU International University" loading="lazy">
       <img class="h-8 md:h-10 w-auto grayscale opacity-60 mix-blend-multiply hover:opacity-90 transition-opacity" src="{{ '/assets/images/clients/hauser.webp' | relative_url }}" alt="Hauser Maschinen" loading="lazy">
     </div>
+{% endcapture %}
+{% if include.bare %}
+{{ logo_strip }}
+{% else %}
+<section class="px-6 pb-20 md:pb-[7.5rem] bg-paper">
+  <div class="max-w-wide mx-auto rv">
+{{ logo_strip }}
   </div>
 </section>
+{% endif %}

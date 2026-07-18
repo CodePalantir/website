@@ -2,9 +2,14 @@
   Closing CTA — dark plum rounded panel with brand-glow corners, one
   gradient phrase, one white pill. Every page ends here.
 {%- endcomment -%}
-<section class="px-6 pb-20 md:pb-[7.5rem] bg-paper">
+<section id="cta" class="px-6 pb-20 md:pb-[7.5rem] bg-paper">
   <div class="max-w-wide mx-auto">
-    <div class="apx-panel text-center px-7 py-16 md:px-10 md:py-[6.5rem] rv">
+    {% if include.show_logos %}
+    <div class="mb-[clamp(2.5rem,6svh,4.5rem)] rv">
+      {% include sections/logos.html bare=true %}
+    </div>
+    {% endif %}
+    <div class="apx-panel text-center px-7 py-16 md:px-10 md:py-[clamp(3.5rem,9svh,6.5rem)] rv">
       <div class="relative z-[2] max-w-[640px] mx-auto">
         <h2 class="font-bold text-white tracking-[-0.02em] leading-[1.1] text-[clamp(2rem,3.8vw,3.125rem)]" style="text-wrap:balance">
           Ready for numbers you<br class="hidden sm:block"> <span class="text-gradient-light">don&#8217;t have to double&#8209;check?</span>
