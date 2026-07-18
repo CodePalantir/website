@@ -318,9 +318,6 @@
     transition: transform .5s ease;
   }
   .apx-photo-card:hover img { transform: scale(1.04); }
-  /* Fill variant: let the card stretch to its grid cell (full-viewport section)
-     instead of locking to a 1:1 box. */
-  .apx-photo-card.is-fill { aspect-ratio: auto; height: 100%; }
   .apx-photo-card::after {
     content: "";
     position: absolute;
