@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<!-- HERO -->
+<!-- 1. HERO -->
 <section class="px-6 bg-paper pt-[clamp(7rem,15vh,10rem)] pb-[clamp(3.5rem,7vh,6rem)]">
   <div class="max-w-wide mx-auto">
     <nav class="flex items-center gap-2 text-sm font-medium text-faint rv" aria-label="Breadcrumb">
@@ -31,26 +31,54 @@ layout: default
   </div>
 </section>
 
-<!-- WHAT WE USUALLY FIND -->
+<!-- 2. THE PROBLEM, IN DEPTH -->
 <section class="apx-section px-6 bg-surface">
   <div class="max-w-wide mx-auto">
-    <div class="max-w-[720px] rv">
-      <span class="apx-eyebrow">What we usually find</span>
-      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">The problems we see in {{ page.name }}.</h2>
+    <div class="max-w-[760px] rv">
+      <span class="apx-eyebrow">The reality in {{ page.name }}</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">Where the revenue quietly leaks.</h2>
+      {% if page.problem_intro %}<p class="mt-5 max-w-[62ch] text-lg leading-relaxed text-muted">{{ page.problem_intro }}</p>{% endif %}
     </div>
-    <div class="mt-10 md:mt-14 grid md:grid-cols-3 gap-5 md:gap-6">
-      {% for pain in page.pains %}
-      <div class="apx-card p-6 md:p-7 rv">
+    <div class="mt-10 md:mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+      {% for problem in page.problems %}
+      <div class="apx-card p-6 md:p-7 rv flex flex-col">
         <span class="font-bold text-[15px] text-gradient tabular-nums">0{{ forloop.index }}</span>
-        <p class="mt-4 text-[17px] leading-relaxed text-ink-soft">{{ pain }}</p>
+        <h3 class="mt-4 text-[1.15rem] font-bold text-ink tracking-[-0.01em] leading-snug">{{ problem.title }}</h3>
+        <p class="mt-2.5 text-[15px] leading-relaxed text-muted flex-1">{{ problem.body }}</p>
+        {% if problem.cost %}
+        <div class="mt-5 pt-4 border-t border-line">
+          <p class="text-[11px] font-bold uppercase tracking-[0.14em] text-faint">The cost</p>
+          <p class="mt-1.5 text-[14.5px] font-semibold text-ink-soft leading-snug">{{ problem.cost }}</p>
+        </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- WHAT WE PUT IN PLACE -->
+<!-- 3. WHAT A HOLISTIC LENS UNLOCKS -->
 <section class="apx-section px-6 bg-paper">
+  <div class="max-w-wide mx-auto">
+    <div class="max-w-[760px] mx-auto text-center rv">
+      <span class="apx-eyebrow">A holistic lens</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">Point fixes won&#8217;t hold. The whole engine has to work.</h2>
+      {% if page.holistic_intro %}<p class="mt-5 mx-auto max-w-[64ch] text-lg leading-relaxed text-muted">{{ page.holistic_intro }}</p>{% endif %}
+    </div>
+    <div class="mt-14 md:mt-16 grid md:grid-cols-3 gap-10 md:gap-14 max-w-[1080px] mx-auto">
+      {% for benefit in page.benefits %}
+      <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-7 rv">
+        <div class="text-[15px] font-bold text-gradient tabular-nums">0{{ forloop.index }}</div>
+        <h3 class="mt-2.5 text-[23px] font-bold tracking-[-0.01em] text-ink leading-snug">{{ benefit.title }}</h3>
+        <p class="mt-3 text-base leading-relaxed text-muted">{{ benefit.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- 4. WHAT WE PUT IN PLACE -->
+<section class="apx-section px-6 bg-surface">
   <div class="max-w-wide mx-auto grid lg:grid-cols-[1fr_1.35fr] gap-12 lg:gap-20 items-start">
     <div class="lg:sticky lg:top-32 rv">
       <span class="apx-eyebrow">What we put in place</span>
@@ -61,7 +89,7 @@ layout: default
         <p class="apx-label text-faint">Stack we usually work in</p>
         <div class="mt-3.5 flex flex-wrap gap-2.5">
           {% for p in page.platforms %}
-          <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-surface border border-line text-sm font-semibold text-ink">{{ p }}</span>
+          <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-paper border border-line text-sm font-semibold text-ink">{{ p }}</span>
           {% endfor %}
         </div>
       </div>
@@ -78,6 +106,42 @@ layout: default
     </div>
   </div>
 </section>
+
+<!-- 5. WHERE WE'D START (featured services) -->
+{% if page.services %}
+{%- assign all_services = "" | split: "" -%}
+{%- for cat in site.data.services.categories -%}{%- assign all_services = all_services | concat: cat.services -%}{%- endfor -%}
+<section class="apx-section px-6 bg-paper">
+  <div class="max-w-wide mx-auto">
+    <div class="max-w-[760px] rv">
+      <span class="apx-eyebrow">Where we&#8217;d start</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">The services that move the needle here.</h2>
+      <p class="mt-4 max-w-[58ch] text-lg leading-relaxed text-muted">Every engagement opens with the audit. From there, these are the pieces that tend to matter most for {{ page.name }}.</p>
+    </div>
+    <div class="mt-10 md:mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+      {% for surl in page.services %}
+        {%- assign s = all_services | where: "url", surl | first -%}
+        {% if s %}
+        <a href="{{ site.baseurl }}{{ s.url }}/" data-ap-track="service" data-ap-category="industry-{{ page.slug }}" class="apx-card p-6 group flex flex-col">
+          <div class="flex items-start justify-between gap-4">
+            <span class="w-11 h-11 rounded-xl bg-accent-tint text-accent flex items-center justify-center shrink-0 transition-colors group-hover:bg-purple-gradient group-hover:text-white">
+              {% include ui/icon.html name=s.icon class="w-5 h-5" %}
+            </span>
+            <span class="text-[13px] font-semibold text-faint whitespace-nowrap pt-1.5">{{ s.price }}{{ s.price_suffix }}</span>
+          </div>
+          <h3 class="mt-5 text-[17px] font-bold tracking-[-0.01em] text-ink leading-snug">{{ s.title }}</h3>
+          <p class="mt-1.5 text-sm leading-relaxed text-muted flex-1">{{ s.short_description }}</p>
+          <span class="mt-5 inline-flex items-center gap-1.5 text-accent font-semibold text-sm">View service <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="mt-9 rv">
+      <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-ghost">See all services</a>
+    </div>
+  </div>
+</section>
+{% endif %}
 
 {% assign body = content | strip %}
 {% if body != "" %}
