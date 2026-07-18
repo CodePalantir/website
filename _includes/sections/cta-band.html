@@ -1,27 +1,20 @@
 {%- comment -%}
-  The closing band. Every page ends here — same confident, de-risked offer,
-  so whatever the visitor read, they exit on an identical low-commitment
-  close (peak-end rule). Copy overridable via include params.
+  Closing CTA — dark plum rounded panel with brand-glow corners, one
+  gradient phrase, one white pill. Every page ends here.
 {%- endcomment -%}
-<section class="apx-section px-4 sm:px-6">
+<section class="px-6 pb-20 md:pb-[7.5rem] bg-paper">
   <div class="max-w-wide mx-auto">
-    <div class="apx-panel overflow-hidden px-6 py-14 sm:px-12 sm:py-16 md:py-20">
-      <div class="absolute pointer-events-none" style="inset:0;background:radial-gradient(600px 300px at 80% 20%, rgba(142,45,226,.18), transparent 70%)"></div>
-      <div class="relative max-w-3xl">
-        {% include ui/eyebrow.html text=include.eyebrow class="text-purple-300" %}
-        <h2 class="mt-5 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.05]">
-          {{ include.title | default: "Not sure it's worth it? Start with the audit." }}
+    <div class="apx-panel text-center px-7 py-16 md:px-10 md:py-[6.5rem] rv">
+      <div class="relative z-[2] max-w-[640px] mx-auto">
+        <h2 class="font-bold text-white tracking-[-0.02em] leading-[1.1] text-[clamp(2rem,3.8vw,3.125rem)]" style="text-wrap:balance">
+          Ready for numbers you<br class="hidden sm:block"> <span class="text-gradient-light">don&#8217;t have to double&#8209;check?</span>
         </h2>
-        <p class="mt-5 text-lg text-slate-300 leading-relaxed max-w-2xl">
-          {{ include.text | default: "Five working days, one fixed price, a prioritised fix-list quantified in euros. No retainer, no further commitment — you keep the report either way." }}
+        <p class="mt-5 mx-auto max-w-[520px] text-[17.5px] leading-relaxed text-white/80">
+          Five days from now you could be holding a clear, prioritised fix-list for your revenue stack — priced in euros, not estimates.
         </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4">
-          {% include ui/cta.html track="cta-band" %}
-          <span class="inline-flex items-center gap-2 text-sm font-mono text-slate-400 px-1 self-center">
-            {% include ui/icon.html name="check" class="w-4 h-4 text-emerald-400" %}
-            Fixed price · 5 days · no further commitment
-          </span>
-        </div>
+        <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="{{ include.track | default: 'cta-band' }}" class="apx-btn apx-btn-light mt-9">
+          Book the audit — €2,450
+        </a>
       </div>
     </div>
   </div>

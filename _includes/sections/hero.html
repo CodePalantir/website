@@ -1,75 +1,26 @@
 {%- comment -%}
-  Homepage hero. Answers the four questions in the first screenful:
-  Where am I (eyebrow) · What do I get (H1 + sub) · Why care (stack-agnostic
-  promise) · What next (one primary CTA + de-risking reassurance = the PEAK).
-  The dark instrument panel is the 50ms halo device — "engineers, in control".
+  Homepage hero — fading fine-line grid + soft brand glow, one gradient
+  phrase in the headline, one proof line, two pill CTAs. (W2 system.)
 {%- endcomment -%}
-<section class="pt-28 sm:pt-32 md:pt-36 pb-14 md:pb-20 px-4 sm:px-6 relative overflow-x-hidden">
-  <div class="max-w-wide mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+<section class="relative flex flex-col min-h-[min(100vh,860px)] overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
+  <div class="apx-hero-grid"></div>
+  <div class="apx-hero-glow"></div>
 
-    <div class="space-y-7">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-100 text-sm font-semibold">
-        <span class="w-2 h-2 rounded-full bg-purple-600 apx-pulse"></span>
-        RevOps Technology Agency
-      </div>
-
-      <h1 class="text-4xl sm:text-5xl lg:text-[3.75rem] font-extrabold leading-[1.04] tracking-tight text-slate-900">
-        The revenue systems<br class="hidden sm:inline"/> your growth runs on<span class="text-gradient">.</span><br class="hidden sm:inline"/>
-        <span class="text-slate-400 font-bold">Engineered, not administered.</span>
+  <div class="relative z-[4] flex-1 flex items-center justify-center text-center px-6 pt-40 pb-24 md:pt-44 md:pb-28">
+    <div class="w-full max-w-[940px] mx-auto">
+      <h1 class="font-bold text-ink tracking-[-0.025em] leading-[1.04] text-[clamp(2.5rem,6.3vw,5rem)]" style="text-wrap:balance">
+        Turn a messy stack into <br class="hidden sm:block"><span class="text-gradient">revenue you can trust.</span>
       </h1>
-
-      <p class="text-xl text-slate-600 leading-relaxed max-w-xl">
-        We architect, integrate and run the technology behind marketing, sales and service — CRM, billing, data, and everything between. On the stack you already run, not the one someone wants to sell you.
+      <p class="mt-6 mx-auto max-w-[640px] text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted">
+        We build and run the systems behind your marketing, sales and service — so your pipeline is real, your numbers add up, and growth feels calm.
       </p>
-
-      <div class="flex flex-col sm:flex-row gap-3">
-        {% include ui/cta.html track="hero" class="text-base px-8 py-4" %}
-        <a href="#lifecycle" class="apx-btn apx-btn-ghost text-base px-8 py-4">See what we cover</a>
-      </div>
-
-      <!-- PEAK: competence + de-risking, right under the primary action -->
-      <p class="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm font-mono text-slate-500">
-        {% include ui/icon.html name="check" class="w-4 h-4 text-emerald-500" %}
-        <span class="font-semibold text-slate-700">€2,450 · fixed price · 5 working days</span>
-        <span class="text-slate-300">·</span>
-        <span>a fix-list in euros, no further commitment</span>
+      <p class="mt-4 text-[15.5px] font-medium text-faint">
+        Start with a €2,450 fixed-price audit: five days, one fix-list, priced in euros.
       </p>
-    </div>
-
-    <!-- Instrument panel: the halo. A read-out, not decoration. -->
-    <div>
-      <div class="apx-panel font-mono text-xs p-6 sm:p-8 overflow-hidden">
-        <div class="absolute pointer-events-none" style="inset:0;background:radial-gradient(380px 220px at 76% 58%, rgba(142,45,226,.16), transparent 70%)"></div>
-        <div class="relative">
-          <div class="flex justify-between items-center mb-4">
-            <span class="text-slate-400 font-bold tracking-widest text-[10px] uppercase">Architecture Health</span>
-            <span class="text-[10px] font-bold"><span class="text-emerald-400">3 HEALTHY</span> <span class="text-slate-500">·</span> <span class="text-rose-400 apx-pulse">1 FLAGGED</span></span>
-          </div>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between gap-3">
-              <span class="text-slate-300 truncate">crm → billing_sync</span>
-              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 shrink-0">MONITORED</span>
-            </div>
-            <div class="flex items-center justify-between gap-3">
-              <span class="text-slate-300 truncate">lead_routing_matrix</span>
-              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 shrink-0">OPTIMIZED</span>
-            </div>
-            <div class="flex items-center justify-between gap-3">
-              <span class="text-slate-300 truncate">legacy_pricing_workflow<span class="text-slate-500 hidden sm:inline"> (2019)</span></span>
-              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-rose-500/15 text-rose-400 shrink-0">DEPRECATED</span>
-            </div>
-            <div class="flex items-center justify-between gap-3">
-              <span class="text-slate-300 truncate">warehouse → attribution</span>
-              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-500/15 text-purple-300 shrink-0">TESTED</span>
-            </div>
-            <div class="flex items-center justify-between gap-3 pt-3 border-t border-white/10">
-              <span class="text-slate-500 truncate">// most stacks tip net-negative around year five</span>
-              <span class="text-slate-500 shrink-0">apx_monitor</span>
-            </div>
-          </div>
-        </div>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        {% include ui/cta.html label="Book the audit" track="hero" no_icon=true class="w-full max-w-[340px] sm:w-auto" %}
+        <a href="{{ site.baseurl }}/#work" class="apx-btn apx-btn-ghost w-full max-w-[340px] sm:w-auto">See our work</a>
       </div>
     </div>
-
   </div>
 </section>

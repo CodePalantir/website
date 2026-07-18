@@ -1,2 +1,6 @@
-{%- comment -%} Section eyebrow label. Usage: {% include ui/eyebrow.html text="What we do" %} {%- endcomment -%}
-<span class="apx-eyebrow {{ include.class }}">{{ include.text }}</span>
+{%- comment -%}
+  Mono structural label. Optional index number reads like a doc reference.
+  Usage: {% include ui/eyebrow.html text="What we do" %}
+         {% include ui/eyebrow.html text="What we do" idx="02" %}
+{%- endcomment -%}
+<span class="apx-label {{ include.class }}">{%- if include.idx -%}<span class="idx">{{ include.idx }}</span>{%- endif -%}{{ include.text }}</span>

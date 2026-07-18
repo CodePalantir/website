@@ -1,53 +1,42 @@
-<footer class="bg-[#0A0A0B] text-white pt-16 sm:pt-20 md:pt-24 lg:pt-32 pb-12 px-4 sm:px-6">
-  <div class="max-w-7xl mx-auto">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-white/10 pb-12 sm:pb-16 md:pb-20 mb-12 sm:mb-16 md:mb-20 gap-8 sm:gap-10 md:gap-12">
-      <div class="max-w-2xl space-y-6">
-         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/50 text-[10px] font-black uppercase tracking-[0.2em]">The Growth Phase</div>
-         <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight leading-[0.9]">Ready to Build <br/><span class="opacity-60 italic pr-4">Your Foundation?</span></h2>
+{%- comment -%}
+  Light premium footer — quiet, on the warm ground. Logo + nav + contact
+  on one hairline-topped band, legal row underneath.
+{%- endcomment -%}
+<footer class="bg-paper px-6 pb-10">
+  <div class="max-w-wide mx-auto border-t border-line pt-12">
+    <div class="flex flex-col md:flex-row md:items-start justify-between gap-10">
+      <div class="max-w-xs">
+        <a href="{{ site.baseurl }}/" class="text-[22px] font-bold tracking-tight text-ink">APX<span class="text-gradient">.</span></a>
+        <p class="mt-3 text-sm leading-relaxed text-faint">RevOps technology firm. We architect, integrate and run the systems your revenue engine depends on.</p>
       </div>
-      <div class="group cursor-pointer">
-         <a href="{{ site.cta.secondary_url }}" data-ap-track="book-call" data-ap-category="footer" data-ap-value="lets-connect" class="flex items-center gap-6 text-2xl md:text-3xl font-bold group-hover:text-purple-400 transition-colors">
-            Let's Connect
-            <div class="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-purple-600 group-hover:border-purple-600 transition-all">
-               {% include ui/icon.html name="arrow-right" class="w-8 h-8 group-hover:translate-x-1 transition-transform" %}
-            </div>
-         </a>
-      </div>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 md:gap-16 mb-16 sm:mb-20 md:mb-24">
-      <div class="space-y-8 hidden md:block">
-        <div class="flex items-center gap-2">
-          <img src="{{ '/assets/images/logos/APX_WHITE.png' | relative_url }}" alt="APX Logo" class="h-auto w-48" loading="lazy">
+
+      <div class="flex flex-wrap gap-x-16 gap-y-8 text-sm">
+        <div>
+          <p class="font-semibold text-ink mb-3">Company</p>
+          <ul class="space-y-2 text-muted">
+            <li><a href="{{ site.baseurl }}/services" class="hover:text-ink transition-colors">Services</a></li>
+            <li><a href="{{ site.baseurl }}/about" class="hover:text-ink transition-colors">About</a></li>
+            <li><a href="{{ site.baseurl }}/blog" class="hover:text-ink transition-colors">Blog</a></li>
+            <li><a href="{{ site.baseurl }}/revshorts" class="hover:text-ink transition-colors">RevShorts</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="space-y-6">
-        <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Navigation</p>
-        <ul class="space-y-3 text-lg font-medium">
-          <li><a href="{{ site.baseurl }}/services" class="hover:text-purple-400 transition-colors">Services</a></li>
-          <li><a href="{{ site.baseurl }}/about" class="hover:text-purple-400 transition-colors">About</a></li>
-        </ul>
-      </div>
-      <div class="space-y-6">
-        <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Contact</p>
-        <ul class="space-y-3 text-lg font-medium">
-          <li><a href="mailto:support@apx-revops.com" class="hover:text-purple-400 transition-colors">Email Us</a></li>
-          <li><a href="tel:+4940226320690" class="hover:text-purple-400 transition-colors">+49 402 2632 0690</a></li>
-        </ul>
-      </div>
-      <div class="space-y-6">
-        <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Social</p>
-        <div class="flex flex-wrap gap-4">
-          <a href="https://www.linkedin.com/company/apexpalantir/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer">{% include ui/icon.html name="linkedin" class="w-5" %}</a>
-          <!-- <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer">{% include ui/icon.html name="youtube" class="w-5" %}</div> -->
+        <div>
+          <p class="font-semibold text-ink mb-3">Contact</p>
+          <ul class="space-y-2 text-muted">
+            <li><a href="mailto:{{ site.contact.email | default: 'support@apx-revops.com' }}" class="hover:text-ink transition-colors">{{ site.contact.email | default: 'support@apx-revops.com' }}</a></li>
+            <li><a href="{{ site.contact.phone_href | default: 'tel:+4940226320690' }}" class="hover:text-ink transition-colors">{{ site.contact.phone_display | default: '+49 402 2632 0690' }}</a></li>
+            <li><a href="https://www.linkedin.com/company/apexpalantir/" target="_blank" rel="noopener noreferrer" class="hover:text-ink transition-colors">LinkedIn</a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="pt-10 border-t border-white/5 flex flex-col md:row items-center justify-between gap-6 text-slate-400 text-[10px] font-bold uppercase tracking-widest">
-      <p>© 2026 APX. Engineering Excellence.</p>
-      <div class="flex gap-10">
-        <a href="{{ site.baseurl }}/privacy" class="hover:text-white transition-colors">Privacy</a>
-        <a href="{{ site.baseurl }}/legal-notice" class="hover:text-white transition-colors">Legal Notice</a>
-      </div>
+
+    <div class="mt-12 pt-6 border-t border-line flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-faint">
+      <p>© 2026 APX — RevOps technology firm</p>
+      <nav class="flex gap-6">
+        <a href="{{ site.baseurl }}/legal-notice" class="hover:text-ink transition-colors">Legal notice</a>
+        <a href="{{ site.baseurl }}/privacy" class="hover:text-ink transition-colors">Privacy</a>
+      </nav>
     </div>
   </div>
 </footer>

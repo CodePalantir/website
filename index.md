@@ -6,11 +6,9 @@ image: /assets/images/logos/APX_LOGO.png
 ---
 
 {% include sections/hero.html %}
-{% include shared/logo_strip.html %}
-{% include root/diagnostics.html %}
-{% include sections/lifecycle.html %}
-{% include root/cross-layer.html %}
-{% include root/degradation.html %}
-{% include root/services.html %}
-{% include root/stacks.html %}
-{% include sections/cta-band.html eyebrow="Start here" %}
+{% include sections/what-we-do.html %}
+{% include sections/lifecycle-mobius.html %}
+{% include sections/industries.html %}
+{% include sections/app-grid.html %}
+{% include sections/logos.html %}
+{% include sections/cta-band.html %}

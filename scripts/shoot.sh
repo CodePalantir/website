@@ -27,5 +27,8 @@ shoot() { # width height outfile
 }
 
 shoot 1440 "$H" "${OUT}.desktop.png"
-shoot 390  "$H" "${OUT}.mobile.png"
+# Desktop Chrome clamps windows to a ~500px minimum width; asking for 390
+# renders a 500px layout cropped to 390. Shoot mobile at 500 (same as the
+# design/candidates/*.mobile.png references) so the full layout is captured.
+shoot 500  "$H" "${OUT}.mobile.png"
 echo "wrote ${OUT}.desktop.png  ${OUT}.mobile.png"

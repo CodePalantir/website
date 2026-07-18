@@ -1,42 +1,65 @@
-/* Self-hosted fonts for GDPR compliance */
+/* ─────────────────────────────────────────────────────────────
+   APX design system — "W2" warm-premium light theme.
+   Self-hosted Satoshi (Fontshare, variable 300–900) for GDPR
+   compliance; system mono stack for small technical labels.
+   ───────────────────────────────────────────────────────────── */
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Satoshi';
   font-style: normal;
-  font-weight: 400 800;
+  font-weight: 300 900;
   font-display: swap;
-  src: url('../fonts/plus-jakarta-sans.woff2') format('woff2');
+  src: url('../fonts/satoshi-variable.woff2') format('woff2');
 }
 
 @import "tailwindcss";
 
 @theme {
   /* ── Typefaces ─────────────────────────────────────────────
-     Two families, zero added downloads: self-hosted Plus Jakarta
-     Sans for everything; a system mono stack for the log/diagnostic
-     "we're engineers" texture (prices, status lines, key-values). */
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+     Satoshi everywhere (headings get heavier weights + tight
+     tracking); a system mono stack for tiny technical labels. */
+  --font-sans: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Menlo, Consolas, monospace;
 
-  /* ── Dark "engineering instrument panel" surface ramp ──────
-     The halo device: dark instruments on a light canvas. Tokenised
-     so panels stop living in inline style="" attributes. */
-  --color-ink-900: #0B1322;   /* panel top / deepest */
-  --color-ink-800: #141D33;   /* panel bottom (gradient pair with 900) */
-  --color-ink-700: #1E293B;   /* raised element on a panel */
-  --color-ink-line: rgba(255, 255, 255, 0.10);  /* hairline on dark */
+  /* ── Warm premium palette ──────────────────────────────────
+     Light warm ground (never grey), plum-tinted ink, and the
+     brand gradient #8E2DE2 → #4A00E0 used as a precise signal:
+     one headline phrase, the primary CTA, the hero glow. */
+  --color-ink: #241C33;        /* primary text — warm plum-black */
+  --color-ink-soft: #3A3149;   /* softened headings / hover text */
+  --color-plum: #17102B;       /* dark closing-panel surface */
+  --color-paper: #FAF8F5;      /* page canvas — warm cream */
+  --color-surface: #FFFFFF;    /* cards / raised on paper */
+  --color-line: #EAE4E0;       /* warm hairline borders on light */
+  --color-line-strong: #D8D0CA;
+  --color-muted: #5D5470;      /* secondary text on light */
+  --color-faint: #8B819C;      /* meta / captions / proof lines */
 
-  /* ── Section rhythm (one predictable vertical cadence) ─────── */
-  --spacing-section: 7rem;      /* desktop section padding (py-28) */
-  --spacing-section-sm: 5rem;   /* mobile */
+  /* Brand accent — the gradient endpoints, used flat when needed */
+  --color-accent: #8E2DE2;
+  --color-accent-strong: #4A00E0;
+  --color-accent-tint: #F4EEFC;
 
-  /* ── Container widths (three, and only three) ─────────────── */
-  --container-content: 56rem;   /* prose / service / article */
-  --container-wide: 80rem;      /* homepage + marketing sections */
-  --container-navbar: 90rem;    /* nav bar only */
+  /* Diagnostic status (sparse) */
+  --color-ok: #2FA36B;
+  --color-warn: #C98A00;
+  --color-flag: #DA3B4A;
 
-  /* ── House radii ──────────────────────────────────────────── */
-  --radius-card: 1.5rem;        /* cards, panels (rounded-3xl) */
-  --radius-control: 0.75rem;    /* buttons, inputs */
+  /* Hairline on a dark surface */
+  --color-ink-line: rgba(255, 255, 255, 0.10);
+
+  /* ── Section rhythm ────────────────────────────────────────── */
+  --spacing-section: 7.5rem;    /* desktop section padding */
+  --spacing-section-sm: 4.75rem;/* mobile */
+
+  /* ── Container widths ──────────────────────────────────────── */
+  --container-content: 52rem;   /* prose / article measure */
+  --container-wide: 75rem;      /* homepage + marketing sections (1200px) */
+  --container-navbar: 75rem;    /* nav bar — aligned with content */
+
+  /* ── House radii — generous, calm, rounded-square ──────────── */
+  --radius-card: 1.5rem;        /* cards, image tiles */
+  --radius-panel: 2.25rem;      /* big closing panel */
+  --radius-control: 9999px;     /* pill buttons */
 
   /* Custom Animations */
   --animate-infinite-scroll: infinite-scroll 30s linear infinite;
@@ -47,15 +70,24 @@
   }
 }
 
-/* Custom Utilities */
+/* ── Brand gradient utilities ─────────────────────────────── */
 @utility text-gradient {
-  background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  background: linear-gradient(92deg, #8E2DE2 0%, #4A00E0 100%);
   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility text-gradient-light {
+  /* gradient phrase on dark panels */
+  background: linear-gradient(92deg, #C08CFF 0%, #8F7BFF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @utility bg-purple-gradient {
-  background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  background: linear-gradient(92deg, #8E2DE2 0%, #4A00E0 100%);
 }
 
 /* Component Logic (Dropdowns) */
@@ -77,30 +109,14 @@
   transform: rotate(180deg);
 }
 
-@layer utilities {
-  /* High-fidelity gradient text utility */
-  .text-gradient {
-    background: linear-gradient(to right, #8E2DE2, #4A00E0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /* Primary action gradient */
-  .bg-purple-gradient {
-    background: linear-gradient(to right, #8E2DE2, #4A00E0);
-  }
-}
-
-
-
 /* ─────────────────────────────────────────────────────────────
-   APX design-system components. One canonical class per element so
-   hover/focus language is identical everywhere (low cognitive load),
-   and the purple accent stays scarce (≤ one gradient per screenful).
+   Components. One canonical class per element so hover/focus
+   language is identical everywhere, and the brand gradient stays
+   scarce: headline phrase, primary CTA, glow. That's it.
    ───────────────────────────────────────────────────────────── */
 @layer components {
 
-  /* Section shell — the single vertical rhythm for every marketing section */
+  /* Section rhythm — one predictable vertical cadence */
   .apx-section {
     padding-top: var(--spacing-section-sm);
     padding-bottom: var(--spacing-section-sm);
@@ -109,97 +125,210 @@
     .apx-section { padding-top: var(--spacing-section); padding-bottom: var(--spacing-section); }
   }
 
-  /* Eyebrow — the connective label above every section header */
+  /* Gradient eyebrow — small uppercase kicker above section heads */
   .apx-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.75rem;
+    display: inline-block;
+    font-size: 0.8125rem;
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: #8E2DE2;
-  }
-  .apx-eyebrow::before {
-    content: "";
-    width: 1.5rem;
-    height: 1px;
-    background: currentColor;
-    opacity: 0.5;
+    background: linear-gradient(92deg, #8E2DE2 0%, #4A00E0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  /* Buttons — primary is the ONLY gradient control; ghost is the neutral pair */
+  /* Mono structural label — quiet technical texture for meta rows */
+  .apx-label {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-faint);
+  }
+  .apx-label > .idx { color: var(--color-accent); font-weight: 700; }
+
+  /* Hairline rule with a short brand lead */
+  .apx-rule { border: 0; height: 1px; background: var(--color-line); position: relative; }
+  .apx-rule::before { content: ""; position: absolute; left: 0; top: 0; width: 2.5rem; height: 1px; background: var(--color-accent); }
+
+  /* Buttons — pills. Primary carries the brand gradient + a soft
+     purple glow; ghost is a quiet outlined pill on the warm ground. */
   .apx-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.9rem 1.6rem;
+    gap: 0.55rem;
+    padding: 1.0rem 1.8rem;
     border-radius: var(--radius-control);
-    font-weight: 700;
-    font-size: 0.975rem;
+    font-weight: 600;
+    font-size: 1rem;
     line-height: 1;
-    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, border-color .2s ease, color .2s ease, opacity .2s ease;
+    letter-spacing: -0.005em;
+    white-space: nowrap;
+    transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, border-color .18s ease, color .18s ease;
     cursor: pointer;
   }
-  .apx-btn-primary {
+  .apx-btn:hover { transform: translateY(-1px); }
+  .apx-btn-primary,
+  .apx-btn-accent {
     color: #fff;
-    background: linear-gradient(to right, #8E2DE2, #4A00E0);
-    box-shadow: 0 18px 40px -18px rgba(74, 0, 224, 0.55);
+    background: linear-gradient(92deg, #8E2DE2 0%, #4A00E0 100%);
+    box-shadow: 0 10px 32px rgba(106, 22, 227, .32);
   }
-  .apx-btn-primary:hover { opacity: 0.94; box-shadow: 0 22px 48px -18px rgba(74, 0, 224, 0.65); }
+  .apx-btn-primary:hover,
+  .apx-btn-accent:hover { box-shadow: 0 14px 40px rgba(106, 22, 227, .42); }
   .apx-btn-ghost {
-    color: #334155;
-    background: #fff;
-    border: 1px solid #e2e8f0;
+    color: var(--color-ink);
+    border: 1.5px solid rgba(36, 28, 51, .28);
+    background: rgba(255, 255, 255, .55);
   }
-  .apx-btn-ghost:hover { border-color: #e9d5ff; color: #6b21a8; background: #faf5ff; }
-  .apx-btn .apx-icon { transition: transform .2s ease; }
+  .apx-btn-ghost:hover { border-color: var(--color-ink); background: #fff; }
+  .apx-btn-light {
+    color: var(--color-plum);
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .28);
+  }
+  .apx-btn-sm { padding: 0.8rem 1.4rem; font-size: 0.9rem; }
+  .apx-btn .apx-icon { transition: transform .18s ease; }
   .apx-btn:hover .apx-icon { transform: translateX(3px); }
 
-  /* Card — service / case / post cards share one geometry + one hover */
+  /* Card — rounded-square, warm hairline, restrained hover */
   .apx-card {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: #fff;
-    border: 1px solid #e2e8f0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
     border-radius: var(--radius-card);
     padding: 1.75rem;
-    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease;
   }
   .apx-card:hover {
-    border-color: #e9d5ff;
-    box-shadow: 0 24px 48px -28px rgba(74, 0, 224, 0.25);
+    border-color: var(--color-line-strong);
     transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(36, 28, 51, .06);
   }
 
-  /* Dark "engineering instrument panel" — the halo device, tokenised */
+  /* Dark plum panel — punctuation, used once per page */
   .apx-panel {
     position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-panel);
+    background: var(--color-plum);
+    color: rgba(255, 255, 255, .82);
+  }
+  .apx-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(70% 100% at 85% -10%, rgba(142, 45, 226, .5) 0%, transparent 62%),
+      radial-gradient(62% 95% at 12% 112%, rgba(74, 0, 224, .55) 0%, transparent 64%),
+      radial-gradient(46% 70% at 55% 120%, rgba(142, 45, 226, .28) 0%, transparent 68%);
+    pointer-events: none;
+  }
+
+  /* Hero atmosphere — fine-line grid that fades out, plus a soft
+     brand-purple glow behind the headline. Absolutely positioned
+     inside a relative hero section. */
+  .apx-hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(74, 0, 224, .075) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(74, 0, 224, .075) 1px, transparent 1px);
+    background-size: 54px 54px;
+    -webkit-mask-image: radial-gradient(110% 90% at 50% 32%, #000 0%, rgba(0, 0, 0, .55) 46%, transparent 78%);
+    mask-image: radial-gradient(110% 90% at 50% 32%, #000 0%, rgba(0, 0, 0, .55) 46%, transparent 78%);
+    pointer-events: none;
+  }
+  .apx-hero-glow {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(46% 38% at 50% 46%, rgba(142, 45, 226, .14) 0%, transparent 70%),
+      radial-gradient(30% 26% at 66% 30%, rgba(74, 0, 224, .10) 0%, transparent 70%),
+      radial-gradient(26% 22% at 32% 62%, rgba(142, 45, 226, .08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* Industry image tile — rounded-square photo card with a bottom
+     scrim and white label, exactly the W2 geometry. */
+  .apx-photo-card {
+    position: relative;
+    overflow: hidden;
     border-radius: var(--radius-card);
-    border: 1px solid var(--color-ink-line);
-    background: linear-gradient(180deg, var(--color-ink-900) 0%, var(--color-ink-800) 100%);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.07), 0 32px 64px -28px rgba(15,23,42,.45), 0 16px 32px -16px rgba(74,0,224,.22);
-    color: #cbd5e1;
+    aspect-ratio: 1 / 1;
+    background: #E8E2F2;
+  }
+  .apx-photo-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+  }
+  .apx-photo-card:hover img { transform: scale(1.04); }
+  .apx-photo-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(23, 16, 43, 0) 46%, rgba(23, 16, 43, .72) 100%);
+    pointer-events: none;
   }
 
-  /* Restrained status pulse (hero eyebrow dot, "1 FLAGGED"). Motion off = static. */
-  .apx-pulse { animation: apx-pulse 2.4s cubic-bezier(.4,0,.6,1) infinite; }
-  @keyframes apx-pulse { 0%,100% { opacity: 1; } 50% { opacity: .45; } }
+  /* Dark plum stack band — full-bleed punctuation between the warm
+     light sections. Soft brand-purple auras behind the app-network
+     diagram so its purple lines read as a glow. */
+  .apx-stack-dark {
+    position: relative;
+    background: var(--color-plum);
+    color: rgba(255, 255, 255, .82);
+  }
+  .apx-stack-dark::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(52% 46% at 50% 54%, rgba(142, 45, 226, .17) 0%, transparent 70%),
+      radial-gradient(40% 34% at 84% 0%, rgba(74, 0, 224, .26) 0%, transparent 66%),
+      radial-gradient(40% 34% at 10% 100%, rgba(142, 45, 226, .16) 0%, transparent 66%);
+    pointer-events: none;
+  }
+
+  /* Light gradient eyebrow — the section kicker on dark grounds */
+  .apx-eyebrow-light {
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    background: linear-gradient(92deg, #C08CFF 0%, #8F7BFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Restrained status pulse. Motion off = static. */
+  .apx-pulse { animation: apx-pulse 2.6s cubic-bezier(.4, 0, .6, 1) infinite; }
+  @keyframes apx-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
   @media (prefers-reduced-motion: reduce) { .apx-pulse { animation: none; } }
+}
 
-  /* Icon chip — the small purple square behind a feature icon */
-  .apx-chip {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.65rem;
-    background: #faf5ff;
-    color: #7c3aed;
-    transition: background-color .2s ease, color .2s ease;
-  }
-  .group:hover .apx-chip { background: #7c3aed; color: #fff; }
+/* Header — transparent over the hero grid; gains a warm glass
+   surface once the page scrolls (class toggled in default.html). */
+#navbar { background: transparent; }
+#navbar.is-scrolled {
+  background: rgba(250, 248, 245, .85);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-line);
 }
 
 /* Map Image Styles */
@@ -260,13 +389,13 @@
 .prose p {
     margin-bottom: 2rem;
     line-height: 1.9;
-    color: #475569;
+    color: #5D5470;
     font-size: 1.125rem; /* Larger font for long reads */
 }
 .prose h2 {
     font-size: 2rem;
-    font-weight: 800;
-    color: #0f172a;
+    font-weight: 700;
+    color: #241C33;
     margin-top: 4rem;
     margin-bottom: 2rem;
     letter-spacing: -0.025em;
@@ -275,7 +404,7 @@
 .prose h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0f172a;
+    color: #241C33;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
@@ -283,7 +412,7 @@
     list-style-type: disc;
     padding-left: 1.5rem;
     margin-bottom: 2rem;
-    color: #475569;
+    color: #5D5470;
     font-size: 1.125rem;
 }
 .prose li {
@@ -293,7 +422,7 @@
     border-left: 4px solid #8E2DE2;
     padding-left: 1.5rem;
     font-style: italic;
-    color: #1e293b;
+    color: #241C33;
     font-size: 1.25rem;
     margin: 3rem 0;
 }
@@ -316,7 +445,7 @@
     margin: 3rem 0;
 }
 .article-stat-box {
-    border: 1px solid #E2E8F0;
+    border: 1px solid #EAE4E0;
     padding: 1.5rem;
     border-radius: 1rem;
     text-align: center;
@@ -324,13 +453,20 @@
 
 /* Default background for stat boxes (can be overridden with utility classes) */
 .article-stat-box:not([class*="bg-"]) {
-    background: #F8FAFC;
+    background: #FFFFFF;
 }
 
 /* Smooth scroll with offset for fixed navbar */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 120px; /* Accounts for navbar + some breathing room */
+}
+
+/* Never allow horizontal page scroll (off-canvas drawer, hero glow etc.
+   produce transformed bounds outside the viewport). `clip` avoids creating
+   a new scroll container. */
+html, body {
+    overflow-x: clip;
 }
 
 /* Table of Contents Active Link */
