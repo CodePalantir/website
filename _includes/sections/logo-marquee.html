@@ -1,35 +1,52 @@
 {%- comment -%}
-  Animated client logo strip (seamless infinite scroll), placed right after the
-  hero. Two identical groups translated -50% for a seamless loop. Logo heights
-  scale with the viewport (clamp). Pauses on hover; respects reduced-motion.
-  Height + trailing padding equal the intra-group gap so the loop is seamless.
+  Animated client logo strip, placed right after the hero.
+
+  Seamless at ANY viewport width: two identical groups, each min-width:100% so a
+  group always fills the viewport, both animated by exactly (-100% - gap). Since
+  a transform percentage is relative to the element's own width, group 2 lands
+  precisely where group 1 began, so the loop never shows a gap or reset.
+  Logo heights scale with the viewport (clamp). Pauses on hover; reduced-motion safe.
 {%- endcomment -%}
 {%- comment -%} file | alt | viewport-scaling height {%- endcomment -%}
 {%- assign logos = "zech.webp|Zech Group|clamp(1.85rem,2.6vw,2.9rem), eigenherd.webp|Eigenherd|clamp(1.9rem,2.7vw,3rem), liqid.webp|LIQID|clamp(1.3rem,1.8vw,2.1rem), eventinc_log.webp|Event Inc|clamp(1.55rem,2.1vw,2.5rem), iu.webp|IU International University|clamp(2.9rem,4.2vw,4.9rem), hauser.webp|Hauser Maschinen|clamp(2rem,2.9vw,3.25rem)" | split: ", " -%}
-<section id="clients" class="apx-marquee-band py-[clamp(2.5rem,4.5vw,4rem)] bg-paper border-y border-line/70 overflow-hidden scroll-mt-28">
+<section class="apx-marquee-band py-[clamp(2.5rem,4.5vw,4rem)] bg-paper border-y border-line/70 overflow-hidden scroll-mt-28">
   <p class="text-center text-[clamp(0.72rem,0.85vw,0.82rem)] font-semibold uppercase tracking-[0.18em] text-faint">Trusted by teams at</p>
-  <div class="relative mt-[clamp(1.75rem,3vw,2.75rem)] overflow-hidden apx-marquee-mask">
-    <div class="apx-marquee-track flex w-max items-center">
-      {% for pass in (1..2) %}
-      <div class="apx-marquee-group flex items-center shrink-0"{% if pass == 2 %} aria-hidden="true"{% endif %}>
-        {% for l in logos %}
-          {% assign p = l | split: "|" %}
-          <img src="{{ '/assets/images/clients/' | append: p[0] | relative_url }}" alt="{{ p[1] }}" style="height:{{ p[2] }}" class="w-auto shrink-0 grayscale opacity-60 mix-blend-multiply transition-opacity duration-300 hover:opacity-95" loading="lazy" decoding="async">
-        {% endfor %}
-      </div>
+  <div class="apx-marquee mt-[clamp(1.75rem,3vw,2.75rem)]">
+    {% for pass in (1..2) %}
+    <div class="apx-marquee-group"{% if pass == 2 %} aria-hidden="true"{% endif %}>
+      {% for l in logos %}
+        {% assign p = l | split: "|" %}
+        <img src="{{ '/assets/images/clients/' | append: p[0] | relative_url }}" alt="{{ p[1] }}" style="height:{{ p[2] }}" class="w-auto shrink-0 grayscale opacity-60 mix-blend-multiply transition-opacity duration-300 hover:opacity-95" loading="lazy" decoding="async">
       {% endfor %}
     </div>
+    {% endfor %}
   </div>
 </section>
 <style>
-  /* intra-logo gap == group trailing padding -> seamless wrap at translateX(-50%) */
-  .apx-marquee-group { gap: clamp(3rem, 6vw, 7rem); padding-right: clamp(3rem, 6vw, 7rem); }
-  .apx-marquee-mask {
+  .apx-marquee {
+    --apx-gap: clamp(2.5rem, 5vw, 6rem);
+    display: flex;
+    gap: var(--apx-gap);
+    overflow: hidden;
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   }
-  @keyframes apx-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  .apx-marquee-track { animation: apx-marquee 34s linear infinite; will-change: transform; }
-  .apx-marquee-band:hover .apx-marquee-track { animation-play-state: paused; }
-  @media (prefers-reduced-motion: reduce) { .apx-marquee-track { animation: none; } }
+  .apx-marquee-group {
+    flex: 0 0 auto;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--apx-gap);
+    animation: apx-marquee 38s linear infinite;
+    will-change: transform;
+  }
+  @keyframes apx-marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(calc(-100% - var(--apx-gap))); }
+  }
+  .apx-marquee-band:hover .apx-marquee-group { animation-play-state: paused; }
+  @media (prefers-reduced-motion: reduce) {
+    .apx-marquee-group { animation: none; }
+  }
 </style>
