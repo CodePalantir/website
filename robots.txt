@@ -1,14 +1,7 @@
-# robots.txt for ApexPalantir
+# robots.txt for APX RevOps
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://apex-palantir.com/sitemap.xml
-
-# Crawl-delay (optional, adjust if needed)
-# Crawl-delay: 1
-
-# Disallow admin or sensitive paths (if any)
-# Disallow: /admin/
-# Disallow: /private/
+Sitemap: https://apx-revops.com/sitemap.xml

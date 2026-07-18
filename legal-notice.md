@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Legal Notice (Impressum) | ApexPalantir
-description: "ApexPalantir Legal Notice (Impressum) - Company information in accordance with German Telemedia Act (TMG). Contact details and legal information."
-image: /assets/images/logos/APEX-PALANTIR_LARGE.png
+title: Legal Notice (Impressum)
+description: "APX REVOPS LTD Legal Notice - Company information, registration details, and contact information for APX REVOPS LTD, registered in Cyprus."
+image: /assets/images/logos/APX_LOGO.png
 ---
 
 <section class="pt-32 pb-24 px-6 bg-slate-50">
@@ -13,7 +13,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
         </div>
         <h1 class="text-5xl md:text-7xl font-black text-slate-900 mb-8 leading-tight">Legal Notice</h1>
         <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Information in accordance with § 5 TMG (German Telemedia Act)
+            Company information and legal details for APX REVOPS LTD
         </p>
     </div>
 </section>
@@ -24,12 +24,12 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 
             <h2 class="text-3xl font-bold text-slate-900 mb-6">Company Information</h2>
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
-                <p class="text-slate-900 font-semibold mb-4">ApexPalantir</p>
+                <p class="text-slate-900 font-semibold mb-4">APX REVOPS LTD</p>
                 <p class="text-slate-600 leading-relaxed">
-                    Alexander Knoll<br/>
-                    Strehlowweg 16<br/>
-                    22605 Hamburg<br/>
-                    Germany
+                    Gladstonos 16<br/>
+                    8046 Paphos<br/>
+                    Cyprus<br/>
+                    Company Registration: HE490307
                 </p>
             </div>
 
@@ -37,32 +37,31 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
                     <strong class="text-slate-900">Phone:</strong> +49 402 2632 0690<br/>
-                    <strong class="text-slate-900">Email:</strong> <a href="mailto:support@apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">support@apex-palantir.com</a><br/>
-                    <strong class="text-slate-900">Website:</strong> <a href="https://www.apex-palantir.com" class="text-purple-600 hover:text-purple-700 transition-colors">www.apex-palantir.com</a>
+                    <strong class="text-slate-900">Email:</strong> <a href="mailto:support@apx-revops.com" class="text-purple-600 hover:text-purple-700 transition-colors">support@apx-revops.com</a><br/>
+                    <strong class="text-slate-900">Website:</strong> <a href="https://www.apx-revops.com" class="text-purple-600 hover:text-purple-700 transition-colors">www.apx-revops.com</a>
                 </p>
             </div>
 
             <h2 class="text-3xl font-bold text-slate-900 mb-6">Represented by</h2>
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
-                    Alexander Knoll
+                    <strong class="text-slate-900">Managing Director:</strong> Alexander Knoll
                 </p>
             </div>
 
-            <h2 class="text-3xl font-bold text-slate-900 mb-6">VAT ID</h2>
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">Company Registration</h2>
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
-                    VAT identification number in accordance with § 27 a of the German Value Added Tax Act:<br/>
-                    <strong class="text-slate-900">DE314976133</strong>
+                    Registered in Cyprus under the Companies Law, Cap. 113<br/>
+                    <strong class="text-slate-900">Registration Number: HE490307</strong>
                 </p>
             </div>
 
             <h2 class="text-3xl font-bold text-slate-900 mb-6">Responsible for Content</h2>
             <div class="bg-white p-8 rounded-2xl border border-slate-200 mb-12">
                 <p class="text-slate-600 leading-relaxed">
-                    Responsible for the content in accordance with § 55 Para. 2 RStV:<br/>
                     <strong class="text-slate-900">Alexander Knoll</strong><br/>
-                    Strehlowweg 16, 22605 Hamburg, Germany
+                    Gladstonos 16, 8046 Paphos, Cyprus
                 </p>
             </div>
 
@@ -71,7 +70,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
             <h3 class="text-2xl font-bold text-slate-900 mb-4 mt-8">Liability for Content</h3>
             <div class="bg-slate-50 p-8 rounded-2xl mb-8">
                 <p class="text-slate-600 leading-relaxed mb-4">
-                    The contents of our pages were created with the greatest care. However, we cannot guarantee the accuracy, completeness, and timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to § 7 Para. 1 TMG. According to §§ 8 to 10 TMG, however, we are not obligated as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
+                    The contents of our pages were created with the greatest care. However, we cannot guarantee the accuracy, completeness, and timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with applicable law. In accordance with the EU e-Commerce Directive (2000/31/EC) as implemented in Cyprus, we are not obligated as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
                 </p>
                 <p class="text-slate-600 leading-relaxed">
                     Obligations to remove or block the use of information in accordance with general laws remain unaffected by this. However, liability in this regard is only possible from the point in time at which we become aware of a specific legal violation. Upon becoming aware of corresponding legal violations, we will remove this content immediately.
@@ -91,7 +90,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
             <h3 class="text-2xl font-bold text-slate-900 mb-4 mt-8">Copyright</h3>
             <div class="bg-slate-50 p-8 rounded-2xl mb-8">
                 <p class="text-slate-600 leading-relaxed mb-4">
-                    The content and works created by the site operators on these pages are subject to German copyright law. The duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.
+                    The content and works created by the site operators on these pages are subject to applicable copyright law, including Cyprus copyright legislation and the EU copyright framework. The duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.
                 </p>
                 <p class="text-slate-600 leading-relaxed">
                     Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon becoming aware of legal violations, we will remove such content immediately.
@@ -110,7 +109,7 @@ image: /assets/images/logos/APEX-PALANTIR_LARGE.png
 
             <div class="border-t border-slate-200 pt-8 mt-12">
                 <p class="text-sm text-slate-500">
-                    Last updated: January 2026
+                    Last updated: April 2026
                 </p>
             </div>
 

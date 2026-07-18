@@ -1,21 +1,16 @@
 {
-  "name": "ApexPalantir",
-  "short_name": "ApexPalantir",
-  "description": "Salesforce Experts building robust, scalable solutions for sustained growth",
+  "name": "APX.",
+  "short_name": "APX.",
+  "description": "RevOps technology firm. We build and run the systems behind marketing, sales and service — so your pipeline is real and your numbers add up.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#8E2DE2",
   "icons": [
     {
-      "src": "/assets/images/favicon-16x16.png",
-      "sizes": "16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/images/favicon-32x32.png",
-      "sizes": "32x32",
-      "type": "image/png"
+      "src": "/assets/images/logos/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
     },
     {
       "src": "/assets/images/apple-touch-icon.png",
