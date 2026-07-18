@@ -9,6 +9,6 @@ image: /assets/images/logos/APX_LOGO.png
 {% include sections/logo-marquee.html %}
 {% include sections/industries.html %}
 {% include sections/lifecycle-mobius.html %}
-{% include sections/what-we-do.html %}
+{% include sections/featured-services.html %}
 {% include sections/app-grid.html %}
 {% include sections/cta-band.html %}
