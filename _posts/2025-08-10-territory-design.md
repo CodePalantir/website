@@ -2,9 +2,9 @@
 layout: post
 title: "Territory Design: The Hidden Revenue Lever"
 description: "Poorly balanced territories reduce quota attainment by 22%. Discover how annual territory rebalancing recovers $1.2M per 100 reps and why geography-only models fail."
-author: "Marcus Rodriguez"
-author_role: "Technical Lead"
-author_image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus"
+author: "Dorian Mihu"
+author_role: "Head of Technology"
+author_image: "/assets/images/people/dorian-mihu.webp"
 date: 2025-08-10
 read_time: "9 Min Read"
 category: "Operations"

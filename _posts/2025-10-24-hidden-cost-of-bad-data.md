@@ -2,9 +2,9 @@
 layout: post
 title: "The Hidden Cost of Bad Data in Revenue Operations"
 description: "Data decay costs enterprises 15% of revenue annually. Learn the 1-10-100 rule of data quality and strategic remediation approaches to fix your CRM before it stalls your revenue engine."
-author: "Alex"
-author_role: "Strategy Lead"
-author_image: "https://media.licdn.com/dms/image/v2/C4D03AQFcgFOcpA-JIg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1566496268629?e=1768435200&v=beta&t=H0b8D4PmnKr60tOP-qlvorfvJ2YZwQplpRnX-Gs4Bos"
+author: "Alexander Knoll"
+author_role: "Founder"
+author_image: "/assets/images/people/alex-knoll.webp"
 date: 2025-10-24
 read_time: "12 Min Read"
 category: "Strategy"

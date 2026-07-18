@@ -2,9 +2,9 @@
 layout: post
 title: "CPQ Implementation: The 3 Mistakes That Kill ROI"
 description: "Over-customized CPQ systems take 2x longer to maintain. Learn the 3 critical mistakes that kill ROI and why product catalog cleanup is 60% of successful implementations."
-author: "Sarah Chen"
-author_role: "Solutions Architect"
-author_image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
+author: "Alex Lyad"
+author_role: "Salesforce Developer"
+author_image: "/assets/images/people/alex-lyad.webp"
 date: 2025-08-30
 read_time: "10 Min Read"
 category: "Strategy"

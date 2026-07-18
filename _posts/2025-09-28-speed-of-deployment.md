@@ -2,9 +2,9 @@
 layout: post
 title: "The Speed of Deployment: From Change Sets to CI/CD"
 description: "Manual change sets delay releases by 11 days per sprint. Learn how automated pipelines reduce deployment errors by 73% and increase feature velocity by 3.2x."
-author: "Alex"
-author_role: "Strategy Lead"
-author_image: "https://media.licdn.com/dms/image/v2/C4D03AQFcgFOcpA-JIg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1566496268629?e=1768435200&v=beta&t=H0b8D4PmnKr60tOP-qlvorfvJ2YZwQplpRnX-Gs4Bos"
+author: "Alexander Knoll"
+author_role: "Founder"
+author_image: "/assets/images/people/alex-knoll.webp"
 date: 2025-09-28
 read_time: "8 Min Read"
 category: "Operations"

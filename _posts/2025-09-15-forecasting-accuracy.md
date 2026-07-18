@@ -2,9 +2,9 @@
 layout: post
 title: "Forecasting Accuracy: Why 80% Is the New Baseline"
 description: "Best-in-class orgs achieve 85%+ forecast accuracy using predictive stage modeling. Discover how stage duration analysis reveals pipeline bottlenecks 3 weeks before they impact close dates."
-author: "Jordan Martinez"
-author_role: "Revenue Analytics"
-author_image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jordan"
+author: "Leonard Falk"
+author_role: "Revenue Strategy"
+author_image: "/assets/images/people/leonard-falk.webp"
 date: 2025-09-15
 read_time: "11 Min Read"
 category: "ROI"
