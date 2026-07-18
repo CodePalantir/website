@@ -220,25 +220,24 @@ DASH = round(Ltot) + 4
 # ---------------- copy ----------------
 phases = [
  ("Attract & Demand Gen", "Turn attention into intent.",
-  "Campaigns, forms and your website wired into one place, every signal cleanly attributed. You see exactly which channels drive pipeline, nothing slips between marketing and the CRM, and budget follows evidence instead of opinion."),
+  "Campaigns, forms and your website wired into one place, with every signal cleanly attributed from first click to closed deal. You see exactly which channels drive pipeline and which just make noise, so budget follows evidence instead of opinion. Nothing slips between marketing and the CRM, and no lead arrives without its history attached."),
  ("Prospecting & Outbound", "The right accounts, reached with a system.",
-  "Target lists built from real fit signals, enriched, deduped and sequenced so reps can keep up. Every touch is logged, every reply is routed. Outbound becomes a measurable motion you can tune, not a pile of disconnected tasks."),
+  "Target lists are built from real fit signals, enriched, deduped and fed into sequences your reps can actually keep up with. Every touch is logged, every reply is routed to the right owner, and nothing gets dropped between tools. Outbound stops being a pile of disconnected tasks and becomes a measurable motion you can tune week over week."),
  ("Lead Management", "No lead waits, and none get lost.",
-  "Every lead is routed, scored and assigned the moment it arrives, with SLAs you can actually enforce. The right rep gets the right lead in minutes, full context attached. Follow-up stops depending on who checked the queue."),
+  "Every lead is routed, scored and assigned the moment it arrives, with SLAs you can actually enforce and escalations that fire on their own. The right rep gets the right lead in minutes, full context already attached, whether it came from a form, a referral or a cold reply. Follow-up stops depending on who remembered to check a queue."),
  ("Selling & Pipeline", "A pipeline your forecast can stand on.",
-  "Stages that reflect how buyers really move, a CRM that captures the truth without extra admin, and forecasts built on clean data. Reps get a system they want to open. Leaders get numbers they can defend."),
+  "Stages that reflect how buyers really move, a CRM that captures the truth without punishing reps with admin, and forecasts built on clean data instead of gut feel. Deals carry their whole story with them, risk shows up early enough to act on, and leaders walk into the board meeting with numbers they can actually defend."),
  ("Quote-to-Cash", "From yes to paid, without the friction.",
-  "Quoting, approvals, billing and revenue recognition connected end to end, so a closed deal flows straight through to cash. No rekeying between systems, no surprises at month-end. Finance and revenue read from one source of truth."),
+  "Quoting, approvals, billing and revenue recognition are connected end to end, so a closed deal flows straight through to cash without being rekeyed three times. Discounts stay inside guardrails, invoices go out right the first time, and month-end close stops producing surprises. Finance and revenue finally read from one source of truth."),
  ("Onboarding & Success", "Start strong, and stay longer.",
-  "New customers land in structured onboarding, health signals surface risk early, and playbooks fire before accounts go quiet. The handoff from sales is clean, the data follows the customer, and your best logos become references, not churn."),
+  "New customers land in structured onboarding instead of an inbox, health signals surface risk while there is still time to act, and success playbooks fire before accounts go quiet. The handoff from sales is clean, the data follows the customer through every stage, and your best logos turn into references instead of quiet churn."),
  ("Renewal & Expansion", "Grow the accounts you already have.",
-  "Renewals are tracked and forecast long before they land. Expansion signals surface while the timing is right, and churn risk is caught while you can still act. Retention becomes a number you plan around, not a fire drill."),
+  "Renewals are tracked and forecast long before they land on the calendar, expansion signals surface while the timing is still right, and churn risk is caught early enough to do something about it. Retention becomes a number you can plan around instead of a fire drill, and the loop feeds straight back into new demand."),
 ]
 
 items = ""
 for i, (title, sub, body) in enumerate(phases):
     items += f'''        <article class="lc-item" data-i="{i+1}">
-          <p class="lc-count"><span class="text-gradient">{i+1:02d}</span><span class="lc-count-total"> / 07</span></p>
           <h3 class="lc-item-title" style="text-wrap:balance">{title}</h3>
           <p class="lc-item-sub">{sub}</p>
           <p class="lc-item-body">{body}</p>
@@ -274,8 +273,8 @@ svg = f'''<svg class="lc-svg" viewBox="{vx} {vy} {vw} {vh}" role="img" aria-labe
 # ---------------- CSS / JS (plain strings, token substitution) ----------------
 css = '''
   .lc-stage { display:flex; align-items:flex-start; justify-content:center; }
-  .lc-svg { width:100%; height:auto; aspect-ratio:__AR__; max-height:min(70vh,660px); display:block; margin-inline:auto; overflow:visible; }
-  @media (max-width:1023px) { .lc-svg { max-height:min(56vh,500px); } }
+  .lc-svg { width:100%; height:auto; aspect-ratio:__AR__; max-height:min(62vh,560px); display:block; margin-inline:auto; overflow:visible; }
+  @media (max-width:1023px) { .lc-svg { max-height:min(52vh,460px); } }
   /* on small screens the scaled-down names would render ~8px; numbers carry the
      mapping (the reader below shows number + name) */
   @media (max-width:639px) {
@@ -311,9 +310,7 @@ css = '''
   .lc-stack { display:grid; margin-top:1rem; }
   .lc-item { grid-area:1/1; opacity:0; visibility:hidden; transform:translateY(14px); transition:opacity .55s ease, transform .55s ease; pointer-events:none; }
   .lc-item.is-active { opacity:1; visibility:visible; transform:none; pointer-events:auto; }
-  .lc-count { font-weight:800; font-size:15px; letter-spacing:.02em; font-variant-numeric:tabular-nums; }
-  .lc-count-total { color:var(--color-faint); font-weight:600; }
-  .lc-item-title { margin-top:.9rem; font-weight:700; color:var(--color-ink); letter-spacing:-.02em; line-height:1.12; font-size:clamp(2rem,3.6vw,3rem); }
+  .lc-item-title { font-weight:700; color:var(--color-ink); letter-spacing:-.02em; line-height:1.12; font-size:clamp(2rem,3.6vw,3rem); }
   .lc-item-sub { margin-top:1rem; max-width:46ch; font-weight:600; color:var(--color-ink); font-size:1.25rem; line-height:1.4; }
   .lc-item-body { margin-top:1rem; max-width:54ch; font-size:1.125rem; line-height:1.7; color:var(--color-muted); }
 
@@ -413,7 +410,7 @@ html = f'''{{%- comment -%}}
 {{%- endcomment -%}}
 <section id="lifecycle" class="lc-section apx-section px-6 bg-surface overflow-hidden scroll-mt-24">
   <div class="max-w-wide mx-auto w-full">
-    <div class="lc-grid grid lg:grid-cols-[1.05fr_0.95fr] gap-[clamp(2rem,4vw,4rem)] items-start">
+    <div class="lc-grid grid lg:grid-cols-[1.05fr_0.95fr] gap-[clamp(2rem,4vw,4rem)] lg:items-center">
 
       <div class="lc-stage rv">
     {svg}
