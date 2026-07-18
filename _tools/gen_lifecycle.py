@@ -180,7 +180,7 @@ for nd in nodes:
         yy = first_y + li * 18
         cls = "lc-lnum" if li == 0 else "lc-lname"
         tsp += f'<tspan class="{cls}" x="{lx}" y="{yy}">{esc(line)}</tspan>'
-    label = f'<text class="lc-label" text-anchor="{anchor}" pointer-events="none">{tsp}</text>'
+    label = f'<text class="lc-label" text-anchor="{anchor}">{tsp}</text>'
     node_svg += f'''      <g class="lc-node" data-i="{nd['n']}" role="button" tabindex="0" aria-label="Phase {nd['n']} of 7: {esc(SHORT[k].replace('|', ' '))}" transform="translate({x},{y})">
         <circle class="lc-hit" r="24" fill="transparent"></circle>
         <circle class="lc-halo" r="22" fill="#8E2DE2"></circle>
@@ -260,7 +260,10 @@ svg = f'''<svg class="lc-svg" viewBox="{vx} {vy} {vw} {vh}" role="img" aria-labe
 {shadow}
 {over_quads}
 {highlight}
-{chevrons}      </g>
+<path class="lc-stream" d="{track_d}" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 22" opacity="0.18"></path>
+<g class="lc-chevs">
+{chevrons}</g>
+      </g>
       <path id="lc-track" d="{track_d}" fill="none" stroke="none"></path>
       <g class="lc-nodes">
 {node_svg}      </g>
@@ -306,16 +309,23 @@ css = '''
   #lifecycle.lc-on .lc-nodes { transition-delay:.85s; }
   #lifecycle.lc-on #lc-arrow { transition-delay:1.05s; }
 
-  /* phase reader */
-  .lc-stack { display:grid; margin-top:1rem; }
+  /* phase reader (subordinate to the section H2 above) */
+  .lc-stack { display:grid; }
   .lc-item { grid-area:1/1; opacity:0; visibility:hidden; transform:translateY(14px); transition:opacity .55s ease, transform .55s ease; pointer-events:none; }
   .lc-item.is-active { opacity:1; visibility:visible; transform:none; pointer-events:auto; }
-  .lc-item-title { font-weight:700; color:var(--color-ink); letter-spacing:-.02em; line-height:1.12; font-size:clamp(2rem,3.6vw,3rem); }
-  .lc-item-sub { margin-top:1rem; max-width:46ch; font-weight:600; color:var(--color-ink); font-size:1.25rem; line-height:1.4; }
-  .lc-item-body { margin-top:1rem; max-width:54ch; font-size:1.125rem; line-height:1.7; color:var(--color-muted); }
+  .lc-item-title { font-weight:700; color:var(--color-ink); letter-spacing:-.015em; line-height:1.15; font-size:clamp(1.5rem,2.2vw,2.1rem); }
+  .lc-item-sub { margin-top:.75rem; max-width:46ch; font-weight:600; color:var(--color-ink); font-size:1.125rem; line-height:1.45; }
+  .lc-item-body { margin-top:.9rem; max-width:54ch; font-size:1.125rem; line-height:1.7; color:var(--color-muted); }
+
+  /* the band flows forward: white ticks drifting along the centerline */
+  .lc-stream { animation:lc-flow 1.1s linear infinite; }
+  @keyframes lc-flow { to { stroke-dashoffset:-25; } }
+  .lc-chevs { display:none; }
 
   @media (prefers-reduced-motion: reduce) {
     .lc-msk-stroke, .lc-nodes, #lc-arrow, .lc-dot, .lc-halo, .lc-label tspan, .lc-item { transition:none; }
+    .lc-stream { animation:none; display:none; }
+    .lc-chevs { display:block; }
   }
 '''.replace("__AR__", AR).replace("__DASH__", str(DASH))
 
@@ -410,16 +420,22 @@ html = f'''{{%- comment -%}}
 {{%- endcomment -%}}
 <section id="lifecycle" class="lc-section apx-section px-6 bg-surface overflow-hidden scroll-mt-24">
   <div class="max-w-wide mx-auto w-full">
-    <div class="lc-grid grid lg:grid-cols-[1.05fr_0.95fr] gap-[clamp(2rem,4vw,4rem)] lg:items-center">
 
-      <div class="lc-stage rv">
-    {svg}
-      </div>
+    <div class="max-w-[720px] mx-auto text-center rv">
+      <span class="apx-eyebrow">The revenue lifecycle</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">One loop, from first touch to renewal.</h2>
+      <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">Revenue is not a funnel that ends at closed won. Every phase feeds the next, and we engineer all seven. Click any phase to explore it.</p>
+    </div>
 
-      <div class="lc-panel rv">
-        <span class="apx-eyebrow">The revenue lifecycle</span>
+    <div class="lc-grid mt-10 md:mt-14 grid lg:grid-cols-[0.95fr_1.05fr] gap-[clamp(2rem,4vw,4rem)] lg:items-center">
+
+      <div class="lc-panel rv order-2 lg:order-1">
         <div class="lc-stack" aria-live="polite">
 {items}        </div>
+      </div>
+
+      <div class="lc-stage rv order-1 lg:order-2">
+    {svg}
       </div>
 
     </div>
