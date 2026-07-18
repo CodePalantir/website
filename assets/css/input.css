@@ -10,14 +10,33 @@
 @import "tailwindcss";
 
 @theme {
-  /* Font Family Override */
-  --font-sans: "Plus Jakarta Sans", sans-serif;
+  /* ── Typefaces ─────────────────────────────────────────────
+     Two families, zero added downloads: self-hosted Plus Jakarta
+     Sans for everything; a system mono stack for the log/diagnostic
+     "we're engineers" texture (prices, status lines, key-values). */
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Menlo, Consolas, monospace;
 
-  /* Handwriting Font (GDPR-compliant system fonts) */
-  --font-handwriting: "Brush Script MT", "Segoe Script", "Mistral", cursive;
+  /* ── Dark "engineering instrument panel" surface ramp ──────
+     The halo device: dark instruments on a light canvas. Tokenised
+     so panels stop living in inline style="" attributes. */
+  --color-ink-900: #0B1322;   /* panel top / deepest */
+  --color-ink-800: #141D33;   /* panel bottom (gradient pair with 900) */
+  --color-ink-700: #1E293B;   /* raised element on a panel */
+  --color-ink-line: rgba(255, 255, 255, 0.10);  /* hairline on dark */
 
-  /* Custom Container Widths */
-  --container-navbar: 90rem;
+  /* ── Section rhythm (one predictable vertical cadence) ─────── */
+  --spacing-section: 7rem;      /* desktop section padding (py-28) */
+  --spacing-section-sm: 5rem;   /* mobile */
+
+  /* ── Container widths (three, and only three) ─────────────── */
+  --container-content: 56rem;   /* prose / service / article */
+  --container-wide: 80rem;      /* homepage + marketing sections */
+  --container-navbar: 90rem;    /* nav bar only */
+
+  /* ── House radii ──────────────────────────────────────────── */
+  --radius-card: 1.5rem;        /* cards, panels (rounded-3xl) */
+  --radius-control: 0.75rem;    /* buttons, inputs */
 
   /* Custom Animations */
   --animate-infinite-scroll: infinite-scroll 30s linear infinite;
@@ -116,7 +135,7 @@
     margin-left: -6px;
     margin-top: -6px;
     border-radius: 50%;
-    background-color: #c72de2;
+    background-color: #8E2DE2;
     opacity: 0.5;
     animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
@@ -210,4 +229,22 @@ html {
     color: #8E2DE2 !important;
     border-left-color: #8E2DE2 !important;
     font-weight: 600;
+}
+
+/* Scroll-reveal for homepage sections (progressive enhancement: only hides when JS is present) */
+.js .rv {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .6s cubic-bezier(.22,.6,.3,1), transform .6s cubic-bezier(.22,.6,.3,1);
+}
+.js .rv.on {
+    opacity: 1;
+    transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    .js .rv {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }

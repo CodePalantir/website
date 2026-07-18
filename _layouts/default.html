@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Progressive-enhancement gate for scroll-reveal (.js .rv), set before paint -->
+  <script>document.documentElement.classList.add('js');</script>
+
   {% seo %}
 
   <!-- Favicon & PWA -->
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/logos/favicon.ico' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/assets/images/logos/favicon.ico' | relative_url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
   <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
   <meta name="theme-color" content="#8E2DE2">
@@ -27,8 +30,8 @@
   <link rel="preconnect" href="https://i.pravatar.cc" crossorigin>
 
   <!-- Preload critical logo (mobile gets smaller version) -->
-  <link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_MOBILE.webp' | relative_url }}" media="(max-width: 767px)">
-  <link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_72ppi.png' | relative_url }}" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="{{ '/assets/images/logos/APX_LOGO_MOBILE.webp' | relative_url }}" media="(max-width: 767px)">
+  <link rel="preload" as="image" href="{{ '/assets/images/logos/APX_LOGO.png' | relative_url }}" media="(min-width: 768px)">
 
   {% if page.url == '/about' or page.url == '/about/' %}
   <!-- Preload LCP image for about page -->
@@ -42,9 +45,9 @@
   <script src="https://cdn.usefathom.com/script.js" data-site="SSUCTAAP" defer></script>
   <!-- / Fathom -->
 
-  <!-- APX Lumos Light -->
+  <!-- APX Lumos Light (disabled — re-enable by uncommenting)
   <script>
-    window.APX_SITE='apex-palantir.com';
+    window.APX_SITE='apx-revops.com';
     window.AP_ENDPOINT='https://lumos.apex-stack.com/api/ingest';
     {% if jekyll.environment == 'development' %}
     window.AP_ENDPOINT='http://localhost:3000/api/ingest';
@@ -52,12 +55,15 @@
     {% endif %}
   </script>
   <script src="{{ '/assets/js/apx-lumos-light.js' | relative_url }}" defer></script>
+  -->
 </head>
 <body class="min-h-screen bg-white text-slate-900 selection:bg-purple-100">
 
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-slate-900 focus:text-white focus:font-semibold focus:shadow-lg">Skip to content</a>
+
   {% include shared/header.html %}
 
-  <main>
+  <main id="main-content">
     {{ content }}
   </main>
 
@@ -70,6 +76,27 @@
     document.addEventListener('DOMContentLoaded', () => {
       if (typeof lucide !== 'undefined') {
         lucide.createIcons();
+      }
+    });
+
+    // Scroll-reveal for homepage sections (.rv) with staggered cascade + reduced-motion handled in CSS
+    document.addEventListener('DOMContentLoaded', () => {
+      const els = document.querySelectorAll('.rv');
+      if (!els.length) return;
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(entries => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              const sibs = Array.from(e.target.parentElement.querySelectorAll(':scope > .rv'));
+              e.target.style.transitionDelay = (sibs.indexOf(e.target) % 8) * 70 + 'ms';
+              e.target.classList.add('on');
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.15 });
+        els.forEach(el => io.observe(el));
+      } else {
+        els.forEach(el => el.classList.add('on'));
       }
     });
 

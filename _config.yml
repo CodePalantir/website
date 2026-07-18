@@ -1,17 +1,16 @@
-title: ApexPalantir
-description: "Salesforce Experts building robust, scalable solutions for sustained growth"
-url: "https://apex-palantir.com"
+title: APX.
+description: "RevOps technology agency. We architect, integrate and run the systems your revenue engine depends on, on the stack you already run."
+url: "https://apx-revops.com"
 baseurl: ""
-theme: minima
 
 # Author defaults for SEO
 author:
-  name: ApexPalantir Team
+  name: APX Team
   twitter: apexpalantir # Update with your Twitter handle
 
 # Social profiles for SEO
 social:
-  name: ApexPalantir
+  name: APX.
   links:
     - https://www.linkedin.com/company/apexpalantir/
 
@@ -23,6 +22,12 @@ collections:
   services:
     output: true
     permalink: /services/:title/
+  case_studies:
+    output: true
+    permalink: /cases/:title/
+  revshorts:
+    output: true
+    permalink: /revshorts/:name/
 
 plugins:
   - jekyll-seo-tag
@@ -34,3 +39,5 @@ exclude:
   - README.md
   - catalog
   - GEMINI_SERVICE_CATALOG_PROMPT.md
+  - instruction
+  - lumos-backend-spec.md
