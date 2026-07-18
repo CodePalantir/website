@@ -45,8 +45,7 @@
     ty = ((e.clientY - r.top) / r.height) * 100;
     if (!raf) raf = requestAnimationFrame(tick);
   }
-  function leave() { tx = 50; ty = -40; if (!raf) raf = requestAnimationFrame(tick); }
+  // On leave, the cloud just stays where the mouse last was (no reset/jump).
   hero.addEventListener('pointermove', move, { passive: true });
-  hero.addEventListener('pointerleave', leave, { passive: true });
 })();
 </script>
