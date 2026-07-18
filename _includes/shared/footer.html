@@ -19,7 +19,7 @@
         </a>
       </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 md:gap-16 mb-16 sm:mb-20 md:mb-24">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 sm:gap-10 md:gap-10 mb-16 sm:mb-20 md:mb-24">
       <div class="space-y-8 hidden md:block">
         <a href="{{ site.baseurl }}/" aria-label="APX home" class="inline-flex items-center">
           <img src="{{ '/assets/images/logos/APX_WHITE.png' | relative_url }}" alt="APX" class="h-8 w-auto" loading="lazy">
@@ -32,6 +32,15 @@
           <li><a href="{{ site.baseurl }}/work" class="hover:text-purple-400 transition-colors">Work</a></li>
           <li><a href="{{ site.baseurl }}/about" class="hover:text-purple-400 transition-colors">About</a></li>
           <li><a href="{{ site.baseurl }}/blog" class="hover:text-purple-400 transition-colors">Insights</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Industries</p>
+        <ul class="space-y-3 text-lg font-medium">
+          {% assign footer_inds = site.industries | sort: "order" %}
+          {% for ind in footer_inds %}
+          <li><a href="{{ ind.url | relative_url }}" class="hover:text-purple-400 transition-colors">{{ ind.card_title }}</a></li>
+          {% endfor %}
         </ul>
       </div>
       <div class="space-y-6">
