@@ -82,31 +82,38 @@
         <div class="lc-stack">
         <article class="lc-item" data-i="1">
           <h3 class="lc-item-title">Attract & Demand Gen</h3>
-          <p class="lc-item-desc">Turn attention into intent. Campaigns, forms and your site wired so every signal lands in one place, clean and attributed.</p>
+          <p class="lc-item-sub">Turn attention into intent.</p>
+          <p class="lc-item-body">We wire your campaigns, forms and website so every visitor and every signal lands in one place, cleanly attributed. No more guessing which channel worked, and no more leads slipping through the cracks between marketing and the CRM. Tracking stays consistent, consent is handled properly, and the data model is built to last. You see exactly what drives pipeline, and you can put more budget behind it with confidence instead of hope.</p>
         </article>
         <article class="lc-item" data-i="2">
           <h3 class="lc-item-title">Prospecting & Outbound</h3>
-          <p class="lc-item-desc">Reach the right accounts with a system, not a spray. Enriched lists and sequenced touches that never drop the thread.</p>
+          <p class="lc-item-sub">Reach the right accounts with a system, not a spray.</p>
+          <p class="lc-item-body">We build target lists from real fit signals, enrich and dedupe them, then run sequenced outreach your reps can actually keep up with. Every touch is logged, every reply is routed, and nothing gets dropped between tools. The handoff from an interested prospect to a booked meeting is instant and clean. Outbound becomes a measurable motion you can tune, instead of a pile of disconnected tasks and copy-pasted templates.</p>
         </article>
         <article class="lc-item" data-i="3">
           <h3 class="lc-item-title">Lead Management</h3>
-          <p class="lc-item-desc">No lead waits, none get lost. Routing, scoring and SLAs put the right person on the right lead in minutes.</p>
+          <p class="lc-item-sub">No lead waits, and none get lost.</p>
+          <p class="lc-item-body">Inbound and outbound leads are routed, scored and assigned the moment they arrive, with SLAs you can actually enforce. The right rep gets the right lead in minutes, with full context already attached. Duplicates are merged, ownership is clear, and every source feeds the same clean record. Follow-up stops depending on who remembered to check a queue, and your fastest response time quietly becomes your default one.</p>
         </article>
         <article class="lc-item" data-i="4">
           <h3 class="lc-item-title">Selling & Pipeline</h3>
-          <p class="lc-item-desc">A pipeline you can trust. Stages that mean something, forecasts that hold up, and a CRM your reps actually use.</p>
+          <p class="lc-item-sub">A pipeline your forecast can stand on.</p>
+          <p class="lc-item-body">We shape stages that reflect how buyers really move, wire the CRM to capture the truth without extra admin, and give leaders forecasts built on clean data instead of gut feel. Deal fields update themselves wherever they can, so reps sell instead of typing. Managers see risk early, not at the end of the quarter. Reps get a system they want to open, and you get numbers you can defend to the board.</p>
         </article>
         <article class="lc-item" data-i="5">
           <h3 class="lc-item-title">Quote-to-Cash</h3>
-          <p class="lc-item-desc">From yes to paid, without friction. Quotes, approvals, billing and revenue recognition wired end to end.</p>
+          <p class="lc-item-sub">From yes to paid, without the friction.</p>
+          <p class="lc-item-body">Quoting, approvals, billing and revenue recognition are connected end to end, so a closed deal flows straight through to cash. Pricing rules and approvals are built in, so quotes go out fast and stay accurate. There is no rekeying between systems and no surprises at month-end close. Finance and revenue finally read from the same source of truth, and the cash lands sooner.</p>
         </article>
         <article class="lc-item" data-i="6">
           <h3 class="lc-item-title">Onboarding & Success</h3>
-          <p class="lc-item-desc">Start strong, stay longer. Onboarding, health signals and playbooks that turn new customers into references.</p>
+          <p class="lc-item-sub">Start strong, and stay longer.</p>
+          <p class="lc-item-body">New customers move into structured onboarding, health signals surface risk early, and success playbooks fire before things go quiet. The handoff from sales to success is clean, and the context a rep gathered follows the customer instead of getting lost. Usage, sentiment and support data come together into one clear view. Your best accounts turn into references, and the shaky ones get attention while there is still time to save them.</p>
         </article>
         <article class="lc-item" data-i="7">
           <h3 class="lc-item-title">Renewal & Expansion</h3>
-          <p class="lc-item-desc">Grow the accounts you already have. Renewals never slip, and expansion shows up as a number, not a hunch.</p>
+          <p class="lc-item-sub">Grow the accounts you already have.</p>
+          <p class="lc-item-body">Renewals are tracked and forecast long before they land, expansion signals are surfaced while the timing is right, and churn risk is caught while you can still act on it. The team sees which accounts are ready to grow and which need a save play. Nothing auto-renews or lapses by accident in a spreadsheet no one owns. Retention stops being a fire drill and becomes a number you can plan around and compound.</p>
         </article>
         </div>
       </div>
@@ -117,7 +124,7 @@
 
 <style>
   .lc-stage { display:flex; align-items:center; justify-content:center; }
-  .lc-svg { width:auto; height:auto; max-height:min(66vh,560px); max-width:100%; display:block; margin-inline:auto; overflow:visible; }
+  .lc-svg { width:auto; height:auto; max-height:min(60vh,500px); max-width:100%; display:block; margin-inline:auto; overflow:visible; }
   .lc-node { cursor:pointer; transition:opacity .4s ease; }
   .lc-node-inner { transform-box:fill-box; transform-origin:center; transition:transform .4s cubic-bezier(.2,.8,.2,1); }
   .lc-halo { transform-box:fill-box; transform-origin:center; opacity:0; transform:scale(.6); transition:opacity .4s ease, transform .4s ease; }
@@ -135,8 +142,9 @@
   .lc-stack { flex:1 1 auto; display:grid; align-content:center; }
   .lc-item { grid-area:1/1; opacity:0; visibility:hidden; transform:translateY(14px); transition:opacity .55s ease, transform .55s ease; pointer-events:none; }
   .lc-item.is-active { opacity:1; visibility:visible; transform:none; pointer-events:auto; }
-  .lc-item-title { font-weight:700; letter-spacing:-.015em; color:var(--color-ink); font-size:clamp(2.4rem,4.4vw,4rem); line-height:1.03; }
-  .lc-item-desc { margin-top:clamp(1.25rem,2.4vh,2rem); max-width:44ch; font-size:clamp(1.2rem,1.6vw,1.6rem); line-height:1.5; color:var(--color-muted); }
+  .lc-item-title { font-weight:700; letter-spacing:-.02em; color:var(--color-ink); font-size:clamp(2rem,3.6vw,3rem); line-height:1.1; }
+  .lc-item-sub { margin-top:clamp(.9rem,1.8vh,1.4rem); max-width:40ch; font-weight:600; color:var(--color-ink); font-size:clamp(1.2rem,1.5vw,1.45rem); line-height:1.35; }
+  .lc-item-body { margin-top:clamp(1rem,1.8vh,1.4rem); max-width:52ch; font-size:clamp(1.05rem,1.2vw,1.2rem); line-height:1.65; color:var(--color-muted); }
 
   @media (prefers-reduced-motion: reduce) {
     .lc-node-inner,.lc-halo,.lc-dot,.lc-num,.lc-item,#lc-arrow { transition:none; }
