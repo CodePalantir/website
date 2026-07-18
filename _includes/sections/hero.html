@@ -1,21 +1,21 @@
 {%- comment -%}
   Homepage hero — animated fading grid + drifting brand glow. Fills the
-  viewport and scales fluidly with the display (100vh + clamp type).
-  No pricing here (pricing lives in the service sections).
+  viewport and the type scales with it (vw-driven clamp, generous cap).
+  No pricing, no em dashes.
 {%- endcomment -%}
 <section class="relative flex flex-col min-h-screen overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid"></div>
   <div class="apx-hero-glow"></div>
 
-  <div class="relative z-[4] flex-1 flex items-center justify-center text-center px-6 pt-36 pb-20 md:pt-40 md:pb-24">
-    <div class="w-full max-w-[min(60rem,92vw)] mx-auto">
-      <h1 class="font-bold text-ink tracking-[-0.025em] leading-[1.04] text-[clamp(2.5rem,6.4vw,5.25rem)]" style="text-wrap:balance">
+  <div class="relative z-[4] flex-1 flex items-center justify-center text-center px-6 pt-32 pb-20">
+    <div class="w-full max-w-[min(90rem,94vw)] mx-auto">
+      <h1 class="font-bold text-ink tracking-[-0.03em] leading-[1.02] text-[clamp(2.75rem,7.4vw,7.5rem)]" style="text-wrap:balance">
         Turn a messy stack into <br class="hidden sm:block"><span class="text-gradient">revenue you can trust.</span>
       </h1>
-      <p class="mt-6 mx-auto max-w-[min(40rem,92vw)] text-[clamp(1.0625rem,1.6vw,1.25rem)] leading-relaxed font-medium text-muted">
-        We build and run the systems behind your marketing, sales and service — so your pipeline is real, your numbers add up, and growth feels calm.
+      <p class="mt-[clamp(1.25rem,2.2vw,2rem)] mx-auto max-w-[min(46rem,90vw)] text-[clamp(1.0625rem,1.55vw,1.4rem)] leading-relaxed font-medium text-muted">
+        We build and run the systems behind your marketing, sales and service, so your pipeline is real, your numbers add up, and growth feels calm.
       </p>
-      <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3.5">
+      <div class="mt-[clamp(1.75rem,3vw,2.75rem)] flex flex-col sm:flex-row items-center justify-center gap-3.5">
         {% include ui/cta.html label="Free intro call" href=site.cta.secondary_url track="hero" no_icon=true class="w-full max-w-[340px] sm:w-auto" %}
         <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-ghost w-full max-w-[340px] sm:w-auto">Explore our services</a>
       </div>
