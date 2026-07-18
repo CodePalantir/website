@@ -1,53 +1,53 @@
 {%- comment -%}
   Featured services. The Technical Health Audit is the flagship entry point
   (large panel, left), with the four practice areas we build out from there
-  on the right. Full-viewport, matches the site's section conventions.
+  on the right. Full-viewport (.apx-vh); compact so it fits one screen.
 {%- endcomment -%}
 {% capture areas %}
-Salesforce :: cloud-lightning :: Sales, Service and Marketing Cloud, CPQ and custom development, built to scale. :: /salesforce
-HubSpot :: share-2 :: Marketing, Sales, Service and Operations Hub, wired into one clean data spine. :: /services
-Integration :: git-merge :: MuleSoft, Workato and custom pipelines so every tool speaks the same language. :: /services
-Managed service :: life-buoy :: We stay on as your RevOps team, monitoring, improving and answering the small questions. :: /services
+Salesforce :: cloud-lightning :: Sales, Service, Marketing Cloud and CPQ. :: /salesforce
+HubSpot :: share-2 :: Marketing, Sales, Service and Ops Hub. :: /services
+Integration :: git-merge :: MuleSoft, Workato and custom pipelines. :: /services
+Managed service :: life-buoy :: Your RevOps team, on tap. :: /services
 {% endcapture %}
-<section id="services" class="min-h-screen flex flex-col justify-center px-6 py-[clamp(2.5rem,5vh,4.5rem)] bg-paper scroll-mt-24">
+<section id="services" class="apx-vh px-6 bg-paper">
   <div class="max-w-wide mx-auto w-full">
     <div class="max-w-[760px] mx-auto text-center rv">
       <span class="apx-eyebrow">Featured services</span>
-      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">Start with the audit. Build out from there.</h2>
-      <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">Every engagement starts with a fixed-price technical audit. From there we go deep on the platform you run and connect the tools around it.</p>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">Start with the audit.</h2>
+      <p class="mt-4 mx-auto max-w-[620px] text-lg leading-relaxed text-muted">Every engagement opens with a fixed-price technical audit. From there we go deep on the platform you run and connect the tools around it.</p>
     </div>
 
-    <div class="mt-10 md:mt-14 grid lg:grid-cols-[1.2fr_1fr] gap-5 md:gap-6">
+    <div class="mt-7 md:mt-9 grid lg:grid-cols-[1.2fr_1fr] gap-4 md:gap-5">
 
       <!-- Flagship: Technical Health Audit -->
-      <a href="{{ '/services/technical-health-audit' | relative_url }}" data-ap-track="service" data-ap-category="featured-audit" class="apx-panel group relative flex flex-col justify-between p-8 md:p-11 rv">
+      <a href="{{ '/services/technical-health-audit' | relative_url }}" data-ap-track="service" data-ap-category="featured-audit" class="apx-panel group relative flex flex-col justify-between p-6 md:p-8 rv">
         <div class="relative z-[2]">
           <div class="flex items-center gap-3">
-            <span class="inline-grid place-items-center w-12 h-12 rounded-xl bg-white/10 text-white">{% include ui/icon.html name="heart-pulse" class="w-6 h-6" %}</span>
+            <span class="inline-grid place-items-center w-11 h-11 rounded-xl bg-white/10 text-white">{% include ui/icon.html name="heart-pulse" class="w-[22px] h-[22px]" %}</span>
             <span class="apx-eyebrow-light">Start here</span>
           </div>
-          <h3 class="mt-7 font-bold text-white tracking-[-0.01em] leading-[1.08] text-[clamp(1.8rem,2.6vw,2.6rem)]" style="text-wrap:balance">Technical Health Audit</h3>
-          <p class="mt-4 max-w-[46ch] text-[clamp(1rem,1.15vw,1.15rem)] leading-relaxed text-white/70">Five days inside your stack. We read the metadata, the automation and the integrations, then hand you a prioritised fix-list priced in euros, not estimates.</p>
+          <h3 class="mt-5 font-bold text-white tracking-[-0.01em] leading-[1.08] text-[clamp(1.6rem,2.2vw,2.2rem)]" style="text-wrap:balance">Technical Health Audit</h3>
+          <p class="mt-3 max-w-[46ch] text-[clamp(0.95rem,1.1vw,1.1rem)] leading-relaxed text-white/70">Five days inside your stack. We read the metadata, the automation and the integrations, then hand you a prioritised fix-list priced in euros, not estimates.</p>
         </div>
-        <div class="relative z-[2] mt-9 flex flex-wrap items-baseline gap-x-6 gap-y-3">
-          <span class="text-white font-bold text-[clamp(1.6rem,2.2vw,2rem)] tabular-nums">&#8364;2,450</span>
+        <div class="relative z-[2] mt-6 flex flex-wrap items-baseline gap-x-6 gap-y-2">
+          <span class="text-white font-bold text-[clamp(1.5rem,2vw,1.85rem)] tabular-nums">&#8364;2,450</span>
           <span class="text-white/55 text-sm font-medium">Fixed price &middot; 5 working days</span>
           <span class="ml-auto inline-flex items-center gap-2 text-white font-semibold self-center">Book the audit <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
         </div>
       </a>
 
       <!-- Four practice areas -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
         {% assign rows = areas | strip | newline_to_br | split: "<br />" %}
         {% for row in rows %}
           {% assign p = row | strip | split: " :: " %}
           {% if p.size < 4 %}{% continue %}{% endif %}
           {% assign area_icon = p[1] %}
-          <a href="{{ p[3] | relative_url }}" data-ap-track="service" data-ap-category="featured-area" class="apx-card group flex flex-col p-6 md:p-7 rv">
-            <span class="inline-grid place-items-center w-11 h-11 rounded-xl bg-accent-tint text-accent">{% include ui/icon.html name=area_icon class="w-[22px] h-[22px]" %}</span>
-            <h3 class="mt-4 font-bold text-ink tracking-[-0.01em] text-[1.2rem]">{{ p[0] }}</h3>
-            <p class="mt-2 text-[14.5px] leading-relaxed text-muted flex-1">{{ p[2] }}</p>
-            <span class="mt-5 inline-flex items-center gap-1.5 text-accent font-semibold text-sm">Explore <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
+          <a href="{{ p[3] | relative_url }}" data-ap-track="service" data-ap-category="featured-area" class="apx-card group flex flex-col p-5 rv">
+            <span class="inline-grid place-items-center w-10 h-10 rounded-xl bg-accent-tint text-accent">{% include ui/icon.html name=area_icon class="w-5 h-5" %}</span>
+            <h3 class="mt-3 font-bold text-ink tracking-[-0.01em] text-[1.15rem]">{{ p[0] }}</h3>
+            <p class="mt-1.5 text-[14px] leading-relaxed text-muted flex-1">{{ p[2] }}</p>
+            <span class="mt-4 inline-flex items-center gap-1.5 text-accent font-semibold text-sm">Explore <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
           </a>
         {% endfor %}
       </div>
