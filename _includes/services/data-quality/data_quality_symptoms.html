@@ -18,7 +18,7 @@
                                 <span>Duplicate Records</span>
                                 <span class="text-xs text-red-400">Critical</span>
                             </div>
-                            <i data-lucide="copy" class="text-red-400 w-5 h-5"></i>
+                            {% include ui/icon.html name="copy" class="text-red-400 w-5 h-5" %}
                         </div>
                         <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
 
@@ -29,7 +29,7 @@
                                 <span>Schema Bloat</span>
                                 <span class="text-xs bg-purple-500/20 px-2 py-1 rounded">Performance Hit</span>
                             </div>
-                            <i data-lucide="layers" class="text-purple-400 w-5 h-5"></i>
+                            {% include ui/icon.html name="layers" class="text-purple-400 w-5 h-5" %}
                         </div>
                         <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
 
@@ -40,7 +40,7 @@
                                 <span>Invalid Data Patterns</span>
                                 <span class="text-xs bg-slate-700 px-2 py-1 rounded">High</span>
                             </div>
-                            <i data-lucide="alert-triangle" class="text-slate-400 w-5 h-5"></i>
+                            {% include ui/icon.html name="alert-triangle" class="text-slate-400 w-5 h-5" %}
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <!-- Symptom 1 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="copy" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="copy" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Duplicate Hell</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Sales reps waste 30+ minutes daily managing duplicate accounts.</p>
@@ -63,7 +63,7 @@
                     <!-- Symptom 2 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="gauge" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="gauge" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Slow Dashboards</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Reports take 10+ seconds to load due to bloated data.</p>
@@ -71,7 +71,7 @@
                     <!-- Symptom 3 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="bar-chart" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="bar-chart" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Inaccurate Forecasts</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Pipeline numbers don't match reality, causing missed targets.</p>
@@ -79,7 +79,7 @@
                     <!-- Symptom 4 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="trash-2" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="trash-2" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Data Graveyard</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Hundreds of unused fields consuming storage and slowing queries.</p>

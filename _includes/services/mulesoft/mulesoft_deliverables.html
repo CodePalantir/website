@@ -21,7 +21,7 @@
                     <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:border-purple-100 transition-all group duration-300">
                         <div class="flex gap-5 items-start">
                             <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-purple-600 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                                <i data-lucide="network" class="w-6 h-6"></i>
+                                {% include ui/icon.html name="network" class="w-6 h-6" %}
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 text-lg mb-2">Reusable API Layer</h4>
@@ -33,7 +33,7 @@
                     <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:border-purple-100 transition-all group duration-300">
                         <div class="flex gap-5 items-start">
                             <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-purple-600 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                                {% include ui/icon.html name="shield-check" class="w-6 h-6" %}
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 text-lg mb-2">Data Transformation & Validation</h4>
@@ -45,7 +45,7 @@
                     <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:border-purple-100 transition-all group duration-300">
                         <div class="flex gap-5 items-start">
                             <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-purple-600 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                                <i data-lucide="activity" class="w-6 h-6"></i>
+                                {% include ui/icon.html name="activity" class="w-6 h-6" %}
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 text-lg mb-2">Monitoring & Alerting</h4>
@@ -66,7 +66,7 @@
                             <!-- Header Matching Integration Style -->
                             <div class="flex justify-between items-start mb-6">
                                 <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white shadow-lg">
-                                    <i data-lucide="network" class="w-5 h-5"></i>
+                                    {% include ui/icon.html name="network" class="w-5 h-5" %}
                                 </div>
                                 <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-3 py-1.5 rounded-lg bg-white shadow-sm">Outcome</div>
                             </div>
@@ -109,7 +109,7 @@
                                     <!-- Node: ERP (Top) -->
                                     <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-full shadow-lg border border-slate-100 flex items-center justify-center z-30 hover:scale-110 transition-transform cursor-default group/node">
                                         <div class="text-center">
-                                            <i data-lucide="database" class="w-6 h-6 text-slate-700"></i>
+                                            {% include ui/icon.html name="database" class="w-6 h-6 text-slate-700" %}
                                         </div>
                                         <div class="absolute -bottom-7 opacity-0 group-hover/node:opacity-100 transition-opacity bg-slate-800 text-white text-[8px] font-bold px-2 py-1 rounded whitespace-nowrap">ERP</div>
                                     </div>
@@ -122,19 +122,19 @@
 
                                     <!-- Node: Marketing (Bottom) -->
                                     <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-full shadow-lg border border-slate-100 flex items-center justify-center z-30 hover:scale-110 transition-transform cursor-default group/node">
-                                        <i data-lucide="mail" class="w-6 h-6 text-purple-600"></i>
+                                        {% include ui/icon.html name="mail" class="w-6 h-6 text-purple-600" %}
                                         <div class="absolute -bottom-7 opacity-0 group-hover/node:opacity-100 transition-opacity bg-slate-800 text-white text-[8px] font-bold px-2 py-1 rounded whitespace-nowrap">Marketing</div>
                                     </div>
 
                                     <!-- Node: E-commerce (Left) -->
                                     <div class="absolute top-1/2 -left-3 -translate-y-1/2 w-14 h-14 bg-white rounded-full shadow-lg border border-slate-100 flex items-center justify-center z-30 hover:scale-110 transition-transform cursor-default group/node">
-                                        <i data-lucide="shopping-cart" class="w-6 h-6 text-green-600"></i>
+                                        {% include ui/icon.html name="shopping-cart" class="w-6 h-6 text-green-600" %}
                                         <div class="absolute -bottom-7 opacity-0 group-hover/node:opacity-100 transition-opacity bg-slate-800 text-white text-[8px] font-bold px-2 py-1 rounded whitespace-nowrap">Commerce</div>
                                     </div>
 
                                     <!-- Node: Analytics (Top Right - Offset) -->
                                     <div class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full shadow-md border border-slate-100 flex items-center justify-center z-20 hover:scale-110 transition-transform cursor-default group/node">
-                                        <i data-lucide="bar-chart-3" class="w-5 h-5 text-orange-600"></i>
+                                        {% include ui/icon.html name="bar-chart-3" class="w-5 h-5 text-orange-600" %}
                                         <div class="absolute -bottom-7 opacity-0 group-hover/node:opacity-100 transition-opacity bg-slate-800 text-white text-[8px] font-bold px-2 py-1 rounded whitespace-nowrap">Analytics</div>
                                     </div>
 

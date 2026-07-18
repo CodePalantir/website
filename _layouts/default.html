@@ -38,8 +38,7 @@
   <link rel="preload" as="image" href="{{ '/assets/images/people/alex-knoll.webp' | relative_url }}" type="image/webp">
   {% endif %}
 
-  <!-- Icons (fonts now self-hosted in tailwind.css) -->
-  <script src="{{ '/assets/js/lucide.min.js' | relative_url }}" defer></script>
+  <!-- Icons are inlined server-side via _includes/ui/icon.html (no JS icon library) -->
 
   <!-- Fathom - beautiful, simple website analytics -->
   <script src="https://cdn.usefathom.com/script.js" data-site="SSUCTAAP" defer></script>
@@ -72,13 +71,6 @@
   {% include shared/cookie-consent.html %}
 
   <script>
-    // Initialize Lucide Icons (after deferred script loads)
-    document.addEventListener('DOMContentLoaded', () => {
-      if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-      }
-    });
-
     // Scroll-reveal for homepage sections (.rv) with staggered cascade + reduced-motion handled in CSS
     document.addEventListener('DOMContentLoaded', () => {
       const els = document.querySelectorAll('.rv');
@@ -111,15 +103,6 @@
         navbar.classList.add('py-4', 'bg-white');
       }
     });
-
-    // Navigation Logic
-    function navigateTo(pageId) {
-
-        // Re-render icons
-        setTimeout(() => {
-            lucide.createIcons();
-        }, 50);
-    }
 
     // Team Member Image Scroll Animation - Only one highlighted at a time
     let currentHighlightedImage = null;

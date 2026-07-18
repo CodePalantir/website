@@ -21,7 +21,7 @@
                     <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:border-purple-100 transition-all group duration-300">
                         <div class="flex gap-5 items-start">
                             <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-purple-600 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                                <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                                {% include ui/icon.html name="bar-chart-3" class="w-6 h-6" %}
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 text-lg mb-2">Executive Impact Summary</h4>
@@ -33,7 +33,7 @@
                     <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:border-purple-100 transition-all group duration-300">
                         <div class="flex gap-5 items-start">
                             <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-purple-600 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                                <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+                                {% include ui/icon.html name="clipboard-check" class="w-6 h-6" %}
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 text-lg mb-2">Technical Remediation Plan</h4>
@@ -45,7 +45,7 @@
                     <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:border-purple-100 transition-all group duration-300">
                         <div class="flex gap-5 items-start">
                             <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-purple-600 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                                {% include ui/icon.html name="shield-check" class="w-6 h-6" %}
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 text-lg mb-2">Security & Compliance Review</h4>
@@ -100,7 +100,7 @@
                             <div class="space-y-4">
                                 <div class="p-4 bg-white rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
                                         <div class="w-8 h-8 rounded-lg bg-red-50 text-red-500 flex items-center justify-center shrink-0">
-                                            <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                                            {% include ui/icon.html name="alert-triangle" class="w-4 h-4" %}
                                         </div>
                                         <div>
                                             <p class="text-xs text-slate-400 font-bold uppercase">Critical Finding</p>
@@ -110,7 +110,7 @@
                                 
                                 <!-- Button Changed to Brand Gradient -->
                                 <a href="/content/Technical-Health-Audit-ApexPalantir.pdf" download data-ap-track="download" data-ap-category="pdf" data-ap-value="technical-health-audit" class="w-full py-4 bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg shadow-purple-200 group/btn cursor-pointer">
-                                    <i data-lucide="download" class="w-4 h-4"></i>
+                                    {% include ui/icon.html name="download" class="w-4 h-4" %}
                                     Download Sample PDF
                                 </a>
                             </div>

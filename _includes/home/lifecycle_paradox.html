@@ -36,7 +36,7 @@
        <!-- Stage 1 -->
        <div class="inflection-card bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm text-left">
           <div class="w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center mb-8 text-slate-500">
-             <i data-lucide="zap" class="w-6 h-6"></i>
+             {% include ui/icon.html name="zap" class="w-6 h-6" %}
           </div>
           <div class="mb-8">
              <span class="text-[10px] font-black uppercase text-slate-500 tracking-widest text-left">Stage 1 (Years 1-2)</span>
@@ -57,7 +57,7 @@
              Critical Catch Window
           </div>
           <div class="w-12 h-12 rounded-2xl bg-purple-50 flex items-center justify-center mb-8 text-purple-600">
-             <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+             {% include ui/icon.html name="alert-triangle" class="w-6 h-6" %}
           </div>
           <div class="mb-8">
              <span class="text-[10px] font-black uppercase text-purple-600 tracking-widest text-left">Stage 2 (Years 3-4)</span>
@@ -75,7 +75,7 @@
        <!-- Stage 3 -->
        <div class="inflection-card bg-slate-900 p-10 rounded-[2.5rem] text-white text-left">
           <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-8 text-white/50">
-             <i data-lucide="lock" class="w-6 h-6"></i>
+             {% include ui/icon.html name="lock" class="w-6 h-6" %}
           </div>
           <div class="mb-8 text-left">
              <span class="text-[10px] font-black uppercase text-white/60 tracking-widest text-left">Stage 3 (Year 5+)</span>
@@ -94,7 +94,7 @@
     <div class="mt-20 flex flex-col items-center">
        <p class="text-slate-500 text-sm font-bold mb-6 italic">Preventative architecture is 4.5x more cost-effective than a rip-and-replace project.</p>
        <button class="bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold flex items-center gap-3 hover:scale-105 transition-all cursor-pointer">
-          Get a Risk Assessment <i data-lucide="arrow-right"></i>
+          Get a Risk Assessment {% include ui/icon.html name="arrow-right" %}
        </button>
     </div>
   </div>

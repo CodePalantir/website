@@ -77,7 +77,7 @@ They will retreat to "Shadow CRM"—their own private Excel spreadsheets, notes 
 This creates a data blackout for leadership. You cannot forecast revenue if the deals are living in a spreadsheet on a rep's laptop. You cannot automate marketing nurture campaigns if the contacts aren't in the system. The "Shadow CRM" is the ultimate symptom of a failed data strategy.
 
 <div class="article-callout">
-    <h4 class="text-lg font-bold text-[#0EA5E9] mb-2 flex items-center gap-2"><i data-lucide="info" class="w-5 h-5"></i> Pro Tip: The 365-Day Rule</h4>
+    <h4 class="text-lg font-bold text-[#0EA5E9] mb-2 flex items-center gap-2">{% include ui/icon.html name="info" class="w-5 h-5" %} Pro Tip: The 365-Day Rule</h4>
     <p class="mb-0 text-slate-600 text-sm">
         If a contact record hasn't been touched in 365 days, move it to a "Cold Storage" custom object or archive it. Keeping it in the main table slows down search, skews reporting, and increases storage costs. A lean CRM is a fast CRM.
     </p>
@@ -131,7 +131,7 @@ Don't let your revenue engine stall because you put cheap fuel in the tank.
     <div class="flex flex-col sm:flex-row gap-4">
         <button class="bg-purple-gradient text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-purple-200 hover:opacity-90 transition-all flex items-center justify-center gap-2 group/btn">
             Request Strategy Audit
-            <i data-lucide="chevron-right" class="group-hover/btn:translate-x-1 transition-transform w-5 h-5"></i>
+            {% include ui/icon.html name="chevron-right" class="group-hover/btn:translate-x-1 transition-transform w-5 h-5" %}
         </button>
     </div>
 </div>

@@ -1,0 +1,20 @@
+{%- comment -%}
+  Inline-SVG icon. Replaces the 310 KB lucide.min.js — zero JS, only the
+  icons on a page ship in its HTML, colour inherits from `currentColor`.
+
+  Usage:  {% include ui/icon.html name="search" class="w-5 h-5" %}
+          {% include ui/icon.html name=service.icon class="w-4 h-4 text-purple-600" %}
+
+  `name` must exist in _data/icons.yml (→ _includes/icons/<name>.svg, inner
+  elements only). Unknown/blank names render a neutral dot so a typo in
+  front matter can never break the build. Regenerate the library with
+  scripts/extract_icons.mjs.
+{%- endcomment -%}
+{%- assign icon_name = include.name | strip | default: "arrow-right" -%}
+{%- assign icon_class = include.class | default: "w-5 h-5" -%}
+{%- if site.data.icons contains icon_name -%}
+{%- capture icon_path -%}icons/{{ icon_name }}.svg{%- endcapture -%}
+<svg class="apx-icon {{ icon_class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{% include {{ icon_path }} %}</svg>
+{%- else -%}
+<svg class="apx-icon {{ icon_class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><!-- unknown icon: {{ icon_name }} --></svg>
+{%- endif -%}

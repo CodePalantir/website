@@ -9,7 +9,7 @@ layout: default
   "@type": "BlogPosting",
   "headline": "{{ page.title }}",
   "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}",
-  "image": "{{ '/assets/images/logos/APEX-PALANTIR_LARGE.png' | absolute_url }}",
+  "image": "{{ '/assets/images/logos/APX_LOGO.png' | absolute_url }}",
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{{ page.date | date_to_xmlschema }}",
   "author": {
@@ -23,7 +23,7 @@ layout: default
     "name": "ApexPalantir",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ '/assets/images/logos/APEX-PALANTIR_LARGE.png' | absolute_url }}"
+      "url": "{{ '/assets/images/logos/APX_LOGO.png' | absolute_url }}"
     }
   },
   "mainEntityOfPage": {
@@ -63,7 +63,7 @@ layout: default
                 <div class="aspect-video bg-slate-50 rounded-3xl border border-slate-100 mb-12 flex items-center justify-center pattern-grid relative overflow-hidden">
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-100/30 to-blue-50/30"></div>
                 <div class="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center relative z-10">
-                    <i data-lucide="{{ page.hero_icon }}" class="w-10 h-10 text-[#8E2DE2]"></i>
+                    {% include ui/icon.html name=page.hero_icon class="w-10 h-10 text-[#8E2DE2]" %}
                 </div>
                 </div>
 
@@ -71,12 +71,12 @@ layout: default
                 {% if page.key_takeaways %}
                 <div class="bg-slate-50 border-l-4 border-[#8E2DE2] p-8 rounded-r-2xl mb-12">
                     <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <i data-lucide="lightbulb" class="w-5 h-5 text-[#8E2DE2]"></i> Key Takeaways
+                        {% include ui/icon.html name="lightbulb" class="w-5 h-5 text-[#8E2DE2]" %} Key Takeaways
                     </h3>
                     <ul class="space-y-3 text-slate-600">
                         {% for takeaway in page.key_takeaways %}
                         <li class="flex gap-3">
-                            <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0"></i>
+                            {% include ui/icon.html name="check" class="w-5 h-5 text-green-500 shrink-0" %}
                             <span>{{ takeaway }}</span>
                         </li>
                         {% endfor %}
@@ -108,10 +108,10 @@ layout: default
             <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
                 <h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Share this Insight</h4>
                 <div class="flex gap-2">
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-[#0077b5] hover:text-white transition-all cursor-pointer"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
-                    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-black hover:text-white transition-all cursor-pointer"><i data-lucide="twitter" class="w-4 h-4"></i></a>
-                    <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url | url_encode }}" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all cursor-pointer"><i data-lucide="mail" class="w-4 h-4"></i></a>
-                    <button onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.classList.add('bg-green-500', 'text-white'); setTimeout(() => { this.classList.remove('bg-green-500', 'text-white'); }, 1500);" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-green-500 hover:text-white transition-all cursor-pointer"><i data-lucide="link" class="w-4 h-4"></i></button>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-[#0077b5] hover:text-white transition-all cursor-pointer">{% include ui/icon.html name="linkedin" class="w-4 h-4" %}</a>
+                    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-black hover:text-white transition-all cursor-pointer">{% include ui/icon.html name="twitter" class="w-4 h-4" %}</a>
+                    <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url | url_encode }}" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all cursor-pointer">{% include ui/icon.html name="mail" class="w-4 h-4" %}</a>
+                    <button onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.classList.add('bg-green-500', 'text-white'); setTimeout(() => { this.classList.remove('bg-green-500', 'text-white'); }, 1500);" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-green-500 hover:text-white transition-all cursor-pointer">{% include ui/icon.html name="link" class="w-4 h-4" %}</button>
                 </div>
             </div>
         </div>

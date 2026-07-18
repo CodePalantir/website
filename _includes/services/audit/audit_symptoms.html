@@ -18,7 +18,7 @@
                                 <span>Technical Debt</span>
                                 <span class="text-xs text-slate-400">High Risk</span>
                             </div>
-                            <i data-lucide="alert-circle" class="text-slate-400 w-5 h-5"></i>
+                            {% include ui/icon.html name="alert-circle" class="text-slate-400 w-5 h-5" %}
                         </div>
                         <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
 
@@ -29,7 +29,7 @@
                                 <span>Data Structure</span>
                                 <span class="text-xs bg-purple-500/20 px-2 py-1 rounded">Unoptimized</span>
                             </div>
-                            <i data-lucide="database" class="text-purple-400 w-5 h-5"></i>
+                            {% include ui/icon.html name="database" class="text-purple-400 w-5 h-5" %}
                         </div>
                         <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
 
@@ -40,7 +40,7 @@
                                 <span>Configuration Chaos</span>
                                 <span class="text-xs bg-slate-700 px-2 py-1 rounded">Critical</span>
                             </div>
-                            <i data-lucide="layers" class="text-slate-400 w-5 h-5"></i>
+                            {% include ui/icon.html name="layers" class="text-slate-400 w-5 h-5" %}
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <!-- Symptom 1 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="timer" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="timer" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Sluggish Performance</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Page loads >3s causing sales team frustration.</p>
@@ -63,7 +63,7 @@
                     <!-- Symptom 2 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="server-crash" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="server-crash" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Integration Failures</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Silent errors in webhook or API connections.</p>
@@ -71,7 +71,7 @@
                     <!-- Symptom 3 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="database" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="database" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Data Distrust</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Duplicate accounts and sync errors in reporting.</p>
@@ -79,7 +79,7 @@
                     <!-- Symptom 4 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="shield-alert" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="shield-alert" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Deploy Fear</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Every release breaks something unexpected.</p>

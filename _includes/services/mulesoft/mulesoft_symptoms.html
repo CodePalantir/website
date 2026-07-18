@@ -18,7 +18,7 @@
                                 <span>Point-to-Point Chaos</span>
                                 <span class="text-xs text-red-400">Fragile</span>
                             </div>
-                            <i data-lucide="git-branch" class="text-red-400 w-5 h-5"></i>
+                            {% include ui/icon.html name="git-branch" class="text-red-400 w-5 h-5" %}
                         </div>
                         <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
 
@@ -29,7 +29,7 @@
                                 <span>Disconnected Systems</span>
                                 <span class="text-xs bg-purple-500/20 px-2 py-1 rounded">Data Silos</span>
                             </div>
-                            <i data-lucide="server" class="text-purple-400 w-5 h-5"></i>
+                            {% include ui/icon.html name="server" class="text-purple-400 w-5 h-5" %}
                         </div>
                         <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
 
@@ -40,7 +40,7 @@
                                 <span>Manual Data Migration</span>
                                 <span class="text-xs bg-slate-700 px-2 py-1 rounded">Expensive</span>
                             </div>
-                            <i data-lucide="hand" class="text-slate-400 w-5 h-5"></i>
+                            {% include ui/icon.html name="hand" class="text-slate-400 w-5 h-5" %}
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <!-- Symptom 1 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="git-branch" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="git-branch" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Integration Spaghetti</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">20+ point-to-point connections that break whenever a system updates.</p>
@@ -63,7 +63,7 @@
                     <!-- Symptom 2 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="file-spreadsheet" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">CSV Hell</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Finance exports CSVs from ERP and manually uploads to Salesforce weekly.</p>
@@ -71,7 +71,7 @@
                     <!-- Symptom 3 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="alert-triangle" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Data Conflicts</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Same customer has different account numbers in different systems.</p>
@@ -79,7 +79,7 @@
                     <!-- Symptom 4 -->
                     <div class="p-6 rounded-2xl bg-slate-50 shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
                         <div class="w-10 h-10 rounded-xl bg-white text-slate-400 flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors shadow-sm">
-                            <i data-lucide="clock" class="w-6 h-6"></i>
+                            {% include ui/icon.html name="clock" class="w-6 h-6" %}
                         </div>
                         <h4 class="font-bold text-slate-900 mb-2">Slow Order Processing</h4>
                         <p class="text-sm text-slate-500 leading-relaxed">Order-to-cash cycle takes 5 days due to manual data entry across systems.</p>

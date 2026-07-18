@@ -3,7 +3,7 @@
     <div class="max-w-2xl mx-auto">
         <div class="relative group">
             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <i data-lucide="search" class="h-5 w-5 text-slate-400 group-focus-within:text-[#8E2DE2] transition-colors"></i>
+                {% include ui/icon.html name="search" class="h-5 w-5 text-slate-400 group-focus-within:text-[#8E2DE2] transition-colors" %}
             </div>
             <input type="text"
                     id="blog-search-input"
@@ -12,7 +12,7 @@
             >
             <div class="absolute inset-y-0 right-0 pr-2 flex items-center">
                     <button id="clear-search" class="p-2 text-slate-400 hover:text-slate-600 cursor-pointer hidden">
-                        <i data-lucide="x" class="h-5 w-5"></i>
+                        {% include ui/icon.html name="x" class="h-5 w-5" %}
                     </button>
             </div>
         </div>

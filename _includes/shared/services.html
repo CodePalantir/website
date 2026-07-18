@@ -16,7 +16,7 @@
       <div class="p-10 flex-grow">
         <div class="flex justify-between items-start mb-8">
           <div class="w-14 h-14 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
-            <i data-lucide="{{ service.icon }}" class="w-7 h-7"></i>
+            {% include ui/icon.html name=service.icon class="w-7 h-7" %}
           </div>
           <div class="text-right">
             <p class="text-2xl font-black text-slate-900 tracking-tight">{{ service.price }}{% if service.price_suffix %}{{ service.price_suffix }}{% endif %}</p>
@@ -41,7 +41,7 @@
   <div class="mt-16 text-center">
     <button onclick="window.location.href='{{ site.baseurl }}/services'" class="px-8 py-4 rounded-xl border-2 border-slate-200 text-slate-700 font-bold hover:border-purple-600 hover:text-purple-600 transition-all inline-flex items-center gap-2 group text-lg cursor-pointer">
         View All Services
-        <i data-lucide="chevron-right" class="group-hover:translate-x-1 transition-transform"></i>
+        {% include ui/icon.html name="chevron-right" class="group-hover:translate-x-1 transition-transform" %}
     </button>
   </div>
 </section>

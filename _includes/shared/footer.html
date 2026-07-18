@@ -9,7 +9,7 @@
          <a href="https://calendly.com/d/cxgf-5fr-vxz/meet-apexpalantir" data-ap-track="book-call" data-ap-category="footer" data-ap-value="lets-connect" class="flex items-center gap-6 text-2xl md:text-3xl font-bold group-hover:text-purple-400 transition-colors">
             Let's Connect
             <div class="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-purple-600 group-hover:border-purple-600 transition-all">
-               <i data-lucide="arrow-right" class="w-8 h-8 group-hover:translate-x-1 transition-transform"></i>
+               {% include ui/icon.html name="arrow-right" class="w-8 h-8 group-hover:translate-x-1 transition-transform" %}
             </div>
          </a>
       </div>
@@ -17,7 +17,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 md:gap-16 mb-16 sm:mb-20 md:mb-24">
       <div class="space-y-8 hidden md:block">
         <div class="flex items-center gap-2">
-          <img src="{{ '/assets/images/logos/APEX-PALANTIR_WHITE_WHITE_TOP_LARGE.png' | relative_url }}" alt="Apex Palantir Logo" class="h-auto w-30" loading="lazy">
+          <img src="{{ '/assets/images/logos/APX_WHITE.png' | relative_url }}" alt="APX Logo" class="h-auto w-48" loading="lazy">
         </div>
       </div>
       <div class="space-y-6">
@@ -30,20 +30,20 @@
       <div class="space-y-6">
         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Contact</p>
         <ul class="space-y-3 text-lg font-medium">
-          <li><a href="mailto:support@apex-palantir.com" class="hover:text-purple-400 transition-colors">Email Us</a></li>
+          <li><a href="mailto:support@apx-revops.com" class="hover:text-purple-400 transition-colors">Email Us</a></li>
           <li><a href="tel:+4940226320690" class="hover:text-purple-400 transition-colors">+49 402 2632 0690</a></li>
         </ul>
       </div>
       <div class="space-y-6">
         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Social</p>
         <div class="flex flex-wrap gap-4">
-          <a href="https://www.linkedin.com/company/apexpalantir/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer"><i data-lucide="linkedin" class="w-5"></i></a>
-          <!-- <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer"><i data-lucide="youtube" class="w-5"></i></div> -->
+          <a href="https://www.linkedin.com/company/apexpalantir/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer">{% include ui/icon.html name="linkedin" class="w-5" %}</a>
+          <!-- <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center hover:bg-purple-600 transition-all border border-white/5 cursor-pointer">{% include ui/icon.html name="youtube" class="w-5" %}</div> -->
         </div>
       </div>
     </div>
     <div class="pt-10 border-t border-white/5 flex flex-col md:row items-center justify-between gap-6 text-slate-400 text-[10px] font-bold uppercase tracking-widest">
-      <p>© 2026 ApexPalantir. Engineering Excellence.</p>
+      <p>© 2026 APX. Engineering Excellence.</p>
       <div class="flex gap-10">
         <a href="{{ site.baseurl }}/privacy" class="hover:text-white transition-colors">Privacy</a>
         <a href="{{ site.baseurl }}/legal-notice" class="hover:text-white transition-colors">Legal Notice</a>

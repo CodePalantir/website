@@ -1,12 +1,12 @@
 <!-- SUBSCRIBE -->
 <section class="py-24 px-6 bg-[#0A0A0B] text-white text-center">
     <div class="max-w-2xl mx-auto">
-        <i data-lucide="trending-up" class="w-12 h-12 text-[#8E2DE2] mx-auto mb-6"></i>
+        {% include ui/icon.html name="trending-up" class="w-12 h-12 text-[#8E2DE2] mx-auto mb-6" %}
         <h2 class="text-4xl font-black mb-6">Executive Briefing.</h2>
         <p class="text-slate-400 mb-10 text-lg">
             Join 500+ leaders receiving performance benchmarks, technical debt prevention strategies, and data-backed insights on maximizing Salesforce GROA.
         </p>
-        <form action="mailto:support@apex-palantir.com?subject=Newsletter%20Subscription" method="get" enctype="text/plain" class="flex flex-col sm:flex-row gap-4">
+        <form action="mailto:support@apx-revops.com?subject=Newsletter%20Subscription" method="get" enctype="text/plain" class="flex flex-col sm:flex-row gap-4">
             <input type="email" name="email" placeholder="Business Email" required class="flex-1 bg-white/10 border border-white/20 rounded-xl px-6 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-[#8E2DE2] text-sm font-medium">
             <button type="submit" class="bg-[#8E2DE2] hover:bg-[#7a25c6] text-white px-8 py-4 rounded-xl font-bold transition-colors cursor-pointer">Join the List</button>
         </form>
