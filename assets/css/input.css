@@ -59,7 +59,7 @@
   /* ── House radii — generous, calm, rounded-square ──────────── */
   --radius-card: 1.5rem;        /* cards, image tiles */
   --radius-panel: 2.25rem;      /* big closing panel */
-  --radius-control: 9999px;     /* pill buttons */
+  --radius-control: 0.625rem;   /* refined rounded-rect — not a pill */
 
   /* Custom Animations */
   --animate-infinite-scroll: infinite-scroll 30s linear infinite;
@@ -246,15 +246,33 @@
     -webkit-mask-image: radial-gradient(110% 90% at 50% 32%, #000 0%, rgba(0, 0, 0, .55) 46%, transparent 78%);
     mask-image: radial-gradient(110% 90% at 50% 32%, #000 0%, rgba(0, 0, 0, .55) 46%, transparent 78%);
     pointer-events: none;
+    /* the grid slowly drifts — a living blueprint, not a static texture */
+    animation: apx-grid-drift 28s linear infinite;
+  }
+  @keyframes apx-grid-drift {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 54px 54px, 54px 54px; }
   }
   .apx-hero-glow {
     position: absolute;
-    inset: 0;
+    inset: -8%;
     background:
-      radial-gradient(46% 38% at 50% 46%, rgba(142, 45, 226, .14) 0%, transparent 70%),
-      radial-gradient(30% 26% at 66% 30%, rgba(74, 0, 224, .10) 0%, transparent 70%),
-      radial-gradient(26% 22% at 32% 62%, rgba(142, 45, 226, .08) 0%, transparent 70%);
+      radial-gradient(46% 38% at 50% 46%, rgba(142, 45, 226, .16) 0%, transparent 70%),
+      radial-gradient(30% 26% at 66% 30%, rgba(74, 0, 224, .12) 0%, transparent 70%),
+      radial-gradient(26% 22% at 32% 62%, rgba(142, 45, 226, .10) 0%, transparent 70%);
     pointer-events: none;
+    /* the purple aura slowly drifts + breathes for ambient life */
+    animation: apx-glow-drift 16s ease-in-out infinite;
+    will-change: transform;
+  }
+  @keyframes apx-glow-drift {
+    0%   { transform: translate3d(-1.5%, -1%, 0) scale(1); }
+    33%  { transform: translate3d(2%, 1.5%, 0) scale(1.06); }
+    66%  { transform: translate3d(-1%, 2%, 0) scale(1.03); }
+    100% { transform: translate3d(-1.5%, -1%, 0) scale(1); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .apx-hero-grid, .apx-hero-glow { animation: none; }
   }
 
   /* Industry image tile — rounded-square photo card with a bottom
@@ -467,57 +485,6 @@ html {
    a new scroll container. */
 html, body {
     overflow-x: clip;
-}
-
-/* ─────────────────────────────────────────────────────────────
-   Homepage full-viewport flow (.apx-fv-root on <main>).
-   Each major section owns one viewport: min-height 100svh (vh
-   fallback), content vertically centred, gentle y-proximity
-   scroll-snap so content-heavy sections never trap scrolling.
-   Unlayered on purpose — must win over layered utility padding.
-   ───────────────────────────────────────────────────────────── */
-html:has(.apx-fv-root) {
-  scroll-snap-type: y proximity;
-  scroll-padding-top: 0; /* fv sections carry their own header offset */
-}
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-}
-.apx-fv-root > section {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* vh is the robust base — works in every browser and survives minify */
-  min-height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
-  scroll-margin-top: 0;
-  /* clear the fixed header, then breathe with the viewport */
-  padding-top: calc(5.25rem + clamp(1rem, 3vh, 2.5rem));
-  padding-bottom: clamp(2.25rem, 5vh, 4.25rem);
-}
-/* svh as progressive enhancement (kept in its own block so minification
-   can't collapse it into — and delete — the vh fallback above). */
-@supports (min-height: 100svh) {
-  .apx-fv-root > section {
-    min-height: 100svh;
-    padding-top: calc(5.25rem + clamp(1rem, 3svh, 2.5rem));
-    padding-bottom: clamp(2.25rem, 5svh, 4.25rem);
-  }
-}
-/* flex children with mx-auto would otherwise shrink to fit-content
-   (auto cross-axis margins suppress stretch) — keep containers full width */
-.apx-fv-root > section > :not([class*="absolute"]) {
-  width: 100%;
-}
-
-/* Short viewports (1366×768-class laptops): pull the section heads in a
-   notch so every section still fits one screen. Headline hierarchy is
-   preserved — this only trims the top end of the clamp. */
-@media (max-height: 850px) {
-  .apx-fv-root section h2 { font-size: clamp(1.75rem, 2.9vw, 2.375rem); }
-  .apx-fv-root section .text-lg { font-size: 1.0625rem; }
 }
 
 /* Table of Contents Active Link */

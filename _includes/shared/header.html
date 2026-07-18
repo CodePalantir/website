@@ -82,7 +82,7 @@
     </nav>
 
     <div class="flex items-center gap-3">
-      {% include ui/cta.html label="Book the audit" track="header" class="apx-btn-sm hidden md:inline-flex" no_icon=true %}
+      {% include ui/cta.html label="Free intro call" href=site.cta.secondary_url track="header" class="apx-btn-sm hidden md:inline-flex" no_icon=true %}
 
       <!-- Mobile menu button -->
       <button id="mobile-menu-button" class="md:hidden p-2 -mr-2 text-ink" aria-label="Toggle mobile menu">
@@ -153,9 +153,9 @@
     </nav>
 
     <div class="mt-10 space-y-3">
-      {% include ui/cta.html label="Book the audit" track="header-mobile" class="w-full" %}
-      <a href="{{ site.cta.secondary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="header" data-ap-value="mobile" class="apx-btn apx-btn-ghost w-full">
-        Book a call
+      {% include ui/cta.html label="Free intro call" href=site.cta.secondary_url track="header-mobile" class="w-full" %}
+      <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-ghost w-full">
+        Explore our services
       </a>
     </div>
 

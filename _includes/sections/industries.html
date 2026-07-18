@@ -12,7 +12,7 @@ manufacturing.webp :: Manufacturing & industry :: From quote to machine to servi
 education.webp :: Education :: Enrolment funnels students actually finish :: University campus
 events.webp :: Events & hospitality :: High-volume bookings, zero lost leads :: Conference event audience
 {% endcapture %}
-<section id="work" class="px-6 bg-paper">
+<section id="work" class="px-6 pb-20 md:pb-[7.5rem] bg-paper scroll-mt-24">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[720px] mx-auto text-center rv">
       <span class="apx-eyebrow">Who we work with</span>
@@ -20,12 +20,12 @@ events.webp :: Events & hospitality :: High-volume bookings, zero lost leads :: 
       <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">B2B and B2C, from fast-growing software teams to established industrial groups — the same calm, careful way of working.</p>
     </div>
 
-    <div class="mt-[clamp(1.75rem,4svh,3.5rem)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:grid-rows-[repeat(2,clamp(9rem,20svh,19rem))]">
+    <div class="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
       {% assign rows = industry_cards | strip | newline_to_br | split: "<br />" %}
       {% for row in rows %}
         {% assign parts = row | strip | split: " :: " %}
         {% if parts.size < 4 %}{% continue %}{% endif %}
-        <div class="apx-photo-card max-sm:aspect-[4/3] lg:aspect-auto lg:h-full rv">
+        <div class="apx-photo-card max-sm:aspect-[4/3] rv">
           <img src="{{ '/assets/images/industries/' | append: parts[0] | relative_url }}" alt="{{ parts[3] }}" loading="lazy" decoding="async" width="1200" height="800">
           <div class="absolute left-6 right-6 bottom-5 z-[2] text-white font-bold text-lg md:text-xl tracking-[-0.01em]">
             {{ parts[1] }}
