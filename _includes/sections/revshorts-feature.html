@@ -11,7 +11,7 @@
       <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">Two-minute reads on the unglamorous truths of revenue operations, from the field, not the brochure.</p>
     </div>
 
-    <div class="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+    <div class="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
       {% for s in shorts limit: 3 %}
         {% assign hi = s.hero_icon | default: "zap" %}
         <a href="{{ s.url | relative_url }}" class="apx-card group flex flex-col p-6 md:p-7 rv">
