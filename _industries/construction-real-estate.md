@@ -38,8 +38,8 @@ builds:
   - "Reporting that ties estimates back to actuals"
 platforms: ["Salesforce", "HubSpot", "DocuSign", "MuleSoft"]
 services:
-  - /services/technical-health-audit
   - /services/sales-cloud-setup
   - /services/docusign
   - /services/custom-integration
+  - /services/salesforce-cpq
 ---

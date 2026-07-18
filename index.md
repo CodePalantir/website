@@ -12,4 +12,3 @@ image: /assets/images/logos/APX_LOGO.png
 {% include sections/featured-services.html %}
 {% include sections/app-grid.html %}
 {% include sections/revshorts-feature.html %}
-{% include sections/about-signature.html %}

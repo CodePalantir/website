@@ -38,8 +38,8 @@ builds:
   - "Forecasts built on real pipeline hygiene, not gut feel"
 platforms: ["Salesforce", "HubSpot", "Segment", "Stripe", "Snowflake"]
 services:
-  - /services/technical-health-audit
   - /services/sales-cloud-setup
   - /services/custom-development
   - /services/hubspot-operations-hub
+  - /services/clay
 ---

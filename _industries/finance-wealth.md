@@ -38,8 +38,8 @@ builds:
   - "Reporting your compliance team can pull themselves"
 platforms: ["Salesforce", "HubSpot", "DocuSign", "Snowflake"]
 services:
-  - /services/technical-health-audit
   - /services/service-cloud-console
   - /services/gdpr-compliance
   - /services/custom-integration
+  - /services/docusign
 ---

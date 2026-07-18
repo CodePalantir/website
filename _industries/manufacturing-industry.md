@@ -38,8 +38,8 @@ builds:
   - "Clean integration between CRM, ERP and field service"
 platforms: ["Salesforce", "Dynamics 365", "MuleSoft", "Snowflake"]
 services:
-  - /services/technical-health-audit
   - /services/salesforce-cpq
   - /services/mulesoft-architecture
   - /services/custom-development
+  - /services/service-cloud-console
 ---

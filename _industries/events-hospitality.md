@@ -38,8 +38,8 @@ builds:
   - "Automated reminders and handoffs so nothing stalls"
 platforms: ["Salesforce", "HubSpot", "Aircall", "Stripe"]
 services:
-  - /services/technical-health-audit
   - /services/sales-cloud-setup
   - /services/aircall
   - /services/hubspot-sales-hub
+  - /services/make
 ---

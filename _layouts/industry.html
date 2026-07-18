@@ -118,23 +118,43 @@ layout: default
       <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">The services that move the needle here.</h2>
       <p class="mt-4 max-w-[58ch] text-lg leading-relaxed text-muted">Every engagement opens with the audit. From there, these are the pieces that tend to matter most for {{ page.name }}.</p>
     </div>
-    <div class="mt-10 md:mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
-      {% for surl in page.services %}
-        {%- assign s = all_services | where: "url", surl | first -%}
-        {% if s %}
-        <a href="{{ site.baseurl }}{{ s.url }}/" data-ap-track="service" data-ap-category="industry-{{ page.slug }}" class="apx-card p-6 group flex flex-col">
-          <div class="flex items-start justify-between gap-4">
-            <span class="w-11 h-11 rounded-xl bg-accent-tint text-accent flex items-center justify-center shrink-0 transition-colors group-hover:bg-purple-gradient group-hover:text-white">
-              {% include ui/icon.html name=s.icon class="w-5 h-5" %}
-            </span>
-            <span class="text-[13px] font-semibold text-faint whitespace-nowrap pt-1.5">{{ s.price }}{{ s.price_suffix }}</span>
+    <div class="mt-10 md:mt-14 grid lg:grid-cols-[1.2fr_1fr] gap-4 md:gap-5">
+
+      <!-- Flagship: Technical Health Audit -->
+      <a href="{{ '/services/technical-health-audit' | relative_url }}/" data-ap-track="service" data-ap-category="industry-audit" class="apx-panel group relative flex flex-col justify-between p-6 md:p-8 rv">
+        <div class="relative z-[2]">
+          <div class="flex items-center gap-3">
+            <span class="inline-grid place-items-center w-11 h-11 rounded-xl bg-white/10 text-white">{% include ui/icon.html name="heart-pulse" class="w-[22px] h-[22px]" %}</span>
+            <span class="apx-eyebrow-light">Start here</span>
           </div>
-          <h3 class="mt-5 text-[17px] font-bold tracking-[-0.01em] text-ink leading-snug">{{ s.title }}</h3>
-          <p class="mt-1.5 text-sm leading-relaxed text-muted flex-1">{{ s.short_description }}</p>
-          <span class="mt-5 inline-flex items-center gap-1.5 text-accent font-semibold text-sm">View service <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
-        </a>
-        {% endif %}
-      {% endfor %}
+          <h3 class="mt-5 font-bold text-white tracking-[-0.01em] leading-[1.08] text-[clamp(1.6rem,2.2vw,2.2rem)]" style="text-wrap:balance">Technical Health Audit</h3>
+          <p class="mt-3 max-w-[46ch] text-[clamp(0.95rem,1.1vw,1.1rem)] leading-relaxed text-white/70">Five days inside your stack. We read the metadata, the automation and the integrations, then hand you a prioritised fix-list priced in euros, not estimates.</p>
+        </div>
+        <div class="relative z-[2] mt-6 flex flex-wrap items-baseline gap-x-6 gap-y-2">
+          <span class="text-white font-bold text-[clamp(1.5rem,2vw,1.85rem)] tabular-nums">&#8364;2,450</span>
+          <span class="text-white/55 text-sm font-medium">Fixed price &middot; 5 working days</span>
+          <span class="ml-auto inline-flex items-center gap-2 text-white font-semibold self-center">Book the audit <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
+        </div>
+      </a>
+
+      <!-- Right: 4 industry-relevant services -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
+        {% for surl in page.services %}
+          {%- assign s = all_services | where: "url", surl | first -%}
+          {% if s %}
+          <a href="{{ site.baseurl }}{{ s.url }}/" data-ap-track="service" data-ap-category="industry-{{ page.slug }}" class="apx-card group flex flex-col p-5">
+            <div class="flex items-start justify-between gap-3">
+              <span class="w-10 h-10 rounded-xl bg-accent-tint text-accent flex items-center justify-center shrink-0 transition-colors group-hover:bg-purple-gradient group-hover:text-white">{% include ui/icon.html name=s.icon class="w-5 h-5" %}</span>
+              <span class="text-[12.5px] font-semibold text-faint whitespace-nowrap pt-1">{{ s.price }}{{ s.price_suffix }}</span>
+            </div>
+            <h3 class="mt-4 text-[1.05rem] font-bold tracking-[-0.01em] text-ink leading-snug">{{ s.title }}</h3>
+            <p class="mt-1.5 text-[13.5px] leading-relaxed text-muted flex-1">{{ s.short_description }}</p>
+            <span class="mt-4 inline-flex items-center gap-1.5 text-accent font-semibold text-sm">View <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
+          </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+
     </div>
     <div class="mt-9 rv">
       <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-ghost">See all services</a>

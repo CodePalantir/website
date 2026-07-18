@@ -38,8 +38,8 @@ builds:
   - "Clean data feeding your merchandising and retention decisions"
 platforms: ["Salesforce", "HubSpot", "Shopify", "Stripe", "Klaviyo"]
 services:
-  - /services/technical-health-audit
   - /services/marketing-cloud
   - /services/custom-integration
   - /services/data-quality-check
+  - /services/workato
 ---
