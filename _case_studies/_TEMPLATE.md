@@ -3,7 +3,7 @@
 # ── Copy-me template for a new case study ────────────────────────────
 # 1. Copy this file to _case_studies/<url-slug>.md  (slug becomes /cases/<slug>/)
 # 2. Fill in every field below, delete `published: false`, set `order`.
-# 3. Keep `placeholder: true` until the client has approved the numbers —
+# 3. Keep `placeholder: true` until the client has approved the numbers , 
 #    it renders the "illustrative figures" disclaimer under the metrics.
 published: false
 layout: case
@@ -41,7 +41,7 @@ What the audit found, and how the fix-list was prioritised.
 
 ## What we shipped
 
-- Deliverable one — working, documented, owned by the client's team.
+- Deliverable one, working, documented, owned by the client's team.
 - Deliverable two.
 - Deliverable three.
 

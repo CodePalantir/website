@@ -1,7 +1,7 @@
 ---
 layout: service
 title: "GDPR Compliance Check"
-description: "We find the personal data your CRM shouldn't be holding — and the access patterns a regulator would ask about — before anyone else does."
+description: "We find the personal data your CRM shouldn't be holding, and the access patterns a regulator would ask about, before anyone else does."
 service_type: "Salesforce GDPR Compliance"
 category: "Audits"
 icon: "shield-alert"

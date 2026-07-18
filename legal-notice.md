@@ -5,7 +5,7 @@ description: "APX REVOPS LTD Legal Notice - Company information, registration de
 image: /assets/images/logos/APX_LOGO.png
 ---
 
-<!-- ── Hero — compact, same grid+glow ground as the rest of the site ── -->
+<!-- ── Hero, compact, same grid+glow ground as the rest of the site ── -->
 <section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid"></div>
   <div class="apx-hero-glow opacity-70"></div>
@@ -22,7 +22,7 @@ image: /assets/images/logos/APX_LOGO.png
   </div>
 </section>
 
-<!-- ── Content — clean cards on the warm ground ─────────────────── -->
+<!-- ── Content, clean cards on the warm ground ─────────────────── -->
 <section class="pt-6 md:pt-10 pb-20 md:pb-[7.5rem] px-6 bg-paper">
   <div class="max-w-content mx-auto">
 

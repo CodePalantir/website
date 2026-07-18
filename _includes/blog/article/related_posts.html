@@ -1,4 +1,4 @@
-<!-- RELATED POSTS — restored tile row, warm surfaces (now real links) -->
+<!-- RELATED POSTS, restored tile row, warm surfaces (now real links) -->
 {% assign same_cat = site.posts | where: "category", page.category | where_exp: "p", "p.url != page.url" %}
 {% assign other = site.posts | where_exp: "p", "p.url != page.url and p.category != page.category" %}
 {% assign related = same_cat | concat: other %}

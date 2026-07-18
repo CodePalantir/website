@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Services — Audits, Integration, Salesforce, HubSpot & Managed RevOps
+title: Services, Audits, Integration, Salesforce, HubSpot & Managed RevOps
 description: "Every APX engagement, scoped in writing and priced in euros: technical audits, outbound and enrichment infrastructure, integrations, Salesforce and HubSpot builds, and managed operations."
 image: /assets/images/logos/APX_LOGO.png
 ---
 
-<!-- HERO — compact, same warm atmosphere as the homepage -->
+<!-- HERO, compact, same warm atmosphere as the homepage -->
 <section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid"></div>
   <div class="apx-hero-glow opacity-80"></div>
@@ -16,24 +16,24 @@ image: /assets/images/logos/APX_LOGO.png
         Pick the work.<br class="hidden sm:block"> <span class="text-gradient">We make it stick.</span>
       </h1>
       <p class="mt-6 mx-auto max-w-[600px] text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted">
-        Audits, integrations, platform builds and managed operations — every engagement scoped in writing, priced in euros, and left documented for your team.
+        Audits, integrations, platform builds and managed operations, every engagement scoped in writing, priced in euros, and left documented for your team.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        {% include ui/cta.html label="Book the audit — €2,450" track="services-hero" no_icon=true class="w-full max-w-[340px] sm:w-auto" %}
+        {% include ui/cta.html label="Book the audit, €2,450" track="services-hero" no_icon=true class="w-full max-w-[340px] sm:w-auto" %}
         <a href="{{ site.cta.secondary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="services-hero" class="apx-btn apx-btn-ghost w-full max-w-[340px] sm:w-auto">Book a call</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- OFFERINGS — one calm ledger: category on the left, tiles on the right -->
+<!-- OFFERINGS, one calm ledger: category on the left, tiles on the right -->
 <section class="pt-10 md:pt-14 pb-20 md:pb-[7.5rem] px-6 bg-paper">
   <div class="max-w-wide mx-auto">
     <div class="space-y-16 md:space-y-20">
       {% for cat in site.data.services.categories %}
       {%- assign idx = forloop.index | prepend: "00" | slice: -2, 2 -%}
       {%- case cat.id -%}
-        {%- when "audits" -%}{%- assign cat_line = "Know exactly what's broken — before you spend a euro on building." -%}
+        {%- when "audits" -%}{%- assign cat_line = "Know exactly what's broken, before you spend a euro on building." -%}
         {%- when "outbound" -%}{%- assign cat_line = "Cold email infrastructure that actually reaches the inbox." -%}
         {%- when "enrichment" -%}{%- assign cat_line = "Records that fill, score and clean themselves." -%}
         {%- when "integration" -%}{%- assign cat_line = "Your tools on one data spine, talking automatically." -%}

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Insights – RevOps Engineering Notes from APX
-description: "Long-form notes on revenue operations engineering: data quality, architecture, forecasting and deployment — written by the APX team, from real systems."
+description: "Long-form notes on revenue operations engineering: data quality, architecture, forecasting and deployment, written by the APX team, from real systems."
 image: /assets/images/logos/APX_LOGO.png
 ---
 

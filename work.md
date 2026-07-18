@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Work — RevOps & Salesforce Case Studies
-description: "Selected APX engagements: Salesforce technical-debt remediation, lead-to-cash integration and CRM re-architecture — anonymised where clients ask, measured everywhere."
+title: Work, RevOps & Salesforce Case Studies
+description: "Selected APX engagements: Salesforce technical-debt remediation, lead-to-cash integration and CRM re-architecture, anonymised where clients ask, measured everywhere."
 image: /assets/images/logos/APX_LOGO.png
 permalink: /work/
 ---
 
-<!-- HERO — compact, same warm atmosphere as the services index -->
+<!-- HERO, compact, same warm atmosphere as the services index -->
 <section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid"></div>
   <div class="apx-hero-glow opacity-80"></div>
@@ -17,7 +17,7 @@ permalink: /work/
         Quiet engineering.<br class="hidden sm:block"> <span class="text-gradient">Numbers that hold.</span>
       </h1>
       <p class="mt-6 mx-auto max-w-[600px] text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted">
-        A selection of engagements — anonymised where clients ask, measured everywhere. Before and after, in plain figures.
+        A selection of engagements, anonymised where clients ask, measured everywhere. Before and after, in plain figures.
       </p>
     </div>
   </div>
@@ -45,7 +45,7 @@ permalink: /work/
           {% if lead %}
           <div class="mt-5 flex items-baseline gap-2.5">
             <span class="text-[1.9rem] leading-none font-bold tracking-[-0.02em] text-ink">{{ lead.after }}</span>
-            <span class="text-[13px] font-semibold text-faint leading-snug">{{ lead.label }} — from {{ lead.before }}</span>
+            <span class="text-[13px] font-semibold text-faint leading-snug">{{ lead.label }}, from {{ lead.before }}</span>
           </div>
           {% endif %}
           <p class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
@@ -57,7 +57,7 @@ permalink: /work/
     </div>
     <p class="mt-6 text-[13px] font-medium text-faint flex items-center justify-center gap-2 rv">
       {% include ui/icon.html name="info" class="w-3.5 h-3.5 shrink-0" %}
-      Representative engagements — placeholder figures shown while clients&#8217; final numbers are approved for publication.
+      Representative engagements, placeholder figures shown while clients&#8217; final numbers are approved for publication.
     </p>
   </div>
 </section>

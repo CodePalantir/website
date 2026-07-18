@@ -45,7 +45,7 @@ layout: default
 }
 </script>
 
-<!-- HERO — compact, warm, same atmosphere as the service pages -->
+<!-- HERO, compact, warm, same atmosphere as the service pages -->
 <section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid opacity-70"></div>
   <div class="relative z-[4] px-6 pt-32 md:pt-40 pb-14 md:pb-20">
@@ -63,7 +63,7 @@ layout: default
       <div class="mt-10 md:mt-12 flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-16">
         <!-- Left: identity -->
         <div class="max-w-[680px]">
-          {% if page.category %}<span class="apx-eyebrow">Case study — {{ page.category }}</span>{% endif %}
+          {% if page.category %}<span class="apx-eyebrow">Case study, {{ page.category }}</span>{% endif %}
           <h1 class="mt-4 font-bold text-ink tracking-[-0.025em] leading-[1.08] text-[clamp(2.125rem,4.6vw,3.25rem)]" style="text-wrap:balance">{{ page.title }}</h1>
           {% if page.client %}
           <p class="mt-5 apx-label"><span class="idx">Client</span>{{ page.client }}</p>
@@ -72,7 +72,7 @@ layout: default
           <p class="mt-5 text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted">{{ page.summary }}</p>
           {% endif %}
           <div class="mt-9 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
-            {% include ui/cta.html label="Book the audit — €2,450" track="case-hero" no_icon=true %}
+            {% include ui/cta.html label="Book the audit, €2,450" track="case-hero" no_icon=true %}
             <a href="{{ site.cta.secondary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="case-hero" class="apx-btn apx-btn-ghost">Book a call</a>
           </div>
         </div>
@@ -98,7 +98,7 @@ layout: default
 </section>
 
 {% if page.metrics %}
-<!-- METRICS — before → after band -->
+<!-- METRICS, before → after band -->
 <section class="px-6 pt-2 pb-14 md:pb-20 bg-paper">
   <div class="max-w-wide mx-auto rv">
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -124,7 +124,7 @@ layout: default
     {% if page.placeholder %}
     <p class="mt-4 text-[13px] font-medium text-faint flex items-center gap-2">
       {% include ui/icon.html name="info" class="w-3.5 h-3.5 shrink-0" %}
-      Representative engagement — placeholder figures shown while the client&#8217;s final numbers are being approved for publication.
+      Representative engagement, placeholder figures shown while the client&#8217;s final numbers are being approved for publication.
     </p>
     {% endif %}
   </div>
@@ -142,7 +142,7 @@ layout: default
 </section>
 {% endif %}
 
-{%- comment -%} Services used — resolved from _data/services.yml by slug. {%- endcomment -%}
+{%- comment -%} Services used, resolved from _data/services.yml by slug. {%- endcomment -%}
 {% assign used = "" | split: "" %}
 {% for slug in page.services %}
   {% capture s_url %}/services/{{ slug }}{% endcapture %}

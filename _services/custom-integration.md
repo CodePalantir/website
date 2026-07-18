@@ -1,7 +1,7 @@
 ---
 layout: service
 title: "System Integrations"
-description: "Salesforce wired to your ERP, marketing stack, or internal tools with robust APIs and proven patterns — so data moves once, correctly, and nobody re-keys anything."
+description: "Salesforce wired to your ERP, marketing stack, or internal tools with robust APIs and proven patterns, so data moves once, correctly, and nobody re-keys anything."
 service_type: "Salesforce Integration"
 category: "Integration"
 icon: "plug"

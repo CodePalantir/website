@@ -5,7 +5,7 @@ description: "RevShorts are 400 to 500 word reads on a single RevOps idea: one p
 image: /assets/images/logos/APX_LOGO.png
 ---
 
-<!-- REVSHORTS HERO — restored left-aligned hero on the warm ground -->
+<!-- REVSHORTS HERO, restored left-aligned hero on the warm ground -->
 <section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid"></div>
   <div class="apx-hero-glow"></div>
@@ -20,7 +20,7 @@ image: /assets/images/logos/APX_LOGO.png
   </div>
 </section>
 
-<!-- REVSHORTS GRID — restored card grid, warm surfaces -->
+<!-- REVSHORTS GRID, restored card grid, warm surfaces -->
 <section class="pb-16 md:pb-24 px-4 sm:px-6 bg-paper">
   <div class="max-w-wide mx-auto">
     {% assign shorts = site.revshorts | sort: 'date' | reverse %}

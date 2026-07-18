@@ -6,10 +6,10 @@ layout: default
   Renders every service entirely from front matter:
     title, description, category, icon, price (numeric, for schema),
     price_display / price_suffix / price_note, headline, capabilities[],
-    calendly, cta — plus an optional Markdown body styled as .prose.
+    calendly, cta, plus an optional Markdown body styled as .prose.
 {%- endcomment -%}
 
-{%- comment -%} Booking link: front matter may carry a literal liquid string — fall back safely. {%- endcomment -%}
+{%- comment -%} Booking link: front matter may carry a literal liquid string, fall back safely. {%- endcomment -%}
 {%- assign book_url = page.calendly -%}
 {%- if book_url == nil or book_url == "" or book_url contains "site.cta" -%}
   {%- assign book_url = site.cta.secondary_url -%}
@@ -79,7 +79,7 @@ layout: default
 }
 </script>
 
-<!-- HERO — compact, warm, same atmosphere as the homepage -->
+<!-- HERO, compact, warm, same atmosphere as the homepage -->
 <section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid opacity-70"></div>
   <div class="relative z-[4] px-6 pt-32 md:pt-40 pb-14 md:pb-20">
@@ -127,7 +127,7 @@ layout: default
             <p class="mt-3 text-[2rem] leading-none font-bold tracking-[-0.02em] text-ink">
               {{ price_text }}{% if page.price_suffix %}<span class="text-lg font-semibold text-muted">{{ page.price_suffix }}</span>{% endif %}
             </p>
-            <p class="mt-2.5 text-sm leading-relaxed text-muted">{{ page.price_note | default: "Scoped and priced before we start — no surprises later." }}</p>
+            <p class="mt-2.5 text-sm leading-relaxed text-muted">{{ page.price_note | default: "Scoped and priced before we start, no surprises later." }}</p>
             <hr class="apx-rule my-5">
             <ul class="space-y-2.5 text-sm text-muted">
               <li class="flex items-center gap-2.5">{% include ui/icon.html name="check" class="w-4 h-4 text-accent shrink-0" %}Fixed scope, in writing</li>
@@ -149,7 +149,7 @@ layout: default
     <div class="lg:sticky lg:top-32 rv">
       <span class="apx-eyebrow">What you get</span>
       <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(1.875rem,3.2vw,2.625rem)]" style="text-wrap:balance">{{ page.headline | default: "Engineered, not clicked together." }}</h2>
-      <p class="mt-4 max-w-[440px] text-lg leading-relaxed text-muted">Every item below is delivered working, documented, and owned by your team — not left as a slide in a deck.</p>
+      <p class="mt-4 max-w-[440px] text-lg leading-relaxed text-muted">Every item below is delivered working, documented, and owned by your team, not left as a slide in a deck.</p>
     </div>
     <div class="divide-y divide-line border-y border-line rv">
       {% for cap in page.capabilities %}

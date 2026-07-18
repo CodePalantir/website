@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About APX – The Engineers Behind Your Revenue Engine
-description: "APX is a senior, distributed team of engineers across Europe who architect, integrate and run revenue systems — marketing, sales and service — with software-engineering discipline."
+description: "APX is a senior, distributed team of engineers across Europe who architect, integrate and run revenue systems, marketing, sales and service, with software-engineering discipline."
 image: /assets/images/logos/APX_LOGO.png
 ---
 
@@ -36,7 +36,7 @@ image: /assets/images/logos/APX_LOGO.png
 }
 </script>
 
-<!-- ── 1 · Hero — same grid+glow ground as the homepage ─────────── -->
+<!-- ── 1 · Hero, same grid+glow ground as the homepage ─────────── -->
 <section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid"></div>
   <div class="apx-hero-glow"></div>
@@ -48,7 +48,7 @@ image: /assets/images/logos/APX_LOGO.png
         Engineers, by conviction.<br class="hidden sm:block"> <span class="text-gradient">For the whole revenue engine.</span>
       </h1>
       <p class="mt-6 mx-auto max-w-[620px] text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted">
-        APX is a small, senior team across Europe. We bring software-engineering discipline to revenue operations — architecting, integrating and running the systems behind your marketing, sales and service.
+        APX is a small, senior team across Europe. We bring software-engineering discipline to revenue operations, architecting, integrating and running the systems behind your marketing, sales and service.
       </p>
     </div>
   </div>
@@ -66,20 +66,20 @@ image: /assets/images/logos/APX_LOGO.png
     <div class="md:col-span-7 md:pt-2 rv">
       <div class="space-y-6 text-[17px] md:text-lg leading-relaxed text-muted max-w-[600px]">
         <p>
-          Every revenue team we'd ever met had been sold a brilliant platform — and handed a fragile setup. Quick configuration, no tests, no documentation, and a quiet hope that nothing important would break. We kept getting called in after it did.
+          Every revenue team we'd ever met had been sold a brilliant platform, and handed a fragile setup. Quick configuration, no tests, no documentation, and a quiet hope that nothing important would break. We kept getting called in after it did.
         </p>
         <p>
-          So we started APX to close that gap. We treat revenue systems the way good software is treated: versioned, tested, documented, reviewed. Not just the CRM — the whole engine, from the first marketing touch to the renewal, and every integration in between.
+          So we started APX to close that gap. We treat revenue systems the way good software is treated: versioned, tested, documented, reviewed. Not just the CRM, the whole engine, from the first marketing touch to the renewal, and every integration in between.
         </p>
         <p>
-          And we hold one honest belief: technical debt is real, normal and payable. No shame, no scare tactics, no big-bang rebuild. Just small, careful steps — visible, priced in euros, and made to be kept.
+          And we hold one honest belief: technical debt is real, normal and payable. No shame, no scare tactics, no big-bang rebuild. Just small, careful steps, visible, priced in euros, and made to be kept.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── 3 · Numbers band — honest anchors ────────────────────────── -->
+<!-- ── 3 · Numbers band, honest anchors ────────────────────────── -->
 <!-- TODO: replace with real metrics -->
 <section class="apx-section px-6 bg-surface border-y border-line">
   <div class="max-w-wide mx-auto">
@@ -94,7 +94,7 @@ image: /assets/images/logos/APX_LOGO.png
       </div>
       <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-6 rv">
         <div class="font-bold text-ink tracking-[-0.02em] text-[clamp(2.4rem,4vw,3.5rem)] leading-none">7</div>
-        <p class="mt-3 text-[15px] leading-snug font-medium text-muted">Specialists — architecture, integration, automation, operations.</p>
+        <p class="mt-3 text-[15px] leading-snug font-medium text-muted">Specialists, architecture, integration, automation, operations.</p>
       </div>
       <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-6 rv">
         <div class="font-bold text-ink tracking-[-0.02em] text-[clamp(2.4rem,4vw,3.5rem)] leading-none">EU</div>
@@ -167,13 +167,13 @@ image: /assets/images/logos/APX_LOGO.png
         </div>
         <h3 class="mt-4 text-[19px] font-bold tracking-[-0.01em] text-ink">You?</h3>
         <div class="mt-0.5 text-[14.5px] font-semibold text-gradient">Senior Engineer</div>
-        <p class="mt-1.5 text-[14.5px] leading-snug text-faint">Say hello — we read everything</p>
+        <p class="mt-1.5 text-[14.5px] leading-snug text-faint">Say hello, we read everything</p>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ── 5 · Remote-first — Europe network map ────────────────────── -->
+<!-- ── 5 · Remote-first, Europe network map ────────────────────── -->
 <section id="network" class="apx-section px-6 bg-paper">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[720px] mx-auto text-center rv">
@@ -186,7 +186,7 @@ image: /assets/images/logos/APX_LOGO.png
 
     <div class="mt-12 md:mt-14 max-w-[960px] mx-auto rv">
       <div class="apx-map-wrap">
-        <img src="{{ '/assets/images/page/euro.svg' | relative_url }}" alt="Map of Europe marking the APX team's locations — Germany, Poland, Romania, Greece and Cyprus" loading="lazy" decoding="async" width="2816" height="1536">
+        <img src="{{ '/assets/images/page/euro.svg' | relative_url }}" alt="Map of Europe marking the APX team's locations, Germany, Poland, Romania, Greece and Cyprus" loading="lazy" decoding="async" width="2816" height="1536">
         <!-- Hamburg -->
         <span class="apx-map-dot" style="top:51%; left:39%;" aria-hidden="true"></span>
         <!-- Munich -->
@@ -204,7 +204,7 @@ image: /assets/images/logos/APX_LOGO.png
   </div>
 </section>
 
-<!-- ── 6 · How we work — principles row ─────────────────────────── -->
+<!-- ── 6 · How we work, principles row ─────────────────────────── -->
 <section class="apx-section px-6 bg-surface border-t border-line">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[720px] mx-auto text-center rv">
@@ -226,7 +226,7 @@ image: /assets/images/logos/APX_LOGO.png
       <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-7 rv">
         {% include ui/icon.html name="file-signature" class="w-6 h-6 text-accent" %}
         <h3 class="mt-4 text-[19px] font-bold tracking-[-0.01em] text-ink">Fixed scope, fixed price</h3>
-        <p class="mt-2.5 text-[15.5px] leading-relaxed text-muted">Priced in euros before we start. If scope grows, you hear it from us first — not the invoice.</p>
+        <p class="mt-2.5 text-[15.5px] leading-relaxed text-muted">Priced in euros before we start. If scope grows, you hear it from us first, not the invoice.</p>
       </div>
       <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-7 rv">
         {% include ui/icon.html name="git-merge" class="w-6 h-6 text-accent" %}
@@ -265,7 +265,7 @@ image: /assets/images/logos/APX_LOGO.png
   }
   .group:hover .apx-team-join { border-color: var(--color-accent); background: var(--color-accent-tint); }
 
-  /* Europe network map — themed landmass + brand-purple location dots */
+  /* Europe network map, themed landmass + brand-purple location dots */
   .apx-map-wrap { position: relative; }
   .apx-map-wrap img { width: 100%; height: auto; display: block; }
   .apx-map-dot {
