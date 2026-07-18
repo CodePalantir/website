@@ -236,40 +236,65 @@
   /* Hero atmosphere — fine-line grid that fades out, plus a soft
      brand-purple glow behind the headline. Absolutely positioned
      inside a relative hero section. */
-  .apx-hero-grid {
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(74, 0, 224, .075) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(74, 0, 224, .075) 1px, transparent 1px);
-    background-size: 54px 54px;
-    -webkit-mask-image: radial-gradient(110% 90% at 50% 32%, #000 0%, rgba(0, 0, 0, .55) 46%, transparent 78%);
-    mask-image: radial-gradient(110% 90% at 50% 32%, #000 0%, rgba(0, 0, 0, .55) 46%, transparent 78%);
-    pointer-events: none;
-    /* the grid slowly drifts — a living blueprint, not a static texture */
-    animation: apx-grid-drift 28s linear infinite;
-  }
-  @keyframes apx-grid-drift {
-    from { background-position: 0 0, 0 0; }
-    to   { background-position: 54px 54px, 54px 54px; }
-  }
+  /* Hero backdrop: a STATIC faint grid, revealed by a slowly-moving gradient
+     cloud (ambient) and a cloud that follows the pointer. --apx-cx/cy is the
+     ambient cloud (keyframe-animated; @property lets it interpolate);
+     --apx-mx/my is the pointer cloud (eased + set by JS in hero.html). */
+  @property --apx-cx { syntax: "<percentage>"; inherits: false; initial-value: 30%; }
+  @property --apx-cy { syntax: "<percentage>"; inherits: false; initial-value: 40%; }
+
+  .apx-hero-grid,
+  .apx-hero-reveal,
   .apx-hero-glow {
     position: absolute;
-    inset: -8%;
-    background:
-      radial-gradient(46% 38% at 50% 46%, rgba(142, 45, 226, .16) 0%, transparent 70%),
-      radial-gradient(30% 26% at 66% 30%, rgba(74, 0, 224, .12) 0%, transparent 70%),
-      radial-gradient(26% 22% at 32% 62%, rgba(142, 45, 226, .10) 0%, transparent 70%);
+    inset: 0;
     pointer-events: none;
-    /* the purple aura slowly drifts + breathes for ambient life */
-    animation: apx-glow-drift 16s ease-in-out infinite;
-    will-change: transform;
   }
-  @keyframes apx-glow-drift {
-    0%   { transform: translate3d(-1.5%, -1%, 0) scale(1); }
-    33%  { transform: translate3d(2%, 1.5%, 0) scale(1.06); }
-    66%  { transform: translate3d(-1%, 2%, 0) scale(1.03); }
-    100% { transform: translate3d(-1.5%, -1%, 0) scale(1); }
+  .apx-hero-grid,
+  .apx-hero-reveal {
+    background-size: 54px 54px;
+    background-position: center;
+  }
+  /* faint base grid, barely there, always on */
+  .apx-hero-grid {
+    background-image:
+      linear-gradient(rgba(74, 0, 224, .03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(74, 0, 224, .03) 1px, transparent 1px);
+    -webkit-mask-image: radial-gradient(125% 105% at 50% 28%, #000 0%, transparent 82%);
+    mask-image: radial-gradient(125% 105% at 50% 28%, #000 0%, transparent 82%);
+  }
+  /* brighter grid, only visible where a cloud reveals it */
+  .apx-hero-reveal {
+    background-image:
+      linear-gradient(rgba(74, 0, 224, .16) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(74, 0, 224, .16) 1px, transparent 1px);
+  }
+  .apx-hero-reveal.is-ambient {
+    -webkit-mask-image: radial-gradient(34vmax 30vmax at var(--apx-cx) var(--apx-cy), #000 0%, rgba(0,0,0,.35) 44%, transparent 72%);
+    mask-image: radial-gradient(34vmax 30vmax at var(--apx-cx) var(--apx-cy), #000 0%, rgba(0,0,0,.35) 44%, transparent 72%);
+    animation: apx-cloud 22s ease-in-out infinite;
+  }
+  .apx-hero-reveal.is-pointer {
+    -webkit-mask-image: radial-gradient(30vmax 30vmax at var(--apx-mx, 50%) var(--apx-my, -40%), #000 0%, transparent 62%);
+    mask-image: radial-gradient(30vmax 30vmax at var(--apx-mx, 50%) var(--apx-my, -40%), #000 0%, transparent 62%);
+  }
+  /* the visible colour cloud (ambient + pointer) so the revealed grid reads
+     as sitting on a soft purple cloud */
+  .apx-hero-glow {
+    background:
+      radial-gradient(30vmax 26vmax at var(--apx-cx) var(--apx-cy), rgba(142, 45, 226, .15), transparent 66%),
+      radial-gradient(24vmax 24vmax at var(--apx-mx, 50%) var(--apx-my, -40%), rgba(142, 45, 226, .13), transparent 62%);
+    animation: apx-cloud 22s ease-in-out infinite;
+  }
+  @keyframes apx-cloud {
+    0%   { --apx-cx: 28%; --apx-cy: 36%; }
+    28%  { --apx-cx: 66%; --apx-cy: 28%; }
+    52%  { --apx-cx: 52%; --apx-cy: 64%; }
+    78%  { --apx-cx: 34%; --apx-cy: 50%; }
+    100% { --apx-cx: 28%; --apx-cy: 36%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .apx-hero-reveal.is-ambient, .apx-hero-glow { animation: none; }
   }
   @media (prefers-reduced-motion: reduce) {
     .apx-hero-grid, .apx-hero-glow { animation: none; }

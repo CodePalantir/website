@@ -1,11 +1,13 @@
 {%- comment -%}
-  Homepage hero, animated fading grid + drifting brand glow. Fills the
-  viewport and the type scales with it (vw-driven clamp, generous cap).
-  No pricing, no em dashes.
+  Homepage hero. Static faint grid revealed by a moving gradient cloud
+  (ambient) + a cloud that follows the pointer. Fills the viewport, type
+  scales with it. No pricing, no em dashes.
 {%- endcomment -%}
-<section class="relative flex flex-col min-h-screen overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
-  <div class="apx-hero-grid"></div>
+<section id="apx-hero" class="relative flex flex-col min-h-screen overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-glow"></div>
+  <div class="apx-hero-grid"></div>
+  <div class="apx-hero-reveal is-ambient"></div>
+  <div class="apx-hero-reveal is-pointer"></div>
 
   <div class="relative z-[4] flex-1 flex items-center justify-center text-center px-6 pt-32 pb-20">
     <div class="w-full max-w-[min(90rem,94vw)] mx-auto">
@@ -22,3 +24,29 @@
     </div>
   </div>
 </section>
+
+<script>
+(function () {
+  var hero = document.getElementById('apx-hero');
+  if (!hero) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  // pointer cloud, eased toward the cursor; starts off-screen (no reveal)
+  var tx = 50, ty = -40, cx = 50, cy = -40, raf = null;
+  function tick() {
+    cx += (tx - cx) * 0.12; cy += (ty - cy) * 0.12;
+    hero.style.setProperty('--apx-mx', cx.toFixed(2) + '%');
+    hero.style.setProperty('--apx-my', cy.toFixed(2) + '%');
+    if (Math.abs(tx - cx) > 0.15 || Math.abs(ty - cy) > 0.15) { raf = requestAnimationFrame(tick); }
+    else { raf = null; }
+  }
+  function move(e) {
+    var r = hero.getBoundingClientRect();
+    tx = ((e.clientX - r.left) / r.width) * 100;
+    ty = ((e.clientY - r.top) / r.height) * 100;
+    if (!raf) raf = requestAnimationFrame(tick);
+  }
+  function leave() { tx = 50; ty = -40; if (!raf) raf = requestAnimationFrame(tick); }
+  hero.addEventListener('pointermove', move, { passive: true });
+  hero.addEventListener('pointerleave', leave, { passive: true });
+})();
+</script>
