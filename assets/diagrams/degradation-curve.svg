@@ -1,0 +1,28 @@
+<svg viewBox="0 0 620 340" xmlns="http://www.w3.org/2000/svg" font-family="Plus Jakarta Sans, sans-serif">
+<defs>
+<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8E2DE2" stop-opacity="0.35"/><stop offset="1" stop-color="#8E2DE2" stop-opacity="0.02"/></linearGradient>
+<linearGradient id="curve" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8E2DE2"/><stop offset="1" stop-color="#4A00E0"/></linearGradient>
+</defs>
+<rect x="50" y="24" width="220.0" height="270" fill="#ecfdf5" fill-opacity="0.55"/>
+<rect x="270.0" y="24" width="220.0" height="270" fill="#fffbeb" fill-opacity="0.55"/>
+<rect x="490.0" y="24" width="109.99999999999997" height="270" fill="#fff1f2" fill-opacity="0.55"/>
+<line x1="50" y1="60" x2="600" y2="60" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="50" y1="139" x2="600" y2="139" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="50" y1="218" x2="600" y2="218" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="50" y1="272" x2="600" y2="272" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="50" y1="218" x2="600" y2="218" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="42" y="222" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#64748b">0</text>
+<text x="42" y="64" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#64748b">+</text>
+<text x="42" y="276" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#64748b">−</text>
+<path d="M 50 68 C 215.0 62, 215.0 90, 352.5 138 C 424.0 178, 470.0 178, 490.0 218 C 512.0 256, 570 270, 600 274 L 600 218 L 50 218 Z" fill="url(#area)"/>
+<path d="M 50 68 C 215.0 62, 215.0 90, 352.5 138 C 424.0 178, 470.0 178, 490.0 218 C 512.0 256, 570 270, 600 274" fill="none" stroke="url(#curve)" stroke-width="3" stroke-linecap="round"/>
+<circle cx="490.0" cy="218" r="5" fill="#0f172a"/><circle cx="490.0" cy="218" r="9" fill="#0f172a" opacity="0.15"/>
+<line x1="490.0" y1="218" x2="504.0" y2="180" stroke="#0f172a" stroke-width="1"/>
+<text x="508.0" y="174" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" fill="#0f172a">net-negative</text>
+<text x="508.0" y="188" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#64748b">≈ year 5</text>
+<text x="105.0" y="318" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" font-weight="700" fill="#64748b">Y1</text>
+<text x="215.0" y="318" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" font-weight="700" fill="#64748b">Y2</text>
+<text x="325.0" y="318" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" font-weight="700" fill="#64748b">Y3</text>
+<text x="435.0" y="318" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" font-weight="700" fill="#64748b">Y4</text>
+<text x="545.0" y="318" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" font-weight="700" fill="#64748b">Y5+</text>
+</svg>

@@ -1,0 +1,25 @@
+{%- comment -%}
+  Primary/secondary call-to-action button, wired to the central config in
+  _config.yml (site.cta.*). Change a link there and every CTA updates.
+
+  Usage:
+    {% include ui/cta.html %}                         → primary audit CTA, default label
+    {% include ui/cta.html style="ghost" %}           → secondary "Book a Call"
+    {% include ui/cta.html label="Scope a sprint" %}  → primary, custom label
+    {% include ui/cta.html track="hero" %}            → sets Fathom data-ap-value
+    {% include ui/cta.html class="w-full" %}          → extra classes
+{%- endcomment -%}
+{%- assign style = include.style | default: "primary" -%}
+{%- if style == "ghost" -%}
+  {%- assign href = include.href | default: site.cta.secondary_url -%}
+  {%- assign label = include.label | default: site.cta.secondary_label -%}
+  {%- assign btn_class = "apx-btn apx-btn-ghost" -%}
+{%- else -%}
+  {%- assign href = include.href | default: site.cta.primary_url -%}
+  {%- assign label = include.label | default: site.cta.primary_label -%}
+  {%- assign btn_class = "apx-btn apx-btn-primary" -%}
+{%- endif -%}
+<a href="{{ href }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="{{ include.track | default: 'cta' }}" class="{{ btn_class }} {{ include.class }}">
+  {{ label }}
+  {%- unless include.no_icon -%}{% include ui/icon.html name="arrow-right" class="w-[18px] h-[18px]" %}{%- endunless -%}
+</a>

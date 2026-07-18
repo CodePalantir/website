@@ -93,6 +93,115 @@
 
 
 
+/* ─────────────────────────────────────────────────────────────
+   APX design-system components. One canonical class per element so
+   hover/focus language is identical everywhere (low cognitive load),
+   and the purple accent stays scarce (≤ one gradient per screenful).
+   ───────────────────────────────────────────────────────────── */
+@layer components {
+
+  /* Section shell — the single vertical rhythm for every marketing section */
+  .apx-section {
+    padding-top: var(--spacing-section-sm);
+    padding-bottom: var(--spacing-section-sm);
+  }
+  @media (min-width: 768px) {
+    .apx-section { padding-top: var(--spacing-section); padding-bottom: var(--spacing-section); }
+  }
+
+  /* Eyebrow — the connective label above every section header */
+  .apx-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #8E2DE2;
+  }
+  .apx-eyebrow::before {
+    content: "";
+    width: 1.5rem;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.5;
+  }
+
+  /* Buttons — primary is the ONLY gradient control; ghost is the neutral pair */
+  .apx-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.6rem;
+    border-radius: var(--radius-control);
+    font-weight: 700;
+    font-size: 0.975rem;
+    line-height: 1;
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, border-color .2s ease, color .2s ease, opacity .2s ease;
+    cursor: pointer;
+  }
+  .apx-btn-primary {
+    color: #fff;
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+    box-shadow: 0 18px 40px -18px rgba(74, 0, 224, 0.55);
+  }
+  .apx-btn-primary:hover { opacity: 0.94; box-shadow: 0 22px 48px -18px rgba(74, 0, 224, 0.65); }
+  .apx-btn-ghost {
+    color: #334155;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+  }
+  .apx-btn-ghost:hover { border-color: #e9d5ff; color: #6b21a8; background: #faf5ff; }
+  .apx-btn .apx-icon { transition: transform .2s ease; }
+  .apx-btn:hover .apx-icon { transform: translateX(3px); }
+
+  /* Card — service / case / post cards share one geometry + one hover */
+  .apx-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-card);
+    padding: 1.75rem;
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+  .apx-card:hover {
+    border-color: #e9d5ff;
+    box-shadow: 0 24px 48px -28px rgba(74, 0, 224, 0.25);
+    transform: translateY(-2px);
+  }
+
+  /* Dark "engineering instrument panel" — the halo device, tokenised */
+  .apx-panel {
+    position: relative;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--color-ink-line);
+    background: linear-gradient(180deg, var(--color-ink-900) 0%, var(--color-ink-800) 100%);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.07), 0 32px 64px -28px rgba(15,23,42,.45), 0 16px 32px -16px rgba(74,0,224,.22);
+    color: #cbd5e1;
+  }
+
+  /* Restrained status pulse (hero eyebrow dot, "1 FLAGGED"). Motion off = static. */
+  .apx-pulse { animation: apx-pulse 2.4s cubic-bezier(.4,0,.6,1) infinite; }
+  @keyframes apx-pulse { 0%,100% { opacity: 1; } 50% { opacity: .45; } }
+  @media (prefers-reduced-motion: reduce) { .apx-pulse { animation: none; } }
+
+  /* Icon chip — the small purple square behind a feature icon */
+  .apx-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.65rem;
+    background: #faf5ff;
+    color: #7c3aed;
+    transition: background-color .2s ease, color .2s ease;
+  }
+  .group:hover .apx-chip { background: #7c3aed; color: #fff; }
+}
+
 /* Map Image Styles */
 .map-container {
     position: relative;

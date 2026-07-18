@@ -1,0 +1,28 @@
+{%- comment -%}
+  The closing band. Every page ends here — same confident, de-risked offer,
+  so whatever the visitor read, they exit on an identical low-commitment
+  close (peak-end rule). Copy overridable via include params.
+{%- endcomment -%}
+<section class="apx-section px-4 sm:px-6">
+  <div class="max-w-wide mx-auto">
+    <div class="apx-panel overflow-hidden px-6 py-14 sm:px-12 sm:py-16 md:py-20">
+      <div class="absolute pointer-events-none" style="inset:0;background:radial-gradient(600px 300px at 80% 20%, rgba(142,45,226,.18), transparent 70%)"></div>
+      <div class="relative max-w-3xl">
+        {% include ui/eyebrow.html text=include.eyebrow class="text-purple-300" %}
+        <h2 class="mt-5 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.05]">
+          {{ include.title | default: "Not sure it's worth it? Start with the audit." }}
+        </h2>
+        <p class="mt-5 text-lg text-slate-300 leading-relaxed max-w-2xl">
+          {{ include.text | default: "Five working days, one fixed price, a prioritised fix-list quantified in euros. No retainer, no further commitment — you keep the report either way." }}
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          {% include ui/cta.html track="cta-band" %}
+          <span class="inline-flex items-center gap-2 text-sm font-mono text-slate-400 px-1 self-center">
+            {% include ui/icon.html name="check" class="w-4 h-4 text-emerald-400" %}
+            Fixed price · 5 days · no further commitment
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

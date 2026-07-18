@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Salesforce Technical Experts
-description: "Salesforce experts delivering health audits, custom development, integrations, and managed support. We transform your CRM into a revenue engine."
-image: /assets/images/logos/APEX-PALANTIR_LARGE.png
+title: APX. RevOps Technology Agency – Engineering Revenue Systems
+description: "APX is a RevOps technology agency. We architect, integrate and run the systems your revenue engine depends on — from first touch to renewal, on the stack you already run."
+image: /assets/images/logos/APX_LOGO.png
 ---
 
-{% include home/hero.html %}
+{% include sections/hero.html %}
 {% include shared/logo_strip.html %}
-{% include shared/services.html %}
-{% include home/crm_lifecycle.html %}
-{% include home/method.html %}
-{% include home/warnings.html %}
-{% include home/debt_hook.html %}
-{% include home/about_us_home.html %}
+{% include root/diagnostics.html %}
+{% include sections/lifecycle.html %}
+{% include root/cross-layer.html %}
+{% include root/degradation.html %}
+{% include root/services.html %}
+{% include root/stacks.html %}
+{% include sections/cta-band.html eyebrow="Start here" %}

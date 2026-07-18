@@ -1,0 +1,20 @@
+{%- comment -%}
+  The RevOps lifecycle. The Möbius diagram is externalised to
+  /assets/diagrams/lifecycle-mobius.svg (lazy <img>) instead of ~65 KB of
+  inline <path> data — cacheable across pages, and it survives JS-off.
+{%- endcomment -%}
+<section id="lifecycle" class="apx-section px-4 sm:px-6 bg-white border-t border-slate-100">
+  <div class="max-w-wide mx-auto">
+    {% include ui/eyebrow.html text="The RevOps lifecycle" %}
+    <div class="mt-5 mb-10 max-w-2xl">
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-[1.08] tracking-tight text-slate-900">One revenue engine.<br/>Fully mapped<span class="text-gradient">.</span></h2>
+      <p class="text-slate-600 mt-4 text-lg leading-relaxed" style="text-wrap:balance">Seven phases, from first touch to renewal. We engineer every one of them — and the integration, data and custom-build layers underneath that hold them together. Tools change. The architecture doesn't.</p>
+    </div>
+
+    <figure class="m-0">
+      <img src="{{ '/assets/diagrams/lifecycle-mobius.svg' | relative_url }}"
+           alt="The RevOps lifecycle as one continuous loop of seven phases: Attract & Demand Gen, Prospecting & Outbound, Lead Management, Selling & Pipeline, Quote-to-Cash, Onboarding & Success, Renewal & Expansion."
+           class="block w-full h-auto" loading="lazy" decoding="async" width="1180" height="324">
+    </figure>
+  </div>
+</section>

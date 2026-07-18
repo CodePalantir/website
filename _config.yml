@@ -6,13 +6,38 @@ baseurl: ""
 # Author defaults for SEO
 author:
   name: APX Team
-  twitter: apexpalantir # Update with your Twitter handle
+  twitter: apxrevops
 
 # Social profiles for SEO
 social:
   name: APX.
   links:
-    - https://www.linkedin.com/company/apexpalantir/
+    - https://www.linkedin.com/company/apx-revops/
+
+# ── Central CTA + contact config ─────────────────────────────
+# Every call-to-action, phone, and email on the site reads from here.
+# Change a link in ONE place and it updates everywhere. Replace the
+# Calendly placeholders below with the live booking links when ready.
+cta:
+  # Primary conversion across the whole site: the fixed-price audit.
+  primary_url: "https://calendly.com/apx-revops/audit"    # TODO: replace with live audit booking link
+  primary_label: "Book the €2,450 Audit"
+  primary_short: "Book the Audit"
+  # Lower-commitment intro call (secondary / ghost button).
+  secondary_url: "https://calendly.com/apx-revops/intro"  # TODO: replace with live intro-call link
+  secondary_label: "Book a Call"
+
+contact:
+  email: "support@apx-revops.com"
+  phone_display: "+49 402 2632 0690"
+  phone_href: "tel:+4940226320690"
+  linkedin: "https://www.linkedin.com/company/apx-revops/"
+
+# Company / legal identity
+company:
+  legal_name: "APX REVOPS LTD"
+  reg: "HE490307"
+  address: "Gladstonos 16, 8046 Paphos, Cyprus"
 
 # Clean URL structure for blog posts
 permalink: /blog/:title/

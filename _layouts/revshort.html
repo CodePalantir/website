@@ -64,7 +64,7 @@ layout: default
         <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-black hover:text-white transition-all">{% include ui/icon.html name="twitter" class="w-4 h-4" %}</a>
         <button onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.classList.add('bg-green-500','text-white'); setTimeout(()=>{this.classList.remove('bg-green-500','text-white');},1500);" class="w-9 h-9 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-green-500 hover:text-white transition-all">{% include ui/icon.html name="link" class="w-4 h-4" %}</button>
       </div>
-      <a href="https://calendly.com/d/ctr7-n87-4hw/salesforce-technical-health-audit" class="inline-flex items-center gap-2 font-mono text-sm font-bold text-purple-600 hover:text-purple-700">book the €2,450 audit {% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</a>
+      <a href="{{ site.cta.primary_url }}" class="inline-flex items-center gap-2 font-mono text-sm font-bold text-purple-600 hover:text-purple-700">book the €2,450 audit {% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</a>
     </div>
 
     <!-- More revshorts -->

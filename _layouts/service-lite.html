@@ -33,7 +33,7 @@ layout: default
       <div class="shrink-0 rounded-2xl border border-slate-100 bg-slate-50 p-6 md:w-56">
         <p class="text-2xl font-black text-slate-900 tracking-tight">{{ page.price | default: "Custom Quote" }}{% if page.price_suffix %}<span class="text-base font-bold text-slate-500">{{ page.price_suffix }}</span>{% endif %}</p>
         <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mt-1">{{ page.price_note | default: "Scoped before we start" }}</p>
-        <a href="{{ page.calendly | default: 'https://calendly.com/d/cxgf-5fr-vxz/meet-apexpalantir' }}" target="_blank" rel="noopener noreferrer" class="mt-5 bg-purple-gradient text-white w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 shadow-md hover:opacity-90 transition-all text-sm">
+        <a href="{{ page.calendly | default: '{{ site.cta.secondary_url }}' }}" target="_blank" rel="noopener noreferrer" class="mt-5 bg-purple-gradient text-white w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 shadow-md hover:opacity-90 transition-all text-sm">
           {{ page.cta | default: "Book a Call" }} {% include ui/icon.html name="chevron-right" class="w-4 h-4" %}
         </a>
       </div>
@@ -70,10 +70,10 @@ layout: default
     <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mb-3">Not sure if it is worth it?</h2>
     <p class="text-slate-600 mb-8 max-w-xl mx-auto">Start with the €2,450 Technical Health Audit. Five days, fixed price, a prioritized fix list in euros. No further commitment.</p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="https://calendly.com/d/ctr7-n87-4hw/salesforce-technical-health-audit" target="_blank" rel="noopener noreferrer" class="bg-purple-gradient text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-purple-200 hover:opacity-90 transition-all inline-flex items-center justify-center gap-2 group">
+      <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" class="bg-purple-gradient text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-purple-200 hover:opacity-90 transition-all inline-flex items-center justify-center gap-2 group">
         Book the €2,450 Audit {% include ui/icon.html name="chevron-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform" %}
       </a>
-      <a href="{{ page.calendly | default: 'https://calendly.com/d/cxgf-5fr-vxz/meet-apexpalantir' }}" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-xl font-bold border border-slate-200 text-slate-700 hover:border-purple-200 hover:text-purple-700 hover:bg-purple-50 transition-all inline-flex items-center justify-center">
+      <a href="{{ page.calendly | default: '{{ site.cta.secondary_url }}' }}" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-xl font-bold border border-slate-200 text-slate-700 hover:border-purple-200 hover:text-purple-700 hover:bg-purple-50 transition-all inline-flex items-center justify-center">
         Talk about {{ page.title }}
       </a>
     </div>
