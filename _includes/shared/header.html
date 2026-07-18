@@ -14,12 +14,13 @@
     </a>
 
     <nav class="hidden md:flex justify-self-center items-center gap-9 text-[15.5px] font-medium text-muted">
+      <a href="{{ site.baseurl }}/" class="hover:text-ink transition-colors {% if page.url == '/' %}text-accent{% endif %}">Home</a>
       <!-- Services mega-menu (no `relative` here on purpose: the menu anchors to
            the full-width fixed <header> so it centres on the viewport, not on
            this off-centre trigger; mx-auto centres it without a transform that
            would clash with the .dropdown-menu reveal animation) -->
       <div class="group flex items-center">
-        <a href="{{ site.baseurl }}/services" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/services' %}text-ink{% endif %}">
+        <a href="{{ site.baseurl }}/services" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/services' %}text-accent{% endif %}">
           Services {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
         </a>
         <div class="dropdown-menu absolute top-[calc(100%-0.875rem)] left-0 right-0 mx-auto mt-3 w-[min(1280px,calc(100vw-2rem))] z-50 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
@@ -53,12 +54,12 @@
         </div>
       </div>
 
-      <a href="{{ site.baseurl }}/work" class="hover:text-ink transition-colors {% if page.url contains '/work' or page.url contains '/cases' %}text-ink{% endif %}">Work</a>
-      <a href="{{ site.baseurl }}/about" class="hover:text-ink transition-colors {% if page.url contains '/about' %}text-ink{% endif %}">About</a>
+      <a href="{{ site.baseurl }}/work" class="hover:text-ink transition-colors {% if page.url contains '/work' or page.url contains '/cases' %}text-accent{% endif %}">Work</a>
+      <a href="{{ site.baseurl }}/about" class="hover:text-ink transition-colors {% if page.url contains '/about' %}text-accent{% endif %}">About</a>
 
       <!-- Insights dropdown (Blog + RevShorts) -->
       <div class="relative group flex items-center">
-        <a href="{{ site.baseurl }}/blog" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/blog' or page.url contains '/revshorts' %}text-ink{% endif %}">
+        <a href="{{ site.baseurl }}/blog" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/blog' or page.url contains '/revshorts' %}text-accent{% endif %}">
           Insights {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
         </a>
         <div class="dropdown-menu absolute top-full -right-28 w-[420px] mt-3 z-50 bg-surface rounded-[1.5rem] border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-4 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
@@ -85,7 +86,10 @@
     </nav>
 
     <div class="justify-self-end flex items-center gap-3">
-      {% include ui/cta.html label="Free intro call" href=site.cta.secondary_url track="header" class="apx-btn-sm hidden md:inline-flex" no_icon=true %}
+      <a href="{{ site.contact.phone_href }}" data-ap-track="call" data-ap-category="header" class="hidden md:inline-flex items-center gap-2 text-[15px] font-semibold text-ink hover:text-accent transition-colors">
+        {% include ui/icon.html name="phone-call" class="w-[18px] h-[18px] text-accent" %}
+        {{ site.contact.phone_display }}
+      </a>
 
       <!-- Mobile menu button -->
       <button id="mobile-menu-button" class="md:hidden p-2 -mr-2 text-ink" aria-label="Toggle mobile menu">
@@ -113,6 +117,7 @@
     </div>
 
     <nav class="flex flex-col gap-1 text-lg font-semibold text-ink">
+      <a href="{{ site.baseurl }}/" class="py-3 border-b border-line {% if page.url == '/' %}text-accent{% endif %}">Home</a>
       <!-- Services accordion -->
       <div class="border-b border-line">
         <button class="mobile-services-toggle w-full flex items-center justify-between py-3 text-left text-lg font-semibold text-ink">
@@ -155,8 +160,11 @@
       </a>
     </nav>
 
-    <div class="mt-10 space-y-3">
-      {% include ui/cta.html label="Free intro call" href=site.cta.secondary_url track="header-mobile" class="w-full" %}
+    <div class="mt-10 space-y-4">
+      <a href="{{ site.contact.phone_href }}" data-ap-track="call" data-ap-category="header-mobile" class="flex items-center gap-2.5 text-lg font-bold text-ink hover:text-accent transition-colors">
+        {% include ui/icon.html name="phone-call" class="w-5 h-5 text-accent" %}
+        {{ site.contact.phone_display }}
+      </a>
       <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-ghost w-full">
         Explore our services
       </a>

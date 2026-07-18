@@ -1,0 +1,31 @@
+{%- comment -%}
+  Animated client logo strip (seamless infinite scroll), placed right after the
+  hero. Two identical groups translated -50% for a seamless loop; edges masked;
+  pauses on hover; respects reduced-motion.
+{%- endcomment -%}
+{%- assign logos = "zech.webp|Zech Group|h-8 md:h-10, eigenherd.webp|Eigenherd|h-8 md:h-11, liqid.webp|LIQID|h-5 md:h-6, eventinc_log.webp|Event Inc|h-6 md:h-7, iu.webp|IU International University|h-12 md:h-16, hauser.webp|Hauser Maschinen|h-7 md:h-9" | split: ", " -%}
+<section id="clients" class="pt-8 md:pt-10 pb-2 bg-paper overflow-hidden scroll-mt-28">
+  <p class="text-center text-[13px] font-semibold uppercase tracking-[0.14em] text-faint">Trusted by teams at</p>
+  <div class="relative mt-7 overflow-hidden apx-marquee-mask">
+    <div class="apx-marquee-track flex w-max items-center">
+      {% for pass in (1..2) %}
+      <div class="flex items-center gap-x-14 md:gap-x-24 pr-14 md:pr-24 shrink-0"{% if pass == 2 %} aria-hidden="true"{% endif %}>
+        {% for l in logos %}
+          {% assign p = l | split: "|" %}
+          <img src="{{ '/assets/images/clients/' | append: p[0] | relative_url }}" alt="{{ p[1] }}" class="{{ p[2] }} w-auto shrink-0 grayscale opacity-60 mix-blend-multiply" loading="lazy" decoding="async">
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<style>
+  .apx-marquee-mask {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  }
+  @keyframes apx-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .apx-marquee-track { animation: apx-marquee 36s linear infinite; }
+  .apx-marquee-track:hover { animation-play-state: paused; }
+  @media (prefers-reduced-motion: reduce) { .apx-marquee-track { animation: none; } }
+</style>
