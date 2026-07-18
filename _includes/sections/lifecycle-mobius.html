@@ -1,24 +1,230 @@
 {%- comment -%}
-  The RevOps lifecycle Möbius. The diagram is externalised to
-  /assets/diagrams/lifecycle-mobius.svg and sits directly on the warm
-  cream ground, no card, no border. The ribbon's light underside is
-  tinted to the paper colour so it dissolves into the section.
+  The revenue lifecycle. Interactive Mobius (infinity) on the left, a synced
+  text panel on the right. An arrow travels the centreline path, dwelling at
+  each of the seven nodes; on arrival that node highlights, the others dim, and
+  the right panel swaps to the matching phase. Animation runs only while the
+  section is in the viewport; respects prefers-reduced-motion. Full-viewport,
+  scales with the viewport. Geometry generated procedurally (Gerono lemniscate).
 {%- endcomment -%}
-<section class="px-6 pb-20 md:pb-[7.5rem] bg-paper">
-  <div class="max-w-wide mx-auto">
-    <div class="max-w-[720px] mx-auto text-center rv">
-      <span class="apx-eyebrow">The revenue lifecycle</span>
-      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">One revenue engine, fully mapped.</h2>
-      <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">Seven phases, one continuous loop, from first touch to renewal. We engineer every one of them, and the data spine underneath that holds them together.</p>
-    </div>
+<section id="lifecycle" class="lc-section min-h-screen flex flex-col justify-center px-6 py-[clamp(3rem,6vh,5rem)] bg-paper overflow-hidden scroll-mt-24">
+  <div class="max-w-wide mx-auto w-full">
+    <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-[clamp(2rem,4vw,4.5rem)] items-center">
 
-    <figure class="mt-10 md:mt-14 m-0 rv">
-      <div class="overflow-x-auto no-scrollbar -mx-6 px-6 md:mx-0 md:px-0">
-        <img src="{{ '/assets/diagrams/lifecycle-mobius.svg' | relative_url }}"
-             alt="The RevOps lifecycle as one continuous loop of seven phases: Attract & Demand Gen, Prospecting & Outbound, Lead Management, Selling & Pipeline, Quote-to-Cash, Onboarding & Success, Renewal & Expansion."
-             class="block w-full h-auto min-w-[720px] mx-auto" loading="lazy" decoding="async" width="1180" height="470">
+      <!-- Mobius -->
+      <div class="lc-stage rv">
+    <svg class="lc-svg" viewBox="0 0 560 400" role="img" aria-label="The revenue lifecycle as one continuous loop of seven phases.">
+      <defs>
+        <linearGradient id="lc-grad" x1="0" y1="0" x2="560" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#A24BF0"></stop><stop offset="0.5" stop-color="#8E2DE2"></stop><stop offset="1" stop-color="#4A00E0"></stop>
+        </linearGradient>
+        <filter id="lc-arrow-glow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="3.2" flood-color="#4A00E0" flood-opacity="0.55"></feDropShadow></filter>
+      </defs>
+      <path id="lc-track" d="M 512.00 205.00 L 511.97 208.93 L 511.89 212.85 L 511.74 216.76 L 511.54 220.67 L 511.28 224.55 L 510.97 228.42 L 510.60 232.27 L 510.17 236.09 L 509.69 239.87 L 509.14 243.63 L 508.55 247.34 L 507.89 251.02 L 507.18 254.64 L 506.41 258.22 L 505.59 261.75 L 504.71 265.22 L 503.78 268.63 L 502.79 271.98 L 501.74 275.26 L 500.65 278.47 L 499.49 281.61 L 498.28 284.68 L 497.02 287.66 L 495.71 290.57 L 494.34 293.39 L 492.92 296.12 L 491.45 298.76 L 489.92 301.31 L 488.34 303.77 L 486.71 306.13 L 485.03 308.39 L 483.30 310.54 L 481.52 312.59 L 479.69 314.54 L 477.81 316.38 L 475.88 318.10 L 473.91 319.72 L 471.88 321.22 L 469.81 322.61 L 467.69 323.88 L 465.53 325.04 L 463.32 326.07 L 461.06 326.99 L 458.76 327.79 L 456.41 328.46 L 454.03 329.01 L 451.59 329.45 L 449.12 329.75 L 446.61 329.94 L 444.05 330.00 L 441.45 329.94 L 438.81 329.75 L 436.14 329.45 L 433.42 329.01 L 430.67 328.46 L 427.88 327.79 L 425.06 326.99 L 422.19 326.07 L 419.30 325.04 L 416.37 323.88 L 413.40 322.61 L 410.40 321.22 L 407.37 319.72 L 404.31 318.10 L 401.22 316.38 L 398.10 314.54 L 394.95 312.59 L 391.77 310.54 L 388.56 308.39 L 385.33 306.13 L 382.07 303.77 L 378.78 301.31 L 375.47 298.76 L 372.14 296.12 L 368.78 293.39 L 365.40 290.57 L 362.01 287.66 L 358.59 284.68 L 355.15 281.61 L 351.69 278.47 L 348.22 275.26 L 344.73 271.98 L 341.22 268.63 L 337.70 265.22 L 334.16 261.75 L 330.61 258.22 L 327.05 254.64 L 323.47 251.02 L 319.89 247.34 L 316.29 243.63 L 312.69 239.87 L 309.08 236.09 L 305.46 232.27 L 301.83 228.42 L 298.20 224.55 L 294.57 220.67 L 290.93 216.76 L 287.29 212.85 L 283.64 208.93 L 280.00 205.00 L 276.36 201.07 L 272.71 197.15 L 269.07 193.24 L 265.43 189.33 L 261.80 185.45 L 258.17 181.58 L 254.54 177.73 L 250.92 173.91 L 247.31 170.13 L 243.71 166.37 L 240.11 162.66 L 236.53 158.98 L 232.95 155.36 L 229.39 151.78 L 225.84 148.25 L 222.30 144.78 L 218.78 141.37 L 215.27 138.02 L 211.78 134.74 L 208.31 131.53 L 204.85 128.39 L 201.41 125.32 L 197.99 122.34 L 194.60 119.43 L 191.22 116.61 L 187.86 113.88 L 184.53 111.24 L 181.22 108.69 L 177.93 106.23 L 174.67 103.87 L 171.44 101.61 L 168.23 99.46 L 165.05 97.41 L 161.90 95.46 L 158.78 93.62 L 155.69 91.90 L 152.63 90.28 L 149.60 88.78 L 146.60 87.39 L 143.63 86.12 L 140.70 84.96 L 137.81 83.93 L 134.94 83.01 L 132.12 82.21 L 129.33 81.54 L 126.58 80.99 L 123.86 80.55 L 121.19 80.25 L 118.55 80.06 L 115.95 80.00 L 113.39 80.06 L 110.88 80.25 L 108.41 80.55 L 105.97 80.99 L 103.59 81.54 L 101.24 82.21 L 98.94 83.01 L 96.68 83.93 L 94.47 84.96 L 92.31 86.12 L 90.19 87.39 L 88.12 88.78 L 86.09 90.28 L 84.12 91.90 L 82.19 93.62 L 80.31 95.46 L 78.48 97.41 L 76.70 99.46 L 74.97 101.61 L 73.29 103.87 L 71.66 106.23 L 70.08 108.69 L 68.55 111.24 L 67.08 113.88 L 65.66 116.61 L 64.29 119.43 L 62.98 122.34 L 61.72 125.32 L 60.51 128.39 L 59.35 131.53 L 58.26 134.74 L 57.21 138.02 L 56.22 141.37 L 55.29 144.78 L 54.41 148.25 L 53.59 151.78 L 52.82 155.36 L 52.11 158.98 L 51.45 162.66 L 50.86 166.37 L 50.31 170.13 L 49.83 173.91 L 49.40 177.73 L 49.03 181.58 L 48.72 185.45 L 48.46 189.33 L 48.26 193.24 L 48.11 197.15 L 48.03 201.07 L 48.00 205.00 L 48.03 208.93 L 48.11 212.85 L 48.26 216.76 L 48.46 220.67 L 48.72 224.55 L 49.03 228.42 L 49.40 232.27 L 49.83 236.09 L 50.31 239.87 L 50.86 243.63 L 51.45 247.34 L 52.11 251.02 L 52.82 254.64 L 53.59 258.22 L 54.41 261.75 L 55.29 265.22 L 56.22 268.63 L 57.21 271.98 L 58.26 275.26 L 59.35 278.47 L 60.51 281.61 L 61.72 284.68 L 62.98 287.66 L 64.29 290.57 L 65.66 293.39 L 67.08 296.12 L 68.55 298.76 L 70.08 301.31 L 71.66 303.77 L 73.29 306.13 L 74.97 308.39 L 76.70 310.54 L 78.48 312.59 L 80.31 314.54 L 82.19 316.38 L 84.12 318.10 L 86.09 319.72 L 88.12 321.22 L 90.19 322.61 L 92.31 323.88 L 94.47 325.04 L 96.68 326.07 L 98.94 326.99 L 101.24 327.79 L 103.59 328.46 L 105.97 329.01 L 108.41 329.45 L 110.88 329.75 L 113.39 329.94 L 115.95 330.00 L 118.55 329.94 L 121.19 329.75 L 123.86 329.45 L 126.58 329.01 L 129.33 328.46 L 132.12 327.79 L 134.94 326.99 L 137.81 326.07 L 140.70 325.04 L 143.63 323.88 L 146.60 322.61 L 149.60 321.22 L 152.63 319.72 L 155.69 318.10 L 158.78 316.38 L 161.90 314.54 L 165.05 312.59 L 168.23 310.54 L 171.44 308.39 L 174.67 306.13 L 177.93 303.77 L 181.22 301.31 L 184.53 298.76 L 187.86 296.12 L 191.22 293.39 L 194.60 290.57 L 197.99 287.66 L 201.41 284.68 L 204.85 281.61 L 208.31 278.47 L 211.78 275.26 L 215.27 271.98 L 218.78 268.63 L 222.30 265.22 L 225.84 261.75 L 229.39 258.22 L 232.95 254.64 L 236.53 251.02 L 240.11 247.34 L 243.71 243.63 L 247.31 239.87 L 250.92 236.09 L 254.54 232.27 L 258.17 228.42 L 261.80 224.55 L 265.43 220.67 L 269.07 216.76 L 272.71 212.85 L 276.36 208.93 L 280.00 205.00 L 283.64 201.07 L 287.29 197.15 L 290.93 193.24 L 294.57 189.33 L 298.20 185.45 L 301.83 181.58 L 305.46 177.73 L 309.08 173.91 L 312.69 170.13 L 316.29 166.37 L 319.89 162.66 L 323.47 158.98 L 327.05 155.36 L 330.61 151.78 L 334.16 148.25 L 337.70 144.78 L 341.22 141.37 L 344.73 138.02 L 348.22 134.74 L 351.69 131.53 L 355.15 128.39 L 358.59 125.32 L 362.01 122.34 L 365.40 119.43 L 368.78 116.61 L 372.14 113.88 L 375.47 111.24 L 378.78 108.69 L 382.07 106.23 L 385.33 103.87 L 388.56 101.61 L 391.77 99.46 L 394.95 97.41 L 398.10 95.46 L 401.22 93.62 L 404.31 91.90 L 407.37 90.28 L 410.40 88.78 L 413.40 87.39 L 416.37 86.12 L 419.30 84.96 L 422.19 83.93 L 425.06 83.01 L 427.88 82.21 L 430.67 81.54 L 433.42 80.99 L 436.14 80.55 L 438.81 80.25 L 441.45 80.06 L 444.05 80.00 L 446.61 80.06 L 449.12 80.25 L 451.59 80.55 L 454.03 80.99 L 456.41 81.54 L 458.76 82.21 L 461.06 83.01 L 463.32 83.93 L 465.53 84.96 L 467.69 86.12 L 469.81 87.39 L 471.88 88.78 L 473.91 90.28 L 475.88 91.90 L 477.81 93.62 L 479.69 95.46 L 481.52 97.41 L 483.30 99.46 L 485.03 101.61 L 486.71 103.87 L 488.34 106.23 L 489.92 108.69 L 491.45 111.24 L 492.92 113.88 L 494.34 116.61 L 495.71 119.43 L 497.02 122.34 L 498.28 125.32 L 499.49 128.39 L 500.65 131.53 L 501.74 134.74 L 502.79 138.02 L 503.78 141.37 L 504.71 144.78 L 505.59 148.25 L 506.41 151.78 L 507.18 155.36 L 507.89 158.98 L 508.55 162.66 L 509.14 166.37 L 509.69 170.13 L 510.17 173.91 L 510.60 177.73 L 510.97 181.58 L 511.28 185.45 L 511.54 189.33 L 511.74 193.24 L 511.89 197.15 L 511.97 201.07 L 512.00 205.00" fill="none" stroke="url(#lc-grad)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M 512.00 205.00 L 511.97 208.93 L 511.89 212.85 L 511.74 216.76 L 511.54 220.67 L 511.28 224.55 L 510.97 228.42 L 510.60 232.27 L 510.17 236.09 L 509.69 239.87 L 509.14 243.63 L 508.55 247.34 L 507.89 251.02 L 507.18 254.64 L 506.41 258.22 L 505.59 261.75 L 504.71 265.22 L 503.78 268.63 L 502.79 271.98 L 501.74 275.26 L 500.65 278.47 L 499.49 281.61 L 498.28 284.68 L 497.02 287.66 L 495.71 290.57 L 494.34 293.39 L 492.92 296.12 L 491.45 298.76 L 489.92 301.31 L 488.34 303.77 L 486.71 306.13 L 485.03 308.39 L 483.30 310.54 L 481.52 312.59 L 479.69 314.54 L 477.81 316.38 L 475.88 318.10 L 473.91 319.72 L 471.88 321.22 L 469.81 322.61 L 467.69 323.88 L 465.53 325.04 L 463.32 326.07 L 461.06 326.99 L 458.76 327.79 L 456.41 328.46 L 454.03 329.01 L 451.59 329.45 L 449.12 329.75 L 446.61 329.94 L 444.05 330.00 L 441.45 329.94 L 438.81 329.75 L 436.14 329.45 L 433.42 329.01 L 430.67 328.46 L 427.88 327.79 L 425.06 326.99 L 422.19 326.07 L 419.30 325.04 L 416.37 323.88 L 413.40 322.61 L 410.40 321.22 L 407.37 319.72 L 404.31 318.10 L 401.22 316.38 L 398.10 314.54 L 394.95 312.59 L 391.77 310.54 L 388.56 308.39 L 385.33 306.13 L 382.07 303.77 L 378.78 301.31 L 375.47 298.76 L 372.14 296.12 L 368.78 293.39 L 365.40 290.57 L 362.01 287.66 L 358.59 284.68 L 355.15 281.61 L 351.69 278.47 L 348.22 275.26 L 344.73 271.98 L 341.22 268.63 L 337.70 265.22 L 334.16 261.75 L 330.61 258.22 L 327.05 254.64 L 323.47 251.02 L 319.89 247.34 L 316.29 243.63 L 312.69 239.87 L 309.08 236.09 L 305.46 232.27 L 301.83 228.42 L 298.20 224.55 L 294.57 220.67 L 290.93 216.76 L 287.29 212.85 L 283.64 208.93 L 280.00 205.00 L 276.36 201.07 L 272.71 197.15 L 269.07 193.24 L 265.43 189.33 L 261.80 185.45 L 258.17 181.58 L 254.54 177.73 L 250.92 173.91 L 247.31 170.13 L 243.71 166.37 L 240.11 162.66 L 236.53 158.98 L 232.95 155.36 L 229.39 151.78 L 225.84 148.25 L 222.30 144.78 L 218.78 141.37 L 215.27 138.02 L 211.78 134.74 L 208.31 131.53 L 204.85 128.39 L 201.41 125.32 L 197.99 122.34 L 194.60 119.43 L 191.22 116.61 L 187.86 113.88 L 184.53 111.24 L 181.22 108.69 L 177.93 106.23 L 174.67 103.87 L 171.44 101.61 L 168.23 99.46 L 165.05 97.41 L 161.90 95.46 L 158.78 93.62 L 155.69 91.90 L 152.63 90.28 L 149.60 88.78 L 146.60 87.39 L 143.63 86.12 L 140.70 84.96 L 137.81 83.93 L 134.94 83.01 L 132.12 82.21 L 129.33 81.54 L 126.58 80.99 L 123.86 80.55 L 121.19 80.25 L 118.55 80.06 L 115.95 80.00 L 113.39 80.06 L 110.88 80.25 L 108.41 80.55 L 105.97 80.99 L 103.59 81.54 L 101.24 82.21 L 98.94 83.01 L 96.68 83.93 L 94.47 84.96 L 92.31 86.12 L 90.19 87.39 L 88.12 88.78 L 86.09 90.28 L 84.12 91.90 L 82.19 93.62 L 80.31 95.46 L 78.48 97.41 L 76.70 99.46 L 74.97 101.61 L 73.29 103.87 L 71.66 106.23 L 70.08 108.69 L 68.55 111.24 L 67.08 113.88 L 65.66 116.61 L 64.29 119.43 L 62.98 122.34 L 61.72 125.32 L 60.51 128.39 L 59.35 131.53 L 58.26 134.74 L 57.21 138.02 L 56.22 141.37 L 55.29 144.78 L 54.41 148.25 L 53.59 151.78 L 52.82 155.36 L 52.11 158.98 L 51.45 162.66 L 50.86 166.37 L 50.31 170.13 L 49.83 173.91 L 49.40 177.73 L 49.03 181.58 L 48.72 185.45 L 48.46 189.33 L 48.26 193.24 L 48.11 197.15 L 48.03 201.07 L 48.00 205.00 L 48.03 208.93 L 48.11 212.85 L 48.26 216.76 L 48.46 220.67 L 48.72 224.55 L 49.03 228.42 L 49.40 232.27 L 49.83 236.09 L 50.31 239.87 L 50.86 243.63 L 51.45 247.34 L 52.11 251.02 L 52.82 254.64 L 53.59 258.22 L 54.41 261.75 L 55.29 265.22 L 56.22 268.63 L 57.21 271.98 L 58.26 275.26 L 59.35 278.47 L 60.51 281.61 L 61.72 284.68 L 62.98 287.66 L 64.29 290.57 L 65.66 293.39 L 67.08 296.12 L 68.55 298.76 L 70.08 301.31 L 71.66 303.77 L 73.29 306.13 L 74.97 308.39 L 76.70 310.54 L 78.48 312.59 L 80.31 314.54 L 82.19 316.38 L 84.12 318.10 L 86.09 319.72 L 88.12 321.22 L 90.19 322.61 L 92.31 323.88 L 94.47 325.04 L 96.68 326.07 L 98.94 326.99 L 101.24 327.79 L 103.59 328.46 L 105.97 329.01 L 108.41 329.45 L 110.88 329.75 L 113.39 329.94 L 115.95 330.00 L 118.55 329.94 L 121.19 329.75 L 123.86 329.45 L 126.58 329.01 L 129.33 328.46 L 132.12 327.79 L 134.94 326.99 L 137.81 326.07 L 140.70 325.04 L 143.63 323.88 L 146.60 322.61 L 149.60 321.22 L 152.63 319.72 L 155.69 318.10 L 158.78 316.38 L 161.90 314.54 L 165.05 312.59 L 168.23 310.54 L 171.44 308.39 L 174.67 306.13 L 177.93 303.77 L 181.22 301.31 L 184.53 298.76 L 187.86 296.12 L 191.22 293.39 L 194.60 290.57 L 197.99 287.66 L 201.41 284.68 L 204.85 281.61 L 208.31 278.47 L 211.78 275.26 L 215.27 271.98 L 218.78 268.63 L 222.30 265.22 L 225.84 261.75 L 229.39 258.22 L 232.95 254.64 L 236.53 251.02 L 240.11 247.34 L 243.71 243.63 L 247.31 239.87 L 250.92 236.09 L 254.54 232.27 L 258.17 228.42 L 261.80 224.55 L 265.43 220.67 L 269.07 216.76 L 272.71 212.85 L 276.36 208.93 L 280.00 205.00 L 283.64 201.07 L 287.29 197.15 L 290.93 193.24 L 294.57 189.33 L 298.20 185.45 L 301.83 181.58 L 305.46 177.73 L 309.08 173.91 L 312.69 170.13 L 316.29 166.37 L 319.89 162.66 L 323.47 158.98 L 327.05 155.36 L 330.61 151.78 L 334.16 148.25 L 337.70 144.78 L 341.22 141.37 L 344.73 138.02 L 348.22 134.74 L 351.69 131.53 L 355.15 128.39 L 358.59 125.32 L 362.01 122.34 L 365.40 119.43 L 368.78 116.61 L 372.14 113.88 L 375.47 111.24 L 378.78 108.69 L 382.07 106.23 L 385.33 103.87 L 388.56 101.61 L 391.77 99.46 L 394.95 97.41 L 398.10 95.46 L 401.22 93.62 L 404.31 91.90 L 407.37 90.28 L 410.40 88.78 L 413.40 87.39 L 416.37 86.12 L 419.30 84.96 L 422.19 83.93 L 425.06 83.01 L 427.88 82.21 L 430.67 81.54 L 433.42 80.99 L 436.14 80.55 L 438.81 80.25 L 441.45 80.06 L 444.05 80.00 L 446.61 80.06 L 449.12 80.25 L 451.59 80.55 L 454.03 80.99 L 456.41 81.54 L 458.76 82.21 L 461.06 83.01 L 463.32 83.93 L 465.53 84.96 L 467.69 86.12 L 469.81 87.39 L 471.88 88.78 L 473.91 90.28 L 475.88 91.90 L 477.81 93.62 L 479.69 95.46 L 481.52 97.41 L 483.30 99.46 L 485.03 101.61 L 486.71 103.87 L 488.34 106.23 L 489.92 108.69 L 491.45 111.24 L 492.92 113.88 L 494.34 116.61 L 495.71 119.43 L 497.02 122.34 L 498.28 125.32 L 499.49 128.39 L 500.65 131.53 L 501.74 134.74 L 502.79 138.02 L 503.78 141.37 L 504.71 144.78 L 505.59 148.25 L 506.41 151.78 L 507.18 155.36 L 507.89 158.98 L 508.55 162.66 L 509.14 166.37 L 509.69 170.13 L 510.17 173.91 L 510.60 177.73 L 510.97 181.58 L 511.28 185.45 L 511.54 189.33 L 511.74 193.24 L 511.89 197.15 L 511.97 201.07 L 512.00 205.00" fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" opacity="0.10"></path>
+      <path d="M 512.00 205.00 L 511.97 208.93 L 511.89 212.85 L 511.74 216.76 L 511.54 220.67 L 511.28 224.55 L 510.97 228.42 L 510.60 232.27 L 510.17 236.09 L 509.69 239.87 L 509.14 243.63 L 508.55 247.34 L 507.89 251.02 L 507.18 254.64 L 506.41 258.22 L 505.59 261.75 L 504.71 265.22 L 503.78 268.63 L 502.79 271.98 L 501.74 275.26 L 500.65 278.47 L 499.49 281.61 L 498.28 284.68 L 497.02 287.66 L 495.71 290.57 L 494.34 293.39 L 492.92 296.12 L 491.45 298.76 L 489.92 301.31 L 488.34 303.77 L 486.71 306.13 L 485.03 308.39 L 483.30 310.54 L 481.52 312.59 L 479.69 314.54 L 477.81 316.38 L 475.88 318.10 L 473.91 319.72 L 471.88 321.22 L 469.81 322.61 L 467.69 323.88 L 465.53 325.04 L 463.32 326.07 L 461.06 326.99 L 458.76 327.79 L 456.41 328.46 L 454.03 329.01 L 451.59 329.45 L 449.12 329.75 L 446.61 329.94 L 444.05 330.00 L 441.45 329.94 L 438.81 329.75 L 436.14 329.45 L 433.42 329.01 L 430.67 328.46 L 427.88 327.79 L 425.06 326.99 L 422.19 326.07 L 419.30 325.04 L 416.37 323.88 L 413.40 322.61 L 410.40 321.22 L 407.37 319.72 L 404.31 318.10 L 401.22 316.38 L 398.10 314.54 L 394.95 312.59 L 391.77 310.54 L 388.56 308.39 L 385.33 306.13 L 382.07 303.77 L 378.78 301.31 L 375.47 298.76 L 372.14 296.12 L 368.78 293.39 L 365.40 290.57 L 362.01 287.66 L 358.59 284.68 L 355.15 281.61 L 351.69 278.47 L 348.22 275.26 L 344.73 271.98 L 341.22 268.63 L 337.70 265.22 L 334.16 261.75 L 330.61 258.22 L 327.05 254.64 L 323.47 251.02 L 319.89 247.34 L 316.29 243.63 L 312.69 239.87 L 309.08 236.09 L 305.46 232.27 L 301.83 228.42 L 298.20 224.55 L 294.57 220.67 L 290.93 216.76 L 287.29 212.85 L 283.64 208.93 L 280.00 205.00 L 276.36 201.07 L 272.71 197.15 L 269.07 193.24 L 265.43 189.33 L 261.80 185.45 L 258.17 181.58 L 254.54 177.73 L 250.92 173.91 L 247.31 170.13 L 243.71 166.37 L 240.11 162.66 L 236.53 158.98 L 232.95 155.36 L 229.39 151.78 L 225.84 148.25 L 222.30 144.78 L 218.78 141.37 L 215.27 138.02 L 211.78 134.74 L 208.31 131.53 L 204.85 128.39 L 201.41 125.32 L 197.99 122.34 L 194.60 119.43 L 191.22 116.61 L 187.86 113.88 L 184.53 111.24 L 181.22 108.69 L 177.93 106.23 L 174.67 103.87 L 171.44 101.61 L 168.23 99.46 L 165.05 97.41 L 161.90 95.46 L 158.78 93.62 L 155.69 91.90 L 152.63 90.28 L 149.60 88.78 L 146.60 87.39 L 143.63 86.12 L 140.70 84.96 L 137.81 83.93 L 134.94 83.01 L 132.12 82.21 L 129.33 81.54 L 126.58 80.99 L 123.86 80.55 L 121.19 80.25 L 118.55 80.06 L 115.95 80.00 L 113.39 80.06 L 110.88 80.25 L 108.41 80.55 L 105.97 80.99 L 103.59 81.54 L 101.24 82.21 L 98.94 83.01 L 96.68 83.93 L 94.47 84.96 L 92.31 86.12 L 90.19 87.39 L 88.12 88.78 L 86.09 90.28 L 84.12 91.90 L 82.19 93.62 L 80.31 95.46 L 78.48 97.41 L 76.70 99.46 L 74.97 101.61 L 73.29 103.87 L 71.66 106.23 L 70.08 108.69 L 68.55 111.24 L 67.08 113.88 L 65.66 116.61 L 64.29 119.43 L 62.98 122.34 L 61.72 125.32 L 60.51 128.39 L 59.35 131.53 L 58.26 134.74 L 57.21 138.02 L 56.22 141.37 L 55.29 144.78 L 54.41 148.25 L 53.59 151.78 L 52.82 155.36 L 52.11 158.98 L 51.45 162.66 L 50.86 166.37 L 50.31 170.13 L 49.83 173.91 L 49.40 177.73 L 49.03 181.58 L 48.72 185.45 L 48.46 189.33 L 48.26 193.24 L 48.11 197.15 L 48.03 201.07 L 48.00 205.00 L 48.03 208.93 L 48.11 212.85 L 48.26 216.76 L 48.46 220.67 L 48.72 224.55 L 49.03 228.42 L 49.40 232.27 L 49.83 236.09 L 50.31 239.87 L 50.86 243.63 L 51.45 247.34 L 52.11 251.02 L 52.82 254.64 L 53.59 258.22 L 54.41 261.75 L 55.29 265.22 L 56.22 268.63 L 57.21 271.98 L 58.26 275.26 L 59.35 278.47 L 60.51 281.61 L 61.72 284.68 L 62.98 287.66 L 64.29 290.57 L 65.66 293.39 L 67.08 296.12 L 68.55 298.76 L 70.08 301.31 L 71.66 303.77 L 73.29 306.13 L 74.97 308.39 L 76.70 310.54 L 78.48 312.59 L 80.31 314.54 L 82.19 316.38 L 84.12 318.10 L 86.09 319.72 L 88.12 321.22 L 90.19 322.61 L 92.31 323.88 L 94.47 325.04 L 96.68 326.07 L 98.94 326.99 L 101.24 327.79 L 103.59 328.46 L 105.97 329.01 L 108.41 329.45 L 110.88 329.75 L 113.39 329.94 L 115.95 330.00 L 118.55 329.94 L 121.19 329.75 L 123.86 329.45 L 126.58 329.01 L 129.33 328.46 L 132.12 327.79 L 134.94 326.99 L 137.81 326.07 L 140.70 325.04 L 143.63 323.88 L 146.60 322.61 L 149.60 321.22 L 152.63 319.72 L 155.69 318.10 L 158.78 316.38 L 161.90 314.54 L 165.05 312.59 L 168.23 310.54 L 171.44 308.39 L 174.67 306.13 L 177.93 303.77 L 181.22 301.31 L 184.53 298.76 L 187.86 296.12 L 191.22 293.39 L 194.60 290.57 L 197.99 287.66 L 201.41 284.68 L 204.85 281.61 L 208.31 278.47 L 211.78 275.26 L 215.27 271.98 L 218.78 268.63 L 222.30 265.22 L 225.84 261.75 L 229.39 258.22 L 232.95 254.64 L 236.53 251.02 L 240.11 247.34 L 243.71 243.63 L 247.31 239.87 L 250.92 236.09 L 254.54 232.27 L 258.17 228.42 L 261.80 224.55 L 265.43 220.67 L 269.07 216.76 L 272.71 212.85 L 276.36 208.93 L 280.00 205.00 L 283.64 201.07 L 287.29 197.15 L 290.93 193.24 L 294.57 189.33 L 298.20 185.45 L 301.83 181.58 L 305.46 177.73 L 309.08 173.91 L 312.69 170.13 L 316.29 166.37 L 319.89 162.66 L 323.47 158.98 L 327.05 155.36 L 330.61 151.78 L 334.16 148.25 L 337.70 144.78 L 341.22 141.37 L 344.73 138.02 L 348.22 134.74 L 351.69 131.53 L 355.15 128.39 L 358.59 125.32 L 362.01 122.34 L 365.40 119.43 L 368.78 116.61 L 372.14 113.88 L 375.47 111.24 L 378.78 108.69 L 382.07 106.23 L 385.33 103.87 L 388.56 101.61 L 391.77 99.46 L 394.95 97.41 L 398.10 95.46 L 401.22 93.62 L 404.31 91.90 L 407.37 90.28 L 410.40 88.78 L 413.40 87.39 L 416.37 86.12 L 419.30 84.96 L 422.19 83.93 L 425.06 83.01 L 427.88 82.21 L 430.67 81.54 L 433.42 80.99 L 436.14 80.55 L 438.81 80.25 L 441.45 80.06 L 444.05 80.00 L 446.61 80.06 L 449.12 80.25 L 451.59 80.55 L 454.03 80.99 L 456.41 81.54 L 458.76 82.21 L 461.06 83.01 L 463.32 83.93 L 465.53 84.96 L 467.69 86.12 L 469.81 87.39 L 471.88 88.78 L 473.91 90.28 L 475.88 91.90 L 477.81 93.62 L 479.69 95.46 L 481.52 97.41 L 483.30 99.46 L 485.03 101.61 L 486.71 103.87 L 488.34 106.23 L 489.92 108.69 L 491.45 111.24 L 492.92 113.88 L 494.34 116.61 L 495.71 119.43 L 497.02 122.34 L 498.28 125.32 L 499.49 128.39 L 500.65 131.53 L 501.74 134.74 L 502.79 138.02 L 503.78 141.37 L 504.71 144.78 L 505.59 148.25 L 506.41 151.78 L 507.18 155.36 L 507.89 158.98 L 508.55 162.66 L 509.14 166.37 L 509.69 170.13 L 510.17 173.91 L 510.60 177.73 L 510.97 181.58 L 511.28 185.45 L 511.54 189.33 L 511.74 193.24 L 511.89 197.15 L 511.97 201.07 L 512.00 205.00" fill="none" stroke="#fff" stroke-width="2" opacity="0.26"></path>
+      <g class="lc-node" data-i="1" data-u="0.0692" transform="translate(489.0,302.7)">
+        <g class="lc-node-inner">
+          <circle class="lc-halo" r="24" fill="#8E2DE2"></circle>
+          <circle class="lc-dot" r="17" fill="#fff" stroke="#8E2DE2" stroke-width="2.5"></circle>
+          <text class="lc-num" y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#8E2DE2" font-family="ui-monospace,monospace">01</text>
+        </g>
+      </g>
+      <g class="lc-node" data-i="2" data-u="0.199" transform="translate(331.6,259.2)">
+        <g class="lc-node-inner">
+          <circle class="lc-halo" r="24" fill="#8E2DE2"></circle>
+          <circle class="lc-dot" r="17" fill="#fff" stroke="#8E2DE2" stroke-width="2.5"></circle>
+          <text class="lc-num" y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#8E2DE2" font-family="ui-monospace,monospace">02</text>
+        </g>
+      </g>
+      <g class="lc-node" data-i="3" data-u="0.3799" transform="translate(135.4,83.1)">
+        <g class="lc-node-inner">
+          <circle class="lc-halo" r="24" fill="#8E2DE2"></circle>
+          <circle class="lc-dot" r="17" fill="#fff" stroke="#8E2DE2" stroke-width="2.5"></circle>
+          <text class="lc-num" y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#8E2DE2" font-family="ui-monospace,monospace">03</text>
+        </g>
+      </g>
+      <g class="lc-node" data-i="4" data-u="0.5" transform="translate(48.0,205.0)">
+        <g class="lc-node-inner">
+          <circle class="lc-halo" r="24" fill="#8E2DE2"></circle>
+          <circle class="lc-dot" r="17" fill="#fff" stroke="#8E2DE2" stroke-width="2.5"></circle>
+          <text class="lc-num" y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#8E2DE2" font-family="ui-monospace,monospace">04</text>
+        </g>
+      </g>
+      <g class="lc-node" data-i="5" data-u="0.6201" transform="translate(135.4,326.9)">
+        <g class="lc-node-inner">
+          <circle class="lc-halo" r="24" fill="#8E2DE2"></circle>
+          <circle class="lc-dot" r="17" fill="#fff" stroke="#8E2DE2" stroke-width="2.5"></circle>
+          <text class="lc-num" y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#8E2DE2" font-family="ui-monospace,monospace">05</text>
+        </g>
+      </g>
+      <g class="lc-node" data-i="6" data-u="0.801" transform="translate(331.6,150.8)">
+        <g class="lc-node-inner">
+          <circle class="lc-halo" r="24" fill="#8E2DE2"></circle>
+          <circle class="lc-dot" r="17" fill="#fff" stroke="#8E2DE2" stroke-width="2.5"></circle>
+          <text class="lc-num" y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#8E2DE2" font-family="ui-monospace,monospace">06</text>
+        </g>
+      </g>
+      <g class="lc-node" data-i="7" data-u="0.9308" transform="translate(489.0,107.3)">
+        <g class="lc-node-inner">
+          <circle class="lc-halo" r="24" fill="#8E2DE2"></circle>
+          <circle class="lc-dot" r="17" fill="#fff" stroke="#8E2DE2" stroke-width="2.5"></circle>
+          <text class="lc-num" y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#8E2DE2" font-family="ui-monospace,monospace">07</text>
+        </g>
+      </g>
+      <g id="lc-arrow"><path d="M 12 0 L -8 9 L -3.5 0 L -8 -9 Z" fill="#fff" filter="url(#lc-arrow-glow)"></path></g>
+    </svg>
       </div>
-      <figcaption class="mt-4 text-center text-sm font-medium text-faint">Tools change. The architecture doesn't.</figcaption>
-    </figure>
+
+      <!-- Synced text panel -->
+      <div class="lc-panel rv">
+        <span class="apx-eyebrow">The revenue lifecycle</span>
+        <h2 class="mt-3 font-bold text-ink tracking-[-0.02em] leading-[1.08] text-[clamp(1.9rem,3vw,2.9rem)]" style="text-wrap:balance">One revenue engine, fully mapped.</h2>
+        <p class="mt-3 max-w-[46ch] text-[clamp(1rem,1.15vw,1.15rem)] leading-relaxed text-muted">Seven phases, one continuous loop, from first touch to renewal. We engineer every one, and the data spine underneath that holds them together.</p>
+
+        <div class="lc-stack mt-[clamp(1.5rem,3vh,2.5rem)]">
+        <article class="lc-item" data-i="1">
+          <div class="lc-item-kicker"><span class="lc-item-num">01</span> Phase 01 of 07</div>
+          <h3 class="lc-item-title">Attract & Demand Gen</h3>
+          <p class="lc-item-desc">Turn attention into intent. Campaigns, forms and your site wired so every signal lands in one place, clean and attributed.</p>
+        </article>
+        <article class="lc-item" data-i="2">
+          <div class="lc-item-kicker"><span class="lc-item-num">02</span> Phase 02 of 07</div>
+          <h3 class="lc-item-title">Prospecting & Outbound</h3>
+          <p class="lc-item-desc">Reach the right accounts. Enriched lists, sequenced touches and a handoff to sales that never drops the thread.</p>
+        </article>
+        <article class="lc-item" data-i="3">
+          <div class="lc-item-kicker"><span class="lc-item-num">03</span> Phase 03 of 07</div>
+          <h3 class="lc-item-title">Lead Management</h3>
+          <p class="lc-item-desc">No lead waits, none get lost. Routing, scoring and SLAs that put the right person on the right lead in minutes.</p>
+        </article>
+        <article class="lc-item" data-i="4">
+          <div class="lc-item-kicker"><span class="lc-item-num">04</span> Phase 04 of 07</div>
+          <h3 class="lc-item-title">Selling & Pipeline</h3>
+          <p class="lc-item-desc">A pipeline you can trust. Stages that mean something, forecasts that hold up, and a CRM your reps actually use.</p>
+        </article>
+        <article class="lc-item" data-i="5">
+          <div class="lc-item-kicker"><span class="lc-item-num">05</span> Phase 05 of 07</div>
+          <h3 class="lc-item-title">Quote-to-Cash</h3>
+          <p class="lc-item-desc">From yes to paid, without friction. Quotes, approvals, billing and revenue recognition wired end to end.</p>
+        </article>
+        <article class="lc-item" data-i="6">
+          <div class="lc-item-kicker"><span class="lc-item-num">06</span> Phase 06 of 07</div>
+          <h3 class="lc-item-title">Onboarding & Success</h3>
+          <p class="lc-item-desc">Start strong, stay longer. Onboarding, health signals and playbooks that turn new customers into references.</p>
+        </article>
+        <article class="lc-item" data-i="7">
+          <div class="lc-item-kicker"><span class="lc-item-num">07</span> Phase 07 of 07</div>
+          <h3 class="lc-item-title">Renewal & Expansion</h3>
+          <p class="lc-item-desc">Grow the accounts you have. Renewals never slip, and expansion shows up as a number, not a hunch.</p>
+        </article>
+        </div>
+
+        <div class="lc-progress mt-[clamp(1.25rem,2.5vh,2rem)]" role="tablist" aria-label="Lifecycle phases">
+          <button class="lc-pip" data-i="1" aria-label="Phase 01"></button><button class="lc-pip" data-i="2" aria-label="Phase 02"></button><button class="lc-pip" data-i="3" aria-label="Phase 03"></button><button class="lc-pip" data-i="4" aria-label="Phase 04"></button><button class="lc-pip" data-i="5" aria-label="Phase 05"></button><button class="lc-pip" data-i="6" aria-label="Phase 06"></button><button class="lc-pip" data-i="7" aria-label="Phase 07"></button>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
+
+<style>
+  .lc-svg { width:100%; height:auto; display:block; overflow:visible; }
+  .lc-node { cursor:pointer; }
+  .lc-node-inner { transform-box: fill-box; transform-origin: center; transition: transform .4s cubic-bezier(.2,.8,.2,1); }
+  .lc-halo { transform-box: fill-box; transform-origin: center; opacity:0; transform:scale(.6); transition:opacity .4s ease, transform .4s ease; }
+  .lc-dot { transition: fill .35s ease, stroke .35s ease; }
+  .lc-num { transition: fill .35s ease; }
+  .lc-node:not(.is-active) { opacity:.62; }
+  .lc-node { transition: opacity .4s ease; }
+  .lc-node.is-active .lc-node-inner { transform: scale(1.22); }
+  .lc-node.is-active .lc-dot { fill:#8E2DE2; stroke:#fff; }
+  .lc-node.is-active .lc-num { fill:#fff; }
+  .lc-node.is-active .lc-halo { opacity:.16; transform:scale(1.35); }
+  #lc-arrow { transition: opacity .3s ease; }
+
+  .lc-stack { display:grid; }
+  .lc-item { grid-area:1/1; opacity:0; visibility:hidden; transform:translateY(10px); transition:opacity .45s ease, transform .45s ease; pointer-events:none; }
+  .lc-item.is-active { opacity:1; visibility:visible; transform:none; pointer-events:auto; }
+  .lc-item-kicker { display:flex; align-items:center; gap:.6rem; font:700 .72rem/1 ui-monospace,monospace; letter-spacing:.14em; text-transform:uppercase; color:var(--color-faint); }
+  .lc-item-num { display:inline-grid; place-items:center; width:1.9rem; height:1.9rem; border-radius:.55rem; background:linear-gradient(135deg,#8E2DE2,#4A00E0); color:#fff; font-size:.72rem; }
+  .lc-item-title { margin-top:.9rem; font-weight:700; letter-spacing:-.01em; color:var(--color-ink); font-size:clamp(1.5rem,2.4vw,2.15rem); }
+  .lc-item-desc { margin-top:.7rem; max-width:44ch; font-size:clamp(1rem,1.2vw,1.2rem); line-height:1.6; color:var(--color-muted); }
+
+  .lc-progress { display:flex; gap:.5rem; }
+  .lc-pip { width:2.1rem; height:.32rem; border-radius:99px; background:rgba(36,28,51,.14); border:0; padding:0; cursor:pointer; transition:background .35s ease, transform .35s ease; }
+  .lc-pip:hover { background:rgba(36,28,51,.3); }
+  .lc-pip.is-active { background:linear-gradient(90deg,#8E2DE2,#4A00E0); transform:scaleY(1.15); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lc-node-inner, .lc-halo, .lc-dot, .lc-num, .lc-item, #lc-arrow { transition:none; }
+  }
+</style>
+
+<script>
+(function(){
+  var section=document.getElementById('lifecycle'); if(!section) return;
+  var track=section.querySelector('#lc-track');
+  var arrow=section.querySelector('#lc-arrow');
+  var nodeEls=[].slice.call(section.querySelectorAll('.lc-node'));
+  var items=[].slice.call(section.querySelectorAll('.lc-item'));
+  var pips=[].slice.call(section.querySelectorAll('.lc-pip'));
+  var NODES=[{"i": 1, "u": 0.0692}, {"i": 2, "u": 0.199}, {"i": 3, "u": 0.3799}, {"i": 4, "u": 0.5}, {"i": 5, "u": 0.6201}, {"i": 6, "u": 0.801}, {"i": 7, "u": 0.9308}];
+  var L=track.getTotalLength();
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function ptAt(u){ return track.getPointAtLength(((u%1)+1)%1*L); }
+  function placeArrow(u){
+    var p=ptAt(u), a=ptAt(u+0.004), b=ptAt(u-0.004);
+    var ang=Math.atan2(a.y-b.y,a.x-b.x)*180/Math.PI;
+    arrow.setAttribute('transform','translate('+p.x.toFixed(2)+','+p.y.toFixed(2)+') rotate('+ang.toFixed(1)+')');
+  }
+  function activate(idx){
+    nodeEls.forEach(function(el){ el.classList.toggle('is-active', +el.dataset.i===idx); });
+    items.forEach(function(el){ el.classList.toggle('is-active', +el.dataset.i===idx); });
+    pips.forEach(function(el){ el.classList.toggle('is-active', +el.dataset.i===idx); });
+  }
+
+  // initial state
+  activate(1); placeArrow(NODES[0].u);
+
+  var cur=0;                       // index into NODES we're sitting at / heading from
+  var raf=null, phase='dwell', t0=null;
+  var TRAVEL=1500, DWELL=2600;     // ms
+  var running=false;
+
+  function frac(u0,u1,f){ var du=u1-u0; if(du<0) du+=1; return u0+du*f; }
+  function step(ts){
+    if(!running){ raf=null; return; }
+    if(t0===null) t0=ts;
+    var e=ts-t0;
+    if(phase==='dwell'){
+      if(e>=DWELL){ phase='travel'; t0=ts; }
+    } else {
+      var f=Math.min(e/TRAVEL,1);
+      var from=NODES[cur].u, to=NODES[(cur+1)%NODES.length].u;
+      var ef=f<.5?2*f*f:1-Math.pow(-2*f+2,2)/2;   // easeInOutQuad
+      placeArrow(frac(from,to,ef));
+      if(f>=1){ cur=(cur+1)%NODES.length; activate(NODES[cur].i); phase='dwell'; t0=ts; }
+    }
+    raf=requestAnimationFrame(step);
+  }
+  function start(){ if(running||reduce) return; running=true; t0=null; if(!raf) raf=requestAnimationFrame(step); }
+  function stop(){ running=false; if(raf){ cancelAnimationFrame(raf); raf=null; } }
+
+  // click / tab to a node
+  function jump(idx){
+    var k=NODES.findIndex(function(n){return n.i===idx;}); if(k<0) return;
+    cur=k; activate(idx); placeArrow(NODES[k].u); phase='dwell'; t0=null;
+  }
+  nodeEls.forEach(function(el){ el.addEventListener('click',function(){ jump(+el.dataset.i); }); });
+  pips.forEach(function(el){ el.addEventListener('click',function(){ jump(+el.dataset.i); }); });
+
+  // bind to viewport
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      es.forEach(function(en){ if(en.isIntersecting) start(); else stop(); });
+    },{threshold:.35}).observe(section);
+  } else { start(); }
+})();
+</script>
