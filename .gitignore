@@ -51,3 +51,8 @@ Temporary Items
 # Temporary files
 *.log
 *.tmp
+
+# Design harness artifacts (screenshots + WIP candidates)
+design/shots/
+design/refs/
+design/candidates/
