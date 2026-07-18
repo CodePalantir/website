@@ -376,6 +376,20 @@
   border: 1px solid rgba(36, 28, 51, .09);
   box-shadow: 0 12px 36px -16px rgba(36, 28, 51, .22), inset 0 1px 0 rgba(255, 255, 255, .55);
 }
+/* frosted-glass GRAIN: a fine grayscale noise texture over the blur, behind
+   the content (z-index:-1), blended into the surface so it reads as real
+   textured/etched glass rather than a flat blur. */
+.apx-navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='apxg'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23apxg)'/%3E%3C/svg%3E");
+  background-size: 150px 150px;
+  opacity: .85;
+  mix-blend-mode: overlay;
+}
 
 /* Map Image Styles */
 .map-container {
