@@ -325,6 +325,23 @@
     background: linear-gradient(180deg, rgba(23, 16, 43, 0) 46%, rgba(23, 16, 43, .72) 100%);
     pointer-events: none;
   }
+  /* Fluid caption: card contents scale with the card itself (container-query
+     units), so when the grid shrinks to fit the viewport the label/padding
+     scale as one piece instead of overlapping. Tuned to match the fixed
+     text-lg/xl label at a normal ~360px card. */
+  .apx-photo-card.is-fluid { container-type: inline-size; }
+  .apx-photo-card.is-fluid .apx-photo-cap {
+    left: 6.5cqi;
+    right: 6.5cqi;
+    bottom: 5.5cqi;
+    font-size: clamp(0.82rem, 5.6cqi, 1.35rem);
+    line-height: 1.14;
+  }
+  .apx-photo-card.is-fluid .apx-photo-sub {
+    margin-top: 1.8cqi;
+    font-size: clamp(0.68rem, 3.7cqi, 0.9rem);
+    line-height: 1.25;
+  }
 
   /* Dark plum stack band — full-bleed punctuation between the warm
      light sections. Soft brand-purple auras behind the app-network
