@@ -1,17 +1,9 @@
 {%- comment -%}
-  Who we work with, six rounded-square photo cards with bottom scrim +
-  white label. Photos are self-hosted in /assets/images/industries/
-  (Unsplash sources, downloaded 2026-07; replace with client photography
-  when available).
+  Who we work with. Six rounded photo cards, one per industry, driven by the
+  _industries collection (order + card_title + tagline + image). Each card
+  links to its "RevOps for X" subpage. Photos self-hosted in
+  /assets/images/industries/ (Unsplash sources; swap for client photography).
 {%- endcomment -%}
-{% capture industry_cards %}
-software.webp :: B2B software & tech :: Pipelines that scale with the product :: B2B software team at work
-finance.webp :: Finance & wealth :: Compliant, audit-ready client journeys :: Finance district office towers
-construction.webp :: Construction & real estate :: Long deals, many hands, one truth :: Construction site from above
-manufacturing.webp :: Manufacturing & industry :: From quote to machine to service :: Engineer in a modern factory
-education.webp :: Education :: Enrolment funnels students actually finish :: University campus
-events.webp :: Events & hospitality :: High-volume bookings, zero lost leads :: Conference event audience
-{% endcapture %}
 <section id="work" class="apx-section px-6 bg-paper scroll-mt-24">
   <div class="max-w-wide mx-auto w-full">
     <div class="max-w-[720px] mx-auto text-center rv">
@@ -21,17 +13,16 @@ events.webp :: Events & hospitality :: High-volume bookings, zero lost leads :: 
     </div>
 
     <div class="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-      {% assign rows = industry_cards | strip | newline_to_br | split: "<br />" %}
-      {% for row in rows %}
-        {% assign parts = row | strip | split: " :: " %}
-        {% if parts.size < 4 %}{% continue %}{% endif %}
-        <div class="apx-photo-card is-fluid max-sm:aspect-[4/3] rv">
-          <img src="{{ '/assets/images/industries/' | append: parts[0] | relative_url }}" alt="{{ parts[3] }}" loading="lazy" decoding="async" width="1200" height="800">
+      {% assign inds = site.industries | sort: "order" %}
+      {% for ind in inds %}
+        <a href="{{ ind.url | relative_url }}" aria-label="RevOps for {{ ind.name }}" class="apx-photo-card is-fluid max-sm:aspect-[4/3] rv group block">
+          <img src="{{ '/assets/images/industries/' | append: ind.image | relative_url }}" alt="{{ ind.alt }}" loading="lazy" decoding="async" width="1200" height="800">
           <div class="apx-photo-cap absolute z-[2] text-white font-bold tracking-[-0.01em]">
-            {{ parts[1] }}
-            <span class="apx-photo-sub block font-medium tracking-normal text-white/75">{{ parts[2] }}</span>
+            {{ ind.card_title }}
+            <span class="apx-photo-sub block font-medium tracking-normal text-white/75">{{ ind.tagline }}</span>
           </div>
-        </div>
+          <span class="absolute z-[3] top-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center text-white opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" aria-hidden="true">{% include ui/icon.html name="arrow-up-right" class="w-[18px] h-[18px]" %}</span>
+        </a>
       {% endfor %}
     </div>
   </div>

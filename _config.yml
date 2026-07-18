@@ -54,6 +54,9 @@ collections:
   revshorts:
     output: true
     permalink: /revshorts/:name/
+  industries:
+    output: true
+    permalink: /industries/:name/
 
 plugins:
   - jekyll-seo-tag
