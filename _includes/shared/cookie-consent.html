@@ -12,7 +12,7 @@
         <button id="cookie-decline" class="px-4 py-2 text-sm font-semibold text-slate-600 hover:text-slate-800 transition-colors">
           Decline
         </button>
-        <button id="cookie-accept" class="px-5 py-2 bg-purple-gradient text-white text-sm font-semibold rounded-full shadow-md shadow-purple-200 hover:scale-105 transition-transform">
+        <button id="cookie-accept" class="px-5 py-2 bg-ink text-white text-sm font-semibold rounded-[0.5rem] hover:bg-black transition-colors">
           Accept
         </button>
       </div>
@@ -39,16 +39,18 @@
 
   // Initialize custom analytics (called after consent)
   function initCustomAnalytics() {
-    // Load ApexPalantir tracker
+    // APX Lumos disabled — re-enable by uncommenting the block below
+    /*
     const script = document.createElement('script');
     script.src = '{{ "/assets/js/apx-lumos.js" | relative_url }}';
     script.onload = function() {
-      if (window.ApexPalantir) {
-        window.ApexPalantir.init();
-        console.log('[Analytics] ApexPalantir tracker initialized');
+      if (window.APX) {
+        window.APX.init();
+        console.log('[Analytics] APX tracker initialized');
       }
     };
     document.head.appendChild(script);
+    */
 
     // Dispatch event for external listeners
     window.dispatchEvent(new CustomEvent('analyticsConsent', { detail: { accepted: true } }));
