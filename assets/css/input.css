@@ -32,7 +32,7 @@
   --color-line: #EAE4E0;       /* warm hairline borders on light */
   --color-line-strong: #D8D0CA;
   --color-muted: #5D5470;      /* secondary text on light */
-  --color-faint: #8B819C;      /* meta / captions / proof lines */
+  --color-faint: #756B87;      /* meta / captions / proof lines — AA (≥4.5:1) on paper/white */
 
   /* Brand accent — the gradient endpoints, used flat when needed */
   --color-accent: #8E2DE2;

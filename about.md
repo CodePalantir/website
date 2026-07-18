@@ -173,7 +173,38 @@ image: /assets/images/logos/APX_LOGO.png
   </div>
 </section>
 
-<!-- ── 5 · How we work — principles row ─────────────────────────── -->
+<!-- ── 5 · Remote-first — Europe network map ────────────────────── -->
+<section id="network" class="apx-section px-6 bg-paper">
+  <div class="max-w-wide mx-auto">
+    <div class="max-w-[720px] mx-auto text-center rv">
+      <span class="apx-eyebrow">Where we work</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">Remote-first. <span class="text-gradient">Europe-wide.</span></h2>
+      <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">
+        The best minds across Europe, in one execution-focused team.
+      </p>
+    </div>
+
+    <div class="mt-12 md:mt-14 max-w-[960px] mx-auto rv">
+      <div class="apx-map-wrap">
+        <img src="{{ '/assets/images/page/euro.svg' | relative_url }}" alt="Map of Europe marking the APX team's locations — Germany, Poland, Romania, Greece and Cyprus" loading="lazy" decoding="async" width="2816" height="1536">
+        <!-- Hamburg -->
+        <span class="apx-map-dot" style="top:51%; left:39%;" aria-hidden="true"></span>
+        <!-- Munich -->
+        <span class="apx-map-dot" style="top:66%; left:41%; animation-delay:.5s;" aria-hidden="true"></span>
+        <!-- Timișoara -->
+        <span class="apx-map-dot" style="top:71%; left:52%; animation-delay:1s;" aria-hidden="true"></span>
+        <!-- Warsaw -->
+        <span class="apx-map-dot" style="top:55%; left:50%; animation-delay:1.5s;" aria-hidden="true"></span>
+        <!-- Athens -->
+        <span class="apx-map-dot" style="top:90%; left:54%; animation-delay:2s;" aria-hidden="true"></span>
+        <!-- Limassol -->
+        <span class="apx-map-dot" style="top:98%; left:65%; animation-delay:2.5s;" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 6 · How we work — principles row ─────────────────────────── -->
 <section class="apx-section px-6 bg-surface border-t border-line">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[720px] mx-auto text-center rv">
@@ -233,6 +264,40 @@ image: /assets/images/logos/APX_LOGO.png
     transition: border-color .18s ease, background-color .18s ease;
   }
   .group:hover .apx-team-join { border-color: var(--color-accent); background: var(--color-accent-tint); }
+
+  /* Europe network map — themed landmass + brand-purple location dots */
+  .apx-map-wrap { position: relative; }
+  .apx-map-wrap img { width: 100%; height: auto; display: block; }
+  .apx-map-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(92deg, #8E2DE2 0%, #4A00E0 100%);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .9), 0 2px 12px rgba(74, 0, 224, .38);
+    z-index: 2;
+  }
+  .apx-map-dot::after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 9999px;
+    border: 1.5px solid rgba(142, 45, 226, .55);
+    animation: apx-map-ping 3s cubic-bezier(0, 0, .2, 1) infinite;
+    animation-delay: inherit;
+  }
+  @keyframes apx-map-ping {
+    0%       { transform: scale(.45); opacity: .9; }
+    70%,100% { transform: scale(2);   opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .apx-map-dot::after { animation: none; transform: none; opacity: .3; }
+  }
+  @media (max-width: 640px) {
+    .apx-map-dot { width: 8px; height: 8px; box-shadow: 0 0 0 2px rgba(255,255,255,.9), 0 2px 10px rgba(74,0,224,.38); }
+    .apx-map-dot::after { inset: -6px; }
+  }
 </style>
 
 {% include sections/cta-band.html %}
