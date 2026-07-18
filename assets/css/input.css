@@ -366,12 +366,15 @@
 
 /* Header — transparent over the hero grid; gains a warm glass
    surface once the page scrolls (class toggled in default.html). */
-#navbar { background: transparent; }
-#navbar.is-scrolled {
-  background: rgba(250, 248, 245, .85);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-line);
+/* Floating navbar with a CONSTANT frosted-glass surface (not full-width).
+   position:relative so the Services mega-menu anchors + centres to this bar. */
+.apx-navbar {
+  position: relative;
+  background: rgba(250, 248, 245, .70);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  backdrop-filter: blur(16px) saturate(150%);
+  border: 1px solid rgba(36, 28, 51, .09);
+  box-shadow: 0 12px 36px -16px rgba(36, 28, 51, .22), inset 0 1px 0 rgba(255, 255, 255, .55);
 }
 
 /* Map Image Styles */
@@ -536,4 +539,5 @@ html, body {
         transition: none;
     }
 }
+
 

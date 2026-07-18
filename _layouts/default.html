@@ -98,17 +98,7 @@
       }
     });
 
-    // Scroll Logic (warm glass surface once the page moves)
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 20) {
-        navbar.classList.add('is-scrolled', 'py-3');
-        navbar.classList.remove('py-5');
-      } else {
-        navbar.classList.remove('is-scrolled', 'py-3');
-        navbar.classList.add('py-5');
-      }
-    });
+    // Navbar uses a constant frosted-glass surface (.apx-navbar) — no scroll toggle.
 
     // Team Member Image Scroll Animation - Only one highlighted at a time
     let currentHighlightedImage = null;
