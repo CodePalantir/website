@@ -9,6 +9,27 @@
 
   {% seo %}
 
+  <!-- Organization / ProfessionalService schema (site-wide) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "{{ site.company.legal_name }}",
+    "alternateName": "APX",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/assets/images/logos/APX_LOGO.png",
+    "image": "{{ site.url }}/assets/images/logos/APX_LOGO.png",
+    "description": {{ site.description | jsonify }},
+    "email": "{{ site.contact.email }}",
+    "telephone": "{{ site.contact.phone_display }}",
+    "foundingDate": "2023",
+    "address": { "@type": "PostalAddress", "streetAddress": "Gladstonos 16", "postalCode": "8046", "addressLocality": "Paphos", "addressCountry": "CY" },
+    "areaServed": "EU",
+    "sameAs": ["{{ site.contact.linkedin }}"],
+    "knowsAbout": ["RevOps", "Revenue operations technology", "Salesforce implementation", "HubSpot", "CRM implementation", "Systems integration", "Technical debt remediation"]
+  }
+  </script>
+
   <!-- Favicon & PWA -->
   <link rel="icon" type="image/x-icon" href="{{ '/assets/images/logos/favicon.ico' | relative_url }}">
   <link rel="shortcut icon" href="{{ '/assets/images/logos/favicon.ico' | relative_url }}">
