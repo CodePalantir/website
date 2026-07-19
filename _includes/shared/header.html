@@ -54,6 +54,42 @@
         </div>
       </div>
 
+      <!-- Solutions dropdown (products, all coming soon) -->
+      <div class="relative group flex items-center">
+        <span class="flex items-center gap-1 py-2 cursor-default hover:text-ink transition-colors">
+          Solutions {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
+        </span>
+        <div class="dropdown-menu absolute top-full -left-40 w-[420px] mt-3 z-50 bg-surface rounded-[1.5rem] border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-4 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
+          <div class="flex gap-4 p-3 rounded-2xl text-left cursor-default">
+            <div class="w-10 h-10 rounded-xl bg-accent-tint flex items-center justify-center text-accent shrink-0">
+              {% include ui/icon.html name="map" class="w-[18px]" %}
+            </div>
+            <div>
+              <p class="text-sm font-bold text-ink flex items-center gap-2">APX Atlas <span class="px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Coming soon</span></p>
+              <p class="text-xs text-faint mt-0.5">Your entire revenue stack, mapped live</p>
+            </div>
+          </div>
+          <div class="flex gap-4 p-3 rounded-2xl text-left cursor-default">
+            <div class="w-10 h-10 rounded-xl bg-accent-tint flex items-center justify-center text-accent shrink-0">
+              {% include ui/icon.html name="radar" class="w-[18px]" %}
+            </div>
+            <div>
+              <p class="text-sm font-bold text-ink flex items-center gap-2">Tech Debt Monitor <span class="px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Coming soon</span></p>
+              <p class="text-xs text-faint mt-0.5">Continuous debt scoring for your CRM</p>
+            </div>
+          </div>
+          <div class="flex gap-4 p-3 rounded-2xl text-left cursor-default">
+            <div class="w-10 h-10 rounded-xl bg-accent-tint flex items-center justify-center text-accent shrink-0">
+              {% include ui/icon.html name="ghost" class="w-[18px]" %}
+            </div>
+            <div>
+              <p class="text-sm font-bold text-ink flex items-center gap-2">APX Doppelg&auml;nger <span class="px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Coming soon</span></p>
+              <p class="text-xs text-faint mt-0.5">A digital twin of your revenue engine</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <a href="{{ site.baseurl }}/work" class="hover:text-ink transition-colors {% if page.url contains '/work' or page.url contains '/cases' %}text-accent{% endif %}">Work</a>
       <a href="{{ site.baseurl }}/about" class="hover:text-ink transition-colors {% if page.url contains '/about' %}text-accent{% endif %}">About</a>
 
@@ -158,6 +194,20 @@
       <a href="{{ site.baseurl }}/revshorts" class="flex items-center gap-3 py-3 border-b border-line">
         {% include ui/icon.html name="zap" class="w-4 h-4 text-accent" %} RevShorts
       </a>
+
+      <p class="apx-label pt-5 pb-1">Solutions</p>
+      <div class="flex items-center gap-3 py-3 border-b border-line text-muted">
+        {% include ui/icon.html name="map" class="w-4 h-4 text-accent" %} APX Atlas
+        <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Soon</span>
+      </div>
+      <div class="flex items-center gap-3 py-3 border-b border-line text-muted">
+        {% include ui/icon.html name="radar" class="w-4 h-4 text-accent" %} Tech Debt Monitor
+        <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Soon</span>
+      </div>
+      <div class="flex items-center gap-3 py-3 border-b border-line text-muted">
+        {% include ui/icon.html name="ghost" class="w-4 h-4 text-accent" %} APX Doppelg&auml;nger
+        <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Soon</span>
+      </div>
     </nav>
 
     <div class="mt-10 space-y-4">
