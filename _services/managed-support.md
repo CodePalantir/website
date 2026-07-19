@@ -20,4 +20,11 @@ capabilities:
   - "Release and update management handled in the background"
   - "A monthly health summary in plain language, not a log dump"
 image: /assets/images/logos/APX_LOGO.png
+faq:
+  - q: "What does the 24-hour response actually cover?"
+    a: "Every user issue, bug and permission error you report: triaged within 24 hours by a senior engineer, with a fix or a plan, not an autoreply."
+  - q: "Is there a ticket limit?"
+    a: "No per-ticket billing and no ticket counting. One flat annual price. If something structural keeps generating tickets, we tell you and propose the root-cause fix."
+  - q: "What platforms do you support?"
+    a: "Salesforce and HubSpot orgs plus the integrations around them. The whole engine, not just the CRM login."
 ---

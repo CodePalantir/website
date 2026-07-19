@@ -19,4 +19,11 @@ capabilities:
   - "Automation reps adopt because it removes work instead of adding it"
   - "Reporting that reconciles with finance at quarter end"
 image: /assets/images/logos/APX_LOGO.png
+faq:
+  - q: "We already run Sales Cloud. Is this still for us?"
+    a: "Yes. Most of our setups are re-setups: stages that stopped matching how you sell and forecasts nobody trusts. We rebuild around the process you actually run."
+  - q: "How long does a setup take?"
+    a: "Scope decides. After a short discovery you get a written timeline together with the price, and both hold."
+  - q: "Will the team need retraining?"
+    a: "Less than you would fear. We configure around how your reps already work and hand over with enablement sessions, not a manual nobody reads."
 ---

@@ -20,4 +20,11 @@ capabilities:
   - "Documentation so your team can maintain it without us"
   - "Every change deployed through versioned, reviewable releases"
 image: /assets/images/logos/APX_LOGO.png
+faq:
+  - q: "How do you estimate work?"
+    a: "Per feature, in writing, before we write a line. You approve the estimate, then the number holds unless you change the scope."
+  - q: "Who actually writes the code?"
+    a: "Senior engineers only. The person in the kickoff call is the person in your org, and nothing is subcontracted."
+  - q: "What do we own afterwards?"
+    a: "Everything: versioned code, tests, documentation and deployment history. Built so the next admin or agency can pick it up without us."
 ---

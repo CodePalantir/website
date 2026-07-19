@@ -18,4 +18,11 @@ capabilities:
   - "Documentation and governance that survive personnel changes"
   - "One senior partner accountable for the whole revenue stack"
 image: /assets/images/logos/APX_LOGO.png
+faq:
+  - q: "How is this different from Managed Support?"
+    a: "Support keeps the system healthy. Partner also owns where it goes next: the roadmap, the architecture decisions and the build capacity, like a fractional RevOps team."
+  - q: "How is the retainer sized?"
+    a: "On your org complexity and roadmap ambition, agreed in writing and revisited openly when your needs change."
+  - q: "What if we build an internal team later?"
+    a: "Then we hand over properly: documentation, training and a transition plan. Making ourselves replaceable is part of the job."
 ---

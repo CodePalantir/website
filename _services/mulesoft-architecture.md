@@ -19,4 +19,11 @@ capabilities:
   - "Monitoring, alerting, and SLAs on every flow"
   - "Governance and documentation your IT team can audit"
 image: /assets/images/logos/APX_LOGO.png
+faq:
+  - q: "Do we need MuleSoft licences already?"
+    a: "No. We help you decide whether MuleSoft fits at all; when a lighter integration does the job, we say so and build that instead."
+  - q: "What does architecture instead of plumbing mean in practice?"
+    a: "API layers designed for reuse: one validated customer API serving every consumer, instead of one fragile pipe per connection. That is what survives growth."
+  - q: "Can you take over an existing MuleSoft setup?"
+    a: "Yes. We audit what is deployed, document it, and stabilise before we extend."
 ---

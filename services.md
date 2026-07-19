@@ -26,6 +26,28 @@ image: /assets/images/logos/APX_LOGO.png
   </div>
 </section>
 
+<!-- HOW WE WORK, the four rules as a quiet strip (full version on /about) -->
+<section class="px-6 pt-12 md:pt-16 bg-paper">
+  <div class="max-w-wide mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 rv">
+    <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-5">
+      <h2 class="text-[16px] font-bold tracking-[-0.01em] text-ink">Senior only</h2>
+      <p class="mt-1.5 text-[14px] leading-relaxed text-muted">The person you meet is the person who builds.</p>
+    </div>
+    <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-5">
+      <h2 class="text-[16px] font-bold tracking-[-0.01em] text-ink">Evidence before opinion</h2>
+      <p class="mt-1.5 text-[14px] leading-relaxed text-muted">We read your systems before we recommend anything.</p>
+    </div>
+    <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-5">
+      <h2 class="text-[16px] font-bold tracking-[-0.01em] text-ink">Fixed scope, fixed price</h2>
+      <p class="mt-1.5 text-[14px] leading-relaxed text-muted">Priced in euros before we start, never on the invoice.</p>
+    </div>
+    <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-5">
+      <h2 class="text-[16px] font-bold tracking-[-0.01em] text-ink">Code you&#8217;d inherit</h2>
+      <p class="mt-1.5 text-[14px] leading-relaxed text-muted">Versioned, tested, documented for the next engineer.</p>
+    </div>
+  </div>
+</section>
+
 <!-- OFFERINGS, one calm ledger: category on the left, tiles on the right -->
 <section class="pt-10 md:pt-14 pb-20 md:pb-[7.5rem] px-6 bg-paper">
   <div class="max-w-wide mx-auto">

@@ -19,4 +19,11 @@ capabilities:
   - "Monitoring and alerting on every critical sync"
   - "No silent failures: when something breaks, you know before your users do"
 image: /assets/images/logos/APX_LOGO.png
+faq:
+  - q: "Which systems do you integrate?"
+    a: "CRM to ERP, billing, marketing and internal tools. Native connectors where they hold, MuleSoft or custom APIs where they do not."
+  - q: "What happens when an integration fails?"
+    a: "It does not stay silent. Monitoring and alerting are part of every build, so a failure raises an alert instead of quietly dropping records for weeks."
+  - q: "Why does the price range from €15k to €30k?"
+    a: "System count and data complexity. After discovery you get one number in writing, and that is the number you pay."
 ---
