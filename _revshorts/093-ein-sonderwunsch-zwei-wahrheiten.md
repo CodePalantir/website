@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Ein Sonderwunsch, zwei Wahrheiten"
-description: "Es fängt harmlos an. Der CEO braucht vor dem Beiratstermin noch eine Zahl, aber bitte ohne die Partnerdeals, und die Renewals sollen diesmal mitzählen,..."
+title: "One special request, two truths"
+description: "It starts innocently. The CEO needs one more number before the advisory board meeting, but please without the partner deals, and renewals should count this..."
 date: 2026-06-14
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/093-ein-sonderwunsch-zwei-wahrheiten/
 ---
 
-Es fängt harmlos an. Der CEO braucht vor dem Beiratstermin noch eine Zahl, aber bitte ohne die Partnerdeals, und die Renewals sollen diesmal mitzählen, weil die Story dann runder wird. Jemand baut also schnell einen Report, filtert hier, rechnet da, exportiert nach Excel. Zwanzig Minuten Arbeit. Alle zufrieden.
+It starts innocently. The CEO needs one more number before the advisory board meeting, but please without the partner deals, and renewals should count this time, because the story reads better that way. So someone quickly builds a report, filters here, calculates there, exports to Excel. Twenty minutes of work. Everyone's happy.
 
-Drei Wochen später sitzt ihr im Forecast-Meeting und dieselbe Kennzahl steht mit zwei Werten im Raum. Die Vertriebsleitung sagt 38 Prozent Win Rate, das Board-Deck sagt 44. Beide Zahlen sind korrekt gerechnet. Sie beantworten nur nicht dieselbe Frage, und niemand weiß mehr, welche Version wo herkam. Ab jetzt beginnt jedes Meeting mit einer Viertelstunde Zahlenarchäologie.
+Three weeks later you're sitting in the forecast meeting and the same metric is in the room with two values. Sales leadership says 38 percent win rate, the board deck says 44. Both numbers are calculated correctly. They just don't answer the same question, and nobody remembers which version came from where. From now on, every meeting starts with fifteen minutes of number archaeology.
 
-Das ist der eigentliche Preis des Sonderreports. Nicht die zwanzig Minuten, sondern die zweite Wahrheit, die er in die Welt setzt. Eine Kennzahl ist genau so viel wert wie die Definition dahinter, und eine Definition existiert entweder einmal oder gar nicht. "Rechne das mal eben anders" klingt nach Flexibilität. Technisch ist es ein Fork eurer Datenlogik, und Forks wachsen. Aus dem einen Beiratsreport werden fünf Varianten, jede mit eigenem Filter, jede vergraben in irgendeinem Dashboard, das der Werkstudent von 2024 gebaut hat.
+That's the real price of the special report. Not the twenty minutes, but the second truth it puts into the world. A metric is worth exactly as much as the definition behind it, and a definition either exists once or not at all. "Just calculate it differently this once" sounds like flexibility. Technically, it's a fork of your data logic, and forks grow. The one board report becomes five variants, each with its own filter, each buried in some dashboard the working student built in 2024.
 
-Dabei ist der Wunsch meistens legitim. Ohne Partnerdeals rechnen kann eine völlig sinnvolle Sicht sein. Der Fehler liegt nicht in der Frage, sondern im Weg. Statt einer Wegwerf-Auswertung gehört die Sicht in die Standard-Definitionen: Win Rate gibt es ab jetzt in zwei dokumentierten Varianten, mit und ohne Partner, beide zentral definiert, beide überall gleich gerechnet, beide mit Namen. Wer die Zahl zieht, wählt eine Variante. Er erfindet keine.
+And yet the request is usually legitimate. Calculating without partner deals can be a perfectly sensible view. The mistake isn't in the question, it's in the path. Instead of a throwaway analysis, the view belongs in the standard definitions: win rate now exists in two documented variants, with and without partners, both centrally defined, both calculated the same everywhere, both with names. Whoever pulls the number picks a variant. They don't invent one.
 
-Und wenn der Sonderwunsch da nicht reinpasst, weil er nur einmal gebraucht wird und die Story schöner färben soll? Dann ist die richtige Antwort ein Nein. Unbequem, gerade gegenüber dem CEO. Aber wer jede Ad-hoc-Bitte in Excel erfüllt, betreibt keine Datenlogik mehr, sondern verwaltet ihren Zerfall.
+And if the special request doesn't fit in there, because it's needed exactly once and is meant to color the story prettier? Then the right answer is no. Uncomfortable, especially toward the CEO. But whoever fulfills every ad-hoc request in Excel is no longer running data logic, they're administering its decay.
 
-Die Firmen mit dem größten Reporting-Chaos sind übrigens selten die ohne Definitionen. Es sind die, bei denen die Definitionen vor jedem wichtigen Termin neu angepasst wurden. Immer aus gutem Grund. Immer nur dieses eine Mal.
+The companies with the biggest reporting chaos, by the way, are rarely the ones without definitions. They're the ones where the definitions got readjusted before every important meeting. Always for a good reason. Always just this once.
 
-Wie viele Versionen eurer Win Rate existieren gerade? Wenn ihr zum Zählen ansetzen müsst, kennt ihr die Antwort schon.
+How many versions of your win rate exist right now? If you have to start counting, you already know the answer.

@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Die Connect-Rate ist konfigurierbar"
-description: "'Niemand geht mehr ans Telefon' ist der Satz, mit dem Sales-Teams das Kaltakquise-Thema beerdigen. Klingt plausibel, stimmt aber so nicht. Richtig ist:..."
+title: "The connect rate is configurable"
+description: "'Nobody picks up the phone anymore' is the sentence sales teams use to bury the cold calling topic. Sounds plausible, but it's not quite true. What's..."
 date: 2026-04-17
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/035-die-connect-rate-ist-konfigurierbar/
 ---
 
-"Niemand geht mehr ans Telefon" ist der Satz, mit dem Sales-Teams das Kaltakquise-Thema beerdigen. Klingt plausibel, stimmt aber so nicht. Richtig ist: Niemand geht ran, wenn eine unbekannte Nummer aus einer anderen Stadt anruft, das Display "Potenzieller Betrug" anzeigt und der Anruf um 9:05 Uhr in ein Meeting platzt. Das ist kein Marktphänomen. Das ist ein Setup-Problem.
+"Nobody picks up the phone anymore" is the sentence sales teams use to bury the cold calling topic. Sounds plausible, but it's not quite true. What's true is: nobody picks up when an unknown number from another city calls, the display says "Potential Scam," and the call crashes into a meeting at 9:05 am. That's not a market phenomenon. That's a setup problem.
 
-Fangen wir bei der Nummer an. Ein Anruf aus Hamburg bei einem Mittelständler in Stuttgart hat mit einer 040-Vorwahl messbar schlechtere Karten als mit einer 0711er. Lokale Nummern kosten bei Aircall oder CloudTalk ein paar Euro im Monat und heben die Annahmequote spürbar, in manchen Regionen um die Hälfte. Das ist keine Trickserei, das ist Absenderlogik: Bekannt schlägt fremd, nah schlägt fern.
+Start with the number. A call from Hamburg to a Mittelstand company in Stuttgart has measurably worse odds with a 040 area code than with a 0711. Local numbers cost a few euros a month with Aircall or CloudTalk and lift the answer rate noticeably, in some regions by half. That's not trickery, that's sender logic: known beats unknown, near beats far.
 
-Dann die Reputation, das unsichtbare Thema. Wer von wenigen Nummern aus hunderte Calls pro Tag rausschickt, landet in den Spam-Datenbanken der Carrier und Smartphone-Filter. Ab dann zeigt das Display des Prospects eine Warnung, und die beste Liste der Welt ist wertlos. Caller-ID-Reputation muss man überwachen wie E-Mail-Deliverability: Nummern rotieren, Volumen pro Nummer deckeln, verbrannte Nummern stilllegen und registrieren, was die Carrier über einen wissen. Die meisten Teams haben davon noch nie gehört und wundern sich über sinkende Quoten.
+Then reputation, the invisible topic. Whoever blasts hundreds of calls per day from a handful of numbers ends up in the spam databases of the carriers and smartphone filters. From then on, the prospect's display shows a warning, and the best list in the world is worthless. Caller ID reputation has to be monitored like email deliverability: rotate numbers, cap volume per number, retire burned numbers, and register what the carriers know about you. Most teams have never heard of any of this and wonder why their rates keep sinking.
 
-Bleibt das Zeitfenster. Die eigene Telefonie-Historie verrät ziemlich genau, wann welche Zielgruppe rangeht. Geschäftsführer im Handwerk: früh, oft vor acht. Marketing-Leads in Tech-Firmen: eher später Nachmittag, wenn der Meeting-Block durch ist. Diese Daten liegen im Dialer, ausgewertet werden sie selten. Stattdessen callt das Team, wann es gerade Zeit hat, also genau dann, wenn alle anderen auch callen.
+That leaves the time window. Your own calling history reveals fairly precisely when each target group picks up. Owners in the trades: early, often before eight. Marketing leads at tech companies: later afternoon, once the meeting block is done. This data sits in the dialer, it rarely gets analyzed. Instead the team calls whenever it happens to have time, which is exactly when everyone else is calling too.
 
-Der Punkt an der Sache: Nichts davon ist eine Motivationsfrage. Kein Kickoff, kein Bonus, kein "einfach mehr wählen" ändert etwas an einer Nummer, die als Spam markiert ist. Connect-Rate ist Infrastruktur, wie Domain-Setup beim Cold Email. Sie wird konfiguriert, gemessen, verbessert. Ein Team, das von 8 auf 15 Prozent Connects kommt, hat seine Pipeline verdoppelt, ohne einen einzigen Call mehr zu machen.
+The point of all this: none of it is a motivation question. No kickoff, no bonus, no "just dial more" changes anything about a number flagged as spam. Connect rate is infrastructure, like domain setup in cold email. It gets configured, measured, improved. A team that goes from 8 to 15 percent connects has doubled its pipeline without making a single additional call.
 
-Bevor ihr also das nächste Telefontraining bucht: Wisst ihr, was auf dem Display eures Prospects steht, wenn ihr anruft?
+So before you book the next phone training: do you know what shows up on your prospect's display when you call?

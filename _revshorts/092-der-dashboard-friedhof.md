@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Der Dashboard-Friedhof"
-description: "Öffnet mal die Report-Übersicht in eurem CRM und sortiert nach 'zuletzt angesehen'. Bei einem Kunden haben wir das neulich gemacht: 340 Reports in der..."
+title: "The dashboard graveyard"
+description: "Open the report overview in your CRM and sort by 'last viewed'. We did this at a client recently: 340 reports in the org, 12 of them opened in the last..."
 date: 2026-06-13
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/092-der-dashboard-friedhof/
 ---
 
-Öffnet mal die Report-Übersicht in eurem CRM und sortiert nach "zuletzt angesehen". Bei einem Kunden haben wir das neulich gemacht: 340 Reports in der Org, 12 davon in den letzten 90 Tagen geöffnet. Der Rest ist Friedhof. Jeder dieser toten Reports hatte mal einen Anlass, ein Board-Meeting, eine Quartalsfrage, ein "kannst du mir das mal eben ziehen". Das Meeting fand statt. Der Report blieb liegen.
+Open the report overview in your CRM and sort by "last viewed". We did this at a client recently: 340 reports in the org, 12 of them opened in the last 90 days. The rest is graveyard. Every one of those dead reports once had an occasion, a board meeting, a quarterly question, a "can you pull that for me real quick". The meeting happened. The report stayed behind.
 
-So entsteht das Muster, das wir überall sehen: Dashboards werden für Termine gebaut, nicht für Entscheidungen.
+That's how the pattern we see everywhere emerges: dashboards get built for meetings, not for decisions.
 
-Der Unterschied klingt akademisch, ist aber der ganze Punkt. Ein Dashboard für einen Termin beantwortet die Frage "was zeigen wir am Donnerstag". Ein Dashboard für eine Entscheidung beantwortet die Frage "woran erkennen wir, dass wir eingreifen müssen, und wer greift dann ein". Das erste stirbt am Freitag. Das zweite lebt, weil jemand davon abhängt.
+The difference sounds academic but it's the entire point. A dashboard for a meeting answers the question "what do we show on Thursday". A dashboard for a decision answers the question "how do we know we need to intervene, and who intervenes". The first one dies on Friday. The second one lives, because someone depends on it.
 
-Die Testfrage für jedes einzelne Chart geht so: Welche Entscheidung ändert sich, wenn diese Zahl anders aussieht als erwartet? Wenn die Antwort lautet "dann besprechen wir das mal", ist das keine Entscheidung, das ist ein Terminwunsch. Wenn die Antwort lautet "dann verschiebt der Head of Sales Kapazität von Inbound auf Outbound" oder "dann eskaliert CS die drei Accounts mit fallendem Usage", dann trägt das Chart seinen Platz. Alles andere ist Tapete. Hübsche, gepflegte, gelegentlich sogar korrekte Tapete.
+The test question for every single chart goes like this: which decision changes if this number looks different than expected? If the answer is "then we'll discuss it sometime", that's not a decision, that's a meeting request. If the answer is "then the head of sales shifts capacity from inbound to outbound" or "then CS escalates the three accounts with declining usage", the chart earns its place. Everything else is wallpaper. Pretty, well-maintained, occasionally even accurate wallpaper.
 
-Und Tapete kostet. Nicht nur die Bauzeit, obwohl die bei 340 Reports locker in die Hunderte Stunden geht. Der eigentliche Preis ist Vertrauen. Wenn drei Dashboards dieselbe Kennzahl leicht unterschiedlich rechnen, weil sie zu verschiedenen Zeiten für verschiedene Meetings zusammengeklickt wurden, glaubt irgendwann niemand mehr irgendeiner Zahl. Dann werden Entscheidungen wieder aus dem Bauch getroffen, nur jetzt mit einem BI-Tool im Hintergrund, das den Anschein von Datengetriebenheit wahrt. Teurer kann man Bauchgefühl nicht verpacken.
+And wallpaper costs. Not just the build time, though at 340 reports that easily runs into the hundreds of hours. The real price is trust. When three dashboards compute the same metric slightly differently, because they were clicked together at different times for different meetings, eventually nobody believes any number anymore. Then decisions go back to being made from the gut, just now with a BI tool in the background preserving the appearance of being data-driven. There's no more expensive packaging for gut feeling.
 
-Die Konsequenz ist radikaler, als die meisten mögen. Vor jedem neuen Dashboard erst der Satz: Diese Ansicht füttert folgende Entscheidung, die Person X in Rhythmus Y trifft. Kein Satz, kein Dashboard. Und rückwärts genauso, einmal im Quartal die Liste durchgehen und alles archivieren, was 90 Tage niemand geöffnet hat. Beschweren wird sich fast niemand, das ist die ernüchterndste Erkenntnis aus jeder Aufräumaktion.
+The consequence is more radical than most people like. Before every new dashboard, first the sentence: this view feeds the following decision, which person X makes in rhythm Y. No sentence, no dashboard. And the same in reverse, once a quarter go through the list and archive everything nobody has opened in 90 days. Almost nobody will complain, which is the most sobering insight from every cleanup.
 
-Wie viele eurer Dashboards würden vermisst werden, wenn sie heute Nacht verschwinden? Die ehrliche Zahl liegt vermutlich unter fünf. Genau die fünf sind euer Reporting. Der Rest war Deko.
+How many of your dashboards would be missed if they vanished tonight? The honest number is probably under five. Those five are your reporting. The rest was decoration.

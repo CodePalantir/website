@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Onboarding per Zuruf, Renewal per Zufall"
-description: "Der Vertrag ist unterschrieben, die Glocke hat geläutet, und dann? Dann macht der CSM das schon irgendwie. Ein Kickoff wird angesetzt, danach hängt..."
+title: "Onboarding by shout-out, renewal by chance"
+description: "The contract is signed, the bell has been rung, and then? Then the CSM will handle it somehow. A kickoff gets scheduled, and after that everything..."
 date: 2026-05-14
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/062-onboarding-per-zuruf-renewal-per-zufall/
 ---
 
-Der Vertrag ist unterschrieben, die Glocke hat geläutet, und dann? Dann macht der CSM das schon irgendwie. Ein Kickoff wird angesetzt, danach hängt alles von Kalenderlage, Erfahrung und Tagesform ab. Kunde A bekommt in zwei Wochen einen sauberen Start. Kunde B wartet sechs Wochen auf den ersten Termin, weil sein CSM gerade zwei Eskalationen jongliert. Beide haben dasselbe bezahlt.
+The contract is signed, the bell has been rung, and then? Then the CSM will handle it somehow. A kickoff gets scheduled, and after that everything depends on calendar luck, experience, and daily form. Customer A gets a clean start within two weeks. Customer B waits six weeks for the first meeting because his CSM is juggling two escalations. Both paid the same.
 
-Das Ärgerliche daran ist nicht die Unordnung selbst, sondern der Zeitpunkt, an dem sie sich rächt: zwölf Monate später, beim Renewal. Ob ein Kunde verlängert, entscheidet sich nämlich nicht im Renewal-Gespräch. Es entscheidet sich in den ersten 90 Tagen, wenn er zum ersten Mal echten Wert aus dem Produkt zieht. Oder eben nicht. Time-to-First-Value ist die eine Onboarding-Metrik, die zählt, und wer sie nicht misst, managt sein Churn-Risiko mit einem Jahr Verzögerung.
+The annoying part is not the disorder itself, but the moment it takes its revenge: twelve months later, at renewal. Whether a customer renews is not decided in the renewal conversation. It is decided in the first 90 days, when he pulls real value from the product for the first time. Or does not. Time to first value is the one onboarding metric that counts, and if you do not measure it, you are managing your churn risk with a one-year delay.
 
-Was "per Zuruf" konkret heißt: keine definierte Liste von Meilensteinen, keine Zieltermine, keine Stelle, an der sichtbar wird, welcher Kunde wo hängt. Fragt euren CS-Lead, welche drei Onboardings gerade hinter Plan liegen. Wenn die Antwort erst nach Rumfragen im Team entsteht, existiert der Plan nicht.
+What "by shout-out" means concretely: no defined list of milestones, no target dates, no place where it becomes visible which customer is stuck where. Ask your CS lead which three onboardings are currently behind plan. If the answer only emerges after asking around the team, the plan does not exist.
 
-Die Alternative ist unspektakulär und genau deshalb machbar. Ein Template mit fünf bis acht Meilensteinen, vom Kickoff über die technische Einrichtung bis zum definierten First-Value-Moment, also dem Punkt, an dem der Kunde erstmals das bekommt, wofür er gekauft hat. Jeder Meilenstein trägt einen Zieltermin relativ zum Vertragsstart. Das Ganze entsteht bei Closed Won automatisch als Objekt im System, nicht als Word-Checkliste im Teams-Ordner, und ein Dashboard zeigt alle laufenden Onboardings mit Status. Fertig.
+The alternative is unspectacular, and that is exactly why it is doable. A template with five to eight milestones, from kickoff through technical setup to the defined first-value moment, meaning the point where the customer first gets what he bought. Every milestone carries a target date relative to contract start. The whole thing is created automatically as an object in the system at Closed Won, not as a Word checklist in a Teams folder, and a dashboard shows all running onboardings with status. Done.
 
-Gainsight braucht ihr dafür nicht. Bei 20 bis 200 Mitarbeitern reicht das CRM selbst oder ein leichtes Projekttool, sauber angebunden. Die Investition ist ein Template plus etwas Automatisierung, keine neue Plattform mit fünfstelliger Jahreslizenz.
+You do not need Gainsight for this. At 20 to 200 employees, the CRM itself or a lightweight project tool, cleanly connected, is enough. The investment is a template plus some automation, not a new platform with a five-figure annual license.
 
-Ein Nebeneffekt wird gern unterschätzt: Ein strukturiertes Onboarding diszipliniert auch den Vertrieb. Sobald der First-Value-Meilenstein definiert ist, fliegt jeder Deal auf, bei dem Sales etwas versprochen hat, das der Kunde in 90 Tagen gar nicht erreichen kann. Unangenehm? Kurz. Billiger als der Churn in Monat zwölf? Immer.
+One side effect gets underestimated: a structured onboarding also disciplines sales. Once the first-value milestone is defined, every deal surfaces where sales promised something the customer cannot possibly reach in 90 days. Unpleasant? Briefly. Cheaper than the churn in month twelve? Always.
 
-Legt mal eure Churn-Liste vom letzten Jahr neben die Onboarding-Daten derselben Kunden. Falls es die gibt. Genau das ist der Punkt.
+Lay last year's churn list next to the onboarding data of those same customers. If it exists. That is exactly the point.

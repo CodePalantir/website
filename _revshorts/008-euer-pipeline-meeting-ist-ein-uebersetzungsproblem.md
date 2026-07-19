@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Euer Pipeline-Meeting ist ein Übersetzungsproblem"
-description: "Freitag, zehn Uhr, Pipeline-Review. Marketing präsentiert 340 MQLs für das Quartal, Zielerreichung 112 Prozent, Folie mit grünem Haken. Sales schaut..."
+title: "Your pipeline meeting is a translation problem"
+description: "Friday, ten a.m., pipeline review. Marketing presents 340 MQLs for the quarter, 112 percent of target, slide with a green checkmark. Sales looks at..."
 date: 2026-03-21
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/008-euer-pipeline-meeting-ist-ein-uebersetzungsproblem/
 ---
 
-Freitag, zehn Uhr, Pipeline-Review. Marketing präsentiert 340 MQLs für das Quartal, Zielerreichung 112 Prozent, Folie mit grünem Haken. Sales schaut auf die eigene Liste und findet davon ungefähr 60, die den Namen verdient haben. Der Rest: Whitepaper-Downloads von Studenten, Wettbewerber mit Wegwerfadressen, ein Praktikant, der dreimal dasselbe Formular ausgefüllt hat. Und dann fällt der Satz, der in jedem zweiten Mittelständler fällt. Eure Leads sind Müll. Worauf die Antwort kommt, die genauso alt ist: Ihr fasst sie ja nicht mal an, im Schnitt erst nach vier Tagen.
+Friday, ten a.m., pipeline review. Marketing presents 340 MQLs for the quarter, 112 percent of target, slide with a green checkmark. Sales looks at its own list and finds roughly 60 that deserve the name. The rest: whitepaper downloads from students, competitors with throwaway addresses, an intern who filled out the same form three times. And then comes the sentence that gets said at every other midsize company. Your leads are garbage. Followed by the answer that's just as old: you don't even touch them, four days on average before first contact.
 
-Beide haben recht. Das ist das Problem.
+Both sides are right. That's the problem.
 
-Marketing zählt als MQL, was einen Score über 50 hat. Sales meint mit MQL einen Kontakt, der Budget und ein konkretes Projekt hat. Und wenn ihr eine CS-Abteilung habt, benutzt die das Wort vermutlich für etwas Drittes. Drei Abteilungen, drei Funnel-Definitionen, ein Begriff. Solange das so ist, redet ihr in jedem Meeting über Zahlen, die nicht dasselbe messen, und streitet folgerichtig über die Zahlen statt über Maßnahmen. Das Meeting fühlt sich an wie Arbeit. Es ist Simultandolmetschen ohne Dolmetscher.
+Marketing counts anything with a score above 50 as an MQL. Sales means a contact with budget and a concrete project. And if you have a CS department, they probably use the word for something else entirely. Three departments, three funnel definitions, one term. As long as that's the case, every meeting is a discussion of numbers that don't measure the same thing, so naturally you argue about the numbers instead of about actions. The meeting feels like work. It's simultaneous interpreting without an interpreter.
 
-Der Reflex ist dann oft, ein Tool zu kaufen. Besseres Scoring, neues Attributionsmodell, ein Dashboard, das endlich die Wahrheit zeigt. Funktioniert nicht, weil das Problem gar kein Datenproblem ist. Einheitliche Funnel-Definitionen sind eine Entscheidung, keine Software. Jemand mit Autorität über beide Abteilungen muss festlegen: Ein MQL ist ein Kontakt aus dem ICP mit Verhalten X, ein SQL entsteht, wenn Sales Kriterium Y bestätigt hat, und die Übergabe gilt erst nach dokumentiertem Erstkontakt. Das ist ein Nachmittag Arbeit plus ein unangenehmes Gespräch. Kein Lizenzvertrag der Welt nimmt euch das ab.
+The reflex then is often to buy a tool. Better scoring, a new attribution model, a dashboard that finally shows the truth. Doesn't work, because the problem isn't a data problem at all. Unified funnel definitions are a decision, not software. Someone with authority over both departments has to rule: an MQL is a contact from the ICP with behavior X, an SQL exists once sales has confirmed criterion Y, and the handoff only counts after a documented first touch. That's an afternoon of work plus one uncomfortable conversation. No license agreement in the world does that for you.
 
-Danach, und erst danach, lohnt sich das Dashboard. Denn ein Dashboard auf uneinheitlichen Definitionen ist kein Reporting, sondern ein Streitbeschleuniger mit Diagrammen. Dieselbe Conversion-Rate, dreimal anders berechnet, dreimal anders interpretiert. Wir haben Firmen gesehen, die 40.000 Euro in BI-Tooling gesteckt haben, bevor irgendjemand aufgeschrieben hatte, was ein Lead eigentlich ist.
+After that, and only after that, the dashboard is worth it. Because a dashboard on inconsistent definitions isn't reporting, it's an argument accelerator with charts. The same conversion rate, calculated three different ways, interpreted three different ways. We've seen companies pour 40,000 euros into BI tooling before anyone had written down what a lead actually is.
 
-Der Test ist simpel. Fragt drei Leute aus drei Abteilungen, was bei euch ein MQL ist, und zwar schriftlich, ohne dass sie sich absprechen können. Wenn drei verschiedene Antworten kommen, wisst ihr, warum euer Forecast wackelt. Und ihr wisst auch, dass die Lösung nichts kostet außer einer Entscheidung, die bisher niemand treffen wollte.
+The test is simple. Ask three people from three departments what an MQL is at your company, in writing, without letting them coordinate. If three different answers come back, you know why your forecast wobbles. And you also know the fix costs nothing except a decision nobody wanted to make until now.

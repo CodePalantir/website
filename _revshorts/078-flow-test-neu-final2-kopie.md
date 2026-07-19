@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Flow_Test_NEU_final2_KOPIE"
-description: "Öffnet mal eure Automatisierungsliste. Nicht die Prozessdoku, die es sowieso nicht gibt. Die echte Liste im System."
+title: "Flow_Test_NEW_final2_COPY"
+description: "Open your automation list. Not the process documentation, which doesn't exist anyway. The actual list in the system."
 date: 2026-05-30
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/078-flow-test-neu-final2-kopie/
 ---
 
-Öffnet mal eure Automatisierungsliste. Nicht die Prozessdoku, die es sowieso nicht gibt. Die echte Liste im System.
+Open your automation list. Not the process documentation, which doesn't exist anyway. The actual list in the system.
 
-Da steht dann sowas wie "Lead Update", "Lead Update 2", "Flow_Test_NEU_final2_KOPIE" und ein Workflow namens "Michael bitte nicht löschen". Michael hat die Firma 2023 verlassen. Niemand weiß, was das Ding tut, aber alle haben Angst, es anzufassen.
+In there you'll find things like "Lead Update," "Lead Update 2," "Flow_Test_NEW_final2_COPY," and a workflow named "Michael please do not delete." Michael left the company in 2023. Nobody knows what the thing does, but everyone is afraid to touch it.
 
-Das ist keine Anekdote, das ist der Normalzustand. In fast jeder Org, die wir auditieren, sind die Automatisierungen anonym. Sie haben Namen, klar, aber Namen, die nichts verraten: nicht welches Objekt sie anfassen, nicht was sie auslösen, nicht ob sie überhaupt noch aktiv gebraucht werden. Und dann passiert das, was immer passiert. Ein Feld wird plötzlich überschrieben, ein Lead landet beim falschen Team, eine E-Mail geht doppelt raus. Jetzt beginnt die Suche.
+That's not an anecdote, that's the normal state. In almost every org we audit, the automations are anonymous. They have names, sure, but names that reveal nothing: not which object they touch, not what triggers them, not whether they're even still actively needed. And then the thing happens that always happens. A field suddenly gets overwritten, a lead lands with the wrong team, an email goes out twice. Now the search begins.
 
-Mit sauberen Namen dauert die Suche zehn Minuten. Man filtert nach Objekt, liest die Namen, hat den Kandidaten. Ohne saubere Namen dauert sie drei Tage, weil man 47 Flows einzeln öffnen, durchklicken und im Kopf nachbauen muss, was sie tun. Drei Tage, in denen das Feld weiter überschrieben wird. Wir haben Debugging-Sessions erlebt, in denen die Hälfte der Zeit nicht ins Problem ging, sondern in die Archäologie: Was ist das hier überhaupt?
+With clean names, the search takes ten minutes. You filter by object, read the names, have your candidate. Without clean names it takes three days, because you have to open 47 flows one by one, click through them, and reconstruct in your head what they do. Three days during which the field keeps getting overwritten. We've been in debugging sessions where half the time went not into the problem but into archaeology: what even is this?
 
-Naming Conventions sind Dokumentation zum Nulltarif. Das ist der eigentliche Punkt. Eine Prosa-Doku im Wiki veraltet in dem Moment, in dem sie geschrieben wird, weil sie neben dem System lebt und niemand sie nachzieht. Ein Name lebt im System selbst. "Lead_BeforeSave_SetRegion" sagt dir Objekt, Zeitpunkt und Zweck, ohne dass du den Flow öffnest. Kostet beim Anlegen fünf Sekunden Nachdenken. Spart bei jedem einzelnen Incident Stunden.
+Naming conventions are documentation at zero cost. That's the real point. Prose documentation in a wiki goes stale the moment it's written, because it lives next to the system and nobody keeps it current. A name lives in the system itself. "Lead_BeforeSave_SetRegion" tells you object, timing, and purpose without you opening the flow. Costs five seconds of thought at creation. Saves hours on every single incident.
 
-Die Convention selbst ist fast egal. Objekt zuerst oder Zweck zuerst, Unterstriche oder nicht, darüber kann man streiten, muss man aber nicht lange. Wichtig ist nur: eine Regel, konsequent, für alle. Auch für den Admin, der nur mal schnell was testet. Gerade für den, denn aus "mal schnell was testen" wird "final2_KOPIE", und aus "final2_KOPIE" wird Produktionslogik, auf der drei Jahre später euer Routing hängt.
+The convention itself barely matters. Object first or purpose first, underscores or not, you can argue about that, but you don't have to for long. All that matters: one rule, applied consistently, by everyone. Including the admin who's just quickly testing something. Especially him, because "just quickly testing something" becomes "final2_COPY," and "final2_COPY" becomes production logic that your routing hangs on three years later.
 
-Man erkennt am Zustand der Automatisierungsliste ziemlich genau, wie eine Org geführt wird. Nicht die Kultur-Slides, die Liste. Wie viele eurer Flows könntet ihr am Namen erkennen, ohne sie zu öffnen?
+You can tell pretty precisely how an org is run by the state of its automation list. Not the culture slides, the list. How many of your flows could you identify by name without opening them?

@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "'Wir brauchen mehr Vertriebler' ist meistens die falsche Diagnose"
-description: "Der Satz fällt in fast jedem Pipeline-Review, wenn die Zahlen nicht stimmen. Mehr Leads, mehr Meetings, mehr Abschlüsse, also mehr Leute. Klingt nach..."
+title: "'We need more salespeople' is usually the wrong diagnosis"
+description: "The sentence comes up in almost every pipeline review when the numbers are off. More leads, more meetings, more closed deals, so more people. Sounds..."
 date: 2026-07-07
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/116-wir-brauchen-mehr-vertriebler-ist-meistens-die-falsche-d/
 ---
 
-Der Satz fällt in fast jedem Pipeline-Review, wenn die Zahlen nicht stimmen. Mehr Leads, mehr Meetings, mehr Abschlüsse, also mehr Leute. Klingt nach Arithmetik. Ist aber in den meisten Fällen eine Fehldiagnose, und zwar eine teure.
+The sentence comes up in almost every pipeline review when the numbers are off. More leads, more meetings, more closed deals, so more people. Sounds like arithmetic. But in most cases it is a misdiagnosis, and an expensive one.
 
-Rechnen wir kurz. Ein neuer Rep kostet im DACH-Raum schnell 80.000 bis 120.000 Euro voll geladen, dazu Recruiting, dazu die Zeit, die eure besten Leute ins Einarbeiten stecken. Ramp-up bis zur vollen Produktivität: realistisch sechs Monate, oft länger. Das ist die Investition. Und jetzt die Frage, die vorher niemand stellt: In welches System setzt ihr diese Person?
+Let us do some quick math. A new rep in the DACH region easily costs 80,000 to 120,000 euros fully loaded, plus recruiting, plus the time your best people pour into onboarding. Ramp-up to full productivity: realistically six months, often longer. That is the investment. And now the question nobody asks beforehand: what system are you putting this person into?
 
-Wenn die Antwort lautet "in unser aktuelles", dann schaut es euch vorher ehrlich an. Leads liegen achtundvierzig Stunden unbearbeitet, weil das Routing per Zuruf läuft. Jeder Rep qualifiziert anders, weil es keine gemeinsame Definition gibt, was ein guter Deal ist. Das CRM ist ein Friedhof halber Wahrheiten, der Forecast ein Bauchgefühl mit Nachkommastellen. In so ein System einen neuen Menschen zu setzen heißt nicht, die Maschine zu vergrößern. Es heißt, das Rauschen zu verstärken. Der Neue lernt in seinen sechs Monaten Ramp-up nicht euren Prozess, denn es gibt keinen. Er lernt die Workarounds seines Sitznachbarn.
+If the answer is "our current one", then take an honest look at it first. Leads sit untouched for forty-eight hours because routing runs by shout-out. Every rep qualifies differently because there is no shared definition of what a good deal is. The CRM is a graveyard of half-truths, the forecast a gut feeling with decimal places. Putting a new person into a system like that does not mean scaling the machine. It means amplifying the noise. In his six months of ramp-up, the new hire does not learn your process, because there is none. He learns the workarounds of the person sitting next to him.
 
-Das Gemeine daran: Ein kaputtes System bestraft gute Leute zuerst. Der starke Hire merkt nach drei Monaten, dass er gegen die Infrastruktur verkauft statt mit ihr, und geht wieder. Der schwache bleibt und produziert Aktivität, die nach Arbeit aussieht. Beides habt ihr dann bezahlt.
+The cruel part: a broken system punishes good people first. The strong hire realizes after three months that he is selling against the infrastructure instead of with it, and leaves again. The weak one stays and produces activity that looks like work. Either way, you paid for it.
 
-Erst die Maschine, dann die Besatzung. Ein sauberes Lead-Routing, klare Stage-Definitionen, ein Prozess, den man einem neuen Rep in einer Woche erklären kann, weil er dokumentiert ist und im System erzwungen wird statt in Köpfen zu wohnen. Das kostet einen Bruchteil eines Jahresgehalts und wirkt auf jeden, der schon da ist. Wir haben Fälle gesehen, in denen allein die Reaktionszeit auf Inbound-Leads von zwei Tagen auf zehn Minuten die Conversion so bewegt hat, dass die geplanten zwei Hires ein Jahr nach hinten rutschten. Gleiche Pipeline, gleiche Leute, anderes System.
+Machine first, then crew. Clean lead routing, clear stage definitions, a process you can explain to a new rep in a week because it is documented and enforced in the system instead of living in heads. That costs a fraction of an annual salary and works on everyone who is already there. We have seen cases where merely cutting inbound lead response time from two days to ten minutes moved conversion enough that the two planned hires slipped a full year. Same pipeline, same people, different system.
 
-Es gibt den Moment, in dem mehr Leute wirklich die Antwort sind, nämlich wenn die Maschine läuft und der Engpass nachweislich Kapazität ist. Nachweislich, nicht gefühlt.
+There is a moment when more people really are the answer, namely when the machine runs and the bottleneck is demonstrably capacity. Demonstrably, not felt.
 
-Bevor ihr die nächste Stelle ausschreibt: Würde ein exzellenter Vertriebler in eurem heutigen System exzellente Zahlen liefern? Wenn ihr zögert, kennt ihr die Diagnose schon.
+Before you post the next opening: would an excellent salesperson deliver excellent numbers in your system as it is today? If you hesitate, you already know the diagnosis.

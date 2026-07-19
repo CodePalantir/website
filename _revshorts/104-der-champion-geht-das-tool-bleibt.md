@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Der Champion geht, das Tool bleibt"
-description: "In fast jedem Stack, den wir auditieren, steht mindestens ein Tool, zu dem im Kickoff derselbe Satz fällt: Das hat damals der Kollege eingeführt, der..."
+title: "The champion leaves, the tool stays"
+description: "In almost every stack we audit, there is at least one tool that gets the same sentence in the kickoff: a colleague introduced that back in the day, but..."
 date: 2026-06-25
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/104-der-champion-geht-das-tool-bleibt/
 ---
 
-In fast jedem Stack, den wir auditieren, steht mindestens ein Tool, zu dem im Kickoff derselbe Satz fällt: Das hat damals der Kollege eingeführt, der ist aber nicht mehr da. Niemand weiß, warum es gekauft wurde. Niemand weiß, was es genau tut. Gekündigt wird es trotzdem nicht, denn vielleicht hängt ja was dran.
+In almost every stack we audit, there is at least one tool that gets the same sentence in the kickoff: a colleague introduced that back in the day, but he is not here anymore. Nobody knows why it was bought. Nobody knows what exactly it does. It does not get canceled anyway, because maybe something depends on it.
 
-Genau so entsteht Stack-Archäologie. Ein ambitionierter Head of Sales holt sich ein Sequencing-Tool, konfiguriert es abends nach Feierabend, verdrahtet es mit dem CRM, baut sich seine Workflows. Das Ding läuft, der Mann glänzt, alle sind zufrieden. Achtzehn Monate später wechselt er zum Wettbewerber, und mit ihm verschwindet das gesamte Wissen: die Zugangsdaten liegen in seinem privaten Passwortmanager, die API-Verbindung läuft über seinen persönlichen User, die Logik hinter den Feldmappings existiert nur noch in seinem Kopf, der jetzt woanders denkt.
+This is exactly how stack archaeology happens. An ambitious Head of Sales brings in a sequencing tool, configures it after hours, wires it into the CRM, builds his workflows. The thing runs, the man shines, everyone is happy. Eighteen months later he moves to a competitor, and all the knowledge leaves with him: the credentials live in his personal password manager, the API connection runs through his personal user, the logic behind the field mappings exists only in his head, which now thinks somewhere else.
 
-Das Tool läuft weiter. Irgendwie. Bis die Integration bricht, weil sein deaktivierter Account der technische User war, und plötzlich landen drei Wochen lang keine Antworten mehr im CRM. Gemerkt hat es keiner sofort. So etwas merkt man nie sofort.
+The tool keeps running. Somehow. Until the integration breaks, because his deactivated account was the technical user, and suddenly no replies land in the CRM for three weeks. Nobody noticed right away. You never notice these things right away.
 
-Der Punkt ist nicht, dass Champions schlecht wären. Ohne Leute, die Dinge einfach anfassen, bewegt sich gar nichts. Der Punkt ist, dass ein Tool ohne dokumentierten Owner kein Asset ist, sondern eine tickende Abhängigkeit von einer einzelnen Person, und Personalfluktuation ist keine Ausnahme, sondern der Normalfall. Bei 15 Prozent Fluktuation im Jahr und 15 Tools im Stack verliert ihr rechnerisch alle paar Monate irgendwo einen Kopf, in dem Betriebswissen steckt.
+The point is not that champions are bad. Without people who just grab things and go, nothing moves at all. The point is that a tool without a documented owner is not an asset but a ticking dependency on a single person, and staff turnover is not the exception, it is the default. At 15 percent annual turnover and 15 tools in the stack, you statistically lose a head full of operational knowledge somewhere every few months.
 
-Die Lösung ist unspektakulär, und vielleicht ist sie deshalb so selten. Jedes Tool bekommt einen benannten Owner, mit Namen im Systeminventar, nicht mit Abteilung. Technische User statt persönlicher Accounts für alle Integrationen. Eine Seite Dokumentation pro Tool: Zweck, Kernkonfiguration, Schnittstellen, Vertrag. Eine Seite reicht, die 60-Seiten-Variante schreibt sowieso niemand und liest erst recht niemand. Und beim Offboarding gehört die Frage nach den Tool-Ownerships in dieselbe Checkliste wie Laptop und Schlüsselkarte.
+The solution is unspectacular, and maybe that is why it is so rare. Every tool gets a named owner, with a name in the system inventory, not a department. Technical users instead of personal accounts for all integrations. One page of documentation per tool: purpose, core configuration, interfaces, contract. One page is enough; nobody writes the 60-page version anyway, and certainly nobody reads it. And during offboarding, the question about tool ownerships belongs on the same checklist as the laptop and the key card.
 
-Behandelt jedes Tool wie ein Projekt mit Übergabeplan, nicht wie ein Möbelstück, das halt rumsteht. Projekte haben Verantwortliche und Nachfolgeregelungen. Möbel haben Staub.
+Treat every tool like a project with a handover plan, not like a piece of furniture that just sits there. Projects have owners and succession plans. Furniture has dust.
 
-Macht den Test: Geht eure Tool-Liste durch und schreibt zu jedem Logo einen Namen. Bei wie vielen fällt euch nur jemand ein, der die Firma längst verlassen hat?
+Run the test: go through your tool list and write a name next to every logo. For how many can you only think of someone who left the company long ago?

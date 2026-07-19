@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Eure beste Lead-Liste heißt Closed Lost"
-description: "Jedes Quartal die gleiche Diskussion: Wir brauchen mehr Leads, also her mit dem Datenanbieter, 20.000 Kontakte, Enrichment obendrauf, fünfstellige..."
+title: "Your best lead list is called Closed Lost"
+description: "Every quarter, the same discussion: we need more leads, so bring on the data provider, 20,000 contacts, enrichment on top, a five-figure invoice..."
 date: 2026-04-25
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/043-eure-beste-lead-liste-heisst-closed-lost/
 ---
 
-Jedes Quartal die gleiche Diskussion: Wir brauchen mehr Leads, also her mit dem Datenanbieter, 20.000 Kontakte, Enrichment obendrauf, fünfstellige Rechnung. Und währenddessen liegen im CRM dreihundert Firmen, die schon mal mit euch gesprochen haben, die euer Produkt kennen, die eine Demo gesehen haben und die aus einem Grund abgesprungen sind, den keiner dokumentiert hat.
+Every quarter, the same discussion: we need more leads, so bring on the data provider, 20,000 contacts, enrichment on top, a five-figure invoice. And meanwhile, sitting in your CRM are three hundred companies that have already talked to you, that know your product, that have seen a demo, and that walked away for a reason nobody documented.
 
-Closed Lost ist keine Müllhalde. Es ist die wärmste Liste, die ihr besitzt.
+Closed Lost is not a landfill. It is the warmest list you own.
 
-Der Denkfehler dahinter ist, dass verloren gleich falsch bedeutet. Stimmt fast nie. Wer sich die verlorenen Deals der letzten zwei Jahre ehrlich anschaut, findet vor allem Timing-Probleme: Budget war eingefroren, der Champion hat gewechselt, ein anderes Projekt hatte Vorrang, der Vertrag beim Wettbewerber lief noch 14 Monate. Der Fit war da. Nur der Moment nicht. Und Momente ändern sich, im Mittelstand alle sechs bis achtzehn Monate, wenn Budgetrunden laufen, Leute wechseln oder der Wettbewerber enttäuscht.
+The underlying fallacy is that lost means wrong fit. Almost never true. Look honestly at the deals you lost over the past two years and you will mostly find timing problems: budget was frozen, the champion left, another project took priority, the competitor's contract still had 14 months to run. The fit was there. Just not the moment. And moments change, in the mid-market every six to eighteen months, when budget cycles run, people move on, or the competitor disappoints.
 
-Warum nutzt das trotzdem kaum jemand? Weil die Datenbasis fehlt. Das Feld Verlustgrund existiert zwar, aber es hat acht Werte, davon heißt einer Sonstiges, und der steht bei 60 Prozent der Deals. Preis steht als Grund drin, wenn der Rep keine Lust auf die Nachfrage hatte. Mit so einem Feld kann man nichts recyceln, weil man nicht weiß, wen man wann warum wieder anfassen soll.
+So why does hardly anyone use this? Because the data foundation is missing. The loss reason field exists, sure, but it has eight values, one of them is called Other, and it is set on 60 percent of the deals. Price is entered as the reason whenever the rep did not feel like asking the follow-up question. You cannot recycle anything with a field like that, because you do not know who to touch again, when, or why.
 
-Die Reparatur ist unspektakulär und genau deshalb wirksam. Verlustgründe auf eine Handvoll trennscharfe Codes eindampfen, Pflichtfeld beim Schließen, plus zwei Zusatzfelder: bei wem verloren und wann wieder relevant. Dann eine simple Automatisierung, die den Deal zum eingetragenen Datum als Wiedervorlage hochspült, mit dem alten Kontext dran. Kein neues Tool. Zwei Felder und ein Flow.
+The fix is unspectacular, and that is exactly why it works. Boil the loss reasons down to a handful of sharply separated codes, make them required at close, plus two extra fields: lost to whom, and relevant again when. Then a simple automation that resurfaces the deal on the entered date as a follow-up, with the old context attached. No new tool. Two fields and a flow.
 
-Der Unterschied im Gespräch ist brutal. Ein gekaufter Kontakt kriegt eine Cold Mail und weiß nicht, wer ihr seid. Ein recycelter Lost-Deal kriegt eine Nachricht, die auf das letzte Gespräch Bezug nimmt, auf den damaligen Grund, auf das, was sich seitdem bei euch geändert hat. Die Antwortquoten spielen in einer anderen Liga, wir reden von Faktor fünf bis zehn gegenüber kalter Ansprache, und die Sales Cycles sind kürzer, weil die Discovery zur Hälfte schon gelaufen ist.
+The difference in the conversation is brutal. A purchased contact gets a cold email and has no idea who you are. A recycled lost deal gets a message that references the last conversation, the reason back then, and what has changed on your side since. The reply rates play in a different league, we are talking a factor of five to ten over cold outreach, and the sales cycles are shorter because half the discovery is already done.
 
-Rechnet kurz mit. Dreihundert verlorene Deals, davon die Hälfte mit sauberem Timing-Grund, davon ein Zehntel reaktivierbar: das sind fünfzehn echte Opportunities aus Daten, die ihr längst bezahlt habt.
+Run the quick math. Three hundred lost deals, half of them with a clean timing reason, a tenth of those reactivatable: that is fifteen real opportunities from data you have already paid for.
 
-Und der Datenanbieter? Der verkauft euch nächstes Quartal gern die nächsten 20.000 Fremden.
+And the data provider? He will happily sell you the next 20,000 strangers next quarter.

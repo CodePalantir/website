@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Bounce-Raten lügen nicht"
-description: "Das Szenario kennt jedes Outbound-Team, das mit US-Tools auf den DACH-Markt losgegangen ist. Datenbank-Lizenz abgeschlossen, 2.000 Kontakte deutscher..."
+title: "Bounce rates don't lie"
+description: "Every outbound team that went after the DACH market with US tools knows the scenario. Database license signed, 2,000 contacts of German..."
 date: 2026-04-13
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/031-bounce-raten-luegen-nicht/
 ---
 
-Das Szenario kennt jedes Outbound-Team, das mit US-Tools auf den DACH-Markt losgegangen ist. Datenbank-Lizenz abgeschlossen, 2.000 Kontakte deutscher Mittelständler exportiert, erste Kampagne raus. Ergebnis: 18 Prozent Bounces, die Domain-Reputation im Keller, und die Hälfte der verbliebenen Kontakte hat den Job seit zwei Jahren nicht mehr. Der Provider war nicht billig. Er war nur für einen anderen Markt gebaut.
+Every outbound team that went after the DACH market with US tools knows the scenario. Database license signed, 2,000 contacts of German Mittelstand companies exported, first campaign out. Result: 18 percent bounces, domain reputation in the basement, and half of the remaining contacts left the job two years ago. The provider wasn't cheap. It was just built for a different market.
 
-US-Datenbanken funktionieren dort, wo ihre Daten herkommen: viel LinkedIn-Präsenz, öffentliche Firmenprofile, eine Kultur, in der Jobtitel und Mail-Adressen im Netz stehen. Der deutsche Mittelstand tickt anders. Die 60-Mann-GmbH aus Ostwestfalen, die euer bester Zielkunde wäre, hat vielleicht acht Mitarbeiter auf LinkedIn, davon zwei aktiv, und die Mail-Konvention der Firma steht in keiner US-Quelle. Was drinsteht, ist oft Jahre alt. Bounce-Raten decken das gnadenlos auf, und zwar erst dann, wenn der Schaden an eurer Absender-Domain schon läuft.
+US databases work where their data comes from: heavy LinkedIn presence, public company profiles, a culture where job titles and email addresses live on the open web. The German Mittelstand ticks differently. The 60-person GmbH in Ostwestfalen that would be your best target customer has maybe eight employees on LinkedIn, two of them active, and the company's email convention appears in no US source. What is in there is often years old. Bounce rates expose this mercilessly, and only once the damage to your sender domain is already underway.
 
-Dabei liegt für Deutschland eine Datenquelle offen herum, die kein US-Tool systematisch nutzt: das Impressum. Jede deutsche Firma ist gesetzlich verpflichtet, Geschäftsführer, Anschrift und Kontaktdaten zu veröffentlichen, dazu kommen Handelsregister und Bundesanzeiger. Für genau die Firmen, die auf LinkedIn unsichtbar sind, ist das die verlässlichste Wahrheit, die es gibt. Anbieter mit EU-Fokus wie Dealfront oder Cognism bauen auf solchen Quellen auf und sind im DACH-Raum spürbar besser. Aber auch das glaubt man nicht. Man testet es.
+Meanwhile, for Germany, a data source is lying in plain sight that no US tool uses systematically: the Impressum. Every German company is legally required to publish its managing directors, address, and contact details, plus there's the commercial register and the Bundesanzeiger. For exactly the companies invisible on LinkedIn, that is the most reliable truth there is. EU-focused providers like Dealfront or Cognism build on such sources and are noticeably better in the DACH region. But you don't take that on faith either. You test it.
 
-Testen heißt konkret: 500 Firmen aus eurem echten ICP nehmen, nicht die Sample-Liste des Anbieters, und durch jeden Provider in der Trial-Phase jagen. Dann zwei Zahlen messen, Abdeckung und Validität. Wie viele Kontakte findet der Anbieter überhaupt, und wie viele der gelieferten Mail-Adressen überleben einen Verifizierungs-Check? Ein Nachmittag Arbeit, und ihr wisst mehr als jede Vergleichstabelle euch je sagen wird.
+Testing means, concretely: take 500 companies from your real ICP, not the vendor's sample list, and run them through every provider during the trial phase. Then measure two numbers, coverage and validity. How many contacts does the provider find at all, and how many of the delivered email addresses survive a verification check? One afternoon of work, and you know more than any comparison table will ever tell you.
 
-Und weil kein einzelner Anbieter im DACH-Raum alles abdeckt, ist die eigentliche Antwort keine Anbieterwahl, sondern eine Architektur: Waterfall-Enrichment. Erst Quelle eins anfragen, Lücken an Quelle zwei geben, den Rest an Quelle drei, jede gefundene Adresse verifizieren, erst dann in die Sequenz. Clay orchestriert so etwas gut, ein eigenes Skript tut es auch. Die Trefferquote steigt von vielleicht 50 auf über 80 Prozent, die Bounces fallen unter drei.
+And because no single provider covers everything in the DACH region, the real answer isn't a vendor choice, it's an architecture: waterfall enrichment. Query source one first, hand the gaps to source two, the rest to source three, verify every found address, and only then into the sequence. Clay orchestrates this well, a homegrown script does too. The hit rate climbs from maybe 50 to over 80 percent, bounces drop below three.
 
-Euer Datenanbieter erzählt euch von Millionen Kontakten. Fragt ihn lieber nach seiner Bounce-Rate auf deutsche GmbHs unter 200 Mitarbeitern. Das Schweigen ist die Antwort.
+Your data vendor tells you about millions of contacts. Ask them instead about their bounce rate on German GmbHs under 200 employees. The silence is the answer.

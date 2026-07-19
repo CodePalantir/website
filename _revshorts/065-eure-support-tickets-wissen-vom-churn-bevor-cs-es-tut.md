@@ -1,19 +1,21 @@
 ---
 layout: revshort
-title: "Eure Support-Tickets wissen vom Churn, bevor CS es tut"
-description: "Rekonstruieren wir mal eine Kündigung, die angeblich aus dem Nichts kam. Sechs Wochen vorher: erstes Ticket, Exportfunktion liefert falsche Zahlen...."
+title: "Your support tickets know about churn before CS does"
+description: "Let's reconstruct a cancellation that supposedly came out of nowhere. Six weeks earlier: first ticket, the export function delivers wrong numbers...."
 date: 2026-05-17
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/065-eure-support-tickets-wissen-vom-churn-bevor-cs-es-tut/
 ---
 
-Rekonstruieren wir mal eine Kündigung, die angeblich aus dem Nichts kam. Sechs Wochen vorher: erstes Ticket, Exportfunktion liefert falsche Zahlen. Zwei Tage später das nächste, gleiche Ecke des Produkts. Dann eines mit dem Satz "das hatten wir doch letzten Monat schon mal gemeldet". Woche vier: ein neuer Name taucht in den Tickets auf, der Abteilungsleiter schreibt jetzt selbst. Ton wird knapper. Woche fünf: Eskalation, CC an die Geschäftsführung. Woche sieben: Kündigung. Im CRM stand der Account die ganze Zeit auf grün.
+Let's reconstruct a cancellation that supposedly came out of nowhere. Six weeks earlier: first ticket, the export function delivers wrong numbers. Two days later the next one, same corner of the product. Then one with the sentence "we already reported this last month." Week four: a new name shows up in the tickets, the department head is now writing in person. The tone gets curt. Week five: escalation, CC to the executive team. Week seven: cancellation. In the CRM, the account was green the whole time.
 
-Das Muster war komplett sichtbar. Häufung, wiederkehrende Themen, Tonalitätswechsel, neue Absender mit mehr Hierarchie, Eskalation. Jeder Support-Mitarbeiter, der die Tickets nacheinander gelesen hätte, hätte gesagt: Da brennt es. Nur liest niemand Tickets nacheinander pro Account. Der Support arbeitet die Queue ab, Ticket für Ticket, gemessen an Antwortzeit und Lösungsquote. Sein System belohnt schnelles Schließen, nicht Mustererkennung. Und der CSM, der das Muster erkennen müsste, lebt in einem anderen Werkzeug und sieht von alledem nichts.
+The pattern was completely visible. Clustering, recurring topics, shift in tone, new senders with more seniority, escalation. Any support agent who had read the tickets in sequence would have said: this one's on fire. But nobody reads tickets in sequence per account. Support works the queue, ticket by ticket, measured on response time and resolution rate. Its system rewards fast closing, not pattern recognition. And the CSM, who would need to spot the pattern, lives in a different tool and sees none of it.
 
-Genau da liegt der Fehler, und er ist kein Prozessfehler, sondern ein Datenfehler. Zendesk oder Freshdesk kennen jedes einzelne Ticket, das CRM kennt den Vertrag, und dazwischen existiert keine Leitung, die aus Einzelfällen ein Account-Bild macht. Dabei ist die Verbindung technisch unspektakulär. Tickets pro Account aggregieren, rollierend über 30 und 90 Tage, dazu Eskalationen und Wiederöffnungen zählen. Wer mag, legt eine Sentiment-Bewertung über die Texte, das ist 2026 ein gelöstes Problem. Daraus entstehen drei, vier Felder am Account: Ticketfrequenz gegen den eigenen Normalwert, offene Eskalationen, Tendenz. Springt die Frequenz auf das Dreifache, bekommt der CSM eine Aufgabe, keinen Report zum Selbersuchen.
+That's exactly where the flaw sits, and it's not a process flaw, it's a data flaw. Zendesk or Freshdesk know every single ticket, the CRM knows the contract, and in between there's no line that turns individual cases into an account picture. Yet the connection is technically unspectacular. Aggregate tickets per account, rolling over 30 and 90 days, plus count escalations and reopens. If you like, run a sentiment score over the texts, that's a solved problem in 2026. Out of that come three or four fields on the account: ticket frequency against its own baseline, open escalations, trend. If the frequency jumps to three times normal, the CSM gets a task, not a report to go dig through.
 
-Der Einwand kommt verlässlich: Viele Tickets heißen doch nicht automatisch Unzufriedenheit, engagierte Kunden melden auch viel. Stimmt. Deshalb zählt nicht die absolute Zahl, sondern die Abweichung vom eigenen Muster plus die Begleitsignale. Ein Kunde, der immer fünf Tickets im Monat schreibt, ist bei fünf Tickets gesund. Einer, der nie schreibt und plötzlich viermal pro Woche, hat ein Thema.
+The objection arrives reliably: lots of tickets don't automatically mean dissatisfaction, engaged customers report a lot too. True. That's why what counts is not the absolute number but the deviation from the account's own pattern plus the accompanying signals. A customer who always writes five tickets a month is healthy at five tickets. One who never writes and suddenly does four times a week has an issue.
 
-Die bittere Pointe: Die meisten Firmen bezahlen bereits für jedes System, das dafür nötig ist. Es fehlt nur die Strecke dazwischen. Wie viele eurer letzten zehn Kündigungen hätte ein simpler Blick in die Tickethistorie angekündigt?
+The bitter punchline: most companies already pay for every system this requires. Only the stretch in between is missing. How many of your last ten cancellations would a simple look at the ticket history have announced?

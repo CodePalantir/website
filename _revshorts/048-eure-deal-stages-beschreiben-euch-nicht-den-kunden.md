@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Eure Deal-Stages beschreiben euch, nicht den Kunden"
-description: "Schaut euch eure Pipeline-Stages an. 'Demo gehalten'. 'Angebot verschickt'. 'Follow-up läuft'. Fällt was auf?"
+title: "Your deal stages describe you, not the customer"
+description: "Take a look at your pipeline stages. 'Demo held'. 'Proposal sent'. 'Follow-up in progress'. Notice anything?"
 date: 2026-04-30
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/048-eure-deal-stages-beschreiben-euch-nicht-den-kunden/
 ---
 
-Schaut euch eure Pipeline-Stages an. "Demo gehalten". "Angebot verschickt". "Follow-up läuft". Fällt was auf?
+Take a look at your pipeline stages. "Demo held". "Proposal sent". "Follow-up in progress". Notice anything?
 
-Jede einzelne beschreibt, was ihr getan habt. Keine beschreibt, was der Kunde entschieden hat. Und genau deshalb lügt eure Pipeline.
+Every single one describes what you did. None describes what the customer decided. And that is exactly why your pipeline lies.
 
-"Demo gehalten" ist die tückischste Stage von allen. Sie klingt nach Fortschritt, sie fühlt sich nach Fortschritt an, der Rep hat schließlich eine Stunde präsentiert und der Kunde hat genickt. Nur: Zuschauen ist kein Commitment. Der Kunde hat sich auch drei Demos vom Wettbewerb angeschaut, und bei einem davon nickt er gerade genauso freundlich. Trotzdem steht der Deal jetzt bei euch in Stage 3 mit 40 Prozent Wahrscheinlichkeit, und die 40 Prozent fließen in einen Forecast, den euer CFO ernst nimmt.
+"Demo held" is the most treacherous stage of all. It sounds like progress, it feels like progress, the rep did present for an hour and the customer did nod. Except: watching is not commitment. The customer also watched three demos from the competition, and at one of them he is nodding just as politely right now. Yet the deal now sits in your Stage 3 at 40 percent probability, and those 40 percent flow into a forecast your CFO takes seriously.
 
-Das Muster zieht sich durch. "Angebot verschickt" misst, dass jemand auf Senden geklickt hat. Ob das Angebot je geöffnet wurde, ob es ein Budget dafür gibt, ob die Person, die es bekommen hat, überhaupt unterschreiben darf: unbekannt. Ihr trackt eure eigene Aktivität und nennt es Kaufprozess.
+The pattern runs all the way through. "Proposal sent" measures that someone clicked send. Whether the proposal was ever opened, whether there is a budget for it, whether the person who received it is even allowed to sign: unknown. You are tracking your own activity and calling it a buying process.
 
-Der Fix ist konzeptionell simpel und kulturell unbequem. Jede Stage wird an ein Kunden-Commitment geknüpft, an etwas, das der Kunde getan oder bestätigt hat. Budget ist bestätigt, mit Zahl und Name. Der Economic Buyer war im Termin, nicht nur der freundliche Projektleiter. Der Vertrag liegt beim Legal des Kunden, nicht in eurem Entwurfsordner. Ein Deal rückt nur vor, wenn der Kunde sich bewegt hat, nicht wenn ihr euch bewegt habt.
+The fix is conceptually simple and culturally uncomfortable. Every stage gets tied to a customer commitment, to something the customer did or confirmed. Budget is confirmed, with a number and a name. The economic buyer was in the meeting, not just the friendly project lead. The contract is with the customer's legal team, not in your drafts folder. A deal only advances when the customer has moved, not when you have moved.
 
-Was dann passiert, ist erst mal hässlich. Die Pipeline schrumpft, teilweise um ein Drittel, weil lauter Deals in Stage 4 standen, die nach Kundenlogik in Stage 1 gehören. Ein Geschäftsführer hat mir das mal als "ihr habt mir meine Pipeline kaputtgemacht" vorgehalten. Hatte ich nicht. Die Pipeline war vorher kaputt, sie sah nur besser aus.
+What happens next is ugly at first. The pipeline shrinks, sometimes by a third, because all sorts of deals sat in Stage 4 that by customer logic belong in Stage 1. A CEO once accused me of "you broke my pipeline". I had not. The pipeline was broken before, it just looked better.
 
-Danach wird es interessant. Conversion-Raten pro Stage bedeuten plötzlich etwas, weil die Stages etwas bedeuten. Der Forecast beruhigt sich. Und die Reps stellen im Gespräch andere Fragen, weil sie für den Stage-Wechsel eine Kundenantwort brauchen und kein erledigtes To-do. Das Datenmodell erzieht das Verhalten mit, in beide Richtungen.
+After that it gets interesting. Conversion rates per stage suddenly mean something, because the stages mean something. The forecast calms down. And the reps start asking different questions in their calls, because advancing a stage now requires a customer answer, not a finished to-do. The data model trains the behavior, in both directions.
 
-Technisch ist das ein Nachmittag Arbeit, Exit-Kriterien definieren, Validierungen setzen, fertig. Die eigentliche Frage ist eine andere: Wollt ihr eine Pipeline, die euch gefällt, oder eine, die stimmt?
+Technically this is one afternoon of work, define exit criteria, set validations, done. The real question is a different one: do you want a pipeline you like, or one that is true?

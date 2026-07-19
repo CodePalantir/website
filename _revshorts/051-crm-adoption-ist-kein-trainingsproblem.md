@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "CRM-Adoption ist kein Trainingsproblem"
-description: "Wenn die Reps das CRM nicht pflegen, bucht die Firma ein Training. Wenn es danach nicht besser wird, ein zweites, diesmal mit dem Wort 'Refresher' im..."
+title: "CRM adoption is not a training problem"
+description: "When the reps do not maintain the CRM, the company books a training. When things do not improve afterward, a second one, this time with the word..."
 date: 2026-05-03
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/051-crm-adoption-ist-kein-trainingsproblem/
 ---
 
-Wenn die Reps das CRM nicht pflegen, bucht die Firma ein Training. Wenn es danach nicht besser wird, ein zweites, diesmal mit dem Wort "Refresher" im Titel. Danach kommt die Eskalationsstufe: Adoption als Zielvereinbarung, Dashboards mit Namen dran, ein ernstes Wort im Team-Meeting.
+When the reps do not maintain the CRM, the company books a training. When things do not improve afterward, a second one, this time with the word "refresher" in the title. Then comes the escalation stage: adoption as an OKR, dashboards with names on them, a stern word in the team meeting.
 
-Nichts davon funktioniert, und zwar aus einem Grund, den keiner gern ausspricht: Die Reps haben recht.
+None of it works, and for a reason nobody likes saying out loud: the reps are right.
 
-Rechnet es aus ihrer Sicht durch. Ein Verkäufer tippt nach jedem Call fünf Minuten Felder ins System. Was bekommt er dafür zurück? Nichts. Kein einziges dieser Felder hilft ihm beim nächsten Gespräch. Die Daten fließen nach oben, in Forecasts und Pipeline-Reviews, in denen seine Einträge dann gegen ihn verwendet werden, wenn das Close Date wieder rutscht. Aus seiner Perspektive ist das CRM eine Steuererklärung mit Wochenrhythmus. Dass er sie schlampig ausfüllt, ist keine Disziplinlosigkeit. Es ist eine rationale Reaktion auf einen schlechten Deal.
+Run the numbers from their side. A seller types five minutes of fields into the system after every call. What does he get back? Nothing. Not one of those fields helps him in his next conversation. The data flows upward, into forecasts and pipeline reviews where his own entries get used against him when the close date slips again. From his perspective, the CRM is a tax return on a weekly cycle. Filling it out sloppily is not a lack of discipline. It is a rational response to a bad deal.
 
-Training ändert an diesem Deal nichts. Training erklärt nur gründlicher, wie man etwas bedient, das sich nicht lohnt.
+Training changes nothing about that deal. Training just explains more thoroughly how to operate something that is not worth operating.
 
-Der Hebel liegt woanders: Das System muss dem Rep zuerst etwas geben, bevor es etwas verlangt. Der Kontext zum Account auf einen Blick, letzte Tickets, offene Rechnungen, wer aus dem Buying Committee zuletzt reagiert hat, damit er vor dem Call nicht fünf Tabs öffnen muss. Erinnerungen, die ihm Deals retten: kein nächster Schritt seit zwölf Tagen, der Champion hat laut LinkedIn die Firma gewechselt. Und radikal weniger Tipparbeit, denn Firmendaten lassen sich anreichern, Aktivitäten automatisch loggen, Gesprächsnotizen inzwischen maschinell in Felder strukturieren. Jedes Feld, das eine Maschine füllen kann, hat auf der To-do-Liste eines Verkäufers nichts verloren.
+The lever is elsewhere: the system has to give the rep something before it demands something. Account context at a glance, recent tickets, open invoices, who from the buying committee last responded, so he does not have to open five tabs before the call. Reminders that save him deals: no next step in twelve days, the champion just changed companies according to LinkedIn. And radically less typing, because company data can be enriched, activities logged automatically, call notes now machine-structured into fields. Any field a machine can fill has no business being on a seller's to-do list.
 
-Ich habe noch kein Team gesehen, das ein nützliches System boykottiert. Wenn das CRM der Ort ist, an dem der Rep schneller verkauft, geht er von selbst hin, so wie niemand zur Nutzung seines Kalenders motiviert werden muss. Die Datenqualität, hinter der ihr seit Jahren herlauft, ist dann ein Nebenprodukt. Sie entsteht, weil die Daten benutzt werden, nicht weil sie kontrolliert werden.
+I have never seen a team boycott a useful system. When the CRM is the place where the rep sells faster, he shows up on his own, the same way nobody needs to be motivated to use their calendar. The data quality you have been chasing for years is then a byproduct. It emerges because the data gets used, not because it gets policed.
 
-Adoption ist ein Produktproblem, und euer CRM ist das Produkt. Die Frage ist nicht, wie ihr die Reps zum System bringt. Die Frage ist, was das System eigentlich anbietet, damit sie freiwillig kommen. Wenn euch darauf keine Antwort einfällt: Den Reps auch nicht, deshalb sind sie nicht da.
+Adoption is a product problem, and your CRM is the product. The question is not how to get the reps to the system. The question is what the system actually offers so they come voluntarily. If you cannot think of an answer: neither can the reps, which is why they are not there.

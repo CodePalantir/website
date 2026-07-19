@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Euer Newsletter bringt keine Pipeline, und genau so ist es richtig"
-description: "Irgendwann im Planungsmeeting passiert es. Der Newsletter hat 4.000 Empfänger, kostet jeden Monat Arbeitszeit, und jemand stellt die Frage, die..."
+title: "Your newsletter brings no pipeline, and that's exactly right"
+description: "At some point in the planning meeting it happens. The newsletter has 4,000 recipients, costs working hours every month, and someone asks the question..."
 date: 2026-04-09
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/027-euer-newsletter-bringt-keine-pipeline-und-genau-so-ist-e/
 ---
 
-Irgendwann im Planungsmeeting passiert es. Der Newsletter hat 4.000 Empfänger, kostet jeden Monat Arbeitszeit, und jemand stellt die Frage, die vernünftig klingt: Wie viele MQLs generiert der eigentlich?
+At some point in the planning meeting it happens. The newsletter has 4,000 recipients, costs working hours every month, and someone asks the question that sounds reasonable: how many MQLs does it actually generate?
 
-Die ehrliche Antwort: kaum welche. Und der häufigste Fehler ist, was danach kommt.
+The honest answer: barely any. And the most common mistake is what comes next.
 
-Denn jetzt wird optimiert. Der Betreff wird clickbaitiger, weil Öffnungsrate plötzlich ein Ziel ist. In jede Ausgabe wandert ein Demo-CTA, weil Conversions gemessen werden müssen. Wer zweimal klickt, bekommt einen Anruf vom SDR, das Scoring-Modell will es so. Drei Monate später zeigen die Kurven das Ergebnis: Abmelderate hoch, Öffnungsrate runter, und die wenigen Antworten, die früher kamen, ein kurzes danke, guter Punkt von einem Geschäftsführer, kommen nicht mehr. Das Instrument wurde an einem fremden Ziel gemessen und daran kaputtoptimiert.
+Because now the optimizing starts. The subject line gets more clickbaity, because open rate is suddenly a goal. A demo CTA goes into every issue, because conversions have to be measured. Anyone who clicks twice gets a call from the SDR, the scoring model demands it. Three months later the curves show the result: unsubscribe rate up, open rate down, and the few replies that used to come in, a short "thanks, good point" from a managing director, don't come anymore. The instrument was measured against a foreign goal and optimized to death against it.
 
-Der Newsletter ist kein Lead-Kanal. Er ist ein Vertrauenskanal, und das ist etwas anderes, mit anderer Mechanik und anderem Zeithorizont. Seine Arbeit sieht so aus: Ein Geschäftsführer liest 18 Monate lang jede zweite Ausgabe, antwortet nie, klickt selten, und meldet sich dann an einem Dienstag mit dem Satz, ich lese Sie schon lange, wir sollten mal sprechen. In eurem Attributionsmodell taucht dieser Deal als Direct auf oder als organische Suche. Der Newsletter hat ihn gebaut, das Reporting sieht es nicht, und wer nur aufs Reporting schaut, streicht als nächstes das Budget für das Instrument, das gerade den besten Deal des Quartals eingeleitet hat.
+The newsletter is not a lead channel. It's a trust channel, and that is something different, with different mechanics and a different time horizon. Its work looks like this: a managing director reads every other issue for 18 months, never replies, rarely clicks, and then reaches out on a Tuesday with the sentence, "I've been reading you for a long time, we should talk." In your attribution model, that deal shows up as Direct or as organic search. The newsletter built it, the reporting doesn't see it, and whoever only looks at the reporting will next cut the budget for the instrument that just initiated the best deal of the quarter.
 
-Heißt das, gar nicht messen? Nein, falsch messen ist das Problem. Sinnvolle Signale gibt es: Antworten auf die Mail, das ist die unterschätzteste Metrik überhaupt. Abmelderate als Frühwarnung. Direkte Antworten, die Sales weiterleitet. Und im CRM ein simples Feld, ob ein neuer Deal-Kontakt Newsletter-Empfänger war und wie lange schon, damit ihr den Zusammenhang wenigstens sehen könnt, ohne ihn in eine MQL-Quote zu pressen. Das ist eine Stunde Konfigurationsarbeit und erspart die immer gleiche Budget-Diskussion.
+Does that mean don't measure at all? No, measuring wrong is the problem. Meaningful signals exist: replies to the email, the most underrated metric there is. Unsubscribe rate as an early warning. Direct replies that get forwarded to sales. And in the CRM a simple field recording whether a new deal contact was a newsletter recipient and for how long, so you can at least see the connection without forcing it into an MQL quota. That's an hour of configuration work and spares you the same budget discussion every time.
 
-Die eigentliche Entscheidung liegt eine Ebene höher. Ihr braucht in der Kanalplanung zwei Kategorien: Kanäle, die diesen Monat Pipeline liefern sollen, und Kanäle, die dafür sorgen, dass euch in zwei Jahren noch jemand zuhört. Beide sind Arbeit, beide kosten Geld, und nur eine davon passt in ein Monats-Dashboard.
+The real decision sits one level up. Your channel planning needs two categories: channels that are supposed to deliver pipeline this month, and channels that make sure someone is still listening to you in two years. Both are work, both cost money, and only one of them fits into a monthly dashboard.
 
-Welcher eurer Kanäle arbeitet gerade für 2028? Und übersteht er das nächste Kostengespräch?
+Which of your channels is working for 2028 right now? And will it survive the next cost review?

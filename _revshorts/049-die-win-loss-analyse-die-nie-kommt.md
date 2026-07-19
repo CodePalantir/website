@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Die Win/Loss-Analyse, die nie kommt"
-description: "Jeder will sie. Auf jedem Sales-Offsite steht sie auf einem Flipchart, meist mit drei Ausrufezeichen. Und dann passiert: nichts."
+title: "The win/loss analysis that never comes"
+description: "Everybody wants it. It is on a flipchart at every sales offsite, usually with three exclamation marks. And then what happens: nothing."
 date: 2026-05-01
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/049-die-win-loss-analyse-die-nie-kommt/
 ---
 
-Jeder will sie. Auf jedem Sales-Offsite steht sie auf einem Flipchart, meist mit drei Ausrufezeichen. Und dann passiert: nichts.
+Everybody wants it. It is on a flipchart at every sales offsite, usually with three exclamation marks. And then what happens: nothing.
 
-Der Grund ist immer derselbe. Win/Loss wird als Programm gedacht, und Programme sind schwer. Externe Interviews mit verlorenen Kunden, ein Fragebogen mit 30 Punkten, ein Quartalsbericht mit Executive Summary. Das klingt seriös, kostet aber sofort ein Budget, einen Owner und politischen Mut, denn wer ruft schon gern den Kunden an, der gerade zum Wettbewerber gegangen ist. Also wird das Programm auf "wenn es ruhiger wird" verschoben. Es wird nie ruhiger.
+The reason is always the same. Win/loss gets framed as a program, and programs are heavy. External interviews with lost customers, a 30-item questionnaire, a quarterly report with an executive summary. It sounds serious, but it immediately costs a budget, an owner, and political courage, because who enjoys calling the customer who just went to the competitor. So the program gets postponed to "when things calm down". Things never calm down.
 
-Dabei liegt die brauchbare Version drei Etagen tiefer und kostet fast nichts.
+Meanwhile the usable version sits three floors below and costs almost nothing.
 
-Drei Pflichtfelder beim Schließen eines Deals, egal ob gewonnen oder verloren. Erstens der Grund, als Picklist mit acht bis zehn sauberen Werten, nicht als Freitext, in dem später "Preis", "zu teuer" und "Budget" als drei verschiedene Gründe nebeneinanderstehen. Zweitens der Wettbewerber, gegen den es ging, inklusive der Option "keiner, Entscheidung gegen Status quo verloren", denn das ist bei den meisten Firmen der häufigste und am wenigsten verstandene Verlustgrund. Drittens ein Satz Freitext vom Rep, was wirklich passiert ist, solange die Erinnerung frisch ist.
+Three required fields when closing a deal, won or lost. First, the reason, as a picklist with eight to ten clean values, not free text where "price", "too expensive", and "budget" later sit side by side as three different reasons. Second, the competitor it came down to, including the option "none, lost to the status quo", because for most companies that is the most common and least understood loss reason. Third, one sentence of free text from the rep about what really happened, while the memory is fresh.
 
-Dazu ein Termin. Einmal im Quartal, 90 Minuten, die geschlossenen Deals des Quartals auf dem Bildschirm, gruppiert nach Grund und Wettbewerber. Kein Deck, keine Vorbereitung, nur die Daten und die Frage, was sich wiederholt. Das war's. Das ganze System.
+Plus one meeting. Once a quarter, 90 minutes, the quarter's closed deals on the screen, grouped by reason and competitor. No deck, no prep, just the data and the question of what keeps repeating. That is it. That is the whole system.
 
-Klar ist die Datenqualität am Anfang mäßig. Reps klicken den erstbesten Grund, "zu teuer" wird überbenutzt, weil es die höfliche Ausrede des Kunden war und der Rep sie einfach durchreicht. Genau dafür ist das Quartals-Review da: Wenn 60 Prozent der Verluste angeblich am Preis lagen, aber die gewonnenen Deals zum selben Preis liefen, stimmt der Code nicht, und das Gespräch darüber schärft die Kategorien mit jedem Quartal.
+Sure, data quality is mediocre at first. Reps click the first reason they see, "too expensive" gets overused because it was the customer's polite excuse and the rep just passes it along. That is exactly what the quarterly review is for: if 60 percent of losses were supposedly about price, but the deals you won ran at the same price, the code is wrong, and the conversation about it sharpens the categories with every quarter.
 
-Nach einem Jahr habt ihr vierzig, fünfzig kodierte Verluste und ein Muster, das kein Bauchgefühl liefern kann. Vielleicht verliert ihr nie gegen Wettbewerber X, aber ständig gegen "wir machen erst mal nichts". Das ändert euer Messaging fundamentaler als jede Persona-Übung.
+After a year you have forty, fifty coded losses and a pattern no gut feeling can deliver. Maybe you never lose to competitor X, but constantly lose to "let's do nothing for now". That changes your messaging more fundamentally than any persona exercise.
 
-Die große Studie mit den externen Interviews könnt ihr immer noch machen, wenn ihr sie braucht. Aber mal ehrlich, seit wie vielen Quartalen steht sie jetzt schon auf dem Flipchart?
+You can still run the big study with the external interviews if you ever need it. But honestly, how many quarters has it been on that flipchart now?

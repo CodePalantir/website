@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Tool-Demos sind Casting-Shows mit Drehbuch"
-description: "Ihr kennt die Szene. Der Vendor teilt seinen Bildschirm, klickt durch eine Demo-Org namens Acme Corp, und alles flutscht. Der Lead kommt rein, wird..."
+title: "Tool demos are casting shows with a script"
+description: "You know the scene. The vendor shares their screen, clicks through a demo org called Acme Corp, and everything just glides. The lead comes in, gets..."
 date: 2026-06-24
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/103-tool-demos-sind-casting-shows-mit-drehbuch/
 ---
 
-Ihr kennt die Szene. Der Vendor teilt seinen Bildschirm, klickt durch eine Demo-Org namens Acme Corp, und alles flutscht. Der Lead kommt rein, wird gescort, geroutet, der AE kriegt eine Slack-Nachricht, das Dashboard leuchtet. Dreißig Minuten später sitzt ihr da und denkt: genau das brauchen wir.
+You know the scene. The vendor shares their screen, clicks through a demo org called Acme Corp, and everything just glides. The lead comes in, gets scored, gets routed, the AE gets a Slack message, the dashboard lights up. Thirty minutes later you sit there thinking: that is exactly what we need.
 
-Nur habt ihr gerade nichts über das Tool gelernt. Ihr habt eine Aufführung gesehen.
+Except you just learned nothing about the tool. You watched a performance.
 
-Jede Demo-Org ist ein Bühnenbild. Saubere Daten, ein Datenmodell wie aus dem Lehrbuch, drei Produkte, eine Währung, keine Altlasten. Der Sales Engineer hat diese Strecke hundertmal geklickt und weiß exakt, welche Abzweigung er nicht nimmt, weil dahinter der Fehler wartet. Das ist sein Job, und er macht ihn gut. Eine Demo zeigt, was das Tool kann. Sie zeigt nie, was es bei euch kann.
+Every demo org is a stage set. Clean data, a textbook data model, three products, one currency, no legacy baggage. The sales engineer has clicked through this route a hundred times and knows exactly which turn not to take, because that is where the bug is waiting. That is his job, and he does it well. A demo shows what the tool can do. It never shows what it can do for you.
 
-Bei euch sieht die Welt anders aus. Euer Account-Objekt hat 40 Custom Fields, von denen die Hälfte seit der Migration 2021 niemand mehr angefasst hat. Eure Opportunities haben zwei parallele Stage-Logiken, weil DACH und der Rest von Europa historisch getrennt liefen. Euer schönster Use Case, sagen wir Renewals mit gestaffelten Rabatten über drei Tochterfirmen, kam in der Demo gar nicht vor. Warum wohl.
+Your world looks different. Your account object has 40 custom fields, half of which nobody has touched since the 2021 migration. Your opportunities run on two parallel stage logics because DACH and the rest of Europe historically operated separately. Your best use case, say renewals with tiered discounts across three subsidiaries, never showed up in the demo at all. Wonder why.
 
-Der Test, der zählt, geht anders herum. Nicht der Vendor führt vor, ihr gebt das Drehbuch. Vor dem Termin schickt ihr drei konkrete Use Cases aus eurem Alltag, schriftlich, mit den hässlichen Details. Dazu einen Export echter Daten, anonymisiert reicht, aber echt in der Struktur: die Dubletten, die leeren Pflichtfelder, der Sonderfall mit dem Rahmenvertrag. Und dann schaut ihr zu, wie das Tool daran arbeitet. Nicht an Acme Corp.
+The test that counts runs the other way around. The vendor does not perform; you hand them the script. Before the meeting, you send three concrete use cases from your daily business, in writing, ugly details included. Plus an export of real data, anonymized is fine, but real in structure: the duplicates, the empty required fields, the edge case with the framework agreement. And then you watch the tool work on that. Not on Acme Corp.
 
-Ein seriöser Anbieter macht das mit. Vielleicht murrt er, weil es Aufwand ist, aber er macht es, denn er weiß, dass sein Produkt den Test übersteht. Wer stattdessen ausweicht, auf die Standard-Demo besteht oder den Proof of Concept erst nach Vertragsunterschrift anbietet, hat euch gerade mehr über sein Produkt erzählt als jede Featureliste.
+A serious vendor plays along. Maybe they grumble, because it is effort, but they do it, because they know their product survives the test. Anyone who dodges instead, insists on the standard demo, or offers the proof of concept only after the contract is signed has just told you more about their product than any feature list.
 
-Kleiner Nebeneffekt, der oft untergeht: Allein das Aufschreiben der drei Use Cases sortiert intern die Erwartungen. Manchmal stellt sich dabei heraus, dass zwei der drei Fälle eure Suite nativ abdeckt und ihr das Tool gar nicht braucht. Auch ein Ergebnis.
+Small side effect that often gets lost: just writing down those three use cases sorts out expectations internally. Sometimes it turns out that your suite covers two of the three cases natively and you do not need the tool at all. Also a result.
 
-Casting-Shows besetzen Rollen nach der besten Performance auf einer fremden Bühne. Eingekauft wird aber für eure Bühne, mit eurem Chaos, euren Daten, euren Sonderfällen. Wer würde einen Vertriebler einstellen, der nur seinen auswendig gelernten Pitch zeigt, aber kein einziges echtes Kundengespräch führen will?
+Casting shows fill roles based on the best performance on someone else's stage. But you are buying for your stage, with your chaos, your data, your edge cases. Who would hire a salesperson who only performs their memorized pitch but refuses to take a single real customer call?

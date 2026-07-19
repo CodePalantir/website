@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Round Robin ist fair für Reps und teuer für euch"
-description: "Der größte Inbound-Lead des Quartals kommt am Dienstagvormittag rein. Konzerntochter, 180 Mitarbeiter, der Anfragende ist Bereichsleiter und schreibt..."
+title: "Round robin is fair to reps and expensive for you"
+description: "The biggest inbound lead of the quarter arrives Tuesday morning. Corporate subsidiary, 180 employees, the inquirer is a division head and writes in..."
 date: 2026-04-22
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/040-round-robin-ist-fair-fuer-reps-und-teuer-fuer-euch/
 ---
 
-Der größte Inbound-Lead des Quartals kommt am Dienstagvormittag rein. Konzerntochter, 180 Mitarbeiter, der Anfragende ist Bereichsleiter und schreibt im Freitextfeld, dass die Entscheidung noch dieses Quartal fällt. Das Routing schaut kurz nach, wer als Nächstes dran ist, und verteilt den Lead an den Junior im zweiten Monat. Der Senior, der genau diese Branche seit Jahren macht, bekommt zehn Minuten später den Studenten, der eine Preisliste für seine Hausarbeit braucht.
+The biggest inbound lead of the quarter arrives Tuesday morning. Corporate subsidiary, 180 employees, the inquirer is a division head and writes in the free-text field that the decision will be made this quarter. The routing briefly checks who's up next and assigns the lead to the junior in his second month. The senior who has worked exactly this industry for years gets, ten minutes later, the student who needs a price list for his term paper.
 
-Beides war fair. Beides war falsch.
+Both were fair. Both were wrong.
 
-Round Robin optimiert auf die einzige Größe, die für den Umsatz keine Rolle spielt: gefühlte Gerechtigkeit im Team. Jeder bekommt gleich viele Leads, keiner kann sich beschweren, der Vertriebsleiter hat Ruhe. Nur sind Leads eben keine gleichen Einheiten. Ein Enterprise-Lead mit Kaufsignal und ein neugieriger Blogleser unterscheiden sich im Erwartungswert um den Faktor hundert, und ein Verteilmechanismus, der beide identisch behandelt, verbrennt systematisch die wertvollen.
+Round robin optimizes for the one variable that plays no role in revenue: perceived fairness within the team. Everyone gets the same number of leads, nobody can complain, the sales director gets peace. Except leads are not equal units. An enterprise lead with a buying signal and a curious blog reader differ in expected value by a factor of a hundred, and a distribution mechanism that treats both identically systematically burns the valuable ones.
 
-Was stattdessen? Routing als Entscheidungslogik mit drei Ebenen. Zuerst der Fit: Segment, Branche, Region, Dealgröße, jeweils gematcht auf den Rep, der dafür die beste Abschlussquote hat. Die Daten dafür liegen längst im CRM, sie werden nur nicht gefragt. Dann die Verfügbarkeit: Wer im Urlaub ist, krank oder bis zum Anschlag in Deals steckt, bekommt nichts, egal wie lange er "dran" wäre. Zuletzt, und wirklich erst zuletzt, als Tiebreaker unter gleich guten Optionen: die Rotation. Da darf Round Robin wohnen. Als letzte Instanz, nicht als Prinzip.
+What instead? Routing as decision logic with three layers. First, fit: segment, industry, region, deal size, each matched to the rep with the best close rate for it. The data for this has long been sitting in the CRM, it just never gets asked. Then availability: whoever is on vacation, sick, or buried in deals up to the ceiling gets nothing, no matter how long they've been "up." Last, and truly only last, as a tiebreaker among equally good options: the rotation. That's where round robin gets to live. As a last resort, not as a principle.
 
-Der Einwand aus dem Team kommt sofort, und er ist ernst zu nehmen: Wenn die guten Leads immer an die Seniors gehen, wie sollen die Juniors dann wachsen? Berechtigt. Die Antwort ist eine bewusste Quote, etwa jeder fünfte Mid-Market-Lead an einen Junior mit Shadowing durch einen Senior. Das ist ein Ausbildungsprogramm mit kalkuliertem Preis. Der Unterschied zum Round Robin: Ihr entscheidet, wann ihr Erwartungswert gegen Entwicklung tauscht, statt es dem Zufall der Reihenfolge zu überlassen.
+The objection from the team comes immediately, and it deserves to be taken seriously: if the good leads always go to the seniors, how are the juniors supposed to grow? Fair point. The answer is a deliberate quota, say every fifth mid-market lead to a junior with shadowing by a senior. That's a training program with a calculated price. The difference from round robin: you decide when you trade expected value for development, instead of leaving it to the luck of the queue.
 
-Technisch ist das kein Hexenwerk. Jedes ernstzunehmende CRM kann regelbasiertes Routing nativ, HubSpot wie Salesforce, und für den Rest reicht eine überschaubare Automatisierung. Die Hürde ist nicht das Tooling, sondern das Gespräch im Team, in dem jemand aussprechen muss, dass nicht alle Reps bei allen Leads gleich gut sind.
+Technically, this is no dark art. Every CRM worth taking seriously does rule-based routing natively, HubSpot as well as Salesforce, and for the rest a manageable automation is enough. The hurdle isn't the tooling, it's the conversation within the team where someone has to say out loud that not all reps are equally good at all leads.
 
-Wer hat euren letzten Fünfzigtausend-Euro-Lead bearbeitet: der Beste dafür, oder der, der dran war?
+Who worked your last fifty-thousand-euro lead: the best person for it, or the person whose turn it was?

@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Der eine Kollege, der alles weiß"
-description: "Jede Firma zwischen 20 und 200 Leuten hat ihn. Den einen Admin, den einen Kollegen aus dem Vertrieb mit Faible fürs System, der als Einziger weiß, wie..."
+title: "The one coworker who knows everything"
+description: "Every company between 20 and 200 people has him. The one admin, the one sales colleague with a knack for the system, the only person who knows how the..."
 date: 2026-03-23
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "RevOps"
 hero_icon: "zap"
+lang: en
+translation: /de/revshorts/010-der-eine-kollege-der-alles-weiss/
 ---
 
-Jede Firma zwischen 20 und 200 Leuten hat ihn. Den einen Admin, den einen Kollegen aus dem Vertrieb mit Faible fürs System, der als Einziger weiß, wie das CRM wirklich funktioniert. Warum das Feld heißt, wie es heißt. Welche Automatisierung man auf keinen Fall anfassen darf. Wo die Leiche im Prozess liegt. Im Management gilt er als Asset. Er ist ein Klumpenrisiko mit Gleitzeit.
+Every company between 20 and 200 people has him. The one admin, the one sales colleague with a knack for the system, the only person who knows how the CRM really works. Why the field is named what it's named. Which automation you must never touch. Where the bodies are buried in the process. Management considers him an asset. He's a concentration risk with flex time.
 
-Die Szene läuft immer gleich ab. Der Kollege kündigt, Übergabe in zwei Wochen, man notiert ein paar Passwörter, alle sind zuversichtlich. Drei Monate später bricht die Lead-Zuweisung. Neue Anfragen landen nirgends, der Vertrieb merkt es erst, als ein Interessent anruft und fragt, warum sich seit zehn Tagen niemand meldet. Jetzt sucht jemand im System nach der Ursache und findet einen Flow namens Test_Final_v2_NICHT_LOESCHEN, der von einem Workflow aus 2021 getriggert wird, der wiederum auf ein Feld schaut, das seit dem letzten Formular-Relaunch nicht mehr befüllt wird. Keine Beschreibung, kein Kommentar, kein Dokument. Der Mensch, der das erklären könnte, arbeitet inzwischen woanders.
+The scene always plays out the same way. The coworker resigns, two weeks of handover, a few passwords get written down, everyone is optimistic. Three months later, lead assignment breaks. New inquiries land nowhere, sales only notices when a prospect calls to ask why nobody has reached out in ten days. Now somebody digs through the system for the cause and finds a flow named Test_Final_v2_DO_NOT_DELETE, triggered by a workflow from 2021, which in turn checks a field that hasn't been populated since the last form relaunch. No description, no comment, no document. The person who could explain it now works somewhere else.
 
-Das ist kein Pech. Das ist die planbare Folge davon, dass Wissen im Kopf statt im System lag.
+That's not bad luck. That's the predictable consequence of knowledge living in a head instead of in the system.
 
-Dokumentation, Naming Conventions, Metadaten-Hygiene: klingt nach Bürokratie, nach dem Zeug, das man macht, wenn gerade nichts Wichtiges ansteht. Tatsächlich ist es eine Versicherung, und zwar eine billige. Ein Flow, der Lead_Routing_Region_DACH heißt und eine Beschreibung mit Zweck, Trigger und Ansprechpartner trägt, kostet beim Anlegen zwei Minuten mehr. Ein Flow, der Test_Final_v2 heißt, kostet drei Jahre später zwei Wochen Forensik plus die Deals, die in der Zwischenzeit versickert sind. Rechnet das gegen.
+Documentation, naming conventions, metadata hygiene: sounds like bureaucracy, like the stuff you do when nothing important is going on. In reality it's insurance, and cheap insurance at that. A flow named Lead_Routing_Region_DACH with a description covering purpose, trigger, and point of contact costs two extra minutes at creation. A flow named Test_Final_v2 costs two weeks of forensics three years later, plus the deals that leaked away in the meantime. Run that math.
 
-Der Bus-Faktor, also die Frage, wie viele Leute von einem Bus erfasst werden müssten, bis niemand mehr das System versteht, liegt in den meisten Orgs, die wir auditieren, bei exakt eins. Manchmal bei null, wenn der Kollege schon weg ist und die Firma auf einem System fährt, das keiner mehr versteht, das aber noch läuft. Noch.
+The bus factor, meaning the question of how many people would have to be hit by a bus before nobody understands the system anymore, sits at exactly one in most orgs we audit. Sometimes at zero, when the coworker is already gone and the company is running on a system nobody understands but that still works. For now.
 
-Ein Audit deckt so etwas übrigens gnadenlos auf, weil man die Frage nur einmal stellen muss: Erklär mir, was dieser Flow tut. Wenn die Antwort mit "das hat damals der Markus gebaut" beginnt, weiß man genug.
+An audit exposes this mercilessly, by the way, because you only have to ask the question once: explain to me what this flow does. If the answer starts with "Markus built that back in the day," you know enough.
 
-Wie viele eurer Automatisierungen könnte morgen jemand anderes erklären? Zählt ehrlich. Die Zahl ist euer eigentlicher Wartungsvertrag.
+How many of your automations could someone else explain tomorrow? Count honestly. That number is your real maintenance contract.

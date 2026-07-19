@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Der Account gehört dir nicht"
-description: "LinkedIn-Automation ist verlockend, keine Frage. Tools wie Expandi oder HeyReach schicken Connection Requests und Follow-ups im Schlaf, der SDR pflegt..."
+title: "The account doesn't belong to you"
+description: "LinkedIn automation is tempting, no question. Tools like Expandi or HeyReach send connection requests and follow-ups in your sleep, the SDR only..."
 date: 2026-04-16
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/034-der-account-gehoert-dir-nicht/
 ---
 
-LinkedIn-Automation ist verlockend, keine Frage. Tools wie Expandi oder HeyReach schicken Connection Requests und Follow-ups im Schlaf, der SDR pflegt nur noch die Antworten, und die Aktivitätszahlen sehen aus wie nach einer Verdopplung des Teams. Ein Detail geht in der Begeisterung unter: Das alles passiert auf einer Plattform, deren Nutzungsbedingungen genau das verbieten, auf einem Account, den ihr weder besitzt noch wiederherstellen könnt.
+LinkedIn automation is tempting, no question. Tools like Expandi or HeyReach send connection requests and follow-ups in your sleep, the SDR only tends to the replies, and the activity numbers look like the team just doubled. One detail gets lost in the excitement: all of this happens on a platform whose terms of service forbid exactly that, on an account you neither own nor can restore.
 
-LinkedIn bannt automatisierte Accounts. Nicht immer, nicht sofort, aber regelmäßig, und die Erkennung wird jedes Jahr besser. Wen es trifft, der verliert nicht ein Tool. Der verliert zehn Jahre Netzwerk, jede Beziehung, jeden Kontext, und zwar auf dem Kanal, der im B2B-Vertrieb gerade der wichtigste ist. Es gibt keinen Support-Ticket-Weg zurück. Kein Backup. Die Restore-Funktion für ein gewachsenes Profil existiert nicht.
+LinkedIn bans automated accounts. Not always, not immediately, but regularly, and the detection gets better every year. Whoever it hits doesn't lose a tool. They lose ten years of network, every relationship, every bit of context, and on the channel that currently matters most in B2B sales. There is no support-ticket way back. No backup. The restore function for a profile grown over years does not exist.
 
-Das Rechenbeispiel ist unangenehm konkret. Ein Senior-AE mit 4.000 relevanten Kontakten, aufgebaut über Jahre, generiert daraus Intros, Referenzen, Deal-Kontext. Was ist dieser Account wert? Sicher mehr als die 30 zusätzlichen Meetings, die das Automation-Tool im Quartal verspricht. Trotzdem läuft in vielen Teams genau dieser Trade, oft ohne dass ihn jemand bewusst gemacht hat. Der eine SDR hat sich das Tool selbst installiert, der nächste hat es ihm nachgemacht, und plötzlich hängen fünf persönliche Accounts an derselben Bot-Infrastruktur mit demselben Muster. Für die Erkennungsalgorithmen ist das ein Geschenk.
+The math is uncomfortably concrete. A senior AE with 4,000 relevant contacts, built over years, generates intros, references, and deal context from it. What is that account worth? Certainly more than the 30 extra meetings the automation tool promises per quarter. Yet exactly this trade runs in many teams, often without anyone consciously making it. One SDR installed the tool himself, the next copied him, and suddenly five personal accounts hang off the same bot infrastructure with the same pattern. For the detection algorithms, that's a gift.
 
-Heißt das, Finger weg, immer? Nein. Es heißt: Das ist eine Risikoentscheidung, und die gehört auf Führungsebene, nicht in die Browser-Extension eines Praktikanten. Wer automatisieren will, macht es mit dedizierten Accounts, deren Verlust verschmerzbar ist, mit konservativen Limits weit unter dem, was das Tool erlaubt, und mit dem klaren Verständnis, dass es jederzeit vorbei sein kann. Und wer die persönlichen Accounts der besten Leute schützen will, hält sie komplett raus.
+Does that mean hands off, always? No. It means: this is a risk decision, and it belongs at the leadership level, not in an intern's browser extension. If you want to automate, do it with dedicated accounts whose loss you can absorb, with conservative limits far below what the tool allows, and with the clear understanding that it can be over at any time. And if you want to protect your best people's personal accounts, keep them out entirely.
 
-Der Wildwuchs ist das eigentliche Problem. In den meisten Firmen weiß niemand, welcher SDR gerade welches Tool auf welchem Account laufen lässt. Es gibt Regeln für die Spesenabrechnung, aber keine für das Werkzeug, das den wertvollsten Vertriebskanal der Firma gefährden kann.
+The sprawl is the actual problem. In most companies, nobody knows which SDR is running which tool on which account right now. There are rules for expense reports, but none for the tool that can endanger the company's most valuable sales channel.
 
-Fragt mal reihum im nächsten Sales-Meeting, wer was auf seinem LinkedIn-Profil installiert hat. Die Antworten werden interessanter als der Forecast.
+Go around the room at the next sales meeting and ask who has installed what on their LinkedIn profile. The answers will be more interesting than the forecast.

@@ -4,7 +4,7 @@
   post), the four most recent RevShorts on the right, mirroring the
   featured-services flagship layout.
 {%- endcomment -%}
-{% assign shorts = site.revshorts | sort: 'date' | reverse %}
+{% if page.lang == "de" %}{% assign shorts = site.revshorts_de | sort: 'date' | reverse %}{% else %}{% assign shorts = site.revshorts | sort: 'date' | reverse %}{% endif %}
 <section id="insights" class="apx-section px-6 bg-paper scroll-mt-24">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[760px] mx-auto text-center rv">
@@ -52,7 +52,7 @@
     </div>
 
     <div class="mt-10 text-center rv">
-      <a href="{{ '/revshorts' | relative_url }}" class="apx-btn apx-btn-ghost">{{ t.home.insights_all }}</a>
+      <a href="{{ t.urls.revshorts | relative_url }}" class="apx-btn apx-btn-ghost">{{ t.home.insights_all }}</a>
     </div>
   </div>
 </section>

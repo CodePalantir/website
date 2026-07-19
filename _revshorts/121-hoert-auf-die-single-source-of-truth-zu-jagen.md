@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Hört auf, die Single Source of Truth zu jagen"
-description: "Drei Leute, ein Meeting, eine Frage: wie viele aktive Kunden haben wir? Vertrieb sagt 214, Finance sagt 189, das CS-Tool sagt 240. Der Reflex darauf..."
+title: "Stop chasing the single source of truth"
+description: "Three people, one meeting, one question: how many active customers do we have? Sales says 214, Finance says 189, the CS tool says 240. The reflex..."
 date: 2026-07-12
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/121-hoert-auf-die-single-source-of-truth-zu-jagen/
 ---
 
-Drei Leute, ein Meeting, eine Frage: wie viele aktive Kunden haben wir? Vertrieb sagt 214, Finance sagt 189, das CS-Tool sagt 240. Der Reflex darauf ist der Satz, der in jedem zweiten RevOps-Zielbild steht: wir brauchen endlich eine Single Source of Truth.
+Three people, one meeting, one question: how many active customers do we have? Sales says 214, Finance says 189, the CS tool says 240. The reflex response is the sentence that sits in every second RevOps vision deck: we finally need a single source of truth.
 
-Nur gibt es die nicht. Hat noch niemand gebaut, wird niemand bauen, und die Gründe sind strukturell, nicht handwerklich. Euer Billing weiß über Zahlungen mehr, als das CRM je wissen wird. Produkt-Analytics kennt die Nutzung, das CRM kennt die Beziehung, der Support kennt die Schmerzen. Jedes dieser Systeme hat seine Datenhoheit aus gutem Grund, weil dort der Prozess lebt, der die Daten erzeugt. Wer trotzdem alles an einen Ort zwingen will, landet entweder in einem Warehouse-Projekt, das nach 18 Monaten immer noch nicht fertig ist, oder bei einem CRM mit 900 Feldern, von denen zwei Drittel leer sind.
+Except it does not exist. Nobody has ever built one, nobody ever will, and the reasons are structural, not a matter of craftsmanship. Your billing knows more about payments than the CRM ever will. Product analytics knows usage, the CRM knows the relationship, support knows the pain. Each of these systems holds its data authority for a good reason: that is where the process lives that produces the data. Whoever tries to force everything into one place anyway ends up either in a warehouse project that is still not finished after 18 months, or with a CRM with 900 fields, two thirds of them empty.
 
-Das erreichbare Ziel ist bescheidener und deutlich wertvoller: pro Domäne ein definiertes Führungssystem, und Konsistenz dazwischen. Kundenstammdaten führt das CRM, Punkt. Zahlungsstatus führt das Billing, und das CRM zeigt eine synchronisierte Kopie, die als Kopie erkennbar ist. Nutzungsdaten führt die Produkt-Analytics. Für jede wichtige Entität steht schriftlich fest, welches System bei Widerspruch gewinnt, in welche Richtung synchronisiert wird und wie schnell. Am Ende ist das ein Dokument von zwei Seiten plus die Integrationen, die es durchsetzen.
+The achievable goal is more modest and considerably more valuable: one defined system of record per domain, and consistency in between. Customer master data is owned by the CRM, period. Payment status is owned by billing, and the CRM shows a synced copy that is recognizable as a copy. Usage data is owned by product analytics. For every important entity, it is written down which system wins in a conflict, in which direction syncing happens, and how fast. In the end, that is a two-page document plus the integrations that enforce it.
 
-Im Alltag ändert das alles. Die Frage nach 214 gegen 189 gegen 240 ist keine Vertrauenskrise mehr, sondern hat eine Antwort: 189, weil Finance zahlende Verträge zählt und genau das die vereinbarte Definition von aktivem Kunden ist. Die anderen Zahlen messen etwas anderes, und das steht auch dran. Streit über Zahlen ist fast nie ein Datenproblem. Meistens fehlt schlicht die Einigung, welche Definition gilt und wer sie führt.
+In daily life, that changes everything. The question of 214 versus 189 versus 240 is no longer a crisis of trust; it has an answer: 189, because Finance counts paying contracts and that is precisely the agreed definition of an active customer. The other numbers measure something else, and it says so right there. Fights over numbers are almost never a data problem. Usually what is missing is simply the agreement on which definition applies and who owns it.
 
-Kleiner Einschub, bevor der Einwand kommt: ein Warehouse kann später trotzdem sinnvoll sein, als Ort, an dem die Domänen fürs Reporting zusammenlaufen. Aber als Reporting-Schicht über sauberen Führungssystemen. Nicht als magischer Ort, an dem Wahrheit von selbst entsteht.
+A quick aside before the objection comes: a warehouse can still make sense later, as the place where the domains converge for reporting. But as a reporting layer on top of clean systems of record. Not as a magical place where truth emerges on its own.
 
-Die Single Source of Truth ist ein Poster an der Wand. Führungssysteme mit Konfliktregeln sind ein Freitagnachmittag Arbeit pro Domäne. Welche der beiden Varianten hat euer letztes Zielbild versprochen?
+The single source of truth is a poster on the wall. Systems of record with conflict rules are a Friday afternoon of work per domain. Which of the two did your last vision deck promise?

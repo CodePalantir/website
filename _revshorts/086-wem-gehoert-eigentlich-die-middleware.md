@@ -1,19 +1,21 @@
 ---
 layout: revshort
-title: "Wem gehört eigentlich die Middleware?"
-description: "Fast jede Firma, die wir auditieren, hat sie: die Integration, die ein Freelancer 2022 gebaut hat. Läuft auf einem Server, dessen Zugangsdaten in einem..."
+title: "Who actually owns the middleware?"
+description: "Almost every company we audit has it: the integration a freelancer built in 2022. Runs on a server whose credentials live in an old Slack thread, or as a..."
 date: 2026-06-07
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/086-wem-gehoert-eigentlich-die-middleware/
 ---
 
-Fast jede Firma, die wir auditieren, hat sie: die Integration, die ein Freelancer 2022 gebaut hat. Läuft auf einem Server, dessen Zugangsdaten in einem alten Slack-Thread stehen, oder als Make-Szenario im persönlichen Account von jemandem, der letztes Jahr gegangen ist. Sie verbindet CRM und Billing, oder Shop und CRM, oder alle drei. Sie läuft. Bis sie nicht mehr läuft.
+Almost every company we audit has it: the integration a freelancer built in 2022. Runs on a server whose credentials live in an old Slack thread, or as a Make scenario in the personal account of someone who left last year. It connects CRM and billing, or shop and CRM, or all three. It runs. Until it doesn't.
 
-Und dann passiert etwas Interessantes, nämlich eine sehr vorhersagbare Reihenfolge. Der Kunde merkt es zuerst: Die Auftragsbestätigung kommt nicht, die Rechnung fehlt, der Onboarding-Termin wird nie gebucht. Als Nächstes merkt es der Vertrieb, weil Deals im Forecast fehlen oder Zahlungsstatus auf "offen" stehen, die längst bezahlt sind. Ihr selbst merkt es zuletzt, oft erst, wenn der dritte Kunde anruft. Diese Reihenfolge ist kein Pech. Sie ist die logische Folge davon, dass eine Integration ohne Monitoring nur über Symptome auffällt, und Symptome entstehen nun mal draußen, beim Geld und beim Kunden.
+And then something interesting happens, namely a very predictable sequence. The customer notices first: the order confirmation doesn't arrive, the invoice is missing, the onboarding call never gets booked. Sales notices next, because deals are missing from the forecast or payment statuses sit on "open" that were settled long ago. You yourselves notice last, often only when the third customer calls. This sequence isn't bad luck. It's the logical consequence of an integration without monitoring only surfacing through symptoms, and symptoms happen out there, at the money and at the customer.
 
-Das Ownership-Loch hat System. Fürs CRM gibt es einen Admin. Für die Website ist Marketing zuständig. Fürs Billing die Buchhaltung. Aber der Datenfluss dazwischen, also genau die Stelle, an der Umsatzinformationen von einem System ins nächste wandern, gehört niemandem. "Läuft doch" ist kein Betriebsmodell. Es ist die Abwesenheit von einem.
+The ownership hole is systemic. There's an admin for the CRM. Marketing owns the website. Accounting owns billing. But the data flow in between, the exact place where revenue information travels from one system to the next, belongs to no one. "It's running fine" is not an operating model. It's the absence of one.
 
-Was ein Datenfluss braucht, ist überschaubar. Erstens einen Namen im Org-Chart, eine Person, kein Team, denn "das Team" ruft nachts niemand an. Zweitens Monitoring, das den Fehler meldet, bevor der Kunde ihn meldet: eine Fehlerqueue, in die gescheiterte Datensätze fallen statt zu verschwinden, ein Heartbeat, der Alarm schlägt, wenn der Sync still steht, ein Alert in einen Kanal, den jemand liest. Drittens eine Seite Dokumentation. Welche Flüsse gibt es, wo laufen sie, wo liegen die Credentials, was ist bei Fehler X zu tun. Das ist für eine typische Firma unserer Größe ein Nachmittag Arbeit pro Integration. Kein Projekt, ein Nachmittag.
+What a data flow needs is manageable. First, a name on the org chart, a person, not a team, because nobody calls "the team" at night. Second, monitoring that reports the failure before the customer does: an error queue that failed records fall into instead of vanishing, a heartbeat that raises an alarm when the sync goes silent, an alert into a channel someone actually reads. Third, one page of documentation. Which flows exist, where they run, where the credentials live, what to do on error X. For a typical company our size, that's one afternoon of work per integration. Not a project, an afternoon.
 
-Der Test ist einfach und tut ein bisschen weh. Öffnet euer Org-Chart und zeigt auf die Person, die gerufen wird, wenn der Sync zwischen CRM und Billing heute Nacht um zwei stehen bleibt. Zeigt euer Finger ins Leere, dann wisst ihr jetzt, wer es als Erstes merken wird. Nicht ihr.
+The test is simple and stings a little. Open your org chart and point at the person who gets called when the sync between CRM and billing stops at two in the morning tonight. If your finger points at nothing, you now know who will notice first. Not you.

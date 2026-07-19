@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Wenn die iPaaS-Lizenz teurer ist als der Entwickler"
-description: "Der Pitch von iPaaS war mal bestechend: klicken statt coden, jeder Admin baut Integrationen, keine teuren Entwickler nötig. Zehn Jahre später ist die..."
+title: "When the iPaaS license costs more than the developer"
+description: "The iPaaS pitch used to be compelling: click instead of code, any admin can build integrations, no expensive developers needed. Ten years later, the math has..."
 date: 2026-06-05
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/084-wenn-die-ipaas-lizenz-teurer-ist-als-der-entwickler/
 ---
 
-Der Pitch von iPaaS war mal bestechend: klicken statt coden, jeder Admin baut Integrationen, keine teuren Entwickler nötig. Zehn Jahre später ist die Rechnung gekippt. Nachgerechnet hat sie kaum jemand, weil die Lizenz still im Hintergrund mitwächst und der Vergleichswert fehlt.
+The iPaaS pitch used to be compelling: click instead of code, any admin can build integrations, no expensive developers needed. Ten years later, the math has flipped. Hardly anyone has actually run the numbers, because the license grows quietly in the background and there's no reference point to compare it against.
 
-Also rechnen wir. Fall aus einem Audit letztes Jahr: Firma mit 80 Leuten, Workato-Vertrag über 46.000 Euro im Jahr. Darauf laufen 14 Rezepte, die im Kern drei Dinge tun: CRM mit dem Billing abgleichen, Leads anreichern und routen, Bestandsdaten in ein Reporting schieben. Die Preislogik ist aufgabenbasiert, jeder verarbeitete Datensatz zählt, und weil das Geschäft wächst, wächst die Rechnung mit. Erfolg wird hier direkt besteuert.
+So let's run them. A case from an audit last year: company with 80 people, Workato contract at 46,000 euros a year. Running on it: 14 recipes that at their core do three things: reconcile the CRM with billing, enrich and route leads, and push existing data into a reporting tool. The pricing logic is task-based, every processed record counts, and because the business is growing, the bill grows with it. Success gets taxed directly here.
 
-Die Alternative: ein Senior-Entwickler baut dieselben Flüsse als Custom-Middleware. Sagen wir großzügig 25 Projekttage, macht rund 30.000 Euro einmalig, danach Hosting und ein Wartungsbudget von vielleicht 400 Euro im Monat. Nach 14 Monaten ist der Break-even durch, ab Jahr zwei spart die Firma jährlich 40.000 Euro, und die Kostenkurve ist flach statt volumengekoppelt. Das ist die ganze Rechnung. Kein Glaubenskrieg nötig.
+The alternative: a senior developer builds the same flows as custom middleware. Let's be generous and say 25 project days, roughly 30,000 euros one-time, then hosting and a maintenance budget of maybe 400 euros a month. Break-even lands after 14 months, from year two the company saves 40,000 euros annually, and the cost curve is flat instead of volume-coupled. That's the whole calculation. No holy war required.
 
-Geld ist dabei nur das halbe Argument. Custom-Code lebt in Git, hat Tests, Code Review, eine Deploy-Pipeline und einen Rollback, wenn etwas schiefgeht. Und das Rezept im iPaaS? Wird live editiert, am offenen Herzen, von der einen Person, die das Tool versteht. Versionierung heißt dort oft: Kopie anlegen und hoffen. Wer schon mal um 17 Uhr eine Mapping-Änderung in einem Produktiv-Rezept gemacht hat, kennt das Gefühl im Magen.
+Money is only half the argument, though. Custom code lives in Git, has tests, code review, a deploy pipeline, and a rollback when something goes wrong. And the recipe in the iPaaS? Gets edited live, open-heart surgery, by the one person who understands the tool. Version control there often means: make a copy and hope. Anyone who has ever made a mapping change to a production recipe at 5 p.m. knows that feeling in the pit of the stomach.
 
-Jetzt die ehrliche Einschränkung, denn ohne die wäre das Reseller-Logik mit umgekehrtem Vorzeichen. iPaaS hat seinen Platz. Drei simple Flüsse, Standardkonnektoren reichen, kein Entwickler im Haus und keiner buchbar: nehmt Make oder Zapier für ein paar hundert Euro im Monat und seid zufrieden. Der Kipppunkt kommt mit der Komplexität. Eigene Fehlerbehandlung, Mapping-Tabellen, Bedingungen über fünf Systeme hinweg, Logik, die jemand testen können muss. Ab da kämpft ihr gegen das Tool statt mit ihm, und ihr zahlt für den Kampf auch noch Enterprise-Preise.
+Now the honest caveat, because without it this would just be reseller logic with the sign flipped. iPaaS has its place. Three simple flows, standard connectors are enough, no developer in-house and none bookable: take Make or Zapier for a few hundred euros a month and be happy. The tipping point comes with complexity. Custom error handling, mapping tables, conditions across five systems, logic that someone needs to be able to test. From there on you're fighting against the tool instead of with it, and you're paying enterprise prices for the fight on top.
 
-Die Faustregel ist unbequem einfach. Sobald eure iPaaS-Jahresrechnung die Kosten eines soliden Entwicklerprojekts übersteigt, finanziert ihr ein Abo für etwas, das ihr einmal hättet bauen können. Holt euch die Rechnung. Legt sie neben ein Angebot. Der Rest ergibt sich.
+The rule of thumb is uncomfortably simple. The moment your annual iPaaS bill exceeds the cost of a solid developer project, you're financing a subscription for something you could have built once. Pull up the invoice. Put it next to a quote. The rest takes care of itself.

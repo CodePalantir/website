@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Automatisierung macht schlechte Prozesse nur schneller schlecht"
-description: "Die Geschichte läuft fast immer gleich ab. Im Vertrieb passiert zu wenig, jemand schlägt Marketing Automation vor, ein Tool wird gekauft, und drei..."
+title: "Automation just makes bad processes fail faster"
+description: "The story almost always plays out the same way. Not enough is happening in sales, someone suggests marketing automation, a tool gets bought, and three..."
 date: 2026-04-11
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/029-automatisierung-macht-schlechte-prozesse-nur-schneller-s/
 ---
 
-Die Geschichte läuft fast immer gleich ab. Im Vertrieb passiert zu wenig, jemand schlägt Marketing Automation vor, ein Tool wird gekauft, und drei Monate später laufen Nurture-Strecken, Lead-Scoring und automatische Follow-ups. Die Pipeline? Unverändert. Nur die Abmelderate hat jetzt mehr zu erzählen.
+The story almost always plays out the same way. Not enough is happening in sales, someone suggests marketing automation, a tool gets bought, and three months later nurture tracks, lead scoring, and automatic follow-ups are running. The pipeline? Unchanged. Only the unsubscribe rate has more to say now.
 
-Der Denkfehler steckt im Wort selbst. Automatisiert wird, was da ist. Wenn eure manuelle Ansprache niemanden überzeugt hat, überzeugt die automatisierte Version auch niemanden, sie erreicht nur mehr Leute pro Stunde. Ihr habt keinen Vertriebsprozess beschleunigt. Ihr habt Spam industrialisiert.
+The flaw sits in the word itself. What gets automated is what's there. If your manual outreach convinced no one, the automated version convinces no one either, it just reaches more people per hour. You haven't accelerated a sales process. You have industrialized spam.
 
-Schaut euch die typische Nurture-Strecke an, die nach so einer Tool-Einführung entsteht. Fünf Mails, an einem Nachmittag geschrieben, Betreff "Wussten Sie schon?", Inhalt Featureliste, Abstand sieben Tage, weil sieben eine runde Zahl ist. Niemand hat diese Mails je einzeln an einen echten Menschen geschickt und geschaut, ob eine Antwort kommt. Sie wurden direkt für den Massenversand gebaut, ungetestet, und das Tool verschickt sie jetzt zuverlässig. Zuverlässigkeit ist hier keine Tugend.
+Look at the typical nurture track that emerges after such a tool rollout. Five emails, written in one afternoon, subject line "Did you know?", content a feature list, spaced seven days apart because seven is a round number. Nobody ever sent these emails individually to a real human and checked whether a reply came back. They were built straight for mass sending, untested, and the tool now delivers them reliably. Reliability is not a virtue here.
 
-Ein Verstärker verstärkt, was man reinschickt. Gitarristen wissen das: klingt das Riff schlecht, klingt es über die große Box schlechter, nur lauter. Bei Marketing Automation gilt exakt dasselbe, mit dem Unterschied, dass die große Box hier eure Absender-Domain ruiniert und der Applaus als Spam-Beschwerde zurückkommt.
+An amplifier amplifies whatever you feed it. Guitarists know this: if the riff sounds bad, it sounds worse through the big rig, just louder. Marketing automation works exactly the same way, with the difference that here the big rig ruins your sender domain and the applause comes back as spam complaints.
 
-Die Reihenfolge muss andersherum laufen. Erst manuell beweisen, dass die Ansprache funktioniert: fünfzig Mails von Hand, an sorgfältig ausgewählte Empfänger, dann messen. Kommen auf fünfzig handgeschriebene Mails keine fünf Antworten, produziert dieselbe Mail an fünftausend Empfänger keine fünfhundert Antworten, sondern Ärger. Kommen die Antworten aber, wisst ihr, welcher Aufhänger zieht, welches Segment reagiert, welcher Rhythmus passt. Das ist der Prozess. Den gießt ihr dann in Automatisierung, Schritt für Schritt, und jeder automatisierte Schritt hat vorher manuell funktioniert.
+The order has to run the other way. First prove manually that the outreach works: fifty emails by hand, to carefully selected recipients, then measure. If fifty handwritten emails don't produce five replies, the same email to five thousand recipients won't produce five hundred replies, it will produce trouble. But if the replies do come, you know which hook pulls, which segment responds, which cadence fits. That is the process. Then you pour it into automation, step by step, and every automated step has worked manually first.
 
-Das klingt langsamer, und am Anfang ist es das auch. Zwei Wochen Handarbeit fühlen sich zäh an, wenn das teure Tool nebenan wartet. Aber die Alternative ist, Ungetestetes zu skalieren, und skalierter Müll bleibt Müll, nur mit besserem Reporting darüber, wie viel davon rausging.
+That sounds slower, and at the start it is. Two weeks of handwork feel sluggish when the expensive tool is waiting next door. But the alternative is scaling the untested, and scaled garbage is still garbage, just with better reporting on how much of it went out.
 
-Das Tool ist übrigens fast nie das Problem. HubSpot, Marketo, ActiveCampaign, alle können das, was ihr braucht, und meist deutlich mehr. Die Frage vor jedem Automatisierungsprojekt ist eine andere: Was genau soll hier eigentlich schneller werden? Wenn die Antwort schweigt, spart euch die Lizenz.
+The tool, by the way, is almost never the problem. HubSpot, Marketo, ActiveCampaign, they can all do what you need and usually far more. The question before every automation project is a different one: what exactly is supposed to get faster here? If the answer is silence, save yourself the license.

@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Das Webinar ist nicht das Produkt, der Follow-up ist es"
-description: "200 Anmeldungen, 40 Leute im Zoom, hinterher eine Aufzeichnungs-Mail an alle. Das war es dann. So sterben die meisten Webinare, und zwar nach dem..."
+title: "The webinar isn't the product, the follow-up is"
+description: "200 registrations, 40 people in the Zoom, afterwards a recording email to everyone. And that was it. That's how most webinars die, after the..."
 date: 2026-04-06
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/024-das-webinar-ist-nicht-das-produkt-der-follow-up-ist-es/
 ---
 
-200 Anmeldungen, 40 Leute im Zoom, hinterher eine Aufzeichnungs-Mail an alle. Das war es dann. So sterben die meisten Webinare, und zwar nach dem Event, nicht davor.
+200 registrations, 40 people in the Zoom, afterwards a recording email to everyone. And that was it. That's how most webinars die, after the event, not before it.
 
-Die Rechnung dahinter wird selten aufgemacht. In die 200 Anmeldungen sind Wochen geflossen: Landingpage, Speaker organisiert, Anzeigen geschaltet, drei Reminder-Mails getextet. Und dann behandelt der Prozess alle 200 gleich, mit einer einzigen Massenmail, obwohl sie gerade drei völlig verschiedene Dinge getan haben.
+Nobody runs the math on this. Weeks went into those 200 registrations: landing page, speaker lined up, ads running, three reminder emails written. And then the process treats all 200 the same, with a single mass email, even though they just did three completely different things.
 
-Da sind die 40, die tatsächlich da waren. Manche davon 55 Minuten lang, manche haben im Q&A eine Frage gestellt, die praktisch ein Kaufsignal war. Da sind die, die nach zehn Minuten abgesprungen sind, was auch eine Information ist, nur eine andere. Und da sind die 160, die sich angemeldet haben und nie erschienen sind. Die sind nicht verloren. Die haben mit ihrer Anmeldung dokumentiert, dass das Thema sie interessiert, nur der Dienstag um 15 Uhr eben nicht. Das ist mehr Intent, als die meisten gekauften Leads je zeigen.
+There are the 40 who actually showed up. Some of them for 55 minutes, some asked a question in the Q&A that was practically a buying signal. There are the ones who dropped off after ten minutes, which is also information, just a different kind. And there are the 160 who registered and never appeared. They are not lost. By registering, they documented that the topic interests them, just not Tuesday at 3 pm. That's more intent than most purchased leads ever show.
 
-Drei Gruppen, drei Gespräche. Wer 55 Minuten geblieben ist und eine Frage gestellt hat, bekommt keinen Reminder auf die Aufzeichnung, sondern eine persönliche Mail vom Vertrieb, die sich auf genau diese Frage bezieht. Wer abgesprungen ist, bekommt die eine Passage, die sein Problem trifft, mit Zeitstempel, nicht 60 Minuten Video. Und die No-Shows bekommen einen zweiten, niedrigschwelligen Einstieg ins Thema statt eines schlechten Gewissens.
+Three groups, three conversations. Whoever stayed 55 minutes and asked a question doesn't get a reminder about the recording, they get a personal email from sales that references exactly that question. Whoever dropped off gets the one passage that hits their problem, with a timestamp, not 60 minutes of video. And the no-shows get a second, low-friction entry point into the topic instead of a guilt trip.
 
-Technisch ist das keine Raketenwissenschaft. Jede Webinar-Plattform liefert Teilnahmedaten inklusive Verweildauer, jede vernünftige Integration schreibt sie ins CRM, und die Segmentierung ist eine Automatisierung von vielleicht einem Tag Bauzeit. Trotzdem sehen wir in Systemen ständig dasselbe Bild: Die Anmeldeliste liegt als CSV im Postfach der Marketing-Managerin, die Teilnahmedaten sind nie synchronisiert worden, und Sales weiß nicht mal, dass das Webinar stattgefunden hat.
+Technically, none of this is rocket science. Every webinar platform delivers attendance data including watch time, every decent integration writes it into the CRM, and the segmentation is an automation of maybe one day's build time. Yet we keep seeing the same picture in systems: the registration list sits as a CSV in the marketing manager's inbox, the attendance data was never synced, and sales doesn't even know the webinar happened.
 
-Der Grund ist banal. Das Event hat einen Termin, einen Verantwortlichen und einen sichtbaren Erfolgsmoment. Der Follow-up hat nichts davon. Er ist unsichtbare Prozessarbeit, und unsichtbare Prozessarbeit verliert in jedem Kalender gegen das nächste sichtbare Event. Also wird das nächste Webinar geplant, während die 160 wärmsten Kontakte des letzten verrotten.
+The reason is banal. The event has a date, an owner, and a visible moment of success. The follow-up has none of that. It's invisible process work, and invisible process work loses to the next visible event on every calendar. So the next webinar gets planned while the 160 warmest contacts from the last one rot.
 
-Bevor ihr das nächste Webinar ankündigt, eine Kontrollfrage: Existiert die Automatisierung, die erschienen, abgesprungen und nie da unterschiedlich behandelt, schon im System? Wenn nein, ist das Webinar noch nicht fertig geplant. Egal wie gut der Speaker ist.
+Before you announce the next webinar, one control question: does the automation that treats attended, dropped off, and never showed differently already exist in the system? If not, the webinar isn't done being planned. No matter how good the speaker is.

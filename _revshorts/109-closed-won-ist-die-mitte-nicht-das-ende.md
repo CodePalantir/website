@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Closed Won ist die Mitte, nicht das Ende"
-description: "Schaut euch euer CRM an. Stages von Lead bis Closed Won, sauber definiert, mit Conversion-Raten, Forecast, Dashboards. Und dann? Dann steht da 'Won'..."
+title: "Closed Won is the middle, not the end"
+description: "Look at your CRM. Stages from lead to Closed Won, cleanly defined, with conversion rates, forecast, dashboards. And then? Then it says 'Won' and the..."
 date: 2026-06-30
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/109-closed-won-ist-die-mitte-nicht-das-ende/
 ---
 
-Schaut euch euer CRM an. Stages von Lead bis Closed Won, sauber definiert, mit Conversion-Raten, Forecast, Dashboards. Und dann? Dann steht da "Won" und die Datenwelt endet wie eine Straße am Ortsschild. Der Kunde existiert ab jetzt in einem Onboarding-Spreadsheet, einem Support-Postfach und dem Gedächtnis der Kollegin, die den Deal begleitet hat.
+Look at your CRM. Stages from lead to Closed Won, cleanly defined, with conversion rates, forecast, dashboards. And then? Then it says "Won" and the data world ends like a road at the town limits sign. From that point on, the customer exists in an onboarding spreadsheet, a support inbox, and the memory of the colleague who worked the deal.
 
-Das Trichter-Bild ist schuld. Ein Funnel läuft oben breit rein und unten spitz raus, und was unten rauskommt, ist fertig. Bei Firmen mit wiederkehrendem Umsatz ist das die falsche Geometrie. Die richtige ist die Fliege, das Bowtie: links der bekannte Trichter bis zum Abschluss, rechts spiegelbildlich Onboarding, Adoption, Retention, Expansion. Am Knoten in der Mitte sitzt Closed Won. Die Mitte. Nicht das Ende.
+The funnel image is to blame. A funnel takes things in wide at the top and spits them out narrow at the bottom, and whatever comes out the bottom is done. For companies with recurring revenue, that is the wrong geometry. The right one is the bowtie: on the left, the familiar funnel up to the close, on the right, mirrored, onboarding, adoption, retention, expansion. At the knot in the middle sits Closed Won. The middle. Not the end.
 
-Warum das mehr ist als ein hübscheres Diagramm, zeigt eine simple Rechnung. Nehmt eine Firma mit 5 Millionen wiederkehrendem Umsatz und 12 Prozent Churn. Drei Punkte weniger Churn sind 150.000 Euro, die jedes Jahr wiederkommen, ohne einen einzigen neuen Lead. Dieselben 150.000 über Neugeschäft zu holen kostet Marketing, SDR-Zeit, Sales-Zyklen und eine Win-Rate, die mitspielen muss. Die rechte Seite der Fliege ist fast immer der billigere Umsatz. Trotzdem kriegt die linke Seite die Tools, die Meetings und die Aufmerksamkeit.
+Why this is more than a prettier diagram comes down to simple math. Take a company with 5 million in recurring revenue and 12 percent churn. Three points less churn is 150,000 euros that come back every year, without a single new lead. Getting the same 150,000 through new business costs marketing, SDR time, sales cycles, and a win rate that has to cooperate. The right side of the bowtie is almost always the cheaper revenue. Yet the left side gets the tools, the meetings, and the attention.
 
-Operativ heißt Bowtie: die rechte Seite bekommt dieselbe Mechanik wie die linke. Stages mit Definitionen, an denen niemand vorbeidiskutieren kann. Onboarding hat eine messbare Time-to-Value, so wie Inbound eine Speed-to-Lead hat. Ein Health Score, der auf Nutzungsdaten basiert statt auf dem Bauchgefühl vom letzten Call. Renewals stehen 120 Tage vorher als Pipeline im System, nicht als Kalendererinnerung. Expansion-Signale, etwa wenn ein Kunde an seine Lizenzgrenze läuft, erzeugen eine Opportunity, automatisch, nicht wenn es jemandem zufällig auffällt.
+Operationally, bowtie means: the right side gets the same machinery as the left. Stages with definitions nobody can argue their way around. Onboarding has a measurable time to value, the way inbound has a speed to lead. A health score based on usage data instead of the gut feeling from the last call. Renewals sit in the system as pipeline 120 days out, not as a calendar reminder. Expansion signals, say a customer running up against their license limit, create an opportunity, automatically, not whenever someone happens to notice.
 
-Nichts davon braucht zwingend eine Gainsight-Lizenz, das nur nebenbei. Für 20 bis 200 Leute reicht meist das CRM, das ihr schon bezahlt, plus Produktdaten, die sauber reinfließen. Es braucht vor allem die Entscheidung, dass der Kunde nach der Unterschrift dieselbe Datendisziplin verdient wie davor.
+None of this necessarily requires a Gainsight license, just as an aside. For 20 to 200 people, the CRM you already pay for is usually enough, plus product data flowing in cleanly. What it mainly takes is the decision that the customer deserves the same data discipline after the signature as before it.
 
-Testfrage für euer eigenes Setup: Könnt ihr per Report sagen, welche Kunden in 90 Tagen zur Verlängerung anstehen und wie gesund sie sind? Wenn die Antwort ein Spreadsheet ist, verwaltet ihr die profitablere Hälfte eures Geschäfts im Blindflug.
+Test question for your own setup: can you pull a report showing which customers are up for renewal in 90 days and how healthy they are? If the answer is a spreadsheet, you are managing the more profitable half of your business blind.

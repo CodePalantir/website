@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Wer am lautesten schreit, bekommt sein Feld"
-description: "Montagmorgen, Slack. Der Vertriebsleiter braucht dringend ein neues Pflichtfeld, Customer Success wartet seit drei Wochen auf ein Dashboard, und aus..."
+title: "Whoever shouts loudest gets their field"
+description: "Monday morning, Slack. The head of sales urgently needs a new required field, customer success has been waiting three weeks for a dashboard, and from..."
 date: 2026-06-19
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/098-wer-am-lautesten-schreit-bekommt-sein-feld/
 ---
 
-Montagmorgen, Slack. Der Vertriebsleiter braucht dringend ein neues Pflichtfeld, Customer Success wartet seit drei Wochen auf ein Dashboard, und aus dem Marketing kommt eine Anforderung mit vier Ausrufezeichen und einem "heute noch?". Was wird zuerst gebaut? Ihr kennt die Antwort. Das mit den Ausrufezeichen.
+Monday morning, Slack. The head of sales urgently needs a new required field, customer success has been waiting three weeks for a dashboard, and from marketing comes a request with four exclamation marks and a "today, if possible?". What gets built first? You know the answer. The one with the exclamation marks.
 
-Die meisten Ops-Backlogs werden nach Dezibel priorisiert. Nicht nach Umsatzhebel, nicht nach Risiko, nicht danach, wie viele Leute davon profitieren, sondern danach, wer öfter nachhakt, wer näher am Geschäftsführer sitzt, wer im Meeting am längsten redet. Das fühlt sich nach Kundennähe an, intern wie extern. In Wahrheit ist es die Abwesenheit von Steuerung, nur freundlicher verpackt.
+Most ops backlogs are prioritized by decibels. Not by revenue impact, not by risk, not by how many people benefit, but by who follows up more often, who sits closer to the CEO, who talks longest in the meeting. It feels like customer focus, internally and externally. In truth it's the absence of steering, just wrapped more politely.
 
-Das Problem sind nicht mal die lauten Anfragen selbst. Viele davon sind berechtigt. Das Problem ist, was systematisch verliert: alles, was keine Lobby hat. Die Deduplizierung, die seit Monaten fällig ist. Die Automatisierung, die still fehlerhafte Daten produziert und die niemand anmahnt, weil niemand sie sieht. Datenqualität schreit nicht. Sie verrottet leise, während der Admin das vierzehnte Spezialfeld für einen einzelnen Bereichsleiter baut.
+The problem isn't even the loud requests themselves. Many of them are legitimate. The problem is what systematically loses: everything without a lobby. The deduplication that's been overdue for months. The automation quietly producing faulty data that nobody flags, because nobody sees it. Data quality doesn't shout. It rots silently while the admin builds the fourteenth special field for a single department head.
 
-Der Ausweg ist unspektakulär und genau deshalb wirksam. Drei Kriterien pro Anfrage, mehr nicht. Erstens Umsatzhebel: hängt daran Pipeline, Forecast, Abschlussquote, oder ist es Komfort? Zweitens Reichweite: arbeiten damit 40 Vertriebler jeden Tag oder eine Person einmal im Quartal? Drittens Risiko: was passiert, wenn wir es nicht tun? Bei einer kaputten Rechnungsübergabe lautet die Antwort anders als bei einer neuen Reportfarbe.
+The way out is unspectacular and effective for exactly that reason. Three criteria per request, nothing more. First, revenue impact: does pipeline, forecast, or win rate hang on this, or is it convenience? Second, reach: do 40 reps work with it every day, or one person once a quarter? Third, risk: what happens if we don't do it? For a broken invoice handoff the answer sounds different than for a new report color.
 
-Wer das ernsthaft durchzieht, erlebt zwei Effekte. Der erste: Das Dashboard für 40 Nutzer schlägt plötzlich das Wunschfeld des lautesten Kollegen, und der muss damit leben, öffentlich und begründet. Der zweite ist interessanter. Etwa ein Drittel der Anfragen stirbt von allein, sobald der Anfragende die drei Fragen selbst beantworten soll. Was den Aufwand einer Slack-Nachricht nicht überlebt, hätte auch den Aufwand der Umsetzung nicht verdient.
+Whoever seriously follows through experiences two effects. The first: the dashboard for 40 users suddenly beats the pet field of the loudest colleague, and he has to live with that, publicly and with reasons given. The second is more interesting. About a third of requests die on their own the moment the requester has to answer the three questions themselves. Whatever doesn't survive the effort of a Slack message wouldn't have deserved the effort of implementation either.
 
-Ein Backlog nach Impact ist übrigens auch Schutz für den Admin. Wer nach Lautstärke arbeitet, ist immer schuldig, weil immer jemand wartet. Wer nach Kriterien arbeitet, kann auf die Liste zeigen.
+A backlog ranked by impact is also protection for the admin, by the way. Whoever works by volume of noise is always guilty, because someone is always waiting. Whoever works by criteria can point at the list.
 
-Schaut euch die letzten zehn umgesetzten Ops-Anfragen an und fragt bei jeder: wäre die durch die drei Kriterien gekommen? Wenn mehr als die Hälfte durchfällt, wisst ihr, wer euer System gerade wirklich designt. Der Lauteste.
+Look at the last ten ops requests you shipped and ask of each: would it have made it through the three criteria? If more than half fail, you now know who is really designing your system. The loudest one.

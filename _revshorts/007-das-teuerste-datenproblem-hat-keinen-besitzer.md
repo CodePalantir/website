@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Das teuerste Datenproblem hat keinen Besitzer"
-description: "Zwei AEs rufen in derselben Woche denselben Geschäftsführer an. Beide haben einen Account im CRM, einmal 'Müller GmbH', einmal 'Mueller GmbH & Co. KG',..."
+title: "The most expensive data problem has no owner"
+description: "Two AEs call the same CEO in the same week. Both have an account in the CRM, one 'Müller GmbH', one 'Mueller GmbH & Co. KG', both with an open..."
 date: 2026-03-20
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/007-das-teuerste-datenproblem-hat-keinen-besitzer/
 ---
 
-Zwei AEs rufen in derselben Woche denselben Geschäftsführer an. Beide haben einen Account im CRM, einmal "Müller GmbH", einmal "Mueller GmbH & Co. KG", beide mit offener Opportunity. Der Geschäftsführer fragt beim zweiten Anruf trocken, ob die Kollegen bei euch eigentlich miteinander reden. Der Deal ist ab da Bergaufarbeit.
+Two AEs call the same CEO in the same week. Both have an account in the CRM, one "Müller GmbH", one "Mueller GmbH & Co. KG", both with an open opportunity. On the second call the CEO dryly asks whether your colleagues actually talk to each other. From that moment on, the deal is an uphill climb.
 
-Das ist die sichtbare Version des Problems. Die unsichtbare ist teurer.
+That's the visible version of the problem. The invisible one is more expensive.
 
-Eure Attribution zerfällt, weil der Marketing-Kontakt auf Dublette A hängt und der gewonnene Deal auf Dublette B, womit die Kampagne, die den Kunden gebracht hat, im Report als Kostenstelle ohne Ergebnis steht. Euer Bestandskunde bekommt die Neukunden-Mail mit "Lernen Sie uns kennen", weil sein zweiter Datensatz nie den Kunden-Status bekommen hat, und antwortet mit einem Screenshot seiner letzten drei Rechnungen. Euer Scoring, euer Routing, eure Segmentierung: alles rechnet auf einer Datenbasis, in der dieselbe Firma zwei, drei, manchmal fünfmal existiert. Jede Automatisierung wird zum Glücksspiel.
+Your attribution falls apart because the marketing contact hangs on duplicate A and the won deal on duplicate B, which means the campaign that brought in the customer shows up in the report as a cost center with no results. Your existing customer gets the new-prospect email saying "Get to know us" because his second record never got customer status, and replies with a screenshot of his last three invoices. Your scoring, your routing, your segmentation: all of it computes on a data foundation where the same company exists two, three, sometimes five times. Every automation becomes a coin flip.
 
-Warum ist ausgerechnet das das teuerste Datenproblem? Nicht weil es das größte wäre. Sondern weil es keinen Besitzer hat. Der Vertrieb sagt, Datenpflege sei Sache vom Marketing. Marketing sagt, die Accounts gehören dem Vertrieb. Der Admin, falls es einen gibt, hat 40 andere Tickets. Also passiert nichts, jahrelang, und alle gewöhnen sich daran, vor jedem Anruf erstmal drei Suchvarianten durchzuprobieren.
+Why is this, of all things, the most expensive data problem? Not because it's the biggest. But because it has no owner. Sales says data hygiene is marketing's job. Marketing says the accounts belong to sales. The admin, if there is one, has 40 other tickets. So nothing happens, for years, and everyone gets used to trying three search variations before every call.
 
-Irgendwann kommt dann der Frühjahrsputz. Ein Praktikant, eine Excel-Liste, zwei Wochen Merging. Danach ist es besser. Sechs Monate später ist alles wieder da, weil die Quellen weiterlaufen: das Webformular ohne Abgleich, der Import aus der Messe-Liste, das Enrichment-Tool, das fröhlich neue Records anlegt, die manuelle Anlage ohne Pflichtprüfung. Dubletten sind kein Bestand, den man einmal wegräumt. Dubletten sind ein Zufluss.
+At some point comes the spring cleaning. An intern, an Excel list, two weeks of merging. Afterwards it's better. Six months later it's all back, because the sources keep running: the web form with no matching, the import from the trade show list, the enrichment tool cheerfully creating new records, manual entry with no required checks. Duplicates aren't a backlog you clear once. Duplicates are an inflow.
 
-Deshalb ist Dedupe keine Aufräumaktion, sondern laufende Governance. Matching-Regeln, die zu euren Daten passen, deutsche Rechtsformen inklusive, GmbH gegen GmbH & Co. KG matcht kein Standardregelwerk sauber. Abgleich an jeder Eingangstür, nicht nachträglich. Klare Merge-Logik, welcher Datensatz überlebt und welche Felder gewinnen. Und vor allem: ein Name. Eine Person, die verantwortlich ist, mit einem Report, der die Dublettenquote pro Monat zeigt.
+That's why dedupe isn't a cleanup project but ongoing governance. Matching rules that fit your data, German legal forms included, no standard ruleset cleanly matches GmbH against GmbH & Co. KG. Matching at every entry point, not after the fact. Clear merge logic, which record survives and which fields win. And above all: a name. One person who is accountable, with a report showing the duplicate rate per month.
 
-Sucht doch mal euren größten Kunden im CRM. Einmal ausgeschrieben, einmal abgekürzt, einmal mit Umlaut. Wie viele Treffer?
+Go search for your biggest customer in the CRM. Once spelled out, once abbreviated, once with the umlaut. How many hits?

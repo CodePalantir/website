@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "CPQ mit 30 Leuten ist eine Fabrik für eine Bäckerei"
-description: "Irgendwann taucht das Wort auf. Ein Angebot war mal wieder falsch, die Rabatte laufen aus dem Ruder, und jemand hat auf einer Konferenz gehört, dass..."
+title: "CPQ with 30 people is a factory for a bakery"
+description: "At some point the word comes up. A proposal was wrong yet again, discounts are running wild, and someone heard at a conference that what you need for..."
 date: 2026-05-09
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/057-cpq-mit-30-leuten-ist-eine-fabrik-fuer-eine-baeckerei/
 ---
 
-Irgendwann taucht das Wort auf. Ein Angebot war mal wieder falsch, die Rabatte laufen aus dem Ruder, und jemand hat auf einer Konferenz gehört, dass man dafür CPQ braucht. Configure, Price, Quote, klingt nach genau dem fehlenden Stück. Der Reseller bestätigt das gern und schickt ein Angebot: Lizenzen ab 75 Euro pro User und Monat, Implementierung sechsstellig, Projektlaufzeit sechs bis neun Monate.
+At some point the word comes up. A proposal was wrong yet again, discounts are running wild, and someone heard at a conference that what you need for this is CPQ. Configure, Price, Quote, sounds like exactly the missing piece. The reseller happily confirms and sends a quote: licenses from 75 euros per user per month, six-figure implementation, project runtime six to nine months.
 
-Für einen Konzern mit 400 Vertrieblern, 12.000 Artikeln und Konfigurationsregeln, bei denen Produkt A die Varianten C und F ausschließt, ist das gut angelegtes Geld. Ihr habt 30 Leute und eine Preisliste, die auf zwei Seiten passt. Ihr braucht keine Fabrik. Ihr braucht ein sauberes Rezept.
+For an enterprise with 400 sellers, 12,000 SKUs, and configuration rules where product A excludes variants C and F, that is money well spent. You have 30 people and a price list that fits on two pages. You do not need a factory. You need a clean recipe.
 
-Denn das eigentliche Problem ist fast nie das Tool. Es ist die Preislogik, die es nicht gibt. Welche Rabattstufen gelten ab welchem Volumen? Welche Produkte werden gebündelt, und was kostet das Bundle wirklich? Zwölf, 24 oder 36 Monate Laufzeit, und was ist der Preisunterschied? Wenn diese Fragen keine festen Antworten haben, beantwortet sie jeder AE selbst, jeden Tag neu. Ein CPQ-System ändert daran nichts. Es zwingt euch nur, das Chaos in Regeln zu gießen, mitten in einem teuren Projekt, unter Zeitdruck, mit einem Implementierungspartner, der nach Aufwand abrechnet und an jeder Verlängerung verdient. Die Standardisierung, vor der ihr euch drückt, holt euch im Projekt wieder ein. Nur kostet sie dann das Fünffache.
+Because the real problem is almost never the tool. It is the pricing logic that does not exist. Which discount tiers apply at which volume? Which products get bundled, and what does the bundle actually cost? Twelve, 24, or 36 months of term, and what is the price difference? If these questions have no fixed answers, every AE answers them himself, fresh every day. A CPQ system changes none of that. It only forces you to pour the chaos into rules, in the middle of an expensive project, under time pressure, with an implementation partner who bills by effort and earns on every extension. The standardization you keep dodging catches up with you inside the project. It just costs five times as much there.
 
-Die Reihenfolge dreht sich also um. Erst die Preislogik festziehen: Rabattregeln, Bundles, Laufzeiten, dokumentiert und von der Geschäftsführung abgesegnet. Das ist unbequeme Arbeit, ein paar harte interne Diskussionen, keine einzige Lizenz. Danach schaut man, was zur Abbildung nötig ist, und die Antwort ist bei 20 bis 200 Mitarbeitern fast immer ernüchternd simpel: natives Quoting der Suite, Preisbuch gepflegt, Rabattfreigaben als Prozess, Angebot per Klick generiert. Alles in Editionen enthalten, die ihr vermutlich schon bezahlt.
+So the order flips. First, nail down the pricing logic: discount rules, bundles, terms, documented and signed off by the executive team. That is uncomfortable work, a few hard internal discussions, not a single license. Then you look at what is needed to implement it, and at 20 to 200 employees the answer is almost always soberingly simple: the suite's native quoting, a maintained price book, discount approvals as a process, proposal generated with one click. All included in editions you are probably already paying for.
 
-Der unbequeme Teil dieser Wahrheit: Man kann sie nicht kaufen. Ein Tool bestellen fühlt sich nach Fortschritt an, Preisregeln durchsetzen fühlt sich nach Streit an. Deshalb steht in so vielen Firmen ein halb implementiertes CPQ, das keiner nutzt, neben einer Preisliste, an die sich keiner hält.
+The uncomfortable part of this truth: you cannot buy it. Ordering a tool feels like progress, enforcing price rules feels like conflict. Which is why so many companies have a half-implemented CPQ nobody uses sitting next to a price list nobody follows.
 
-Wenn eure Preislogik auf ein Blatt Papier passt, wozu dann ein Projekt, das länger dauert als euer Geschäftsjahr?
+If your pricing logic fits on a sheet of paper, why run a project that lasts longer than your fiscal year?

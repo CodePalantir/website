@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Gutes Ops sieht nach nichts aus"
-description: "Der spektakulärste Moment im RevOps-Jahr ist der, in dem nichts passiert. Das Quartal endet, der Forecast stimmt, die Rechnungen gehen raus, kein Deal..."
+title: "Good ops looks like nothing"
+description: "The most spectacular moment in the RevOps year is the one where nothing happens. The quarter ends, the forecast holds, the invoices go out, no deal..."
 date: 2026-07-03
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/112-gutes-ops-sieht-nach-nichts-aus/
 ---
 
-Der spektakulärste Moment im RevOps-Jahr ist der, in dem nichts passiert. Das Quartal endet, der Forecast stimmt, die Rechnungen gehen raus, kein Deal ist in einem Feld versickert. Niemand klatscht. Warum auch, es lief ja einfach.
+The most spectacular moment in the RevOps year is the one where nothing happens. The quarter ends, the forecast holds, the invoices go out, no deal has drained away into some field. Nobody claps. Why would they, it just worked.
 
-Genau da liegt das Budgetproblem. Sichtbar wird Ops nur im Versagen. Die Kollegin, die sonntagnachts die gerissene Integration zwischen CRM und Billing flickt, bekommt Montagmorgen ein Danke in den Firmenchat. Derjenige, der dieselbe Integration mit Fehlerbehandlung, Monitoring und Retry-Logik so gebaut hätte, dass sie gar nicht erst reißt, bekommt nichts. Es gibt ja keinen Vorfall, auf den man zeigen könnte. Feuerlöschen produziert Helden. Brandschutz produziert Stille, und Stille wird beim nächsten Sparprogramm gekürzt.
+That is exactly where the budget problem lives. Ops only becomes visible in failure. The colleague who patches the torn integration between CRM and billing on a Sunday night gets a thank you in the company chat on Monday morning. The person who would have built that same integration with error handling, monitoring, and retry logic so it never tears in the first place gets nothing. There is no incident to point at. Firefighting produces heroes. Fire prevention produces silence, and silence gets cut in the next round of savings.
 
-Das ist keine Undankbarkeit, das ist Wahrnehmungsphysik. Verhinderte Ausfälle haben keinen Beleg. Der ROI von Prävention bleibt unsichtbar, bis man ihm eine Vergleichszahl daneben legt, und genau das ist der Job: die Ausfallkosten beziffern, bevor jemand anders das Budget beziffert.
+That is not ingratitude, that is the physics of perception. Prevented outages leave no receipt. The ROI of prevention stays invisible until you put a comparison number next to it, and that is exactly the job: pricing the cost of failure before someone else prices your budget.
 
-Die Rechnung ist keine hohe Kunst. Ein Tag ohne Lead-Routing bei 40 Inbound-Leads täglich, davon erfahrungsgemäß gut ein Drittel entwertet, weil die Antwort statt nach fünf Minuten nach zwei Tagen kommt, mal Conversion, mal durchschnittlicher Deal: da steht schnell eine fünfstellige Zahl pro Ausfalltag. Dieselbe Übung für die Billing-Integration, für den Forecast, für die Datenqualität im Routing. Muss nicht auf den Euro stimmen. Muss nur existieren und plausibel hergeleitet sein.
+The math is no high art. One day without lead routing at 40 inbound leads a day, of which experience says a good third gets devalued because the reply comes after two days instead of five minutes, times conversion, times average deal size: you quickly arrive at a five-figure number per day of outage. Same exercise for the billing integration, for the forecast, for data quality in routing. It does not have to be right to the euro. It just has to exist and be plausibly derived.
 
-Und dann: reporten wie Umsatz. Ein kleines Dashboard reicht, Uptime der kritischen Automatisierungen, abgefangene Fehler, Duplikatquote, Zeit von Auftrag bis Rechnung. Einmal im Monat neben die Vertriebszahlen legen. Nicht als Rechtfertigung, sondern als Preisschild: das hier läuft, und wenn es nicht liefe, würde es diese Summe kosten. Aus "die Systeme halt" wird eine Versicherungspolice mit ausgewiesenem Deckungswert, und Versicherungen kürzt man deutlich zögerlicher als Kostenstellen ohne Story.
+And then: report it like revenue. A small dashboard is enough, uptime of the critical automations, errors caught, duplicate rate, time from order to invoice. Once a month, lay it next to the sales numbers. Not as justification, but as a price tag: this here runs, and if it did not, it would cost this amount. "The systems, you know" turns into an insurance policy with a stated coverage value, and insurance gets cut far more reluctantly than cost centers without a story.
 
-Kleiner Nebeneffekt, den wir immer wieder sehen: Sobald die Ausfallkosten an der Wand hängen, ändert sich auch die Priorisierung. Plötzlich ist die unglamouröse Monitoring-Aufgabe wichtiger als das nächste glänzende Tool, weil erstmals sichtbar ist, was auf dem Spiel steht.
+Small side effect we see again and again: as soon as the outage costs are up on the wall, prioritization changes too. Suddenly the unglamorous monitoring task matters more than the next shiny tool, because for the first time everyone can see what is at stake.
 
-Was kostet euch ein Tag, an dem das Routing steht? Wenn ihr die Zahl nicht kennt, kennt sie garantiert auch niemand von denen, die über euer Budget entscheiden. Und dann entscheidet eben die Stille.
+What does a day of routing downtime cost you? If you do not know the number, then neither does anyone who decides on your budget. And then the silence decides.

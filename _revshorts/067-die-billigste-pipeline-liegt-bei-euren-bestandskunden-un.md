@@ -1,19 +1,21 @@
 ---
 layout: revshort
-title: "Die billigste Pipeline liegt bei euren Bestandskunden und keiner hebt sie"
-description: "Fragt in eurer nächsten Vertriebsrunde mal, wer für Expansion zuständig ist. Der Vertrieb zeigt auf CS, schließlich sind das Bestandskunden. CS zeigt..."
+title: "The cheapest pipeline sits in your customer base and nobody lifts it"
+description: "Ask in your next sales meeting who owns expansion. Sales points at CS, those are existing customers after all. CS points..."
 date: 2026-05-19
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/067-die-billigste-pipeline-liegt-bei-euren-bestandskunden-un/
 ---
 
-Fragt in eurer nächsten Vertriebsrunde mal, wer für Expansion zuständig ist. Der Vertrieb zeigt auf CS, schließlich sind das Bestandskunden. CS zeigt zurück, schließlich ist Verkaufen nicht sein Job, und außerdem wird das Team an Retention gemessen, nicht an Upsell. Am Ende zeigt jeder auf jeden und die Antwort lautet: niemand. Genau dort, bei niemandem, liegt die günstigste Pipeline, die diese Firma je haben wird.
+Ask in your next sales meeting who owns expansion. Sales points at CS, those are existing customers after all. CS points back, selling isn't its job after all, and besides, the team is measured on retention, not upsell. In the end everyone points at everyone, and the answer is: nobody. Right there, with nobody, sits the cheapest pipeline this company will ever have.
 
-Günstig, weil die teuren Schritte schon bezahlt sind. Der Kunde kennt euch, vertraut euch, hat einen Vertrag und einen Ansprechpartner. Kein Cold Outreach, kein Pitch gegen drei Wettbewerber, kein sechsmonatiger Vertrauensaufbau. Die üblichen Benchmarks sagen, Expansion-Umsatz kostet ein Drittel bis ein Viertel dessen, was ein Neukunde kostet. Trotzdem fließt das Budget fast komplett in Neukundenjagd, weil neue Logos im Board-Deck besser aussehen als gewachsene.
+Cheap, because the expensive steps are already paid for. The customer knows you, trusts you, has a contract and a point of contact. No cold outreach, no pitch against three competitors, no six-month trust-building. The usual benchmarks say expansion revenue costs a third to a quarter of what a new customer costs. Still, the budget flows almost entirely into new-logo hunting, because new logos look better in the board deck than grown ones.
 
-Das eigentliche Problem ist aber nicht die Zuständigkeit allein. Es ist, dass Expansion-Signale nirgends erfasst werden. Dabei senden Bestandskunden sie ständig. Ein Account fährt seit drei Monaten an der Lizenzgrenze, jede neue Einladung wird intern hin und her geschoben. Im Produkt tauchen E-Mail-Adressen einer Abteilung auf, die nie gekauft hat, das Marketing testet heimlich mit, was der Vertrieb eingeführt hat. Der Kunde eröffnet einen Standort in Wien, steht in jeder Wirtschaftsmeldung, nur nicht im CRM. Der Support bekommt zum vierten Mal die Frage, ob es das Modul auch für den Außendienst gibt. Vier Signale, vier Systeme, null Opportunities.
+But the real problem isn't ownership alone. It's that expansion signals aren't captured anywhere. Even though existing customers send them constantly. An account has been running at its license limit for three months, every new invite gets shuffled back and forth internally. Email addresses from a department that never bought start showing up in the product, marketing is quietly test-driving what sales rolled out. The customer opens an office in Vienna, it's in every business news item, just not in the CRM. Support gets asked for the fourth time whether the module also exists for field sales. Four signals, four systems, zero opportunities.
 
-Jedes dieser Signale ist technisch greifbar. Lizenzauslastung steht in den Produktdaten, neue Domains und Abteilungen in den Nutzerlisten, Standortmeldungen liefert jeder Anreicherungsdienst, Modulfragen stehen wörtlich im Ticketsystem. Was fehlt, ist die Strecke: Signale definieren, an den Account schreiben, ab Schwellwert automatisch eine Expansion-Opportunity mit Quelle erzeugen. Dann hat das Ding eine Pipeline-Stufe, einen Betrag und einen Namen dran, und die Zuständigkeitsfrage beantwortet sich fast von selbst, weil unbearbeitete Opportunities im Forecast unangenehm auffallen. Zufall wird durch System ersetzt.
+Every one of these signals is technically within reach. License utilization sits in the product data, new domains and departments in the user lists, location news comes from any enrichment service, module questions sit verbatim in the ticket system. What's missing is the stretch: define the signals, write them to the account, automatically create an expansion opportunity with a source once a threshold is crossed. Then the thing has a pipeline stage, an amount, and a name on it, and the ownership question almost answers itself, because untouched opportunities stand out uncomfortably in the forecast. Coincidence gets replaced by system.
 
-Heute läuft Expansion in den meisten Firmen so: Der Kunde ruft irgendwann selbst an und fragt nach mehr. Das wird dann als Vertriebserfolg gefeiert. Wie viele Kunden haben nicht angerufen und stattdessen das Limit einfach als Grenze eures Produkts akzeptiert?
+Today, expansion works like this in most companies: at some point the customer calls on their own and asks for more. That then gets celebrated as a sales win. How many customers didn't call and instead simply accepted the limit as the boundary of your product?

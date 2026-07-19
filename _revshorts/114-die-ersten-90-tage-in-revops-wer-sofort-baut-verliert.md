@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Die ersten 90 Tage in RevOps: Wer sofort baut, verliert"
-description: "Es gibt ein Muster, das wir immer wieder sehen, wenn jemand neu eine RevOps-Rolle übernimmt. Woche eins: alles anschauen. Woche zwei: das Datenmodell..."
+title: "The first 90 days in RevOps: build right away and you lose"
+description: "There is a pattern we see again and again when someone steps into a new RevOps role. Week one: look at everything. Week two: rebuild the data model..."
 date: 2026-07-05
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/114-die-ersten-90-tage-in-revops-wer-sofort-baut-verliert/
 ---
 
-Es gibt ein Muster, das wir immer wieder sehen, wenn jemand neu eine RevOps-Rolle übernimmt. Woche eins: alles anschauen. Woche zwei: das Datenmodell umbauen, weil es "offensichtlich falsch" ist. Woche sechs: die ersten Reports brechen, der Vertrieb rebelliert, und die neue Kraft verteidigt eine Baustelle statt einer Vision. Das Vertrauen, das da verbrennt, kommt im ersten Jahr nicht wieder.
+There is a pattern we see again and again when someone steps into a new RevOps role. Week one: look at everything. Week two: rebuild the data model because it is "obviously wrong". Week six: the first reports break, sales revolts, and the new hire is defending a construction site instead of a vision. The trust that burns there does not come back in the first year.
 
-Dabei ist die Reihenfolge eigentlich simpel. Erst zuhören. Dann Inventur. Dann genau ein sichtbarer Quick Win. In dieser Reihenfolge, nicht anders.
+Yet the order is actually simple. First listen. Then inventory. Then exactly one visible quick win. In that order, not any other.
 
-Zuhören heißt nicht Workshops mit Post-its. Es heißt: mit den fünf Leuten reden, die täglich im System arbeiten, und zwar über konkrete Deals, nicht über Prozesse im Allgemeinen. "Zeig mir, wie du gestern die Opportunity angelegt hast" fördert mehr zutage als jede Umfrage. Da lernt man, warum das Feld immer leer ist. Meistens gibt es einen Grund, und meistens ist er vernünftiger, als das Orgchart vermuten lässt.
+Listening does not mean workshops with sticky notes. It means: talking to the five people who work in the system daily, and about concrete deals, not processes in the abstract. "Show me how you created that opportunity yesterday" surfaces more than any survey. That is where you learn why the field is always empty. Usually there is a reason, and usually it is more sensible than the org chart suggests.
 
-Inventur heißt: ins System gehen und lesen. Welche Automatisierungen laufen wirklich, welche Felder werden befüllt, welche Reports werden geöffnet. Daten lügen nicht, und sie sind auch nicht höflich. Ein sauberes Inventar nach vier Wochen schlägt jede Strategie-Präsentation nach zwei, weil es beweist, dass man verstanden hat, was da eigentlich steht. Das dauert. Soll es auch.
+Inventory means: going into the system and reading. Which automations actually run, which fields get filled, which reports get opened. Data does not lie, and it is not polite either. A clean inventory after four weeks beats any strategy deck after two, because it proves you understood what is actually in there. That takes time. It is supposed to.
 
-Und dann der eine Quick Win. Einer. Nicht fünf. Etwas, das der Vertrieb am nächsten Montag spürt: die Duplikate im Account-Bestand weg, das Lead-Routing von vier Stunden auf vier Minuten, ein Forecast-Report, der zum ersten Mal mit der Realität übereinstimmt. Klein genug, um in zwei Wochen fertig zu sein. Sichtbar genug, dass Leute davon erzählen. Dieser eine Win kauft das politische Kapital für die unbequemen Sachen danach, Datenmodell, Stage-Definitionen, die Integration, die seit Ewigkeiten halb kaputt ist.
+And then the one quick win. One. Not five. Something sales feels the next Monday: the duplicates in the account base gone, lead routing down from four hours to four minutes, a forecast report that matches reality for the first time. Small enough to finish in two weeks. Visible enough that people talk about it. That one win buys the political capital for the uncomfortable stuff afterwards: data model, stage definitions, the integration that has been half broken forever.
 
-Der Fehler in Woche zwei ist ja verständlich. Man will Kompetenz zeigen, und das Datenmodell ist wirklich oft falsch. Aber ein Umbau ohne Inventur trifft immer etwas, das man nicht gesehen hat, irgendeinen Report fürs Board, irgendeine Provisionslogik. Und wer einmal die Provisionsabrechnung zerschossen hat, dem glaubt der Vertrieb kein zweites Projekt mehr.
+The week-two mistake is understandable, of course. You want to demonstrate competence, and the data model really is often wrong. But a rebuild without inventory always hits something you did not see, some report for the board, some commission logic. And once you have blown up the commission payout, sales will never trust you with a second project.
 
-Kompetenz zeigt sich in den ersten 90 Tagen nicht daran, wie viel man ändert. Sondern daran, wie präzise man weiß, was man noch nicht anfassen darf.
+Competence in the first 90 days is not shown by how much you change. It is shown by how precisely you know what you must not touch yet.

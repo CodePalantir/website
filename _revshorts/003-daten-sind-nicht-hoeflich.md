@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Daten sind nicht höflich"
-description: "Fragt zehn Leute in eurem Vertrieb, wie euer Lead-Prozess läuft, und ihr bekommt zehn plausible Antworten. Alle klingen vernünftig. Alle widersprechen..."
+title: "Data isn't polite"
+description: "Ask ten people on your sales team how your lead process works and you'll get ten plausible answers. All of them sound reasonable. All of them contradict..."
 date: 2026-03-16
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/003-daten-sind-nicht-hoeflich/
 ---
 
-Fragt zehn Leute in eurem Vertrieb, wie euer Lead-Prozess läuft, und ihr bekommt zehn plausible Antworten. Alle klingen vernünftig. Alle widersprechen sich. Und keine davon erklärt, warum der Forecast schon wieder um 30 Prozent daneben lag.
+Ask ten people on your sales team how your lead process works and you'll get ten plausible answers. All of them sound reasonable. All of them contradict each other. And none of them explains why the forecast missed by 30 percent yet again.
 
-Genau darauf baut das klassische Beratungsmodell: sechs Wochen Stakeholder-Interviews, Workshops, ein Zielbild. Klingt gründlich. Ist aber vor allem eins, nämlich eine Sammlung von Meinungen. Der Vertriebsleiter erzählt den Prozess, wie er sein sollte. Der AE erzählt ihn, wie er ihn erlebt. Der Geschäftsführer erzählt die Version, die er vor zwei Jahren mal abgenickt hat. Alle sind ehrlich. Trotzdem stimmt nichts davon.
+That's exactly what the classic consulting model is built on: six weeks of stakeholder interviews, workshops, a target picture. Sounds thorough. But it's mostly one thing, a collection of opinions. The head of sales describes the process as it should be. The AE describes it as he experiences it. The CEO tells the version he signed off on two years ago. Everyone is honest. And still none of it is true.
 
-Das System lügt nicht. Es kann gar nicht.
+The system doesn't lie. It can't.
 
-Fünf Tage mit Admin-Zugang im CRM finden mehr Wahrheit als sechs Wochen Interviews, weil Daten nicht höflich sind. Da steht die Automatisierung, die seit 14 Monaten in einen Fehler läuft und die niemand bemerkt hat, weil die Fehlermails an einen Ex-Mitarbeiter gehen. Da steht das Pflichtfeld, das in 80 Prozent der Fälle mit "tbd" gefüllt wird, weil es beim Speichern im Weg ist. Da steht der Forecast, der auf Close Dates basiert, die seit drei Quartalen niemand angefasst hat. Kein Interview der Welt fördert das zutage, weil es niemand weiß. Oder niemand zugeben will.
+Five days with admin access in the CRM find more truth than six weeks of interviews, because data isn't polite. There's the automation that's been failing for 14 months without anyone noticing, because the error emails go to a former employee. There's the required field that gets filled with "tbd" 80 percent of the time because it's in the way when saving. There's the forecast built on close dates nobody has touched in three quarters. No interview in the world surfaces any of that, because nobody knows it. Or nobody wants to admit it.
 
-Ein Interview liefert, was Menschen glauben. Ein Audit liefert Befunde. Timestamp, Feldhistorie, Ausführungslog. Darüber kann man nicht diskutieren, man kann es nur reparieren.
+An interview delivers what people believe. An audit delivers findings. Timestamp, field history, execution log. You can't argue with that, you can only fix it.
 
-Und ja, natürlich reden wir auch mit Leuten. Aber erst nachdem wir im System waren, und dann mit ganz anderen Fragen. Nicht "wie läuft euer Prozess", sondern "hier sind 340 Opportunities ohne nächsten Schritt, was ist da passiert". Das erste Gespräch dauert eine Stunde und produziert ein Organigramm der Wunschvorstellungen. Das zweite dauert zwanzig Minuten und produziert eine Entscheidung.
+And yes, of course we talk to people too. But only after we've been inside the system, and then with very different questions. Not "how does your process work" but "here are 340 opportunities with no next step, what happened there." The first conversation takes an hour and produces an org chart of wishful thinking. The second takes twenty minutes and produces a decision.
 
-Warum verkaufen dann so viele Beratungen die Interview-Strecke? Folgt der Rechnung. Sechs Wochen Discovery sind sechs Wochen Tagessätze, und Interviews lassen sich wunderbar an Juniors delegieren, die noch nie einen Flow debuggt haben. Ein Fünf-Tage-Audit zum Festpreis lässt sich nicht strecken. Es muss liefern, sonst gibt es kein Folgegeschäft.
+So why do so many consultancies sell the interview tour? Follow the invoice. Six weeks of discovery are six weeks of day rates, and interviews delegate beautifully to juniors who have never debugged a flow. A five-day audit at a fixed price can't be stretched. It has to deliver, or there's no follow-up business.
 
-Wer Interviews verkauft, verkauft Zeit. Wer ins System geht, verkauft Befunde. Fragt beim nächsten Angebot einfach, ab welchem Tag sich jemand einloggt.
+Whoever sells interviews sells time. Whoever goes into the system sells findings. On the next proposal, just ask on which day someone actually logs in.

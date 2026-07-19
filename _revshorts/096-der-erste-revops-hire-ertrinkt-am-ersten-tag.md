@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Der erste RevOps-Hire ertrinkt am ersten Tag"
-description: "Der neue RevOps Manager fängt montags an. Im Ticketsystem warten 214 offene Anfragen, das Lead-Routing verteilt seit drei Wochen falsch, weil beim..."
+title: "The first RevOps hire drowns on day one"
+description: "The new RevOps manager starts on Monday. 214 open requests are waiting in the ticket system, lead routing has been misassigning for three weeks because..."
 date: 2026-06-17
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/096-der-erste-revops-hire-ertrinkt-am-ersten-tag/
 ---
 
-Der neue RevOps Manager fängt montags an. Im Ticketsystem warten 214 offene Anfragen, das Lead-Routing verteilt seit drei Wochen falsch, weil beim letzten Gebietswechsel jemand eine Regel überschrieben hat, und die Vertriebsleitung braucht bis Freitag ein neues Forecast-Dashboard. Willkommen. Die Stelle heißt Revenue Operations, der Kalender sagt Feuerwehr.
+The new RevOps manager starts on Monday. 214 open requests are waiting in the ticket system, lead routing has been misassigning for three weeks because someone overwrote a rule during the last territory change, and sales leadership needs a new forecast dashboard by Friday. Welcome. The job title says Revenue Operations, the calendar says fire department.
 
-So läuft es fast immer, und der Grund ist simpel: Ausgeschrieben wird die Stelle, wenn der Schmerz schreit, nicht wenn die Komplexität entsteht. Zwischen diesen beiden Zeitpunkten liegen typischerweise 12 bis 18 Monate. In dieser Zeit wächst genau der Berg, unter dem der Hire dann begraben wird.
+That's how it almost always goes, and the reason is simple: the role gets posted when the pain screams, not when the complexity emerges. Between those two points in time lie typically 12 to 18 months. During that time, the exact mountain grows under which the hire then gets buried.
 
-Die Faustregel, die wir aus Audits ableiten: ab 15 Reps oder ab drei Kernsystemen wird es ernst. Fünfzehn Verkäufer produzieren genug Prozessvarianten, Datenwildwuchs und Sonderfälle, dass niemand das nebenbei mitverwaltet. Und drei Kernsysteme, also etwa CRM, Marketing-Automation und Billing, erzeugen mindestens zwei Integrationen plus die Frage, welches System bei Konflikten recht hat. Beides sind Schwellen, ab denen aus einer Nebenzuständigkeit ein eigenes Feld wird. Wer eine davon reißt, sollte die Rolle besetzen oder extern abdecken, bevor das Backlog dreistellig wird.
+The rule of thumb we derive from audits: at 15 reps or three core systems, it gets serious. Fifteen salespeople produce enough process variants, data sprawl, and edge cases that nobody manages it on the side anymore. And three core systems, say CRM, marketing automation, and billing, generate at least two integrations plus the question of which system is right in a conflict. Both are thresholds where a side responsibility becomes its own discipline. If you cross either one, staff the role or cover it externally before the backlog hits three digits.
 
-Der zweite Fehler steckt im Profil. Gesucht wird oft ein Admin, jemand der Felder anlegt, Reports baut, Nutzer verwaltet. Klick-Arbeit. Wichtig, aber ersetzbar. Was die Firma tatsächlich braucht, ist ein Architekt mit Prozessdenken: jemand, der bei der Bitte um das fünfte Pflichtfeld zurückfragt, welches Problem es lösen soll. Der ein Datenmodell lesen kann und erkennt, warum die Opportunity-Historie kaputt ist. Der Nein sagen kann, auch zum Vertriebsleiter. Ein Klick-Admin arbeitet die Queue ab, und die Queue wächst schneller, als er klickt. Ein Architekt schrumpft die Queue, weil er die Ursachen abstellt, aus denen sie sich speist.
+The second mistake is in the profile. What gets sought is often an admin, someone who creates fields, builds reports, manages users. Click work. Important, but replaceable. What the company actually needs is an architect who thinks in processes: someone who, when asked for the fifth required field, asks back which problem it's supposed to solve. Who can read a data model and see why the opportunity history is broken. Who can say no, even to the head of sales. A click admin works down the queue, and the queue grows faster than he clicks. An architect shrinks the queue, because he shuts off the sources it feeds from.
 
-Das Gemeine: Der zu späte Hire bekommt nie die Chance, Architekt zu sein. Wer mit 214 Tickets startet, verbringt sechs Monate im Reaktionsmodus, und danach hat die Organisation gelernt, die Rolle als internen Helpdesk zu benutzen. Diese Erwartung zementiert schneller als jedes Datenmodell.
+The cruel part: the too-late hire never gets the chance to be an architect. Whoever starts with 214 tickets spends six months in reaction mode, and by then the organization has learned to use the role as an internal helpdesk. That expectation sets faster than any data model.
 
-Rechnet also nicht aus, ob ihr euch die Stelle schon leisten könnt. Rechnet aus, was euch die 18 Monate Rückstand kosten, die ihr gerade aufbaut, während ihr wartet.
+So don't calculate whether you can afford the role yet. Calculate what the 18 months of backlog you're building up right now, while you wait, are costing you.

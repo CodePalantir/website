@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Copilot für alle, genutzt von dreien"
-description: "Die Geschichte läuft fast immer gleich ab. Irgendwann 2024 oder 2025 kam der Moment, in dem AI auf die Vorstandsagenda rutschte, und die schnellste..."
+title: "Copilot for everyone, used by three"
+description: "The story almost always plays out the same way. Sometime in 2024 or 2025 came the moment AI landed on the board agenda, and the fastest answer was a..."
 date: 2026-06-10
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/089-copilot-fuer-alle-genutzt-von-dreien/
 ---
 
-Die Geschichte läuft fast immer gleich ab. Irgendwann 2024 oder 2025 kam der Moment, in dem AI auf die Vorstandsagenda rutschte, und die schnellste Antwort darauf war ein Einkauf: Copilot-Lizenzen für alle 60 Leute, Einstein für das ganze Sales-Team, Breeze auf jedem Seat. Interne Mail, vielleicht sogar eine Pressemitteilung, "wir setzen auf KI". Haken dran.
+The story almost always plays out the same way. Sometime in 2024 or 2025 came the moment AI landed on the board agenda, and the fastest answer was a purchase: Copilot licenses for all 60 people, Einstein for the entire sales team, Breeze on every seat. Internal email, maybe even a press release, "we're going all in on AI". Box checked.
 
-Drei Monate später zeigt das Admin-Dashboard die Wahrheit. Von 60 Lizenzen sind drei aktiv. Eine davon gehört dem Admin selbst.
+Three months later, the admin dashboard shows the truth. Of 60 licenses, three are active. One of them belongs to the admin.
 
-Das ist kein Adoption-Problem, das sich mit einer Erinnerungsmail löst. Das ist ein Kategorienfehler. Ein Copilot ist kein Tool wie ein neues CRM-Feld, das man einmal erklärt und das dann läuft. Er ist eine Arbeitsweise, und Arbeitsweisen ändern sich nicht per Lizenzzuweisung. Der Vertriebler, der seit acht Jahren seine Mails selbst schreibt, ändert sein Verhalten nicht, weil ein Button dazugekommen ist. Warum auch. Niemand hat ihm gezeigt, welche seiner konkreten Aufgaben das Ding schneller macht, niemand hat gemessen, ob es das tut, und sein Chef fragt im Forecast-Call nach Pipeline, nicht nach Prompts.
+That's not an adoption problem you fix with a reminder email. It's a category error. A copilot is not a tool like a new CRM field that you explain once and it just runs. It's a way of working, and ways of working don't change by license assignment. The rep who has written his own emails for eight years doesn't change his behavior because a button appeared. Why would he. Nobody showed him which of his concrete tasks the thing makes faster, nobody measured whether it does, and his boss asks about pipeline in the forecast call, not about prompts.
 
-Der Einkauf war der bequeme Teil. Budget freigeben kann jeder.
+The purchase was the comfortable part. Anyone can sign off on budget.
 
-Was fehlt, ist die unbequeme Liste: welche fünf Tätigkeiten in eurem Revenue-Prozess kosten heute am meisten Zeit und sind gleichzeitig strukturiert genug, dass ein Modell sie zuverlässig übernimmt? Gesprächszusammenfassung ins CRM-Feld statt ins Nirwana. Angebots-Erstentwurf aus dem Opportunity-Kontext. Account-Recherche vor dem Erstgespräch. Für jede dieser Tätigkeiten braucht es einen definierten Workflow, jemanden, der ihn vormacht, und eine Zahl, an der man nach vier Wochen abliest, ob er trägt. Das ist Change Management. Klingt weniger sexy als "AI-Offensive", kostet mehr Mühe als der Einkauf, und es ist der einzige Teil, der den ROI produziert.
+What's missing is the uncomfortable list: which five activities in your revenue process cost the most time today and are simultaneously structured enough that a model can take them over reliably? Call summary into the CRM field instead of into the void. First draft of a quote from the opportunity context. Account research before the first call. Each of these activities needs a defined workflow, someone who demonstrates it, and a number you can read after four weeks to see whether it's carrying its weight. That's change management. Sounds less sexy than "AI offensive", takes more effort than the purchase, and it's the only part that produces the ROI.
 
-Die Rechnung dazu ist schnell gemacht. Copilot-Lizenzen liegen je nach Suite zwischen 25 und 60 Euro pro User und Monat. Bei 60 ungenutzten Seats reden wir über 20.000 bis 40.000 Euro im Jahr für ein Feature, das drei Leute benutzen. Dasselbe Geld in zwei sauber gebaute AI-Workflows gesteckt, mit Rollout und Messung, hätte einen Effekt, den man im Pipeline-Report sieht.
+The math is quick. Copilot licenses run between 25 and 60 euros per user per month depending on the suite. With 60 unused seats, we're talking 20,000 to 40,000 euros a year for a feature three people use. The same money put into two properly built AI workflows, with rollout and measurement, would have an effect you can see in the pipeline report.
 
-Wenn bei euch gerade jemand vorschlägt, das nächste AI-Feature "erstmal für alle freizuschalten": fragt nach der Use-Case-Liste. Gibt es keine, kauft ihr wieder Shelfware, nur diesmal mit GPU.
+If someone at your company is currently proposing to "just enable the next AI feature for everyone": ask for the use case list. If there isn't one, you're buying shelfware again, just with a GPU this time.

@@ -1,3 +1,4 @@
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 <!-- SUBSCRIBE, restored newsletter band, recolored to a warm surface card
      (the dark closing note stays reserved for the cta-band plum panel) -->
 <section class="py-16 md:py-24 px-6 bg-paper">
@@ -6,13 +7,13 @@
       <div class="w-14 h-14 rounded-2xl bg-accent-tint flex items-center justify-center text-accent mb-6">
         {% include ui/icon.html name="trending-up" class="w-7 h-7" %}
       </div>
-      <h2 class="text-[clamp(1.7rem,3vw,2.4rem)] font-bold text-ink tracking-[-0.02em] mb-5">Executive Briefing<span class="text-gradient">.</span></h2>
+      <h2 class="text-[clamp(1.7rem,3vw,2.4rem)] font-bold text-ink tracking-[-0.02em] mb-5">{{ t.subscribe.title }}<span class="text-gradient">.</span></h2>
       <p class="text-muted mb-9 text-[16.5px] leading-relaxed max-w-lg">
-        Join 500+ leaders receiving performance benchmarks, technical debt prevention strategies, and data-backed insights on maximizing Salesforce ROI.
+        {{ t.subscribe.sub }}
       </p>
       <form action="mailto:support@apx-revops.com?subject=Newsletter%20Subscription" method="get" enctype="text/plain" class="w-full flex flex-col sm:flex-row gap-3">
-        <input type="email" name="email" placeholder="Business Email" required class="flex-1 bg-paper border border-line rounded-full px-6 py-4 text-ink placeholder:text-faint focus:outline-none focus:border-accent text-sm font-medium">
-        <button type="submit" class="apx-btn apx-btn-primary cursor-pointer">Join the List</button>
+        <input type="email" name="email" placeholder="{{ t.subscribe.placeholder }}" required class="flex-1 bg-paper border border-line rounded-full px-6 py-4 text-ink placeholder:text-faint focus:outline-none focus:border-accent text-sm font-medium">
+        <button type="submit" class="apx-btn apx-btn-primary cursor-pointer">{{ t.subscribe.button }}</button>
       </form>
     </div>
   </div>

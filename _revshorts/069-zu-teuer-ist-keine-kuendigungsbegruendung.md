@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "'Zu teuer' ist keine Kündigungsbegründung"
-description: "Schaut mal in euer Churn-Reporting. Wenn es aussieht wie bei den meisten, steht bei 60 Prozent der verlorenen Kunden derselbe Grund: zu teuer...."
+title: "'Too expensive' is not a churn reason"
+description: "Take a look at your churn reporting. If it looks like most, 60 percent of lost customers share the same reason: too expensive...."
 date: 2026-05-21
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/069-zu-teuer-ist-keine-kuendigungsbegruendung/
 ---
 
-Schaut mal in euer Churn-Reporting. Wenn es aussieht wie bei den meisten, steht bei 60 Prozent der verlorenen Kunden derselbe Grund: zu teuer. Ordentlich erfasst, sauber im Picklist-Feld, komplett falsch.
+Take a look at your churn reporting. If it looks like most, 60 percent of lost customers share the same reason: too expensive. Neatly captured, clean in the picklist field, completely wrong.
 
-"Zu teuer" ist das, was Kunden sagen, wenn sie höflich sein wollen. Es beendet das Gespräch, es verletzt niemanden, es lässt sich nicht diskutieren. Die Wahrheit dahinter ist unbequemer: Das Onboarding hat drei Monate gedauert, der Champion hat die Firma verlassen und niemand hat es gemerkt, das versprochene Feature kam nie, oder das Produkt wurde schlicht nicht benutzt. Preis ist fast immer die Chiffre für "der Wert ist nicht angekommen". Wer das wörtlich nimmt, senkt Preise. Und churnt weiter.
+"Too expensive" is what customers say when they want to be polite. It ends the conversation, it hurts nobody, it can't be argued with. The truth behind it is less comfortable: onboarding took three months, the champion left the company and nobody noticed, the promised feature never shipped, or the product simply wasn't used. Price is almost always code for "the value never landed." Take it literally and you cut prices. And keep churning.
 
-Das Problem beginnt schon bei der Erhebung. In den meisten CRMs füllt der Account Manager den Kündigungsgrund selbst aus, also die Person, deren Bonus am Renewal hängt. Natürlich steht da "Preis" und nicht "wir haben den Kunden neun Monate nicht angerufen". Das ist keine Böswilligkeit, das ist Anreizlogik. Ein Feld, das der Verkäufer über seine eigene Niederlage ausfüllt, misst nicht den Churn. Es misst die Ausreden.
+The problem starts with how it's collected. In most CRMs, the account manager fills in the churn reason himself, which is to say the person whose bonus hangs on the renewal. Of course it says "price" and not "we didn't call the customer for nine months." That's not malice, that's incentive logic. A field the seller fills out about his own defeat doesn't measure churn. It measures the excuses.
 
-Was stattdessen funktioniert, kostet Überwindung, aber wenig Geld. Echte Exit-Interviews, geführt von jemandem, der nicht der Account Owner ist, 20 Minuten, drei offene Fragen, keine Rabattangebote. Kunden, die schon gekündigt haben, sind erstaunlich ehrlich. Sie haben nichts mehr zu verlieren. Aus zehn solcher Gespräche lernt ihr mehr über euer Geschäft als aus einem Jahr Dashboard.
+What works instead takes nerve but little money. Real exit interviews, run by someone who is not the account owner, 20 minutes, three open questions, no discount offers. Customers who have already cancelled are astonishingly honest. They have nothing left to lose. From ten of those conversations you learn more about your business than from a year of dashboards.
 
-Und dann die Systemseite, ohne die aus Gesprächen keine Daten werden: ein sauberes Set an Grund-Codes, maximal acht, trennscharf definiert. "Kein Bedarf mehr" ist etwas anderes als "Wettbewerber", "nie richtig eingeführt" etwas anderes als "Champion weg". Dazu die Regel, dass der Code aus dem Interview kommt und nicht aus dem Bauchgefühl des AMs. Erst damit könnt ihr rechnen. Wenn 40 Prozent eures Churns auf "nie richtig eingeführt" laufen, ist die Antwort ein besseres Onboarding und kein neues Pricing. Das sind zwei völlig verschiedene Baustellen mit völlig verschiedenen Kosten.
+And then the system side, without which conversations never become data: a clean set of reason codes, eight at most, sharply defined. "No longer needed" is something different from "competitor," "never properly rolled out" something different from "champion left." Plus the rule that the code comes from the interview and not from the AM's gut. Only then can you do math. If 40 percent of your churn runs on "never properly rolled out," the answer is better onboarding, not new pricing. Those are two completely different construction sites with completely different costs.
 
-Der Preis-Reflex ist deshalb so gefährlich, weil er sich wie eine Antwort anfühlt. Man senkt, man rabattiert, man schnürt ein günstigeres Paket, und der Churn bleibt, nur jetzt mit weniger Marge.
+The price reflex is so dangerous because it feels like an answer. You cut, you discount, you bundle a cheaper package, and the churn stays, now just with less margin.
 
-Nehmt die letzten fünf Kündigungen und ruft an. Nicht der AM. Jemand anderes. Ich wette, "zu teuer" überlebt keine zwei Nachfragen.
+Take the last five cancellations and call them. Not the AM. Someone else. I bet "too expensive" doesn't survive two follow-up questions.

@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Zwei Mahnstufen tief, und der AE pitcht Expansion"
-description: "Der Termin läuft eigentlich gut. Sauberes Deck, der Kunde nickt, das Upsell-Angebot liegt auf dem Tisch. Was der Account Executive nicht weiß: Genau..."
+title: "Two dunning notices deep, and the AE pitches expansion"
+description: "The meeting is actually going well. Clean deck, the customer nods, the upsell offer is on the table. What the account executive does not know: this..."
 date: 2026-05-11
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/059-zwei-mahnstufen-tief-und-der-ae-pitcht-expansion/
 ---
 
-Der Termin läuft eigentlich gut. Sauberes Deck, der Kunde nickt, das Upsell-Angebot liegt auf dem Tisch. Was der Account Executive nicht weiß: Genau diese Firma steckt seit sechs Wochen in der zweiten Mahnstufe, die dritte ist schon vorbereitet. Der Kunde weiß es natürlich. Er sitzt in diesem Meeting und denkt: Die wollen mir mehr verkaufen, während sie mir gleichzeitig mit Inkasso drohen. Reden die überhaupt miteinander?
+The meeting is actually going well. Clean deck, the customer nods, the upsell offer is on the table. What the account executive does not know: this exact company has been sitting at the second dunning level for six weeks, the third notice is already drafted. The customer knows, of course. He sits in this meeting thinking: they want to sell me more while simultaneously threatening me with collections. Do these people even talk to each other?
 
-Nein. Und genau das ist der Punkt: Diese Peinlichkeit ist kein Charakterfehler des AE und kein Versagen der Buchhaltung. Sie ist ein Datenproblem, und zwar ein winzig kleines.
+No. And that is exactly the point: this embarrassment is not a character flaw of the AE and not a failure of accounting. It is a data problem, and a tiny one at that.
 
-Die Lösung passt in ein einziges Feld. Eine Ampel auf dem Account: grün heißt alles bezahlt, gelb heißt Rechnung überfällig, rot heißt Mahnstufe läuft. Gespeist aus dem Billing-System, einmal pro Nacht synchronisiert, sichtbar für jeden, der den Account öffnet. Keine Digitalisierungsinitiative. Ein Nachmittag Arbeit plus Test.
+The solution fits into a single field. A traffic light on the account: green means everything paid, yellow means invoice overdue, red means dunning in progress. Fed from the billing system, synced once a night, visible to anyone who opens the account. Not a digital transformation initiative. One afternoon of work plus testing.
 
-Interessant wird es, wenn die Ampel nicht nur leuchtet, sondern Konsequenzen hat. Rot blockiert neue Angebote, bis jemand aktiv entsperrt. Gelb legt dem zuständigen AE eine Aufgabe an: kläre das, bevor du anrufst. Marketing nimmt rote Accounts aus der Upsell-Kampagne, denn nichts wirkt absurder als eine Mail über Premium-Features an jemanden, dessen Zugang gerade gesperrt werden soll. Alles davon ist Standard-Automatisierung im CRM. Keine Zeile Custom Code nötig, sobald der Status einmal da ist.
+It gets interesting when the light does not just glow but has consequences. Red blocks new quotes until someone actively unlocks. Yellow creates a task for the responsible AE: clear this up before you call. Marketing pulls red accounts out of the upsell campaign, because nothing looks more absurd than an email about premium features to someone whose access is about to be suspended. All of this is standard CRM automation. Not a line of custom code needed once the status is there.
 
-Manchmal dreht sich die Sache übrigens um. Der Kunde zahlt nicht, weil er unzufrieden ist, nicht weil er klamm ist. Dann ist die rote Ampel das früheste Churn-Signal, das ihr kriegen könnt, Monate bevor das Renewal-Gespräch überhaupt ansteht. Die Buchhaltung sitzt auf einer Information, die der Vertrieb dringend braucht, und beide ahnen nichts voneinander.
+Sometimes, by the way, the thing flips around. The customer is not paying because he is unhappy, not because he is broke. Then the red light is the earliest churn signal you can get, months before the renewal conversation is even on the calendar. Accounting is sitting on information sales urgently needs, and neither has any idea about the other.
 
-Wir haben Firmen gesehen mit fünfzehn Tools im Stack, Conversation Intelligence, Intent Data, das volle Programm. Und der simpelste aller Datenpunkte, nämlich ob der Kunde seine Rechnungen zahlt, fehlte im CRM komplett. Da werden Kaufsignale für zigtausend Euro im Jahr eingekauft, während das eine Signal, das schon im Haus liegt, im Buchhaltungssystem versauert.
+We have seen companies with fifteen tools in the stack, conversation intelligence, intent data, the full program. And the simplest data point of all, whether the customer pays his invoices, was completely missing from the CRM. Buying signals get purchased for tens of thousands a year while the one signal already in the building rots in the accounting system.
 
-Also, kleine Kontrollfrage: Wie viele eurer offenen Opportunities gehören zu Accounts, die gerade gemahnt werden? Wer das nicht in zehn Sekunden beantworten kann, weiß jetzt, was diese Woche zu bauen ist.
+So, a quick pop quiz: how many of your open opportunities belong to accounts currently being dunned? If you cannot answer that in ten seconds, you now know what to build this week.

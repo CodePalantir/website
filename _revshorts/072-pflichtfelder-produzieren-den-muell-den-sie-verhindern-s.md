@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Pflichtfelder produzieren den Müll, den sie verhindern sollen"
-description: "Es gibt ein Naturgesetz in jedem CRM, und es lautet: Jedes Pflichtfeld wird gefüllt. Nur nicht unbedingt mit Wahrheit."
+title: "Required fields produce the garbage they're supposed to prevent"
+description: "There's a law of nature in every CRM, and it goes: every required field gets filled. Just not necessarily with the truth."
 date: 2026-05-24
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/072-pflichtfelder-produzieren-den-muell-den-sie-verhindern-s/
 ---
 
-Es gibt ein Naturgesetz in jedem CRM, und es lautet: Jedes Pflichtfeld wird gefüllt. Nur nicht unbedingt mit Wahrheit.
+There's a law of nature in every CRM, and it goes: every required field gets filled. Just not necessarily with the truth.
 
-Die Geschichte beginnt immer gleich. Ein Report ist löchrig, die Branche fehlt bei der Hälfte der Accounts, also macht jemand das Feld zur Pflicht. Klingt logisch. Drei Monate später steht bei 200 Accounts "Sonstiges", bei 80 steht "test", bei einigen ein einzelner Punkt, weil der Rep herausgefunden hat, dass das System einen Punkt akzeptiert. Der Report ist jetzt nicht mehr löchrig. Er ist falsch. Und falsch ist schlimmer als leer, weil ein leeres Feld ehrlich sagt "weiß ich nicht", während ein falsches Feld so tut, als wüsste es was.
+The story always begins the same way. A report is full of holes, industry is missing on half the accounts, so someone makes the field required. Sounds logical. Three months later, 200 accounts say "Other," 80 say "test," and a few contain a single period, because the rep figured out the system accepts a period. The report is no longer full of holes. It's wrong. And wrong is worse than empty, because an empty field honestly says "I don't know," while a wrong field pretends to know something.
 
-Der Rep handelt dabei völlig rational. Er will eine Opportunity anlegen, das Telefonat läuft noch, der Kunde wartet, und das System verlangt jetzt sofort die Mitarbeiterzahl, die Branche und den Lead-Kanal. Also tippt er irgendwas. Der Speichern-Button ist sein Ziel, nicht eure Datenqualität. Wer das mit noch mehr Pflicht beantwortet, mit Validierungsregeln auf die Validierungsregeln, züchtet nur kreativere Platzhalter. Ich habe Orgs gesehen, in denen "tbd" der häufigste Branchenwert war. Auf Platz zwei: "TBD".
+The rep is acting entirely rationally. He wants to create an opportunity, the call is still running, the customer is waiting, and the system now demands the employee count, the industry, and the lead channel on the spot. So he types whatever. The save button is his goal, not your data quality. Answer that with even more requirements, with validation rules on top of the validation rules, and all you breed is more creative placeholders. I've seen orgs where "tbd" was the most common industry value. In second place: "TBD."
 
-Die eigentliche Frage ist nie "wie zwinge ich den Rep", sondern "warum muss ein Mensch das überhaupt tippen". Mitarbeiterzahl, Branche, Umsatzklasse, Land: alles Daten, die ein Enrichment-Dienst zuverlässiger liefert als jeder Vertriebler, automatisch, beim Anlegen des Accounts. Lead Source gehört technisch gesetzt, aus dem Formular, aus der Kampagne, aus dem UTM-Parameter, und niemals in die Hand eines Menschen. Was übrig bleibt an echter menschlicher Eingabe, ist kurz: das, was nur der Rep wissen kann, weil es im Gespräch gesagt wurde. Nächster Schritt, Entscheidungsprozess, Schmerzpunkt. Und selbst das fragt man besser am Stage-Wechsel ab als beim Anlegen, dann, wenn die Information tatsächlich existiert.
+The real question is never "how do I force the rep," but "why does a human have to type this at all." Employee count, industry, revenue band, country: all data an enrichment service delivers more reliably than any salesperson, automatically, at account creation. Lead source belongs set technically, from the form, from the campaign, from the UTM parameter, and never in a human's hands. What remains as genuine human input is short: the things only the rep can know, because they were said in the conversation. Next step, decision process, pain point. And even those are better asked at the stage change than at creation, at the moment the information actually exists.
 
-Eine brauchbare Faustregel: Pro Objekt mehr als fünf manuelle Pflichtfelder ist ein Designfehler. Nicht weil fünf eine magische Zahl wäre, sondern weil jenseits davon die Platzhalterquote schneller wächst als der Informationsgewinn.
+A usable rule of thumb: more than five manual required fields per object is a design flaw. Not because five is a magic number, but because beyond it, the placeholder rate grows faster than the information gain.
 
-Macht den Test. Zieht euch die Werteverteilung eurer drei ältesten Pflichtfelder und zählt, wie oft "Sonstiges", "test" und Verwandte auftauchen. Wenn es mehr als zehn Prozent sind, habt ihr kein Disziplinproblem im Vertrieb. Ihr habt ein Formular, das Lügen erzwingt.
+Run the test. Pull the value distribution of your three oldest required fields and count how often "Other," "test," and their relatives show up. If it's more than ten percent, you don't have a discipline problem in sales. You have a form that forces lies.

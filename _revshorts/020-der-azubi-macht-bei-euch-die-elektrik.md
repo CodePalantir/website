@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Der Azubi macht bei euch die Elektrik"
-description: "Stellt euch vor, ihr lasst euer Haus neu verkabeln. Der Meisterbetrieb kommt zum Erstgespräch, macht einen kompetenten Eindruck, ihr unterschreibt. Am..."
+title: "The apprentice is doing your wiring"
+description: "Imagine having your house rewired. The master electrician's firm comes for the initial consultation, makes a competent impression, you sign. On Monday..."
 date: 2026-04-02
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/020-der-azubi-macht-bei-euch-die-elektrik/
 ---
 
-Stellt euch vor, ihr lasst euer Haus neu verkabeln. Der Meisterbetrieb kommt zum Erstgespräch, macht einen kompetenten Eindruck, ihr unterschreibt. Am Montag steht der Azubi allein vor eurem Sicherungskasten. Der Meister schaut Freitag mal drüber, remote.
+Imagine having your house rewired. The master electrician's firm comes for the initial consultation, makes a competent impression, you sign. On Monday the apprentice stands alone in front of your breaker panel. The master will take a look on Friday, remotely.
 
-Im Handwerk undenkbar. In der CRM-Beratung ist es das Geschäftsmodell.
+In the trades, unthinkable. In CRM consulting, it's the business model.
 
-Das Modell heißt Junior-Leverage und funktioniert so: Der Senior verkauft das Projekt und taucht danach in Lenkungskreisen auf. Die eigentliche Arbeit in eurem System machen Leute, die vor 18 Monaten ihren Abschluss gemacht haben und deren Tagessatz trotzdem vierstellig fakturiert wird. Die Marge lebt von genau dieser Differenz. Für die Beratung ist das rational. Für euer System ist es ein Risiko, das ihr auch noch bezahlt.
+The model is called junior leverage and works like this: the senior sells the project and afterwards appears in steering committees. The actual work in your system is done by people who got their degree 18 months ago and whose day rate is billed in four figures anyway. The margin lives on exactly that difference. For the consultancy it's rational. For your system it's a risk that you also get to pay for.
 
-Denn ein Produktivsystem ist kein Übungsgelände. Wer noch nie eine Automation debuggt hat, die um drei Uhr nachts 4.000 falsche E-Mails rausgeschickt hat, baut anders. Wer noch nie erlebt hat, wie ein unbedachtes Feld-Update eine Integrationskette triggert, die Rechnungen dupliziert, denkt in Happy Paths. Diese Erfahrung steht in keinem Zertifikat. Sie entsteht nur auf eine Art: indem man Dinge kaputtgemacht und selbst wieder repariert hat. Nicht eskaliert, nicht ans nächste Ticket weitergereicht. Selbst repariert, mit schwitzigen Händen, während der Vertrieb nicht arbeiten kann.
+Because a production system is not a practice range. Someone who has never debugged an automation that sent out 4,000 wrong emails at three in the morning builds differently. Someone who has never watched a careless field update trigger an integration chain that duplicates invoices thinks in happy paths. That experience appears in no certificate. It comes into existence one way only: by having broken things and repaired them yourself. Not escalated, not passed on to the next ticket. Repaired yourself, with sweaty hands, while sales can't work.
 
-Das ist die eigentliche Qualifikationsfrage, und sie kommt in keinem Pitch vor. Referenzlogos sagen euch, wen die Firma als Kunde gewonnen hat. Sie sagen euch nicht, wer sich bei euch einloggt.
+That's the real qualification question, and it never comes up in a pitch. Reference logos tell you which customers the firm has won. They don't tell you who logs into your system.
 
-Seniorität im System schlägt Headcount im Deck. Ein Mensch mit zehn Jahren Schrauberfahrung löst in zwei Tagen, wofür zwei Juniors zwei Wochen brauchen, und hinterlässt dabei keine neuen Baustellen. Das rechnet sich sogar bei doppeltem Tagessatz, weil ihr nicht Zeit kauft, sondern die Abwesenheit von Folgeschäden. Die teuerste Beratung ist die, deren Fehler ihr zwei Jahre später von jemand anderem ausbauen lasst.
+Seniority in the system beats headcount in the deck. One person with ten years of wrench time solves in two days what two juniors need two weeks for, and leaves no new construction sites behind. That pays off even at double the day rate, because you're not buying time, you're buying the absence of consequential damage. The most expensive consultancy is the one whose mistakes you pay someone else to rip out two years later.
 
-Beim nächsten Angebot also nicht fragen, wie viele Leute die Firma hat. Fragen, wer konkret in eurem System arbeiten wird, wie viele Jahre die Person schon Produktivsysteme anfasst, und was ihr größter selbstverschuldeter Ausfall war. Wer auf die letzte Frage keine Geschichte hat, hat entweder nie gebaut oder lügt.
+So on the next proposal, don't ask how many people the firm has. Ask who specifically will work in your system, how many years that person has been touching production systems, and what their biggest self-inflicted outage was. Whoever has no story for the last question has either never built anything or is lying.
 
-Würdet ihr dem Azubi allein euren Sicherungskasten geben? Euer CRM hängt an mehr Umsatz als eure Elektrik.
+Would you hand the apprentice your breaker panel alone? Your CRM carries more revenue than your wiring.

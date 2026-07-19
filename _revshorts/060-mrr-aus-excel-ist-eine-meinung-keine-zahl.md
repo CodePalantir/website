@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "MRR aus Excel ist eine Meinung, keine Zahl"
-description: "Monatsanfang. Jemand aus Finance exportiert die Rechnungen, öffnet die Excel-Vorlage vom Vormonat, passt drei Formeln an, zieht den einen Jahresvertrag..."
+title: "MRR from Excel is an opinion, not a number"
+description: "Start of the month. Someone from Finance exports the invoices, opens last month's Excel template, adjusts three formulas, strips out the one annual..."
 date: 2026-05-12
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "RevOps"
 hero_icon: "zap"
+lang: en
+translation: /de/revshorts/060-mrr-aus-excel-ist-eine-meinung-keine-zahl/
 ---
 
-Monatsanfang. Jemand aus Finance exportiert die Rechnungen, öffnet die Excel-Vorlage vom Vormonat, passt drei Formeln an, zieht den einen Jahresvertrag ab, der sonst alles verzerrt, und schickt die MRR-Zahl ans Management. Dauer: ein halber Tag. Ergebnis: eine Zahl, die jeden Monat leicht anders entsteht.
+Start of the month. Someone from Finance exports the invoices, opens last month's Excel template, adjusts three formulas, strips out the one annual contract that otherwise distorts everything, and sends the MRR number to management. Duration: half a day. Result: a number that comes into being slightly differently every month.
 
-Genau das ist das Problem. Nicht der halbe Tag. Die wacklige Definition.
+That is exactly the problem. Not the half day. The wobbly definition.
 
-MRR klingt trivial und ist es nicht. Was passiert mit dem Kunden, der am 15. upgradet? Zählt der Rabatt im ersten Jahr? Ist der pausierte Vertrag Churn oder nicht? Wie geht ihr mit Setup-Fees um, mit Gutschriften, mit dem Kunden, der in Dollar zahlt? Jede dieser Fragen hat mehrere vertretbare Antworten. Solange die Antwort im Kopf der Person liegt, die gerade die Excel baut, ändert sie sich mit der Person, der Tagesform und dem Zeitdruck. Zwei Leute, dieselben Rohdaten, zwei verschiedene Churn-Raten. Beide können ihre Version begründen. Keine ist die Wahrheit.
+MRR sounds trivial and is not. What happens with the customer who upgrades on the 15th? Does the first-year discount count? Is the paused contract churn or not? How do you handle setup fees, credit notes, the customer who pays in dollars? Every one of these questions has several defensible answers. As long as the answer lives in the head of whoever is building the Excel right now, it changes with the person, the daily form, and the time pressure. Two people, the same raw data, two different churn rates. Both can justify their version. Neither is the truth.
 
-Deshalb die harte Regel: Subscription-Metriken kommen definiert und automatisiert aus dem Billing-System, oder sie sind Meinung. Stripe Billing und Chargebee rechnen MRR, Churn und NRR von Haus aus, mit dokumentierten, stabilen Definitionen. Wer Sonderfälle hat oder es genauer will, zieht die Rohdaten ins Warehouse und schreibt die Logik einmal als Code, versioniert, nachlesbar, für immer gleich. Beides ist eine Sache von Tagen, nicht von Quartalen.
+Hence the hard rule: subscription metrics come defined and automated out of the billing system, or they are opinion. Stripe Billing and Chargebee calculate MRR, churn, and NRR out of the box, with documented, stable definitions. If you have edge cases or want more precision, pull the raw data into the warehouse and write the logic once as code, versioned, readable, forever the same. Either is a matter of days, not quarters.
 
-Der eigentliche Gewinn ist dabei nicht die gesparte Zeit. Es ist die Belastbarkeit der Zahl. Wenn die NRR im nächsten Bankgespräch oder in einer Due Diligence auseinandergenommen wird, schafft "das rechnet Kollegin Meier immer in Excel" kein Vertrauen. Eine Metrik, deren Herleitung im Billing-System oder im dbt-Modell steht, überlebt jede Nachfrage. Eine Excel mit 14 Tabs überlebt nicht mal die Frage, warum Zelle G47 hart überschrieben wurde. War bestimmt ein guter Grund. Weiß nur keiner mehr.
+The real win is not the time saved. It is the resilience of the number. When your NRR gets picked apart in the next bank meeting or in a due diligence, "our colleague Meier always calculates that in Excel" builds no trust. A metric whose derivation lives in the billing system or in the dbt model survives every follow-up question. An Excel with 14 tabs does not even survive the question of why cell G47 was hard-overwritten. Surely there was a good reason. Nobody remembers it anymore.
 
-Und ja, die Excel fühlt sich flexibel an, das ist ihr ganzer Charme. Man kann eben schnell mal den Sonderfall rausrechnen. Aber diese Flexibilität ist exakt die Eigenschaft, die eine Metrik entwertet: Eine Zahl, die sich der Situation anpassen lässt, misst nichts mehr.
+And yes, the Excel feels flexible, that is its whole charm. You can quickly strip out the edge case. But that flexibility is exactly the property that devalues a metric: a number that can be adapted to the situation no longer measures anything.
 
-Die Diagnose kostet euch fünf Minuten. Fragt zwei Leute in der Firma nach der aktuellen MRR und nach der Definition von Churn. Kommen zwei verschiedene Antworten zurück, habt ihr keine Metriken. Ihr habt Folklore.
+The diagnosis costs you five minutes. Ask two people in the company for the current MRR and for the definition of churn. If two different answers come back, you do not have metrics. You have folklore.

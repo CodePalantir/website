@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Die Schicht, die keine Suite je bauen wird"
-description: "Salesforce kann inzwischen fast alles. HubSpot auch. Sequencing, Routing, Forecasting, Quoting, alles nativ, alles in der Edition, die ihr sowieso..."
+title: "The layer no suite will ever build"
+description: "Salesforce can do almost everything these days. So can HubSpot. Sequencing, routing, forecasting, quoting, all native, all in the edition you're already..."
 date: 2026-03-17
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/004-die-schicht-die-keine-suite-je-bauen-wird/
 ---
 
-Salesforce kann inzwischen fast alles. HubSpot auch. Sequencing, Routing, Forecasting, Quoting, alles nativ, alles in der Edition, die ihr sowieso bezahlt. Wir predigen selbst laufend, dass die Hälfte eurer Point Solutions deswegen rausfliegen kann.
+Salesforce can do almost everything these days. So can HubSpot. Sequencing, routing, forecasting, quoting, all native, all in the edition you're already paying for. We're the first to preach that half your point solutions can go because of it.
 
-Aber eine Sache wird keine Suite je können, und zwar aus Prinzip: sich selbst mit dem Rest eurer Welt verbinden.
+But there's one thing no suite will ever do, and on principle: connect itself to the rest of your world.
 
-Jede Suite automatisiert nach innen. Ein Workflow in HubSpot bewegt HubSpot-Daten. Ein Flow in Salesforce bewegt Salesforce-Daten. Das ist kein Versäumnis, das ist Geschäftsmodell, denn jede Suite will die Welt sein, nicht Teil einer Welt. Systemübergreifend war nie nativ und wird es nie sein. Sobald der Auftrag gewonnen ist und die Rechnung in Stripe oder billwerk+ entstehen soll, sobald der Zahlungsstatus zurück ins CRM muss, damit der CSM sieht, dass der Kunde seit 60 Tagen nicht gezahlt hat, bevor er ihm fröhlich das Upsell pitcht: ab da seid ihr in der Glue-Schicht. Integration, Datenmodell über Systemgrenzen, die Logik dazwischen.
+Every suite automates inward. A workflow in HubSpot moves HubSpot data. A flow in Salesforce moves Salesforce data. That's not an oversight, that's the business model, because every suite wants to be the world, not part of one. Cross-system was never native and never will be. The moment the deal is won and the invoice needs to be created in Stripe or billwerk+, the moment the payment status has to flow back into the CRM so the CSM can see the customer hasn't paid in 60 days before cheerfully pitching the upsell: from that point on you're in the glue layer. Integration, a data model that spans system boundaries, the logic in between.
 
-Genau dieses Stück ist der wertvollste Teil eures Stacks. Nicht das CRM. Nicht das Billing-Tool. Das Bindegewebe.
+That piece is the most valuable part of your stack. Not the CRM. Not the billing tool. The connective tissue.
 
-Warum? Weil dort die Wahrheit entsteht. Ob eine Zahl im Reporting stimmt, entscheidet sich nicht im Dashboard, sondern an der Stelle, wo drei Systeme sich einigen müssen, was ein Kunde ist. Wer die Integrationsschicht besitzt und versteht, kontrolliert den ganzen Stack. Der kann Tools tauschen wie Reifen, weil die Logik nicht im Tool wohnt. Der andere, bei dem die Verbindungen aus fünf Zapier-Zaps bestehen, die ein Praktikant 2023 gebaut hat, der ist Gefangener seiner eigenen Landschaft. Jeder Tool-Wechsel wird zur Operation am offenen Herzen.
+Why? Because that's where the truth gets made. Whether a number in your reporting is right isn't decided in the dashboard, but at the spot where three systems have to agree on what a customer is. Whoever owns and understands the integration layer controls the whole stack. They can swap tools like tires, because the logic doesn't live in the tool. The other guy, whose connections consist of five Zapier zaps an intern built in 2023, is a prisoner of his own landscape. Every tool switch becomes open-heart surgery.
 
-Kleiner Test. Fragt in eurem Team, wer genau weiß, wie der Bezahlt-Status vom Billing zurück ins CRM kommt. Welches System, welcher Trigger, was passiert bei einem Fehler. Wenn die Antwort "das läuft irgendwie über Make, glaube ich" lautet, wisst ihr, wo euer Risiko sitzt. Nicht in den Tools mit den großen Logos. In den Fäden dazwischen.
+Quick test. Ask your team who knows exactly how the paid status gets from billing back into the CRM. Which system, which trigger, what happens on an error. If the answer is "that runs through Make somehow, I think," you know where your risk sits. Not in the tools with the big logos. In the threads between them.
 
-Point Solutions kommen und gehen, Suiten fressen Features, die Preise verschieben sich jedes Jahr. Die Glue-Schicht bleibt, egal welcher Stack darunter liegt. Deshalb investiert man dort zuerst, mit Engineering statt mit Lizenzen.
+Point solutions come and go, suites swallow features, prices shift every year. The glue layer stays, no matter which stack sits underneath. That's why you invest there first, with engineering instead of licenses.
 
-Euer Stack ist so gut wie seine schwächste Integration. Kennt ihr eure?
+Your stack is only as good as its weakest integration. Do you know yours?

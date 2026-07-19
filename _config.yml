@@ -54,6 +54,9 @@ collections:
   revshorts:
     output: true
     permalink: /revshorts/:name/
+  revshorts_de:
+    output: true
+    permalink: /de/revshorts/:name/
   industries:
     output: true
     permalink: /industries/:name/

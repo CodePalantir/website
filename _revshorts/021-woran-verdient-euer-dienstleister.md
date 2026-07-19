@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Woran verdient euer Dienstleister?"
-description: "Vergesst die Referenzliste für einen Moment. Vergesst die Zertifikate, die Case Studies, das Partnerlogo. Die aufschlussreichste Information über euer..."
+title: "What does your vendor make money on?"
+description: "Forget the reference list for a moment. Forget the certificates, the case studies, the partner logo. The most revealing information about your future..."
 date: 2026-04-03
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/021-woran-verdient-euer-dienstleister/
 ---
 
-Vergesst die Referenzliste für einen Moment. Vergesst die Zertifikate, die Case Studies, das Partnerlogo. Die aufschlussreichste Information über euer künftiges Projekt steht im Preismodell.
+Forget the reference list for a moment. Forget the certificates, the case studies, the partner logo. The most revealing information about your future project sits in the pricing model.
 
-Anreize bestimmen Verhalten. Nicht Absichten, nicht Werte-Slides, Anreize. Ein Dienstleister, der nach Tagessätzen abrechnet, verdient an jedem Tag, den euer Projekt länger dauert. Das macht ihn nicht zum schlechten Menschen. Es macht ihn zu jemandem, dessen wirtschaftliches Interesse und euer Projektziel in entgegengesetzte Richtungen zeigen. Jede entdeckte Komplexität ist für ihn gute Nachricht. Jeder zusätzliche Workshop, jede Verlängerung der Discovery-Phase, jedes "da müssen wir noch mal tiefer rein" zahlt auf sein Quartal ein. Warum sollte er schnell fertig werden? Die ehrliche Antwort: Es gibt keinen Grund. Schnell fertig werden ist in diesem Modell ein Verlustgeschäft.
+Incentives determine behavior. Not intentions, not values slides, incentives. A vendor billing by day rate earns money on every day your project runs longer. That doesn't make him a bad person. It makes him someone whose economic interest and your project goal point in opposite directions. Every complexity discovered is good news for him. Every additional workshop, every extension of the discovery phase, every "we need to dig deeper into that" pays into his quarter. Why should he finish fast? The honest answer: there is no reason. Finishing fast is a losing trade in this model.
 
-Festpreis dreht die Mechanik um. Wer ein Audit für einen festen Betrag in fünf Tagen anbietet, verliert Geld mit jedem Tag, den er trödelt, und verdient an Effizienz. Plötzlich lohnt es sich, Werkzeuge zu bauen, die die Analyse beschleunigen. Plötzlich lohnt Erfahrung, weil der 47. Blick in eine kaputte Salesforce-Org schneller geht als der dritte. Der Anreiz zeigt auf Ergebnis statt auf Dauer.
+Fixed price flips the mechanics. Whoever offers an audit for a fixed amount in five days loses money on every day he dawdles, and earns on efficiency. Suddenly it pays to build tools that speed up the analysis. Suddenly experience pays, because the 47th look into a broken Salesforce org goes faster than the third. The incentive points at outcome instead of duration.
 
-Und hier steckt die zweite Information, die im Preismodell mitgeliefert wird: Festpreis kann sich nur leisten, wer sein Handwerk kalkulieren kann. Wer nicht weiß, wie lange etwas dauert, weil er es noch nicht oft genug gemacht hat, muss nach Aufwand abrechnen, sonst ruiniert ihn die eigene Unsicherheit. Der Tagessatz ist auch eine Versicherung gegen die eigene Unerfahrenheit, die ihr als Kunde bezahlt. Ein fester Preis mit fester Frist ist dagegen eine Wette des Anbieters auf sich selbst. Die geht nur auf, wenn er das Problem schon dutzendfach gesehen hat.
+And here's the second piece of information shipped inside the pricing model: only someone who can calculate his craft can afford fixed prices. Whoever doesn't know how long something takes, because he hasn't done it often enough, has to bill by effort, otherwise his own uncertainty ruins him. The day rate is also an insurance policy against the vendor's own inexperience, one that you as the customer pay for. A fixed price with a fixed deadline, by contrast, is the vendor's bet on himself. It only works out if he has seen the problem dozens of times.
 
-Natürlich hat Festpreis Grenzen. Ein Sechs-Monats-Programm mit unklarem Scope kann seriös niemand pauschal bepreisen, und wer es trotzdem tut, hat den Puffer einfach versteckt. Aber abgrenzbare Bausteine, ein Audit, eine Migration, eine Integration mit definiertem Umfang: alles bepreisbar, wenn man weiß, was man tut.
+Of course fixed price has limits. Nobody can seriously flat-price a six-month program with unclear scope, and whoever does it anyway has simply hidden the buffer. But well-bounded building blocks, an audit, a migration, an integration with defined scope: all priceable, if you know what you're doing.
 
-Die Frage fürs nächste Angebotsgespräch ist also nicht, was der Tag kostet. Sondern: Was kostet das Ergebnis, und bis wann liegt es vor? An der Reaktion auf diese Frage erkennt ihr mehr als in drei Referenzcalls.
+So the question for the next proposal conversation isn't what the day costs. It's: what does the outcome cost, and by when is it delivered? The reaction to that question tells you more than three reference calls.

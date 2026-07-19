@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Quick Wins sind eine Droge"
-description: "Der erste Quick Win ist großartig. Duplikate bereinigt, Routing beschleunigt, ein Report repariert, und plötzlich sagt der Vertriebsleiter im Meeting..."
+title: "Quick wins are a drug"
+description: "The first quick win is glorious. Duplicates cleaned up, routing sped up, a report repaired, and suddenly the head of sales says your name in the..."
 date: 2026-07-06
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/115-quick-wins-sind-eine-droge/
 ---
 
-Der erste Quick Win ist großartig. Duplikate bereinigt, Routing beschleunigt, ein Report repariert, und plötzlich sagt der Vertriebsleiter im Meeting deinen Namen mit einem Lächeln. Das Gefühl merkt sich das Gehirn. Genau da beginnt das Problem.
+The first quick win is glorious. Duplicates cleaned up, routing sped up, a report repaired, and suddenly the head of sales says your name in the meeting with a smile. The brain remembers that feeling. And that is exactly where the problem begins.
 
-Denn Applaus ist ein Anreizsystem, und es zeigt in die falsche Richtung. Der sichtbare Fix wird gefeiert, das unsichtbare Fundament nicht. Niemand klatscht für ein sauberes Datenmodell. Kein Slack-Emoji für konsistente Stage-Definitionen. Die Integration, die einfach still funktioniert, taucht in keinem Monatsreview auf. Also macht man, was gefeiert wird: den nächsten Quick Win. Und den nächsten. Nach einem Jahr hat man vierzig kleine Siege eingefahren und steht vor exakt denselben strukturellen Problemen wie am ersten Tag, nur dass jetzt vierzig Pflaster drüberkleben.
+Because applause is an incentive system, and it points in the wrong direction. The visible fix gets celebrated, the invisible foundation does not. Nobody claps for a clean data model. No Slack emoji for consistent stage definitions. The integration that just quietly works never shows up in a monthly review. So you do what gets celebrated: the next quick win. And the next. After a year, you have racked up forty small victories and stand in front of exactly the same structural problems as on day one, except now there are forty band-aids stuck on top.
 
-Schlimmer noch, die Pflaster sind selbst Problem geworden. Jeder schnelle Fix, der ein Symptom behandelt statt der Ursache, ist ein neuer Workaround im System. Der Report, der die kaputten Daten "rausfiltert", statt sie zu reparieren. Der Flow, der das falsch befüllte Feld nachts korrigiert, statt die Quelle zu fixen. Wer nur Symptome behandelt, akkumuliert genau die Komplexität, die er zu bekämpfen vorgibt. Das ist die eigentliche Pointe, und sie ist unangenehm: Der Quick-Win-Junkie erzeugt seinen eigenen Nachschub.
+Worse still, the band-aids have become a problem themselves. Every quick fix that treats a symptom instead of the cause is a new workaround in the system. The report that "filters out" the broken data instead of repairing it. The flow that corrects the wrongly filled field at night instead of fixing the source. Whoever only treats symptoms accumulates exactly the complexity they claim to be fighting. That is the real punchline, and it is uncomfortable: the quick-win junkie manufactures his own supply.
 
-Wir haben das mal bei einem Kunden seziert. 23 aktive Automatisierungen, die nichts anderes taten, als Daten zu korrigieren, die drei Ursachen hatten. Drei. Ein kaputtes Webformular, ein Import ohne Validierung, ein Enrichment-Tool mit falschem Mapping. Zwei Wochen Ursachenarbeit hätten 23 Pflaster überflüssig gemacht. Stattdessen wurde jahrelang gepflastert, weil jedes einzelne Pflaster als Win verkauft werden konnte.
+We dissected this at a client once. 23 active automations that did nothing but correct data with three root causes. Three. A broken web form, an import without validation, an enrichment tool with a wrong mapping. Two weeks of root-cause work would have made 23 band-aids unnecessary. Instead, the patching went on for years, because every single band-aid could be sold as a win.
 
-Die Antwort ist nicht, Quick Wins abzuschwören. Ohne Sichtbarkeit kein Vertrauen, ohne Vertrauen kein Mandat für die große Baustelle. Die Antwort ist eine bewusste Quote. 70 Prozent der Kapazität ins Fundament, 30 Prozent in Sichtbares, und zwar als feste Regel, nicht als gute Absicht. Gute Absichten verlieren gegen Applaus immer. Eine Quote nicht, wenn man sie aufschreibt und quartalsweise nachhält wie ein Budget.
+The answer is not to swear off quick wins. Without visibility no trust, without trust no mandate for the big rebuild. The answer is a deliberate ratio. 70 percent of capacity into the foundation, 30 percent into the visible, and as a hard rule, not a good intention. Good intentions always lose against applause. A ratio does not, if you write it down and track it quarterly like a budget.
 
-Der Test ist einfach. Nehmt eure letzten zehn RevOps-Erfolge und fragt bei jedem: Hat das eine Ursache beseitigt oder ein Symptom kaschiert? Wenn die Antwort achtmal Symptom lautet, seid ihr nicht produktiv. Ihr seid auf Entzug, nur wisst ihr es noch nicht.
+The test is simple. Take your last ten RevOps successes and ask for each: did this remove a cause or cover up a symptom? If the answer is symptom eight times, you are not productive. You are in withdrawal, you just do not know it yet.

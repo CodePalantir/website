@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Renewals in Excel sind Überraschungs-Churn"
-description: "Dienstagvormittag, die Kündigung liegt im Postfach. Ein Kunde, 40.000 Euro Jahresvertrag, seit vier Jahren dabei. Im Vertrieb sind alle ehrlich..."
+title: "Renewals in Excel are surprise churn"
+description: "Tuesday morning, the cancellation is in the inbox. A customer, 40,000 euros a year, four years on the books. Everyone in sales is genuinely surprised,..."
 date: 2026-03-28
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/015-renewals-in-excel-sind-ueberraschungs-churn/
 ---
 
-Dienstagvormittag, die Kündigung liegt im Postfach. Ein Kunde, 40.000 Euro Jahresvertrag, seit vier Jahren dabei. Im Vertrieb sind alle ehrlich überrascht, der Geschäftsführer fragt, wie das passieren konnte, der Account Manager sagt, der Kunde habe sich doch nie beschwert. Dann schaut jemand nach: Die Verlängerung stand seit 90 Tagen an. Es gab keinen Task, keinen Termin, kein Gespräch. Es gab eine Zeile in einer Excel-Liste, Reiter "Verträge 2026", zuletzt geändert im Februar.
+Tuesday morning, the cancellation is in the inbox. A customer, 40,000 euros in annual contract value, four years on the books. Everyone in sales is genuinely surprised, the CEO asks how this could happen, the account manager says the customer never even complained. Then somebody checks: the renewal had been due for 90 days. There was no task, no meeting, no conversation. There was one row in an Excel list, tab "Contracts 2026", last modified in February.
 
-Das ist kein Einzelfall, das ist der Normalzustand. Renewals leben in einer Tabelle, die eine Person pflegt, wenn sie dran denkt. Neben der Spalte mit dem Vertragsende steht ein Datum, das beim letzten Upsell nicht aktualisiert wurde. Ob jemand 90 Tage vorher zum Hörer greift, hängt davon ab, ob diese eine Person die Liste zufällig offen hat. Das ist kein Prozess. Das ist Hoffnung mit Zellbezügen.
+That's not an outlier, that's the default state. Renewals live in a spreadsheet one person maintains when she remembers to. Next to the contract end column sits a date that never got updated after the last upsell. Whether anyone picks up the phone 90 days out depends on whether that one person happens to have the list open. That's not a process. That's hope with cell references.
 
-Dabei ist die Mechanik lächerlich einfach. Drei Dinge gehören ins System: das Renewal-Datum als Pflichtfeld am Vertrag oder an der Opportunity, ein Owner, der namentlich dranhängt, und ein Playbook, das automatisch anläuft. 120 Tage vorher Health-Check, 90 Tage vorher Gespräch, 60 Tage vorher Angebot, bei Funkstille Eskalation an den Vertriebsleiter. Kein Mensch muss sich daran erinnern, das System erinnert. Genau dafür wurde es gebaut.
+And yet the mechanics are laughably simple. Three things belong in the system: the renewal date as a required field on the contract or the opportunity, an owner attached by name, and a playbook that kicks off automatically. Health check at 120 days out, conversation at 90, proposal at 60, escalation to the sales lead on radio silence. No human has to remember, the system remembers. That's exactly what it was built for.
 
-Und ihr müsst dafür nichts kaufen. Salesforce kann das mit Flows und Renewal-Opportunities, HubSpot mit Deal-Pipelines und Workflows, jedes CS-Tool sowieso. Die Funktionalität liegt in der Lizenz, die ihr seit Jahren bezahlt, unbenutzt. Der Aufbau ist ein paar Tage Konfiguration, keine Rocket Science, kein Projekt mit Lenkungsausschuss.
+And you don't have to buy anything for it. Salesforce does it with flows and renewal opportunities, HubSpot with deal pipelines and workflows, any CS tool obviously. The functionality sits in the license you've been paying for for years, unused. The build is a few days of configuration, no rocket science, no project with a steering committee.
 
-Warum existiert die Excel dann trotzdem überall? Weil sie nie eine Lösung war, sondern ein Symptom. Sie entsteht, wenn im CRM die Vertragsdaten fehlen oder falsch sind, wenn niemand für Bestandskunden zuständig ist, wenn Renewal als Verwaltungsakt gilt statt als Umsatz. Die Tabelle ist der sichtbare Beweis, dass der Prozess fehlt. Man erkennt es auch an der Sprache: Firmen mit Prozess reden über Net Revenue Retention. Firmen mit Excel reden über den Kunden, der letzte Woche überraschend gekündigt hat.
+So why does the Excel exist everywhere anyway? Because it was never a solution, it was a symptom. It appears when the contract data in the CRM is missing or wrong, when nobody is responsible for existing customers, when renewal is treated as admin work instead of revenue. The spreadsheet is the visible proof that the process is missing. You can hear it in the language too: companies with a process talk about net revenue retention. Companies with Excel talk about the customer who surprisingly canceled last week.
 
-Rechnet kurz mit: Bei 2 Millionen Bestandsumsatz kostet jeder Prozentpunkt vermeidbarer Churn 20.000 Euro. Jedes Jahr. Wie viele Zeilen hat eure Liste?
+Do the quick math: at 2 million in recurring revenue, every percentage point of avoidable churn costs 20,000 euros. Every year. How many rows does your list have?

@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "'Mehr Aktivität' ist eine Bankrotterklärung"
-description: "Das Quartal hängt, die Pipeline ist dünn, und im Sales-Meeting fällt der Satz, der immer fällt: Wir brauchen mehr Aktivität. Mehr Calls, mehr Mails,..."
+title: "'More activity' is an admission of defeat"
+description: "The quarter is lagging, the pipeline is thin, and in the sales meeting the sentence drops that always drops: we need more activity. More calls, more..."
 date: 2026-04-18
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/036-mehr-aktivitaet-ist-eine-bankrotterklaerung/
 ---
 
-Das Quartal hängt, die Pipeline ist dünn, und im Sales-Meeting fällt der Satz, der immer fällt: Wir brauchen mehr Aktivität. Mehr Calls, mehr Mails, mehr Touchpoints. Klingt nach Führung. Ist aber das Eingeständnis, dass niemand weiß, wo es eigentlich klemmt.
+The quarter is lagging, the pipeline is thin, and in the sales meeting the sentence drops that always drops: we need more activity. More calls, more emails, more touchpoints. Sounds like leadership. It's actually the admission that nobody knows where things are really stuck.
 
-Denn "mehr" ist nur dann die Antwort, wenn Volumen der Engpass ist. Das lässt sich prüfen, und zwar in zwanzig Minuten mit den Daten, die längst im System liegen. Wie viele Calls führen zu Gesprächen? Wie viele Gespräche zu Meetings, wie viele Meetings zu Opportunities? Wenn die Conversion an einer Stelle bricht, sagen wir zwei Prozent Antwortrate auf Outbound-Mails, dann skaliert mehr Volumen exakt diesen Bruch. 200 Calls auf die falsche Liste sind schlechter als 40 auf die richtige, und zwar nicht ein bisschen schlechter, sondern doppelt: weniger Ergebnis pro Stunde und nebenbei ein verbrannter Markt, der beim nächsten Anlauf noch schwerer zu erreichen ist.
+Because "more" is only the answer when volume is the bottleneck. And that can be checked, in twenty minutes, with data that's already sitting in the system. How many calls lead to conversations? How many conversations to meetings, how many meetings to opportunities? If conversion breaks at one point, say a two percent reply rate on outbound emails, then more volume scales exactly that break. 200 calls to the wrong list are worse than 40 to the right one, and not slightly worse, but doubly so: less result per hour, plus a burned market that will be even harder to reach on the next attempt.
 
-Die Mechanik dahinter ist banal und wird trotzdem ständig ignoriert. Ein Funnel multipliziert Raten. Wer die schwächste Rate ignoriert und stattdessen vorne mehr reinschüttet, bezahlt jede nachgelagerte Schwäche mit. Der Rep, der auf 60 Dials pro Tag getrieben wird, hört auf zu recherchieren, weil Recherche keine Dials produziert. Die Liste wird breiter, der Fit schlechter, die Connect-Rate sinkt, und das Management antwortet mit noch mehr Aktivitätszielen. Eine Abwärtsspirale mit Dashboard.
+The mechanics behind this are banal and get ignored constantly anyway. A funnel multiplies rates. Whoever ignores the weakest rate and pours more into the top instead pays for every downstream weakness with it. The rep pushed to 60 dials a day stops researching, because research doesn't produce dials. The list gets broader, the fit worse, the connect rate drops, and management responds with even more activity targets. A downward spiral with a dashboard.
 
-Interessant ist, warum der Reflex so hartnäckig ist. Aktivität ist die einzige Größe, die sich per Ansage sofort steuern lässt. Conversion zu verbessern heißt: ICP schärfen, Listen neu bauen, Messaging testen, vielleicht zugeben, dass das Segment nicht trägt. Das dauert Wochen und hat keinen Schuldigen. "Mehr Calls" hat einen Schuldigen, nämlich den Rep, und liefert schon morgen einen grünen Balken. Dass der Balken nichts mit Umsatz zu tun hat, fällt erst am Quartalsende auf, und dann heißt die Antwort wieder: mehr Aktivität.
+What's interesting is why the reflex is so stubborn. Activity is the only variable that can be steered instantly by decree. Improving conversion means: sharpen the ICP, rebuild lists, test messaging, maybe admit the segment doesn't carry. That takes weeks and has no culprit. "More calls" has a culprit, namely the rep, and delivers a green bar by tomorrow. That the bar has nothing to do with revenue only becomes apparent at quarter's end, and then the answer is, once again: more activity.
 
-Dabei wäre die Reihenfolge so einfach. Erst die Conversion-Kette anschauen und die eine Stelle finden, an der es wirklich bricht. Die reparieren. Und erst wenn jede Stufe trägt, das Volumen hochdrehen, denn dann, und nur dann, ist mehr tatsächlich mehr.
+Yet the order would be so simple. First look at the conversion chain and find the one spot where it actually breaks. Fix that. And only once every stage carries, turn up the volume, because then, and only then, is more actually more.
 
-Wenn euer Sales-Management nur einen Hebel kennt, habt ihr kein Aktivitätsproblem. Ihr habt ein Diagnoseproblem.
+If your sales management knows only one lever, you don't have an activity problem. You have a diagnosis problem.

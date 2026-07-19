@@ -1,27 +1,29 @@
 ---
 layout: revshort
-title: "Freitag, 16:20 Uhr"
-description: "Ein Lead füllt euer Formular aus. Freitag, 16:20 Uhr, konkretes Projekt, Budget vorhanden, drei Anbieter im Blick. Eure Website sagt 'Danke für Ihre..."
+title: "Friday, 4:20 p.m."
+description: "A lead fills out your form. Friday, 4:20 p.m., a concrete project, budget in place, three vendors on the shortlist. Your website says 'Thank you for your..."
 date: 2026-03-18
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/005-freitag-16-20-uhr/
 ---
 
-Ein Lead füllt euer Formular aus. Freitag, 16:20 Uhr, konkretes Projekt, Budget vorhanden, drei Anbieter im Blick. Eure Website sagt "Danke für Ihre Anfrage, wir melden uns zeitnah". Montag um 11 ruft jemand aus eurem Vertrieb an.
+A lead fills out your form. Friday, 4:20 p.m., a concrete project, budget in place, three vendors on the shortlist. Your website says "Thank you for your inquiry, we'll get back to you shortly." Monday at 11, someone from your sales team calls.
 
-Der Wettbewerber hat Freitag um 16:25 angerufen.
+The competitor called Friday at 4:25.
 
-Das Meeting stand, bevor euer CRM den Lead überhaupt einem Owner zugewiesen hatte. Montag um 11 wart ihr nicht mehr der mögliche Partner, ihr wart die Vergleichsofferte für den Einkauf.
+The meeting was booked before your CRM had even assigned the lead an owner. By Monday at 11 you were no longer the potential partner, you were the comparison quote for procurement.
 
-Die Zahlen dazu sind seit Jahren bekannt und werden trotzdem konsequent ignoriert. Wer innerhalb von fünf Minuten reagiert, erreicht den Lead um ein Vielfaches häufiger als wer eine Stunde wartet. Nach einem Wochenende ist der Vorsprung weg, das Interesse abgekühlt, der Kalender des Wettbewerbers gefüllt. Antwortgeschwindigkeit schlägt Lead-Qualität. Ein mittelmäßiger Lead, der in fünf Minuten ein Gespräch bekommt, konvertiert besser als der perfekte ICP-Treffer, der drei Tage in einer Queue liegt.
+The numbers on this have been known for years and are consistently ignored anyway. Whoever responds within five minutes reaches the lead many times more often than whoever waits an hour. After a weekend the head start is gone, the interest has cooled, the competitor's calendar is full. Response speed beats lead quality. A mediocre lead who gets a conversation within five minutes converts better than the perfect ICP match who sits in a queue for three days.
 
-Und jetzt der Teil, der wehtut: Das ist fast nie ein Tool-Problem.
+And now the part that hurts: this is almost never a tool problem.
 
-Der Reflex geht trotzdem sofort Richtung Einkauf. Chili Piper evaluieren, Demo anschauen, noch eine Lizenz. Dabei können Salesforce, HubSpot und Dynamics Routing und Scheduling längst nativ. Lead kommt rein, wird nach Region oder Segment zugewiesen, der Interessent bucht sich direkt einen Termin in den Kalender des zuständigen AE. Alles vorhanden. Alles konfigurierbar. In der Edition, die ihr bezahlt.
+The reflex still goes straight to procurement. Evaluate Chili Piper, watch a demo, one more license. Meanwhile Salesforce, HubSpot, and Dynamics have had routing and scheduling natively for ages. Lead comes in, gets assigned by region or segment, the prospect books a slot directly in the responsible AE's calendar. All there. All configurable. In the edition you're paying for.
 
-Was fehlt, ist etwas viel Banaleres. Ownership. Wer ist verantwortlich, wenn ein Lead 20 Minuten unberührt liegt? Nicht das Team, eine Person. Und ein SLA, das den Namen verdient: jeder Inbound-Lead bekommt innerhalb von zehn Minuten eine echte Reaktion, auch freitags um 16:20, und wenn das niemand schafft, bucht sich der Lead eben selbst ein Meeting, dafür gibt es die Scheduling-Links. Dazu ein Eskalationspfad und ein Report, der die Reaktionszeit pro Woche sichtbar macht. Das ist ein Nachmittag Konfiguration plus eine unbequeme Prozessentscheidung.
+What's missing is something far more mundane. Ownership. Who is accountable when a lead sits untouched for 20 minutes? Not the team, a person. And an SLA worthy of the name: every inbound lead gets a real response within ten minutes, including Fridays at 4:20, and if nobody can manage that, the lead simply books their own meeting, that's what scheduling links are for. Add an escalation path and a report that makes response time visible week by week. That's an afternoon of configuration plus one uncomfortable process decision.
 
-Die Prozessentscheidung ist der Grund, warum es meist nicht passiert. Ein Tool kaufen fühlt sich nach Handeln an und tut niemandem weh. Einen SLA durchsetzen heißt, jemandem sagen, dass Freitag 16:20 zum Job gehört.
+The process decision is the reason it usually doesn't happen. Buying a tool feels like taking action and hurts nobody. Enforcing an SLA means telling someone that Friday at 4:20 is part of the job.
 
-Zieht mal die Timestamps eurer letzten 50 Inbound-Leads. Erstellt bis erste echte Reaktion. Die Zahl, die da rauskommt, ist euer eigentlicher Wettbewerber.
+Pull the timestamps on your last 50 inbound leads. Created until first real response. The number that comes out is your actual competitor.

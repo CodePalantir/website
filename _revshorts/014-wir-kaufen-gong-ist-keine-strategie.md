@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "'Wir kaufen Gong' ist keine Strategie"
-description: "Der Satz fällt meistens im Q4-Planning. Die Win-Rate stagniert, das Coaching kommt zu kurz, irgendwer hat auf LinkedIn ein Video gesehen. Wir kaufen..."
+title: "'Let's buy Gong' is not a strategy"
+description: "The sentence usually drops during Q4 planning. Win rate is flat, coaching keeps falling short, someone saw a video on LinkedIn. Let's buy Gong. Decided,..."
 date: 2026-03-27
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/014-wir-kaufen-gong-ist-keine-strategie/
 ---
 
-Der Satz fällt meistens im Q4-Planning. Die Win-Rate stagniert, das Coaching kommt zu kurz, irgendwer hat auf LinkedIn ein Video gesehen. Wir kaufen Gong. Beschlossen, budgetiert, abgehakt. Fühlt sich an wie eine Entscheidung.
+The sentence usually drops during Q4 planning. Win rate is flat, coaching keeps falling short, someone saw a video on LinkedIn. Let's buy Gong. Decided, budgeted, checked off. Feels like a decision.
 
-Ist aber keine. Es ist eine vertagte.
+It isn't one. It's a postponed one.
 
-Denn die eigentlichen Fragen sind nach dem Kauf exakt so offen wie davor. Wer hört sich die Calls an? Der Sales Lead hat 30 Direct Reports an der Pipeline und keine vier Stunden pro Woche für Call-Reviews. Was passiert mit dem, was auffällt? Gibt es ein Coaching-Format, einen Rhythmus, jemanden, der Einwandbehandlung wirklich trainiert, oder wird die Erkenntnis im Weekly kurz erwähnt und verdampft? Wer pflegt die Tracker, die Keywords, die Scorecards? Software beantwortet nichts davon. Software zeichnet auf.
+Because the real questions are exactly as open after the purchase as before. Who listens to the calls? The sales lead has 30 direct reports on the pipeline and doesn't have four hours a week for call reviews. What happens with what stands out? Is there a coaching format, a rhythm, someone who actually trains objection handling, or does the insight get a quick mention in the weekly and evaporate? Who maintains the trackers, the keywords, the scorecards? Software answers none of this. Software records.
 
-Und so läuft es dann auch. Das Tool schneidet brav jeden Call mit, die Bibliothek wächst auf 2.000 Aufnahmen, reingeschaut hat seit Monat drei niemand mehr. Nach zwölf Monaten geht der CFO durch die SaaS-Liste, findet 15.000 Euro für ein Tool ohne erkennbaren Nutzer und kündigt. Zu Recht. Das Tool war nie das Problem. Es gab nur nie einen Prozess, den es hätte unterstützen können.
+And that's exactly how it plays out. The tool dutifully captures every call, the library grows to 2,000 recordings, nobody has looked inside since month three. After twelve months the CFO goes through the SaaS list, finds 15,000 euros for a tool with no identifiable user, and cancels. Rightly so. The tool was never the problem. There was just never a process for it to support.
 
-Die Reihenfolge, die funktioniert, ist unspektakulär. Erst den Prozess definieren: Wer reviewt wie viele Calls pro Woche, nach welchen Kriterien, was ist der Loop zurück ins Team, wer trägt das als Owner. Auf ein Blatt Papier passt das. Dann, zweiter Schritt, prüfen, was ihr schon bezahlt. Salesforce und HubSpot haben Gesprächsaufzeichnung und Auswertung inzwischen nativ an Bord, in den Editions, die bei vielen längst laufen. Nicht auf Gong-Niveau, das stimmt. Aber für ein Team mit acht Vertrieblern und einem sauber definierten Review-Prozess reicht nativ meistens locker. Und erst wenn der Prozess steht und die Suite nachweislich nicht kann, was er braucht, erst dann wird gekauft.
+The order that works is unspectacular. First define the process: who reviews how many calls per week, by which criteria, what's the loop back into the team, who owns it. It fits on one sheet of paper. Then, second step, check what you already pay for. Salesforce and HubSpot now ship call recording and analysis natively, in the editions many companies already run. Not at Gong's level, true. But for a team of eight sellers with a cleanly defined review process, native is usually plenty. And only once the process stands and the suite demonstrably can't do what it needs, only then do you buy.
 
-Klingt banal. Wird trotzdem fast immer andersrum gemacht, weil ein Kauf sich nach Fortschritt anfühlt und eine Prozessdefinition nach Arbeit. Der Kauf dauert eine Woche. Der Prozess zwingt euch, unbequeme Fragen zu klären, Zuständigkeiten festzunageln, Zeit im Kalender zu blocken.
+Sounds banal. Still gets done the other way around almost every time, because a purchase feels like progress and a process definition feels like work. The purchase takes a week. The process forces you to settle uncomfortable questions, nail down responsibilities, block time on calendars.
 
-Genau deshalb ist er das Einzige, was den Unterschied macht.
+Which is exactly why it's the only thing that makes the difference.
 
-Welches Tool in eurem Stack war so eine vertagte Prozessentscheidung? Ihr wisst es vermutlich sofort.
+Which tool in your stack was a postponed process decision like this? You probably know immediately.

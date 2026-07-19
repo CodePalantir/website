@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Doku, die niemand liest, ist keine Doku"
-description: "In eurem Confluence liegt eine Seite namens 'Lead-Prozess v3 final'. Zuletzt bearbeitet vor 14 Monaten, von einer Kollegin, die nicht mehr da ist. Sie..."
+title: "Docs nobody reads are not docs"
+description: "In your Confluence sits a page called 'Lead Process v3 final'. Last edited 14 months ago, by a colleague who's no longer there. It describes three fields..."
 date: 2026-06-21
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/100-doku-die-niemand-liest-ist-keine-doku/
 ---
 
-In eurem Confluence liegt eine Seite namens "Lead-Prozess v3 final". Zuletzt bearbeitet vor 14 Monaten, von einer Kollegin, die nicht mehr da ist. Sie beschreibt drei Felder, die es nicht mehr gibt, und einen Statuswert, der inzwischen anders heißt. Aufrufe im letzten Quartal: vier. Zwei davon wart ihr selbst, beim Suchen nach etwas anderem.
+In your Confluence sits a page called "Lead Process v3 final". Last edited 14 months ago, by a colleague who's no longer there. It describes three fields that no longer exist and a status value that's since been renamed. Views last quarter: four. Two of those were you, looking for something else.
 
-Das ist kein Pflegeproblem, das ist ein Konstruktionsfehler. Prozess-Doku im Wiki veraltet nicht irgendwann, sie veraltet beim Schreiben, weil das System sich weiterdreht, während das Dokument stillsteht. Und selbst wenn sie aktuell wäre: Der Vertriebler, der gerade nicht weiß, was in "Qualifizierungsgrund" gehört, wechselt nicht ins Wiki, sucht nicht, liest nicht. Er rät. Oder lässt das Feld leer, und euer Report zählt später Rateergebnisse.
+That's not a maintenance problem, that's a design flaw. Process documentation in a wiki doesn't go stale eventually, it goes stale while being written, because the system keeps turning while the document stands still. And even if it were current: the rep who right now doesn't know what belongs in "Qualification Reason" doesn't switch to the wiki, doesn't search, doesn't read. He guesses. Or leaves the field empty, and your report later counts guesses.
 
-Dokumentation gehört dahin, wo gearbeitet wird. Ins System selbst.
+Documentation belongs where the work happens. In the system itself.
 
-Das fängt bei Feldbeschreibungen an, die diesen Namen verdienen. "Erwarteter Umsatz" braucht den Hilfetext: netto, in Euro, Jahreswert, ohne Optionen. Ein Satz, direkt am Feld, sichtbar im Moment der Eingabe. Kostet zwei Minuten pro Feld und erspart tausend falsche Werte. Dann sprechende Namen. Eine Automatisierung namens "Flow 27 Kopie Kopie" dokumentiert nichts, "Lead Routing DACH Neukunden" erklärt sich beim Lesen. Dasselbe gilt für Felder, Reports, Stages. Wer beim Benennen nachdenken muss, dokumentiert schon.
+That starts with field descriptions worthy of the name. "Expected Revenue" needs the help text: net, in euros, annual value, excluding options. One sentence, right on the field, visible at the moment of entry. Costs two minutes per field and saves a thousand wrong values. Then, names that speak. An automation called "Flow 27 Copy Copy" documents nothing, "Lead Routing DACH New Business" explains itself on reading. Same goes for fields, reports, stages. Whoever has to think while naming is already documenting.
 
-Und Fehlermeldungen. Eine Validierungsregel, die "FEHLER: Bedingung nicht erfüllt" ausspuckt, produziert ein Support-Ticket. Eine, die sagt "Ab Stage Angebot brauchen wir den Entscheidungstermin, trag ihn im Feld Close Plan ein", erzieht nebenbei den ganzen Vertrieb. Jede Fehlermeldung ist eine Doku-Seite, die garantiert gelesen wird, nämlich genau im Moment des Fehlers.
+And error messages. A validation rule that spits out "ERROR: condition not met" produces a support ticket. One that says "From stage Proposal onward we need the decision date, enter it in the Close Plan field" trains the whole sales team on the side. Every error message is a documentation page that's guaranteed to be read, namely at the exact moment of the error.
 
-Bleibt ein Rest für das Wiki, zugegeben. Architekturentscheidungen, das Warum hinter dem Datenmodell, Integrationsübersichten: das lebt woanders schlecht und muss nicht täglich stimmen. Aber alles, was ein Nutzer beim Arbeiten wissen muss, hat im Wiki nichts verloren.
+A remainder stays with the wiki, granted. Architecture decisions, the why behind the data model, integration overviews: that lives poorly anywhere else and doesn't need to be accurate daily. But everything a user needs to know while working has no business being in the wiki.
 
-Der Test ist einfach. Nehmt euren neuesten Mitarbeiter im Vertrieb und schaut ihm eine Stunde beim Arbeiten im CRM zu, ohne zu helfen. An jeder Stelle, wo er stockt und jemanden fragen muss, fehlt Dokumentation im System. Die Confluence-Seite hat ihm in dieser Stunde exakt null Mal geholfen. Warum pflegt ihr sie dann?
+The test is simple. Take your newest sales hire and watch them work in the CRM for an hour, without helping. Every place they stall and have to ask someone, documentation is missing in the system. The Confluence page helped them exactly zero times in that hour. So why are you maintaining it?

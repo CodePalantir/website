@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Erst das Datenmodell, dann die Flows"
-description: "Der Wunsch klingt immer gleich. Mehr automatisieren, weniger Handarbeit, am besten noch diesen Monat. Verständlich, und ein Flow ist ja auch schnell..."
+title: "Data model first, then the flows"
+description: "The wish always sounds the same. Automate more, less manual work, ideally this month. Understandable, and a flow is quickly..."
 date: 2026-05-29
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/077-erst-das-datenmodell-dann-die-flows/
 ---
 
-Der Wunsch klingt immer gleich. Mehr automatisieren, weniger Handarbeit, am besten noch diesen Monat. Verständlich, und ein Flow ist ja auch schnell gebaut. Nur automatisiert ihr damit auf dem Datenmodell, das ihr habt. Wenn das schief ist, macht Automatisierung den Fehler nicht behebbar, sondern permanent.
+The wish always sounds the same. Automate more, less manual work, ideally this month. Understandable, and a flow is quickly built. But you're automating on top of the data model you have. If that model is crooked, automation doesn't make the flaw fixable, it makes it permanent.
 
-Eine Szene aus einem Audit letztes Jahr. Ein Softwareunternehmen führt Verträge als Freitextfelder auf dem Account: Laufzeit, Volumen, Kündigungsfrist, alles in Textspalten, weil vor vier Jahren niemand ein eigenes Vertragsobjekt anlegen wollte. Ging ja auch erstmal. Inzwischen hängen 19 Automatisierungen an diesen Feldern: Renewal-Erinnerungen, eine Provisionslogik, zwei Board-Reports, eine Schnittstelle zum Billing. Jetzt soll ein sauberes Vertragsobjekt her, mehrere Verträge pro Kunde, Historie, das Übliche. Der Umbau kostet nicht die zwei Stunden von damals. Er kostet sechs Wochen, weil jede der 19 Automatisierungen angefasst, umgebaut und getestet werden muss. Das ist der Zinseszins auf ein schiefes Fundament.
+A scene from an audit last year. A software company keeps contracts as free-text fields on the account: term, volume, notice period, all in text columns, because four years ago nobody wanted to create a dedicated contract object. Worked fine at first. By now, 19 automations hang on those fields: renewal reminders, a commission logic, two board reports, an interface to billing. Now they want a clean contract object, multiple contracts per customer, history, the usual. The rebuild doesn't cost the two hours it would have back then. It costs six weeks, because every one of the 19 automations has to be touched, rebuilt, and tested. That is the compound interest on a crooked foundation.
 
-Jeder Flow ist eine Wette darauf, dass die Struktur darunter stimmt. Objekte, Felder, Beziehungen: Das ist die Statik. Automatisierung ist der Beton, den man drumherum gießt. Beton um ein gerades Fundament trägt. Beton um ein schiefes Fundament sorgt dafür, dass man es nie wieder geradeziehen kann, jedenfalls nicht ohne Presslufthammer.
+Every flow is a bet that the structure underneath is right. Objects, fields, relationships: that's the load-bearing structure. Automation is the concrete you pour around it. Concrete around a straight foundation carries. Concrete around a crooked foundation makes sure you can never pull it straight again, at least not without a jackhammer.
 
-Die richtige Reihenfolge ist unspektakulär. Erst die Objekte: Was sind eure Dinge? Kunden, Standorte, Verträge, Abos, Geräte, was auch immer euer Geschäft strukturiert. Dann die Felder: Was müsst ihr über diese Dinge wissen, und in welchem Format? Dann die Beziehungen: Hängt der Vertrag am Account oder an der Opportunity, kann ein Kontakt zu mehreren Firmen gehören? Erst wenn das steht, kommen Flows. Klingt nach Lehrbuch, wird trotzdem in neun von zehn Orgs andersherum gemacht, weil ein Flow in der Demo glänzt und ein Datenmodell auf keinem Screenshot gut aussieht.
+The right order is unspectacular. First the objects: what are your things? Customers, locations, contracts, subscriptions, devices, whatever structures your business. Then the fields: what do you need to know about these things, and in what format? Then the relationships: does the contract hang off the account or the opportunity, can a contact belong to several companies? Only once that stands do the flows come. Sounds like a textbook, and still gets done the other way around in nine out of ten orgs, because a flow shines in a demo and a data model doesn't look good in any screenshot.
 
-Der Test ist einfach. Malt euer Datenmodell auf ein Whiteboard, mit Kästen und Linien. Wenn dabei Streit entsteht, was ein Account ist oder wo Verträge leben: kein einziger neuer Flow, bis das geklärt ist. Jede Automatisierung, die vorher live geht, gießt den Streit in Beton.
+The test is simple. Draw your data model on a whiteboard, boxes and lines. If an argument breaks out over what an account is or where contracts live: not a single new flow until that's settled. Every automation that goes live before then pours the argument into concrete.
 
-Ist das langsamer? Am Anfang, ja. Zwei Wochen Modellarbeit fühlen sich zäh an neben einem Flow, der Freitag deployt wird. Aber ihr baut nur einmal. Die Alternative baut dreimal und reißt zweimal ab.
+Is that slower? At the start, yes. Two weeks of modeling work feel sluggish next to a flow that ships Friday. But you build only once. The alternative builds three times and tears down twice.
 
-Was in eurem System würdet ihr heute anders modellieren, und wie viele Automatisierungen halten euch genau davon ab?
+What in your system would you model differently today, and how many automations are keeping you from doing exactly that?

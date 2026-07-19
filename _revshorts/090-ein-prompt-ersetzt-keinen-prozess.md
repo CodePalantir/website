@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Ein Prompt ersetzt keinen Prozess"
-description: "Es gibt gerade eine beliebte Abkürzung in RevOps-Diskussionen. Der Lead-Qualifizierungsprozess ist chaotisch? Lassen wir die KI qualifizieren. Niemand..."
+title: "A prompt is not a process"
+description: "There's a popular shortcut in RevOps discussions right now. The lead qualification process is chaotic? Let AI qualify. Nobody knows which deals have..."
 date: 2026-06-11
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/090-ein-prompt-ersetzt-keinen-prozess/
 ---
 
-Es gibt gerade eine beliebte Abkürzung in RevOps-Diskussionen. Der Lead-Qualifizierungsprozess ist chaotisch? Lassen wir die KI qualifizieren. Niemand weiß, welche Deals Priorität haben? Die KI soll priorisieren. Das Angebot dauert zu lange? KI. Die Hoffnung dahinter ist immer dieselbe: Wir müssen den Prozess nicht aufräumen, wenn wir ihn delegieren können.
+There's a popular shortcut in RevOps discussions right now. The lead qualification process is chaotic? Let AI qualify. Nobody knows which deals have priority? AI should prioritize. Quotes take too long? AI. The hope behind it is always the same: we don't have to clean up the process if we can delegate it.
 
-Funktioniert nicht. Und zwar aus einem Grund, der unbequem präzise ist.
+Doesn't work. And for a reason that's uncomfortably precise.
 
-AI automatisiert Entscheidungen. Automatisieren kann man aber nur, was existiert. Wenn ihr einem Modell sagt "qualifiziere diesen Lead", dann braucht es eine Antwort auf die Frage, was qualifiziert bei euch eigentlich heißt. Umsatzgröße? Branche? Ein bestimmtes Verhalten? Der Bauch vom Vertriebsleiter? Wenn die Antwort in eurer Firma je nach Tageslaune anders ausfällt, fällt sie beim Modell auch anders aus, nur schneller und in größerer Stückzahl. Ihr habt dann keine Automatisierung gebaut. Ihr habt Inkonsistenz skaliert.
+AI automates decisions. But you can only automate what exists. If you tell a model "qualify this lead", it needs an answer to the question of what qualified actually means at your company. Revenue size? Industry? A specific behavior? The gut of the head of sales? If the answer at your company varies with the mood of the day, it varies with the model too, just faster and in larger volume. You haven't built automation. You've scaled inconsistency.
 
-Stellt euch den Praktikanten vor, der am ersten Tag den Auftrag bekommt: mach du das mal mit den Leads. Keine Einarbeitung, kein Kriterienkatalog, keine Beispiele für gut und schlecht. Was macht der? Er rät. Er rät plausibel, mit selbstbewusster Miene, und nach zwei Wochen merkt jemand, dass die Hälfte der Zuordnungen Unsinn war. Genau dieser Praktikant ist euer Prompt. Der Unterschied ist nur, dass der Praktikant irgendwann nachfragt. Das Modell fragt nie nach. Es liefert.
+Picture the intern who gets told on day one: you handle the leads. No onboarding, no criteria catalog, no examples of good and bad. What does he do? He guesses. He guesses plausibly, with a confident face, and after two weeks someone notices that half the assignments were nonsense. That intern is your prompt. The only difference is that the intern eventually asks. The model never asks. It delivers.
 
-Der Weg da raus ist unglamourös. Bevor irgendein Prompt geschrieben wird, muss die Entscheidungslogik auf den Tisch: Welche Inputs führen zu welchem Ergebnis, was sind die Grenzfälle, wer entscheidet die, und woran erkennt man hinterher einen Fehler? Bei einem unserer Audits stand ein "AI-Scoring" im Stack, das seit Monaten Leads bewertete. Auf die Frage, was ein Score von 74 bedeutet und was der Vertrieb damit anders macht als bei 58, gab es keine Antwort. Von niemandem. Das Scoring lief trotzdem weiter, jeden Tag, gegen Lizenzgebühr.
+The way out is unglamorous. Before any prompt gets written, the decision logic has to go on the table: which inputs lead to which outcome, what are the edge cases, who decides those, and how do you recognize a mistake afterwards? In one of our audits there was an "AI scoring" in the stack that had been rating leads for months. Asked what a score of 74 means and what sales does differently with it than with a 58, there was no answer. From anyone. The scoring kept running anyway, every day, for a license fee.
 
-Die gute Nachricht: Wer die Logik einmal sauber definiert hat, hat den harten Teil erledigt, und dann ist AI tatsächlich ein Hebel. Eine explizite Regel plus ein Modell für die Grauzonen schlägt jede Bauchentscheidung. Aber die Reihenfolge ist nicht verhandelbar.
+The good news: once you've defined the logic cleanly, you've done the hard part, and then AI genuinely is a lever. An explicit rule plus a model for the gray areas beats any gut call. But the order is non-negotiable.
 
-Erst denken, dann prompten. Wer das umdreht, delegiert sein Chaos an jemanden, der es nicht mal bemerkt.
+Think first, prompt second. Whoever flips that is delegating their chaos to someone who won't even notice.

@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Elf Pflichtfelder und keine Leads"
-description: "Öffnet mal euer wichtigstes Lead-Formular und zählt die Pflichtfelder. Vorname, Nachname, Firma, Position, Branche, Mitarbeiterzahl, Telefon, Land,..."
+title: "Eleven required fields and no leads"
+description: "Open your most important lead form and count the required fields. First name, last name, company, title, industry, employee count, phone, country,..."
 date: 2026-04-10
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/028-elf-pflichtfelder-und-keine-leads/
 ---
 
-Öffnet mal euer wichtigstes Lead-Formular und zählt die Pflichtfelder. Vorname, Nachname, Firma, Position, Branche, Mitarbeiterzahl, Telefon, Land, Umsatzklasse, "Wie haben Sie von uns erfahren", Nachricht. Elf Stück. Der Vertrieb wollte irgendwann besser qualifizierte Leads, das Marketing hat brav Felder nachgerüstet, und seitdem füllt das Ding kaum noch jemand aus.
+Open your most important lead form and count the required fields. First name, last name, company, title, industry, employee count, phone, country, revenue band, "How did you hear about us," message. Eleven of them. At some point sales wanted better qualified leads, marketing dutifully bolted on fields, and since then hardly anyone fills the thing out.
 
-Die Logik klingt erstmal vernünftig. Wer elf Felder ausfüllt, meint es ernst. Stimmt sogar. Nur messt ihr damit keine Kaufabsicht, sondern Schmerztoleranz. Der Geschäftsführer eines 80-Mann-Maschinenbauers, der abends um zehn auf dem iPad euer Angebot prüft, sucht seine Umsatzklasse in keinem Dropdown. Der Student, der für eine Hausarbeit recherchiert, tut es geduldig. Ihr filtert exakt falsch herum.
+The logic sounds reasonable at first. Anyone who fills out eleven fields is serious. That's even true. Except you're not measuring buying intent, you're measuring pain tolerance. The CEO of an 80-person machine manufacturer reviewing your offer on his iPad at ten in the evening is not going to hunt for his revenue band in a dropdown. The student researching a term paper does it patiently. You are filtering exactly backwards.
 
-Dazu kommt der eigentliche Witz: Fast alles, was ihr abfragt, lässt sich automatisch anreichern. Aus einer Firmen-Mail-Adresse zieht ein Enrichment-Tool die Firma, daraus Branche, Mitarbeiterzahl, Standort, auf Wunsch den Tech-Stack. Das passiert im Hintergrund, in Sekunden, bevor der Lead überhaupt im CRM aufschlägt. Ihr lasst Interessenten Daten abtippen, die eine API längst liefert. Das ist keine Qualifizierung. Das ist Arbeitsverlagerung auf den Kunden, und der Kunde macht da nicht mit.
+Then there's the actual punchline: almost everything you ask for can be enriched automatically. From a company email address, an enrichment tool pulls the company, from that the industry, employee count, location, the tech stack if you want. That happens in the background, in seconds, before the lead even lands in the CRM. You are making prospects type in data an API has long been able to deliver. That's not qualification. That's offloading work onto the customer, and the customer isn't playing along.
 
-Jedes Feld kostet, nicht gefühlt, sondern messbar. Die Zahlen schwanken je nach Branche und Traffic-Quelle, aber die Richtung ist immer dieselbe: pro zusätzlichem Pflichtfeld verliert ihr grob fünf bis zehn Prozent Conversion. Rechnet das auf elf hoch. Von hundert Besuchern, die ein Ein-Feld-Formular abgeschickt hätten, bleiben euch vielleicht dreißig. Die anderen siebzig waren nicht unqualifiziert. Sie hatten nur keine Lust.
+Every field costs, not anecdotally but measurably. The numbers vary by industry and traffic source, but the direction is always the same: per additional required field you lose roughly five to ten percent conversion. Scale that up to eleven. Of a hundred visitors who would have submitted a one-field form, maybe thirty are left. The other seventy weren't unqualified. They just couldn't be bothered.
 
-Was bleibt dann übrig? E-Mail als Pflichtfeld, fertig. Vielleicht ein optionales Freitextfeld für Kontext, das nebenbei die besten Qualifizierungssignale liefert, weil da Sätze stehen statt Dropdown-Werte. Alles andere reichert ihr an, und was sich nicht anreichern lässt, fragt der Vertrieb im ersten Gespräch. Der kann das, es ist sein Job.
+So what remains? Email as a required field, done. Maybe an optional free-text field for context, which incidentally delivers the best qualification signals, because it contains sentences instead of dropdown values. Everything else you enrich, and whatever can't be enriched, sales asks in the first conversation. They can do that, it's their job.
 
-Der übliche Einwand kommt aus dem Sales-Team: dann rufen wir Leute an, über die wir nichts wissen. Umgekehrt. Nach dem Enrichment wisst ihr mehr über den Lead als vorher, als er eure elf Felder mit "asdf" und einer Wegwerfadresse gefüllt hat. Genau das passiert nämlich gerade, schaut in die Daten.
+The usual objection comes from the sales team: then we're calling people we know nothing about. It's the reverse. After enrichment you know more about the lead than before, when he filled your eleven fields with "asdf" and a throwaway address. Because that's exactly what's happening right now, look at the data.
 
-Wie viele gute Deals sind dieses Jahr an Feld Nummer sieben gestorben? Ihr werdet es nie erfahren. Abbrecher tauchen in keinem Report auf.
+How many good deals died on field number seven this year? You will never know. Abandoners don't show up in any report.

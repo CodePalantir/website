@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Euer Pricing ist Verhandlungssache, ihr merkt es nur nicht"
-description: "Zieht mal einen Report: durchschnittlicher Rabatt pro AE, letzte zwölf Monate. Bei einem Kunden von uns stand da 4 Prozent beim einen und 19 beim..."
+title: "Your pricing is negotiable, you just have not noticed"
+description: "Pull a report: average discount per AE, last twelve months. At one of our clients it read 4 percent for one and 19 for the other. Same products, same..."
 date: 2026-05-06
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/054-euer-pricing-ist-verhandlungssache-ihr-merkt-es-nur-nich/
 ---
 
-Zieht mal einen Report: durchschnittlicher Rabatt pro AE, letzte zwölf Monate. Bei einem Kunden von uns stand da 4 Prozent beim einen und 19 beim anderen. Gleiche Produkte, gleiche Kundengröße, gleiche Region. Der Unterschied war kein Verhandlungsgeschick. Der eine fragte nie nach Freigabe, der andere immer, und die Freigabe kam per Zuruf: kurze Mail an den Vertriebsleiter, "passt schon", Deal raus.
+Pull a report: average discount per AE, last twelve months. At one of our clients it read 4 percent for one and 19 for the other. Same products, same customer size, same region. The difference was not negotiation skill. One never asked for approval, the other always did, and the approval came by shout-out: quick email to the VP of Sales, "fine by me", deal out the door.
 
-So sieht Pricing ohne Regeln aus. Es gibt eine Preisliste, aber sie ist eine Empfehlung. Was der Kunde wirklich zahlt, entscheidet sich in einer Mischung aus Tagesform, Quartalsende und der Frage, wer gerade wie dringend seine Quote braucht. Das kostet Marge, klar. Es kostet aber noch etwas Teureres: Eure Bestandskunden reden miteinander, und irgendwann sitzt ihr im Renewal-Gespräch einem Geschäftsführer gegenüber, der weiß, dass sein Bekannter 15 Prozent weniger zahlt.
+That is what pricing without rules looks like. There is a price list, but it is a suggestion. What the customer actually pays gets decided by a mix of daily form, end of quarter, and the question of who needs their quota how badly right now. That costs margin, obviously. But it costs something more expensive too: your existing customers talk to each other, and at some point you are sitting in a renewal conversation across from a CEO who knows his acquaintance pays 15 percent less.
 
-Die Lösung ist unspektakulär und genau deshalb wird sie so selten gebaut. Rabattstufen mit Approval-Logik, direkt im CRM. Bis 10 Prozent entscheidet der AE selbst, bis 20 der Vertriebsleiter, darüber die Geschäftsführung, und jede Freigabe läuft als Prozess im System statt als Mail im Postfach. Salesforce kann das nativ, HubSpot auch, Dynamics sowieso. Kein neues Tool, keine Lizenz, ein bis zwei Tage Konfiguration plus die eigentlich harte Arbeit: sich vorher zu einigen, welche Stufen überhaupt gelten sollen.
+The solution is unspectacular, and that is exactly why it so rarely gets built. Discount tiers with approval logic, directly in the CRM. Up to 10 percent the AE decides himself, up to 20 the VP of Sales, above that the executive team, and every approval runs as a process in the system instead of an email in an inbox. Salesforce does this natively, HubSpot too, Dynamics anyway. No new tool, no license, one to two days of configuration plus the actually hard part: agreeing beforehand on which tiers should apply at all.
 
-Der Nebeneffekt ist fast wertvoller als die Kontrolle. Freigaben im System hinterlassen Daten. Wer rabattiert wie viel, bei welchem Segment, mit welcher Begründung, und wie oft wird über 20 Prozent überhaupt genehmigt? Nach sechs Monaten liegt da ein Bild eurer echten Preisdurchsetzung, das keine Excel-Schätzung liefern kann. Vielleicht zeigt es, dass die Liste zu hoch angesetzt ist. Vielleicht zeigt es, dass ein bestimmter AE ein Coaching-Thema hat. Beides ist besser als Nichtwissen.
+The side effect is almost more valuable than the control. Approvals in the system leave data behind. Who discounts how much, in which segment, with what justification, and how often does anything above 20 percent even get approved? After six months you have a picture of your real price realization that no Excel estimate can deliver. Maybe it shows the list is set too high. Maybe it shows a particular AE has a coaching topic. Either is better than not knowing.
 
-Der übliche Einwand: das macht uns langsam, der Kunde wartet nicht auf interne Freigaben. Eine sauber gebaute Approval-Kette entscheidet in Stunden, nicht in Tagen, weil sie den Zuständigen direkt anpingt statt im CC-Verteiler zu versanden. Langsam ist das alte Modell, nur merkt es niemand, weil die Wartezeit in Mail-Threads versteckt liegt.
+The usual objection: this slows us down, the customer will not wait for internal approvals. A well-built approval chain decides in hours, not days, because it pings the responsible person directly instead of drowning in a CC list. Slow is the old model, nobody notices only because the waiting time is hidden inside email threads.
 
-Zwei Prozentpunkte weniger Streuung bei den Rabatten sind bei 5 Millionen Umsatz 100.000 Euro. Wie viel Konfigurationsaufwand wäre euch das wert?
+Two percentage points less spread in your discounts, at 5 million in revenue, is 100,000 euros. How much configuration effort would that be worth to you?

@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Intent-Daten ohne Prozess sind teuer eingekauftes Rauschen"
-description: "Firma X recherchiert gerade Thema Y. Das meldet euch euer Intent-Provider, dafür zahlt ihr fünfstellig im Jahr, und die Frage, an der alles hängt,..."
+title: "Intent data without a process is expensively purchased noise"
+description: "Company X is currently researching topic Y. That's what your intent provider reports, that's what you pay five figures a year for, and the question..."
 date: 2026-04-08
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/026-intent-daten-ohne-prozess-sind-teuer-eingekauftes-rausch/
 ---
 
-Firma X recherchiert gerade Thema Y. Das meldet euch euer Intent-Provider, dafür zahlt ihr fünfstellig im Jahr, und die Frage, an der alles hängt, lautet: Was passiert in den nächsten 48 Stunden mit dieser Information?
+Company X is currently researching topic Y. That's what your intent provider reports, that's what you pay five figures a year for, and the question everything hinges on is: what happens with that information in the next 48 hours?
 
-In den meisten Firmen: nichts. Das Signal landet in einem Dashboard, das der Marketing-Lead alle zwei Wochen öffnet. Manchmal wird ein Screenshot in einen Slack-Channel gepostet, jemand schreibt spannend drunter, und drei Tage später ist es unter anderen Nachrichten begraben. Der Provider hat geliefert. Ihr habt bezahlt. Passiert ist trotzdem nichts, weil zwischen Signal und Handlung kein Prozess existiert.
+In most companies: nothing. The signal lands in a dashboard the marketing lead opens every two weeks. Sometimes a screenshot gets posted to a Slack channel, someone writes "interesting" underneath, and three days later it's buried under other messages. The provider delivered. You paid. Nothing happened anyway, because no process exists between signal and action.
 
-Dabei ist die Verkaufsstory ja verführerisch. Wissen, wer kaufen will, bevor er sich meldet: wer würde da nein sagen? Nur ist ein Intent-Signal keine Information wie eine eingehende Demo-Anfrage. Es ist eine Wahrscheinlichkeitsaussage, oft auf Firmenebene statt Personenebene, oft zeitverzögert, oft ausgelöst von jemandem, der mit der Kaufentscheidung nichts zu tun hat. Der Praktikant, der für eine Hausarbeit recherchiert, erzeugt dasselbe Signal wie der COO mit Budget. Das macht die Daten nicht wertlos. Es macht sie zu Rohmaterial, das ohne Verarbeitung nichts wert ist.
+And yet the sales story is seductive. Knowing who wants to buy before they reach out: who would say no to that? But an intent signal is not information like an inbound demo request. It's a probability statement, often at company level rather than person level, often delayed, often triggered by someone with nothing to do with the buying decision. The intern researching a term paper generates the same signal as the COO with budget. That doesn't make the data worthless. It makes it raw material that is worth nothing without processing.
 
-Verarbeitung heißt konkret: Für jedes Signal ist vorher definiert, welcher Schwellenwert es auslöst, wer es bekommt, was der nächste Schritt ist und bis wann. Firma aus dem ICP zeigt drei Wochen in Folge Surge auf euer Kernthema, dann geht sie automatisch an den zuständigen SDR, mit den vorhandenen Kontakten aus dem CRM, einem Recherche-Auftrag und einer Frist von zwei Tagen. Ob daraus ein Anruf, eine Sequenz oder gezielte Ads werden, ist Geschmackssache. Dass etwas Definiertes daraus wird, ist keine.
+Processing means, concretely: for every signal, it's defined in advance which threshold triggers it, who receives it, what the next step is, and by when. Company from your ICP shows a surge on your core topic three weeks in a row, then it automatically goes to the responsible SDR, with the existing contacts from the CRM, a research task, and a two-day deadline. Whether that turns into a call, a sequence, or targeted ads is a matter of taste. That it turns into something defined is not.
 
-Und genau diese Strecke, vom Signal über die Anreicherung bis zur Aufgabe im CRM des richtigen Reps, ist Integrationsarbeit. Kein Intent-Provider baut sie euch, der verkauft Daten. Kein Dashboard ersetzt sie, das zeigt nur an. Es ist der unglamouröse Teil, Routing-Logik, Deduplizierung gegen bestehende Opportunities, ein Feld, das festhält, was aus dem Signal wurde, damit ihr nach sechs Monaten prüfen könnt, ob die Signale überhaupt mit Abschlüssen korrelieren.
+And exactly this pipeline, from signal through enrichment to a task in the right rep's CRM, is integration work. No intent provider builds it for you, they sell data. No dashboard replaces it, that only displays. It's the unglamorous part, routing logic, deduplication against existing opportunities, a field that records what became of the signal, so that after six months you can check whether the signals even correlate with closed deals.
 
-Diese Prüfung, nebenbei, überlebt nicht jeder Anbieter.
+That check, by the way, is one not every vendor survives.
 
-Die Reihenfolge ist deshalb nicht verhandelbar: erst der Prozess, dann der Datenvertrag. Wer es andersrum macht, kauft sich für fünfstelliges Geld ein weiteres Dashboard. Und davon habt ihr schon genug offen, oder?
+Which is why the order is non-negotiable: process first, then the data contract. Do it the other way around and you're buying yourself yet another dashboard for five-figure money. And you already have enough of those open, don't you?

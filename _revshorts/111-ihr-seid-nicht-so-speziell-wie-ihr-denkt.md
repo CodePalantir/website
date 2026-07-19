@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Ihr seid nicht so speziell, wie ihr denkt"
-description: "Der Satz fällt in fast jedem Erstgespräch, meist in Minute zehn: 'Bei uns ist das anders, unser Geschäft ist zu speziell für Standardprozesse.' Gesagt..."
+title: "You are not as special as you think"
+description: "The sentence comes up in almost every first conversation, usually around minute ten: 'It's different here, our business is too special for standard..."
 date: 2026-07-02
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/111-ihr-seid-nicht-so-speziell-wie-ihr-denkt/
 ---
 
-Der Satz fällt in fast jedem Erstgespräch, meist in Minute zehn: "Bei uns ist das anders, unser Geschäft ist zu speziell für Standardprozesse." Gesagt hat ihn der Maschinenbauer mit Projektvertrieb, die Agentur mit Retainern, der SaaS-Anbieter mit Enterprise-Deals und der Großhändler mit Rahmenverträgen. Alle im selben Wortlaut. Was schon mal ein Hinweis ist.
+The sentence comes up in almost every first conversation, usually around minute ten: "It's different here, our business is too special for standard processes." We have heard it from the machine builder with project-based sales, the agency with retainers, the SaaS company with enterprise deals, and the wholesaler with framework agreements. All in the exact same words. Which is a clue in itself.
 
-Die unbequeme Wahrheit: 80 Prozent eurer Revenue-Prozesse funktionieren wie bei allen anderen. Eine Anfrage kommt rein und muss schnell bei der richtigen Person landen. Jemand qualifiziert, jemand schreibt ein Angebot, jemand verhandelt, ein Auftrag entsteht, eine Rechnung geht raus, ein Kunde wird betreut und irgendwann verlängert oder eben nicht. Dass euer Angebot 40 Positionen hat statt vier oder euer Sales-Zyklus neun Monate dauert statt drei Wochen, ändert Parameter, nicht die Mechanik. Ein langer Trichter ist immer noch ein Trichter.
+The uncomfortable truth: 80 percent of your revenue processes work like everyone else's. An inquiry comes in and needs to land with the right person fast. Someone qualifies, someone writes a quote, someone negotiates, an order is created, an invoice goes out, a customer gets taken care of and eventually renews, or does not. That your quote has 40 line items instead of four, or your sales cycle takes nine months instead of three weeks, changes parameters, not mechanics. A long funnel is still a funnel.
 
-Interessant wird es bei den restlichen 20 Prozent, denn die zerfallen in zwei sehr unterschiedliche Sorten. Sorte eins ist echte Differenzierung: eine Preislogik, die tatsächlich anders ist als im Markt üblich, ein Konfigurationsprozess, den Wettbewerber nicht hinkriegen, eine Marge, die genau aus dieser Abweichung kommt. Dafür lohnt Custom Build, ohne Diskussion, das ist der Teil, in dem Engineering sein Geld verdient. Sorte zwei ist Gewohnheit im Kostüm der Besonderheit. Das Pflichtfeld, das eine Kollegin 2019 mal wollte und das seitdem jeder mit "x" befüllt. Der Genehmigungsschritt, dessen ursprünglichen Grund niemand mehr kennt, der aber jedes Angebot um zwei Tage verzögert. Der handgestrickte Report, der einen Standard nachbaut, nur schiefer.
+It gets interesting with the remaining 20 percent, because they split into two very different kinds. Kind one is real differentiation: a pricing logic that actually differs from what is standard in the market, a configuration process competitors cannot pull off, a margin that comes precisely from that deviation. That is worth custom build, no debate; that is the part where engineering earns its money. Kind two is habit dressed up as uniqueness. The required field a colleague wanted once in 2019 that everyone has filled with "x" ever since. The approval step whose original reason nobody remembers, but which delays every quote by two days. The hand-knitted report that recreates a standard one, only crooked.
 
-Der Test zur Unterscheidung ist erfreulich einfach: Würde ein Kunde den Unterschied bemerken oder dafür bezahlen? Wenn ja, Sonderlocke behalten, sauber bauen, dokumentieren. Wenn nein, Standard nehmen und die frei gewordene Energie dahin schieben, wo sie Wirkung hat.
+The test to tell them apart is refreshingly simple: would a customer notice the difference or pay for it? If yes, keep the custom touch, build it cleanly, document it. If no, take the standard and push the freed-up energy where it has impact.
 
-Teuer wird die Selbstüberschätzung nämlich zweimal. Einmal direkt, weil jede unnötige Sonderlocke Konfiguration, Wartung und bei jedem Systemwechsel Migrationsaufwand kostet. Und einmal indirekt, weil sie die echten 20 Prozent verdeckt. Wer 60 Anpassungen pflegt, findet die fünf nicht mehr, die tatsächlich Geld verdienen.
+Because the overconfidence gets expensive twice. Once directly, because every unnecessary customization costs configuration, maintenance, and migration effort at every system change. And once indirectly, because it buries the real 20 percent. Whoever maintains 60 customizations can no longer find the five that actually make money.
 
-Übrigens sagen einem das die wenigsten Dienstleister, denn an "ihr seid speziell" hängt angenehm viel abrechenbarer Scope. Welche eurer Sonderlocken würde einen Kunden-Test überleben? Zählt mal ehrlich. Einstellige Zahl wäre normal.
+By the way, few service providers will tell you this, because "you are special" carries a pleasantly large billable scope. Which of your custom touches would survive a customer test? Count honestly. A single-digit number would be normal.

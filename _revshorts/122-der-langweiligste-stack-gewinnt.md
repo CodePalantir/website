@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Der langweiligste Stack gewinnt"
-description: "In jedem Team gibt es jemanden, der das neue Tool gefunden hat. Frisch aus dem Product-Hunt-Feed, AI-nativ, traumhaftes Onboarding, und in der Demo..."
+title: "The most boring stack wins"
+description: "Every team has that one person who found the new tool. Fresh off the Product Hunt feed, AI-native, dreamy onboarding, and in the demo everything looks..."
 date: 2026-07-13
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/122-der-langweiligste-stack-gewinnt/
 ---
 
-In jedem Team gibt es jemanden, der das neue Tool gefunden hat. Frisch aus dem Product-Hunt-Feed, AI-nativ, traumhaftes Onboarding, und in der Demo sieht alles nach Zukunft aus. Achtzehn Monate später ist genau dieses Tool der Grund, warum der Datensync bricht: der Anbieter wurde aufgekauft, die alte API abgekündigt, der einzige Integrationspartner hat das Interesse verloren. Und ihr migriert. Wieder.
+Every team has that one person who found the new tool. Fresh off the Product Hunt feed, AI-native, dreamy onboarding, and in the demo everything looks like the future. Eighteen months later, that exact tool is the reason the data sync breaks: the vendor got acquired, the old API deprecated, the only integration partner lost interest. And you migrate. Again.
 
-Jedes exotische Tool ist ein Wartungsversprechen an die Zukunft. Mit dem Kauf verpflichtet ihr euch, dessen API-Änderungen mitzugehen, dessen Preismodellwechsel zu schlucken, dessen Integrationslücken selbst zu stopfen und im schlimmsten Fall dessen Abschaltung zu überleben. Beim etablierten Werkzeug tragen zehntausend andere Kunden dieses Versprechen mit euch: es gibt Dokumentation, Foren voller gelöster Probleme, Leute am Arbeitsmarkt, die das Ding bedienen können. Beim heißen Newcomer tragt ihr alles allein.
+Every exotic tool is a maintenance promise to the future. With the purchase, you commit to keeping up with its API changes, swallowing its pricing model shifts, plugging its integration gaps yourself, and in the worst case surviving its shutdown. With an established tool, ten thousand other customers carry that promise with you: there is documentation, forums full of solved problems, people on the job market who can operate the thing. With the hot newcomer, you carry it all alone.
 
-Der Software-Ingenieur Dan McKinley hat dafür ein brauchbares Bild geprägt: Innovationstoken. Jede Firma besitzt eine kleine, endliche Menge davon, vielleicht drei. Wer sie für eine schicke Datenbank, ein obskures Sequencing-Tool und ein experimentelles CS-System ausgibt, hat keinen mehr übrig für das, was tatsächlich Geld verdient.
+The software engineer Dan McKinley coined a useful image for this: innovation tokens. Every company owns a small, finite number of them, maybe three. Whoever spends them on a fancy database, an obscure sequencing tool, and an experimental CS system has none left for what actually makes money.
 
-Womit wir beim Einwand wären, der jetzt zuverlässig kommt: dann verlieren wir doch die Innovation. Nein. Sie wird verlagert, dorthin, wo sie Marge bringt, und das ist bei einer Firma mit 20 bis 200 Leuten fast nie die Tool-Auswahl, sondern der Prozess. Ein Speed-to-Lead unter fünf Minuten schlägt jedes AI-Feature der Welt. Eine Angebotsstrecke, die in zwei Tagen statt zwei Wochen durchläuft, bringt mehr Umsatz als das cleverste Intent-Tool im Markt. Der Prozess ist der Ort für Ehrgeiz. Der Stack ist der Ort für Verlässlichkeit.
+Which brings us to the objection that reliably comes next: but then we lose the innovation. No. It gets relocated, to where it produces margin, and in a company of 20 to 200 people that is almost never tool selection, it is process. A speed to lead under five minutes beats every AI feature in the world. A quoting path that runs through in two days instead of two weeks brings more revenue than the cleverest intent tool on the market. Process is the place for ambition. The stack is the place for reliability.
 
-Man sieht das Muster auch von der anderen Seite. Die Firmen mit den beeindruckendsten Zahlen, die wir von innen gesehen haben, laufen auf erschütternd unspektakulärer Technik: ein Standard-CRM, sauber konfiguriert, eine Handvoll Integrationen, die seit Jahren stabil sind, Postgres, wo andere ein Lakehouse pitchen würden. Nichts davon gibt eine gute Konferenz-Story her. Alles davon funktioniert am Montagmorgen um acht.
+You can see the pattern from the other side too. The companies with the most impressive numbers we have seen from the inside run on shockingly unspectacular technology: a standard CRM, cleanly configured, a handful of integrations that have been stable for years, Postgres where others would pitch a lakehouse. None of it makes a good conference story. All of it works on Monday morning at eight.
 
-Wenn euch euer Stack langweilt, ist das kein Mangel. Das ist der Zustand, für den ihr bezahlt habt. Die spannendere Frage ist eine andere: wann hat euer Prozess zuletzt jemanden beeindruckt?
+If your stack bores you, that is not a deficiency. That is the state you paid for. The more interesting question is a different one: when did your process last impress anyone?

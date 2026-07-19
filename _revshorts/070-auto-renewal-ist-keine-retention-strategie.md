@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Auto-Renewal ist keine Retention-Strategie"
-description: "Die Klausel steht in fast jedem SaaS- und Dienstleistungsvertrag: verlängert sich automatisch um zwölf Monate, wenn nicht drei Monate vorher gekündigt..."
+title: "Auto-renewal is not a retention strategy"
+description: "The clause is in almost every SaaS and services contract: renews automatically for twelve months unless cancelled three months in advance...."
 date: 2026-05-22
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/070-auto-renewal-ist-keine-retention-strategie/
 ---
 
-Die Klausel steht in fast jedem SaaS- und Dienstleistungsvertrag: verlängert sich automatisch um zwölf Monate, wenn nicht drei Monate vorher gekündigt wird. Fühlt sich an wie gesicherter Umsatz. Ist es auch. Genau ein Jahr lang.
+The clause is in almost every SaaS and services contract: renews automatically for twelve months unless cancelled three months in advance. Feels like secured revenue. It is, too. For exactly one year.
 
-Was die Klausel tatsächlich absichert, ist etwas anderes: dass niemand in eurer Firma diesen Kunden anschauen muss. Kein Gespräch, kein Termin, keine unangenehme Frage nach der Nutzung. Der Vertrag verlängert sich von allein, der Umsatz steht im Forecast, alle sind beschäftigt mit Neukunden. Auto-Renewal ist organisatorisches Beruhigungsmittel. Es kaschiert, dass es für Bestandskunden keinen Prozess gibt, und zwar so lange, bis der Kunde selbst einen baut.
+What the clause actually secures is something else: that nobody in your company has to look at this customer. No conversation, no meeting, no awkward question about usage. The contract renews itself, the revenue sits in the forecast, everyone is busy with new customers. Auto-renewal is an organizational sedative. It papers over the fact that there's no process for existing customers, right up until the customer builds one of their own.
 
-Und der Kunde baut einen, verlasst euch drauf. Irgendwann fällt der Rechnung jemand im Einkauf zum Opfer, oder ein neuer CFO lässt alle Verträge screenen, oder der eine Ansprechpartner, der das Tool mal eingeführt hat, geht. Dann kommt die Kündigung, fristgerecht, formlos, und im CRM steht ein Account, mit dem seit 14 Monaten niemand gesprochen hat. Die Rückholaktion startet bei null Kontext. Panik-Discount inklusive.
+And the customer will build one, count on it. At some point the invoice catches someone's eye in procurement, or a new CFO has every contract screened, or the one contact who once introduced the tool leaves. Then the cancellation arrives, on deadline, informal, and in the CRM sits an account nobody has spoken to in 14 months. The win-back effort starts from zero context. Panic discount included.
 
-Verlängerung ist ein Prozess, keine Klausel. Ein Prozess hat drei Dinge, die eine Klausel nicht hat: ein Datum, einen Owner und einen Gesprächsleitfaden. Das Datum heißt 120 Tage vor Renewal, automatisch als Aufgabe erzeugt, nicht als Kalendereintrag, den jemand pflegen müsste. Der Owner ist eine Person mit Namen, nicht "das CS-Team". Und der Leitfaden ist keine Skript-Folter, sondern drei Fragen: Was hat sich bei euch verändert, was nutzt ihr wirklich, was fehlt euch. Wer diese Antworten vier Monate vor Ablauf kennt, verhandelt nicht, der verlängert. Meist mit Expansion, weil im Gespräch fast immer ein neues Team, ein neuer Use Case, ein neuer Bedarf auftaucht, von dem ihr sonst nie erfahren hättet.
+Renewal is a process, not a clause. A process has three things a clause doesn't: a date, an owner, and a conversation guide. The date is 120 days before renewal, automatically created as a task, not a calendar entry somebody would have to maintain. The owner is a person with a name, not "the CS team." And the guide isn't script torture but three questions: what has changed on your side, what are you actually using, what are you missing. Whoever knows those answers four months before expiry doesn't negotiate, they renew. Usually with expansion, because in that conversation a new team, a new use case, a new need almost always surfaces that you would otherwise never have heard about.
 
-Technisch ist das ein Nachmittag. Renewal-Datum als Pflichtwert am Vertrag, eine Automatisierung, die bei 120 Tagen eine Aufgabe mit Kontext erzeugt, ein Report über alle Renewals der nächsten zwei Quartale, sortiert nach Risiko. Kein neues Tool nötig, euer CRM kann das seit Jahren. Es hat nur nie jemand gebaut, weil die Klausel ja da ist.
+Technically, this is an afternoon. Renewal date as a required value on the contract, one automation that creates a task with context at 120 days, one report of all renewals in the next two quarters, sorted by risk. No new tool needed, your CRM has been able to do this for years. It's just that nobody ever built it, because the clause is right there.
 
-Der Unterschied zeigt sich in einer einfachen Kennzahl: Wie viele eurer Verlängerungen waren dieses Jahr ein Gespräch, und wie viele waren ein Verstreichen einer Frist? Umsatz, der nur überlebt, weil der Kunde das Kündigungsfenster verpasst hat, gehört in keinen Forecast. Der gehört auf eine Risikoliste.
+The difference shows in one simple metric: how many of your renewals this year were a conversation, and how many were a deadline quietly passing? Revenue that only survives because the customer missed the cancellation window doesn't belong in any forecast. It belongs on a risk list.

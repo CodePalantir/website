@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Ein Deal ohne nächsten Schritt ist eine Hoffnung"
-description: "CRM-Systeme sammeln Pflichtfelder wie andere Leute Bonuskarten. Branche, Mitarbeiterzahl, Lead-Quelle, Region, irgendwann 14 Stück beim Anlegen einer..."
+title: "A deal without a next step is a hope"
+description: "CRM systems collect required fields the way other people collect loyalty cards. Industry, employee count, lead source, region, eventually 14 of them..."
 date: 2026-04-29
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/047-ein-deal-ohne-naechsten-schritt-ist-eine-hoffnung/
 ---
 
-CRM-Systeme sammeln Pflichtfelder wie andere Leute Bonuskarten. Branche, Mitarbeiterzahl, Lead-Quelle, Region, irgendwann 14 Stück beim Anlegen einer Opportunity, und die Reps füllen sie mit dem, was die Validierung gerade durchlässt. Die meisten dieser Felder könnt ihr streichen. Eines solltet ihr stattdessen einführen, und zwar mit Zähnen: nächster Schritt, als Text plus Datum.
+CRM systems collect required fields the way other people collect loyalty cards. Industry, employee count, lead source, region, eventually 14 of them just to create an opportunity, and the reps fill them with whatever gets past validation. Most of those fields you can cut. One you should introduce instead, and with teeth: next step, as text plus date.
 
-Klingt banal. Ist es nicht.
+Sounds trivial. It is not.
 
-Ein Deal ist per Definition eine Bewegung auf einen Abschluss zu. Wenn niemand sagen kann, was als Nächstes passiert und wann, bewegt sich nichts, und dann ist das kein Deal, sondern ein frommer Wunsch mit einem Eurobetrag dran. Das Feld erzwingt genau diese eine Unterscheidung, bei jedem einzelnen Eintrag in der Pipeline. Steht da Angebot besprechen am 22.07. mit dem Geschäftsführer, lebt der Deal. Steht da Follow-up ohne Datum, oder ein Datum, das seit drei Wochen in der Vergangenheit liegt, wisst ihr auch Bescheid.
+A deal is, by definition, movement toward a close. If nobody can say what happens next and when, nothing is moving, and then it is not a deal, it is wishful thinking with a dollar amount attached. The field forces exactly that one distinction, on every single entry in the pipeline. If it says discuss proposal on July 22 with the CEO, the deal is alive. If it says follow-up with no date, or a date that has been in the past for three weeks, you know where you stand too.
 
-Der Effekt im Pipeline-Review ist der eigentliche Hebel. Ohne das Feld erzählt der Rep zehn Minuten Deal-Geschichte, alle nicken, nichts passiert. Mit dem Feld dauert die Frage zehn Sekunden: Was ist der nächste Schritt, steht er im Kalender des Kunden? Wenn die Antwort ausweicht, ist das Coaching-Thema gefunden, meistens fehlender Zugang zum Entscheider oder eine Discovery, die den Schmerz nie sauber erhoben hat. Das Feld diagnostiziert nicht nur den Deal. Es diagnostiziert den Verkäufer.
+The effect in the pipeline review is the real lever. Without the field, the rep tells ten minutes of deal story, everyone nods, nothing happens. With the field, the question takes ten seconds: what is the next step, and is it on the customer's calendar? If the answer dodges, you have found your coaching topic, usually missing access to the decision maker or a discovery that never properly surfaced the pain. The field does not just diagnose the deal. It diagnoses the seller.
 
-Und es macht Karteileichen sichtbar, automatisch. Ein Report auf überfällige Next Steps ist die ehrlichste Pipeline-Ansicht, die es gibt, ehrlicher als jede Stage und jede Wahrscheinlichkeit, weil man Stages schönreden kann, ein verstrichenes Datum aber nicht. Firmen, die das einführen, finden im ersten Monat regelmäßig ein Viertel bis ein Drittel der Pipeline mit totem oder fehlendem nächsten Schritt. Unangenehm. Aber billiger als die Erkenntnis am Quartalsende.
+And it makes dead wood visible, automatically. A report on overdue next steps is the most honest pipeline view there is, more honest than any stage and any probability, because stages can be talked up, but a lapsed date cannot. Companies that roll this out routinely find a quarter to a third of the pipeline with a dead or missing next step in the first month. Unpleasant. But cheaper than finding out at the end of the quarter.
 
-Technisch ist das ein Nachmittag. Zwei Felder, eine Validierungsregel, die das Schließen einer Aufgabe ohne neuen nächsten Schritt blockiert, ein Report, fertig, alles nativ in jeder Suite. Kein Tool-Kauf, kein Projekt, keine Roadmap. Die Hürde ist Disziplin: Führung muss das Feld in jedem Review benutzen, sonst verkommt es in sechs Wochen zum nächsten Feld, das man halt ausfüllt.
+Technically this is one afternoon. Two fields, one validation rule that blocks closing a task without a new next step, one report, done, all native in every suite. No tool purchase, no project, no roadmap. The hurdle is discipline: leadership has to use the field in every review, or in six weeks it degrades into the next field people just fill in.
 
-Wollt ihr eure Pipeline in fünf Minuten stresstesten? Zählt die Deals, bei denen der nächste Schritt fehlt oder überfällig ist. Diese Zahl ist euer echter Forecast-Abschlag.
+Want to stress-test your pipeline in five minutes? Count the deals where the next step is missing or overdue. That number is your real forecast haircut.

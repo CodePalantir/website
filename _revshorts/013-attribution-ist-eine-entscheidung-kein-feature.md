@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Attribution ist eine Entscheidung, kein Feature"
-description: "Die Szene kennt jeder: Marketing präsentiert im Monatsreport den Deal für 80.000 Euro, gewonnen über die Demo-Anfrage vom Landingpage-Formular. Applaus..."
+title: "Attribution is a decision, not a feature"
+description: "Everyone knows the scene: marketing presents the 80,000 euro deal in the monthly report, won through the demo request from the landing page form...."
 date: 2026-03-26
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/013-attribution-ist-eine-entscheidung-kein-feature/
 ---
 
-Die Szene kennt jeder: Marketing präsentiert im Monatsreport den Deal für 80.000 Euro, gewonnen über die Demo-Anfrage vom Landingpage-Formular. Applaus für die Kampagne. Was im Report nicht steht: Vor diesem Formular lagen acht Touchpoints. Ein Podcast, zwei Webinare, ein Kollege des Käufers auf einer Messe, drei Newsletter, ein LinkedIn-Post vom Gründer. Der letzte Klick hat gewonnen. Alle anderen haben verloren, obwohl sie den Deal getragen haben.
+Everyone knows the scene: marketing presents the 80,000 euro deal in the monthly report, won through the demo request from the landing page form. Applause for the campaign. What the report doesn't show: before that form came eight touchpoints. A podcast, two webinars, a colleague of the buyer at a trade show, three newsletters, a LinkedIn post from the founder. The last click won. All the others lost, even though they carried the deal.
 
-Last Click lügt. First Touch lügt genauso, nur in die andere Richtung, dann bekommt eben der Podcast von vor 14 Monaten die gesamte Ehre und die Sales-Sequenz, die den Deal tatsächlich geschlossen hat, taucht nirgends auf. Beide Modelle sind bequem. Beide sind falsch.
+Last click lies. First touch lies just as much, only in the other direction, then the podcast from 14 months ago gets all the credit and the sales sequence that actually closed the deal shows up nowhere. Both models are convenient. Both are wrong.
 
-Und jetzt der Teil, den euch kein Anbieter erzählt: Das ist kein Tool-Problem. Dreamdata, HockeyStack, das Attributionsmodul in eurer Suite, die können alle Touchpoints sammeln und nach jedem beliebigen Modell verrechnen. Was keins davon kann: entscheiden, welches Modell für euer Geschäft stimmt. Verkauft ihr in drei Wochen an Einzelentscheider oder in neun Monaten an Buying Committees mit fünf Leuten? Kommt die Hälfte eurer Pipeline über Empfehlungen, die nie einen Klick hinterlassen? Das sind Definitionsfragen. Ein Tool beantwortet sie nicht. Es rechnet nur aus, was ihr ihm sagt.
+And now the part no vendor tells you: this is not a tool problem. Dreamdata, HockeyStack, the attribution module in your suite, they can all collect touchpoints and crunch them through any model you like. What none of them can do: decide which model is right for your business. Do you sell in three weeks to a single decision maker or in nine months to a buying committee of five? Does half your pipeline come through referrals that never leave a click? Those are definition questions. A tool doesn't answer them. It only calculates what you tell it to.
 
-Die Reihenfolge ist deshalb nicht verhandelbar. Erst die Attributionslogik festlegen, und zwar nicht Marketing alleine im stillen Kämmerlein, sondern zusammen mit Sales und Geschäftsführung, weil alle drei nachher mit der Zahl arbeiten müssen. Welche Touchpoints zählen, wie wird gewichtet, was passiert mit Offline-Kontakten, ab wann gilt ein Deal als beeinflusst. Das ist ein Nachmittag Streit im Konferenzraum. Unangenehm, aber billig.
+That's why the order is non-negotiable. First, set the attribution logic, and not marketing alone in a quiet back room, but together with sales and leadership, because all three have to work with the number afterwards. Which touchpoints count, how they're weighted, what happens with offline contacts, at what point a deal counts as influenced. That's an afternoon of arguing in a conference room. Uncomfortable, but cheap.
 
-Wer die Reihenfolge umdreht, kauft erst das Tool, misst dann irgendwas und optimiert am Ende auf eine Zahl, die im Vertrieb keiner glaubt. Genau das passiert dauernd. Marketing steuert Budget nach einem Modell, das Sales für Fantasie hält, und in jedem Quartalsmeeting läuft dieselbe Debatte, ob die Kampagne den Deal gebracht hat oder der Kollege mit dem guten Draht zum Kunden. Die Debatte kostet mehr als jede Attributionslizenz.
+Whoever flips the order buys the tool first, measures something, and ends up optimizing toward a number nobody in sales believes. That's exactly what happens all the time. Marketing steers budget by a model sales considers fantasy, and every quarterly meeting features the same debate about whether the campaign brought the deal or the colleague with the good rapport with the customer. That debate costs more than any attribution license.
 
-Ein Modell, auf das sich alle geeinigt haben, schlägt ein präzises Modell, das nur Marketing versteht. Immer.
+A model everyone has agreed on beats a precise model only marketing understands. Every time.
 
-Also, bevor ihr das nächste Attributions-Tool testet: Habt ihr die Logik schon aufgeschrieben, die es rechnen soll?
+So, before you trial the next attribution tool: have you written down the logic it's supposed to calculate?

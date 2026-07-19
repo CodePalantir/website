@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Ihr plant Q4 wie Q2, dabei kennen eure Daten den Unterschied längst"
-description: "Die meisten Jahresplanungen im Mittelstand funktionieren so: Zielumsatz festlegen, durch zwölf teilen, fertig ist die Monatsplanung. Vielleicht noch..."
+title: "You plan Q4 like Q2, yet your data has known the difference for years"
+description: "Most annual planning in the mid-market works like this: set a revenue target, divide by twelve, monthly plan done. Maybe sprinkle a bit of growth on..."
 date: 2026-07-08
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/117-ihr-plant-q4-wie-q2-dabei-kennen-eure-daten-den-untersch/
 ---
 
-Die meisten Jahresplanungen im Mittelstand funktionieren so: Zielumsatz festlegen, durch zwölf teilen, fertig ist die Monatsplanung. Vielleicht noch ein bisschen Wachstum obendrauf verteilt. Sieht ordentlich aus. Ignoriert nur komplett, wie euer Geschäft tatsächlich atmet.
+Most annual planning in the mid-market works like this: set a revenue target, divide by twelve, monthly plan done. Maybe sprinkle a bit of growth on top. Looks tidy. It just completely ignores how your business actually breathes.
 
-Denn euer Geschäft atmet. Jedes tut das. Der August, in dem im DACH-Raum niemand einen Termin annimmt. Der Oktober, in dem die Budgets fürs nächste Jahr verhandelt werden und Deals plötzlich Tempo aufnehmen. Der Dezember, der sich in zwei Wochen Endspurt und zwei Wochen Friedhof teilt. Das Q1, in dem die Pipeline voll aussieht, weil alles Verschobene aus Q4 dort landet, aber die Abschlussquote unter dem Jahresschnitt liegt. Diese Muster sind keine Anekdoten. Sie stehen in euren eigenen Daten, drei, vier, fünf Jahre zurück, mit Zeitstempel und Betrag.
+Because your business breathes. Every business does. August, when nobody in the DACH region accepts a meeting. October, when next year's budgets are being negotiated and deals suddenly pick up speed. December, which splits into two weeks of final sprint and two weeks of graveyard. Q1, when the pipeline looks full because everything pushed from Q4 lands there, but the close rate sits below the annual average. These patterns are not anecdotes. They are sitting in your own data, three, four, five years back, with timestamps and amounts.
 
-Sie werden nur nicht gefragt.
+They just never get asked.
 
-Das Absurde daran: Die Analyse ist keine Raketenwissenschaft. Opportunity-Historie exportieren, Abschlüsse nach Monat gruppieren, drei Jahre übereinanderlegen. Ein Nachmittag Arbeit, wenn die Daten halbwegs sauber sind, und das "wenn" ist zugegeben oft der eigentliche Engpass. Danach seht ihr Dinge wie: 22 Prozent des Jahresumsatzes fallen bei euch in den November, der Juni bringt konstant die längsten Sales Cycles, und die Deals, die im August erstellt werden, schließen zu 40 Prozent schlechter ab. Solche Zahlen haben Konsequenzen. Ganz praktische.
+The absurd part: the analysis is not rocket science. Export the opportunity history, group closes by month, stack three years on top of each other. An afternoon of work if the data is halfway clean, and that "if" is admittedly often the real bottleneck. After that, you see things like: 22 percent of your annual revenue lands in November, June consistently produces the longest sales cycles, and deals created in August close 40 percent worse. Numbers like that have consequences. Very practical ones.
 
-Wer seine Saisonalität kennt, setzt Quoten, die Reps nicht im August demoralisieren und im November künstlich bremsen. Legt die Outbound-Kampagne so, dass die Meetings im Budget-Fenster landen statt drei Wochen danach. Plant den Forecast fürs Board mit historischen Konversionskurven statt mit Hoffnung. Und erkennt echte Probleme schneller: Ein schwacher Mai ist Alarm, wenn der Mai historisch stark ist, und normal, wenn er es nie war. Ohne Basislinie ist beides dasselbe Bauchgrummeln.
+Whoever knows their seasonality sets quotas that do not demoralize reps in August and artificially brake them in November. Times the outbound campaign so the meetings land inside the budget window instead of three weeks after it. Plans the board forecast with historical conversion curves instead of hope. And spots real problems faster: a weak May is an alarm if May is historically strong, and normal if it never was. Without a baseline, both are the same stomach rumble.
 
-Stattdessen wird jedes Jahr im Januar dieselbe Szene gespielt. Das Q3 wird verfehlt, es folgt die hektische Ursachensuche, und die Antwort steht seit Jahren unbeachtet im CRM: Das Q3 wird immer verfehlt, wenn man es wie ein Q2 plant.
+Instead, the same scene plays out every January. Q3 gets missed, the frantic root-cause hunt follows, and the answer has been sitting ignored in the CRM for years: Q3 always gets missed when you plan it like a Q2.
 
-Ihr sitzt auf Jahren eurer eigenen Geschichte. Sie zu befragen kostet einen Nachmittag. Sie zu ignorieren kostet jedes Jahr dieselben Überraschungen. Wann habt ihr eure Abschlussdaten zuletzt nach Monaten aufgerissen, ehrlich?
+You are sitting on years of your own history. Asking it costs an afternoon. Ignoring it costs the same surprises every year. When did you last break your close data down by month, honestly?

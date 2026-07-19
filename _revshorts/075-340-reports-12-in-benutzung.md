@@ -1,27 +1,29 @@
 ---
 layout: revshort
-title: "340 Reports, 12 in Benutzung"
-description: "Neulich in einer Kunden-Org nachgezählt: 340 Reports. Dann die Nutzungsstatistik daneben gelegt. Zwölf davon wurden im letzten Quartal überhaupt..."
+title: "340 reports, 12 in use"
+description: "Recently counted in a client org: 340 reports. Then laid the usage stats next to them. Twelve of them were opened at all last..."
 date: 2026-05-27
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/075-340-reports-12-in-benutzung/
 ---
 
-Neulich in einer Kunden-Org nachgezählt: 340 Reports. Dann die Nutzungsstatistik daneben gelegt. Zwölf davon wurden im letzten Quartal überhaupt geöffnet. Die anderen 328 sind Sediment. Gebaut für ein Meeting im Herbst 2023, für eine Vertriebsleiterin, die längst woanders arbeitet, für eine Frage, die niemand mehr stellt.
+Recently counted in a client org: 340 reports. Then laid the usage stats next to them. Twelve of them were opened at all last quarter. The other 328 are sediment. Built for a meeting in fall 2023, for a sales director who has long since moved on, for a question nobody asks anymore.
 
-Kostet ja nichts, so ein Report. Stimmt leider nicht.
+A report costs nothing, right? Unfortunately not true.
 
-Der Schaden fängt bei der Suche an. Wer eine aktuelle Pipeline-Sicht braucht, findet sieben Kandidaten: "Pipeline aktuell", "Pipeline aktuell NEU", "Pipeline Q3 Kopie", alle fast gleich, alle mit leicht anderen Filtern. Einer schließt Renewals ein, einer nicht, einer filtert auf ein Team, das es seit der Reorg nicht mehr gibt. Also baut man Nummer acht. So entsteht Wildwuchs, nicht durch Faulheit, sondern durch Misstrauen gegenüber dem Bestand.
+The damage starts with search. Whoever needs a current pipeline view finds seven candidates: "Pipeline current," "Pipeline current NEW," "Pipeline Q3 copy," all almost identical, all with slightly different filters. One includes renewals, one doesn't, one filters on a team that hasn't existed since the reorg. So you build number eight. That's how the sprawl grows, not out of laziness, but out of distrust of what's already there.
 
-Der größere Schaden ist das Vertrauensproblem. Wenn im Montagsmeeting zwei Leute mit zwei Zahlen für dieselbe Frage aufschlagen, diskutiert die Runde zwanzig Minuten über Filter statt über Deals. Danach glaubt keiner mehr irgendeinem Report, und die wirklich wichtigen Auswertungen erben den Ruf der 328 Leichen.
+The bigger damage is the trust problem. When two people show up to the Monday meeting with two numbers for the same question, the room debates filters for twenty minutes instead of deals. After that, nobody believes any report anymore, and the analyses that really matter inherit the reputation of the 328 corpses.
 
-Die Regel dagegen ist kurz: Jeder Report braucht einen Owner und einen Zweck, sonst stirbt er. Owner heißt ein Name, kein Team. Zweck heißt eine Entscheidung oder ein Meeting, das der Report füttert. Beides passt in die Beschreibungszeile, die in jedem CRM existiert und in fast jedem leer ist.
+The rule against it is short: every report needs an owner and a purpose, or it dies. Owner means a name, not a team. Purpose means a decision or a meeting the report feeds. Both fit in the description line that exists in every CRM and is empty in almost every one.
 
-Und einmal im Jahr: Inventur. Nutzungsdaten ziehen, alles ohne Öffnung in zwölf Monaten auf eine Löschliste, zwei Wochen Einspruchsfrist, dann weg. Wem das zu mutig ist: erst in einen Archiv-Ordner verschieben, nach sechs Monaten ohne Beschwerde endgültig löschen. In der Praxis hat sich noch niemand einen gelöschten Report zurückgewünscht. Beschwert hat sich auch niemand, denn Reports, die keiner öffnet, vermisst konsequenterweise auch keiner.
+And once a year: inventory. Pull usage data, everything without an open in twelve months goes on a deletion list, two weeks for objections, then gone. If that's too bold for you: move to an archive folder first, delete for good after six months without a complaint. In practice, nobody has ever wished a deleted report back. Nobody has complained either, because reports nobody opens are, consistently, reports nobody misses.
 
-Übrigens gilt das alles genauso für Dashboards, E-Mail-Templates und Automatisierungen. Systeme wachsen von allein. Schrumpfen muss jemand entscheiden.
+By the way, all of this applies just as much to dashboards, email templates, and automations. Systems grow on their own. Shrinking takes a decision.
 
-Löschen fühlt sich nach Verlust an, dabei ist es Hygiene. Die zwölf Reports, die übrig bleiben, sind danach mehr wert als die 340 vorher, weil ihnen wieder jemand glaubt. Ein aufgeräumtes Reporting ist kein ästhetisches Projekt, sondern die Voraussetzung dafür, dass Zahlen im Meeting wieder etwas entscheiden dürfen.
+Deleting feels like loss, but it's hygiene. The twelve reports that remain are worth more afterwards than the 340 before, because someone believes them again. A cleaned-up reporting setup isn't an aesthetic project, it's the precondition for numbers being allowed to decide anything in meetings again.
 
-Wann habt ihr zuletzt einen Report gelöscht? Und falls die Antwort "nie" lautet: Was sagt das über die anderen 328?
+When did you last delete a report? And if the answer is "never": what does that say about the other 328?

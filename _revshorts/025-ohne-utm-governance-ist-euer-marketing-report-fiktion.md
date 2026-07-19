@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Ohne UTM-Governance ist euer Marketing-Report Fiktion"
-description: "Sucht mal in euren Kampagnendaten nach der letzten Messe. Ihr werdet sie finden. Dreimal."
+title: "Without UTM governance, your marketing report is fiction"
+description: "Search your campaign data for your last trade show. You will find it. Three times."
 date: 2026-04-07
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/025-ohne-utm-governance-ist-euer-marketing-report-fiktion/
 ---
 
-Sucht mal in euren Kampagnendaten nach der letzten Messe. Ihr werdet sie finden. Dreimal.
+Search your campaign data for your last trade show. You will find it. Three times.
 
-Einmal als messe2026, einmal als Messe_2026_Q2, einmal als das, was der Praktikant im Mai für richtig hielt, vielleicht event-hannover-neu-final. Dazu Traffic von linkedin, LinkedIn und linked-in, was für jede Auswertung drei verschiedene Quellen sind. Paid und organisch fließen ineinander, weil utm_medium mal cpc, mal paid, mal social heißt. Und auf dieser Datenbasis steht dann im Quartalsreport ein Balkendiagramm mit der Überschrift Kanal-Performance, und jemand trifft Budget-Entscheidungen damit.
+Once as tradeshow2026, once as TradeShow_2026_Q2, once as whatever the intern thought was right in May, maybe event-hannover-new-final. Add traffic from linkedin, LinkedIn, and linked-in, which any analysis counts as three different sources. Paid and organic bleed into each other because utm_medium is sometimes cpc, sometimes paid, sometimes social. And on top of that data foundation, the quarterly report shows a bar chart titled Channel Performance, and someone makes budget decisions with it.
 
-Das ist keine Auswertung. Das ist Belletristik mit Achsenbeschriftung.
+That's not analysis. That's fiction with axis labels.
 
-Der Mechanismus dahinter ist simpel und wird trotzdem chronisch unterschätzt: UTM-Parameter sind Freitext. Jeder, der einen Link baut, entscheidet in dem Moment selbst, wie eure Datenwelt aussieht. Die Agentur taggt nach ihrem Schema, das Sales-Team taggt gar nicht, die Werkstudentin kopiert einen alten Link und ändert das Datum. Niemand macht absichtlich etwas kaputt. Es fehlt nur die eine Instanz, die festlegt, wie es richtig heißt.
+The mechanism behind it is simple and chronically underestimated anyway: UTM parameters are free text. Everyone who builds a link decides, in that moment, what your data world looks like. The agency tags by its own scheme, the sales team doesn't tag at all, the working student copies an old link and changes the date. Nobody is breaking anything on purpose. There is just no single authority that defines what the right name is.
 
-Und jetzt der Teil, der viele überrascht: Die Lösung ist kein Tool. Es gibt UTM-Builder, Tagging-Tools, ganze Attribution-Suiten, die euch verkauft werden, sobald ihr das Problem aussprecht. Aber ein Tool kann keine Frage beantworten, die ihr nie entschieden habt. Heißt die Quelle linkedin oder linkedin-ads? Ist ein Newsletter ein Medium oder eine Kampagne? Kleinschreibung immer, ja oder nein? Das sind Entscheidungen. Ein Dokument mit vielleicht 15 Zeilen, einmal festgelegt, mit Ansage an alle, die Links bauen.
+And now the part that surprises many: the solution is not a tool. There are UTM builders, tagging tools, entire attribution suites that get pitched to you the moment you say the problem out loud. But a tool can't answer a question you never decided. Is the source called linkedin or linkedin-ads? Is a newsletter a medium or a campaign? Lowercase always, yes or no? Those are decisions. A document of maybe 15 lines, set once, announced to everyone who builds links.
 
-Danach, und erst danach, lohnt sich Technik: ein zentraler Link-Builder statt Handarbeit, eine Validierung, die falsch getaggte Kampagnen im CRM sichtbar macht, ein Mapping, das die Altlasten der letzten zwei Jahre auf die neue Konvention umschreibt. Das ist ein überschaubares Stück Arbeit, ein paar Tage, kein Projekt.
+After that, and only after that, technology is worth it: a central link builder instead of handwork, validation that makes mistagged campaigns visible in the CRM, a mapping that rewrites the legacy mess of the last two years onto the new convention. That's a manageable piece of work, a few days, not a project.
 
-Was dabei rauskommt, klingt unspektakulär und ändert alles: Zahlen, denen man trauen kann. Erst dann ergibt die Diskussion über Attribution überhaupt Sinn. Wer über Multi-Touch-Modelle philosophiert, während dieselbe Kampagne unter drei Namen läuft, verfeinert die Nachkommastellen einer erfundenen Zahl.
+What comes out of it sounds unspectacular and changes everything: numbers you can trust. Only then does the attribution discussion even make sense. Anyone philosophizing about multi-touch models while the same campaign runs under three names is refining the decimal places of a made-up number.
 
-Der Test dauert fünf Minuten. Zieht euch die Liste aller utm_source-Werte der letzten zwölf Monate und zählt die Varianten. Wenn es mehr als 20 sind, wisst ihr, was euer letzter Marketing-Report wert war.
+The test takes five minutes. Pull the list of all utm_source values from the last twelve months and count the variants. If there are more than 20, you know what your last marketing report was worth.

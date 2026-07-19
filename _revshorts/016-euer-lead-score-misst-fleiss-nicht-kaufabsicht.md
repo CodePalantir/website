@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Euer Lead-Score misst Fleiß, nicht Kaufabsicht"
-description: "Zehn Punkte für eine geöffnete Mail. Fünf für den Klick, fünfzehn fürs Whitepaper, zwanzig für den Webinar-Besuch. Ab achtzig Punkten gilt der Lead als..."
+title: "Your lead score measures diligence, not intent"
+description: "Ten points for an opened email. Five for the click, fifteen for the whitepaper, twenty for attending the webinar. Above eighty points the lead counts..."
 date: 2026-03-29
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/016-euer-lead-score-misst-fleiss-nicht-kaufabsicht/
 ---
 
-Zehn Punkte für eine geöffnete Mail. Fünf für den Klick, fünfzehn fürs Whitepaper, zwanzig für den Webinar-Besuch. Ab achtzig Punkten gilt der Lead als heiß und wandert an Sales. Klingt nach System. Ist aber nur Arithmetik über Aktivität, und Aktivität sagt nichts über Budget, nichts über Timing, nichts über die Frage, ob dieser Mensch überhaupt etwas entscheiden darf.
+Ten points for an opened email. Five for the click, fifteen for the whitepaper, twenty for attending the webinar. Above eighty points the lead counts as hot and moves to sales. Sounds like a system. It's just arithmetic on activity, and activity says nothing about budget, nothing about timing, nothing about whether this person is even allowed to decide anything.
 
-Das Ergebnis kennt jeder Vertriebler: der Dauerklicker. Ein Werkstudent bei einem Konzern, der jeden Newsletter öffnet, jedes Whitepaper zieht, jedes Webinar bucht, weil er eine Seminararbeit über euer Themenfeld schreibt. Score: 240. Kaufwahrscheinlichkeit: null. Daneben der Geschäftsführer eines 80-Mann-Maschinenbauers, der einmal die Preisseite besucht hat und drei Minuten auf dem Case Study geblieben ist. Score: 25. Der Score sortiert den Werkstudenten nach oben und den echten Deal nach unten, und zwar systematisch, weil er Fleiß belohnt statt Absicht.
+Every seller knows the result: the serial clicker. A working student at a large corporation who opens every newsletter, pulls every whitepaper, books every webinar because he's writing a term paper on your field. Score: 240. Probability of buying: zero. Next to him, the CEO of an 80-person machine builder who visited the pricing page once and spent three minutes on the case study. Score: 25. The score sorts the working student to the top and the real deal to the bottom, and it does so systematically, because it rewards diligence instead of intent.
 
-Dazu kommt die Inflation. Jede neue Kampagne verteilt Punkte, keine nimmt welche weg, und nach zwei Jahren hat die halbe Datenbank Scores jenseits der Schwelle. Gepflegt wird das Modell von der Person, die gerade Zeit hat, oft genug der Praktikant im Marketing, der die Punktwerte nach Gefühl setzt, weil ihm niemand eine Logik mitgegeben hat. Sales merkt das nach der dritten toten Übergabe und hört auf, den Score anzuschauen. Völlig zu Recht. Ab da ist das Scoring nicht nur nutzlos, sondern Fassade: Es suggeriert Priorisierung, wo keine stattfindet.
+Then there's the inflation. Every new campaign hands out points, none takes any away, and after two years half the database has scores past the threshold. The model gets maintained by whoever has time right now, often enough the marketing intern, who sets the point values by feel because nobody gave him a logic. Sales notices after the third dead handoff and stops looking at the score. Completely justified. From that moment the scoring isn't just useless, it's a facade: it suggests prioritization where none is happening.
 
-Was fehlt, ist keine Software. HubSpot, Salesforce, jedes MAP kann Scoring nativ, das Rechenwerk ist das kleinste Problem. Was fehlt, ist eine Hypothese. Wer kauft bei euch wirklich, und woran erkennt man das früh? Vielleicht ist es die Firmengröße plus Branche plus Preisseiten-Besuch. Vielleicht ist es die zweite Person aus demselben Unternehmen innerhalb einer Woche. Das steht in euren gewonnenen Deals der letzten zwei Jahre, man muss nur reinschauen. Und dann braucht die Hypothese einen Feedback-Loop: Sales bewertet jede Übergabe, die Punktlogik wird quartalsweise gegen echte Abschlüsse geprüft und nachjustiert.
+What's missing isn't software. HubSpot, Salesforce, any MAP can score natively, the math engine is the smallest problem. What's missing is a hypothesis. Who actually buys from you, and how do you spot it early? Maybe it's company size plus industry plus a pricing page visit. Maybe it's the second person from the same company within a week. It's sitting in your won deals from the last two years, you just have to look. And then the hypothesis needs a feedback loop: sales grades every handoff, the point logic gets checked against real closed deals quarterly and adjusted.
 
-Ohne diese beiden Dinge, Hypothese und Loop, ist Lead-Scoring Nummerologie. Man addiert Zahlen, die jemand mal ausgedacht hat, und behandelt die Summe wie eine Wahrheit.
+Without those two things, hypothesis and loop, lead scoring is numerology. You add up numbers someone once made up and treat the sum like a truth.
 
-Kleiner Test für euer Modell: Zieht die Scores eurer letzten zehn gewonnenen Deals am Tag der Übergabe. Wenn ihr jetzt zögert, kennt ihr die Antwort schon.
+Quick test for your model: pull the scores of your last ten won deals on the day of handoff. If you're hesitating right now, you already know the answer.

@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Bidirektional heißt doppelte Wahrheit"
-description: "'Der Sync soll bidirektional sein, alle Felder, beide Richtungen.' Dieser Satz fällt in fast jedem Integrationsprojekt, meistens früh, meistens..."
+title: "Bidirectional means two truths"
+description: "'The sync should be bidirectional, all fields, both directions.' This sentence comes up in almost every integration project, usually early, usually..."
 date: 2026-06-02
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/081-bidirektional-heisst-doppelte-wahrheit/
 ---
 
-"Der Sync soll bidirektional sein, alle Felder, beide Richtungen." Dieser Satz fällt in fast jedem Integrationsprojekt, meistens früh, meistens beiläufig. Er klingt nach Vollständigkeit. Bestellt wird damit Datenchaos mit Lieferzeit.
+"The sync should be bidirectional, all fields, both directions." This sentence comes up in almost every integration project, usually early, usually in passing. It sounds like completeness. What it actually orders is data chaos with a delivery date.
 
-Denn bidirektional über alle Felder heißt: Es gibt keine führende Quelle mehr. Zwei Systeme dürfen dieselbe Information ändern, und irgendein Mechanismus muss entscheiden, wer gewinnt. Meistens gewinnt der letzte Schreibzugriff. Klingt fair, ist aber Roulette. Marketing korrigiert im MAP die Branche, drei Minuten später überschreibt ein CRM-Workflow sie mit dem alten Wert, weil er aus einem ganz anderen Grund den Datensatz angefasst hat. Niemand sieht das. Es gibt keinen Fehler, keinen Alert, nur zwei Systeme, die sich gegenseitig leise die Daten kaputtschreiben. Der Klassiker ist die Sync-Schleife: System A updated, B synct zurück, A wertet das als Änderung, synct wieder, und plötzlich fragt ihr euch, warum das API-Kontingent um 3 Uhr nachts leer ist.
+Because bidirectional across all fields means: there is no leading source anymore. Two systems may change the same information, and some mechanism has to decide who wins. Usually the last write wins. Sounds fair, is roulette. Marketing corrects the industry in the MAP, three minutes later a CRM workflow overwrites it with the old value, because it touched the record for an entirely different reason. Nobody sees it. There's no error, no alert, just two systems quietly writing each other's data to pieces. The classic is the sync loop: system A updates, B syncs back, A registers that as a change, syncs again, and suddenly you're wondering why the API quota is empty at 3 a.m.
 
-Der Schmerz ist doppelt, weil auch die Wahrheit doppelt ist. Wenn im CRM eine andere Telefonnummer steht als im Support-Tool, welche stimmt? Ohne definierte Führung ist die Antwort: keine Ahnung, kommt drauf an, wer zuletzt gespeichert hat. Das ist der Moment, in dem der Vertrieb aufhört, den Daten zu trauen, und anfängt, wieder Excel-Listen zu pflegen. Dann habt ihr drei Wahrheiten.
+The pain is double because the truth is double too. If the CRM shows a different phone number than the support tool, which one is right? Without defined leadership, the answer is: no idea, depends on who saved last. That's the moment sales stops trusting the data and starts maintaining Excel lists again. Then you have three truths.
 
-Die Lösung ist unspektakulär und funktioniert seit Jahrzehnten: Ein System führt, das andere folgt, und zwar pro Feld entschieden, nicht pauschal pro Objekt. Firmenname und Branche führt das CRM, weil dort angereichert und geprüft wird. Consent-Status führt das Marketing-Tool, weil dort die Opt-ins entstehen. Ticketvolumen führt das Support-System, das CRM zeigt es nur an. Das ergibt eine Tabelle, vielleicht 40 Zeilen, Feld, Owner, Richtung, Konfliktregel. Eine langweilige Tabelle, zugegeben. Sie ist das wertvollste Dokument der ganzen Integration, und sie zu erarbeiten dauert einen Nachmittag mit den richtigen Leuten am Tisch.
+The solution is unspectacular and has worked for decades: one system leads, the other follows, decided per field, not blanket per object. Company name and industry are led by the CRM, because that's where enrichment and verification happen. Consent status is led by the marketing tool, because that's where the opt-ins originate. Ticket volume is led by the support system, the CRM only displays it. That yields a table, maybe 40 rows: field, owner, direction, conflict rule. A boring table, admittedly. It's the most valuable document of the entire integration, and producing it takes one afternoon with the right people at the table.
 
-Echte Zwei-Wege-Fälle bleiben übrig, klar, ein Opportunity-Status, den beide Seiten fortschreiben müssen. Die behandelt man einzeln, mit Zeitstempeln und expliziter Konfliktlogik, und man hält die Liste so kurz wie irgend möglich.
+Genuine two-way cases remain, sure, an opportunity status both sides have to keep advancing. You handle those individually, with timestamps and explicit conflict logic, and you keep the list as short as humanly possible.
 
-Wer euch "beide Richtungen, alle Felder" als Feature verkauft, hat entweder die Konfliktfälle nie durchdacht oder rechnet fest damit, dass ihr ihn fürs Aufräumen nochmal bucht. Welches eurer Felder hat heute eigentlich einen Owner?
+Whoever sells you "both directions, all fields" as a feature has either never thought through the conflict cases or is firmly counting on you booking them again for the cleanup. Which of your fields actually has an owner today?

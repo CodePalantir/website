@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Der Zapier-Friedhof"
-description: "Bestandsaufnahme bei einem Kunden, 60 Leute, solide gewachsen: 47 Zaps. Gebaut über vier Jahre von vier verschiedenen Leuten, von denen zwei nicht mehr..."
+title: "The Zapier graveyard"
+description: "Stack inventory at a client, 60 people, solid growth: 47 zaps. Built over four years by four different people, two of whom no longer work there...."
 date: 2026-03-30
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/017-der-zapier-friedhof/
 ---
 
-Bestandsaufnahme bei einem Kunden, 60 Leute, solide gewachsen: 47 Zaps. Gebaut über vier Jahre von vier verschiedenen Leuten, von denen zwei nicht mehr in der Firma sind. Dokumentation existiert nicht, Namenskonventionen auch nicht, ein Zap heißt "Test Kopie 2 FINAL". Und einer davon, der die Deals ans Rechnungstool übergibt, schlägt seit drei Wochen still fehl, weil irgendwer im CRM ein Feld umbenannt hat. Gemerkt hat es niemand. Aufgefallen ist es erst, als ein Kunde anrief und fragte, wo seine Rechnung bleibt.
+Stack inventory at a client, 60 people, solid growth: 47 zaps. Built over four years by four different people, two of whom no longer work there. Documentation doesn't exist, naming conventions don't either, one zap is called "Test Copy 2 FINAL". And one of them, the one that hands deals to the invoicing tool, has been silently failing for three weeks because somebody renamed a field in the CRM. Nobody noticed. It only surfaced when a customer called to ask where his invoice was.
 
-Das ist kein Zapier-Problem. Zapier und Make sind völlig legitime Werkzeuge, für Prototypen sogar die besten: In einer Stunde steht ein Workflow, den man erst mal beobachten kann, bevor man ihn richtig baut. Für Low-Volume-Kram, der beim Ausfall niemandem wehtut, die Slack-Nachricht bei neuen Deals, der Export in ein Sheet, spricht auch dauerhaft nichts dagegen.
+That's not a Zapier problem. Zapier and Make are perfectly legitimate tools, for prototypes even the best: in an hour you have a workflow you can observe for a while before building it properly. For low-volume stuff that hurts nobody when it fails, the Slack message on new deals, the export into a sheet, there's nothing wrong with them long term either.
 
-Das Problem beginnt an einer klar benennbaren Grenze, und die heißt geschäftskritisch. Sobald ein Workflow Umsatz berührt, Leads routet, Rechnungen auslöst, Verträge anstößt, ändert sich die Anforderung fundamental. Nicht die Funktion ändert sich. Die Fehlerbehandlung.
+The problem starts at a clearly nameable line, and that line is called business-critical. The moment a workflow touches revenue, routes leads, triggers invoices, kicks off contracts, the requirement changes fundamentally. Not the function. The error handling.
 
-Genau da liegt der Unterschied zwischen Automatisierungs-Kleber und Integrationsarchitektur. Kleber führt aus, solange alles gut geht. Architektur geht davon aus, dass Dinge schiefgehen, weil sie das tun. APIs haben Timeouts, Systeme haben Wartungsfenster, Kollegen benennen Felder um. Eine Integration, die das ignoriert, ist keine kleinere Version einer richtigen Integration. Sie ist eine tickende, nur weiß keiner, wie laut es knallt und wann.
+That's exactly where the difference between automation glue and integration architecture lives. Glue executes as long as everything goes well. Architecture assumes things will go wrong, because they do. APIs have timeouts, systems have maintenance windows, coworkers rename fields. An integration that ignores this isn't a smaller version of a real integration. It's a ticking one, except nobody knows how loud the bang will be or when.
 
-Konkret heißt Architektur drei Dinge. Monitoring: Wenn etwas fehlschlägt, geht innerhalb von Minuten ein Alert an einen Menschen, nicht in einen Log, den keiner liest. Retry-Logik: Ein Timeout um 3 Uhr nachts wird automatisch wiederholt statt kommentarlos verworfen, und was nach drei Versuchen noch failt, landet in einer Queue zur manuellen Klärung, damit kein Datensatz einfach verschwindet. Und Ownership: Ein Mensch mit Namen ist zuständig, kennt die Strecken, wird informiert, bevor jemand ein Feld anfasst. Ob darunter dann Make läuft, n8n, Workato oder Custom Code, ist ehrlich gesagt zweitrangig.
+Concretely, architecture means three things. Monitoring: when something fails, an alert reaches a human within minutes, not a log nobody reads. Retry logic: a timeout at 3 a.m. gets retried automatically instead of silently discarded, and whatever still fails after three attempts lands in a queue for manual review, so no record simply vanishes. And ownership: a person with a name is responsible, knows the routes, gets informed before anyone touches a field. Whether Make runs underneath, or n8n, Workato, or custom code, is honestly secondary.
 
-Die Frage an euren Stack ist deshalb nicht, welches Automatisierungstool ihr nutzt. Die Frage ist: Wenn heute Nacht eure wichtigste Strecke bricht, wer merkt es, und wann? Wenn die Antwort "der Kunde, nächste Woche" lautet, wisst ihr, was zu tun ist.
+So the question for your stack isn't which automation tool you use. The question is: if your most important route breaks tonight, who notices, and when? If the answer is "the customer, next week," you know what to do.

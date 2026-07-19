@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Lifecycle-Stages: definiert 2023, gepflegt nie"
-description: "Es gab einen Workshop. Zwei Stunden, ein Whiteboard, am Ende stand das Modell: Subscriber, Lead, MQL, SQL, Opportunity, Customer. Sauber definiert, ins..."
+title: "Lifecycle stages: defined in 2023, maintained never"
+description: "There was a workshop. Two hours, a whiteboard, and at the end there was the model: Subscriber, Lead, MQL, SQL, Opportunity, Customer. Cleanly defined,..."
 date: 2026-04-24
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/042-lifecycle-stages-definiert-2023-gepflegt-nie/
 ---
 
-Es gab einen Workshop. Zwei Stunden, ein Whiteboard, am Ende stand das Modell: Subscriber, Lead, MQL, SQL, Opportunity, Customer. Sauber definiert, ins CRM geklickt, alle zufrieden. Das war 2023. Seitdem hat niemand mehr eine Stage angefasst, außer manuell, gelegentlich, wenn jemand daran dachte.
+There was a workshop. Two hours, a whiteboard, and at the end there was the model: Subscriber, Lead, MQL, SQL, Opportunity, Customer. Cleanly defined, clicked into the CRM, everyone satisfied. That was 2023. Since then, nobody has touched a stage, except manually, occasionally, when someone happened to think of it.
 
-Heute sieht das so aus: 4.000 Kontakte stehen auf MQL, darunter Leads von vor zwei Jahren, längst gewonnene Kunden und drei Kollegen, die mal das eigene Formular getestet haben. Ein Teil der Opportunities hat Kontakte, die nie über SQL hinauskamen, weil der Rep den Deal direkt angelegt hat. Und der Funnel-Report, den die Geschäftsführung quartalsweise bekommt, rechnet mit genau diesen Zahlen Conversion-Raten auf zwei Nachkommastellen aus.
+Today it looks like this: 4,000 contacts sit at MQL, among them leads from two years ago, long-since-won customers, and three colleagues who once tested their own form. Some opportunities have contacts that never made it past SQL, because the rep created the deal directly. And the funnel report that leadership receives quarterly calculates conversion rates to two decimal places from exactly these numbers.
 
-Der Fehler liegt nicht im Modell. Der liegt in der Annahme, dass Menschen Stages pflegen.
+The mistake is not in the model. It's in the assumption that humans maintain stages.
 
-Tun sie nicht. Ein Rep, der gerade einen Deal anlegt, denkt an den Deal, nicht daran, ob der Kontakt vorher formal durch die SQL-Stage gelaufen ist. Die Marketing-Managerin, die eine Kampagne rausschickt, setzt niemanden zurück auf Subscriber. Stage-Pflege ist eine Arbeit, von der niemand direkt profitiert, und solche Arbeit wird nicht gemacht. Das ist keine Disziplinfrage, das ist vorhersehbares Verhalten, und ein Prozess, der vorhersehbares Verhalten ignoriert, ist schlecht gebaut.
+They don't. A rep creating a deal is thinking about the deal, not about whether the contact formally passed through the SQL stage first. The marketing manager sending out a campaign doesn't reset anyone to Subscriber. Stage maintenance is work nobody directly benefits from, and work like that doesn't get done. That's not a discipline question, that's predictable behavior, and a process that ignores predictable behavior is badly built.
 
-Übergänge gehören deshalb in Automatisierung, vollständig. Score über Schwellwert plus ICP-Kriterien erfüllt: MQL, gesetzt vom System. Vom Sales akzeptiert und Erstgespräch terminiert: SQL, gesetzt vom System. Opportunity angelegt, Deal gewonnen, Kunde gekündigt: alles Trigger, alles automatisch, inklusive der unbequemen Rückwärtsbewegungen, die in fast jedem Setup fehlen. Der MQL, den Sales dreimal nicht erreicht hat, muss zurück in die Pflege-Strecke wandern, sonst sammelt sich in der Mitte des Funnels ein Bodensatz, der jede Auswertung verfälscht.
+Transitions therefore belong in automation, completely. Score above threshold plus ICP criteria met: MQL, set by the system. Accepted by sales and first call scheduled: SQL, set by the system. Opportunity created, deal won, customer churned: all triggers, all automatic, including the uncomfortable backward movements missing from almost every setup. The MQL that sales failed to reach three times has to travel back into the nurture track, otherwise sediment collects in the middle of the funnel and distorts every analysis.
 
-Ein Nebeneffekt wird gern unterschätzt. Erst mit automatisierten Übergängen bekommt ihr Zeitstempel, die stimmen, und erst mit echten Zeitstempeln könnt ihr Kohorten rechnen: Wie lange dauert Lead zu MQL, wie viel Prozent der MQLs vom März wurden bis Juni zur Opportunity. Ohne das vergleicht euer Funnel-Report Äpfel von heute mit Birnen von letztem Jahr und tut dabei präzise.
+One side effect is regularly underestimated. Only with automated transitions do you get timestamps that are correct, and only with real timestamps can you run cohorts: how long does Lead to MQL take, what percentage of March's MQLs became opportunities by June. Without that, your funnel report compares today's apples with last year's oranges, and does so with precision.
 
-Der Test kostet zehn Minuten. Öffnet die Liste eurer MQLs und sortiert nach dem Datum des Stage-Eintritts. Wenn dort Einträge von 2023 stehen, wisst ihr, wie viel euer Funnel-Report wert ist. Er misst nicht euren Funnel. Er misst, wann zuletzt jemand aufgeräumt hat.
+The test costs ten minutes. Open your MQL list and sort by stage entry date. If there are entries from 2023 in there, you know what your funnel report is worth. It doesn't measure your funnel. It measures when someone last cleaned up.

@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Euer Chatbot ist Deko"
-description: "Unten rechts auf eurer Website blinkt ein Widget. Es begrüßt Besucher mit einem fröhlichen Hallo, stellt drei vorgefertigte Fragen, sammelt nachts um..."
+title: "Your chatbot is decoration"
+description: "Bottom right on your website, a widget is blinking. It greets visitors with a cheerful hello, asks three canned questions, collects an email address at..."
 date: 2026-04-26
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/044-euer-chatbot-ist-deko/
 ---
 
-Unten rechts auf eurer Website blinkt ein Widget. Es begrüßt Besucher mit einem fröhlichen Hallo, stellt drei vorgefertigte Fragen, sammelt nachts um 23 Uhr eine E-Mail-Adresse ein und legt sie in eine Queue, die morgens niemand öffnet. Das ist kein Lead-Kanal. Das ist ein Deckchen auf dem digitalen Sofa.
+Bottom right on your website, a widget is blinking. It greets visitors with a cheerful hello, asks three canned questions, collects an email address at 11 p.m., and drops it into a queue nobody opens in the morning. That is not a lead channel. That is a doily on the digital sofa.
 
-Die These, um die es hier geht: Chat funktioniert als Vertriebskanal nur dann, wenn am anderen Ende in Echtzeit ein Mensch sitzt. Alles andere ist ein schlechteres Kontaktformular mit Animationen.
+The thesis here is this: chat only works as a sales channel if there is a human on the other end in real time. Everything else is a worse contact form with animations.
 
-Der Reiz des Bots ist verständlich. Er verspricht Verfügbarkeit rund um die Uhr ohne Personalkosten, und der Anbieter zeigt im Sales-Deck beeindruckende Zahlen über gestartete Konversationen. Nur misst niemand, was danach passiert. Ein Besucher, der um 14 Uhr mit konkretem Kaufinteresse auf der Pricing-Seite steht und vom Bot durch einen Entscheidungsbaum geschleust wird, hat exakt eine Erfahrung gemacht: Hier will gerade keiner mit mir reden. Der kommt nicht wieder. Der war euer heißester Lead der Woche.
+The appeal of the bot is understandable. It promises round-the-clock availability without headcount, and the vendor's sales deck shows impressive numbers about conversations started. Except nobody measures what happens after. A visitor standing on your pricing page at 2 p.m. with concrete buying intent, being funneled through a decision tree by the bot, has had exactly one experience: nobody here wants to talk to me right now. He is not coming back. He was your hottest lead of the week.
 
-Speed to Lead ist die eine Zahl, die im Inbound wirklich zieht. Wer innerhalb von fünf Minuten antwortet, hat um ein Vielfaches bessere Qualifizierungschancen als wer nach einer Stunde antwortet, das ist seit Jahren robust belegt. Chat ist das einzige Format, das diese fünf Minuten auf null drücken kann. Aber eben nur, wenn die Nachricht sofort bei jemandem landet, der antworten kann und darf.
+Speed to lead is the one number that truly moves inbound. Respond within five minutes and your odds of qualifying the lead are many times better than responding after an hour, that has been robustly documented for years. Chat is the only format that can push those five minutes to zero. But only if the message lands instantly with someone who can, and is allowed to, answer.
 
-Genau da liegt die eigentliche Arbeit, und sie ist Routing, nicht Konversationsdesign. Wer ist während der Geschäftszeiten zuständig, nach welcher Logik wird zugewiesen, was passiert bei Nichtantwort nach 60 Sekunden, wie sieht die Eskalation aus, wie kommt das Gespräch samt Kontext ins CRM. Das ist ein Prozessproblem mit ein bisschen Technik dran. Kein einziges dieser Probleme löst ein Bot, er kaschiert sie nur.
+That is where the real work lives, and it is routing, not conversation design. Who is on duty during business hours, what logic assigns the chat, what happens after 60 seconds of no response, what does escalation look like, how does the conversation land in the CRM with its context. That is a process problem with a bit of tech attached. A bot solves not a single one of these problems, it just papers over them.
 
-Und außerhalb der Geschäftszeiten? Ehrlich sein. Widget aus oder eine klare Ansage: Wir sind ab 8 Uhr wieder da, hinterlasst eure Nummer, wir rufen als Erstes an. Das wirkt altmodisch. Es konvertiert trotzdem besser als ein Bot, der Verfügbarkeit vortäuscht und dann doch nur ein Formular ist.
+And outside business hours? Be honest. Widget off, or a clear message: we are back at 8 a.m., leave your number, we will call you first thing. It feels old-fashioned. It still converts better than a bot that fakes availability and turns out to be a form after all.
 
-Die unbequeme Konsequenz: Wenn ihr niemanden habt, der Chats innerhalb einer Minute annimmt, braucht ihr kein Chat-Tool. Dann braucht ihr auch keine Lizenz dafür, die meisten Suiten haben das Widget ohnehin nativ an Bord.
+The uncomfortable consequence: if you have nobody who can pick up chats within a minute, you do not need a chat tool. Then you do not need a license for one either, most suites ship the widget natively anyway.
 
-Öffnet mal eure Bot-Konversationen der letzten 30 Tage. Wie viele davon hat ein Mensch je gelesen?
+Open your bot conversations from the last 30 days. How many of them has a human ever read?

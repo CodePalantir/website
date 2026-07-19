@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Best of Breed war 2015 richtig"
-description: "Es gab eine Zeit, da war der Ratschlag goldrichtig: Kauf für jede Aufgabe das beste Spezialtool und verbinde alles per API. 2015 konnten die Suiten..."
+title: "Best of breed was right in 2015"
+description: "There was a time when the advice was spot on: buy the best specialized tool for every job and connect everything via API. In 2015 the suites simply..."
 date: 2026-04-04
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/022-best-of-breed-war-2015-richtig/
 ---
 
-Es gab eine Zeit, da war der Ratschlag goldrichtig: Kauf für jede Aufgabe das beste Spezialtool und verbinde alles per API. 2015 konnten die Suiten schlicht zu wenig. Salesforce ohne Zusatztools hieß Vertrieb ohne Sequencing, Forecasting auf Excel-Niveau, Angebote in Word. Wer damals Best of Breed baute, hatte einen echten Vorsprung.
+There was a time when the advice was spot on: buy the best specialized tool for every job and connect everything via API. In 2015 the suites simply couldn't do enough. Salesforce without add-on tools meant selling without sequencing, forecasting at Excel level, proposals in Word. Whoever built best of breed back then had a real edge.
 
-Nur ist 2015 elf Jahre her, und der Ratschlag wird immer noch erteilt, als wäre nichts passiert.
+Except 2015 was eleven years ago, and the advice is still being handed out as if nothing happened.
 
-Passiert ist eine Menge. Die Suiten haben nachgerüstet, teils gebaut, teils zugekauft: Sequencing, Meeting-Routing, Scheduling, Gesprächsaufzeichnung, Forecasting, Quoting, Ticketing. Alles nativ, alles in Editions, die viele Firmen ohnehin lizenziert haben. Der Funktionsabstand zur Point Solution ist von riesig auf klein geschrumpft, für ein Team mit 20 bis 200 Leuten meist auf null. Was nicht geschrumpft ist: der Preis der Trennung.
+A lot happened. The suites caught up, partly built, partly bought: sequencing, meeting routing, scheduling, call recording, forecasting, quoting, ticketing. All native, all in editions many companies have licensed anyway. The feature gap to the point solution has shrunk from huge to small, for a team of 20 to 200 people usually to zero. What hasn't shrunk: the price of separation.
 
-Denn jede Point Solution kostet dreimal. Die Lizenz sieht man. Die Integration sieht man erst, wenn sie bricht, und sie bricht, bei jedem API-Update, bei jedem Feldnamen, den jemand ändert. Und der Datenbruch, der Deal, der im Sequencing-Tool anders heißt als im CRM, der Anruf, der nie zurückgeschrieben wird, kostet still und dauerhaft. Zwölf Tools heißt elf Integrationen, die jemand pflegen muss, und ein Datenmodell, das über elf Nähte zusammengeflickt ist. Diesen Preis stellt niemand in Rechnung. Bezahlt wird er trotzdem.
+Because every point solution costs three times. The license you see. The integration you only see when it breaks, and it breaks, with every API update, with every field name somebody changes. And the data break, the deal that has a different name in the sequencing tool than in the CRM, the call that never gets written back, costs quietly and permanently. Twelve tools means eleven integrations somebody has to maintain, and a data model stitched together across eleven seams. Nobody sends you a bill for that price. You pay it anyway.
 
-Heißt das, alles in die Suite? Nein, und die Ausnahmen sind präzise benennbar, weil die Trennung dort strukturell ist und nicht historisch. Datenprodukte: Kontakt- und Firmendaten kann keine Suite erfinden, die kauft man. Cold-Email-Infrastruktur läuft aus Deliverability-Gründen absichtlich getrennt vom Hauptsystem, das ist Feature, nicht Schwäche. Billing und eSignature sind eigene, regulierte Welten mit eigener Logik. Und die Glue-Schicht, alles, was Systeme übergreifend verbindet und Daten konsistent hält, war nie Teil einer Suite und wird es nie sein.
+Does that mean everything into the suite? No, and the exceptions can be named precisely, because there the separation is structural, not historical. Data products: no suite can invent contact and company data, you buy that. Cold email infrastructure runs deliberately separate from the main system for deliverability reasons, that's a feature, not a weakness. Billing and eSignature are their own regulated worlds with their own logic. And the glue layer, everything that connects systems across boundaries and keeps data consistent, was never part of a suite and never will be.
 
-Der Rest ist verhandelbar geworden. Das separate Sequencing-Tool, das Forecasting-Tool, das Routing-Tool, das Conversation-Intelligence-Tool: für die allermeisten Mittelständler Erinnerungen an eine Marktlage, die nicht mehr existiert. Die Suite kann es. Sie kann es nur nicht von allein, jemand muss es sauber konfigurieren, und genau daran scheitert es, nicht an der Featureliste.
+The rest has become negotiable. The separate sequencing tool, the forecasting tool, the routing tool, the conversation intelligence tool: for the vast majority of midsize companies, souvenirs of a market situation that no longer exists. The suite can do it. It just can't do it on its own, somebody has to configure it cleanly, and that's where it fails, not on the feature list.
 
-Wann habt ihr eure Best-of-Breed-Entscheidungen zuletzt gegen den heutigen Stand der Suite geprüft? Wenn die Antwort "beim Kauf" lautet, prüft ihr gegen 2015.
+When did you last check your best-of-breed decisions against today's state of the suite? If the answer is "when we bought," you're checking against 2015.

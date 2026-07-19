@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Clay macht schlechtes Targeting nur schneller"
-description: "Auf LinkedIn sieht es gerade so aus, als hätte Clay das Outbound-Problem gelöst. Waterfall-Enrichment über zehn Quellen, AI-Recherche pro Zeile,..."
+title: "Clay just makes bad targeting faster"
+description: "On LinkedIn right now, it looks like Clay has solved the outbound problem. Waterfall enrichment across ten sources, AI research per row,..."
 date: 2026-04-15
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/033-clay-macht-schlechtes-targeting-nur-schneller/
 ---
 
-Auf LinkedIn sieht es gerade so aus, als hätte Clay das Outbound-Problem gelöst. Waterfall-Enrichment über zehn Quellen, AI-Recherche pro Zeile, Signale aus Jobwechseln und Funding-Runden, alles in einer Tabelle, die aussieht wie Excel auf Steroiden. Beeindruckend ist das wirklich. Nur beantwortet es eine Frage nicht, und es ist die einzige, die zählt: Wen sprichst du an, und warum ausgerechnet den?
+On LinkedIn right now, it looks like Clay has solved the outbound problem. Waterfall enrichment across ten sources, AI research per row, signals from job changes and funding rounds, all in a table that looks like Excel on steroids. It genuinely is impressive. It just doesn't answer one question, and it's the only one that counts: who are you reaching out to, and why them of all people?
 
-Clay ist Orchestrierung. Ein Verstärker. Und ein Verstärker macht aus einem guten Signal ein lautes gutes Signal, aus Rauschen aber nur lauteres Rauschen. Wer vorher 50 schlecht ausgewählte Accounts pro Woche angeschrieben hat, schreibt jetzt 500 schlecht ausgewählte Accounts an, mit besseren Datenpunkten und hübscherer Personalisierung. Das Ergebnis ist nicht zehnmal mehr Pipeline. Das Ergebnis ist zehnmal schneller verbrannter Markt.
+Clay is orchestration. An amplifier. And an amplifier turns a good signal into a loud good signal, but noise only into louder noise. Whoever used to email 50 badly chosen accounts per week now emails 500 badly chosen accounts, with better data points and prettier personalization. The result is not ten times more pipeline. The result is a market burned ten times faster.
 
-Wir haben so ein Setup mal geerbt. Sauber gebaute Tabelle, 14 Enrichment-Spalten, GPT-Prompts für die Eröffnungszeile, technisch nichts auszusetzen. Die Antwortrate lag unter einem Prozent. Der Grund stand in keiner Spalte: Die Liste bestand aus Firmen, die das Produkt schlicht nicht brauchten, gefiltert nach Mitarbeiterzahl und Branche, weil das die Filter waren, die es gab. Clay hat diese Liste perfekt angereichert. Perfekt angereicherter Unsinn bleibt Unsinn.
+We inherited a setup like that once. Cleanly built table, 14 enrichment columns, GPT prompts for the opening line, technically nothing to criticize. The reply rate was under one percent. The reason wasn't in any column: the list consisted of companies that simply didn't need the product, filtered by employee count and industry, because those were the filters that existed. Clay enriched that list perfectly. Perfectly enriched nonsense is still nonsense.
 
-Die Reihenfolge ist nicht verhandelbar. Erst die Hypothese: Welches Problem lösen wir, für wen, und woran erkennt man von außen, dass eine Firma es gerade hat? Dann der manuelle Beweis, zwanzig oder dreißig handrecherchierte Accounts, eigene Mails, echte Antworten. Erst wenn das konvertiert, lohnt sich die Frage, welche Schritte davon eine Maschine übernehmen kann. Clay ist ein fantastisches Werkzeug für genau diesen letzten Schritt. Als erster Schritt ist es eine Beschäftigungstherapie mit API-Kosten.
+The order is non-negotiable. First the hypothesis: which problem do we solve, for whom, and what tells you from the outside that a company has it right now? Then the manual proof, twenty or thirty hand-researched accounts, your own emails, real replies. Only when that converts is it worth asking which of those steps a machine can take over. Clay is a fantastic tool for exactly that last step. As a first step, it's occupational therapy with API costs.
 
-Es gibt noch einen leiseren Schaden. Die Tabelle fühlt sich nach Arbeit an. Spalten bauen, Prompts tunen, Credits optimieren, das füllt Wochen und produziert Screenshots fürs Team-Meeting. Währenddessen redet niemand mit einem einzigen Kunden. Tool-Fleiß als Ersatz für Markt-Denken, und das Tool ist so gut, dass der Ersatz lange nicht auffällt.
+There is a quieter damage too. The table feels like work. Building columns, tuning prompts, optimizing credits, that fills weeks and produces screenshots for the team meeting. Meanwhile, nobody is talking to a single customer. Tool diligence as a substitute for market thinking, and the tool is so good that the substitution goes unnoticed for a long time.
 
-Die unbequeme Testfrage für jedes Clay-Setup: Würde diese Kampagne funktionieren, wenn du jede Mail einzeln von Hand schreiben müsstest? Wenn ja, automatisiere sie. Wenn nein, automatisierst du gerade dein eigenes Scheitern.
+The uncomfortable test question for every Clay setup: would this campaign work if you had to write every email by hand, one at a time? If yes, automate it. If no, you are currently automating your own failure.

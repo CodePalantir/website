@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "40 Folien, null Erkenntnis: das QBR-Theater"
-description: "Folie 23 von 40. Der CSM liest vor, was auf der Folie steht, der Kunde schaut zum dritten Mal auf die Uhr, und beide wissen: Hier passiert gerade..."
+title: "40 slides, zero insight: the QBR theater"
+description: "Slide 23 of 40. The CSM reads out what's on the slide, the customer checks the time for the third time, and both know: nothing is happening..."
 date: 2026-05-16
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/064-40-folien-null-erkenntnis-das-qbr-theater/
 ---
 
-Folie 23 von 40. Der CSM liest vor, was auf der Folie steht, der Kunde schaut zum dritten Mal auf die Uhr, und beide wissen: Hier passiert gerade nichts. Trotzdem steht der Termin nächstes Quartal wieder im Kalender, weil das Playbook sagt, dass Kunden ab Stufe B ein Quarterly Business Review bekommen.
+Slide 23 of 40. The CSM reads out what's on the slide, the customer checks the time for the third time, and both know: nothing is happening here. Yet the meeting is back on the calendar next quarter, because the playbook says customers from tier B up get a Quarterly Business Review.
 
-Woher kommen die 40 Folien? Aus einem Template. Der CSM hat am Abend vorher zwei Stunden lang Zahlen aus drei Systemen zusammenkopiert, Logos aktualisiert und die Roadmap-Folie vom Produktteam eingebaut, die der Kunde schon aus dem Newsletter kennt. Das Ergebnis ist eine Präsentation über den Kunden, die dem Kunden nichts sagt, was er nicht selbst wüsste. Beschäftigungstherapie mit Corporate Design.
+Where do the 40 slides come from? From a template. The night before, the CSM spent two hours copying numbers together from three systems, updating logos, and inserting the product team's roadmap slide the customer already knows from the newsletter. The result is a presentation about the customer that tells the customer nothing they don't already know. Busywork with corporate design.
 
-Dabei ist die Frage hinter einem QBR völlig legitim: Lohnt sich das hier noch für beide Seiten, und was steht dem im Weg? Nur beantwortet man die nicht mit Foliensatz, sondern mit zwei Dingen. Erstens echten Nutzungsdaten: Welche Teams arbeiten mit dem Produkt, welche sind abgesprungen, welches Feature, das beim Kauf entscheidend war, liegt brach. Zweitens einer ehrlichen Risikoliste: die offene Eskalation aus dem Support, der Champion, der das Unternehmen verlässt, die Integration, die seit Wochen Fehler wirft. Das passt auf eine Seite. Über eine Seite kann man 45 Minuten sprechen, über 40 Folien nicht.
+Yet the question behind a QBR is entirely legitimate: is this still worth it for both sides, and what's standing in the way? You just don't answer it with a slide deck, but with two things. First, real usage data: which teams work with the product, which have dropped off, which feature that was decisive at purchase is lying fallow. Second, an honest risk list: the open escalation in support, the champion who's leaving the company, the integration that has been throwing errors for weeks. That fits on one page. You can talk about one page for 45 minutes. You can't with 40 slides.
 
-Und dann der Gedanke, der in keinem CS-Playbook steht: Manche Kunden brauchen gar kein QBR. Der Mittelständler, bei dem das Produkt seit zwei Jahren geräuschlos seinen Job macht, will keinen Quartalstermin. Er will, dass es weiter läuft, und einen Menschen, der abhebt, wenn es das mal nicht tut. Ihm ein Review aufzudrängen erzeugt keine Bindung, sondern die leise Frage, ob die Zeit auf seiner Rechnung landet. Die Pflicht-Kadenz stammt aus einer Welt, in der CS seine Existenz mit Sichtbarkeit begründen musste. Termine als Beweis von Betreuung.
+And then the thought that appears in no CS playbook: some customers don't need a QBR at all. The mid-sized company where the product has been quietly doing its job for two years doesn't want a quarterly meeting. They want it to keep running, and a human who picks up when it doesn't. Forcing a review on them creates no loyalty, just the quiet question of whether that time ends up on their invoice. The mandatory cadence comes from a world where CS had to justify its existence with visibility. Meetings as proof of care.
 
-Technisch ist die bessere Variante keine Kunst. Wenn Produktdaten, Tickets und Vertragsdaten am Account zusammenlaufen, generiert sich die eine Seite fast von selbst, und der CSM bereitet Gespräche vor statt Folien. Zwei Stunden Kopierarbeit pro Kunde pro Quartal, bei 60 Accounts sind das 480 Stunden im Jahr. Für Folien, die keiner behalten will.
+Technically, the better version is no magic. When product data, tickets, and contract data come together on the account, that one page practically generates itself, and the CSM prepares conversations instead of slides. Two hours of copy-paste work per customer per quarter, at 60 accounts that's 480 hours a year. For slides nobody wants to keep.
 
-Streicht testweise ein Quartal lang alle QBRs und schaut, welche Kunden nachfragen. Die Antwort ist euer echtes Betreuungskonzept.
+As a test, cancel all QBRs for one quarter and see which customers ask about them. The answer is your real coverage model.

@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Die Shelfware-Quote ist der ehrlichste KPI eures Stacks"
-description: "Eine Zahl, zwei Datenpunkte, einmal im Quartal: bezahlte Lizenzen gegen aktive Nutzer. Das ist die ganze Übung. Und kaum jemand macht sie."
+title: "The shelfware ratio is the most honest KPI in your stack"
+description: "One number, two data points, once a quarter: paid licenses against active users. That is the whole exercise. And almost nobody does it."
 date: 2026-06-26
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/105-die-shelfware-quote-ist-der-ehrlichste-kpi-eures-stacks/
 ---
 
-Eine Zahl, zwei Datenpunkte, einmal im Quartal: bezahlte Lizenzen gegen aktive Nutzer. Das ist die ganze Übung. Und kaum jemand macht sie.
+One number, two data points, once a quarter: paid licenses against active users. That is the whole exercise. And almost nobody does it.
 
-Dabei ist die Rechnung brutal einfach. Ihr zahlt für 50 Seats im Conversation-Intelligence-Tool. Der Admin-Report zeigt, dass in den letzten 90 Tagen 19 Leute eingeloggt waren, davon 11 mit mehr als einer Handvoll Aktionen. Macht eine Shelfware-Quote von rund 60 Prozent. Bei 100 Euro pro Seat und Monat verbrennen da 37.000 Euro im Jahr, in einem einzigen Tool, ohne dass irgendjemand etwas falsch gemacht hätte. Es hat nur niemand nachgezählt.
+Yet the math is brutally simple. You pay for 50 seats in your conversation intelligence tool. The admin report shows that 19 people logged in over the last 90 days, 11 of them with more than a handful of actions. That makes a shelfware ratio of around 60 percent. At 100 euros per seat per month, you are burning 37,000 euros a year, in a single tool, without anyone having done anything wrong. Nobody just bothered to count.
 
-Shelfware entsteht nicht durch Dummheit, sondern durch Drift. Beim Kauf wurde großzügig geplant, das Team sollte ja wachsen. Dann kamen zwei Kündigungen, eine Umstrukturierung, ein neues Tool für den halben Use Case, und die Seats blieben einfach im Vertrag stehen. Kein Vendor ruft an und sagt, ihr nutzt nur die Hälfte, wollt ihr runtergehen. Sein Dashboard zeigt ihm eure Nutzung sehr genau. Seinem Vertrieb zeigt es Upsell-Potenzial.
+Shelfware does not come from stupidity, it comes from drift. At purchase, the plan was generous, the team was supposed to grow. Then came two resignations, a reorg, a new tool for half the use case, and the seats simply stayed in the contract. No vendor calls to say, you are only using half, want to scale down. Their dashboard shows them your usage very precisely. To their sales team, it shows upsell potential.
 
-Interessant wird die Quote als Zeitreihe. Ein Tool, dessen aktive Nutzung drei Quartale in Folge fällt, erzählt eine Geschichte, lange bevor jemand sie ausspricht. Vielleicht hat die Suite die Funktion inzwischen nativ. Vielleicht war der Use Case nie so groß wie gedacht. Vielleicht ist der Champion weg. Die Kurve ist ehrlicher als jede Umfrage im Team, denn im Meeting sagt jeder, klar, das Tool brauchen wir, und loggt sich dann sechs Wochen nicht ein. Nutzungsdaten sind nicht höflich.
+The ratio gets interesting as a time series. A tool whose active usage falls three quarters in a row tells a story long before anyone says it out loud. Maybe the suite now covers the feature natively. Maybe the use case was never as big as assumed. Maybe the champion is gone. The curve is more honest than any team survey, because in the meeting everyone says, sure, we need that tool, and then does not log in for six weeks. Usage data is not polite.
 
-Und deshalb gehört die Quote vor jedes Renewal auf den Tisch. Nicht als Nebenbemerkung, sondern als Verhandlungsgrundlage. Wer dem Vendor sechs Wochen vor Verlängerung schreibt, wir zahlen 50 Seats und nutzen 19, hier ist der Export, hat eine andere Verhandlung als der, der die Rechnung einfach durchwinkt. Runter auf 25 Seats, Multi-Year nur gegen echten Rabatt, oder eben Kündigung, wenn die Suite es nativ kann. Alles legitime Ausgänge. Keiner davon passiert ohne die Zahl.
+And that is why the ratio belongs on the table before every renewal. Not as a side note, but as the basis for negotiation. Whoever writes to the vendor six weeks before renewal, we pay for 50 seats and use 19, here is the export, has a different negotiation than the one who just waves the invoice through. Down to 25 seats, multi-year only in exchange for a real discount, or outright cancellation if the suite can do it natively. All legitimate outcomes. None of them happens without the number.
 
-Der Aufwand ist lächerlich gering. Fast jedes Tool hat einen Usage-Report, und wo es keinen gibt, ist das selbst schon ein Befund. Ein Spreadsheet, vier Termine im Jahr, eine Stunde pro Termin.
+The effort is laughably small. Almost every tool has a usage report, and where there is none, that is a finding in itself. One spreadsheet, four appointments a year, one hour per appointment.
 
-Ihr messt Pipeline Coverage auf zwei Nachkommastellen. Wer misst eigentlich, wie viel von eurem Stack nur noch Regal ist?
+You measure pipeline coverage to two decimal places. Who actually measures how much of your stack is just shelf?

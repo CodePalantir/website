@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Die 40 Prozent, die in keinem Business Case stehen"
-description: "Der Business Case für den Tool-Wechsel passt auf eine Folie. Listenpreis alt, Listenpreis neu, Differenz mal 40 User mal zwölf Monate, macht 14.400..."
+title: "The 40 percent that never make it into the business case"
+description: "The business case for the tool switch fits on one slide. Old list price, new list price, difference times 40 users times twelve months, makes 14,400..."
 date: 2026-06-29
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/108-die-40-prozent-die-in-keinem-business-case-stehen/
 ---
 
-Der Business Case für den Tool-Wechsel passt auf eine Folie. Listenpreis alt, Listenpreis neu, Differenz mal 40 User mal zwölf Monate, macht 14.400 Euro Ersparnis im Jahr. Unterschrift drunter. Diese Folie ist der teuerste Textbaustein im ganzen RevOps-Geschäft.
+The business case for the tool switch fits on one slide. Old list price, new list price, difference times 40 users times twelve months, makes 14,400 euros in annual savings. Signature at the bottom. That slide is the most expensive boilerplate in the entire RevOps business.
 
-Was fehlt, ist immer dasselbe. Zuerst die Migration: sieben Jahre Opportunity-Historie, 140 Custom-Felder, von denen niemand mehr weiß, welche der Forecast wirklich braucht, Aktivitäten, Notizen, Anhänge. Das ist kein Export mit anschließendem Import, das ist Archäologie mit Mapping-Tabelle. Dann die Integrationen. Jede Verbindung zum alten System, Billing, Marketing Automation, das Reporting im Warehouse, muss neu gebaut und getestet werden, und getestet heißt hier: mit echten Daten, gegen echte Sonderfälle, nicht im Sandkasten mit drei Demo-Accounts. Dazu Training, und zwar nicht das Webinar vom Hersteller, sondern die sechs Wochen, in denen euer bester Verkäufer flucht, weil der Handgriff, den er tausendmal gemacht hat, jetzt anders geht.
+What is missing is always the same. First, the migration: seven years of opportunity history, 140 custom fields, and nobody remembers which ones the forecast actually needs, activities, notes, attachments. That is not an export followed by an import, that is archaeology with a mapping table. Then the integrations. Every connection to the old system, billing, marketing automation, the reporting in the warehouse, has to be rebuilt and tested, and tested here means: with real data, against real edge cases, not in a sandbox with three demo accounts. Add training, and not the vendor's webinar, but the six weeks in which your best seller curses because the move he has made a thousand times now works differently.
 
-Und dann der Posten, den wirklich niemand aufschreibt: der Produktivitätsknick. Drei Monate lang wird Pipeline langsamer gepflegt, werden Reports doppelt geprüft, versanden Deals in Feldern, die noch keiner kennt. Das kostet keinen Cent auf einer Rechnung. Es kostet Umsatz.
+And then the line item that truly nobody writes down: the productivity dip. For three months, pipeline gets updated more slowly, reports get double-checked, deals go stale in fields nobody knows yet. That costs not a cent on any invoice. It costs revenue.
 
-Rechnet man das zusammen, fehlen im typischen Business Case rund 40 Prozent der echten Kosten. Manchmal mehr. Wer nur Listenpreise vergleicht, vergleicht Prospekte, nicht Realität. Die ehrliche Rechnung heißt TCO über drei Jahre: Lizenzen plus Migration plus Integrationsbau plus Training plus Knick, gegen denselben Zeitraum beim Status quo.
+Add it all up and the typical business case is missing around 40 percent of the real costs. Sometimes more. Comparing list prices alone means comparing brochures, not reality. The honest calculation is TCO over three years: licenses plus migration plus integration work plus training plus the dip, against the same period on the status quo.
 
-Kleiner Einschub in eigener Sache, weil es sonst zu bequem wäre: das gilt auch andersrum. Wir reden viel über Stack-Reduktion, über Tools, die rausfliegen, weil die Suite es nativ kann. Auch diese Migration hat Kosten, und auch die gehören in die Rechnung. Der Unterschied ist nur, dass beim Rauswerfen danach eine Lizenz dauerhaft wegfällt und eine Integration weniger brechen kann, während beim Wechsel meist eine Abhängigkeit gegen die nächste getauscht wird.
+A quick aside on our own behalf, because otherwise this would be too convenient: it cuts the other way too. We talk a lot about stack reduction, about tools getting kicked out because the suite can do it natively. That migration has costs as well, and they belong in the calculation too. The difference is just that when you remove a tool, a license disappears for good and one fewer integration can break, whereas a switch usually trades one dependency for the next.
 
-Die Frage an jeden, der euch einen Wechsel verkaufen will, ist deshalb simpel: Zeig mir die Migrationszeile. Steht da eine Zahl mit Herleitung, könnt ihr reden. Steht da nichts, hat derjenige entweder noch nie selbst migriert oder er möchte, dass ihr unterschreibt, bevor ihr rechnet.
+So the question for anyone trying to sell you a switch is simple: show me the migration line. If there is a number with a derivation, you can talk. If there is nothing, that person has either never migrated anything themselves or wants you to sign before you do the math.

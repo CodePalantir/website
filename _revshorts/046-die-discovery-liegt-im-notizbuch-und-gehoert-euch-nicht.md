@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Die Discovery liegt im Notizbuch und gehört euch nicht"
-description: "Euer bester Rep macht großartige Discovery-Calls. Er fragt nach dem eigentlichen Schmerz, kriegt die Timeline raus, weiß nach 40 Minuten, wer im Buying..."
+title: "The discovery lives in a notebook and it does not belong to you"
+description: "Your best rep runs great discovery calls. He digs into the real pain, gets the timeline out, and after 40 minutes he knows who in the buying..."
 date: 2026-04-28
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/046-die-discovery-liegt-im-notizbuch-und-gehoert-euch-nicht/
 ---
 
-Euer bester Rep macht großartige Discovery-Calls. Er fragt nach dem eigentlichen Schmerz, kriegt die Timeline raus, weiß nach 40 Minuten, wer im Buying Center wirklich entscheidet und wer nur mitredet, und was das Budget hergibt. All das landet in seinem Moleskine. Oder in einem OneNote namens Notizen_neu. Oder nirgends, weil er ein gutes Gedächtnis hat.
+Your best rep runs great discovery calls. He digs into the real pain, gets the timeline out, and after 40 minutes he knows who in the buying center actually decides and who just has opinions, and what the budget will bear. All of it lands in his Moleskine. Or in a OneNote called Notes_new. Or nowhere, because he has a good memory.
 
-Im CRM steht derweil: Guter Call, Follow-up nächste Woche.
+Meanwhile, the CRM says: Good call, follow-up next week.
 
-Das Problem fällt lange nicht auf, weil der Deal ja läuft. Es explodiert an drei Stellen. Beim Übergang, wenn der Deal gewonnen ist und das Onboarding-Team den Kunden fragt, was er eigentlich erreichen will, und der Kunde irritiert antwortet, das habe er doch alles schon zweimal erzählt. Bei der Vertretung, wenn der Rep zwei Wochen krank ist und niemand den Deal weiterspielen kann, weil der gesamte Kontext in seinem Kopf wohnt. Und am härtesten beim Abgang: Rep kündigt, Übergabe dauert einen Nachmittag, und mit ihm verlassen 60 laufende Gespräche das Haus, von denen nur die Beträge und die Stages zurückbleiben. Das Wissen, warum diese Firmen kaufen wollten, ist weg. Ihr habt es bezahlt, mit jedem Gehalt und jedem Call, aber besessen habt ihr es nie.
+The problem goes unnoticed for a long time because the deal is moving, after all. It explodes in three places. At the handover, when the deal is won and the onboarding team asks the customer what he actually wants to achieve, and the customer replies, irritated, that he has already explained all of this twice. At coverage, when the rep is out sick for two weeks and nobody can advance the deal, because the entire context lives in his head. And hardest of all at departure: rep resigns, the handover takes one afternoon, and 60 live conversations walk out the door with him, leaving behind nothing but amounts and stages. The knowledge of why those companies wanted to buy is gone. You paid for it, with every salary and every call, but you never owned it.
 
-Die Lösung ist strukturell langweilig: Pain, Timeline, Budget-Rahmen, Entscheider und Entscheidungsprozess gehören in dedizierte Felder auf der Opportunity, nicht in ein Freitextfeld namens Beschreibung, in dem alles versinkt. Feldwerte kann man reporten, Freitext nicht. Dann sieht man nämlich plötzlich Muster: welche Pains am häufigsten zum Abschluss führen, ab welcher Buying-Center-Größe die Cycles kippen, welche Discovery-Lücken mit Verlusten korrelieren.
+The solution is structurally boring: pain, timeline, budget range, decision makers, and decision process belong in dedicated fields on the opportunity, not in a free-text field called Description where everything sinks without a trace. Field values can be reported on, free text cannot. And then you suddenly see patterns: which pains most often lead to a close, at what buying center size the cycles tip over, which discovery gaps correlate with losses.
 
-Der übliche Einwand kommt sofort: Meine Reps hassen Adminarbeit. Berechtigt, und genau hier hat sich die Lage in den letzten zwei Jahren gedreht. Call Recording plus ein LLM, das nach dem Gespräch die strukturierten Felder vorbefüllt und der Rep nur noch korrigiert, ist heute ein überschaubares Bauprojekt, in vielen Suiten sogar schon eingebaut. Die Ausrede Tippfaulheit zieht nicht mehr. Was bleibt, ist eine Führungsfrage: Wird ein Deal ohne ausgefüllte Discovery-Felder im Pipeline-Review besprochen oder zurückgeschickt?
+The usual objection arrives immediately: my reps hate admin work. Fair, and this is exactly where the situation has flipped in the last two years. Call recording plus an LLM that pre-fills the structured fields after the conversation, with the rep only correcting, is a manageable build today, in many suites it already ships built in. The too-lazy-to-type excuse no longer holds. What remains is a leadership question: does a deal without completed discovery fields get discussed in the pipeline review, or sent back?
 
-Ein Gedanke zum Schluss, der unbequem ist. Ein Rep, der sein Wissen bewusst nicht ins System schreibt, verhandelt gerade seine Unkündbarkeit. Kann man ihm nicht mal verübeln. Aber man muss es nicht mitspielen.
+One closing thought, and it is uncomfortable. A rep who deliberately keeps his knowledge out of the system is negotiating his own unfireability. Hard to blame him, really. But you do not have to play along.

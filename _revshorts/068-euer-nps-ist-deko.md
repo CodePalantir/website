@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Euer NPS ist Deko"
-description: "Irgendwo in eurem Quartals-Deck steht eine Zahl. 42 vielleicht, oder 38, mit einem kleinen Pfeil nach oben. Der NPS. Alle nicken, nächste Folie."
+title: "Your NPS is decoration"
+description: "Somewhere in your quarterly deck there's a number. 42 maybe, or 38, with a little arrow pointing up. The NPS. Everyone nods, next slide."
 date: 2026-05-20
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/068-euer-nps-ist-deko/
 ---
 
-Irgendwo in eurem Quartals-Deck steht eine Zahl. 42 vielleicht, oder 38, mit einem kleinen Pfeil nach oben. Der NPS. Alle nicken, nächste Folie.
+Somewhere in your quarterly deck there's a number. 42 maybe, or 38, with a little arrow pointing up. The NPS. Everyone nods, next slide.
 
-Und jetzt die Frage, die keiner stellt: Was ist mit dem Kunden passiert, der letzte Woche eine 3 gegeben hat?
+And now the question nobody asks: what happened to the customer who gave you a 3 last week?
 
-In den meisten Firmen lautet die ehrliche Antwort: nichts. Die Umfrage läuft automatisch raus, die Antworten landen in einem Tool, das Tool rechnet einen Score, der Score wandert ins Deck. Der Kreislauf ist geschlossen und komplett wertlos, weil an keiner Stelle ein Mensch mit einem konkreten Kunden spricht. Ihr habt einen Messwert gekauft und haltet ihn für einen Prozess.
+In most companies, the honest answer is: nothing. The survey goes out automatically, the answers land in a tool, the tool computes a score, the score moves into the deck. The loop is closed and completely worthless, because at no point does a human talk to a specific customer. You bought a metric and mistake it for a process.
 
-Dabei ist die Zahl selbst der uninteressanteste Teil der ganzen Übung. Ob euer NPS bei 35 oder 45 liegt, ändert an keiner einzigen Entscheidung irgendwas. Was etwas ändert: Der Detraktor, der seit drei Monaten auf ein Feature wartet und dessen Renewal in acht Wochen ansteht. Der steht da, mit Namen, mit Freitextkommentar, oft mit einer ziemlich präzisen Beschreibung dessen, was ihn nervt. Kunden kündigen selten ohne Vorwarnung. Sie warnen euch, ihr lest es nur nicht.
+The number itself is the least interesting part of the whole exercise. Whether your NPS sits at 35 or 45 changes exactly nothing about any single decision. What does change something: the detractor who has been waiting three months for a feature and whose renewal comes up in eight weeks. He's right there, with a name, with a free-text comment, often with a fairly precise description of what's bothering him. Customers rarely cancel without warning. They warn you, you just don't read it.
 
-Und die andere Seite wird noch konsequenter ignoriert. Ein Promoter, der euch eine 10 gibt, hat sich gerade freiwillig als Referenz gemeldet. Case Study, G2-Review, Intro zu einem Schwesterunternehmen: alles Dinge, die euer Vertrieb dringend braucht und mühsam einzeln erbettelt, während die Liste der Leute, die euch öffentlich loben würden, ungelesen im Umfrage-Tool liegt. Das ist kein Messproblem. Das ist verschenkte Pipeline.
+And the other side gets ignored even more consistently. A promoter who gives you a 10 has just volunteered as a reference. Case study, G2 review, intro to a sister company: all things your sales team desperately needs and painstakingly begs for one by one, while the list of people who would publicly praise you sits unread in the survey tool. That's not a measurement problem. That's pipeline thrown away.
 
-Der Fix ist unspektakulär, und vielleicht ist das der Grund, warum ihn so wenige bauen. Jede Antwort unter 7 erzeugt automatisch eine Aufgabe beim Account Owner, mit Frist, mit Eskalation, wenn nichts passiert. Jede 9 oder 10 triggert einen Referenz-Workflow. Der Score fließt ins CRM, nicht in ein Silo, damit der Kollege im Renewal-Gespräch weiß, dass der Ansprechpartner vor sechs Wochen eine 4 vergeben hat. Zwei Automatisierungen, ein Feld, ein bisschen Disziplin. Kein neues Tool, das meiste davon kann euer Stack heute schon.
+The fix is unspectacular, and maybe that's why so few build it. Every response below 7 automatically creates a task for the account owner, with a deadline, with escalation if nothing happens. Every 9 or 10 triggers a reference workflow. The score flows into the CRM, not into a silo, so the colleague in the renewal conversation knows the contact gave a 4 six weeks ago. Two automations, one field, a bit of discipline. No new tool, most of this your stack can do today.
 
-Wenn ihr diesen Prozess nicht bauen wollt, gibt es übrigens eine ehrlichere Alternative: Umfrage abschalten. Das spart die Lizenz und erspart euren Kunden die Erfahrung, Feedback zu geben, auf das nie jemand reagiert. Eine Zahl im Deck oder ein Prozess im System, mehr Optionen gibt es nicht. Welche von beiden habt ihr?
+If you don't want to build that process, by the way, there's a more honest alternative: switch the survey off. It saves the license and spares your customers the experience of giving feedback nobody ever acts on. A number in the deck or a process in the system, there are no other options. Which of the two do you have?

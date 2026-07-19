@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Der Sync, der 3.000 Telefonnummern gelöscht hat"
-description: "Montagmorgen, halb neun. Das SDR-Team öffnet die Anruflisten und das Feld Telefonnummer ist leer. Nicht bei einem Kontakt. Bei 3.000."
+title: "The sync that deleted 3,000 phone numbers"
+description: "Monday morning, 8:30. The SDR team opens the call lists and the phone number field is empty. Not on one contact. On 3,000."
 date: 2026-06-06
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/085-der-sync-der-3-000-telefonnummern-geloescht-hat/
 ---
 
-Montagmorgen, halb neun. Das SDR-Team öffnet die Anruflisten und das Feld Telefonnummer ist leer. Nicht bei einem Kontakt. Bei 3.000.
+Monday morning, 8:30. The SDR team opens the call lists and the phone number field is empty. Not on one contact. On 3,000.
 
-Was war passiert? Freitagabend ging der neue Sync live, Marketing-Tool und CRM, bidirektional, sauber gemappt, alle Felder verbunden. Im Marketing-Tool war das Telefonfeld bei fast allen Kontakten leer, weil es dort nie gepflegt wurde. Der Sync stand auf "Quellsystem gewinnt". Also hat er in der Nacht getan, was man ihm gesagt hat: 3.000 mühsam recherchierte, verifizierte, über Jahre gepflegte Nummern mit nichts überschrieben. Drei Jahre Datenarbeit, wegsynchronisiert in 40 Minuten.
+What happened? Friday evening the new sync went live, marketing tool and CRM, bidirectional, cleanly mapped, all fields connected. In the marketing tool, the phone field was empty on almost every contact, because it was never maintained there. The sync was set to "source system wins". So overnight it did exactly what it was told: it overwrote 3,000 painstakingly researched, verified numbers, maintained over years, with nothing. Three years of data work, synced away in 40 minutes.
 
-Der Fehler ist nicht exotisch. Er ist der häufigste Integrationsfehler überhaupt, und er entsteht, weil bidirektionale Syncs als Mapping-Übung behandelt werden. Feld A auf Feld B, Haken dran, nächstes Feld. Die eigentliche Frage stellt niemand: Wem gehört dieses Feld? Ownership auf Feldebene heißt, für jedes synchronisierte Feld ein Master-System zu benennen. Telefonnummer gehört dem CRM, dort wird sie gepflegt, das Marketing-Tool darf lesen, nie schreiben. E-Mail-Opt-in gehört dem Marketing-Tool, aus rechtlichen Gründen sogar zwingend. Firmenname gehört vielleicht dem Enrichment-Tool. Das ist pro Feld eine Zeile in einer Tabelle und eine Entscheidung, die zehn Sekunden dauert. Bei 60 Feldern ein Vormittag.
+The mistake isn't exotic. It's the most common integration mistake there is, and it happens because bidirectional syncs get treated as a mapping exercise. Field A to field B, check the box, next field. Nobody asks the actual question: who owns this field? Field-level ownership means naming a master system for every synced field. The phone number belongs to the CRM, that's where it's maintained, the marketing tool may read, never write. Email opt-in belongs to the marketing tool, for legal reasons it actually must. Company name maybe belongs to the enrichment tool. That's one row in a table per field and a decision that takes ten seconds. With 60 fields, one morning.
 
-Dazu kommen Konfliktregeln für die Fälle, in denen beide Seiten schreiben dürfen. Die wichtigste ist banal und wird trotzdem ständig verletzt: Leer überschreibt niemals gefüllt. Ein fehlender Wert ist keine Information, er ist die Abwesenheit einer Information, und Abwesenheit darf keine Daten töten. Zweite Regel: Neuer gewinnt nur mit echtem Zeitstempelvergleich auf Feldebene, nicht auf Datensatzebene, sonst zieht ein geändertes Anrede-Feld die alte Adresse gleich mit.
+Add conflict rules for the cases where both sides are allowed to write. The most important one is trivial and still gets violated constantly: empty never overwrites filled. A missing value is not information, it's the absence of information, and absence must never kill data. Second rule: newer only wins with a real timestamp comparison at the field level, not the record level, otherwise a changed salutation field drags the old address along with it.
 
-Und vor dem Go-Live gehört der Sync gegen eine Sandbox-Kopie gefahren, mit einem Diff-Report: Diese 4.200 Feldwerte würden sich ändern, hier die Stichprobe. Wer den Report liest, sieht die 3.000 leeren Telefonnummern, bevor sie passieren. Dazu ein voller Export als Backup, direkt vor dem Schalter. Gesamtaufwand für all das: ein bis zwei Tage. Der Schaden im echten Fall: drei Wochen Rekonstruktion aus Telefonanlagen-Logs und alten CSV-Exporten, plus ein SDR-Team, das eine Woche lang nicht wählen konnte.
+And before go-live, the sync belongs in a run against a sandbox copy, with a diff report: these 4,200 field values would change, here's the sample. Whoever reads that report sees the 3,000 empty phone numbers before they happen. Plus a full export as a backup, right before flipping the switch. Total effort for all of this: one to two days. The damage in the real case: three weeks of reconstruction from phone system logs and old CSV exports, plus an SDR team that couldn't dial for a week.
 
-Wenn zwei eurer Systeme sich widersprechen, wer gewinnt? Falls ihr die Antwort nicht kennt: Euer Sync kennt sie auch nicht. Er entscheidet trotzdem. Jede Nacht.
+When two of your systems contradict each other, who wins? If you don't know the answer: your sync doesn't know it either. It decides anyway. Every night.

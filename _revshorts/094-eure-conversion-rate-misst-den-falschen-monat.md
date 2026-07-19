@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Eure Conversion-Rate misst den falschen Monat"
-description: "Die Rechnung sieht vernünftig aus. Abschlüsse im April geteilt durch Leads im April, fertig ist die Conversion-Rate. Genau so steht sie in den meisten..."
+title: "Your conversion rate measures the wrong month"
+description: "The math looks reasonable. Deals closed in April divided by leads in April, done, there's your conversion rate. That's exactly how it appears in most..."
 date: 2026-06-15
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/094-eure-conversion-rate-misst-den-falschen-monat/
 ---
 
-Die Rechnung sieht vernünftig aus. Abschlüsse im April geteilt durch Leads im April, fertig ist die Conversion-Rate. Genau so steht sie in den meisten Dashboards, die wir in Audits aufmachen. Und genau so ist sie strukturell falsch.
+The math looks reasonable. Deals closed in April divided by leads in April, done, there's your conversion rate. That's exactly how it appears in most dashboards we open in audits. And that's exactly how it's structurally wrong.
 
-Der Lead von Januar konvertiert im April. Nicht im Januar. Wenn euer Sales Cycle 90 Tage dauert, vergleicht die Monatsrechnung die Leads von heute mit den Abschlüssen von gestern, genauer: mit den Abschlüssen aus einer Lead-Generierung, die ein Quartal zurückliegt. Zähler und Nenner stammen aus verschiedenen Welten. Was dabei rauskommt, ist kein Messwert, sondern das Zufallsprodukt zweier überlagerter Zeitreihen.
+The January lead converts in April. Not in January. If your sales cycle runs 90 days, the monthly calculation compares today's leads with yesterday's closings, more precisely: with closings from lead generation that happened a quarter ago. Numerator and denominator come from different worlds. What comes out isn't a measurement, it's the random product of two overlapping time series.
 
-Lange fällt das nicht auf, weil es bei konstantem Lead-Volumen ungefähr hinkommt. Spannend wird es, sobald sich etwas bewegt. Ihr fahrt im März eine Kampagne, das Lead-Volumen verdoppelt sich, und prompt halbiert sich die ausgewiesene Conversion-Rate, weil die neuen Leads im Nenner stehen, ihre Abschlüsse aber erst im Juni kommen. Marketing wird für den Erfolg abgestraft. Umgekehrt genauso: Das Lead-Volumen bricht ein, die Rate steigt scheinbar, und im Management-Meeting feiert jemand eine Verbesserung, die in Wahrheit ein Frühwarnsignal ist.
+For a long time nobody notices, because with constant lead volume it roughly works out. It gets interesting the moment something moves. You run a campaign in March, lead volume doubles, and promptly the reported conversion rate halves, because the new leads sit in the denominator while their closings won't arrive until June. Marketing gets punished for its success. The reverse holds too: lead volume collapses, the rate appears to rise, and in the management meeting someone celebrates an improvement that is in truth an early warning signal.
 
-Die Korrektur heißt Kohortenlogik. Man nimmt alle Leads eines Monats und verfolgt genau diese Gruppe durch den Funnel. Wie viele aus der Januar-Kohorte wurden Opportunity, wie viele davon Kunde, egal wann der Abschluss fällt. Erst dann vergleicht man Kohorten miteinander, Januar gegen Februar gegen März, jede Gruppe gegen ihr eigenes Schicksal. Konzeptionell simpel. In der Praxis scheitert es meist an einem Detail: Kohorten brauchen den unveränderlichen Eintrittszeitpunkt in jede Funnel-Stage, und viele CRMs überschreiben genau dieses Feld bei jeder Änderung. Wer die Historie nicht sauber festhält, kann rückwirkend keine Kohorte mehr bauen. Das ist Datenmodell-Arbeit, keine Dashboard-Kosmetik.
+The fix is called cohort logic. You take all leads from one month and follow exactly that group through the funnel. How many from the January cohort became an opportunity, how many of those became a customer, regardless of when the close falls. Only then do you compare cohorts against each other, January against February against March, each group against its own fate. Conceptually simple. In practice it usually fails on one detail: cohorts need the immutable entry timestamp into each funnel stage, and many CRMs overwrite exactly that field on every change. If you don't capture the history cleanly, you can't build a cohort retroactively. That's data model work, not dashboard cosmetics.
 
-Ehrlich benannt hat die Sache einen Haken: Kohorten brauchen Geduld. Die Januar-Kohorte ist erst im Mai fertig erzählt, wenn der Cycle 90 Tage plus Streuung dauert. Wer jede Woche eine frische Zahl fürs Dashboard will, bekommt mit Kohorten erstmal Lücken. Aber eine Zahl, die drei Monate später stimmt, schlägt eine Zahl, die sofort da ist und nie gestimmt hat.
+Named honestly, the approach has a catch: cohorts require patience. The January cohort isn't fully told until May, if the cycle runs 90 days plus variance. If you want a fresh number for the dashboard every week, cohorts will give you gaps at first. But a number that's right three months later beats a number that's there immediately and was never right.
 
-Kleiner Test fürs nächste Reporting-Meeting: Fragt, aus welcher Kohorte die Abschlüsse im Zähler stammen. Lautet die Antwort "aus demselben Monat wie die Leads im Nenner", dann würfelt eure wichtigste Funnel-Kennzahl. Seit Jahren.
+Small test for the next reporting meeting: ask which cohort the closings in the numerator come from. If the answer is "the same month as the leads in the denominator", your most important funnel metric is rolling dice. And has been for years.

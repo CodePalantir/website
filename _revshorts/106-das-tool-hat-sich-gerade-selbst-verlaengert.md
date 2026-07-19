@@ -1,21 +1,23 @@
 ---
 layout: revshort
-title: "Das Tool hat sich gerade selbst verlängert"
-description: "Die Mail kommt an einem Dienstag. Ihre Subscription wurde erfolgreich um 12 Monate verlängert, Rechnung anbei, 28.400 Euro. Jemand aus dem Team leitet..."
+title: "The tool just renewed itself"
+description: "The email arrives on a Tuesday. Your subscription has been successfully renewed for 12 months, invoice attached, 28,400 euros. Someone on the team..."
 date: 2026-06-27
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/106-das-tool-hat-sich-gerade-selbst-verlaengert/
 ---
 
-Die Mail kommt an einem Dienstag. Ihre Subscription wurde erfolgreich um 12 Monate verlängert, Rechnung anbei, 28.400 Euro. Jemand aus dem Team leitet sie weiter mit der Frage, nutzen wir das überhaupt noch. Kurzes Wühlen im Vertrags-PDF, und da steht es: automatische Verlängerung, Kündigungsfrist 90 Tage vor Laufzeitende. Die war vor drei Wochen. Nächste Chance in elf Monaten.
+The email arrives on a Tuesday. Your subscription has been successfully renewed for 12 months, invoice attached, 28,400 euros. Someone on the team forwards it with the question, do we even still use this. A quick dig through the contract PDF, and there it is: automatic renewal, 90-day notice period before the end of the term. That deadline passed three weeks ago. Next chance in eleven months.
 
-Das ist kein konstruiertes Beispiel, das ist Alltag. Auto-Renewal mit langer Kündigungsfrist ist bei SaaS-Verträgen der Standard, und zwar aus einem einzigen Grund: Es funktioniert. Der Vendor weiß, dass Firmen zwischen 20 und 200 Leuten selten jemanden haben, der Vendor-Verträge aktiv managt. Die Frist ist keine Formalie, sie ist ein Umsatzinstrument. Neunzig Tage sind lang genug, dass sie garantiert im Tagesgeschäft untergehen.
+This is not a made-up example, this is everyday life. Auto-renewal with a long notice period is the standard in SaaS contracts, for a single reason: it works. The vendor knows that companies between 20 and 200 people rarely have anyone who actively manages vendor contracts. The notice period is not a formality, it is a revenue instrument. Ninety days is long enough to guarantee it drowns in daily business.
 
-Und jetzt der Teil, der wirklich weh tut. Auf der anderen Seite eures eigenen Geschäfts betreibt ihr exakt das Gegenteil. Eure Kundenverträge haben ein Renewal-Management, mit Erinnerungen im CRM, mit einem AE, der 120 Tage vor Ablauf anruft, vielleicht sogar mit einer CS-Plattform, die Health Scores rechnet. Kundenseitig ist Renewal ein Prozess. Einkaufsseitig ist es eine Überraschung per Mail. Dieselbe Firma, dieselbe Vertragslogik, null Prozess.
+And now the part that really hurts. On the other side of your own business, you run the exact opposite. Your customer contracts have renewal management, with reminders in the CRM, with an AE who calls 120 days before expiry, maybe even a CS platform that calculates health scores. On the customer side, renewal is a process. On the buying side, it is a surprise by email. Same company, same contract logic, zero process.
 
-Die Lösung ist beschämend simpel, und genau deshalb schreibe ich sie trotzdem hin. Ein Vendor-Kalender: jedes Tool, Vertragsende, Kündigungsfrist, Kosten, Owner. Fünfzehn Zeilen in einem Sheet, oder als Objekte im CRM, das ihr sowieso habt, dann gibt es die Erinnerung gratis dazu. Der Trigger sitzt nicht am Vertragsende, sondern 30 Tage vor der Kündigungsfrist, denn das ist der Moment, in dem ihr noch alle Optionen habt: neu verhandeln, Seats reduzieren, kündigen, bewusst verlängern. Nach der Frist habt ihr genau eine Option, und die kostet 28.400 Euro.
+The fix is embarrassingly simple, and that is exactly why I am writing it down anyway. A vendor calendar: every tool, contract end, notice period, cost, owner. Fifteen rows in a sheet, or as objects in the CRM you already pay for, which throws in the reminder for free. The trigger does not sit at contract end but 30 days before the notice deadline, because that is the moment when you still have all your options: renegotiate, reduce seats, cancel, renew deliberately. After the deadline, you have exactly one option, and it costs 28,400 euros.
 
-Nebeneffekt, der oft mehr wert ist als die verhinderte Panne: Wer den Kalender einmal befüllt, sieht zum ersten Mal die Gesamtsumme. Alle Tools, alle Laufzeiten, ein Betrag pro Jahr. Diese Zahl hat in den meisten Firmen noch nie jemand am Stück gesehen, weil die Verträge über drei Abteilungen und zwei Kreditkarten verteilt sind. Sie ist regelmäßig sechsstellig, und sie löst regelmäßig Gespräche aus, die längst überfällig waren.
+Side effect that is often worth more than the averted mishap: whoever fills in the calendar once sees the total for the first time. All tools, all terms, one amount per year. In most companies, nobody has ever seen that number in one piece, because the contracts are spread across three departments and two credit cards. It is regularly six figures, and it regularly triggers conversations that were long overdue.
 
-Ihr würdet keinem Kunden erlauben, sich unbemerkt aus dem Vertrag zu schleichen. Warum erlaubt ihr euren Vendoren, sich unbemerkt hineinzuschleichen?
+You would never let a customer quietly slip out of a contract. Why do you let your vendors quietly slip in?

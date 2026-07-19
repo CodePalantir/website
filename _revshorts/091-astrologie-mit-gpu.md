@@ -1,25 +1,27 @@
 ---
 layout: revshort
-title: "Astrologie mit GPU"
-description: "AI-Forecasting ist gerade das Lieblingsversprechen der Tool-Branche. Schluss mit dem Bauchgefühl im Forecast-Call, das Modell sagt euch, welche Deals..."
+title: "Astrology on a GPU"
+description: "AI forecasting is the tool industry's favorite promise right now. No more gut feeling in the forecast call, the model tells you which deals will really..."
 date: 2026-06-12
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "AI"
 hero_icon: "sparkles"
+lang: en
+translation: /de/revshorts/091-astrologie-mit-gpu/
 ---
 
-AI-Forecasting ist gerade das Lieblingsversprechen der Tool-Branche. Schluss mit dem Bauchgefühl im Forecast-Call, das Modell sagt euch, welche Deals wirklich closen. Klingt gut. Hat nur eine Voraussetzung, über die im Sales-Pitch niemand spricht: Das Modell lernt ausschließlich aus eurer Vergangenheit.
+AI forecasting is the tool industry's favorite promise right now. No more gut feeling in the forecast call, the model tells you which deals will really close. Sounds good. It just has one prerequisite nobody mentions in the sales pitch: the model learns exclusively from your past.
 
-Und jetzt schaut euch eure Vergangenheit mal ehrlich an.
+Now take an honest look at your past.
 
-Close Dates, die am Quartalsende kollektiv um drei Monate springen. Deals, die vier Monate in "Negotiation" stehen, weil niemand den Mut zum Closed Lost hatte. Stages, die jeder Vertriebler anders interpretiert, seit dem Relaunch 2023 sowieso, als aus fünf Stufen sieben wurden und die Historie einfach umgemappt wurde. Amount-Felder, die erst beim Abschluss gepflegt werden. Das ist bei den meisten Firmen zwischen 20 und 200 Leuten der Normalzustand, keine Anklage, einfach Befund.
+Close dates that collectively jump three months at the end of the quarter. Deals sitting in "Negotiation" for four months because nobody had the courage to mark them Closed Lost. Stages that every rep interprets differently, especially since the 2023 relaunch, when five stages became seven and the history simply got remapped. Amount fields that only get filled at closing. For most companies between 20 and 200 people, that's the normal state, not an accusation, just a finding.
 
-Ein Modell, das darauf trainiert, lernt keine Abschlusswahrscheinlichkeiten. Es lernt eure Ausreden. Wenn in euren Daten steht, dass Deals sich im Schnitt zweimal verschieben, prognostiziert das Modell Verschiebungen, sehr zuverlässig sogar. Ihr bekommt eine mathematisch aufwendige Version von dem, was ihr längst wisst: dass eure Pipeline nicht stimmt. Nur diesmal mit Konfidenzintervall und Lizenzkosten. Astrologie mit GPU.
+A model trained on that doesn't learn close probabilities. It learns your excuses. If your data says deals slip twice on average, the model predicts slippage, very reliably in fact. You get a mathematically elaborate version of what you already know: that your pipeline is off. Just this time with a confidence interval and license costs. Astrology on a GPU.
 
-Der Reflex, das Datenproblem mit einem klügeren Modell zu überspringen, ist verständlich. Er ist auch die teuerste Route. Garbage in, Garbage out gilt für neuronale Netze exakt so wie für den Excel-Forecast von 2015, das Modell versteckt den Müll nur besser hinter einer präzise aussehenden Zahl. Eine Zahl mit zwei Nachkommastellen wirkt seriös. Sie ist es nicht, wenn das Feld dahinter niemand pflegt.
+The reflex to skip past the data problem with a smarter model is understandable. It's also the most expensive route. Garbage in, garbage out applies to neural networks exactly as it did to the 2015 Excel forecast, the model just hides the garbage better behind a precise-looking number. A number with two decimal places looks credible. It isn't, if nobody maintains the field behind it.
 
-Was vorher passieren muss, ist Handwerk. Stage-Definitionen, die eine Prüffrage haben statt einer Meinung: was muss passiert sein, damit ein Deal in Stage 3 steht? Stage-Historie, die tatsächlich aufgezeichnet wird, mit Zeitstempeln, im CRM ist das eine Konfiguration, keine Raketenwissenschaft. Eine Hygiene-Routine, die Zombie-Deals rauskickt, bevor sie zur Trainingsgrundlage werden. Sechs Monate saubere Historie schlagen sechs Jahre verrauschte, das unterschätzen fast alle.
+What has to happen first is craft. Stage definitions with a test question instead of an opinion: what must have happened for a deal to sit in stage 3? Stage history that actually gets recorded, with timestamps, which in the CRM is a configuration, not rocket science. A hygiene routine that kicks out zombie deals before they become training data. Six months of clean history beats six years of noisy history, and almost everyone underestimates that.
 
-Danach, und erst danach, wird AI-Forecasting interessant. Auf disziplinierten Daten findet ein Modell tatsächlich Muster, die im Forecast-Call niemand sieht: welche Stage-Verweildauer ein Warnsignal ist, welche Deal-Profile systematisch überschätzt werden. Das ist echter Wert.
+After that, and only after that, AI forecasting gets interesting. On disciplined data a model really does find patterns nobody sees in the forecast call: which stage dwell time is a warning signal, which deal profiles get systematically overestimated. That's real value.
 
-Aber die Reihenfolge steht fest. Wer sie ignoriert, bezahlt viel Geld dafür, seine eigenen schlechten Gewohnheiten als Prognose zurückzubekommen.
+But the order is fixed. Ignore it and you're paying good money to get your own bad habits back as a prediction.

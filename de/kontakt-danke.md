@@ -15,7 +15,7 @@ sitemap: false
       <p class="mt-5 text-lg leading-relaxed text-muted">Eure Anfrage ist da, und ein echter Mensch liest sie. Wir antworten innerhalb eines Werktags, meistens schneller.</p>
       <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="{{ '/de/' | relative_url }}" class="apx-btn apx-btn-primary">Zur Startseite</a>
-        <a href="{{ '/revshorts' | relative_url }}" class="apx-btn apx-btn-ghost">Solange einen RevShort lesen</a>
+        <a href="{{ '/de/revshorts/' | relative_url }}" class="apx-btn apx-btn-ghost">Solange einen RevShort lesen</a>
       </div>
     </div>
   </div>

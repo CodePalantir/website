@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Euer Lead-SLA steht in einem Protokoll von 2024"
-description: "Irgendwann im Frühjahr 2024 gab es dieses Meeting. Marketing und Sales, endlich mal alle an einem Tisch, und am Ende stand der Satz im Protokoll: Leads..."
+title: "Your lead SLA lives in meeting notes from 2024"
+description: "Sometime in spring 2024 there was this meeting. Marketing and sales, finally everyone at one table, and at the end the sentence went into the notes:..."
 date: 2026-04-21
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Outbound"
 hero_icon: "send"
+lang: en
+translation: /de/revshorts/039-euer-lead-sla-steht-in-einem-protokoll-von-2024/
 ---
 
-Irgendwann im Frühjahr 2024 gab es dieses Meeting. Marketing und Sales, endlich mal alle an einem Tisch, und am Ende stand der Satz im Protokoll: Leads werden innerhalb von 30 Minuten kontaktiert. Alle nickten. Jemand schrieb "SLA vereinbart" in die Notizen. Seitdem ist nichts passiert.
+Sometime in spring 2024 there was this meeting. Marketing and sales, finally everyone at one table, and at the end the sentence went into the notes: leads get contacted within 30 minutes. Everyone nodded. Someone wrote "SLA agreed" in the minutes. Nothing has happened since.
 
-Fragt heute nach der tatsächlichen Reaktionszeit auf Inbound-Leads. Nicht nach der vereinbarten, nach der gemessenen. In den meisten Firmen kann das niemand beantworten, weil es keinen Timestamp-Vergleich gibt, kein Reporting, nichts. Das SLA existiert als Erinnerung an ein gutes Meeting. Als Systemzustand existiert es nicht.
+Ask today about the actual response time on inbound leads. Not the agreed one, the measured one. In most companies nobody can answer that, because there is no timestamp comparison, no reporting, nothing. The SLA exists as the memory of a good meeting. As a system state, it does not exist.
 
-Ein SLA ohne Messung ist ein Wunsch. Ein SLA ohne Eskalation ist eine Bitte. Ein SLA ohne Konsequenz ist Deko.
+An SLA without measurement is a wish. An SLA without escalation is a request. An SLA without consequence is decoration.
 
-Was ein echtes SLA braucht, ist unspektakulär und genau deshalb wird es nie gebaut. Erstens die Messung: Zeitstempel bei Lead-Eingang, Zeitstempel beim ersten echten Kontaktversuch, Differenz als Feld auf dem Lead. Das sind zwei Felder und eine kleine Automatisierung, ein Nachmittag Arbeit. Zweitens die Eskalation: Wenn nach 20 Minuten nichts passiert ist, geht eine Nachricht an den Rep. Nach 40 Minuten an den Teamlead. Nach zwei Stunden wird der Lead neu geroutet, an jemanden, der Zeit hat. Das System wartet nicht höflich, es handelt. Drittens die Sichtbarkeit: Reaktionszeit pro Rep und pro Woche in einem Report, den das Sales-Meeting jede Woche aufmacht. Nicht als Pranger, als Betriebstemperatur.
+What a real SLA needs is unspectacular, and that is exactly why it never gets built. First, the measurement: timestamp at lead arrival, timestamp at the first real contact attempt, the difference as a field on the lead. That's two fields and a small automation, one afternoon of work. Second, the escalation: if nothing has happened after 20 minutes, a message goes to the rep. After 40 minutes, to the team lead. After two hours, the lead gets rerouted, to someone who has time. The system doesn't wait politely, it acts. Third, the visibility: response time per rep and per week in a report the sales meeting opens every week. Not as a pillory, as operating temperature.
 
-Der Einwand kommt zuverlässig: "Unsere Leute sind doch keine Maschinen, manchmal ist man halt im Termin." Richtig. Deshalb eskaliert und reroutet das System ja. Es geht nicht darum, dass ein einzelner Rep in jeder Minute springt. Es geht darum, dass der Lead nicht drei Tage in einer Queue liegt, weil genau dieser eine Rep im Urlaub ist und niemand es merkt.
+The objection arrives reliably: "Our people aren't machines, sometimes you're just in a meeting." Correct. That's why the system escalates and reroutes. The point is not that a single rep jumps at every minute. The point is that the lead doesn't sit in a queue for three days because that one rep is on vacation and nobody notices.
 
-Und warum die Eile überhaupt? Weil die Zahlen dazu seit Jahren stabil sind: Die Kontaktwahrscheinlichkeit fällt in der ersten Stunde nach der Anfrage steil ab. Der Interessent, der um 14:12 Uhr euer Formular ausfüllt, vergleicht um 14:40 Uhr schon den Wettbewerber, der zurückgerufen hat.
+And why the rush at all? Because the numbers on this have been stable for years: the probability of making contact drops steeply within the first hour after the inquiry. The prospect who fills out your form at 2:12 pm is already comparing the competitor who called back at 2:40 pm.
 
-Holt das Protokoll von damals raus und stellt eine Frage: Wo im System steht das? Wenn die Antwort ein Schulterzucken ist, habt ihr kein SLA. Ihr habt eine Anekdote.
+Dig out the notes from back then and ask one question: where in the system does this live? If the answer is a shrug, you don't have an SLA. You have an anecdote.

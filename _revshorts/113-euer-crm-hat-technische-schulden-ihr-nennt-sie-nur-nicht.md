@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Euer CRM hat technische Schulden, ihr nennt sie nur nicht so"
-description: "Entwickler haben für ein bestimmtes Phänomen ein Wort: technische Schulden. Der schnelle Fix, der eigentlich ein Provisorium war und jetzt seit drei..."
+title: "Your CRM has technical debt, you just don't call it that"
+description: "Developers have a word for a particular phenomenon: technical debt. The quick fix that was really meant as a stopgap and has now been running in..."
 date: 2026-07-04
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/113-euer-crm-hat-technische-schulden-ihr-nennt-sie-nur-nicht/
 ---
 
-Entwickler haben für ein bestimmtes Phänomen ein Wort: technische Schulden. Der schnelle Fix, der eigentlich ein Provisorium war und jetzt seit drei Jahren in Produktion läuft. Jeder kennt das Konzept aus Software. Fast niemand wendet es auf sein CRM an.
+Developers have a word for a particular phenomenon: technical debt. The quick fix that was really meant as a stopgap and has now been running in production for three years. Everyone knows the concept from software. Almost nobody applies it to their CRM.
 
-Dabei ist euer CRM eine Codebase. Schaut rein. Das Pflichtfeld, das 2022 für eine Kampagne angelegt wurde und seitdem mit "n/a" befüllt wird, weil sonst der Speichern-Button streikt. Der Flow, der einen anderen Flow triggert, der ein Feld setzt, das ein dritter Flow wieder überschreibt, und keiner weiß mehr, in welcher Reihenfolge. Die Validierungsregel, die jemand deaktiviert hat, "nur kurz", vor vierzehn Monaten. Workarounds auf Workarounds, jeder einzelne damals vernünftig, in Summe ein Minenfeld.
+Yet your CRM is a codebase. Look inside. The required field created for a campaign in 2022, filled with "n/a" ever since because otherwise the save button goes on strike. The flow that triggers another flow that sets a field that a third flow overwrites again, and nobody remembers in which order. The validation rule someone deactivated, "just briefly", fourteen months ago. Workarounds on top of workarounds, each one reasonable at the time, in sum a minefield.
 
-Und wie bei Code zahlt ihr Zinsen. Nicht irgendwann, sondern jeden Monat. Die Zinsen heißen: Reports, denen niemand traut. Ein Onboarding, in dem der neue Rep lernt, welche Felder man ignorieren muss. Und die teuerste Form von allen, die Angst vor Änderungen. Wenn eure Admins bei der Frage "können wir das Stage-Modell anpassen?" den Blick senken, weil niemand weiß, was dann alles bricht, dann ist das keine Vorsicht. Das ist Zahlungsunfähigkeit in Zeitlupe.
+And as with code, you pay interest. Not someday, but every month. The interest is called: reports nobody trusts. An onboarding in which the new rep learns which fields to ignore. And the most expensive form of all, the fear of change. When your admins lower their eyes at the question "can we adjust the stage model?" because nobody knows what would break, that is not caution. That is insolvency in slow motion.
 
-Der Unterschied zu einer echten Codebase: Dort gibt es wenigstens die Idee eines Refactoring-Budgets. Gute Engineering-Teams reservieren einen festen Anteil ihrer Kapazität, um Altlasten abzubauen, bevor sie neue Features bauen. Im CRM? Null. Jedes Quartal kommt ein neues Feld dazu, eine neue Automatisierung, ein neues Tool mit eigener Integration. Es wird nur eingezahlt, nie getilgt. Kein Wunder, dass die Orgs nach fünf Jahren aussehen wie ein Legacy-Monolith, den keiner mehr anfassen will.
+The difference from a real codebase: there, at least the idea of a refactoring budget exists. Good engineering teams reserve a fixed share of their capacity to pay down legacy before building new features. In the CRM? Zero. Every quarter adds a new field, a new automation, a new tool with its own integration. Deposits only, never repayment. No wonder the orgs look like a legacy monolith nobody wants to touch after five years.
 
-Wir haben mal eine Org auditiert mit 340 Reports. Zwölf davon wurden im letzten Quartal geöffnet. 340 gebaut, zwölf genutzt, und trotzdem traute sich niemand zu löschen, denn was, wenn Report Nummer 218 doch irgendwo gebraucht wird? Genau so klingt Zinslast.
+We once audited an org with 340 reports. Twelve of them were opened in the last quarter. 340 built, twelve used, and still nobody dared to delete, because what if report number 218 is needed somewhere after all? That is exactly what interest burden sounds like.
 
-Die Tilgung ist übrigens kein Hexenwerk. Feld-Inventur, tote Automatisierungen abschalten, Abhängigkeiten dokumentieren, dann in Schichten aufräumen. Unbequem, ja. Aber messbar, endlich, und danach kann man wieder ändern, ohne zu beten.
+Paying it down is no dark art, by the way. Field inventory, switch off dead automations, document dependencies, then clean up in layers. Uncomfortable, yes. But measurable, finite, and afterwards you can make changes again without praying.
 
-Fragt euer Team mal, welche Änderung im CRM sie seit über einem Jahr aufschieben, weil sie sich nicht trauen. Diese eine Antwort sagt euch mehr über euren Zinssatz als jedes Dashboard.
+Ask your team which CRM change they have been putting off for over a year because they do not dare. That one answer tells you more about your interest rate than any dashboard.

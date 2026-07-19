@@ -1,27 +1,29 @@
 ---
 layout: revshort
-title: "Freitextfelder sind der Ort, wo Reporting stirbt"
-description: "Öffnet mal das Feld 'Region' in eurem CRM und schaut, was drinsteht. München. Muenchen. MUC. Munich, weil ein Kollege das englische Tastaturlayout..."
+title: "Free-text fields are where reporting goes to die"
+description: "Open the 'Region' field in your CRM and look at what's in there. München. Muenchen. MUC. Munich, because a colleague was on the English keyboard..."
 date: 2026-05-25
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/073-freitextfelder-sind-der-ort-wo-reporting-stirbt/
 ---
 
-Öffnet mal das Feld "Region" in eurem CRM und schaut, was drinsteht. München. Muenchen. MUC. Munich, weil ein Kollege das englische Tastaturlayout hatte. Bayern, weil jemand großzügig dachte. Süd, aus der Zeit vor der Gebietsreform 2024. Sechs Schreibweisen, eine Stadt, null Auswertbarkeit.
+Open the "Region" field in your CRM and look at what's in there. München. Muenchen. MUC. Munich, because a colleague was on the English keyboard layout. Bavaria, because someone was thinking generously. South, from the era before the 2024 territory redesign. Six spellings, one city, zero analyzability.
 
-Und dann wundert sich jemand, warum der Umsatz-nach-Region-Report nicht stimmt.
+And then someone wonders why the revenue-by-region report doesn't add up.
 
-Das Muster ist immer dasselbe. Ein Feld wird angelegt, schnell, zwischen zwei Meetings, als Freitext, weil Freitext keine Diskussion braucht. Picklist hieße ja: jemand müsste entscheiden, welche Werte erlaubt sind. Also lieber offen lassen. Drei Jahre später hat das Feld 214 verschiedene Werte für 16 tatsächliche Regionen, und jede Auswertung beginnt mit einer Stunde Excel-Putzarbeit, die jedes Mal jemand anders macht, jedes Mal leicht anders.
+The pattern is always the same. A field gets created, fast, between two meetings, as free text, because free text needs no discussion. A picklist would mean someone has to decide which values are allowed. So it stays open. Three years later, the field holds 214 distinct values for 16 actual regions, and every analysis starts with an hour of Excel cleanup, done by a different person every time, slightly differently every time.
 
-Freitext fühlt sich nach Freiheit an. Stimmt auch, für den, der tippt. Für den, der auswertet, ist es Archäologie.
+Free text feels like freedom. True, for the person typing. For the person analyzing, it's archaeology.
 
-Die Lösung klingt banal und ist es nicht: Picklists mit Ownership. Nicht einfach Dropdowns, sondern Dropdowns, für die ein Mensch verantwortlich ist. Wer darf Werte hinzufügen? Was passiert mit alten Werten, wenn sich Gebiete ändern? Wie werden Bestandsdaten migriert? Das sind keine technischen Fragen, das sind Governance-Fragen, und genau deshalb drückt sich jeder davor.
+The solution sounds banal and isn't: picklists with ownership. Not just dropdowns, but dropdowns a human is responsible for. Who may add values? What happens to old values when territories change? How does existing data get migrated? Those aren't technical questions, they're governance questions, and that's exactly why everyone dodges them.
 
-Natürlich gibt es Felder, die Freitext sein müssen. Notizen. Kontext. Das, was der Kunde wörtlich gesagt hat. Alles, worüber ihr nie einen Report bauen werdet. Die Faustregel ist simpel: Wenn ein Feld jemals in einem Filter, einer Gruppierung oder einem Chart landen soll, ist Freitext die falsche Antwort. Und "jemals" kommt schneller, als man denkt.
+Of course there are fields that have to be free text. Notes. Context. What the customer literally said. Everything you'll never build a report on. The rule of thumb is simple: if a field is ever supposed to end up in a filter, a grouping, or a chart, free text is the wrong answer. And "ever" arrives faster than you think.
 
-Der eigentliche Punkt liegt eine Ebene tiefer. Jede Auswertung, die ihr in zwei Jahren fahren wollt, wird heute bei der Feldanlage entschieden. Das Dashboard ist nur das Ende der Kette. Wer bei der Anlage schludert, kann hinten polieren, so viel er will, die Daten geben es nicht her. Reporting-Probleme sind fast nie Reporting-Probleme. Es sind Feldanlage-Probleme mit zwei Jahren Verzögerung.
+The real point sits one level deeper. Every analysis you want to run in two years is decided today, at field creation. The dashboard is just the end of the chain. If you're sloppy at creation, you can polish downstream all you want, the data won't support it. Reporting problems are almost never reporting problems. They're field-creation problems with a two-year delay.
 
-Deshalb: neues Feld, drei Fragen. Wird das jemals ausgewertet? Wer besitzt die Werteliste? Was passiert mit den Altdaten? Dauert zwei Minuten. Die Alternative kostet, konservativ geschätzt, eine Stunde pro Monat für jeden, der mit dem Feld arbeiten muss.
+So: new field, three questions. Will this ever be analyzed? Who owns the value list? What happens to the legacy data? Takes two minutes. The alternative costs, conservatively, an hour per month for everyone who has to work with the field.
 
-Wie viele eurer Freitextfelder wären heute Picklists, wenn bei der Anlage jemand zwei Minuten nachgedacht hätte?
+How many of your free-text fields would be picklists today if someone had thought for two minutes at creation?

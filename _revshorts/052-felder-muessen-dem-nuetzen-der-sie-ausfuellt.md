@@ -1,23 +1,25 @@
 ---
 layout: revshort
-title: "Felder müssen dem nützen, der sie ausfüllt"
-description: "Es gibt eine einfache Diagnose für den Zustand eures CRM. Nehmt ein beliebiges Feld und fragt: Wer füllt es aus, und wer hat etwas davon? Wenn die..."
+title: "Fields must serve the person filling them in"
+description: "There is a simple diagnostic for the state of your CRM. Take any field and ask: who fills it in, and who benefits? If the answers are..."
 date: 2026-05-04
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Data"
 hero_icon: "database"
+lang: en
+translation: /de/revshorts/052-felder-muessen-dem-nuetzen-der-sie-ausfuellt/
 ---
 
-Es gibt eine einfache Diagnose für den Zustand eures CRM. Nehmt ein beliebiges Feld und fragt: Wer füllt es aus, und wer hat etwas davon? Wenn die Antworten "der Rep" und "das Management" lauten, wisst ihr schon, was in dem Feld steht. Müll. Vielleicht gepflegter Müll, aber Müll.
+There is a simple diagnostic for the state of your CRM. Take any field and ask: who fills it in, and who benefits? If the answers are "the rep" and "management", you already know what is in that field. Garbage. Maybe well-groomed garbage, but garbage.
 
-Das Muster entsteht schleichend. Der Vertriebsleiter will Forecast-Kategorien sehen, also kommt ein Feld. Marketing will die Lead-Quelle nachvollziehen, noch ein Feld. Der Beirat fragt nach Wettbewerbern, Feld Nummer drei. Jedes einzelne klingt vernünftig, jedes einzelne kostet den Rep zwanzig Sekunden, und keines davon hilft ihm, auch nur einen Deal schneller zu schließen. Nach drei Jahren hat die Opportunity 60 Felder, und der Rep hat ein privates Ranking, welche er ernsthaft pflegt, welche er mit dem erstbesten Picklist-Wert abfrühstückt und in welche er "tbd" schreibt. Fragt mal nach, dieses Ranking existiert wirklich, in jedem Team.
+The pattern creeps in slowly. The VP of Sales wants to see forecast categories, so a field appears. Marketing wants to trace lead source, another field. The advisory board asks about competitors, field number three. Each one sounds reasonable, each one costs the rep twenty seconds, and not one of them helps him close a single deal faster. Three years later the opportunity has 60 fields, and the rep has a private ranking of which ones he maintains seriously, which ones he brushes off with the first picklist value in sight, and which ones get "tbd". Ask around, that ranking really exists, on every team.
 
-Oben merkt das lange niemand, weil die Dashboards trotzdem hübsch aussehen. Ein Tortendiagramm unterscheidet nicht zwischen einer echten Angabe und einem genervten Klick. Der Vertriebsleiter präsentiert Quartal für Quartal eine Wettbewerber-Verteilung, die zu 70 Prozent aus "Sonstige" besteht, und zieht daraus Schlüsse. Die Daten sehen aus wie Daten. Sie sind Rauschen mit Formatierung.
+Upstairs, nobody notices for a long time, because the dashboards still look pretty. A pie chart does not distinguish between a genuine entry and an annoyed click. The VP of Sales presents a competitor distribution quarter after quarter that is 70 percent "Other" and draws conclusions from it. The data looks like data. It is noise with formatting.
 
-Die Steuererklärungs-Logik dahinter ist immer dieselbe: Aufwand unten, Nutzen oben, und dazwischen kein Rückfluss. Menschen optimieren solche Systeme zuverlässig auf minimalen Aufwand. Das ist keine Charakterfrage, das ist Ökonomie.
+The tax-return logic behind it is always the same: effort at the bottom, benefit at the top, and no flow back in between. People reliably optimize such systems for minimal effort. That is not a character question, that is economics.
 
-Deshalb gehört vor jedes neue Feld ein Test mit genau einer Frage: Was hat der Ausfüllende davon? Manchmal gibt es eine ehrliche Antwort. Das Feld "Nächster Schritt" schützt den Rep vor seinem eigenen Vergessen, das Buying Committee mit Rollen rettet ihm den Deal, wenn sein Champion kündigt. Solche Felder werden gepflegt, ohne dass jemand mahnt. Für alles andere gilt eine harte Regel: Wenn nur das Reporting das Feld braucht, muss eine Maschine es füllen, aus Anreicherung, aus Aktivitätsdaten, aus dem Gesprächstranskript. Und wenn das nicht geht, ist der Preis der Erkenntnis eben Müll im Feld, dann lieber gar kein Feld und eine ehrliche Lücke im Dashboard.
+Which is why every new field needs to pass a test with exactly one question: what does the person filling it in get out of it? Sometimes there is an honest answer. The "next step" field protects the rep from his own forgetting, the buying committee with roles saves him the deal when his champion resigns. Fields like that get maintained without anyone nagging. For everything else, a hard rule applies: if only reporting needs the field, a machine has to fill it, from enrichment, from activity data, from the call transcript. And if that is not possible, then the price of the insight is garbage in the field, in which case better no field at all and an honest gap in the dashboard.
 
-Eine Lücke, die man sieht, ist nämlich billiger als eine Zahl, der man fälschlich glaubt.
+Because a gap you can see is cheaper than a number you wrongly believe.
 
-Welche eurer Pflichtfelder würde ein Rep freiwillig ausfüllen? Streicht alle anderen zusammen und schaut, was mit der Datenqualität passiert.
+Which of your required fields would a rep fill in voluntarily? Cut all the others down and watch what happens to your data quality.

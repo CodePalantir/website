@@ -1,19 +1,21 @@
 ---
 layout: revshort
-title: "Der Sync fiel aus, und keiner wusste warum"
-description: "Dienstagmorgen, die Dashboards sind leer. Der Sync zwischen Shop und CRM lief nachts nicht durch, im Log steht sowas wie 'REQUEST_LIMIT_EXCEEDED', und..."
+title: "The sync failed, and nobody knew why"
+description: "Tuesday morning, the dashboards are empty. The sync between shop and CRM didn't run overnight, the log says something like 'REQUEST_LIMIT_EXCEEDED,' and..."
 date: 2026-06-03
-read_time: "2 Min Read"
+read_time: "2 min read"
 category: "Integration"
 hero_icon: "git-branch"
+lang: en
+translation: /de/revshorts/082-der-sync-fiel-aus-und-keiner-wusste-warum/
 ---
 
-Dienstagmorgen, die Dashboards sind leer. Der Sync zwischen Shop und CRM lief nachts nicht durch, im Log steht sowas wie "REQUEST_LIMIT_EXCEEDED", und der Kollege, der die Integration vor zwei Jahren gebaut hat, sagt den Satz, der alles erklärt: "Wusste gar nicht, dass es da ein Limit gibt."
+Tuesday morning, the dashboards are empty. The sync between shop and CRM didn't run overnight, the log says something like "REQUEST_LIMIT_EXCEEDED," and the colleague who built the integration two years ago says the sentence that explains everything: "I didn't even know there was a limit."
 
-Jede API hat Limits. Salesforce zählt Calls pro 24 Stunden, gestaffelt nach Edition und Lizenzen. HubSpot drosselt pro 10 Sekunden. Stripe, Shopify, jedes Marketing-Tool: überall Kontingente, Drosselungen, Concurrency-Grenzen. Das ist keine Schikane, das ist Physik geteilter Infrastruktur, und es steht in jeder Doku auf den ersten Seiten. Trotzdem werden Integrationen reihenweise so gebaut, als wäre die API ein unendlicher Wasserhahn. Ein Datensatz, ein Call, in der Schleife, 80.000 Mal. Läuft im Test mit 50 Datensätzen wunderbar. Läuft in Produktion drei Monate lang auch, bis die Datenmenge wächst, ein zweites Team eine eigene Automatisierung ans selbe Kontingent hängt und beide sich nachts gegenseitig das Budget wegfressen.
+Every API has limits. Salesforce counts calls per 24 hours, tiered by edition and licenses. HubSpot throttles per 10 seconds. Stripe, Shopify, every marketing tool: quotas, throttling, concurrency limits everywhere. That's not harassment, that's the physics of shared infrastructure, and it's on the first pages of every doc. Still, integrations get built by the dozen as if the API were an infinite faucet. One record, one call, in a loop, 80,000 times. Runs beautifully in the test with 50 records. Runs fine in production for three months too, until the data volume grows, a second team hangs its own automation on the same quota, and the two eat each other's budget away at night.
 
-Das Ärgerliche daran: Die Lösungen sind Lehrbuchstoff. Batching, also 200 Datensätze pro Call statt einem, reduziert den Verbrauch um den Faktor 200, die meisten APIs bieten Bulk-Endpunkte genau dafür an. Backoff heißt, dass die Integration bei einer Drosselung nicht stur sofort nochmal anklopft, sondern wartet, mit wachsenden Abständen, und sich danach sauber weiterarbeitet statt den halben Import zu verlieren. Dazu ein Monitoring, das den Kontingentverbrauch anzeigt, bevor er bei 100 Prozent steht. Nichts davon ist exotisch. Es muss nur am Anfang eingeplant werden, nicht am Ende.
+The annoying part: the solutions are textbook material. Batching, meaning 200 records per call instead of one, cuts consumption by a factor of 200, and most APIs offer bulk endpoints for exactly that. Backoff means that when throttled, the integration doesn't stubbornly knock again right away, but waits, at growing intervals, and then resumes cleanly instead of losing half the import. Add monitoring that shows quota consumption before it hits 100 percent. None of this is exotic. It just has to be planned in at the beginning, not at the end.
 
-Und genau da verläuft die Linie zwischen Bastelei und Engineering. Der Bastler fragt: Kriege ich die Daten von A nach B? Der Ingenieur fragt: Was passiert bei 10-facher Datenmenge, was passiert, wenn die Gegenseite drosselt, was passiert, wenn der Job mittendrin stirbt, und woran merken wir es? Beide Integrationen sehen in der Demo identisch aus. Der Unterschied zeigt sich erst nachts um drei, Monate später, und dann steht er nicht im Angebot von damals, sondern im Postmortem von heute.
+And that's exactly where the line between tinkering and engineering runs. The tinkerer asks: can I get the data from A to B? The engineer asks: what happens at 10x the data volume, what happens when the other side throttles, what happens when the job dies midway, and how will we notice? Both integrations look identical in the demo. The difference shows at three in the morning, months later, and then it's not in the old proposal, it's in today's postmortem.
 
-Limits, Batching und Backoff gehören ins Integrationsdesign, auf Seite eins, neben das Datenmapping. Wer sie erst im Incident kennenlernt, hat keine Integration gekauft, sondern einen Prototyp im Dauereinsatz. Wisst ihr eigentlich, wie viel von eurem API-Kontingent heute Nacht verbraucht wurde und wovon?
+Limits, batching, and backoff belong in the integration design, on page one, next to the data mapping. If you first meet them in an incident, you didn't buy an integration, you bought a prototype in permanent production. Do you actually know how much of your API quota got consumed last night, and by what?
