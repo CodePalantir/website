@@ -28,6 +28,62 @@ faq:
     a: "We work read-only, under NDA, from the EU. Nothing changes in your org and nothing leaves it except the findings document."
   - q: "What if the audit finds nothing serious?"
     a: "Then you get something rare: written, senior confirmation that your org is healthy. That answer is worth having on file, for your board and your roadmap."
+pains_title: "Is your org showing symptoms?"
+pains_intro: "Most teams do not realise they have a technical debt problem until a critical deployment fails or a key report is proven wrong."
+pains:
+  - icon: "timer"
+    title: "Sluggish performance"
+    body: "Page loads past three seconds, and a sales team that quietly stops using the org."
+  - icon: "server-crash"
+    title: "Integration failures"
+    body: "Silent errors in webhook and API connections that drop records for weeks."
+  - icon: "database"
+    title: "Data distrust"
+    body: "Duplicate accounts and sync errors that turn every report into an argument."
+  - icon: "shield-alert"
+    title: "Deploy fear"
+    body: "Every release breaks something unexpected, so nobody wants to ship."
+diagnostic:
+  title: "Technical bottleneck analysis"
+  steps:
+    - { label: "Technical debt", badge: "High risk", icon: "alert-circle" }
+    - { label: "Data structure", badge: "Unoptimised", icon: "database", hot: true }
+    - { label: "Configuration chaos", badge: "Critical", icon: "layers" }
+phases_eyebrow: "Our methodology"
+phases_title: "The audit process."
+phases:
+  - icon: "file-search"
+    title: "The scan"
+    body: "A non-invasive static analysis of your metadata and Apex classes. Nothing changes in your org."
+  - icon: "alert-triangle"
+    title: "The deep dive"
+    body: "Manual review of your core architectural flows, triggers and automation by a senior engineer."
+  - icon: "file-text"
+    title: "The roadmap"
+    body: "A prioritised report that ranks every risk by business impact against effort, priced in euros."
+outcomes_title: "Your roadmap to platform stability."
+outcomes_intro: "We do not dump a list of errors on you. You get a strategic narrative that connects technical root causes to business outcomes, the ammunition you need to justify budget and roadmap decisions."
+outcomes:
+  - icon: "bar-chart-3"
+    title: "Executive impact summary"
+    body: "An ROI-focused breakdown for the C-suite, mapping technical debt directly to revenue risk."
+  - icon: "clipboard-check"
+    title: "Technical remediation plan"
+    body: "Jira-ready tickets for your team, prioritised by business impact versus effort."
+  - icon: "shield-check"
+    title: "Security and compliance review"
+    body: "A detailed exposure analysis covering GDPR, field-level security and sharing settings."
+visual: "report"
+report:
+  title_lines: ["Technical", "Health Audit"]
+  tag: "Report example"
+  score_label: "System Health Score"
+  score: "42/100"
+  score_pct: 42
+  score_tone: "risk"
+  finding_label: "Critical finding"
+  finding: "Unrestricted org access"
+sample_pdf: "/assets/content/Technical-Health-Audit-ApexPalantir.pdf"
 ---
 
 ## Why teams book this first
