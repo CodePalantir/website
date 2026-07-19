@@ -57,6 +57,9 @@ collections:
   industries:
     output: true
     permalink: /industries/:name/
+  solutions:
+    output: true
+    permalink: /solutions/:name/
 
 plugins:
   - jekyll-seo-tag

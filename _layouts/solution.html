@@ -1,0 +1,64 @@
+---
+layout: default
+---
+<!-- 1. HERO -->
+<section class="px-6 bg-paper pt-[clamp(7rem,15vh,10rem)] pb-[clamp(3.5rem,7vh,6rem)]">
+  <div class="max-w-wide mx-auto">
+    <div class="max-w-[860px] rv">
+      <div class="flex flex-wrap items-center gap-3">
+        <span class="apx-eyebrow">Solutions</span>
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-tint text-accent border border-accent/15 text-[11px] font-bold uppercase tracking-[0.12em]">Coming soon</span>
+      </div>
+      <div class="mt-5 flex items-center gap-4">
+        <span class="inline-grid place-items-center w-14 h-14 rounded-2xl bg-purple-gradient text-white shrink-0">{% include ui/icon.html name=page.icon class="w-7 h-7" %}</span>
+        <p class="text-[15px] font-bold uppercase tracking-[0.16em] text-faint">{{ page.name }}</p>
+      </div>
+      <h1 class="mt-5 font-bold text-ink tracking-[-0.03em] leading-[1.03] text-[clamp(2.5rem,5.2vw,4.25rem)]" style="text-wrap:balance">{{ page.headline }} <span class="text-gradient">{{ page.headline_accent }}</span></h1>
+      <p class="mt-5 max-w-[58ch] text-[clamp(1.05rem,1.4vw,1.3rem)] leading-relaxed text-muted">{{ page.lead }}</p>
+      {% if page.chips %}
+      <div class="mt-7 flex flex-wrap gap-2.5">
+        {% for chip in page.chips %}
+        <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-surface border border-line text-sm font-semibold text-ink">{{ chip }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- 2. WHAT IT DOES -->
+<section class="apx-section px-6 bg-surface">
+  <div class="max-w-wide mx-auto">
+    <div class="max-w-[760px] rv">
+      <span class="apx-eyebrow">What it does</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">{{ page.capabilities_title }}</h2>
+      {% if page.intro %}<p class="mt-4 max-w-[62ch] text-lg leading-relaxed text-muted">{{ page.intro }}</p>{% endif %}
+    </div>
+    <div class="mt-12 md:mt-16 grid md:grid-cols-3 gap-10 md:gap-14">
+      {% for f in page.features %}
+      <div class="border-t-[1.5px] border-[rgba(36,28,51,.14)] pt-7 rv">
+        <div class="text-[15px] font-bold text-gradient tabular-nums">0{{ forloop.index }}</div>
+        <h3 class="mt-2.5 text-[22px] font-bold tracking-[-0.01em] text-ink leading-snug">{{ f.title }}</h3>
+        <p class="mt-3 text-base leading-relaxed text-muted">{{ f.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- 3. STATUS + WAITLIST -->
+<section class="apx-section px-6 bg-paper">
+  <div class="max-w-wide mx-auto">
+    <div class="apx-panel relative p-8 md:p-12 rv">
+      <div class="relative z-[2] max-w-[640px]">
+        <span class="apx-eyebrow-light">In development</span>
+        <h2 class="mt-4 font-bold text-white tracking-[-0.02em] leading-[1.1] text-[clamp(1.75rem,3vw,2.5rem)]" style="text-wrap:balance">{{ page.status_headline | default: "Built with the teams who will use it." }}</h2>
+        <p class="mt-4 text-lg leading-relaxed text-white/70">{{ page.status_note }}</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3.5">
+          <a href="mailto:{{ site.contact.email }}?subject=Waitlist%3A%20{{ page.name | url_encode }}" data-ap-track="waitlist" data-ap-category="{{ page.slug }}" class="apx-btn apx-btn-accent">Join the waitlist</a>
+          <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-light">Explore our services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
