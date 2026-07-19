@@ -90,8 +90,6 @@
         </div>
       </div>
 
-      <a href="{{ site.baseurl }}/about" class="hover:text-ink transition-colors {% if page.url contains '/about' %}text-accent{% endif %}">About</a>
-
       <!-- Insights dropdown (Blog + RevShorts) -->
       <div class="relative group flex items-center">
         <a href="{{ site.baseurl }}/articles" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/articles' or page.url contains '/revshorts' %}text-accent{% endif %}">
@@ -119,6 +117,7 @@
         </div>
       </div>
 
+      <a href="{{ site.baseurl }}/about" class="hover:text-ink transition-colors {% if page.url contains '/about' %}text-accent{% endif %}">About</a>
       <a href="{{ site.baseurl }}/contact" class="hover:text-ink transition-colors {% if page.url contains '/contact' %}text-accent{% endif %}">Contact</a>
     </nav>
 
@@ -185,17 +184,6 @@
         </div>
       </div>
 
-      <a href="{{ site.baseurl }}/about" class="py-3 border-b border-line">About</a>
-      <a href="{{ site.baseurl }}/contact" class="py-3 border-b border-line">Contact</a>
-
-      <p class="apx-label pt-5 pb-1">Insights</p>
-      <a href="{{ site.baseurl }}/articles" class="flex items-center gap-3 py-3 border-b border-line">
-        {% include ui/icon.html name="book-open" class="w-4 h-4 text-accent" %} Articles
-      </a>
-      <a href="{{ site.baseurl }}/revshorts" class="flex items-center gap-3 py-3 border-b border-line">
-        {% include ui/icon.html name="zap" class="w-4 h-4 text-accent" %} RevShorts
-      </a>
-
       <p class="apx-label pt-5 pb-1">Solutions</p>
       <a href="{{ site.baseurl }}/solutions/apx-atlas/" class="flex items-center gap-3 py-3 border-b border-line">
         {% include ui/icon.html name="map" class="w-4 h-4 text-accent" %} APX Atlas
@@ -209,6 +197,17 @@
         {% include ui/icon.html name="ghost" class="w-4 h-4 text-accent" %} APX Doppelg&auml;nger
         <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Soon</span>
       </a>
+
+      <p class="apx-label pt-5 pb-1">Insights</p>
+      <a href="{{ site.baseurl }}/articles" class="flex items-center gap-3 py-3 border-b border-line">
+        {% include ui/icon.html name="book-open" class="w-4 h-4 text-accent" %} Articles
+      </a>
+      <a href="{{ site.baseurl }}/revshorts" class="flex items-center gap-3 py-3 border-b border-line">
+        {% include ui/icon.html name="zap" class="w-4 h-4 text-accent" %} RevShorts
+      </a>
+
+      <a href="{{ site.baseurl }}/about" class="mt-4 py-3 border-b border-line">About</a>
+      <a href="{{ site.baseurl }}/contact" class="py-3 border-b border-line">Contact</a>
     </nav>
 
     <div class="mt-10 space-y-4">
