@@ -1,0 +1,38 @@
+{%- comment -%}
+  Monday Morning Brief card (ported from the old Managed Partner
+  deliverable). Driven by page.brief: {uptime, rows[] of {label, state, tone}}.
+  tone: good | warn | active
+{%- endcomment -%}
+<div class="relative w-full max-w-md">
+  <div class="apx-card p-8 shadow-2xl relative overflow-hidden">
+    <div class="relative z-[2]">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-[1.35rem] font-bold text-ink tracking-[-0.01em]">Monday Morning Brief</h3>
+          <p class="mt-0.5 text-sm font-semibold text-accent">Weekly executive summary</p>
+        </div>
+        <span class="inline-grid place-items-center w-11 h-11 rounded-xl bg-purple-gradient text-white">{% include ui/icon.html name="file-text" class="w-5 h-5" %}</span>
+      </div>
+
+      <div class="mt-6 bg-paper p-5 rounded-xl border border-line flex items-baseline justify-between">
+        <span class="text-[11px] font-bold uppercase tracking-[0.12em] text-faint">Uptime</span>
+        <span class="text-[2rem] leading-none font-bold text-gradient tabular-nums">{{ page.brief.uptime }}</span>
+      </div>
+
+      <div class="mt-5 divide-y divide-line border-y border-line">
+        {% for row in page.brief.rows %}
+        <div class="flex items-center gap-3 py-3.5">
+          {% if row.tone == "good" %}<span class="text-emerald-500">{% include ui/icon.html name="check" class="w-4 h-4" %}</span>
+          {% elsif row.tone == "warn" %}<span class="text-amber-500">{% include ui/icon.html name="alert-triangle" class="w-4 h-4" %}</span>
+          {% else %}<span class="text-accent">{% include ui/icon.html name="activity" class="w-4 h-4" %}</span>{% endif %}
+          <span class="flex-1 text-[14px] font-semibold text-ink">{{ row.label }}</span>
+          <span class="text-[11.5px] font-bold uppercase tracking-[0.08em] text-faint">{{ row.state }}</span>
+        </div>
+        {% endfor %}
+      </div>
+
+      <p class="mt-5 text-[12px] leading-relaxed text-faint">One page, every Monday. What ran, what is at risk, and what we are doing about it. The CRM becomes invisible, in the good way.</p>
+    </div>
+    <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+  </div>
+</div>
