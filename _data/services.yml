@@ -10,6 +10,7 @@ categories:
       - title: "Tech Health Check"
         icon: "search"
         price: "€2,450"
+        duration: "5 days"
         price_subtext: "One-time Audit"
         short_description: "Complete system analysis."
         show_in_navbar: true

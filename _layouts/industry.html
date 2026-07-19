@@ -145,11 +145,11 @@ layout: default
           <a href="{{ site.baseurl }}{{ s.url }}/" data-ap-track="service" data-ap-category="industry-{{ page.slug }}" class="apx-card group flex flex-col p-5">
             <div class="flex items-start justify-between gap-3">
               <span class="w-10 h-10 rounded-xl bg-accent-tint text-accent flex items-center justify-center shrink-0 transition-colors group-hover:bg-purple-gradient group-hover:text-white">{% include ui/icon.html name=s.icon class="w-5 h-5" %}</span>
-              <span class="text-[12.5px] font-semibold text-faint whitespace-nowrap pt-1">{{ s.price }}{{ s.price_suffix }}</span>
+              <span class="text-[12.5px] font-semibold text-faint whitespace-nowrap pt-1">{{ s.price }}{{ s.price_suffix }}{% if s.duration %} &middot; {{ s.duration }}{% endif %}</span>
             </div>
             <h3 class="mt-4 text-[1.05rem] font-bold tracking-[-0.01em] text-ink leading-snug">{{ s.title }}</h3>
             <p class="mt-1.5 text-[13.5px] leading-relaxed text-muted flex-1">{{ s.short_description }}</p>
-            <span class="mt-4 inline-flex items-center gap-1.5 text-accent font-semibold text-sm">View <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
+            <span class="mt-4 inline-flex items-center gap-1.5 text-accent font-semibold text-sm">Scope &amp; price <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
           </a>
           {% endif %}
         {% endfor %}

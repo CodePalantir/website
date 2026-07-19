@@ -55,7 +55,7 @@ image: /assets/images/logos/APX_LOGO.png
               <span class="w-11 h-11 rounded-xl bg-accent-tint text-accent flex items-center justify-center shrink-0 transition-colors group-hover:bg-purple-gradient group-hover:text-white">
                 {% include ui/icon.html name=s.icon class="w-5 h-5" %}
               </span>
-              <span class="text-[13px] font-semibold text-faint whitespace-nowrap pt-1.5">{{ s.price }}{{ s.price_suffix }}</span>
+              <span class="text-[13px] font-semibold text-faint whitespace-nowrap pt-1.5">{{ s.price }}{{ s.price_suffix }}{% if s.duration %} &middot; {{ s.duration }}{% endif %}</span>
             </div>
             <h2 class="mt-5 text-[17px] font-bold tracking-[-0.01em] text-ink leading-snug">{{ s.title }}</h2>
             <p class="mt-1.5 text-sm leading-relaxed text-muted">{{ s.short_description }}</p>
