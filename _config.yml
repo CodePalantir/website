@@ -60,6 +60,12 @@ collections:
   solutions:
     output: true
     permalink: /solutions/:name/
+  industries_de:
+    output: true
+    permalink: /de/branchen/:name/
+  solutions_de:
+    output: true
+    permalink: /de/loesungen/:name/
 
 plugins:
   - jekyll-seo-tag

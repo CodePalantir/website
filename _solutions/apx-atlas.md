@@ -1,5 +1,7 @@
 ---
 layout: solution
+lang: en
+translation: /de/loesungen/apx-atlas/
 name: APX Atlas
 slug: apx-atlas
 title: APX Atlas – Your Revenue Architecture, Mapped Live

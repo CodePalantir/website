@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 <!-- 1. HERO -->
 <section class="px-6 bg-paper pt-[clamp(7rem,15vh,10rem)] pb-[clamp(3.5rem,7vh,6rem)]">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[860px] rv">
       <div class="flex flex-wrap items-center gap-3">
-        <span class="apx-eyebrow">Solutions</span>
-        <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-tint text-accent border border-accent/15 text-[11px] font-bold uppercase tracking-[0.12em]">Coming soon</span>
+        <span class="apx-eyebrow">{{ t.solution.eyebrow }}</span>
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-accent-tint text-accent border border-accent/15 text-[11px] font-bold uppercase tracking-[0.12em]">{{ t.solution.coming_soon }}</span>
       </div>
       <div class="mt-5 flex items-center gap-4">
         <span class="inline-grid place-items-center w-14 h-14 rounded-2xl bg-purple-gradient text-white shrink-0">{% include ui/icon.html name=page.icon class="w-7 h-7" %}</span>
@@ -30,7 +31,7 @@ layout: default
 <section class="apx-section px-6 bg-surface">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[760px] rv">
-      <span class="apx-eyebrow">What it does</span>
+      <span class="apx-eyebrow">{{ t.solution.what_it_does }}</span>
       <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">{{ page.capabilities_title }}</h2>
       {% if page.intro %}<p class="mt-4 max-w-[62ch] text-lg leading-relaxed text-muted">{{ page.intro }}</p>{% endif %}
     </div>
@@ -51,12 +52,12 @@ layout: default
   <div class="max-w-wide mx-auto">
     <div class="apx-panel relative p-8 md:p-12 rv">
       <div class="relative z-[2] max-w-[640px]">
-        <span class="apx-eyebrow-light">In development</span>
-        <h2 class="mt-4 font-bold text-white tracking-[-0.02em] leading-[1.1] text-[clamp(1.75rem,3vw,2.5rem)]" style="text-wrap:balance">{{ page.status_headline | default: "Built with the teams who will use it." }}</h2>
+        <span class="apx-eyebrow-light">{{ t.solution.in_development }}</span>
+        <h2 class="mt-4 font-bold text-white tracking-[-0.02em] leading-[1.1] text-[clamp(1.75rem,3vw,2.5rem)]" style="text-wrap:balance">{{ page.status_headline | default: t.solution.status_default }}</h2>
         <p class="mt-4 text-lg leading-relaxed text-white/70">{{ page.status_note }}</p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3.5">
-          <a href="mailto:{{ site.contact.email }}?subject=Waitlist%3A%20{{ page.name | url_encode }}" data-ap-track="waitlist" data-ap-category="{{ page.slug }}" class="apx-btn apx-btn-accent">Join the waitlist</a>
-          <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-light">Explore our services</a>
+          <a href="mailto:{{ site.contact.email }}?subject=Waitlist%3A%20{{ page.name | url_encode }}" data-ap-track="waitlist" data-ap-category="{{ page.slug }}" class="apx-btn apx-btn-accent">{{ t.solution.waitlist }}</a>
+          <a href="{{ t.urls.services | relative_url }}" class="apx-btn apx-btn-light">{{ t.solution.explore }}</a>
         </div>
       </div>
     </div>

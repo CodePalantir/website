@@ -1,25 +1,26 @@
 ---
 layout: default
 ---
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 <!-- 1. HERO -->
 <section class="px-6 bg-paper pt-[clamp(7rem,15vh,10rem)] pb-[clamp(3.5rem,7vh,6rem)]">
   <div class="max-w-wide mx-auto">
     <nav class="flex items-center gap-2 text-sm font-medium text-faint rv" aria-label="Breadcrumb">
-      <a href="{{ site.baseurl }}/" class="hover:text-ink transition-colors">Home</a>
+      <a href="{{ t.urls.home | relative_url }}" class="hover:text-ink transition-colors">{{ t.nav.home }}</a>
       {% include ui/icon.html name="chevron-right" class="w-3.5 h-3.5 opacity-60" %}
-      <a href="{{ site.baseurl }}/#work" class="hover:text-ink transition-colors">Industries</a>
+      <a href="{% if page.lang == 'de' %}{{ '/de/' | relative_url }}{% else %}{{ site.baseurl }}/#work{% endif %}" class="hover:text-ink transition-colors">{{ t.industry.breadcrumb }}</a>
       {% include ui/icon.html name="chevron-right" class="w-3.5 h-3.5 opacity-60" %}
       <span class="text-muted">{{ page.name }}</span>
     </nav>
 
     <div class="mt-8 md:mt-10 grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-16 items-center">
       <div class="rv">
-        <span class="apx-eyebrow">Industries</span>
-        <h1 class="mt-4 font-bold text-ink tracking-[-0.03em] leading-[1.03] text-[clamp(2.5rem,5.2vw,4.25rem)]" style="text-wrap:balance">RevOps for <span class="text-gradient">{{ page.name }}</span></h1>
+        <span class="apx-eyebrow">{{ t.industry.eyebrow }}</span>
+        <h1 class="mt-4 font-bold text-ink tracking-[-0.03em] leading-[1.03] text-[clamp(2.5rem,5.2vw,4.25rem)]" style="text-wrap:balance">{{ t.industry.h1_prefix }} <span class="text-gradient">{{ page.name }}</span></h1>
         <p class="mt-5 max-w-[48ch] text-[clamp(1.05rem,1.4vw,1.3rem)] leading-relaxed text-muted">{{ page.lead }}</p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3.5">
-          {% include ui/cta.html label="Book the audit" track="industry-hero" %}
-          <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-ghost">Explore our services</a>
+          {% include ui/cta.html label=t.industry.cta_audit track="industry-hero" %}
+          <a href="{{ t.urls.services | relative_url }}" class="apx-btn apx-btn-ghost">{{ t.nav.explore_services }}</a>
         </div>
       </div>
       <div class="rv">
@@ -35,8 +36,8 @@ layout: default
 <section class="apx-section px-6 bg-surface">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[760px] rv">
-      <span class="apx-eyebrow">The reality in {{ page.name }}</span>
-      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">Where the revenue quietly leaks.</h2>
+      <span class="apx-eyebrow">{{ t.industry.reality_prefix }} {{ page.name }}</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">{{ t.industry.problems_title }}</h2>
       {% if page.problem_intro %}<p class="mt-5 max-w-[62ch] text-lg leading-relaxed text-muted">{{ page.problem_intro }}</p>{% endif %}
     </div>
     <div class="mt-10 md:mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
@@ -47,7 +48,7 @@ layout: default
         <p class="mt-2.5 text-[15px] leading-relaxed text-muted flex-1">{{ problem.body }}</p>
         {% if problem.cost %}
         <div class="mt-5 pt-4 border-t border-line">
-          <p class="text-[11px] font-bold uppercase tracking-[0.14em] text-faint">The cost</p>
+          <p class="text-[11px] font-bold uppercase tracking-[0.14em] text-faint">{{ t.industry.cost_label }}</p>
           <p class="mt-1.5 text-[14.5px] font-semibold text-ink-soft leading-snug">{{ problem.cost }}</p>
         </div>
         {% endif %}
@@ -61,8 +62,8 @@ layout: default
 <section class="apx-section px-6 bg-paper">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[760px] mx-auto text-center rv">
-      <span class="apx-eyebrow">A holistic lens</span>
-      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">Point fixes won&#8217;t hold. The whole engine has to work.</h2>
+      <span class="apx-eyebrow">{{ t.industry.holistic_eyebrow }}</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">{{ t.industry.holistic_title }}</h2>
       {% if page.holistic_intro %}<p class="mt-5 mx-auto max-w-[64ch] text-lg leading-relaxed text-muted">{{ page.holistic_intro }}</p>{% endif %}
     </div>
     <div class="mt-14 md:mt-16 grid md:grid-cols-3 gap-10 md:gap-14 max-w-[1080px] mx-auto">
@@ -81,12 +82,12 @@ layout: default
 <section class="apx-section px-6 bg-surface">
   <div class="max-w-wide mx-auto grid lg:grid-cols-[1fr_1.35fr] gap-12 lg:gap-20 items-start">
     <div class="lg:sticky lg:top-32 rv">
-      <span class="apx-eyebrow">What we put in place</span>
-      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(1.875rem,3.2vw,2.625rem)]" style="text-wrap:balance">A revenue engine built for {{ page.name }}.</h2>
-      <p class="mt-4 max-w-[420px] text-lg leading-relaxed text-muted">The same disciplined approach as every APX engagement, shaped around how {{ page.name }} actually runs.</p>
+      <span class="apx-eyebrow">{{ t.industry.builds_eyebrow }}</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(1.875rem,3.2vw,2.625rem)]" style="text-wrap:balance">{{ t.industry.builds_title_pre }} {{ page.name }}.</h2>
+      <p class="mt-4 max-w-[420px] text-lg leading-relaxed text-muted">{{ t.industry.builds_sub_pre }} {{ page.name }} {{ t.industry.builds_sub_post }}</p>
       {% if page.platforms %}
       <div class="mt-8">
-        <p class="apx-label text-faint">Stack we usually work in</p>
+        <p class="apx-label text-faint">{{ t.industry.stack_label }}</p>
         <div class="mt-3.5 flex flex-wrap gap-2.5">
           {% for p in page.platforms %}
           <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-paper border border-line text-sm font-semibold text-ink">{{ p }}</span>
@@ -94,7 +95,7 @@ layout: default
         </div>
       </div>
       {% endif %}
-      <div class="mt-9">{% include ui/cta.html label="Start with the audit" track="industry-builds" %}</div>
+      <div class="mt-9">{% include ui/cta.html label=t.industry.builds_cta track="industry-builds" %}</div>
     </div>
     <div class="divide-y divide-line border-y border-line rv">
       {% for b in page.builds %}
@@ -114,9 +115,9 @@ layout: default
 <section class="apx-section px-6 bg-paper">
   <div class="max-w-wide mx-auto">
     <div class="max-w-[760px] rv">
-      <span class="apx-eyebrow">Where we&#8217;d start</span>
-      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">The services that move the needle here.</h2>
-      <p class="mt-4 max-w-[58ch] text-lg leading-relaxed text-muted">Every engagement opens with the audit. From there, these are the pieces that tend to matter most for {{ page.name }}.</p>
+      <span class="apx-eyebrow">{{ t.industry.start_eyebrow }}</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">{{ t.industry.start_title }}</h2>
+      <p class="mt-4 max-w-[58ch] text-lg leading-relaxed text-muted">{{ t.industry.start_sub_pre }} {{ page.name }}.</p>
     </div>
     <div class="mt-10 md:mt-14 grid lg:grid-cols-[1.2fr_1fr] gap-4 md:gap-5">
 
@@ -125,15 +126,15 @@ layout: default
         <div class="relative z-[2]">
           <div class="flex items-center gap-3">
             <span class="inline-grid place-items-center w-11 h-11 rounded-xl bg-white/10 text-white">{% include ui/icon.html name="heart-pulse" class="w-[22px] h-[22px]" %}</span>
-            <span class="apx-eyebrow-light">Start here</span>
+            <span class="apx-eyebrow-light">{{ t.industry.start_here }}</span>
           </div>
-          <h3 class="mt-5 font-bold text-white tracking-[-0.01em] leading-[1.08] text-[clamp(1.6rem,2.2vw,2.2rem)]" style="text-wrap:balance">Technical Health Audit</h3>
-          <p class="mt-3 max-w-[46ch] text-[clamp(0.95rem,1.1vw,1.1rem)] leading-relaxed text-white/70">Five days inside your stack. We read the metadata, the automation and the integrations, then hand you a prioritised fix-list priced in euros, not estimates.</p>
+          <h3 class="mt-5 font-bold text-white tracking-[-0.01em] leading-[1.08] text-[clamp(1.6rem,2.2vw,2.2rem)]" style="text-wrap:balance">{{ t.industry.audit_title }}</h3>
+          <p class="mt-3 max-w-[46ch] text-[clamp(0.95rem,1.1vw,1.1rem)] leading-relaxed text-white/70">{{ t.industry.audit_desc }}</p>
         </div>
         <div class="relative z-[2] mt-6 flex flex-wrap items-baseline gap-x-6 gap-y-2">
-          <span class="text-white font-bold text-[clamp(1.5rem,2vw,1.85rem)] tabular-nums">&#8364;2,450</span>
-          <span class="text-white/55 text-sm font-medium">Fixed price &middot; 5 working days</span>
-          <span class="ml-auto inline-flex items-center gap-2 text-white font-semibold self-center">Book the audit <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
+          <span class="text-white font-bold text-[clamp(1.5rem,2vw,1.85rem)] tabular-nums">{{ t.industry.audit_price }}</span>
+          <span class="text-white/55 text-sm font-medium">{{ t.industry.audit_meta }}</span>
+          <span class="ml-auto inline-flex items-center gap-2 text-white font-semibold self-center">{{ t.industry.audit_cta }} <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
         </div>
       </a>
 
@@ -148,8 +149,8 @@ layout: default
               <span class="text-[12.5px] font-semibold text-faint whitespace-nowrap pt-1">{{ s.price }}{{ s.price_suffix }}{% if s.duration %} &middot; {{ s.duration }}{% endif %}</span>
             </div>
             <h3 class="mt-4 text-[1.05rem] font-bold tracking-[-0.01em] text-ink leading-snug">{{ s.title }}</h3>
-            <p class="mt-1.5 text-[13.5px] leading-relaxed text-muted flex-1">{{ s.short_description }}</p>
-            <span class="mt-4 inline-flex items-center gap-1.5 text-accent font-semibold text-sm">Scope &amp; price <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
+            <p class="mt-1.5 text-[13.5px] leading-relaxed text-muted flex-1">{% if page.lang == "de" and s.short_description_de %}{{ s.short_description_de }}{% else %}{{ s.short_description }}{% endif %}</p>
+            <span class="mt-4 inline-flex items-center gap-1.5 text-accent font-semibold text-sm">{{ t.industry.scope_price }} <span class="transition-transform group-hover:translate-x-1">{% include ui/icon.html name="arrow-right" class="w-4 h-4" %}</span></span>
           </a>
           {% endif %}
         {% endfor %}
@@ -157,7 +158,7 @@ layout: default
 
     </div>
     <div class="mt-9 rv">
-      <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-ghost">See all services</a>
+      <a href="{{ t.urls.services | relative_url }}" class="apx-btn apx-btn-ghost">{{ t.industry.see_all }}</a>
     </div>
   </div>
 </section>

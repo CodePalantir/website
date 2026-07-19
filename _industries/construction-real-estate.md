@@ -1,5 +1,7 @@
 ---
 layout: industry
+lang: en
+translation: /de/branchen/construction-real-estate/
 order: 3
 name: "Construction & real estate"
 card_title: "Construction & real estate"

@@ -1,5 +1,7 @@
 ---
 layout: solution
+lang: en
+translation: /de/loesungen/apx-doppelgaenger/
 name: APX Doppelgänger
 slug: apx-doppelgaenger
 title: APX Doppelgänger – Large Scale Data Deduplication

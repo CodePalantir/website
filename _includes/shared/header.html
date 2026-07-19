@@ -61,7 +61,7 @@
           {{ t.nav.solutions }} {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
         </span>
         <div class="dropdown-menu absolute top-full -left-40 w-[420px] mt-3 z-50 bg-surface rounded-[1.5rem] border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-4 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
-          <a href="{{ site.baseurl }}/solutions/apx-atlas/" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
+          <a href="{% if page.lang == 'de' %}{{ '/de/loesungen/apx-atlas/' | relative_url }}{% else %}{{ site.baseurl }}/solutions/apx-atlas/{% endif %}" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
             <div class="w-10 h-10 rounded-xl bg-accent-tint flex items-center justify-center text-accent group-hover/item:bg-purple-gradient group-hover/item:text-white transition-all shrink-0">
               {% include ui/icon.html name="map" class="w-[18px]" %}
             </div>
@@ -70,7 +70,7 @@
               <p class="text-xs text-faint mt-0.5">{{ t.nav.atlas_desc }}</p>
             </div>
           </a>
-          <a href="{{ site.baseurl }}/solutions/tech-debt-monitor/" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
+          <a href="{% if page.lang == 'de' %}{{ '/de/loesungen/tech-debt-monitor/' | relative_url }}{% else %}{{ site.baseurl }}/solutions/tech-debt-monitor/{% endif %}" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
             <div class="w-10 h-10 rounded-xl bg-accent-tint flex items-center justify-center text-accent group-hover/item:bg-purple-gradient group-hover/item:text-white transition-all shrink-0">
               {% include ui/icon.html name="radar" class="w-[18px]" %}
             </div>
@@ -79,7 +79,7 @@
               <p class="text-xs text-faint mt-0.5">{{ t.nav.monitor_desc }}</p>
             </div>
           </a>
-          <a href="{{ site.baseurl }}/solutions/apx-doppelgaenger/" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
+          <a href="{% if page.lang == 'de' %}{{ '/de/loesungen/apx-doppelgaenger/' | relative_url }}{% else %}{{ site.baseurl }}/solutions/apx-doppelgaenger/{% endif %}" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
             <div class="w-10 h-10 rounded-xl bg-accent-tint flex items-center justify-center text-accent group-hover/item:bg-purple-gradient group-hover/item:text-white transition-all shrink-0">
               {% include ui/icon.html name="ghost" class="w-[18px]" %}
             </div>
@@ -210,15 +210,15 @@
       </div>
 
       <p class="apx-label pt-5 pb-1">{{ t.nav.solutions }}</p>
-      <a href="{{ site.baseurl }}/solutions/apx-atlas/" class="flex items-center gap-3 py-3 border-b border-line">
+      <a href="{% if page.lang == 'de' %}{{ '/de/loesungen/apx-atlas/' | relative_url }}{% else %}{{ site.baseurl }}/solutions/apx-atlas/{% endif %}" class="flex items-center gap-3 py-3 border-b border-line">
         {% include ui/icon.html name="map" class="w-4 h-4 text-accent" %} APX Atlas
         <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">{{ t.nav.soon }}</span>
       </a>
-      <a href="{{ site.baseurl }}/solutions/tech-debt-monitor/" class="flex items-center gap-3 py-3 border-b border-line">
+      <a href="{% if page.lang == 'de' %}{{ '/de/loesungen/tech-debt-monitor/' | relative_url }}{% else %}{{ site.baseurl }}/solutions/tech-debt-monitor/{% endif %}" class="flex items-center gap-3 py-3 border-b border-line">
         {% include ui/icon.html name="radar" class="w-4 h-4 text-accent" %} Tech Debt Monitor
         <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">{{ t.nav.soon }}</span>
       </a>
-      <a href="{{ site.baseurl }}/solutions/apx-doppelgaenger/" class="flex items-center gap-3 py-3 border-b border-line">
+      <a href="{% if page.lang == 'de' %}{{ '/de/loesungen/apx-doppelgaenger/' | relative_url }}{% else %}{{ site.baseurl }}/solutions/apx-doppelgaenger/{% endif %}" class="flex items-center gap-3 py-3 border-b border-line">
         {% include ui/icon.html name="ghost" class="w-4 h-4 text-accent" %} APX Doppelg&auml;nger
         <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">{{ t.nav.soon }}</span>
       </a>

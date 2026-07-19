@@ -1,5 +1,7 @@
 ---
 layout: solution
+lang: en
+translation: /de/loesungen/tech-debt-monitor/
 name: Tech Debt Monitor
 slug: tech-debt-monitor
 title: Tech Debt Monitor – Continuous Debt Scoring for Your CRM

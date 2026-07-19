@@ -1,5 +1,7 @@
 ---
 layout: industry
+lang: en
+translation: /de/branchen/events-hospitality/
 order: 6
 name: "Events & hospitality"
 card_title: "Events & hospitality"

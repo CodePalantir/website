@@ -38,7 +38,7 @@
       <div class="space-y-6">
         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">{{ t.footer.solutions }}</p>
         <ul class="space-y-3 text-lg font-medium">
-          {% assign footer_sols = site.solutions | sort: "name" %}
+          {% if page.lang == "de" %}{% assign footer_sols = site.solutions_de | sort: "name" %}{% else %}{% assign footer_sols = site.solutions | sort: "name" %}{% endif %}
           {% for sol in footer_sols %}
           <li><a href="{{ sol.url | relative_url }}" class="hover:text-purple-400 transition-colors">{{ sol.name }}</a></li>
           {% endfor %}
@@ -55,7 +55,7 @@
       <div class="space-y-6">
         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">{{ t.footer.industries }}</p>
         <ul class="space-y-3 text-lg font-medium">
-          {% assign footer_inds = site.industries | sort: "order" %}
+          {% if page.lang == "de" %}{% assign footer_inds = site.industries_de | sort: "order" %}{% else %}{% assign footer_inds = site.industries | sort: "order" %}{% endif %}
           {% for ind in footer_inds %}
           <li><a href="{{ ind.url | relative_url }}" class="hover:text-purple-400 transition-colors">{{ ind.card_title }}</a></li>
           {% endfor %}

@@ -1,5 +1,7 @@
 ---
 layout: industry
+lang: en
+translation: /de/branchen/manufacturing-industry/
 order: 4
 name: "Manufacturing & industry"
 card_title: "Manufacturing & industry"

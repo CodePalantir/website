@@ -1,5 +1,7 @@
 ---
 layout: industry
+lang: en
+translation: /de/branchen/b2b-software-tech/
 order: 1
 name: "B2B software & tech"
 card_title: "B2B software & tech"

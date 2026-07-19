@@ -1,5 +1,7 @@
 ---
 layout: industry
+lang: en
+translation: /de/branchen/finance-wealth/
 order: 2
 name: "Finance & wealth"
 card_title: "Finance & wealth"

@@ -1,5 +1,7 @@
 ---
 layout: industry
+lang: en
+translation: /de/branchen/ecommerce-retail/
 order: 5
 name: "E-Commerce & Retail"
 card_title: "E-Commerce & Retail"
