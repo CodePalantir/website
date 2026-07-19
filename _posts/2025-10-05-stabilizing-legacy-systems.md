@@ -12,7 +12,7 @@ hero_icon: "refresh-cw"
 key_takeaways:
   - "Technical debt compounds at 15% annually if left unaddressed."
   - "Strangler Fig pattern reduces migration risk by 80% vs. big-bang rewrites."
-  - "User trust is rebuilt through small, consistent wins—not grand promises."
+  - "User trust is rebuilt through small, consistent wins, not grand promises."
 toc:
   - { id: "the-debt", title: "The Debt Spiral" }
   - { id: "strangler-pattern", title: "The Strangler Fig Pattern" }
@@ -24,7 +24,7 @@ toc:
     You inherit a Salesforce org built in 2014. It has 47 custom objects, 200+ workflows, and nobody remembers why half of them exist. Sales complains it's slow. IT is afraid to touch anything. Sound familiar?
 </p>
 
-Legacy systems don't die—they just get more expensive. Every day you delay cleanup, the problem compounds. But ripping everything out and starting fresh? That's career suicide for a Revenue Operations leader.
+Legacy systems don't die, they just get more expensive. Every day you delay cleanup, the problem compounds. But ripping everything out and starting fresh? That's career suicide for a Revenue Operations leader.
 
 ## The Debt Spiral {#the-debt}
 
@@ -50,7 +50,7 @@ In nature, strangler figs grow around host trees, slowly replacing them. In soft
 4. **Monitor, iterate, increase traffic**
 5. **Retire the old workflow** when the new one proves stable
 
-This approach eliminates the "big bang" risk. If something breaks, you roll back 5% of users—not the entire sales team.
+This approach eliminates the "big bang" risk. If something breaks, you roll back 5% of users, not the entire sales team.
 
 ## Quick Wins First {#quick-wins}
 

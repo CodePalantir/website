@@ -1,3 +1,4 @@
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 {%- comment -%}
   Homepage hero. Static faint grid revealed by a moving gradient cloud
   (ambient) + a cloud that follows the pointer. Fills the viewport, type
@@ -12,14 +13,14 @@
   <div class="relative z-[4] flex-1 flex items-center justify-center text-center px-6 pt-32 pb-20">
     <div class="w-full max-w-[min(90rem,94vw)] mx-auto">
       <h1 class="font-bold text-ink tracking-[-0.03em] leading-[1.02] text-[clamp(2.75rem,7.4vw,7.5rem)]" style="text-wrap:balance">
-        Turn a messy stack into <br class="hidden sm:block"><span class="text-gradient">revenue you can trust.</span>
+        {{ t.home.hero_h1_1 }} <br class="hidden sm:block"><span class="text-gradient">{{ t.home.hero_h1_2 }}</span>
       </h1>
       <p class="mt-[clamp(1.25rem,2.2vw,2rem)] mx-auto max-w-[min(46rem,90vw)] text-[clamp(1.0625rem,1.55vw,1.4rem)] leading-relaxed font-medium text-muted">
-        We build and run the systems behind your marketing, sales and service, so your pipeline is real, your numbers add up, and growth feels calm.
+        {{ t.home.hero_sub }}
       </p>
       <div class="mt-[clamp(1.75rem,3vw,2.75rem)] flex flex-col sm:flex-row items-center justify-center gap-3.5">
-        {% include ui/cta.html label="Free intro call" href=site.cta.secondary_url track="hero" no_icon=true class="w-full max-w-[340px] sm:w-auto" %}
-        <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-ghost w-full max-w-[340px] sm:w-auto">Explore our services</a>
+        {% include ui/cta.html label=t.home.hero_cta href=site.cta.secondary_url track="hero" no_icon=true class="w-full max-w-[340px] sm:w-auto" %}
+        <a href="{{ t.urls.services | relative_url }}" class="apx-btn apx-btn-ghost w-full max-w-[340px] sm:w-auto">{{ t.nav.explore_services }}</a>
       </div>
     </div>
   </div>

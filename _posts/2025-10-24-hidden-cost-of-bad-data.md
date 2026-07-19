@@ -26,7 +26,7 @@ toc:
     It starts subtly. A duplicate account here, a missing phone number there. Sales reps complain about "bad leads" in the break room, and your marketing team wonders why their email open rates are dipping below 15%. But beneath the surface of these minor annoyances, your Revenue Operations engine is stalling.
 </p>
 
-In the modern enterprise, data is not merely a record of what happened; it is the fuel for what *will* happen. When that fuel is contaminated, the entire engine sputters. For CROs and Revenue Leaders, the cost of bad data isn't just an IT headache—it is a direct hit to the bottom line, often measuring in the millions of dollars annually for mid-market and enterprise organizations.
+In the modern enterprise, data is not merely a record of what happened; it is the fuel for what *will* happen. When that fuel is contaminated, the entire engine sputters. For CROs and Revenue Leaders, the cost of bad data isn't just an IT headache, it is a direct hit to the bottom line, often measuring in the millions of dollars annually for mid-market and enterprise organizations.
 
 ## The Invisible Anchor {#invisible-anchor}
 
@@ -34,7 +34,7 @@ We recently audited a Series B SaaS company that believed they had a "closing pr
 
 The culprit wasn't sales skill. It was data integrity.
 
-Our audit revealed that <span class="bg-purple-50 text-purple-900 px-1 font-bold">30% of their open pipeline was attached to duplicate accounts</span>. This meant that in many cases, two different reps were working the same deal without knowing it—one calling the VP of Sales, the other emailing the Director of IT. They were bidding against themselves, confusing the prospect, and splitting internal resources.
+Our audit revealed that <span class="bg-purple-50 text-purple-900 px-1 font-bold">30% of their open pipeline was attached to duplicate accounts</span>. This meant that in many cases, two different reps were working the same deal without knowing it, one calling the VP of Sales, the other emailing the Director of IT. They were bidding against themselves, confusing the prospect, and splitting internal resources.
 
 Even worse, their territory assignment logic was broken due to missing "State/Province" fields. High-value leads in New York were being routed to the "General Pool" because the system didn't know they belonged to the Enterprise East team. By the time a human manually spotted them, the prospect had already bought from a competitor.
 
@@ -72,7 +72,7 @@ In data quality management, the 1-10-100 rule is a widely accepted concept that 
 
 When data trust erodes, user adoption follows. Salespeople are pragmatic; they will take the path of least resistance to close a deal. If Salesforce is full of junk data, slow to load, or unreliable, they will stop using it.
 
-They will retreat to "Shadow CRM"—their own private Excel spreadsheets, notes on their phones, or sticky notes on their monitors. They will keep their "real" contacts hidden to ensure they are accurate.
+They will retreat to "Shadow CRM", their own private Excel spreadsheets, notes on their phones, or sticky notes on their monitors. They will keep their "real" contacts hidden to ensure they are accurate.
 
 This creates a data blackout for leadership. You cannot forecast revenue if the deals are living in a spreadsheet on a rep's laptop. You cannot automate marketing nurture campaigns if the contacts aren't in the system. The "Shadow CRM" is the ultimate symptom of a failed data strategy.
 
@@ -113,7 +113,7 @@ When a rep enters an email address, the system should automatically fetch the Jo
 
 ### 4. Governance (The Law)
 
-Establish a Data Governance Council—even if it's just two people. Define who "owns" the data. Is Marketing responsible for Leads? Is Sales responsible for Contacts? Define the SLA for data disputes. When everyone owns the data, no one owns the data.
+Establish a Data Governance Council, even if it's just two people. Define who "owns" the data. Is Marketing responsible for Leads? Is Sales responsible for Contacts? Define the SLA for data disputes. When everyone owns the data, no one owns the data.
 
 ## Conclusion {#conclusion}
 

@@ -235,18 +235,52 @@ phases = [
   "Renewals are tracked and forecast long before they land on the calendar, expansion signals surface while the timing is still right, and churn risk is caught early enough to do something about it. Retention becomes a number you can plan around instead of a fire drill, and the loop feeds straight back into new demand."),
 ]
 
-items = ""
-for i, (title, sub, body) in enumerate(phases):
-    items += f'''        <article class="lc-item" data-i="{i+1}">
+phases_de = [
+ ("Attract & Demand Gen", "Aus Aufmerksamkeit wird Kaufabsicht.",
+  "Kampagnen, Formulare und eure Website in ein System verdrahtet, jedes Signal sauber attribuiert vom ersten Klick bis zum Abschluss. Ihr seht genau, welche Kanäle Pipeline bringen und welche nur Lärm machen, und Budget folgt Belegen statt Meinungen. Zwischen Marketing und CRM rutscht nichts durch, und kein Lead kommt ohne seine Historie an."),
+ ("Prospecting & Outbound", "Die richtigen Accounts, erreicht mit System.",
+  "Ziellisten entstehen aus echten Fit-Signalen, werden angereichert, dedupliziert und in Sequenzen gespeist, mit denen eure Reps wirklich Schritt halten. Jeder Touch wird geloggt, jede Antwort landet beim richtigen Owner, und zwischen den Tools geht nichts verloren. Outbound hört auf, ein Stapel loser Aufgaben zu sein, und wird eine messbare Motion, die ihr Woche für Woche tunen könnt."),
+ ("Lead Management", "Kein Lead wartet, keiner geht verloren.",
+  "Jeder Lead wird geroutet, gescort und zugewiesen, sobald er ankommt, mit SLAs, die ihr wirklich durchsetzen könnt, und Eskalationen, die von selbst feuern. Der richtige Rep bekommt den richtigen Lead in Minuten, mit vollem Kontext, egal ob aus Formular, Empfehlung oder kalter Antwort. Follow-up hängt nicht mehr daran, wer an die Queue gedacht hat."),
+ ("Selling & Pipeline", "Eine Pipeline, auf der euer Forecast stehen kann.",
+  "Stages, die abbilden, wie Käufer sich wirklich bewegen, ein CRM, das die Wahrheit erfasst, ohne Reps mit Verwaltung zu bestrafen, und Forecasts auf sauberen Daten statt Bauchgefühl. Deals tragen ihre ganze Geschichte mit sich, Risiko zeigt sich früh genug zum Handeln, und die Führung geht mit Zahlen ins Board-Meeting, die sie verteidigen kann."),
+ ("Quote-to-Cash", "Vom Ja zum Geldeingang, ohne Reibung.",
+  "Angebote, Freigaben, Abrechnung und Revenue Recognition sind Ende zu Ende verbunden, ein gewonnener Deal fließt direkt bis zum Zahlungseingang, ohne dreimal neu getippt zu werden. Rabatte bleiben in ihren Leitplanken, Rechnungen gehen beim ersten Mal richtig raus, und der Monatsabschluss produziert keine Überraschungen mehr. Finance und Revenue lesen endlich aus einer Quelle."),
+ ("Onboarding & Success", "Stark starten, länger bleiben.",
+  "Neue Kunden landen in strukturiertem Onboarding statt in einem Postfach, Gesundheitssignale zeigen Risiko, solange noch Zeit zum Handeln ist, und Success-Playbooks feuern, bevor Accounts still werden. Die Übergabe aus dem Vertrieb ist sauber, die Daten begleiten den Kunden durch jede Phase, und eure besten Logos werden Referenzen statt leiser Churn."),
+ ("Renewal & Expansion", "Wachst mit den Accounts, die ihr schon habt.",
+  "Verlängerungen werden verfolgt und prognostiziert, lange bevor sie im Kalender stehen, Expansionssignale tauchen auf, solange das Timing stimmt, und Churn-Risiko wird früh genug erkannt, um etwas zu tun. Retention wird eine Zahl, mit der ihr planen könnt, statt einer Feuerwehrübung, und der Loop speist direkt zurück in neue Nachfrage."),
+]
+
+HEADERS = {
+ "en": {
+   "eyebrow": "The revenue lifecycle",
+   "title": "One loop, from first touch to renewal.",
+   "lead": "Revenue is not a funnel that ends at closed won. Every phase feeds the next, and we engineer all seven. Click any phase to explore it.",
+   "aria": "The revenue lifecycle as one continuous Mobius loop of seven phases.",
+ },
+ "de": {
+   "eyebrow": "Der Revenue-Lifecycle",
+   "title": "Ein Loop, vom ersten Touchpoint bis zur Verlängerung.",
+   "lead": "Umsatz ist kein Funnel, der bei Closed Won endet. Jede Phase speist die nächste, und wir bauen alle sieben. Klickt eine Phase an, um sie zu erkunden.",
+   "aria": "Der Revenue-Lifecycle als ein durchgehender Möbius-Loop aus sieben Phasen.",
+ },
+}
+
+def items_for(plist):
+    out = ""
+    for i, (title, sub, body) in enumerate(plist):
+        out += f'''        <article class="lc-item" data-i="{i+1}">
           <h3 class="lc-item-title" style="text-wrap:balance">{title}</h3>
           <p class="lc-item-sub">{sub}</p>
           <p class="lc-item-body">{body}</p>
         </article>\n'''
+    return out
 
 nodes_js = json.dumps([{"i": nd["n"], "u": nd["u"]} for nd in nodes])
 
 # ---------------- SVG ----------------
-svg = f'''<svg class="lc-svg" viewBox="{vx} {vy} {vw} {vh}" role="img" aria-label="The revenue lifecycle as one continuous Mobius loop of seven phases.">
+svg = f'''<svg class="lc-svg" viewBox="{vx} {vy} {vw} {vh}" role="img" aria-label="__ARIA__">
       <defs>
         <radialGradient id="lc-sh" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1C0940" stop-opacity="0.55"></stop><stop offset="1" stop-color="#1C0940" stop-opacity="0"></stop></radialGradient>
         <linearGradient id="lc-tail" x1="-38" y1="0" x2="-6" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"></stop><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.55"></stop></linearGradient>
@@ -414,22 +448,22 @@ js = '''
 })();
 '''.replace("__NODES__", nodes_js)
 
-html = f'''{{%- comment -%}}
-  The revenue lifecycle. A distorted vertical Mobius ribbon (procedural,
-  regenerate with: python3 _tools/gen_lifecycle.py). Segmented shading gives the
-  strip a light front face and a dark back face so the twist actually reads.
-  Nodes are on-ribbon dots; the arrow drifts around the loop continuously and
-  a phase activates the moment the arrow passes its node. Clicking a node or
-  label glides the arrow there. Hovering the reader slows the drift. Ribbon
-  draws itself in on first view. Keyboard and reduced-motion safe.
+def emit(lang, plist, out_path):
+    hdr = HEADERS[lang]
+    items = items_for(plist)
+    lsvg = svg.replace("__ARIA__", hdr["aria"])
+    html = f'''{{%- comment -%}}
+  The revenue lifecycle ({lang}). Generated file, do not edit by hand:
+  regenerate with python3 _tools/gen_lifecycle.py. Distorted vertical Mobius
+  ribbon, segmented shading, continuous arrow drift, click takes control.
 {{%- endcomment -%}}
 <section id="lifecycle" class="lc-section apx-section px-6 bg-surface overflow-hidden scroll-mt-24">
   <div class="max-w-wide mx-auto w-full">
 
     <div class="max-w-[720px] mx-auto text-center rv">
-      <span class="apx-eyebrow">The revenue lifecycle</span>
-      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">One loop, from first touch to renewal.</h2>
-      <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">Revenue is not a funnel that ends at closed won. Every phase feeds the next, and we engineer all seven. Click any phase to explore it.</p>
+      <span class="apx-eyebrow">{hdr["eyebrow"]}</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">{hdr["title"]}</h2>
+      <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">{hdr["lead"]}</p>
     </div>
 
     <div class="lc-grid mt-10 md:mt-14 grid lg:grid-cols-[0.95fr_1.05fr] gap-[clamp(2rem,4vw,4rem)] lg:items-center">
@@ -440,7 +474,7 @@ html = f'''{{%- comment -%}}
       </div>
 
       <div class="lc-stage rv order-1 lg:order-2">
-    {svg}
+    {lsvg}
       </div>
 
     </div>
@@ -451,10 +485,12 @@ html = f'''{{%- comment -%}}
 
 <script>{js}</script>
 '''
+    with open(out_path, "w") as fh:
+        fh.write(html)
+    print(f"wrote {out_path}")
 
-with open(OUT, "w") as fh:
-    fh.write(html)
-print(f"wrote {OUT}")
+emit("en", phases, OUT)
+emit("de", phases_de, os.path.join(ROOT, "_includes", "sections", "lifecycle-mobius-de.html"))
 print(f"viewBox {vx} {vy} {vw} {vh}  |  track length {Ltot:.0f}px  |  {len(quads)} quads  |  warnings {warn}")
 for nd in nodes:
     print(f"  node {nd['n']}  ({nd['x']:.0f},{nd['y']:.0f})  u={nd['u']:.3f}")

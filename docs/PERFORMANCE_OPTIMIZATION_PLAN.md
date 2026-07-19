@@ -31,7 +31,7 @@ The website has severe performance issues affecting user experience and SEO rank
 - Each image: ~50-100KB = 350-700KB total
 
 **Logo file:**
-- `APEX-PALANTIR_LARGE.png` - Likely uncompressed
+- `APX_LOGO.png` - Likely uncompressed
 - Loaded immediately in header (render-blocking)
 
 **Impact:** Team images are likely the LCP element, causing 6.8s delay
@@ -104,7 +104,7 @@ Add to `<head>` section:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <!-- Preload critical logo -->
-<link rel="preload" as="image" href="{{ '/assets/images/logos/APEX-PALANTIR_LARGE.png' | relative_url }}">
+<link rel="preload" as="image" href="{{ '/assets/images/logos/APX_LOGO.png' | relative_url }}">
 ```
 
 **Expected Impact:** -0.5s LCP (reduces from 5.3s → 4.8s)
@@ -118,7 +118,7 @@ Add to `<head>` section:
 **Priority:** HIGH
 
 #### 1.1 Optimize Logo File
-**Current:** `APEX-PALANTIR_LARGE.png` (size unknown, likely 100-200KB)
+**Current:** `APX_LOGO.png` (size unknown, likely 100-200KB)
 
 **Actions:**
 1. Check current file size
@@ -130,7 +130,7 @@ Add to `<head>` section:
 <!-- Modern approach with WebP -->
 <picture>
   <source srcset="{{ '/assets/images/logos/APEX-PALANTIR_LARGE.webp' | relative_url }}" type="image/webp">
-  <img src="{{ '/assets/images/logos/APEX-PALANTIR_LARGE.png' | relative_url }}"
+  <img src="{{ '/assets/images/logos/APX_LOGO.png' | relative_url }}"
        alt="Apex Palantir Logo"
        class="h-8 sm:h-9 md:h-10 w-auto"
        width="120"
@@ -394,7 +394,7 @@ Consider adding:
 - [ ] `_layouts/default.html` - Add resource hints
 
 **Phase 1:**
-- [ ] `assets/images/logos/APEX-PALANTIR_LARGE.png` - Optimize
+- [ ] `assets/images/logos/APX_LOGO.png` - Optimize
 - [ ] `assets/images/team/*.{jpg,webp}` - Create optimized team images
 - [ ] `_includes/about/about_team.html` - Update image references
 - [ ] `_includes/shared/header.html` - Update logo reference

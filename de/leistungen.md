@@ -22,10 +22,9 @@ translation: /services/
         Audits, Integrationen, Plattform-Builds und Managed Operations. Jedes Projekt schriftlich gescoped, in Euro beziffert und dokumentiert übergeben.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="leistungen-hero" class="apx-btn apx-btn-primary w-full max-w-[340px] sm:w-auto">Audit buchen, 2.450 €</a>
+        {% include ui/cta.html label="Audit buchen, 2.450 €" track="leistungen-hero" no_icon=true class="w-full max-w-[340px] sm:w-auto" %}
         <a href="{{ site.cta.secondary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="leistungen-hero" class="apx-btn apx-btn-ghost w-full max-w-[340px] sm:w-auto">Gespräch buchen</a>
       </div>
-      <p class="mt-8 text-[13.5px] font-semibold text-faint">Die Detailseiten der Leistungen sind derzeit auf Englisch. Die deutschen Versionen folgen.</p>
     </div>
   </div>
 </section>

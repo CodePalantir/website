@@ -21,7 +21,7 @@ toc:
 ---
 
 <p class="text-xl text-slate-800 font-medium mb-8">
-    Every Salesforce architect has heard it: "We need separate orgs for different business units." It sounds logical—clean boundaries, independent teams, no interference. But six months later, the executive team is asking why they can't see a unified pipeline view.
+    Every Salesforce architect has heard it: "We need separate orgs for different business units." It sounds logical, clean boundaries, independent teams, no interference. But six months later, the executive team is asking why they can't see a unified pipeline view.
 </p>
 
 The multi-org strategy is seductive. It promises autonomy, security, and clean separation of concerns. But in practice, it creates data islands that torpedo revenue operations.
@@ -39,7 +39,7 @@ These are real concerns. But the "solution" often creates bigger problems than i
 
 ## The Reality {#the-reality}
 
-We recently worked with a PE-backed software company running four separate Salesforce orgs—one for each regional team. Each GM wanted autonomy. Each team built their own processes.
+We recently worked with a PE-backed software company running four separate Salesforce orgs, one for each regional team. Each GM wanted autonomy. Each team built their own processes.
 
 The CEO couldn't answer basic questions: <span class="bg-purple-50 text-purple-900 px-1 font-bold">"What is our total pipeline across all regions?"</span>
 

@@ -24,7 +24,7 @@ toc:
     Your competitor just launched a feature your sales team has been begging for. Your version? Still waiting in UAT because someone forgot to include a validation rule in the change set. Again.
 </p>
 
-In modern revenue operations, speed isn't a luxury—it's survival. Every week your feature sits in a deployment queue is a week your competitor is closing deals you can't.
+In modern revenue operations, speed isn't a luxury, it's survival. Every week your feature sits in a deployment queue is a week your competitor is closing deals you can't.
 
 ## The Cost of Manual {#manual-cost}
 

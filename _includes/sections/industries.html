@@ -1,3 +1,4 @@
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 {%- comment -%}
   Who we work with. Six rounded photo cards, one per industry, driven by the
   _industries collection (order + card_title + tagline + image). Each card
@@ -7,15 +8,15 @@
 <section id="work" class="apx-section px-6 bg-paper scroll-mt-24">
   <div class="max-w-wide mx-auto w-full">
     <div class="max-w-[720px] mx-auto text-center rv">
-      <span class="apx-eyebrow">Who we work with</span>
-      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">Revenue technology for B2B &amp; B2C.</h2>
-      <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">B2B and B2C, from fast-growing software teams to established industrial groups, the same calm, careful way of working.</p>
+      <span class="apx-eyebrow">{{ t.home.industries_eyebrow }}</span>
+      <h2 class="mt-4 font-bold text-ink tracking-[-0.02em] leading-[1.12] text-[clamp(2rem,3.6vw,3rem)]" style="text-wrap:balance">{{ t.home.industries_title }}</h2>
+      <p class="mt-4 mx-auto max-w-[560px] text-lg leading-relaxed text-muted">{{ t.home.industries_sub }}</p>
     </div>
 
     <div class="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-      {% assign inds = site.industries | sort: "order" %}
+      {% if page.lang == "de" %}{% assign inds = site.industries_de | sort: "order" %}{% else %}{% assign inds = site.industries | sort: "order" %}{% endif %}
       {% for ind in inds %}
-        <a href="{{ ind.url | relative_url }}" aria-label="RevOps for {{ ind.name }}" class="apx-photo-card is-fluid max-sm:aspect-[4/3] rv group block">
+        <a href="{{ ind.url | relative_url }}" aria-label="{{ t.home.industries_aria_prefix }} {{ ind.name }}" class="apx-photo-card is-fluid max-sm:aspect-[4/3] rv group block">
           <img src="{{ '/assets/images/industries/' | append: ind.image | relative_url }}" alt="{{ ind.alt }}" loading="lazy" decoding="async" width="1200" height="800">
           <div class="apx-photo-cap absolute z-[2] text-white font-bold tracking-[-0.01em]">
             {{ ind.card_title }}

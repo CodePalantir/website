@@ -24,7 +24,7 @@ toc:
     Your CRO approved a $300K Salesforce CPQ license. Six months later, reps are still building quotes in Excel because "CPQ is too complicated." Sound familiar?
 </p>
 
-CPQ (Configure, Price, Quote) promises faster deal cycles, accurate pricing, and fewer approval bottlenecks. But most implementations fail to deliver—not because the technology is bad, but because companies make three preventable mistakes.
+CPQ (Configure, Price, Quote) promises faster deal cycles, accurate pricing, and fewer approval bottlenecks. But most implementations fail to deliver, not because the technology is bad, but because companies make three preventable mistakes.
 
 ## Mistake 1: Customization Overload {#mistake-one}
 

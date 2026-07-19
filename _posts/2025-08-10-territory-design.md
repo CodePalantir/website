@@ -24,7 +24,7 @@ toc:
     Your top rep crushes quota by 180%. Your bottom rep barely hits 40%. Leadership blames skill. But what if the real problem is that one territory has 3x the opportunity density of the other?
 </p>
 
-Territory design is the least sexy part of revenue operations—and the most impactful. Bad territories create the illusion of performance problems when the real issue is structural inequality.
+Territory design is the least sexy part of revenue operations, and the most impactful. Bad territories create the illusion of performance problems when the real issue is structural inequality.
 
 ## The Invisible Problem {#invisible-problem}
 
@@ -56,7 +56,7 @@ Some reps excel at hunting, others at farming. Split territories by motion, not 
 
 ### Inbound Lead Flow
 
-If one territory gets 3x the inbound leads due to regional marketing spend, that's not a "better rep"—that's unfair distribution.
+If one territory gets 3x the inbound leads due to regional marketing spend, that's not a "better rep", that's unfair distribution.
 
 ## Dynamic Territories {#dynamic-territories}
 
