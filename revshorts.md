@@ -5,17 +5,19 @@ description: "RevShorts are 400 to 500 word reads on a single RevOps idea: one p
 image: /assets/images/logos/APX_LOGO.png
 ---
 
-<!-- REVSHORTS HERO, restored left-aligned hero on the warm ground -->
+<!-- REVSHORTS HERO, same pattern as the articles hub hero -->
 <section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid"></div>
   <div class="apx-hero-glow"></div>
-  <div class="relative z-[4] pt-32 md:pt-40 pb-10 md:pb-14 px-4 sm:px-6">
-    <div class="max-w-wide mx-auto">
-      <span class="apx-eyebrow mb-4 block">RevShorts</span>
-      <h1 class="font-bold text-ink tracking-[-0.025em] leading-[1.05] text-[clamp(2.4rem,5vw,3.75rem)]">
-        One idea. Two minutes<span class="text-gradient">.</span>
-      </h1>
-      <p class="text-muted mt-6 text-lg leading-relaxed max-w-2xl">Short reads on a single RevOps idea: one pattern, one failure mode, one fix. No filler, no consulting cycle. For the longer pieces, see the <a href="{{ site.baseurl }}/articles" class="font-bold text-accent hover:text-accent-strong transition-colors">articles</a>.</p>
+  <div class="relative z-[4] pt-36 md:pt-44 pb-12 md:pb-16 px-4 sm:px-6">
+    <div class="max-w-wide mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent-tint text-accent border border-accent/15 text-[12px] font-bold uppercase tracking-[0.14em] mb-6">
+        RevShorts
+      </div>
+      <h1 class="font-bold text-ink tracking-[-0.025em] leading-[1.06] text-[clamp(2.4rem,5.2vw,4.25rem)] mb-6 sm:mb-8" style="text-wrap:balance">One idea. <span class="text-gradient">Two minutes.</span></h1>
+      <p class="text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted max-w-3xl mx-auto">
+        Short reads on a single RevOps idea: one pattern, one failure mode, one fix. No filler, no consulting cycle. For the longer pieces, see the <a href="{{ site.baseurl }}/articles" class="font-bold text-accent hover:text-accent-strong transition-colors">articles</a>.
+      </p>
     </div>
   </div>
 </section>
