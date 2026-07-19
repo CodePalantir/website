@@ -3,6 +3,8 @@ layout: default
 title: Legal Notice (Impressum)
 description: "APX REVOPS LTD Legal Notice - Company information, registration details, and contact information for APX REVOPS LTD, registered in Cyprus."
 image: /assets/images/logos/APX_LOGO.png
+lang: en
+translation: /de/impressum/
 ---
 
 <!-- ── Hero, compact, same grid+glow ground as the rest of the site ── -->

@@ -3,6 +3,8 @@ layout: default
 title: Privacy Policy
 description: "APX REVOPS LTD Privacy Policy - GDPR compliant data protection information. Learn how we collect, use, and protect your personal data."
 image: /assets/images/logos/APX_LOGO.png
+lang: en
+translation: /de/datenschutz/
 ---
 
 <!-- ── Hero, compact, same grid+glow ground as the rest of the site ── -->

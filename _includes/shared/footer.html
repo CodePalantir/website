@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="mb-10 sm:mb-12">
-      <a href="{{ site.baseurl }}/" aria-label="APX home" class="inline-flex items-center">
+      <a href="{{ t.urls.home | relative_url }}" aria-label="APX home" class="inline-flex items-center">
         <img src="{{ '/assets/images/logos/APX_WHITE.png' | relative_url }}" alt="APX" class="h-8 w-auto" loading="lazy">
       </a>
     </div>
@@ -29,10 +29,10 @@
       <div class="space-y-6">
         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">{{ t.footer.navigation }}</p>
         <ul class="space-y-3 text-lg font-medium">
-          <li><a href="{{ site.baseurl }}/services" class="hover:text-purple-400 transition-colors">{{ t.nav.services }}</a></li>
-          <li><a href="{{ site.baseurl }}/work" class="hover:text-purple-400 transition-colors">{{ t.nav.work }}</a></li>
-          <li><a href="{{ site.baseurl }}/about" class="hover:text-purple-400 transition-colors">{{ t.nav.about }}</a></li>
-          <li><a href="{{ site.baseurl }}/contact" class="hover:text-purple-400 transition-colors">{{ t.nav.contact }}</a></li>
+          <li><a href="{{ t.urls.services | relative_url }}" class="hover:text-purple-400 transition-colors">{{ t.nav.services }}</a></li>
+          <li><a href="{{ t.urls.work | relative_url }}" class="hover:text-purple-400 transition-colors">{{ t.nav.work }}</a></li>
+          <li><a href="{{ t.urls.about | relative_url }}" class="hover:text-purple-400 transition-colors">{{ t.nav.about }}</a></li>
+          <li><a href="{{ t.urls.contact | relative_url }}" class="hover:text-purple-400 transition-colors">{{ t.nav.contact }}</a></li>
         </ul>
       </div>
       <div class="space-y-6">
@@ -47,9 +47,9 @@
       <div class="space-y-6">
         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">{{ t.footer.insights }}</p>
         <ul class="space-y-3 text-lg font-medium">
-          <li><a href="{{ site.baseurl }}/articles" class="hover:text-purple-400 transition-colors">{{ t.nav.articles }}</a></li>
-          <li><a href="{{ site.baseurl }}/revshorts" class="hover:text-purple-400 transition-colors">{{ t.nav.revshorts }}</a></li>
-          <li><a href="{{ site.baseurl }}/crm-technical-debt/" class="hover:text-purple-400 transition-colors">{{ t.footer.crm_debt }}</a></li>
+          <li><a href="{{ t.urls.articles | relative_url }}" class="hover:text-purple-400 transition-colors">{{ t.nav.articles }}</a></li>
+          <li><a href="{{ t.urls.revshorts | relative_url }}" class="hover:text-purple-400 transition-colors">{{ t.nav.revshorts }}</a></li>
+          <li><a href="{{ t.urls.crm_debt | relative_url }}" class="hover:text-purple-400 transition-colors">{{ t.footer.crm_debt }}</a></li>
         </ul>
       </div>
       <div class="space-y-6">
@@ -75,8 +75,8 @@
     <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-400 text-[10px] font-bold uppercase tracking-widest">
       <p>{{ t.footer.copyright }}</p>
       <div class="flex gap-10">
-        <a href="{{ site.baseurl }}/privacy" class="hover:text-white transition-colors">{{ t.footer.privacy }}</a>
-        <a href="{{ site.baseurl }}/legal-notice" class="hover:text-white transition-colors">{{ t.footer.legal }}</a>
+        <a href="{{ t.urls.privacy | relative_url }}" class="hover:text-white transition-colors">{{ t.footer.privacy }}</a>
+        <a href="{{ t.urls.legal | relative_url }}" class="hover:text-white transition-colors">{{ t.footer.legal }}</a>
       </div>
     </div>
   </div>

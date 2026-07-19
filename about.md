@@ -3,6 +3,8 @@ layout: default
 title: About APX – The Engineers Behind Your Revenue Engine
 description: "APX is a senior, distributed team of engineers across Europe who architect, integrate and run revenue systems, marketing, sales and service, with software-engineering discipline."
 image: /assets/images/logos/APX_LOGO.png
+lang: en
+translation: /de/ueber-uns/
 ---
 
 <script type="application/ld+json">

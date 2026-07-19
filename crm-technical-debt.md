@@ -3,6 +3,8 @@ layout: default
 title: CRM Technical Debt, the Silent Tax on Revenue
 description: "How shortcuts in your CRM compound into a system that slows the whole revenue engine, what it costs in real numbers, and how to pay it down without a rip and replace."
 permalink: /crm-technical-debt/
+lang: en
+translation: /de/crm-technical-debt/
 ---
 
 <!-- 1. HERO -->

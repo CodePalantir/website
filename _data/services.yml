@@ -13,6 +13,7 @@ categories:
         duration: "5 days"
         price_subtext: "One-time Audit"
         short_description: "Complete system analysis."
+        short_description_de: "Vollständige Systemanalyse."
         show_in_navbar: true
         show_on_homepage: true
         homepage_tagline: "Protect Your Investment"
@@ -23,6 +24,7 @@ categories:
         icon: "database"
         price: "From €800"
         short_description: "Clean data architecture."
+        short_description_de: "Saubere Datenarchitektur."
         show_in_navbar: true
         url: "/services/data-quality-check"
         calendly: "https://calendly.com/d/cx6s-v9y-7wp/salesforce-data-quality-check"
@@ -30,6 +32,7 @@ categories:
         icon: "shield-alert"
         price: "~ €1,200"
         short_description: "Privacy compliance."
+        short_description_de: "DSGVO-Konformität."
         show_in_navbar: true
         url: "/services/gdpr-compliance"
         calendly: "https://calendly.com/d/cxm4-2s3-bcp/salesforce-gdpr-check"
@@ -41,6 +44,7 @@ categories:
         icon: "send"
         price: "Custom Quote"
         short_description: "Deliverability at scale."
+        short_description_de: "Zustellbarkeit im großen Stil."
         show_in_navbar: true
         url: "/services/smartlead"
         calendly: *meeting
@@ -48,6 +52,7 @@ categories:
         icon: "mail-check"
         price: "Custom Quote"
         short_description: "Sending engine setup."
+        short_description_de: "Setup der Sending-Engine."
         show_in_navbar: true
         url: "/services/instantly"
         calendly: *meeting
@@ -59,6 +64,7 @@ categories:
         icon: "telescope"
         price: "Custom Quote"
         short_description: "Sourcing and enrichment."
+        short_description_de: "Sourcing und Anreicherung."
         show_in_navbar: true
         url: "/services/apollo"
         calendly: *meeting
@@ -66,6 +72,7 @@ categories:
         icon: "layers"
         price: "Custom Quote"
         short_description: "Signal to enriched record."
+        short_description_de: "Vom Signal zum angereicherten Datensatz."
         show_in_navbar: true
         url: "/services/clay"
         calendly: *meeting
@@ -73,6 +80,7 @@ categories:
         icon: "user-search"
         price: "Custom Quote"
         short_description: "Contact data enrichment."
+        short_description_de: "Anreicherung von Kontaktdaten."
         show_in_navbar: true
         url: "/services/datagma"
         calendly: *meeting
@@ -84,6 +92,7 @@ categories:
         icon: "network"
         price: "€5k - €30k"
         short_description: "Enterprise connectivity."
+        short_description_de: "Enterprise-Konnektivität."
         show_in_navbar: true
         url: "/services/mulesoft-architecture"
         calendly: "https://calendly.com/d/ct8w-6qf-2p7/mulesoft"
@@ -91,6 +100,7 @@ categories:
         icon: "plug"
         price: "€15k - €30k"
         short_description: "Bespoke API integration."
+        short_description_de: "Maßgeschneiderte API-Integration."
         show_in_navbar: true
         url: "/services/custom-integration"
         calendly: "https://calendly.com/d/cxpd-p3r-k5h/salesforce-system-integration"
@@ -98,6 +108,7 @@ categories:
         icon: "workflow"
         price: "Custom Quote"
         short_description: "Governed automation."
+        short_description_de: "Automatisierung mit Governance."
         show_in_navbar: true
         url: "/services/workato"
         calendly: *meeting
@@ -105,6 +116,7 @@ categories:
         icon: "git-branch"
         price: "Custom Quote"
         short_description: "Self-hosted workflows."
+        short_description_de: "Self-hosted Workflows."
         show_in_navbar: true
         url: "/services/n8n"
         calendly: *meeting
@@ -112,6 +124,7 @@ categories:
         icon: "puzzle"
         price: "Custom Quote"
         short_description: "Visual automation."
+        short_description_de: "Visuelle Automatisierung."
         show_in_navbar: true
         url: "/services/make"
         calendly: *meeting
@@ -119,6 +132,7 @@ categories:
         icon: "zap"
         price: "Custom Quote"
         short_description: "Quick-win automation."
+        short_description_de: "Schnelle Automatisierungs-Wins."
         show_in_navbar: true
         url: "/services/zapier"
         calendly: *meeting
@@ -130,6 +144,7 @@ categories:
         icon: "cloud-lightning"
         price: "€5k - €15k"
         short_description: "Pipeline acceleration."
+        short_description_de: "Pipeline-Beschleunigung."
         show_in_navbar: true
         url: "/services/sales-cloud-setup"
         calendly: "https://calendly.com/d/cxhp-73b-c5y/salesforce-sales-cloud-velocity"
@@ -137,6 +152,7 @@ categories:
         icon: "headphones"
         price: "€5k - €15k"
         short_description: "Support optimization."
+        short_description_de: "Support-Optimierung."
         show_in_navbar: true
         url: "/services/service-cloud-console"
         calendly: "https://calendly.com/d/ctqn-xnb-4b2/salesforce-service-cloud-console"
@@ -144,6 +160,7 @@ categories:
         icon: "mail"
         price: "Custom Quote"
         short_description: "Marketing automation."
+        short_description_de: "Marketing-Automatisierung."
         show_in_navbar: true
         url: "/services/marketing-cloud"
         calendly: "https://calendly.com/d/cx6d-wj7-9g7/salesforce-marketing-cloud"
@@ -151,6 +168,7 @@ categories:
         icon: "receipt"
         price: "Custom Quote"
         short_description: "Quote-to-cash logic."
+        short_description_de: "Quote-to-Cash-Logik."
         show_in_navbar: true
         url: "/services/salesforce-cpq"
         calendly: *meeting
@@ -159,6 +177,7 @@ categories:
         price: "€100-150"
         price_suffix: "/hr"
         short_description: "High-performance logic."
+        short_description_de: "Hochperformante Logik."
         show_in_navbar: true
         show_on_homepage: true
         homepage_tagline: "Accelerate Velocity"
@@ -173,6 +192,7 @@ categories:
         icon: "megaphone"
         price: "Custom Quote"
         short_description: "Demand engine setup."
+        short_description_de: "Aufbau der Demand-Engine."
         show_in_navbar: true
         url: "/services/hubspot-marketing-hub"
         calendly: *meeting
@@ -180,6 +200,7 @@ categories:
         icon: "trending-up"
         price: "Custom Quote"
         short_description: "Pipeline and forecasting."
+        short_description_de: "Pipeline und Forecasting."
         show_in_navbar: true
         url: "/services/hubspot-sales-hub"
         calendly: *meeting
@@ -187,6 +208,7 @@ categories:
         icon: "life-buoy"
         price: "Custom Quote"
         short_description: "Support and retention."
+        short_description_de: "Support und Retention."
         show_in_navbar: true
         url: "/services/hubspot-service-hub"
         calendly: *meeting
@@ -194,6 +216,7 @@ categories:
         icon: "settings-2"
         price: "Custom Quote"
         short_description: "Data sync and quality."
+        short_description_de: "Datensync und -qualität."
         show_in_navbar: true
         url: "/services/hubspot-operations-hub"
         calendly: *meeting
@@ -205,6 +228,7 @@ categories:
         icon: "phone-call"
         price: "Custom Quote"
         short_description: "Telephony in the CRM."
+        short_description_de: "Telefonie im CRM."
         show_in_navbar: true
         url: "/services/aircall"
         calendly: *meeting
@@ -212,6 +236,7 @@ categories:
         icon: "file-signature"
         price: "Custom Quote"
         short_description: "Signature in the flow."
+        short_description_de: "Signatur im Prozess."
         show_in_navbar: true
         url: "/services/docusign"
         calendly: *meeting
@@ -224,6 +249,7 @@ categories:
         price: "€28,800"
         price_suffix: "/yr"
         short_description: "24hr support coverage."
+        short_description_de: "Support mit 24h-Reaktion."
         show_in_navbar: true
         url: "/services/managed-support"
         calendly: "https://calendly.com/d/cxm6-42v-d7d/managed-support"
@@ -232,6 +258,7 @@ categories:
         price: "Retainer"
         price_subtext: "Fractional"
         short_description: "Strategic roadmap."
+        short_description_de: "Strategische Roadmap."
         show_in_navbar: true
         show_on_homepage: true
         homepage_tagline: "Scalable Foundation"

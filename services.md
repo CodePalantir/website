@@ -3,6 +3,8 @@ layout: default
 title: Services, Audits, Integration, Salesforce, HubSpot & Managed RevOps
 description: "Every APX engagement, scoped in writing and priced in euros: technical audits, outbound and enrichment infrastructure, integrations, Salesforce and HubSpot builds, and managed operations."
 image: /assets/images/logos/APX_LOGO.png
+lang: en
+translation: /de/leistungen/
 ---
 
 <!-- HERO, compact, same warm atmosphere as the homepage -->
