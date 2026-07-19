@@ -254,6 +254,7 @@ layout: default
 
     <div class="rv flex justify-center">
       {% if page.visual == "report" %}{% include services/visual-report.html %}
+      {% elsif page.visual == "metric" %}{% include services/visual-metric.html %}
       {% elsif page.visual %}{% include {{ page.visual }} %}
       {% endif %}
     </div>
