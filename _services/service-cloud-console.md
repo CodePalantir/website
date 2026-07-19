@@ -86,4 +86,21 @@ metric:
   tag: "Support impact"
   stat: "-68%"
   stat_label: "Response time"
+hero_tagline: "Retention engine."
+turnaround: "4-8 weeks"
+hero_mock:
+  title: "Support Performance"
+  caption: "Live metrics"
+  badge: "Response time"
+  note: "Fast support increases customer lifetime value by 15%."
+  stats:
+    - value: "4.7/5"
+      label: "CSAT score"
+    - value: "82%"
+      label: "Retention rate"
+cta_title: "Ready to protect your"
+cta_accent: "revenue retention?"
+cta_sub: "Start your Service Cloud project today and stop losing customers to slow support."
+price_label: "Project investment"
+cta_label: "Set up Service Cloud"
 ---

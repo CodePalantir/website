@@ -92,4 +92,10 @@ board:
         - tag: "Data"
           label: "Duplicate rules check"
           state: "done"
+hero_include: "services/support-hero.html"
+cta_title: "Ready for"
+cta_accent: "smooth operations?"
+cta_sub: "Get instant access to senior Salesforce engineering talent. Your system runs without interruption, every single day."
+price_label: "Yearly investment"
+cta_label: "Secure your slot"
 ---

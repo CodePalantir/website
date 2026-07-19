@@ -82,4 +82,11 @@ brief:
     - label: "Storage limit"
       state: "85%"
       tone: "warn"
+hero_include: "services/partner-hero.html"
+symptoms_include: "services/partner-symptoms.html"
+cta_title: "Ready for a"
+cta_accent: "strategic partnership?"
+cta_sub: "We accept a limited number of Managed Partners to keep quality absolute. Is your revenue engine ready for professional management?"
+price_label: "Monthly partnership"
+cta_label: "Apply for partnership"
 ---

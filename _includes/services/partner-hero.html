@@ -1,0 +1,44 @@
+{%- comment -%}
+  Managed Partner hero (ported from the old Crown Jewel hero): crown badge,
+  giant centered headline, tilted executive dashboard. Rendered inside the
+  layout's hero section, below the breadcrumb.
+{%- endcomment -%}
+<div class="mt-12 md:mt-16 text-center">
+  <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent-tint text-accent border border-accent/15 text-[11px] font-bold uppercase tracking-[0.14em]">{% include ui/icon.html name="crown" class="w-3.5 h-3.5" %}Tier 1 strategic partnership</span>
+  <h1 class="mt-6 font-bold text-ink tracking-[-0.03em] leading-[1.02] text-[clamp(2.75rem,6.4vw,5rem)]" style="text-wrap:balance">Your entire CRM operation.<br><span class="text-gradient">Handled.</span></h1>
+  <p class="mt-6 mx-auto max-w-[620px] text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted">{{ page.description }}</p>
+  <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
+    {%- assign book_url_h = page.calendly -%}
+    {%- if book_url_h == nil or book_url_h == "" or book_url_h contains "site.cta" -%}{%- assign book_url_h = site.cta.secondary_url -%}{%- endif -%}
+    <a href="{{ book_url_h }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="service-hero" class="apx-btn apx-btn-primary">{{ page.cta | default: "Book a call" }} {% include ui/icon.html name="arrow-right" class="w-[18px] h-[18px]" %}</a>
+  </div>
+
+  <div class="mt-14 md:mt-16 mx-auto max-w-3xl [perspective:1400px]">
+    <div class="[transform:rotateX(7deg)] hover:[transform:rotateX(0deg)] transition-transform duration-700 origin-top">
+      <div class="apx-card p-6 md:p-8 shadow-2xl text-left">
+        <div class="flex items-center justify-between border-b border-line pb-4">
+          <p class="text-[13px] font-bold text-ink">Executive overview</p>
+          <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-600"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 apx-pulse"></span>Live</span>
+        </div>
+        <div class="mt-5 grid grid-cols-3 gap-4">
+          <div class="bg-paper border border-line rounded-xl p-4 text-center">
+            <p class="text-[1.7rem] leading-none font-bold text-gradient tabular-nums">114%</p>
+            <p class="mt-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-faint">Net revenue retention</p>
+          </div>
+          <div class="bg-paper border border-line rounded-xl p-4 text-center">
+            <p class="text-[1.7rem] leading-none font-bold text-gradient tabular-nums">99.99%</p>
+            <p class="mt-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-faint">System uptime</p>
+          </div>
+          <div class="bg-paper border border-line rounded-xl p-4 text-center">
+            <p class="text-[1.7rem] leading-none font-bold text-emerald-600">On track</p>
+            <p class="mt-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-faint">Strategic roadmap</p>
+          </div>
+        </div>
+        <div class="mt-5 flex items-end gap-1 h-16" aria-hidden="true">
+          {% assign bars = "34,48,42,56,61,53,68,74,66,79,84,78,90,96" | split: "," %}
+          {% for b in bars %}<div class="flex-1 bg-purple-gradient rounded-t" style="height:{{ b }}%;opacity:{{ forloop.index | times: 4 | plus: 40 | divided_by: 100.0 }}"></div>{% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

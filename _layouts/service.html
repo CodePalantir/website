@@ -98,7 +98,9 @@ layout: default
 }
 </script>
 
-<!-- HERO, compact, warm, same atmosphere as the homepage -->
+<!-- HERO: the old site's service hero (identity left, device mock right),
+     restyled in the new design language. Crown pages swap in a bespoke
+     hero via page.hero_include. -->
 <section class="relative overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#FBF9FF_55%,#FAF8F5_100%)]">
   <div class="apx-hero-grid opacity-70"></div>
   <div class="relative z-[4] px-6 pt-32 md:pt-40 pb-14 md:pb-20">
@@ -113,53 +115,88 @@ layout: default
         <span class="text-muted">{{ page.title }}</span>
       </nav>
 
-      <div class="mt-10 md:mt-12 flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-16">
+      {% if page.hero_include %}
+      {% include {{ page.hero_include }} %}
+      {% else %}
+      <div class="mt-10 md:mt-12 grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center">
+
         <!-- Left: identity -->
-        <div class="max-w-[680px]">
+        <div class="max-w-[640px]">
           {% if page.category %}<span class="apx-eyebrow">{{ page.category }}</span>{% endif %}
-          <div class="mt-4 flex items-start gap-5">
-            {% if page.icon %}
-            <span class="hidden sm:flex w-14 h-14 rounded-2xl bg-accent-tint text-accent items-center justify-center shrink-0 mt-1.5">
-              {% include ui/icon.html name=page.icon class="w-7 h-7" %}
-            </span>
-            {% endif %}
-            <h1 class="font-bold text-ink tracking-[-0.025em] leading-[1.06] text-[clamp(2.25rem,5vw,3.5rem)]" style="text-wrap:balance">{{ page.title }}</h1>
-          </div>
-          <p class="mt-6 text-[17.5px] md:text-[19px] leading-relaxed font-medium text-muted">{{ page.description }}</p>
-          <div class="mt-9 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+          <h1 class="mt-4 font-bold text-ink tracking-[-0.025em] leading-[1.06] text-[clamp(2.25rem,4.6vw,3.4rem)]" style="text-wrap:balance">{{ page.title }}{% if page.hero_tagline %}<br><span class="text-gradient">{{ page.hero_tagline }}</span>{% endif %}</h1>
+          <p class="mt-6 text-[17px] md:text-[18.5px] leading-relaxed font-medium text-muted">{{ page.description }}</p>
+          <div class="mt-9 flex flex-wrap items-center gap-4">
             <a href="{{ book_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="service-hero" class="apx-btn apx-btn-primary">
               {{ page.cta | default: "Book a call" }}
               {% include ui/icon.html name="arrow-right" class="w-[18px] h-[18px]" %}
             </a>
-            {% unless page.url contains "technical-health-audit" %}
-            <a href="{{ site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="service-hero-audit" class="apx-btn apx-btn-ghost">
-              Start with the €2,450 audit
-            </a>
-            {% endunless %}
+            {% if page.turnaround %}
+            <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-surface border border-line text-[13px] font-bold text-ink-soft">
+              {% include ui/icon.html name="clock" class="w-4 h-4 text-accent" %}{{ page.turnaround }}
+            </span>
+            {% endif %}
           </div>
         </div>
 
-        <!-- Right: price card -->
-        <div class="shrink-0 w-full lg:w-[300px]">
-          <div class="apx-card p-7">
-            <span class="apx-label"><span class="idx">€</span>{{ page.price_subtext | default: "Engagement" }}</span>
-            <p class="mt-3 text-[2rem] leading-none font-bold tracking-[-0.02em] text-ink">
-              {{ price_text }}{% if page.price_suffix %}<span class="text-lg font-semibold text-muted">{{ page.price_suffix }}</span>{% endif %}
-            </p>
-            <p class="mt-2.5 text-sm leading-relaxed text-muted">{{ page.price_note | default: "Scoped and priced before we start, no surprises later." }}</p>
-            <hr class="apx-rule my-5">
-            <ul class="space-y-2.5 text-sm text-muted">
-              <li class="flex items-center gap-2.5">{% include ui/icon.html name="check" class="w-4 h-4 text-accent shrink-0" %}Fixed scope, in writing</li>
-              <li class="flex items-center gap-2.5">{% include ui/icon.html name="check" class="w-4 h-4 text-accent shrink-0" %}Senior engineers only</li>
-              <li class="flex items-center gap-2.5">{% include ui/icon.html name="check" class="w-4 h-4 text-accent shrink-0" %}Everything documented</li>
-            </ul>
+        <!-- Right: device mock (the old "report/dashboard" card + floating badge) -->
+        {% if page.hero_mock %}
+        {%- assign m = page.hero_mock -%}
+        <div class="relative rv">
+          <div class="apx-card p-6 md:p-7 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-line pb-4">
+              <div>
+                <h2 class="text-[1.1rem] font-bold text-ink tracking-[-0.01em]">{{ m.title }}</h2>
+                <p class="mt-0.5 text-[11px] font-bold uppercase tracking-[0.12em] text-faint">{{ m.caption }}</p>
+              </div>
+              <span class="inline-grid place-items-center w-10 h-10 rounded-xl bg-purple-gradient text-white shrink-0">{% include ui/icon.html name=page.icon class="w-5 h-5" %}</span>
+            </div>
+            {% if m.rows %}
+            <div class="mt-4 space-y-2.5">
+              {% for r in m.rows %}
+              <div class="flex items-center gap-3 p-2.5 rounded-lg bg-paper border border-line{% if m.mono %} font-mono{% endif %}">
+                {% if r.icon %}<span class="text-accent shrink-0">{% include ui/icon.html name=r.icon class="w-4 h-4" %}</span>{% endif %}
+                <span class="text-[13px] font-semibold text-ink flex-1 min-w-0 truncate">{{ r.label }}</span>
+                {% if r.value %}<span class="text-[13px] font-bold text-ink tabular-nums whitespace-nowrap">{{ r.value }}</span>{% endif %}
+                {% if r.sub %}<span class="text-[11px] font-semibold text-faint whitespace-nowrap">{{ r.sub }}</span>{% endif %}
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% if m.stats %}
+            <div class="mt-4 grid grid-cols-2 gap-3">
+              {% for st in m.stats %}
+              <div class="bg-paper border border-line rounded-xl p-4 text-center">
+                <p class="text-[1.6rem] leading-none font-bold text-gradient tabular-nums">{{ st.value }}</p>
+                <p class="mt-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-faint">{{ st.label }}</p>
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
           </div>
+          {% if m.badge %}
+          <span class="absolute -top-3 -right-2 inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-purple-gradient text-white text-[12px] font-bold shadow-[0_10px_28px_rgba(74,0,224,.35)]">
+            <span class="w-1.5 h-1.5 rounded-full bg-white apx-pulse"></span>{{ m.badge }}
+          </span>
+          {% endif %}
+          {% if m.note %}
+          <p class="mt-4 text-[13px] font-medium text-faint flex items-start gap-2">{% include ui/icon.html name="sparkles" class="w-4 h-4 text-accent shrink-0 mt-0.5" %}{{ m.note }}</p>
+          {% endif %}
         </div>
+        {% endif %}
+
       </div>
+      {% endif %}
 
     </div>
   </div>
 </section>
+
+<!-- Client logo strip (every old service page carried it) -->
+{% include sections/logos.html %}
+
+{% if page.symptoms_include %}
+{% include {{ page.symptoms_include }} %}
+{% endif %}
 
 {% if page.pains %}
 <!-- SYMPTOMS: dark diagnostic panel + pain grid (ported from the old site) -->
@@ -268,7 +305,28 @@ layout: default
 </section>
 {% endif %}
 
-{% if page.capabilities %}
+{% if page.cta_title %}
+<!-- INVESTMENT CTA: the old site's closing price block, in the new language -->
+<section class="apx-section px-6 bg-paper">
+  <div class="max-w-wide mx-auto">
+    <div class="apx-panel relative p-8 md:p-14 text-center rv">
+      <div class="relative z-[2] max-w-[680px] mx-auto">
+        <h2 class="font-bold text-white tracking-[-0.02em] leading-[1.1] text-[clamp(1.875rem,3.4vw,2.75rem)]" style="text-wrap:balance">{{ page.cta_title }} <span class="text-gradient" style="background:linear-gradient(92deg,#C08CFF 0%,#8F7BFF 100%);-webkit-background-clip:text;background-clip:text">{{ page.cta_accent }}</span></h2>
+        <p class="mt-4 text-lg leading-relaxed text-white/70">{{ page.cta_sub }}</p>
+        <div class="mt-9 flex flex-col items-center gap-6">
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-[0.16em] text-white/50">{{ page.price_label | default: "Total investment" }}</p>
+            <p class="mt-1.5 text-[2.6rem] leading-none font-bold text-white tabular-nums">{{ price_text }}{% if page.price_suffix %}<span class="text-xl font-semibold text-white/60">{{ page.price_suffix }}</span>{% endif %}</p>
+          </div>
+          <a href="{{ book_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="service-invest" class="apx-btn apx-btn-light">{{ page.cta_label | default: "Book a call" }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.capabilities and page.outcomes == nil %}
 <!-- WHAT YOU GET -->
 <section class="apx-section px-6 bg-paper">
   <div class="max-w-wide mx-auto grid lg:grid-cols-[1fr_1.35fr] gap-12 lg:gap-20 items-start">
@@ -367,4 +425,4 @@ layout: default
 </section>
 {% endif %}
 
-{% include sections/cta-band.html %}
+{% unless page.cta_title %}{% include sections/cta-band.html %}{% endunless %}

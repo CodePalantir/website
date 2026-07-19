@@ -1,31 +1,6 @@
 {%- comment -%}
-  Engineering board (ported from the old Managed Support hero Kanban).
-  Driven by page.board: columns[] of {name, items[] of {tag, label, state}}.
-  state: "active" highlights the card; "done" dims it with a check.
+  Deliverables-sized wrapper around the shared engineering board card.
 {%- endcomment -%}
 <div class="relative w-full max-w-md">
-  <div class="apx-card p-0 overflow-hidden shadow-2xl">
-    <div class="flex items-center gap-1.5 px-4 py-3 border-b border-line bg-paper">
-      <span class="w-2.5 h-2.5 rounded-full bg-red-400/70"></span>
-      <span class="w-2.5 h-2.5 rounded-full bg-amber-400/70"></span>
-      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400/70"></span>
-      <span class="ml-2 text-[11px] font-bold text-faint font-mono">apx.board</span>
-    </div>
-    <div class="grid grid-cols-3 gap-3 p-4">
-      {% for col in page.board.columns %}
-      <div>
-        <p class="text-[9.5px] font-bold uppercase tracking-[0.12em] text-faint mb-2.5">{{ col.name }}</p>
-        <div class="space-y-2.5">
-          {% for item in col.items %}
-          <div class="p-2.5 rounded-lg border {% if item.state == "active" %}bg-accent-tint border-accent/40{% elsif item.state == "done" %}bg-paper border-line opacity-70{% else %}bg-surface border-line{% endif %}">
-            <span class="text-[8.5px] font-bold uppercase tracking-[0.1em] {% if item.state == "active" %}text-accent{% else %}text-faint{% endif %}">{{ item.tag }}</span>
-            <p class="mt-1 text-[11px] font-bold text-ink leading-snug">{{ item.label }}</p>
-            {% if item.state == "done" %}<span class="mt-1 inline-flex items-center gap-1 text-[9px] font-bold text-emerald-600">{% include ui/icon.html name="check" class="w-3 h-3" %}Deployed</span>{% endif %}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
+  {% include services/board-card.html %}
 </div>

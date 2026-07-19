@@ -84,6 +84,28 @@ report:
   finding_label: "Critical finding"
   finding: "Unrestricted org access"
 sample_pdf: "/assets/content/Technical-Health-Audit-ApexPalantir.pdf"
+hero_tagline: "Stop guessing."
+turnaround: "Turnaround: 5 days"
+hero_mock:
+  title: "Platform Assessment"
+  caption: "Audit scope"
+  badge: "Live health"
+  note: "Preventative maintenance is 4x cheaper than re-implementation."
+  rows:
+    - icon: "shield-check"
+      label: "GDPR and field access"
+    - icon: "code-2"
+      label: "Apex and metadata"
+    - icon: "database"
+      label: "Schema and storage"
+    - icon: "share-2"
+      label: "API and webhooks"
+    - icon: "git-branch"
+      label: "Flows and triggers"
+cta_title: "Ready for a"
+cta_accent: "solid foundation?"
+cta_sub: "Secure your audit slot today and stop the compounding cost of technical debt."
+cta_label: "Book your audit now"
 ---
 
 ## Why teams book this first

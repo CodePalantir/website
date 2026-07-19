@@ -94,4 +94,28 @@ orbital:
       label: "Marketing"
     - icon: "bar-chart-3"
       label: "BI"
+hero_tagline: "Enterprise connectivity."
+turnaround: "8-16 weeks"
+hero_mock:
+  title: "Application Network"
+  caption: "API-led connectivity"
+  badge: "Governed"
+  note: "Secure, policy-driven access to backend data."
+  rows:
+    - icon: "smartphone"
+      label: "Mobile / web"
+    - icon: "cpu"
+      label: "Order orchestration"
+    - icon: "database"
+      label: "SAP / Salesforce"
+  stats:
+    - value: "High"
+      label: "Asset reuse"
+    - value: "3x"
+      label: "Delivery speed"
+cta_title: "Ready to connect your"
+cta_accent: "entire ecosystem?"
+cta_sub: "Consult our MuleSoft architects today and eliminate data silos for good."
+price_label: "Project investment"
+cta_label: "Consult MuleSoft now"
 ---

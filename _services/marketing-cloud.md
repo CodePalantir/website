@@ -85,4 +85,21 @@ metric:
   tag: "Marketing impact"
   stat: "+47%"
   stat_label: "MQL quality"
+hero_tagline: "Nurture at scale."
+turnaround: "6-12 weeks"
+hero_mock:
+  title: "Campaign Performance"
+  caption: "Live engagement"
+  badge: "Engagement"
+  note: "Nurture campaigns increase conversion rates by 25%."
+  stats:
+    - value: "87/100"
+      label: "Lead score"
+    - value: "64%"
+      label: "Lead quality"
+cta_title: "Ready for"
+cta_accent: "pipeline-ready leads?"
+cta_sub: "Discuss your Marketing Cloud project today and stop wasting sales time on cold leads."
+price_label: "Project investment"
+cta_label: "Discuss Marketing Cloud"
 ---

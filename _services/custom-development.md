@@ -95,4 +95,29 @@ orbital:
       label: "APIs"
     - icon: "check-circle"
       label: "Tests"
+hero_tagline: "Built for you."
+turnaround: "Sprint based"
+hero_mock:
+  title: "Code Quality"
+  caption: "Development metrics"
+  badge: "Deploy ready"
+  mono: true
+  note: "Clean code reduces deployment time by 40%."
+  rows:
+    - icon: "code-2"
+      label: "class AccountHandler"
+    - icon: "code-2"
+      label: "void updateRevenue()"
+    - icon: "terminal"
+      label: "// custom logic, tested"
+  stats:
+    - value: "95%"
+      label: "Test coverage"
+    - value: "A+"
+      label: "Performance"
+cta_title: "Ready for code that"
+cta_accent: "actually works?"
+cta_sub: "Request a developer today and turn complex requirements into production-ready code."
+price_label: "Hourly rate"
+cta_label: "Request a developer"
 ---

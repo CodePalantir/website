@@ -86,4 +86,21 @@ metric:
   tag: "Performance target"
   stat: "+28%"
   stat_label: "Conversion rate"
+hero_tagline: "Precision pipeline."
+turnaround: "4-8 weeks"
+hero_mock:
+  title: "Pipeline Velocity"
+  caption: "Live metrics"
+  badge: "Deal speed"
+  note: "Automated stages reduce the sales cycle by around 18%."
+  stats:
+    - value: "34.2%"
+      label: "Win rate"
+    - value: "€42k"
+      label: "Avg deal size"
+cta_title: "Ready to build your"
+cta_accent: "revenue engine?"
+cta_sub: "Architecture matters. Get a Sales Cloud implementation that scales with your ambition."
+price_label: "Project investment"
+cta_label: "Start the implementation"
 ---
