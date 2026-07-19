@@ -334,7 +334,6 @@ js = '''
   var section=document.getElementById('lifecycle'); if(!section) return;
   var track=section.querySelector('#lc-track');
   var arrow=section.querySelector('#lc-arrow');
-  var grid=section.querySelector('.lc-grid');
   var nodeEls=[].slice.call(section.querySelectorAll('.lc-node'));
   var items=[].slice.call(section.querySelectorAll('.lc-item'));
   var NODES=__NODES__;
@@ -362,6 +361,7 @@ js = '''
   var raf=null, running=false, last=null, paused=false;
   var mode='dwell', dwellT=0, tr=null;
   function beginTravel(k){
+    if(reduce){ placeArrow(dockU(NODES[k].u)); activate(k); mode='dwell'; dwellT=0; tr=null; return; }
     var to=dockU(NODES[k].u), dist=fwd(arrowU,to);
     tr={from:arrowU,to:to,target:k,dur:Math.max(700,Math.min(2400,dist*L*3.2)),t:0};
     mode='travel';
@@ -376,28 +376,30 @@ js = '''
       var ef=f<.5?2*f*f:1-Math.pow(-2*f+2,2)/2;
       placeArrow(tr.from+fwd(tr.from,tr.to)*ef);
       if(f>=1){ activate(tr.target); mode='dwell'; dwellT=0; tr=null; }
-    } else if(!paused){
-      dwellT+=dt;
+    } else {
+      // hovering the reader slows the clock instead of freezing it,
+      // so a parked cursor can never stall the loop
+      dwellT+=paused?dt*0.25:dt;
       if(dwellT>=DWELL) beginTravel((cur+1)%NODES.length);
     }
     raf=requestAnimationFrame(frame);
   }
-  function start(){ if(running||reduce) return; running=true; last=null; if(!raf) raf=requestAnimationFrame(frame); }
+  function start(){ if(running) return; running=true; last=null; if(!raf) raf=requestAnimationFrame(frame); }
   function stop(){ running=false; if(raf){ cancelAnimationFrame(raf); raf=null; } }
   function goTo(nodeI){
     var k=-1; for(var j=0;j<NODES.length;j++) if(NODES[j].i===nodeI) k=j;
     if(k<0) return;
-    if(reduce){ activate(k); placeArrow(dockU(NODES[k].u)); return; }
     beginTravel(k); dwellT=0;
-    running=true; last=null; if(!raf) raf=requestAnimationFrame(frame);
+    start();
   }
   nodeEls.forEach(function(el){
     el.addEventListener('click',function(){ goTo(+el.dataset.i); });
     el.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); goTo(+el.dataset.i); } });
   });
-  if(canHover&&grid){
-    grid.addEventListener('pointerenter',function(){ paused=true; });
-    grid.addEventListener('pointerleave',function(){ paused=false; });
+  var panel=section.querySelector('.lc-panel');
+  if(canHover&&panel){
+    panel.addEventListener('pointerenter',function(){ paused=true; });
+    panel.addEventListener('pointerleave',function(){ paused=false; });
   }
   var seen=false;
   function reveal(){ if(!seen){ seen=true; section.classList.add('lc-on'); } }
