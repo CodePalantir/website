@@ -6,6 +6,24 @@
   JEKYLL_ENV = "production"
   NODE_VERSION = "20"
 
+# Caching: fonts never change under the same filename; images/diagrams may be
+# re-exported under the same name, so a week + revalidation. CSS and HTML keep
+# Netlify's default ETag revalidation for instant freshness after deploys.
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/diagrams/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
 # /blog moved to /articles (old site URLs stay valid)
 [[redirects]]
   from = "/blog"

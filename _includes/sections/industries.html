@@ -17,7 +17,7 @@
       {% if page.lang == "de" %}{% assign inds = site.industries_de | sort: "order" %}{% else %}{% assign inds = site.industries | sort: "order" %}{% endif %}
       {% for ind in inds %}
         <a href="{{ ind.url | relative_url }}" aria-label="{{ t.home.industries_aria_prefix }} {{ ind.name }}" class="apx-photo-card is-fluid max-sm:aspect-[4/3] rv group block">
-          <img src="{{ '/assets/images/industries/' | append: ind.image | relative_url }}" alt="{{ ind.alt }}" loading="lazy" decoding="async" width="1200" height="800">
+          <img src="{{ '/assets/images/industries/' | append: ind.image | relative_url }}" alt="{{ ind.alt }}" loading="lazy" decoding="async" width="900" height="600">
           <div class="apx-photo-cap absolute z-[2] text-white font-bold tracking-[-0.01em]">
             {{ ind.card_title }}
             <span class="apx-photo-sub block font-medium tracking-normal text-white/75">{{ ind.tagline }}</span>

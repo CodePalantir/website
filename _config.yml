@@ -79,3 +79,15 @@ exclude:
   - GEMINI_SERVICE_CATALOG_PROMPT.md
   - instruction
   - lumos-backend-spec.md
+  - design
+  - content
+  - docs
+  - scripts
+  - _tools
+  - _revshorts_source
+  - jekyll_context.txt
+  - bundle.sh
+  - aircall.svg
+  - Gemfile
+  - Gemfile.lock
+  - netlify.toml
