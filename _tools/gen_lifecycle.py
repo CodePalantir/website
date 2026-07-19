@@ -340,11 +340,10 @@ js = '''
   var L=track.getTotalLength();
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var canHover=window.matchMedia&&window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-  var DWELL=11000, DOCK=24;
+  var DWELL=11000, LOOP=56000;   // reduce-mode step interval / full-lap duration
   function ptAt(u){ return track.getPointAtLength((((u%1)+1)%1)*L); }
   function fwd(a,b){ var d=b-a; if(d<0)d+=1; return d; }
-  function dockU(u){ return ((u-DOCK/L)%1+1)%1; }
-  var arrowU=dockU(NODES[0].u);
+  var arrowU=NODES[0].u;
   function placeArrow(u){
     arrowU=((u%1)+1)%1;
     var p=ptAt(arrowU), a=ptAt(arrowU+0.004), b=ptAt(arrowU-0.004);
@@ -357,30 +356,28 @@ js = '''
     nodeEls.forEach(function(el){ var on=+el.dataset.i===NODES[k].i; el.classList.toggle('is-active',on); el.setAttribute('aria-current',on?'true':'false'); });
     items.forEach(function(el){ el.classList.toggle('is-active', +el.dataset.i===NODES[k].i); });
   }
-  activate(0); placeArrow(dockU(NODES[0].u));
+  // the phase whose node the arrow passed most recently
+  function phaseOf(u){ var bi=0,bd=9; for(var i=0;i<NODES.length;i++){ var d=fwd(NODES[i].u,u); if(d<bd){bd=d;bi=i;} } return bi; }
+  activate(0); placeArrow(NODES[0].u);
   var raf=null, running=false, last=null, paused=false;
-  var mode='dwell', dwellT=0, tr=null;
-  function beginTravel(k){
-    if(reduce){ placeArrow(dockU(NODES[k].u)); activate(k); mode='dwell'; dwellT=0; tr=null; return; }
-    var to=dockU(NODES[k].u), dist=fwd(arrowU,to);
-    tr={from:arrowU,to:to,target:k,dur:Math.max(700,Math.min(2400,dist*L*3.2)),t:0};
-    mode='travel';
-  }
+  var dwellT=0, seek=null;
   function frame(ts){
     if(!running){ raf=null; return; }
     if(last===null) last=ts;
     var dt=Math.min(ts-last,80); last=ts;
-    if(mode==='travel'&&tr){
-      tr.t+=dt;
-      var f=Math.min(tr.t/tr.dur,1);
+    if(seek){
+      if(seek.start===null) seek.start=ts;
+      var f=Math.min((ts-seek.start)/seek.dur,1);
       var ef=f<.5?2*f*f:1-Math.pow(-2*f+2,2)/2;
-      placeArrow(tr.from+fwd(tr.from,tr.to)*ef);
-      if(f>=1){ activate(tr.target); mode='dwell'; dwellT=0; tr=null; }
+      placeArrow(seek.from+fwd(seek.from,seek.to)*ef);
+      if(f>=1){ var kk=seek.k; seek=null; activate(kk); }
+    } else if(reduce){
+      dwellT+=dt;
+      if(dwellT>=DWELL){ dwellT=0; var nk=(cur+1)%NODES.length; activate(nk); placeArrow(NODES[nk].u); }
     } else {
-      // hovering the reader slows the clock instead of freezing it,
-      // so a parked cursor can never stall the loop
-      dwellT+=paused?dt*0.25:dt;
-      if(dwellT>=DWELL) beginTravel((cur+1)%NODES.length);
+      // continuous forward drift; hovering the reader slows it, never stops it
+      placeArrow(arrowU + dt/LOOP*(paused?0.25:1));
+      var k=phaseOf(arrowU); if(k!==cur) activate(k);
     }
     raf=requestAnimationFrame(frame);
   }
@@ -389,7 +386,9 @@ js = '''
   function goTo(nodeI){
     var k=-1; for(var j=0;j<NODES.length;j++) if(NODES[j].i===nodeI) k=j;
     if(k<0) return;
-    beginTravel(k); dwellT=0;
+    if(reduce){ activate(k); placeArrow(NODES[k].u); dwellT=0; return; }
+    var dist=fwd(arrowU,NODES[k].u);
+    seek={from:arrowU,to:NODES[k].u,k:k,dur:Math.max(600,Math.min(2200,dist*L*2.6)),start:null};
     start();
   }
   nodeEls.forEach(function(el){
@@ -416,9 +415,10 @@ html = f'''{{%- comment -%}}
   The revenue lifecycle. A distorted vertical Mobius ribbon (procedural,
   regenerate with: python3 _tools/gen_lifecycle.py). Segmented shading gives the
   strip a light front face and a dark back face so the twist actually reads.
-  Nodes are on-ribbon dots; the arrow travels, docks at a node (text swaps on
-  arrival), dwells, then departs. Hover pauses. Ribbon draws itself in on first
-  view. Keyboard and reduced-motion safe.
+  Nodes are on-ribbon dots; the arrow drifts around the loop continuously and
+  a phase activates the moment the arrow passes its node. Clicking a node or
+  label glides the arrow there. Hovering the reader slows the drift. Ribbon
+  draws itself in on first view. Keyboard and reduced-motion safe.
 {{%- endcomment -%}}
 <section id="lifecycle" class="lc-section apx-section px-6 bg-surface overflow-hidden scroll-mt-24">
   <div class="max-w-wide mx-auto w-full">
