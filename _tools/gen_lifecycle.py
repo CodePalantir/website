@@ -360,7 +360,7 @@ js = '''
   function phaseOf(u){ var bi=0,bd=9; for(var i=0;i<NODES.length;i++){ var d=fwd(NODES[i].u,u); if(d<bd){bd=d;bi=i;} } return bi; }
   activate(0); placeArrow(NODES[0].u);
   var raf=null, running=false, last=null, paused=false;
-  var dwellT=0, seek=null;
+  var dwellT=0, seek=null, manual=false;   // a click hands control to the user: auto-drift stops
   function frame(ts){
     if(!running){ raf=null; return; }
     if(last===null) last=ts;
@@ -371,6 +371,8 @@ js = '''
       var ef=f<.5?2*f*f:1-Math.pow(-2*f+2,2)/2;
       placeArrow(seek.from+fwd(seek.from,seek.to)*ef);
       if(f>=1){ var kk=seek.k; seek=null; activate(kk); }
+    } else if(manual){
+      // user has taken control by clicking; hold position until they click again
     } else if(reduce){
       dwellT+=dt;
       if(dwellT>=DWELL){ dwellT=0; var nk=(cur+1)%NODES.length; activate(nk); placeArrow(NODES[nk].u); }
@@ -386,6 +388,7 @@ js = '''
   function goTo(nodeI){
     var k=-1; for(var j=0;j<NODES.length;j++) if(NODES[j].i===nodeI) k=j;
     if(k<0) return;
+    manual=true;
     if(reduce){ activate(k); placeArrow(NODES[k].u); dwellT=0; return; }
     var dist=fwd(arrowU,NODES[k].u);
     seek={from:arrowU,to:NODES[k].u,k:k,dur:Math.max(600,Math.min(2200,dist*L*2.6)),start:null};
