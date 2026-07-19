@@ -41,7 +41,7 @@ company:
   address: "Gladstonos 16, 8046 Paphos, Cyprus"
 
 # Clean URL structure for blog posts
-permalink: /blog/:title/
+permalink: /articles/:title/
 
 # Collections configuration
 collections:

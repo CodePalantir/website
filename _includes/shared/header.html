@@ -59,16 +59,16 @@
 
       <!-- Insights dropdown (Blog + RevShorts) -->
       <div class="relative group flex items-center">
-        <a href="{{ site.baseurl }}/blog" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/blog' or page.url contains '/revshorts' %}text-accent{% endif %}">
+        <a href="{{ site.baseurl }}/articles" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/articles' or page.url contains '/revshorts' %}text-accent{% endif %}">
           Insights {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
         </a>
         <div class="dropdown-menu absolute top-full -right-28 w-[420px] mt-3 z-50 bg-surface rounded-[1.5rem] border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-4 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
-          <a href="{{ site.baseurl }}/blog" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
+          <a href="{{ site.baseurl }}/articles" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
             <div class="w-10 h-10 rounded-xl bg-accent-tint flex items-center justify-center text-accent group-hover/item:bg-purple-gradient group-hover/item:text-white transition-all shrink-0">
               {% include ui/icon.html name="book-open" class="w-[18px]" %}
             </div>
             <div>
-              <p class="text-sm font-bold text-ink">Blog</p>
+              <p class="text-sm font-bold text-ink">Articles</p>
               <p class="text-xs text-faint mt-0.5">Long-form insights and technical guides</p>
             </div>
           </a>
@@ -152,8 +152,8 @@
       <a href="{{ site.baseurl }}/about" class="py-3 border-b border-line">About</a>
 
       <p class="apx-label pt-5 pb-1">Insights</p>
-      <a href="{{ site.baseurl }}/blog" class="flex items-center gap-3 py-3 border-b border-line">
-        {% include ui/icon.html name="book-open" class="w-4 h-4 text-accent" %} Blog
+      <a href="{{ site.baseurl }}/articles" class="flex items-center gap-3 py-3 border-b border-line">
+        {% include ui/icon.html name="book-open" class="w-4 h-4 text-accent" %} Articles
       </a>
       <a href="{{ site.baseurl }}/revshorts" class="flex items-center gap-3 py-3 border-b border-line">
         {% include ui/icon.html name="zap" class="w-4 h-4 text-accent" %} RevShorts

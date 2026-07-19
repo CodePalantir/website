@@ -5,3 +5,14 @@
 [build.environment]
   JEKYLL_ENV = "production"
   NODE_VERSION = "20"
+
+# /blog moved to /articles (old site URLs stay valid)
+[[redirects]]
+  from = "/blog"
+  to = "/articles"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/articles/:splat"
+  status = 301
