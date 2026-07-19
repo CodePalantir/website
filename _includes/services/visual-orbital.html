@@ -1,0 +1,71 @@
+{%- comment -%}
+  Animated orbital hub (ported from the old site's integration deliverable
+  visual: rotating rings, satellite nodes, data packets flowing to the hub).
+  Driven by page.orbital:
+    center_icon  - icon at the hub
+    nodes[]      - exactly 5 of {icon, label}
+    stat         - corner stat (e.g. "99.9%")
+    stat_label   - what it measures (e.g. "Uptime SLA")
+  Reduced-motion: rings stop, packets hide; the topology still reads.
+{%- endcomment -%}
+{%- assign orb = page.orbital -%}
+<div class="relative w-full max-w-md">
+  <div class="apx-card relative aspect-square overflow-hidden p-0">
+
+    <svg viewBox="0 0 400 400" class="absolute inset-0 w-full h-full" aria-hidden="true">
+      <g class="orb-ring" style="transform-origin:200px 200px">
+        <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(142,45,226,.18)" stroke-width="1" stroke-dasharray="3 9"/>
+      </g>
+      <g class="orb-ring orb-ring-rev" style="transform-origin:200px 200px">
+        <circle cx="200" cy="200" r="105" fill="none" stroke="rgba(142,45,226,.12)" stroke-width="1" stroke-dasharray="2 7"/>
+      </g>
+      {%- comment -%} connectors + travelling packets, 5 spokes at 72deg {%- endcomment -%}
+      <g stroke="rgba(142,45,226,.25)" stroke-width="1" stroke-dasharray="4 5">
+        <line x1="200" y1="200" x2="200" y2="50"/>
+        <line x1="200" y1="200" x2="342.7" y2="153.6"/>
+        <line x1="200" y1="200" x2="288.2" y2="321.4"/>
+        <line x1="200" y1="200" x2="111.8" y2="321.4"/>
+        <line x1="200" y1="200" x2="57.3" y2="153.6"/>
+      </g>
+      <g class="orb-packets">
+        <circle r="3.5" fill="#8E2DE2"><animateMotion dur="2.8s" begin="0s" repeatCount="indefinite" path="M200,50 L200,200"/></circle>
+        <circle r="3.5" fill="#8E2DE2"><animateMotion dur="3.2s" begin="0.6s" repeatCount="indefinite" path="M342.7,153.6 L200,200"/></circle>
+        <circle r="3.5" fill="#8E2DE2"><animateMotion dur="3s" begin="1.2s" repeatCount="indefinite" path="M288.2,321.4 L200,200"/></circle>
+        <circle r="3.5" fill="#8E2DE2"><animateMotion dur="3.4s" begin="1.8s" repeatCount="indefinite" path="M111.8,321.4 L200,200"/></circle>
+        <circle r="3.5" fill="#8E2DE2"><animateMotion dur="2.6s" begin="2.4s" repeatCount="indefinite" path="M57.3,153.6 L200,200"/></circle>
+      </g>
+    </svg>
+
+    <!-- hub -->
+    <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 inline-grid place-items-center w-[88px] h-[88px] rounded-full bg-purple-gradient text-white shadow-[0_18px_40px_rgba(74,0,224,.35)] ring-4 ring-white">
+      {% include ui/icon.html name=orb.center_icon class="w-9 h-9" %}
+    </span>
+
+    <!-- satellites (5, matching the spoke angles) -->
+    {%- assign xs = "50,85.7,68.5,31.5,14.3" | split: "," -%}
+    {%- assign ys = "12.5,38.4,77.5,77.5,38.4" | split: "," -%}
+    {% for node in orb.nodes limit: 5 %}
+    <span class="absolute -translate-x-1/2 -translate-y-1/2 inline-flex items-center gap-1.5 pl-1.5 pr-2.5 py-1.5 rounded-full bg-surface border border-line shadow-sm" style="left:{{ xs[forloop.index0] }}%;top:{{ ys[forloop.index0] }}%">
+      <span class="inline-grid place-items-center w-6 h-6 rounded-full bg-accent-tint text-accent">{% include ui/icon.html name=node.icon class="w-3.5 h-3.5" %}</span>
+      <span class="text-[11px] font-bold text-ink whitespace-nowrap">{{ node.label }}</span>
+    </span>
+    {% endfor %}
+
+    <!-- corner stat -->
+    <div class="absolute bottom-4 right-4 bg-paper border border-line rounded-xl px-4 py-2.5 text-right shadow-sm">
+      <p class="text-xl font-bold text-gradient leading-none tabular-nums">{{ orb.stat }}</p>
+      <p class="mt-1 text-[10px] font-bold uppercase tracking-[0.12em] text-faint">{{ orb.stat_label }}</p>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .orb-ring { animation: orb-spin 40s linear infinite; }
+  .orb-ring-rev { animation-direction: reverse; animation-duration: 28s; }
+  @keyframes orb-spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) {
+    .orb-ring, .orb-ring-rev { animation: none; }
+    .orb-packets { display: none; }
+  }
+</style>
