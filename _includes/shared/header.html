@@ -1,3 +1,4 @@
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 {%- comment -%}
   One-job header: logo · nav (Services · Solutions · About · Insights) · one CTA
   pill. Transparent over the hero grid; default.html toggles .is-scrolled
@@ -14,14 +15,14 @@
     </a>
 
     <nav class="hidden md:flex justify-self-center items-center gap-9 text-[15.5px] font-medium text-muted">
-      <a href="{{ site.baseurl }}/" class="hover:text-ink transition-colors {% if page.url == '/' %}text-accent{% endif %}">Home</a>
+      <a href="{{ site.baseurl }}/" class="hover:text-ink transition-colors {% if page.url == '/' %}text-accent{% endif %}">{{ t.nav.home }}</a>
       <!-- Services mega-menu (no `relative` here on purpose: the menu anchors to
            the full-width fixed <header> so it centres on the viewport, not on
            this off-centre trigger; mx-auto centres it without a transform that
            would clash with the .dropdown-menu reveal animation) -->
       <div class="group flex items-center">
         <a href="{{ site.baseurl }}/services" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/services' %}text-accent{% endif %}">
-          Services {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
+          {{ t.nav.services }} {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
         </a>
         <div class="dropdown-menu absolute top-[calc(100%-0.875rem)] left-0 right-0 mx-auto mt-3 w-[min(1280px,calc(100vw-2rem))] z-50 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
           <div class="w-full bg-surface rounded-[1.5rem] border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-6">
@@ -47,8 +48,8 @@
               {% endfor %}
             </div>
             <div class="mt-5 pt-4 border-t border-line flex justify-between items-center">
-              <p class="text-xs text-faint font-medium italic">One revenue engine. Every layer engineered.</p>
-              <a href="{{ site.baseurl }}/services" class="text-xs font-bold text-accent hover:text-accent-strong transition-colors flex items-center gap-1">View All Services {% include ui/icon.html name="arrow-up-right" class="w-3" %}</a>
+              <p class="text-xs text-faint font-medium italic">{{ t.nav.services_tagline }}</p>
+              <a href="{{ site.baseurl }}/services" class="text-xs font-bold text-accent hover:text-accent-strong transition-colors flex items-center gap-1">{{ t.nav.view_all_services }} {% include ui/icon.html name="arrow-up-right" class="w-3" %}</a>
             </div>
           </div>
         </div>
@@ -57,7 +58,7 @@
       <!-- Solutions dropdown (products, all coming soon) -->
       <div class="relative group flex items-center">
         <span class="flex items-center gap-1 py-2 cursor-default hover:text-ink transition-colors">
-          Solutions {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
+          {{ t.nav.solutions }} {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
         </span>
         <div class="dropdown-menu absolute top-full -left-40 w-[420px] mt-3 z-50 bg-surface rounded-[1.5rem] border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-4 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
           <a href="{{ site.baseurl }}/solutions/apx-atlas/" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
@@ -65,8 +66,8 @@
               {% include ui/icon.html name="map" class="w-[18px]" %}
             </div>
             <div>
-              <p class="text-sm font-bold text-ink flex items-center gap-2">APX Atlas <span class="px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Coming soon</span></p>
-              <p class="text-xs text-faint mt-0.5">Your entire revenue stack, mapped live</p>
+              <p class="text-sm font-bold text-ink flex items-center gap-2">APX Atlas <span class="px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">{{ t.nav.coming_soon }}</span></p>
+              <p class="text-xs text-faint mt-0.5">{{ t.nav.atlas_desc }}</p>
             </div>
           </a>
           <a href="{{ site.baseurl }}/solutions/tech-debt-monitor/" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
@@ -74,8 +75,8 @@
               {% include ui/icon.html name="radar" class="w-[18px]" %}
             </div>
             <div>
-              <p class="text-sm font-bold text-ink flex items-center gap-2">Tech Debt Monitor <span class="px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Coming soon</span></p>
-              <p class="text-xs text-faint mt-0.5">Continuous debt scoring for your CRM</p>
+              <p class="text-sm font-bold text-ink flex items-center gap-2">Tech Debt Monitor <span class="px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">{{ t.nav.coming_soon }}</span></p>
+              <p class="text-xs text-faint mt-0.5">{{ t.nav.monitor_desc }}</p>
             </div>
           </a>
           <a href="{{ site.baseurl }}/solutions/apx-doppelgaenger/" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
@@ -83,8 +84,8 @@
               {% include ui/icon.html name="ghost" class="w-[18px]" %}
             </div>
             <div>
-              <p class="text-sm font-bold text-ink flex items-center gap-2">APX Doppelg&auml;nger <span class="px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Coming soon</span></p>
-              <p class="text-xs text-faint mt-0.5">A digital twin of your revenue engine</p>
+              <p class="text-sm font-bold text-ink flex items-center gap-2">APX Doppelg&auml;nger <span class="px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">{{ t.nav.coming_soon }}</span></p>
+              <p class="text-xs text-faint mt-0.5">{{ t.nav.doppelgaenger_desc }}</p>
             </div>
           </a>
         </div>
@@ -93,7 +94,7 @@
       <!-- Insights dropdown (Blog + RevShorts) -->
       <div class="relative group flex items-center">
         <a href="{{ site.baseurl }}/articles" class="flex items-center gap-1 py-2 hover:text-ink transition-colors {% if page.url contains '/articles' or page.url contains '/revshorts' %}text-accent{% endif %}">
-          Insights {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
+          {{ t.nav.insights }} {% include ui/icon.html name="chevron-down" class="w-4 h-4 chevron-icon" %}
         </a>
         <div class="dropdown-menu absolute top-full -right-28 w-[420px] mt-3 z-50 bg-surface rounded-[1.5rem] border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-4 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
           <a href="{{ site.baseurl }}/articles" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
@@ -101,8 +102,8 @@
               {% include ui/icon.html name="book-open" class="w-[18px]" %}
             </div>
             <div>
-              <p class="text-sm font-bold text-ink">Articles</p>
-              <p class="text-xs text-faint mt-0.5">Long-form insights and technical guides</p>
+              <p class="text-sm font-bold text-ink">{{ t.nav.articles }}</p>
+              <p class="text-xs text-faint mt-0.5">{{ t.nav.articles_desc }}</p>
             </div>
           </a>
           <a href="{{ site.baseurl }}/revshorts" class="flex gap-4 p-3 rounded-2xl hover:bg-paper transition-colors group/item text-left">
@@ -110,18 +111,42 @@
               {% include ui/icon.html name="zap" class="w-[18px]" %}
             </div>
             <div>
-              <p class="text-sm font-bold text-ink">RevShorts</p>
-              <p class="text-xs text-faint mt-0.5">400 to 500 word reads on a single idea</p>
+              <p class="text-sm font-bold text-ink">{{ t.nav.revshorts }}</p>
+              <p class="text-xs text-faint mt-0.5">{{ t.nav.revshorts_desc }}</p>
             </div>
           </a>
         </div>
       </div>
 
-      <a href="{{ site.baseurl }}/about" class="hover:text-ink transition-colors {% if page.url contains '/about' %}text-accent{% endif %}">About</a>
-      <a href="{{ site.baseurl }}/contact" class="hover:text-ink transition-colors {% if page.url contains '/contact' %}text-accent{% endif %}">Contact</a>
+      <a href="{{ site.baseurl }}/about" class="hover:text-ink transition-colors {% if page.url contains '/about' %}text-accent{% endif %}">{{ t.nav.about }}</a>
+      <a href="{{ site.baseurl }}/contact" class="hover:text-ink transition-colors {% if page.url contains '/contact' %}text-accent{% endif %}">{{ t.nav.contact }}</a>
     </nav>
 
     <div class="justify-self-end flex items-center gap-3">
+      {%- assign cur_lang = page.lang | default: "en" -%}
+      {%- if cur_lang == "de" -%}
+        {%- assign en_url = page.translation | default: "/" -%}
+        {%- assign de_url = page.url -%}
+      {%- else -%}
+        {%- assign en_url = page.url -%}
+        {%- assign de_url = page.translation | default: "/de/" -%}
+      {%- endif -%}
+      <div class="relative group hidden md:flex items-center">
+        <button type="button" class="flex items-center gap-1.5 py-2 text-[13px] font-bold uppercase tracking-[0.08em] text-muted hover:text-ink transition-colors" aria-label="{{ t.nav.language }}">
+          {% include ui/icon.html name="globe" class="w-4 h-4" %}
+          {{ cur_lang | upcase }}
+          {% include ui/icon.html name="chevron-down" class="w-3.5 h-3.5 chevron-icon" %}
+        </button>
+        <div class="dropdown-menu absolute top-full right-0 w-[168px] mt-3 z-50 bg-surface rounded-2xl border border-line shadow-[0_24px_60px_rgba(36,28,51,.16)] p-2 before:content-[''] before:absolute before:-top-4 before:inset-x-0 before:h-4">
+          <a href="{{ en_url | relative_url }}" data-set-lang="en" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-paper transition-colors text-sm font-semibold {% if cur_lang == 'en' %}text-ink{% else %}text-muted{% endif %}">
+            English {% if cur_lang == "en" %}{% include ui/icon.html name="check" class="w-4 h-4 text-accent" %}{% endif %}
+          </a>
+          <a href="{{ de_url | relative_url }}" data-set-lang="de" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-paper transition-colors text-sm font-semibold {% if cur_lang == 'de' %}text-ink{% else %}text-muted{% endif %}">
+            Deutsch {% if cur_lang == "de" %}{% include ui/icon.html name="check" class="w-4 h-4 text-accent" %}{% endif %}
+          </a>
+        </div>
+      </div>
+
       <a href="{{ site.contact.phone_href }}" data-ap-track="call" data-ap-category="header" class="hidden md:inline-flex items-center gap-2 text-[15px] font-semibold text-ink hover:text-accent transition-colors">
         {% include ui/icon.html name="phone-call" class="w-[18px] h-[18px] text-accent" %}
         {{ site.contact.phone_display }}
@@ -153,11 +178,11 @@
     </div>
 
     <nav class="flex flex-col gap-1 text-lg font-semibold text-ink">
-      <a href="{{ site.baseurl }}/" class="py-3 border-b border-line {% if page.url == '/' %}text-accent{% endif %}">Home</a>
+      <a href="{{ site.baseurl }}/" class="py-3 border-b border-line {% if page.url == '/' %}text-accent{% endif %}">{{ t.nav.home }}</a>
       <!-- Services accordion -->
       <div class="border-b border-line">
         <button class="mobile-services-toggle w-full flex items-center justify-between py-3 text-left text-lg font-semibold text-ink">
-          <span>Services</span>
+          <span>{{ t.nav.services }}</span>
           <svg class="w-5 h-5 text-faint transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
             <path d="M19 9l-7 7-7-7"/>
           </svg>
@@ -184,30 +209,36 @@
         </div>
       </div>
 
-      <p class="apx-label pt-5 pb-1">Solutions</p>
+      <p class="apx-label pt-5 pb-1">{{ t.nav.solutions }}</p>
       <a href="{{ site.baseurl }}/solutions/apx-atlas/" class="flex items-center gap-3 py-3 border-b border-line">
         {% include ui/icon.html name="map" class="w-4 h-4 text-accent" %} APX Atlas
-        <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Soon</span>
+        <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">{{ t.nav.soon }}</span>
       </a>
       <a href="{{ site.baseurl }}/solutions/tech-debt-monitor/" class="flex items-center gap-3 py-3 border-b border-line">
         {% include ui/icon.html name="radar" class="w-4 h-4 text-accent" %} Tech Debt Monitor
-        <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Soon</span>
+        <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">{{ t.nav.soon }}</span>
       </a>
       <a href="{{ site.baseurl }}/solutions/apx-doppelgaenger/" class="flex items-center gap-3 py-3 border-b border-line">
         {% include ui/icon.html name="ghost" class="w-4 h-4 text-accent" %} APX Doppelg&auml;nger
-        <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">Soon</span>
+        <span class="ml-auto px-2 py-0.5 rounded-full bg-accent-tint text-accent text-[9px] font-bold uppercase tracking-[0.1em]">{{ t.nav.soon }}</span>
       </a>
 
-      <p class="apx-label pt-5 pb-1">Insights</p>
+      <p class="apx-label pt-5 pb-1">{{ t.nav.insights }}</p>
       <a href="{{ site.baseurl }}/articles" class="flex items-center gap-3 py-3 border-b border-line">
-        {% include ui/icon.html name="book-open" class="w-4 h-4 text-accent" %} Articles
+        {% include ui/icon.html name="book-open" class="w-4 h-4 text-accent" %} {{ t.nav.articles }}
       </a>
       <a href="{{ site.baseurl }}/revshorts" class="flex items-center gap-3 py-3 border-b border-line">
-        {% include ui/icon.html name="zap" class="w-4 h-4 text-accent" %} RevShorts
+        {% include ui/icon.html name="zap" class="w-4 h-4 text-accent" %} {{ t.nav.revshorts }}
       </a>
 
-      <a href="{{ site.baseurl }}/about" class="mt-4 py-3 border-b border-line">About</a>
-      <a href="{{ site.baseurl }}/contact" class="py-3 border-b border-line">Contact</a>
+      <a href="{{ site.baseurl }}/about" class="mt-4 py-3 border-b border-line">{{ t.nav.about }}</a>
+      <a href="{{ site.baseurl }}/contact" class="py-3 border-b border-line">{{ t.nav.contact }}</a>
+
+      <p class="apx-label pt-5 pb-1">{{ t.nav.language }}</p>
+      <div class="flex gap-2.5 py-3">
+        <a href="{{ en_url | relative_url }}" data-set-lang="en" class="px-4 py-1.5 rounded-full border text-sm font-bold {% if cur_lang == 'en' %}bg-purple-gradient border-transparent text-white{% else %}bg-surface border-line text-muted{% endif %}">EN</a>
+        <a href="{{ de_url | relative_url }}" data-set-lang="de" class="px-4 py-1.5 rounded-full border text-sm font-bold {% if cur_lang == 'de' %}bg-purple-gradient border-transparent text-white{% else %}bg-surface border-line text-muted{% endif %}">DE</a>
+      </div>
     </nav>
 
     <div class="mt-10 space-y-4">
@@ -216,7 +247,7 @@
         {{ site.contact.phone_display }}
       </a>
       <a href="{{ site.baseurl }}/services" class="apx-btn apx-btn-ghost w-full">
-        Explore our services
+        {{ t.nav.explore_services }}
       </a>
     </div>
 
@@ -266,4 +297,16 @@
     link.addEventListener('click', () => setTimeout(closeMenu, 150));
   });
 })();
+</script>
+
+<script>
+  // Language choice: set Netlify's nf_lang cookie so an explicit pick
+  // permanently overrides Accept-Language steering, then follow the link.
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-set-lang]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        document.cookie = 'nf_lang=' + el.dataset.setLang + '; path=/; max-age=31536000; SameSite=Lax';
+      });
+    });
+  });
 </script>

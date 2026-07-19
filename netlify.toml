@@ -16,3 +16,11 @@
   from = "/blog/*"
   to = "/articles/:splat"
   status = 301
+
+# DACH steering: German-preferring browsers land on /de/ (homepage only,
+# 302, overridable via the nf_lang cookie set by the language switcher).
+[[redirects]]
+  from = "/"
+  to = "/de/"
+  status = 302
+  conditions = {Language = ["de"]}
