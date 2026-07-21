@@ -40,7 +40,32 @@ translation: /contact/
         <div class="mt-10 apx-card p-6">
           <p class="text-[15px] font-bold text-ink">Lieber direkt sprechen?</p>
           <p class="mt-1.5 text-[14.5px] leading-relaxed text-muted">Überspringt das Formular und bucht euch einen Termin direkt im Kalender.</p>
-          <a href="{{ site.cta.secondary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="contact-page-de" class="mt-4 apx-btn apx-btn-ghost">Kostenloses Erstgespräch</a>
+          <div class="mt-5 space-y-3">
+            <a href="https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=contact-page-de" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="contact-page-de" data-ap-value="intro" class="flex items-center gap-3.5 p-3.5 rounded-xl border border-line bg-surface hover:border-accent/40 hover:shadow-md transition-all group">
+              <span class="inline-grid place-items-center w-10 h-10 rounded-lg bg-accent-tint text-accent shrink-0 transition-colors group-hover:bg-purple-gradient group-hover:text-white">{% include ui/icon.html name="message-circle" class="w-5 h-5" %}</span>
+              <span class="flex-1">
+                <span class="block text-[15px] font-bold text-ink group-hover:text-accent transition-colors">Kostenloses Erstgespräch</span>
+                <span class="block text-[13px] text-faint">30 Min., keine Vorbereitung nötig</span>
+              </span>
+              {% include ui/icon.html name="arrow-right" class="w-4 h-4 text-faint group-hover:text-accent group-hover:translate-x-1 transition-all" %}
+            </a>
+            <a href="https://calendly.com/apx-revops/audit-scoping?utm_source=website&utm_content=contact-page-de" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="contact-page-de" data-ap-value="audit" class="flex items-center gap-3.5 p-3.5 rounded-xl border border-line bg-surface hover:border-accent/40 hover:shadow-md transition-all group">
+              <span class="inline-grid place-items-center w-10 h-10 rounded-lg bg-accent-tint text-accent shrink-0 transition-colors group-hover:bg-purple-gradient group-hover:text-white">{% include ui/icon.html name="heart-pulse" class="w-5 h-5" %}</span>
+              <span class="flex-1">
+                <span class="block text-[15px] font-bold text-ink group-hover:text-accent transition-colors">Audit-Scoping-Call</span>
+                <span class="block text-[13px] text-faint">30 Min., Start ins Audit für 2.450 €</span>
+              </span>
+              {% include ui/icon.html name="arrow-right" class="w-4 h-4 text-faint group-hover:text-accent group-hover:translate-x-1 transition-all" %}
+            </a>
+            <a href="https://calendly.com/apx-revops/managed-partnership-interview?utm_source=website&utm_content=contact-page-de" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="contact-page-de" data-ap-value="partner" class="flex items-center gap-3.5 p-3.5 rounded-xl border border-line bg-surface hover:border-accent/40 hover:shadow-md transition-all group">
+              <span class="inline-grid place-items-center w-10 h-10 rounded-lg bg-accent-tint text-accent shrink-0 transition-colors group-hover:bg-purple-gradient group-hover:text-white">{% include ui/icon.html name="crown" class="w-5 h-5" %}</span>
+              <span class="flex-1">
+                <span class="block text-[15px] font-bold text-ink group-hover:text-accent transition-colors">Managed-Partnership-Interview</span>
+                <span class="block text-[13px] text-faint">45 Min., für Retainer-Engagements</span>
+              </span>
+              {% include ui/icon.html name="arrow-right" class="w-4 h-4 text-faint group-hover:text-accent group-hover:translate-x-1 transition-all" %}
+            </a>
+          </div>
         </div>
       </div>
 
