@@ -1,23 +1,13 @@
 ---
-layout: service
+layout: service-classic
 title: "Mulesoft Architecture"
 description: "Enterprise connectivity done as architecture, not plumbing: MuleSoft APIs that move clean, validated data across your ecosystem, reliably, at scale."
 service_type: "Mulesoft Integration Architecture"
 category: "Integration"
 icon: "network"
 price: "5000"
-price_display: "€5k–30k"
-price_subtext: "Fixed-scope build"
-price_note: "Scoped per API layer and system count, priced in writing before the build starts."
+price_display: "€5k-30k"
 calendly: "https://calendly.com/d/ct8w-6qf-2p7/mulesoft"
-cta: "Scope the architecture"
-headline: "Connectivity that survives growth."
-capabilities:
-  - "API-led architecture: experience, process, and system layers done properly"
-  - "Data validated and transformed once, at the boundary, not in every consumer"
-  - "Reusable APIs so the next integration costs half as much"
-  - "Monitoring, alerting, and SLAs on every flow"
-  - "Governance and documentation your IT team can audit"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "Do we need MuleSoft licences already?"
@@ -26,96 +16,11 @@ faq:
     a: "API layers designed for reuse: one validated customer API serving every consumer, instead of one fragile pipe per connection. That is what survives growth."
   - q: "Can you take over an existing MuleSoft setup?"
     a: "Yes. We audit what is deployed, document it, and stabilise before we extend."
-pains_title: "Are data silos killing decisions?"
-pains_intro: "When ERP, CRM and marketing platforms do not talk, your teams work from different versions of the truth. MuleSoft creates one integration layer that ends the argument."
-pains:
-  - icon: "git-branch"
-    title: "Integration spaghetti"
-    body: "Twenty-plus point-to-point connections that break whenever a system updates."
-  - icon: "file-spreadsheet"
-    title: "CSV hell"
-    body: "Finance exports from the ERP and uploads to Salesforce by hand, every week."
-  - icon: "alert-triangle"
-    title: "Data conflicts"
-    body: "The same customer carrying different account numbers in different systems."
-  - icon: "clock"
-    title: "Slow order processing"
-    body: "An order-to-cash cycle of five days, all of it manual data entry."
-diagnostic:
-  title: "Integration challenges"
-  steps:
-    - label: "Point-to-point chaos"
-      badge: "Fragile"
-      icon: "git-branch"
-      hot: true
-    - label: "Disconnected systems"
-      badge: "Data silos"
-      icon: "server"
-    - label: "Manual data migration"
-      badge: "Expensive"
-      icon: "hand"
-phases_eyebrow: "Our methodology"
-phases_title: "The architecture process."
-phases:
-  - icon: "map"
-    title: "Integration mapping"
-    body: "We audit your stack, data flows and processes to design one centralised integration architecture."
-  - icon: "network"
-    title: "API development"
-    body: "Reusable APIs and transformation flows built to MuleSoft best practice for scale and performance."
-  - icon: "gauge"
-    title: "Production deployment"
-    body: "Flows deployed to CloudHub with monitoring, error handling and SLA alerts for 99.9 percent uptime."
-outcomes_title: "Your system for seamless integration."
-outcomes_intro: "A production-ready MuleSoft environment connecting your entire stack, with real-time sync, error monitoring and APIs that scale with you."
-outcomes:
-  - icon: "network"
-    title: "Reusable API layer"
-    body: "Centralised APIs connecting Salesforce, ERP, marketing platforms and custom applications on one standard."
-  - icon: "shield-check"
-    title: "Transformation and validation"
-    body: "Automated mapping, cleansing and validation that keeps data intact across every system."
-  - icon: "activity"
-    title: "Monitoring and alerting"
-    body: "Real-time dashboards for flow health, error rates and SLA performance, with automated alerts."
-visual: "orbital"
-orbital:
-  center_icon: "network"
-  stat: "99.9%"
-  stat_label: "Uptime SLA"
-  nodes:
-    - icon: "cloud-lightning"
-      label: "Salesforce"
-    - icon: "database"
-      label: "ERP"
-    - icon: "shopping-cart"
-      label: "Commerce"
-    - icon: "mail"
-      label: "Marketing"
-    - icon: "bar-chart-3"
-      label: "BI"
-hero_tagline: "Enterprise connectivity."
-turnaround: "8-16 weeks"
-hero_mock:
-  title: "Application Network"
-  caption: "API-led connectivity"
-  badge: "Governed"
-  note: "Secure, policy-driven access to backend data."
-  rows:
-    - icon: "smartphone"
-      label: "Mobile / web"
-    - icon: "cpu"
-      label: "Order orchestration"
-    - icon: "database"
-      label: "SAP / Salesforce"
-  stats:
-    - value: "High"
-      label: "Asset reuse"
-    - value: "3x"
-      label: "Delivery speed"
-cta_title: "Ready to connect your"
-cta_accent: "entire ecosystem?"
-cta_sub: "Consult our MuleSoft architects today and eliminate data silos for good."
-price_label: "Project investment"
-cta_label: "Consult MuleSoft now"
 ---
+
+{% include services-classic/mulesoft-architecture/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/mulesoft-architecture/symptoms.html %}
+{% include services-classic/mulesoft-architecture/method.html %}
+{% include services-classic/mulesoft-architecture/deliverables.html %}
+{% include services-classic/mulesoft-architecture/cta.html %}

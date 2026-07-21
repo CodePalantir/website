@@ -1,23 +1,13 @@
 ---
-layout: service
+layout: service-classic
 title: "System Integrations"
 description: "Salesforce wired to your ERP, marketing stack, or internal tools with robust APIs and proven patterns, so data moves once, correctly, and nobody re-keys anything."
 service_type: "Salesforce Integration"
 category: "Integration"
 icon: "plug"
 price: "15000"
-price_display: "€15k–30k"
-price_subtext: "Fixed-scope build"
-price_note: "Architecture and price agreed in writing before the first line of code."
+price_display: "€15k-30k"
 calendly: "https://calendly.com/d/cxpd-p3r-k5h/salesforce-system-integration"
-cta: "Scope the integration"
-headline: "One record of truth, everywhere."
-capabilities:
-  - "An integration architecture chosen for your volume and failure modes"
-  - "Error handling and retries so a bad night doesn't corrupt your data"
-  - "Field-level mapping documented and owned by your team"
-  - "Monitoring and alerting on every critical sync"
-  - "No silent failures: when something breaks, you know before your users do"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "Which systems do you integrate?"
@@ -26,97 +16,11 @@ faq:
     a: "It does not stay silent. Monitoring and alerting are part of every build, so a failure raises an alert instead of quietly dropping records for weeks."
   - q: "Why does the price range from €15k to €30k?"
     a: "System count and data complexity. After discovery you get one number in writing, and that is the number you pay."
-pains_title: "Is your data trapped in silos?"
-pains_intro: "When systems do not talk, your team works twice as hard for half the visibility. We replace manual exports and fragile scripts with an enterprise-grade data pipeline."
-pains:
-  - icon: "refresh-cw"
-    title: "Sync lag"
-    body: "Reps waiting a full day for ERP invoice data to appear in the CRM."
-  - icon: "alert-octagon"
-    title: "Order errors"
-    body: "Manual re-keying that ships wrong products and starts billing disputes."
-  - icon: "copy"
-    title: "Duplicate records"
-    body: "Customer data scattered across three systems, and support pays the price."
-  - icon: "bar-chart-2"
-    title: "Blind reporting"
-    body: "Leadership cannot see true revenue because the numbers live in finance."
-diagnostic:
-  title: "The disconnected reality"
-  steps:
-    - label: "Manual data entry"
-      badge: "High cost"
-      icon: "hand"
-    - label: "Fragmented customer view"
-      badge: "Blind spots"
-      icon: "copy"
-      hot: true
-    - label: "Revenue leakage"
-      badge: "Critical"
-      icon: "trending-down"
-phases_eyebrow: "Connection strategy"
-phases_title: "The integration process."
-phases:
-  - icon: "map"
-    title: "Data mapping"
-    body: "We analyse source and target systems to define exact field mappings, data types and sync frequency."
-  - icon: "blocks"
-    title: "Middleware build"
-    body: "The integration logic built on robust middleware, with error handling and retries designed in from day one."
-  - icon: "activity"
-    title: "Load test and launch"
-    body: "Rigorous testing with high-volume datasets to prove API stability before the switch flips."
-outcomes_title: "One single source of truth."
-outcomes_intro: "Salesforce connected to the stack you already run: SAP, NetSuite, HubSpot, Stripe. No more manual CSV uploads, just instant, reliable data flow."
-outcomes:
-  - icon: "eye"
-    title: "360 degree customer view"
-    body: "Invoices, support tickets and shipping status directly on the account page in Salesforce."
-  - icon: "zap"
-    title: "Order-to-cash automation"
-    body: "Closed-won deals create orders in the ERP and trigger provisioning. Zero touch."
-  - icon: "shield-check"
-    title: "Data integrity guarantee"
-    body: "An architecture that ensures what is in finance matches what is in sales, always."
-visual: "orbital"
-orbital:
-  center_icon: "git-merge"
-  stat: "360°"
-  stat_label: "Customer view"
-  nodes:
-    - icon: "database"
-      label: "SAP"
-    - icon: "share-2"
-      label: "HubSpot"
-    - icon: "shopping-cart"
-      label: "Shopify"
-    - icon: "phone-call"
-      label: "Aircall"
-    - icon: "table"
-      label: "ERP"
-hero_tagline: "The unified truth."
-turnaround: "3-6 weeks"
-hero_mock:
-  title: "Unified Customer"
-  caption: "Live sync"
-  badge: "Single view"
-  note: "All data points visible on one Salesforce screen."
-  rows:
-    - icon: "user-check"
-      label: "Enterprise · Tier 1"
-      value: "€4,250,000"
-      sub: "Salesforce"
-    - icon: "check-circle"
-      label: "Latest invoice"
-      value: "Paid today"
-      sub: "Stripe"
-    - icon: "inbox"
-      label: "Active issues"
-      value: "0 open"
-      sub: "Zendesk"
-cta_title: "Ready to unify"
-cta_accent: "your systems?"
-cta_sub: "Stop manual data entry. Start building an integrated ecosystem."
-price_label: "Project investment"
-cta_label: "Start the integration"
 ---
+
+{% include services-classic/custom-integration/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/custom-integration/symptoms.html %}
+{% include services-classic/custom-integration/method.html %}
+{% include services-classic/custom-integration/deliverables.html %}
+{% include services-classic/custom-integration/cta.html %}

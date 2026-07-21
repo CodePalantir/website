@@ -1,0 +1,83 @@
+<!-- SYMPTOMS -->
+<section class="py-24 px-6 bg-surface">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div class="order-2 md:order-1 relative">
+                <div class="relative p-8 rounded-[2.5rem] bg-plum overflow-hidden min-h-[500px] flex flex-col justify-center shadow-2xl">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-accent rounded-full blur-[80px] opacity-20"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-strong rounded-full blur-[80px] opacity-20"></div>
+
+                    <div class="relative z-10 space-y-2">
+                        <p class="text-center text-xs font-bold text-white/50 uppercase tracking-widest mb-4">Integration Challenges</p>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-white text-xs font-bold">1</div>
+                            <div class="flex-grow p-4 bg-white/5 rounded-xl border border-white/10 text-white font-bold flex justify-between items-center">
+                                <span>Point-to-Point Chaos</span>
+                                <span class="text-xs text-red-400">Fragile</span>
+                            </div>
+                            {% include ui/icon.html name="git-branch" class="text-red-400 w-5 h-5" %}
+                        </div>
+                        <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-white text-xs font-bold">2</div>
+                            <div class="flex-grow p-4 bg-purple-500/10 rounded-xl border border-purple-500/30 text-purple-200 font-bold flex justify-between items-center">
+                                <span>Disconnected Systems</span>
+                                <span class="text-xs bg-purple-500/20 px-2 py-1 rounded">Data Silos</span>
+                            </div>
+                            {% include ui/icon.html name="server" class="text-purple-400 w-5 h-5" %}
+                        </div>
+                        <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-white text-xs font-bold">3</div>
+                            <div class="flex-grow p-4 bg-white/10 rounded-xl border border-white/15 text-white/80 font-bold flex justify-between items-center">
+                                <span>Manual Data Migration</span>
+                                <span class="text-xs bg-white/10 px-2 py-1 rounded">Expensive</span>
+                            </div>
+                            {% include ui/icon.html name="hand" class="text-white/50 w-5 h-5" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2">
+                <h2 class="text-4xl font-bold text-ink mb-6">Are data silos <span class="text-accent">killing decisions?</span></h2>
+                <p class="text-muted text-lg mb-10">
+                    When your ERP, CRM, and marketing platforms don't talk to each other, your teams work from different versions of truth. Mulesoft creates a single integration layer for your entire tech stack.
+                </p>
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-2xl bg-paper shadow-none hover:bg-surface hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
+                        <div class="w-10 h-10 rounded-xl bg-surface text-faint flex items-center justify-center mb-4 group-hover:bg-purple-gradient group-hover:text-white transition-colors shadow-sm">
+                            {% include ui/icon.html name="git-branch" class="w-6 h-6" %}
+                        </div>
+                        <h4 class="font-bold text-ink mb-2">Integration Spaghetti</h4>
+                        <p class="text-sm text-faint leading-relaxed">20+ point-to-point connections that break whenever a system updates.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-paper shadow-none hover:bg-surface hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
+                        <div class="w-10 h-10 rounded-xl bg-surface text-faint flex items-center justify-center mb-4 group-hover:bg-purple-gradient group-hover:text-white transition-colors shadow-sm">
+                            {% include ui/icon.html name="file-spreadsheet" class="w-6 h-6" %}
+                        </div>
+                        <h4 class="font-bold text-ink mb-2">CSV Hell</h4>
+                        <p class="text-sm text-faint leading-relaxed">Finance exports CSVs from ERP and manually uploads to Salesforce weekly.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-paper shadow-none hover:bg-surface hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
+                        <div class="w-10 h-10 rounded-xl bg-surface text-faint flex items-center justify-center mb-4 group-hover:bg-purple-gradient group-hover:text-white transition-colors shadow-sm">
+                            {% include ui/icon.html name="alert-triangle" class="w-6 h-6" %}
+                        </div>
+                        <h4 class="font-bold text-ink mb-2">Data Conflicts</h4>
+                        <p class="text-sm text-faint leading-relaxed">Same customer has different account numbers in different systems.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-paper shadow-none hover:bg-surface hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
+                        <div class="w-10 h-10 rounded-xl bg-surface text-faint flex items-center justify-center mb-4 group-hover:bg-purple-gradient group-hover:text-white transition-colors shadow-sm">
+                            {% include ui/icon.html name="clock" class="w-6 h-6" %}
+                        </div>
+                        <h4 class="font-bold text-ink mb-2">Slow Order Processing</h4>
+                        <p class="text-sm text-faint leading-relaxed">Order-to-cash cycle takes 5 days due to manual data entry across systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

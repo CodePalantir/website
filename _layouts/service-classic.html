@@ -1,0 +1,105 @@
+---
+layout: default
+---
+{%- comment -%}
+  Classic service layout: the OLD site's service-page design (old layout and
+  components verbatim, warm-mapped to the new palette). Page bodies are
+  hardcoded section includes under _includes/services-classic/<slug>/.
+  This layout only adds: JSON-LD (Service, FAQPage, Breadcrumb), the body,
+  a restyled FAQ accordion, and the founder signature. No cta-band: classic
+  pages carry their own dark price CTA.
+{%- endcomment -%}
+
+<!-- Service Schema Markup for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | strip_html | strip_newlines | escape }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "APX",
+    "url": "https://apx-revops.com"
+  },
+  "serviceType": "{{ page.service_type | default: page.category | default: 'RevOps Engineering' }}",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.1109,
+      "longitude": 8.6821
+    },
+    "geoRadius": "2000 km"
+  }{% assign price_num = page.price | plus: 0 %}{% if price_num > 0 %},
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ page.price }}",
+    "priceCurrency": "EUR",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "{{ page.price }}",
+      "priceCurrency": "EUR"
+    }
+  }{% endif %}
+}
+</script>
+
+{% if page.faq %}
+<!-- FAQPage Schema for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for f in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ f.q | jsonify }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | jsonify }} }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+<!-- BreadcrumbList Schema for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://apx-revops.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://apx-revops.com/services" },
+    { "@type": "ListItem", "position": 3, "name": "{{ page.title }}", "item": "{{ page.url | absolute_url }}" }
+  ]
+}
+</script>
+
+{{ content }}
+
+{% if page.faq %}
+<!-- FAQ, old-look accordion: paper ground, surface cards -->
+<section class="py-24 px-6 bg-paper">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-accent font-bold uppercase tracking-widest text-xs mb-4 block">FAQ</span>
+      <h2 class="text-4xl font-bold text-ink">Common Questions</h2>
+    </div>
+    <div class="space-y-4">
+      {% for f in page.faq %}
+      <details class="group bg-surface border border-line rounded-2xl px-6 py-5 hover:shadow-md transition-shadow">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-bold text-ink text-lg">
+          {{ f.q }}
+          <span class="shrink-0 w-8 h-8 rounded-xl bg-paper text-faint flex items-center justify-center transition-transform group-open:rotate-45">
+            {% include ui/icon.html name="plus" class="w-4 h-4" %}
+          </span>
+        </summary>
+        <p class="mt-4 text-muted leading-relaxed">{{ f.a }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

@@ -1,22 +1,12 @@
 ---
-layout: service
+layout: service-classic
 title: "Marketing Cloud Implementation"
 description: "Journeys, automations, and personalisation built on clean data, so every lead is warmed and qualified before sales ever sees it."
 service_type: "Salesforce Marketing Cloud Implementation"
 category: "Salesforce"
 icon: "mail"
 price_display: "Custom Quote"
-price_subtext: "Scoped build"
-price_note: "Marketing Cloud scope varies widely, we price it in writing after discovery, then hold that number."
 calendly: "https://calendly.com/d/cx6d-wj7-9g7/salesforce-marketing-cloud"
-cta: "Scope the build"
-headline: "Leads that arrive warm, not raw."
-capabilities:
-  - "Journeys mapped to your real funnel, not a template"
-  - "A data layer between CRM and Marketing Cloud that stays in sync"
-  - "Segmentation and personalisation that scale past the first campaign"
-  - "Deliverability, preference, and consent management done properly"
-  - "Attribution reporting sales and marketing both accept"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "Why is there no fixed price on this one?"
@@ -25,81 +15,11 @@ faq:
     a: "Yes, but we audit them first. Most orgs carry journeys that fire wrong or never. We rebuild the keepers on clean data and retire the rest."
   - q: "Does this work with our sales process?"
     a: "That handoff is the point: leads arrive warmed, scored and routed, and sales sees the whole journey history on the record."
-pains_title: "Is marketing feeding sales garbage?"
-pains_intro: "When marketing hands cold, unqualified leads to sales, the whole revenue engine stalls. Nurture is the filter that turns interest into intent."
-pains:
-  - icon: "mail"
-    title: "Manual campaign chaos"
-    body: "The team sends every email by hand, burning hours on repetitive work."
-  - icon: "target"
-    title: "No personalisation"
-    body: "Every prospect gets the same generic message regardless of behaviour."
-  - icon: "user-x"
-    title: "Sales rejects leads"
-    body: "Most MQLs never convert because they were never actually ready to buy."
-  - icon: "bar-chart-2"
-    title: "No attribution data"
-    body: "Marketing cannot prove which campaigns actually drive revenue."
-diagnostic:
-  title: "Marketing automation gaps"
-  steps:
-    - label: "Manual email sends"
-      badge: "Inefficient"
-      icon: "mail"
-    - label: "Spray-and-pray campaigns"
-      badge: "Low conversion"
-      icon: "target"
-      hot: true
-    - label: "Cold leads to sales"
-      badge: "Wasted time"
-      icon: "snowflake"
-phases_eyebrow: "Our methodology"
-phases_title: "The implementation process."
-phases:
-  - icon: "users"
-    title: "Audience segmentation"
-    body: "We map your buyer personas, data sources and engagement signals into behavioural segmentation logic."
-  - icon: "git-branch"
-    title: "Journey design"
-    body: "Multi-touch nurture campaigns with personalised content, A/B testing and automated scoring."
-  - icon: "plug"
-    title: "Sales integration"
-    body: "Marketing Cloud connected to Salesforce with real-time lead sync, attribution and pipeline reporting."
-outcomes_title: "Your system for pipeline acceleration."
-outcomes_intro: "A Marketing Cloud ecosystem that nurtures prospects intelligently, scores engagement automatically, and hands sales only pipeline-ready opportunities."
-outcomes:
-  - icon: "git-branch"
-    title: "Automated nurture journeys"
-    body: "Multi-step campaigns triggered by behaviour, with personalised content and A/B tested messaging."
-  - icon: "target"
-    title: "Lead scoring and segmentation"
-    body: "Behavioural scoring models that qualify leads on engagement and intent signals, automatically."
-  - icon: "bar-chart-3"
-    title: "Attribution and ROI dashboards"
-    body: "Campaign performance tracking that shows which touchpoints actually drive pipeline and revenue."
-visual: "metric"
-metric:
-  title_lines:
-    - "Lead"
-    - "Nurture"
-  tag: "Marketing impact"
-  stat: "+47%"
-  stat_label: "MQL quality"
-hero_tagline: "Nurture at scale."
-turnaround: "6-12 weeks"
-hero_mock:
-  title: "Campaign Performance"
-  caption: "Live engagement"
-  badge: "Engagement"
-  note: "Nurture campaigns increase conversion rates by 25%."
-  stats:
-    - value: "87/100"
-      label: "Lead score"
-    - value: "64%"
-      label: "Lead quality"
-cta_title: "Ready for"
-cta_accent: "pipeline-ready leads?"
-cta_sub: "Discuss your Marketing Cloud project today and stop wasting sales time on cold leads."
-price_label: "Project investment"
-cta_label: "Discuss Marketing Cloud"
 ---
+
+{% include services-classic/marketing-cloud/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/marketing-cloud/symptoms.html %}
+{% include services-classic/marketing-cloud/method.html %}
+{% include services-classic/marketing-cloud/deliverables.html %}
+{% include services-classic/marketing-cloud/cta.html %}

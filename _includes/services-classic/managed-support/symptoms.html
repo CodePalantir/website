@@ -1,0 +1,86 @@
+<!-- SYMPTOMS ("The Talent Paradox") -->
+<section class="py-24 px-6 bg-surface">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div class="order-2 md:order-1 relative">
+                <div class="relative p-8 rounded-[2.5rem] bg-plum overflow-hidden min-h-[500px] flex flex-col justify-center shadow-2xl">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-accent rounded-full blur-[80px] opacity-20"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-strong rounded-full blur-[80px] opacity-20"></div>
+
+                    <div class="relative z-10 space-y-2">
+                        <p class="text-center text-xs font-bold text-white/50 uppercase tracking-widest mb-4">Market Constraints Analysis</p>
+
+                        <!-- Step 1: Internal Hire -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-white text-xs font-bold">1</div>
+                            <div class="flex-grow p-4 bg-white/5 rounded-xl border border-white/10 text-white font-bold flex justify-between items-center">
+                                <span>Internal Hire</span>
+                                <span class="text-xs text-white/50">Slow Ramp</span>
+                            </div>
+                            {% include ui/icon.html name="user-plus" class="text-white/50 w-5 h-5" %}
+                        </div>
+                        <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
+
+                        <!-- Step 2: Big Agency -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-white text-xs font-bold">2</div>
+                            <div class="flex-grow p-4 bg-purple-500/10 rounded-xl border border-purple-500/30 text-purple-200 font-bold flex justify-between items-center">
+                                <span>Big Agency</span>
+                                <span class="text-xs bg-purple-500/20 px-2 py-1 rounded">High Overhead</span>
+                            </div>
+                            {% include ui/icon.html name="building-2" class="text-purple-400 w-5 h-5" %}
+                        </div>
+                        <div class="h-6 w-0.5 bg-white/10 ml-4 mx-auto"></div>
+
+                        <!-- Step 3: Freelancer -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-white text-xs font-bold">3</div>
+                            <div class="flex-grow p-4 bg-white/10 rounded-xl border border-white/15 text-white/80 font-bold flex justify-between items-center">
+                                <span>Freelancer</span>
+                                <span class="text-xs bg-white/10 px-2 py-1 rounded">Volatile</span>
+                            </div>
+                            {% include ui/icon.html name="coffee" class="text-white/50 w-5 h-5" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2">
+                <h2 class="text-4xl font-bold text-ink mb-6">Why is building a team <span class="text-accent">so painful?</span></h2>
+                <p class="text-muted text-lg mb-10">
+                    You need senior engineering talent, but you don't have the volume for a full-time hire (or the budget for a €150k headcount). The traditional options force you to compromise.
+                </p>
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-2xl bg-paper shadow-none hover:bg-surface hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
+                        <div class="w-10 h-10 rounded-xl bg-surface text-faint flex items-center justify-center mb-4 group-hover:bg-purple-gradient group-hover:text-white transition-colors shadow-sm">
+                            {% include ui/icon.html name="clock" class="w-6 h-6" %}
+                        </div>
+                        <h4 class="font-bold text-ink mb-2">Recruiting Drag</h4>
+                        <p class="text-sm text-faint leading-relaxed">6-9 months to find, hire, and onboard a qualified senior architect.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-paper shadow-none hover:bg-surface hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
+                        <div class="w-10 h-10 rounded-xl bg-surface text-faint flex items-center justify-center mb-4 group-hover:bg-purple-gradient group-hover:text-white transition-colors shadow-sm">
+                            {% include ui/icon.html name="clipboard-x" class="w-6 h-6" %}
+                        </div>
+                        <h4 class="font-bold text-ink mb-2">Management Tax</h4>
+                        <p class="text-sm text-faint leading-relaxed">Freelancers require you to be the PM. You spend more time managing than building.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-paper shadow-none hover:bg-surface hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
+                        <div class="w-10 h-10 rounded-xl bg-surface text-faint flex items-center justify-center mb-4 group-hover:bg-purple-gradient group-hover:text-white transition-colors shadow-sm">
+                            {% include ui/icon.html name="user-x" class="w-6 h-6" %}
+                        </div>
+                        <h4 class="font-bold text-ink mb-2">Knowledge Leaks</h4>
+                        <p class="text-sm text-faint leading-relaxed">When a freelancer finds a better gig, your institutional knowledge leaves with them.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-paper shadow-none hover:bg-surface hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-default">
+                        <div class="w-10 h-10 rounded-xl bg-surface text-faint flex items-center justify-center mb-4 group-hover:bg-purple-gradient group-hover:text-white transition-colors shadow-sm">
+                            {% include ui/icon.html name="wallet" class="w-6 h-6" %}
+                        </div>
+                        <h4 class="font-bold text-ink mb-2">Cost Variance</h4>
+                        <p class="text-sm text-faint leading-relaxed">Hourly billing incentivizes slowness. Costs balloon with every "small tweak".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

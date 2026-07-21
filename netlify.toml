@@ -24,6 +24,17 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
+# Sample PDFs renamed from the old brand
+[[redirects]]
+  from = "/assets/content/Technical-Health-Audit-ApexPalantir.pdf"
+  to = "/assets/content/Technical-Health-Audit-APX.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/assets/content/Data-Quality-Check-ApexPalantir.pdf"
+  to = "/assets/content/Data-Quality-Check-APX.pdf"
+  status = 301
+
 # /blog moved to /articles (old site URLs stay valid)
 [[redirects]]
   from = "/blog"

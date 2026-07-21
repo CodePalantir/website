@@ -1,24 +1,14 @@
 ---
-layout: service
+layout: service-classic
 title: "Custom Salesforce Development"
 description: "Apex, Lightning Web Components, and Flows built like production software: tested, documented, and maintainable by whoever comes after us."
 service_type: "Salesforce Custom Development"
 category: "Salesforce"
 icon: "code-2"
 price: "100"
-price_display: "€100–150"
+price_display: "€100-150"
 price_suffix: "/hr"
-price_subtext: "Senior engineering"
-price_note: "Estimated per feature before we write a line. Senior engineers only, no juniors learning on your org."
 calendly: "https://calendly.com/d/ct96-tzf-nvg/salesforce-custom-development"
-cta: "Scope a feature"
-headline: "Code your next admin will thank you for."
-capabilities:
-  - "Apex and LWC built to platform limits, not against them"
-  - "Flows where Flows belong, code where code belongs"
-  - "Test coverage that actually tests behaviour, not just the 75% gate"
-  - "Documentation so your team can maintain it without us"
-  - "Every change deployed through versioned, reviewable releases"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "How do you estimate work?"
@@ -27,97 +17,11 @@ faq:
     a: "Senior engineers only. The person in the kickoff call is the person in your org, and nothing is subcontracted."
   - q: "What do we own afterwards?"
     a: "Everything: versioned code, tests, documentation and deployment history. Built so the next admin or agency can pick it up without us."
-pains_title: "Are clicks and flows not enough?"
-pains_intro: "When your business logic outgrows Flow Builder, or your data model needs validation that standard tools cannot express, custom code is the honest answer."
-pains:
-  - icon: "x-octagon"
-    title: "Hit platform limits"
-    body: "Standard workflows cannot handle complex multi-object logic or bulk operations."
-  - icon: "link-2"
-    title: "Unique integration needs"
-    body: "External APIs that demand custom authentication or data transformation logic."
-  - icon: "gauge"
-    title: "Performance bottleneck"
-    body: "Click-based automations too slow for high-volume data processing."
-  - icon: "layers"
-    title: "Custom UI requirements"
-    body: "Standard page layouts cannot deliver the experience your team needs."
-diagnostic:
-  title: "Development constraints"
-  steps:
-    - label: "Config limits hit"
-      badge: "Blocked"
-      icon: "x-octagon"
-      hot: true
-    - label: "Complex requirements"
-      badge: "No standard fix"
-      icon: "git-branch"
-    - label: "Manual workarounds"
-      badge: "Inefficient"
-      icon: "hand"
-phases_eyebrow: "Our methodology"
-phases_title: "The development process."
-phases:
-  - icon: "clipboard-list"
-    title: "Requirements workshop"
-    body: "We map your business logic, edge cases and performance requirements into the right technical design."
-  - icon: "code-2"
-    title: "Agile development"
-    body: "Sprint-based delivery with test-driven development, code reviews and continuous deployment to sandbox."
-  - icon: "rocket"
-    title: "Production handoff"
-    body: "Deployment with full documentation, unit tests and knowledge transfer to your team."
-outcomes_title: "Your system for precision logic."
-outcomes_intro: "Production-ready code with comprehensive test coverage, technical documentation and performance tuning, all following Salesforce best practice."
-outcomes:
-  - icon: "code-2"
-    title: "Clean, maintainable code"
-    body: "Apex, triggers and Lightning Web Components following SOLID principles and platform best practice."
-  - icon: "check-circle"
-    title: "Comprehensive test coverage"
-    body: "95 percent and above, with unit tests, integration tests and edge-case validation."
-  - icon: "book-open"
-    title: "Technical documentation"
-    body: "Architecture diagrams, code comments and deployment guides for a seamless handoff."
-visual: "orbital"
-orbital:
-  center_icon: "code-2"
-  stat: "95%"
-  stat_label: "Test coverage"
-  nodes:
-    - icon: "terminal"
-      label: "Apex"
-    - icon: "blocks"
-      label: "LWC"
-    - icon: "workflow"
-      label: "Flows"
-    - icon: "plug"
-      label: "APIs"
-    - icon: "check-circle"
-      label: "Tests"
-hero_tagline: "Built for you."
-turnaround: "Sprint based"
-hero_mock:
-  title: "Code Quality"
-  caption: "Development metrics"
-  badge: "Deploy ready"
-  mono: true
-  note: "Clean code reduces deployment time by 40%."
-  rows:
-    - icon: "code-2"
-      label: "class AccountHandler"
-    - icon: "code-2"
-      label: "void updateRevenue()"
-    - icon: "terminal"
-      label: "// custom logic, tested"
-  stats:
-    - value: "95%"
-      label: "Test coverage"
-    - value: "A+"
-      label: "Performance"
-cta_title: "Ready for code that"
-cta_accent: "actually works?"
-cta_sub: "Request a developer today and turn complex requirements into production-ready code."
-price_label: "Hourly rate"
-cta_label: "Request a developer"
 ---
+
+{% include services-classic/custom-development/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/custom-development/symptoms.html %}
+{% include services-classic/custom-development/method.html %}
+{% include services-classic/custom-development/deliverables.html %}
+{% include services-classic/custom-development/cta.html %}

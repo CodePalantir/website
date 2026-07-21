@@ -1,5 +1,5 @@
 ---
-layout: service
+layout: service-classic
 title: "Managed Support"
 description: "The silent backbone of your CRM. We monitor, triage, and resolve user issues, bugs, and permission errors within 24 hours, no ticketing chaos, no waiting on a freelancer."
 service_type: "Salesforce Managed Support"
@@ -8,17 +8,7 @@ icon: "life-buoy"
 price: "28800"
 price_display: "€28,800"
 price_suffix: "/yr"
-price_subtext: "Annual coverage"
-price_note: "One flat annual price. 24-hour response, senior engineers, no per-ticket billing."
 calendly: "https://calendly.com/d/cxm6-42v-d7d/managed-support"
-cta: "Talk about coverage"
-headline: "Problems fixed before they become projects."
-capabilities:
-  - "Every user issue, bug, and permission error resolved within 24 hours"
-  - "Proactive monitoring so we often fix things before you report them"
-  - "One channel, no ticket bureaucracy, your team just asks"
-  - "Release and update management handled in the background"
-  - "A monthly health summary in plain language, not a log dump"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "What does the 24-hour response actually cover?"
@@ -27,75 +17,11 @@ faq:
     a: "No per-ticket billing and no ticket counting. One flat annual price. If something structural keeps generating tickets, we tell you and propose the root-cause fix."
   - q: "What platforms do you support?"
     a: "Salesforce and HubSpot orgs plus the integrations around them. The whole engine, not just the CRM login."
-pains_title: "Why is hiring for this so painful?"
-pains_intro: "Senior Salesforce engineering is scarce, slow to hire and expensive to keep. The usual alternatives all leak time or knowledge."
-pains:
-  - icon: "users"
-    title: "Recruiting drag"
-    body: "Six to nine months to find, hire and onboard a qualified senior architect."
-  - icon: "user-x"
-    title: "Management tax"
-    body: "Freelancers make you the project manager. You spend more time managing than building."
-  - icon: "trending-down"
-    title: "Knowledge leaks"
-    body: "When a freelancer finds a better gig, your institutional knowledge leaves with them."
-  - icon: "bar-chart-2"
-    title: "Cost variance"
-    body: "Hourly billing rewards slowness, and costs balloon with every small tweak."
-diagnostic:
-  title: "The hiring treadmill"
-  steps:
-    - label: "Recruiting drag"
-      badge: "Slow ramp"
-      icon: "users"
-    - label: "Freelancer management"
-      badge: "High overhead"
-      icon: "user-x"
-      hot: true
-    - label: "Knowledge walks out"
-      badge: "Volatile"
-      icon: "trending-down"
-method_include: "services/support-method.html"
-outcomes_title: "Uninterrupted velocity."
-outcomes_intro: "The silent backbone of your CRM: monitored, triaged and resolved before your team logs on."
-outcomes:
-  - icon: "clock-4"
-    title: "Follow-the-sun coverage"
-    body: "A distributed team across EU and US time zones. Critical issues are handled before your morning standup."
-  - icon: "book-open"
-    title: "Knowledge that stays"
-    body: "Retention lives with the agency, not one individual. An engineer on holiday does not drop your velocity to zero."
-  - icon: "shield-check"
-    title: "Proactive debt management"
-    body: "Governor limits and technical debt managed continuously, preventing the silent failures that kill revenue."
-visual: "services/visual-board.html"
-board:
-  columns:
-    - name: "Backlog"
-      items:
-        - tag: "Integration"
-          label: "Connect Stripe webhooks"
-        - tag: "Reporting"
-          label: "Q3 dashboard update"
-    - name: "In progress"
-      items:
-        - tag: "Flow"
-          label: "Fix lead assignment logic"
-          state: "active"
-        - tag: "CPQ"
-          label: "CPQ validation rules"
-    - name: "Deployed"
-      items:
-        - tag: "Apex"
-          label: "Refactor trigger handler"
-          state: "done"
-        - tag: "Data"
-          label: "Duplicate rules check"
-          state: "done"
-hero_include: "services/support-hero.html"
-cta_title: "Ready for"
-cta_accent: "smooth operations?"
-cta_sub: "Get instant access to senior Salesforce engineering talent. Your system runs without interruption, every single day."
-price_label: "Yearly investment"
-cta_label: "Secure your slot"
 ---
+
+{% include services-classic/managed-support/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/managed-support/symptoms.html %}
+{% include services-classic/managed-support/method.html %}
+{% include services-classic/managed-support/deliverables.html %}
+{% include services-classic/managed-support/cta.html %}

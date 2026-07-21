@@ -1,22 +1,12 @@
 ---
-layout: service
+layout: service-classic
 title: "Managed Partner"
 description: "Your fractional CRM team: we run daily operations and own the long-term architecture roadmap, so your revenue systems scale ahead of the business, not behind it."
 service_type: "Salesforce Managed Partner"
 category: "Managed"
 icon: "crown"
 price_display: "Retainer"
-price_subtext: "Fractional team"
-price_note: "A monthly retainer sized to your org and roadmap, senior architects and engineers, without the headcount."
 calendly: "https://calendly.com/d/ct8z-ypp-bbd/managed-partner"
-cta: "Talk to a partner"
-headline: "A CRM team, without the headcount."
-capabilities:
-  - "Daily operations owned end to end: changes, fixes, releases, users"
-  - "An architecture roadmap reviewed with leadership every quarter"
-  - "New tools evaluated and integrated before they become shadow IT"
-  - "Documentation and governance that survive personnel changes"
-  - "One senior partner accountable for the whole revenue stack"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "How is this different from Managed Support?"
@@ -25,68 +15,11 @@ faq:
     a: "On your org complexity and roadmap ambition, agreed in writing and revisited openly when your needs change."
   - q: "What if we build an internal team later?"
     a: "Then we hand over properly: documentation, training and a transition plan. Making ourselves replaceable is part of the job."
-pains_title: "Technical debt is a profit leak."
-pains_intro: "For every ten percent increase in technical debt, research estimates a sixteen percent reduction in gross return on assets (Banker et al., SSRN 3476765). Unmanaged, your CRM hits the wall around year five."
-pains:
-  - icon: "trending-down"
-    title: "The five-year wall"
-    body: "Unmanaged complexity forces the net benefit of a CRM toward zero around year five."
-  - icon: "bar-chart-2"
-    title: "A measurable leak"
-    body: "Debt does not just annoy engineers. It shows up in gross return on assets, quarter after quarter."
-  - icon: "users"
-    title: "Key-person risk"
-    body: "The whole org depends on one admin or freelancer whose knowledge can hand in its notice."
-  - icon: "layers"
-    title: "Roadmap by accident"
-    body: "Architecture decided ticket by ticket, with nobody owning the whole."
-diagnostic:
-  title: "Unmanaged org trajectory"
-  steps:
-    - label: "Growing complexity"
-      badge: "Rising"
-      icon: "layers"
-    - label: "Depreciating asset"
-      badge: "Year 3"
-      icon: "trending-down"
-      hot: true
-    - label: "Risk zone"
-      badge: "Year 5"
-      icon: "alert-triangle"
-method_include: "services/partner-method.html"
-outcomes_title: "Total operational continuity."
-outcomes_intro: "The goal is to make the CRM invisible to you. It works, it scales, and it produces the data you steer the business with. You get your focus back."
-outcomes:
-  - icon: "shield-check"
-    title: "Zero hiring risk"
-    body: "No recruiting, no ramp-up, no single point of failure. The capability is simply there."
-  - icon: "book-open"
-    title: "Total knowledge retention"
-    body: "Documentation, decisions and history held by a team, versioned and transferable on request."
-  - icon: "file-text"
-    title: "The Monday Morning Brief"
-    body: "A weekly executive summary of what ran, what is at risk, and what we are doing about it."
-visual: "services/visual-brief.html"
-brief:
-  uptime: "100%"
-  rows:
-    - label: "Q3 forecast logic"
-      state: "Live"
-      tone: "good"
-    - label: "EMEA integration"
-      state: "Stable"
-      tone: "good"
-    - label: "Debt reduction"
-      state: "In progress"
-      tone: "active"
-    - label: "Storage limit"
-      state: "85%"
-      tone: "warn"
-hero_include: "services/partner-hero.html"
-symptoms_include: "services/partner-symptoms.html"
-cta_title: "Ready for a"
-cta_accent: "strategic partnership?"
-cta_sub: "We accept a limited number of Managed Partners to keep quality absolute. Is your revenue engine ready for professional management?"
-price_label: "Monthly partnership"
-cta_label: "Apply for partnership"
 ---
+
+{% include services-classic/managed-partner/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/managed-partner/symptoms.html %}
+{% include services-classic/managed-partner/method.html %}
+{% include services-classic/managed-partner/deliverables.html %}
+{% include services-classic/managed-partner/cta.html %}

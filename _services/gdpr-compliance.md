@@ -1,5 +1,5 @@
 ---
-layout: service
+layout: service-classic
 title: "GDPR Compliance Check"
 description: "We find the personal data your CRM shouldn't be holding, and the access patterns a regulator would ask about, before anyone else does."
 service_type: "Salesforce GDPR Compliance"
@@ -7,17 +7,7 @@ category: "Audits"
 icon: "shield-alert"
 price: "1200"
 price_display: "~ €1,200"
-price_subtext: "Compliance audit"
-price_note: "Scoped to your org and data volume before we start. Written findings you can hand to counsel."
 calendly: "https://calendly.com/d/cxm4-2s3-bcp/salesforce-gdpr-check"
-cta: "Book the check"
-headline: "Answers ready before the questions arrive."
-capabilities:
-  - "A map of where personal data lives across objects, fields, and files"
-  - "Access review: who can export what, and whether they should"
-  - "Retention and deletion gaps flagged with concrete fixes"
-  - "Consent tracking checked against how you actually market"
-  - "A written report your DPO or counsel can work from directly"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "Is this legal advice?"
@@ -26,90 +16,11 @@ faq:
     a: "Stored personal data and where it hides, retention against your stated policies, access patterns and profiles, and consent fields that drifted from reality."
   - q: "How long does it take?"
     a: "Scoped up front on your data volume; a single org is usually done within a week."
-pains_title: "Are you privacy compliant?"
-pains_intro: "A single complaint to a data protection authority can trigger an investigation, and fines reach 20M euros or four percent of annual revenue. Most orgs cannot answer the first question a regulator asks."
-pains:
-  - icon: "users"
-    title: "Unrestricted access"
-    body: "Every rep can see sensitive customer data, from IBANs to health information."
-  - icon: "file-x"
-    title: "No consent tracking"
-    body: "You cannot prove opt-in for marketing emails or data processing."
-  - icon: "clock"
-    title: "No retention policy"
-    body: "Customer data from 2015 still sitting in your org with no reason to exist."
-  - icon: "download"
-    title: "No export process"
-    body: "Data access requests cannot be fulfilled inside the 30-day requirement."
-diagnostic:
-  title: "Privacy risk analysis"
-  steps:
-    - label: "Uncontrolled PII access"
-      badge: "High risk"
-      icon: "users"
-    - label: "Missing consent records"
-      badge: "Non-compliant"
-      icon: "file-x"
-      hot: true
-    - label: "No deletion workflow"
-      badge: "Critical"
-      icon: "clock"
-phases_eyebrow: "Our methodology"
-phases_title: "The compliance process."
-phases:
-  - icon: "shield-check"
-    title: "PII discovery"
-    body: "We map every field containing personal data across all objects, custom fields and integrations."
-  - icon: "lock"
-    title: "Access audit"
-    body: "Review of sharing settings, field-level security and permissions to find over-exposed data."
-  - icon: "clipboard-list"
-    title: "Compliance blueprint"
-    body: "A remediation plan with consent workflows, deletion automation and access request processes."
-outcomes_title: "Your roadmap to privacy compliance."
-outcomes_intro: "A comprehensive report that maps personal data exposure, access risks and missing processes, turning GDPR from a legal threat into a checked box."
-outcomes:
-  - icon: "map"
-    title: "Personal data inventory"
-    body: "A complete map of every field containing PII, with risk classification and processing justification."
-  - icon: "shield-check"
-    title: "Access control audit"
-    body: "A detailed review of permissions, sharing rules and field-level security exposing sensitive data."
-  - icon: "clipboard-check"
-    title: "GDPR readiness plan"
-    body: "A step-by-step guide for consent management, deletion workflows and data access requests."
-visual: "report"
-report:
-  title_lines:
-    - "GDPR"
-    - "Compliance"
-  tag: "Privacy report example"
-  score_label: "Compliance Score"
-  score: "34/100"
-  score_pct: 34
-  score_tone: "risk"
-  finding_label: "Critical risk"
-  finding: "18 PII fields exposed"
-hero_tagline: "Protect your business."
-turnaround: "Turnaround: 5-7 days"
-hero_mock:
-  title: "Privacy Audit"
-  caption: "Compliance scope"
-  badge: "EU compliant"
-  note: "Fines can reach up to 4% of annual revenue."
-  rows:
-    - icon: "user-check"
-      label: "PII field mapping"
-    - icon: "lock"
-      label: "Sharing settings"
-    - icon: "file-check"
-      label: "Opt-in tracking"
-    - icon: "trash-2"
-      label: "Deletion policies"
-    - icon: "download"
-      label: "Data export ready"
-cta_title: "Ready to protect your"
-cta_accent: "business from fines?"
-cta_sub: "Book your GDPR Compliance Check and turn privacy into a competitive advantage."
-cta_label: "Book the compliance check"
 ---
+
+{% include services-classic/gdpr-compliance/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/gdpr-compliance/symptoms.html %}
+{% include services-classic/gdpr-compliance/method.html %}
+{% include services-classic/gdpr-compliance/deliverables.html %}
+{% include services-classic/gdpr-compliance/cta.html %}

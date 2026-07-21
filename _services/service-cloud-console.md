@@ -1,23 +1,13 @@
 ---
-layout: service
+layout: service-classic
 title: "Service Cloud Console"
 description: "Support that answers fast and never loses a case: Omni-Channel routing, case management, and SLAs built so retention becomes a number you control."
 service_type: "Salesforce Service Cloud Implementation"
 category: "Salesforce"
 icon: "headphones"
 price: "5000"
-price_display: "€5k–15k"
-price_subtext: "Fixed-scope build"
-price_note: "Scoped and priced in writing after a short discovery, the number you sign is the number you pay."
+price_display: "€5k - €15k"
 calendly: "https://calendly.com/d/ctqn-xnb-4b2/salesforce-service-cloud-console"
-cta: "Scope the build"
-headline: "Every case answered, on time, on record."
-capabilities:
-  - "Omni-Channel routing so cases land with the right agent the first time"
-  - "SLAs and escalations that fire before a customer has to chase"
-  - "A console agents actually like, everything on one screen"
-  - "Knowledge and macros that cut handle time without cutting quality"
-  - "Support metrics tied to retention, not just ticket counts"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "What is in scope for a console build?"
@@ -26,81 +16,11 @@ faq:
     a: "Yes. Email, web, chat and phone route into one queue with one case history, so no channel becomes a silo."
   - q: "How do you measure success?"
     a: "Response and resolution times against your SLAs, on dashboards your team leads can actually read."
-pains_title: "Is support killing retention?"
-pains_intro: "Poor support is the fastest way to lose hard-won revenue. When tickets pile up and agents burn time on manual routing, retention quietly erodes."
-pains:
-  - icon: "clock"
-    title: "48-hour response times"
-    body: "Customers wait days for basic answers, and churn climbs while they wait."
-  - icon: "inbox"
-    title: "Inbox chaos"
-    body: "Support scattered across shared inboxes with no tracking and no ownership."
-  - icon: "user-x"
-    title: "Agent burnout"
-    body: "Teams drowning in manual ticket assignment and constant context switching."
-  - icon: "bar-chart-2"
-    title: "No visibility"
-    body: "Leadership has no numbers on CSAT, resolution time or case volume."
-diagnostic:
-  title: "Support bottleneck analysis"
-  steps:
-    - label: "Slow response time"
-      badge: "Churn risk"
-      icon: "clock"
-    - label: "Manual case assignment"
-      badge: "Inefficient"
-      icon: "shuffle"
-      hot: true
-    - label: "Context switching"
-      badge: "High"
-      icon: "rotate-ccw"
-phases_eyebrow: "Our methodology"
-phases_title: "The implementation process."
-phases:
-  - icon: "headphones"
-    title: "Support flow design"
-    body: "We map your case types, SLA requirements and escalation logic into automated routing and prioritisation."
-  - icon: "settings-2"
-    title: "Console configuration"
-    body: "Omni-Channel routing, case queues, macros and knowledge base, built for agent efficiency."
-  - icon: "gauge"
-    title: "Training and handoff"
-    body: "Hands-on agent training plus leadership dashboards tracking CSAT, resolution time and case velocity."
-outcomes_title: "Your system for world-class support."
-outcomes_intro: "A Service Cloud environment that handles everything from email-to-case automation to escalation workflows, so your team resolves instead of routes."
-outcomes:
-  - icon: "shuffle"
-    title: "Omni-Channel routing"
-    body: "Automated case assignment based on agent skills, availability and workload capacity."
-  - icon: "clock-4"
-    title: "SLA and escalation management"
-    body: "Automated alerts and workflows so high-priority cases never fall through the cracks."
-  - icon: "layout-dashboard"
-    title: "Executive support dashboards"
-    body: "Real-time visibility into CSAT, resolution time, backlog and agent performance."
-visual: "metric"
-metric:
-  title_lines:
-    - "Customer"
-    - "Retention"
-  tag: "Support impact"
-  stat: "-68%"
-  stat_label: "Response time"
-hero_tagline: "Retention engine."
-turnaround: "4-8 weeks"
-hero_mock:
-  title: "Support Performance"
-  caption: "Live metrics"
-  badge: "Response time"
-  note: "Fast support increases customer lifetime value by 15%."
-  stats:
-    - value: "4.7/5"
-      label: "CSAT score"
-    - value: "82%"
-      label: "Retention rate"
-cta_title: "Ready to protect your"
-cta_accent: "revenue retention?"
-cta_sub: "Start your Service Cloud project today and stop losing customers to slow support."
-price_label: "Project investment"
-cta_label: "Set up Service Cloud"
 ---
+
+{% include services-classic/service-cloud-console/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/service-cloud-console/symptoms.html %}
+{% include services-classic/service-cloud-console/method.html %}
+{% include services-classic/service-cloud-console/deliverables.html %}
+{% include services-classic/service-cloud-console/cta.html %}

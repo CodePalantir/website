@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Logo_Color_-_Text_Black" data-name="Logo Color - Text Black" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1150.6 1150.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_15);
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_15" data-name="Unbenannter Verlauf 15" x1="45.41" y1="462.49" x2="880.87" y2="462.49" gradientUnits="userSpaceOnUse">
+      <stop offset=".46" stop-color="#df4dd3"/>
+      <stop offset=".73" stop-color="#933cd5"/>
+      <stop offset="1" stop-color="#442bd9"/>
+    </linearGradient>
+  </defs>
+  <circle class="cls-1" cx="575.3" cy="575.3" r="575.3"/>
+  <path class="cls-2" d="M993.03,824.25H157.57l93.64-162.18c199.41,72.87,268.19-92.92,462.89-5.35l-229.9-398.2,91.11-157.8,417.73,723.53ZM475.69,560.29v-96.41h-110.07l-55.66,96.41h165.73Z"/>
+</svg>

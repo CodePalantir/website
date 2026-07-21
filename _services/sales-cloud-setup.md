@@ -1,23 +1,13 @@
 ---
-layout: service
+layout: service-classic
 title: "Sales Cloud Velocity Setup"
 description: "Sales Cloud configured around how you actually sell: clean pipeline stages, forecasting your board can trust, and lead-to-cash that runs without a spreadsheet on the side."
 service_type: "Salesforce Sales Cloud Implementation"
 category: "Salesforce"
 icon: "cloud-lightning"
 price: "5000"
-price_display: "€5k–15k"
-price_subtext: "Fixed-scope build"
-price_note: "Scoped and priced in writing after a short discovery, the number you sign is the number you pay."
+price_display: "€5k-15k"
 calendly: "https://calendly.com/d/cxhp-73b-c5y/salesforce-sales-cloud-velocity"
-cta: "Scope the build"
-headline: "A pipeline that matches reality."
-capabilities:
-  - "Pipeline stages and required fields that enforce hygiene without slowing reps"
-  - "Forecasting configured for how you actually close, not the default template"
-  - "Lead routing and assignment that never drops a hand-raise"
-  - "Automation reps adopt because it removes work instead of adding it"
-  - "Reporting that reconciles with finance at quarter end"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "We already run Sales Cloud. Is this still for us?"
@@ -26,81 +16,11 @@ faq:
     a: "Scope decides. After a short discovery you get a written timeline together with the price, and both hold."
   - q: "Will the team need retraining?"
     a: "Less than you would fear. We configure around how your reps already work and hand over with enablement sessions, not a manual nobody reads."
-pains_title: "Is your pipeline leaking revenue?"
-pains_intro: "Without a structured implementation, Sales Cloud becomes an expensive Rolodex. We fix the foundational issues that kill deal velocity."
-pains:
-  - icon: "help-circle"
-    title: "Forecast ambiguity"
-    body: "Commit or upside? Without validation rules, nobody actually knows."
-  - icon: "mouse-pointer-click"
-    title: "Admin overload"
-    body: "Reps spend a fifth of their selling time just clicking Save."
-  - icon: "ghost"
-    title: "Zombie leads"
-    body: "A pipeline full of dead deals that quietly skew your conversion metrics."
-  - icon: "users"
-    title: "Rogue processes"
-    body: "Every rep selling differently, making the numbers impossible to compare."
-diagnostic:
-  title: "The admin-heavy pipeline"
-  steps:
-    - label: "Manual entry"
-      badge: "High friction"
-      icon: "mouse-pointer-click"
-    - label: "Inaccurate forecast"
-      badge: "Blind spots"
-      icon: "help-circle"
-      hot: true
-    - label: "Lost revenue"
-      badge: "Critical"
-      icon: "trending-down"
-phases_eyebrow: "Deployment strategy"
-phases_title: "The build process."
-phases:
-  - icon: "map"
-    title: "Blueprint"
-    body: "We map your actual sales motion to technical requirements: stages, triggers and the data points that matter."
-  - icon: "hammer"
-    title: "Construct"
-    body: "Configuration of objects, Flows, validation rules and page layouts designed for speed, not ceremony."
-  - icon: "rocket"
-    title: "Launch"
-    body: "Data migration, user training and go-live support so adoption is high from day one."
-outcomes_title: "A system built to close deals."
-outcomes_intro: "A fully turn-key Sales Cloud environment. Not an out-of-the-box generic setup, but one tailored to your product, your pricing and your sales cycle."
-outcomes:
-  - icon: "git-merge"
-    title: "Optimised sales path"
-    body: "Custom opportunity stages with guidance for success and mandatory fields at the exit criteria that matter."
-  - icon: "workflow"
-    title: "Flow automation engine"
-    body: "Automated task creation, stale-deal alerts and field updates that take the admin out of selling."
-  - icon: "layout-dashboard"
-    title: "Board-ready analytics"
-    body: "An executive dashboard pack with real-time visibility into ARR, conversion rates and rep activity."
-visual: "metric"
-metric:
-  title_lines:
-    - "Revenue"
-    - "Velocity"
-  tag: "Performance target"
-  stat: "+28%"
-  stat_label: "Conversion rate"
-hero_tagline: "Precision pipeline."
-turnaround: "4-8 weeks"
-hero_mock:
-  title: "Pipeline Velocity"
-  caption: "Live metrics"
-  badge: "Deal speed"
-  note: "Automated stages reduce the sales cycle by around 18%."
-  stats:
-    - value: "34.2%"
-      label: "Win rate"
-    - value: "€42k"
-      label: "Avg deal size"
-cta_title: "Ready to build your"
-cta_accent: "revenue engine?"
-cta_sub: "Architecture matters. Get a Sales Cloud implementation that scales with your ambition."
-price_label: "Project investment"
-cta_label: "Start the implementation"
 ---
+
+{% include services-classic/sales-cloud-setup/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/sales-cloud-setup/symptoms.html %}
+{% include services-classic/sales-cloud-setup/method.html %}
+{% include services-classic/sales-cloud-setup/deliverables.html %}
+{% include services-classic/sales-cloud-setup/cta.html %}

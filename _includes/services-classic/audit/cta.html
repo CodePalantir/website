@@ -1,0 +1,25 @@
+<!-- FINAL CTA -->
+<section class="py-32 px-6 bg-plum text-center relative overflow-hidden">
+    <div class="relative z-10 max-w-4xl mx-auto space-y-10">
+        <h2 class="text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight">
+            Ready to build on a <br/>
+            <span class="text-gradient font-black">Solid Foundation?</span>
+        </h2>
+        <p class="text-white/70 text-xl max-w-2xl mx-auto leading-relaxed">
+            Secure your audit slot today and stop the compounding cost of technical debt.
+        </p>
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-12">
+            <div class="flex flex-col items-center md:items-end">
+                <span class="text-white/50 text-[10px] font-bold uppercase tracking-[0.2em] mb-1">Total Investment</span>
+                <span class="text-4xl font-black text-white tracking-tight">€2,450</span>
+            </div>
+
+            <div class="hidden md:block w-px h-12 bg-white/10"></div>
+
+            <a href="{{ page.calendly | default: site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="service-cta" data-ap-value="audit" class="bg-white text-ink px-10 py-5 rounded-xl font-bold hover:bg-paper hover:scale-105 transition-all shadow-xl shadow-white/10 text-lg w-full md:w-auto cursor-pointer inline-block text-center">
+                Book Your Audit Now
+            </a>
+        </div>
+    </div>
+</section>

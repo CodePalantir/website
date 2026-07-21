@@ -1,0 +1,39 @@
+<!-- PROCESS -->
+<section class="py-24 px-6 bg-plum text-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-purple-400 font-bold uppercase tracking-widest text-xs mb-4 block">Connection Strategy</span>
+            <h2 class="text-4xl font-bold">The Integration Process</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/10 hover:border-purple-500/50 hover:bg-white/10 transition-all group">
+                <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mb-6 text-purple-400 group-hover:bg-purple-gradient group-hover:text-white transition-all shadow-lg shadow-black/20">
+                    {% include ui/icon.html name="map" class="w-6 h-6" %}
+                </div>
+                <h3 class="text-xl font-bold mb-3">1. Data Mapping</h3>
+                <p class="text-white/60 leading-relaxed">We analyze your source and target systems to define exact field mappings, data types, and frequency requirements.</p>
+            </div>
+            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/10 hover:border-purple-500/50 hover:bg-white/10 transition-all group">
+                <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mb-6 text-purple-400 group-hover:bg-purple-gradient group-hover:text-white transition-all shadow-lg shadow-black/20">
+                    {% include ui/icon.html name="blocks" class="w-6 h-6" %}
+                </div>
+                <h3 class="text-xl font-bold mb-3">2. Middleware Build</h3>
+                <p class="text-white/60 leading-relaxed">Construction of the integration logic using robust middleware. We implement error handling and retry mechanisms upfront.</p>
+            </div>
+            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/10 hover:border-purple-500/50 hover:bg-white/10 transition-all group">
+                <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mb-6 text-purple-400 group-hover:bg-purple-gradient group-hover:text-white transition-all shadow-lg shadow-black/20">
+                    {% include ui/icon.html name="activity" class="w-6 h-6" %}
+                </div>
+                <h3 class="text-xl font-bold mb-3">3. Load Test &amp; Launch</h3>
+                <p class="text-white/60 leading-relaxed">Rigorous testing with high-volume data sets to ensure API stability before flipping the switch.</p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="{{ page.calendly | default: site.cta.primary_url }}" target="_blank" rel="noopener noreferrer" data-ap-track="book-call" data-ap-category="service-method" data-ap-value="integrations" class="bg-purple-gradient text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-purple-900/50 hover:opacity-90 transition-all cursor-pointer inline-block">
+                Schedule Technical Review
+            </a>
+        </div>
+    </div>
+</section>

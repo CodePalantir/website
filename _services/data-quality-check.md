@@ -1,5 +1,5 @@
 ---
-layout: service
+layout: service-classic
 title: "Data Quality Check"
 description: "A focused audit of what's actually in your CRM: duplicates, dead records, broken ownership, and the data-model debt that turns every report into an argument."
 service_type: "Salesforce Data Quality"
@@ -7,17 +7,8 @@ category: "Audits"
 icon: "database"
 price: "800"
 price_display: "From €800"
-price_subtext: "Scoped audit"
-price_note: "Priced on org size before we start. Most checks land between €800 and €2,000."
 calendly: "https://calendly.com/d/cx6s-v9y-7wp/salesforce-data-quality-check"
-cta: "Book the check"
-headline: "Reports your team stops arguing about."
-capabilities:
-  - "Duplicate and dead-record analysis with a concrete cleanup plan"
-  - "Field usage audit: what's filled, what's ignored, what's lying"
-  - "Ownership and routing gaps that quietly lose leads"
-  - "A data-model review that names the debt slowing you down"
-  - "Validation and hygiene rules so it stays clean after we leave"
+sample_pdf: "/assets/content/Data-Quality-Check-APX.pdf"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "How do you price the check?"
@@ -26,92 +17,11 @@ faq:
     a: "The check delivers findings and a cleanup plan. If you want the cleanup done, we scope it as a follow-up with its own fixed price, or your team runs the plan themselves."
   - q: "Which systems can you check?"
     a: "Salesforce and HubSpot natively, plus whatever feeds them. Duplicates and ownership issues usually start in the integrations, so we look there too."
-pains_title: "Is your data silently broken?"
-pains_intro: "Leadership makes multi-million euro decisions on CRM reports. If the data underneath is polluted with duplicates and dead records, every forecast built on it is fiction."
-pains:
-  - icon: "copy"
-    title: "Duplicate hell"
-    body: "Reps waste half an hour a day untangling duplicate accounts and contacts."
-  - icon: "gauge"
-    title: "Slow dashboards"
-    body: "Reports take ten seconds and more to load because the data model is bloated."
-  - icon: "bar-chart"
-    title: "Inaccurate forecasts"
-    body: "Pipeline numbers that do not match reality, and targets missed because of it."
-  - icon: "trash-2"
-    title: "Data graveyard"
-    body: "Hundreds of unused fields consuming storage and slowing every query."
-diagnostic:
-  title: "Data health indicators"
-  steps:
-    - label: "Duplicate records"
-      badge: "Critical"
-      icon: "copy"
-      hot: true
-    - label: "Schema bloat"
-      badge: "Performance hit"
-      icon: "layers"
-    - label: "Invalid data patterns"
-      badge: "High"
-      icon: "alert-triangle"
-phases_eyebrow: "Our methodology"
-phases_title: "The data quality process."
-phases:
-  - icon: "scan-search"
-    title: "Data profiling"
-    body: "We analyse your complete data model: duplicate patterns, field usage and schema bloat across every object."
-  - icon: "shield-check"
-    title: "Validation audit"
-    body: "Review of validation rules, required fields and entry processes to find where quality leaks in."
-  - icon: "file-check"
-    title: "Cleanup roadmap"
-    body: "A prioritised plan with merge strategies, field deprecation and the automation to keep it clean."
-outcomes_title: "Your blueprint for data excellence."
-outcomes_intro: "A clear, executive-ready report that shows exactly where your data is broken, what it costs you, and how to fix it systematically."
-outcomes:
-  - icon: "copy"
-    title: "Duplicate analysis report"
-    body: "A detailed breakdown of duplicate accounts, contacts and leads with automated merge recommendations."
-  - icon: "table"
-    title: "Schema health assessment"
-    body: "Unused fields, deprecated objects and storage-eating metadata, identified and ready for cleanup."
-  - icon: "clipboard-list"
-    title: "Data governance playbook"
-    body: "Validation rules, required fields and automation strategies that prevent the next pollution wave."
-visual: "report"
-report:
-  title_lines:
-    - "Data Quality"
-    - "Check"
-  tag: "Analysis report example"
-  score_label: "Data Quality Score"
-  score: "58/100"
-  score_pct: 58
-  score_tone: "warn"
-  finding_label: "High priority"
-  finding: "2,847 duplicate records"
-sample_pdf: "/assets/content/Data-Quality-Check-ApexPalantir.pdf"
-hero_tagline: "Trust your numbers."
-turnaround: "Turnaround: 3-5 days"
-hero_mock:
-  title: "Data Architecture"
-  caption: "Analysis scope"
-  badge: "Data trust"
-  note: "Clean data increases close rates by up to 23%."
-  rows:
-    - icon: "copy"
-      label: "Account and contact merge"
-    - icon: "table"
-      label: "Field and object bloat"
-    - icon: "check-circle"
-      label: "Data entry quality"
-    - icon: "gauge"
-      label: "Storage and query speed"
-    - icon: "scan-search"
-      label: "Accuracy check"
-cta_title: "Ready to fix your"
-cta_accent: "data architecture?"
-cta_sub: "Book your Data Quality Check today and regain trust in your CRM numbers."
-price_label: "Starting from"
-cta_label: "Book this check now"
 ---
+
+{% include services-classic/data-quality-check/hero.html %}
+{% include sections/logo-marquee.html %}
+{% include services-classic/data-quality-check/symptoms.html %}
+{% include services-classic/data-quality-check/method.html %}
+{% include services-classic/data-quality-check/deliverables.html %}
+{% include services-classic/data-quality-check/cta.html %}
