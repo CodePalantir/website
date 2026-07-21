@@ -83,6 +83,7 @@ exclude:
   - instruction
   - lumos-backend-spec.md
   - design
+  - corpo_design
   - content
   - docs
   - scripts
