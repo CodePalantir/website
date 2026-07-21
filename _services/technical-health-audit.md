@@ -22,7 +22,7 @@ faq:
 ---
 
 {% include services-classic/audit/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/audit/symptoms.html %}
 {% include services-classic/audit/method.html %}
 {% include services-classic/audit/deliverables.html %}

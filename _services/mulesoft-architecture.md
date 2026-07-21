@@ -19,7 +19,7 @@ faq:
 ---
 
 {% include services-classic/mulesoft-architecture/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/mulesoft-architecture/symptoms.html %}
 {% include services-classic/mulesoft-architecture/method.html %}
 {% include services-classic/mulesoft-architecture/deliverables.html %}

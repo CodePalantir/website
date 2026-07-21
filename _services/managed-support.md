@@ -20,7 +20,7 @@ faq:
 ---
 
 {% include services-classic/managed-support/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/managed-support/symptoms.html %}
 {% include services-classic/managed-support/method.html %}
 {% include services-classic/managed-support/deliverables.html %}

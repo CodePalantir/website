@@ -39,7 +39,7 @@ image: /assets/images/logos/APX_LOGO.png
 </script>
 
 {% include salesforce-classic/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include salesforce-classic/solutions.html %}
 {% include salesforce-classic/degradation.html %}
 {% include salesforce-classic/method.html %}

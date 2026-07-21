@@ -19,7 +19,7 @@ faq:
 ---
 
 {% include services-classic/custom-integration/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/custom-integration/symptoms.html %}
 {% include services-classic/custom-integration/method.html %}
 {% include services-classic/custom-integration/deliverables.html %}

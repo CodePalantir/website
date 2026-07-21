@@ -18,7 +18,7 @@ faq:
 ---
 
 {% include services-classic/managed-partner/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/managed-partner/symptoms.html %}
 {% include services-classic/managed-partner/method.html %}
 {% include services-classic/managed-partner/deliverables.html %}

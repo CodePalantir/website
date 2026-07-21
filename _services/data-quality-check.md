@@ -20,7 +20,7 @@ faq:
 ---
 
 {% include services-classic/data-quality-check/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/data-quality-check/symptoms.html %}
 {% include services-classic/data-quality-check/method.html %}
 {% include services-classic/data-quality-check/deliverables.html %}

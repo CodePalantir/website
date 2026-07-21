@@ -19,7 +19,7 @@ faq:
 ---
 
 {% include services-classic/gdpr-compliance/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/gdpr-compliance/symptoms.html %}
 {% include services-classic/gdpr-compliance/method.html %}
 {% include services-classic/gdpr-compliance/deliverables.html %}

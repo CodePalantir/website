@@ -18,7 +18,7 @@ faq:
 ---
 
 {% include services-classic/marketing-cloud/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/marketing-cloud/symptoms.html %}
 {% include services-classic/marketing-cloud/method.html %}
 {% include services-classic/marketing-cloud/deliverables.html %}

@@ -20,7 +20,7 @@ faq:
 ---
 
 {% include services-classic/custom-development/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/custom-development/symptoms.html %}
 {% include services-classic/custom-development/method.html %}
 {% include services-classic/custom-development/deliverables.html %}

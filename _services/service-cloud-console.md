@@ -19,7 +19,7 @@ faq:
 ---
 
 {% include services-classic/service-cloud-console/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/service-cloud-console/symptoms.html %}
 {% include services-classic/service-cloud-console/method.html %}
 {% include services-classic/service-cloud-console/deliverables.html %}

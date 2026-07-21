@@ -19,7 +19,7 @@ faq:
 ---
 
 {% include services-classic/sales-cloud-setup/hero.html %}
-{% include sections/logo-marquee.html %}
+{% include sections/logo-marquee.html bg="surface" %}
 {% include services-classic/sales-cloud-setup/symptoms.html %}
 {% include services-classic/sales-cloud-setup/method.html %}
 {% include services-classic/sales-cloud-setup/deliverables.html %}
