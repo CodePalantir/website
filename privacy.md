@@ -95,9 +95,26 @@ translation: /de/datenschutz/
         <li><strong class="text-ink font-semibold">Strictly necessary cookies:</strong> Required for basic website functionality</li>
         <li><strong class="text-ink font-semibold">Functional cookies:</strong> Enable enhanced features and personalization</li>
         <li><strong class="text-ink font-semibold">Analytics cookies:</strong> Help us understand how visitors interact with our website (only with your consent)</li>
+        <li><strong class="text-ink font-semibold">Marketing cookies:</strong> Used to measure the effectiveness of our advertising, for example the LinkedIn Insight Tag (only with your consent)</li>
       </ul>
       <p class="text-[15.5px] leading-relaxed text-muted">
         You can configure your browser to refuse all cookies or to indicate when a cookie is being sent. However, some website features may not function properly without cookies.
+      </p>
+    </div>
+
+    <h3 class="text-[20px] font-bold tracking-[-0.01em] text-ink mb-3 mt-8">2.4 LinkedIn Insight Tag</h3>
+    <div class="apx-card mb-14 !p-8">
+      <p class="text-[15.5px] leading-relaxed text-muted mb-4">
+        Our website uses the Insight Tag of LinkedIn Ireland Unlimited Company, Wilton Place, Dublin 2, Ireland ("LinkedIn"). The Insight Tag is only activated after you have given your consent via our cookie banner (Art. 6 (1) (a) GDPR). You can withdraw your consent at any time with effect for the future.
+      </p>
+      <p class="text-[15.5px] leading-relaxed text-muted mb-4">
+        When active, the Insight Tag creates a connection to LinkedIn and processes, among other things, the URL of the page visited, the referrer URL, your IP address (shortened or hashed), device and browser properties, and a timestamp. If you are a LinkedIn member, LinkedIn may associate these events with your LinkedIn account. We use this data for conversion measurement of our LinkedIn campaigns, for retargeting, and for aggregated demographic reports about website visitors. We do not receive any personal data of individual visitors through this; LinkedIn provides us with aggregated reports only.
+      </p>
+      <p class="text-[15.5px] leading-relaxed text-muted mb-4">
+        LinkedIn removes direct identifiers within seven days and deletes the remaining pseudonymised data within 180 days. Data may be transferred to LinkedIn Corporation in the United States; the transfer is safeguarded by the EU Standard Contractual Clauses and LinkedIn's certification under the EU-U.S. Data Privacy Framework.
+      </p>
+      <p class="text-[15.5px] leading-relaxed text-muted">
+        Details can be found in the <a href="https://www.linkedin.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-accent font-semibold hover:text-accent-strong transition-colors">LinkedIn Privacy Policy</a>. As a LinkedIn member you can additionally object to the use of your data for advertising purposes in your <a href="https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out" target="_blank" rel="noopener noreferrer" class="text-accent font-semibold hover:text-accent-strong transition-colors">LinkedIn settings</a>.
       </p>
     </div>
 
