@@ -6,7 +6,7 @@ service_type: "Salesforce Managed Partner"
 category: "Managed"
 icon: "crown"
 price_display: "Retainer"
-calendly: "https://calendly.com/d/ct8z-ypp-bbd/managed-partner"
+calendly: "https://calendly.com/apx-revops/managed-partnership-interview?utm_source=website&utm_content=managed-partner"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "How is this different from Managed Support?"

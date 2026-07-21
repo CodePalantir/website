@@ -7,7 +7,7 @@ category: "Audits"
 icon: "shield-alert"
 price: "1200"
 price_display: "~ €1,200"
-calendly: "https://calendly.com/d/cxm4-2s3-bcp/salesforce-gdpr-check"
+calendly: "https://calendly.com/apx-revops/audit-scoping?utm_source=website&utm_content=gdpr-compliance"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "Is this legal advice?"

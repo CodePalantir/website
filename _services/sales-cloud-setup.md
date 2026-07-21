@@ -7,7 +7,7 @@ category: "Salesforce"
 icon: "cloud-lightning"
 price: "5000"
 price_display: "€5k-15k"
-calendly: "https://calendly.com/d/cxhp-73b-c5y/salesforce-sales-cloud-velocity"
+calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=sales-cloud-setup"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "We already run Sales Cloud. Is this still for us?"

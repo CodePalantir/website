@@ -7,7 +7,7 @@ category: "Salesforce"
 icon: "headphones"
 price: "5000"
 price_display: "€5k - €15k"
-calendly: "https://calendly.com/d/ctqn-xnb-4b2/salesforce-service-cloud-console"
+calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=service-cloud-console"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "What is in scope for a console build?"

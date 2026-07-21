@@ -7,7 +7,7 @@ category: "Audits"
 icon: "database"
 price: "800"
 price_display: "From €800"
-calendly: "https://calendly.com/d/cx6s-v9y-7wp/salesforce-data-quality-check"
+calendly: "https://calendly.com/apx-revops/audit-scoping?utm_source=website&utm_content=data-quality-check"
 sample_pdf: "/assets/content/Data-Quality-Check-APX.pdf"
 image: /assets/images/logos/APX_LOGO.png
 faq:

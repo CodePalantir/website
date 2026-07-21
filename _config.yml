@@ -12,27 +12,26 @@ author:
 social:
   name: APX.
   links:
-    - https://www.linkedin.com/company/apx-revops/
+    - https://www.linkedin.com/company/apx-revops-ltd/
 
 # ── Central CTA + contact config ─────────────────────────────
 # Every call-to-action, phone, and email on the site reads from here.
-# Change a link in ONE place and it updates everywhere. Replace the
-# Calendly placeholders below with the live booking links when ready.
+# Change a link in ONE place and it updates everywhere.
 cta:
   # Primary conversion across the whole site: the fixed-price audit.
-  primary_url: "https://calendly.com/apx-revops/audit"    # TODO: replace with live audit booking link
+  primary_url: "https://calendly.com/apx-revops/audit-scoping?utm_source=website&utm_content=global-audit-cta"
   primary_label: "Book the €2,450 Audit"
   primary_short: "Book the Audit"
-  # Free intro call ("Kostenloses Erstgespräch") — the primary action in the
+  # Free intro call ("Kostenloses Erstgespräch"), the primary action in the
   # header + hero. No price attached; pricing lives on the service pages.
-  secondary_url: "https://calendly.com/apx-revops/intro"  # TODO: replace with live intro-call link
+  secondary_url: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=global-intro-cta"
   secondary_label: "Free intro call"
 
 contact:
   email: "support@apx-revops.com"
   phone_display: "+49 402 2632 0690"
   phone_href: "tel:+4940226320690"
-  linkedin: "https://www.linkedin.com/company/apx-revops/"
+  linkedin: "https://www.linkedin.com/company/apx-revops-ltd/"
 
 # Company / legal identity
 company:

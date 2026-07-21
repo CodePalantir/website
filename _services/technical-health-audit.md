@@ -7,7 +7,7 @@ category: "Audits"
 icon: "search"
 price: "2450"
 price_display: "€2,450"
-calendly: "https://calendly.com/d/ctr7-n87-4hw/salesforce-technical-health-audit"
+calendly: "https://calendly.com/apx-revops/audit-scoping?utm_source=website&utm_content=technical-health-audit"
 sample_pdf: "/assets/content/Technical-Health-Audit-APX.pdf"
 image: /assets/images/logos/APX_LOGO.png
 faq:

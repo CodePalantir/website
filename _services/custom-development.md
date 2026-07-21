@@ -8,7 +8,7 @@ icon: "code-2"
 price: "100"
 price_display: "€100-150"
 price_suffix: "/hr"
-calendly: "https://calendly.com/d/ct96-tzf-nvg/salesforce-custom-development"
+calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=custom-development"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "How do you estimate work?"

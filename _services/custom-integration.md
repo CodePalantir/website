@@ -7,7 +7,7 @@ category: "Integration"
 icon: "plug"
 price: "15000"
 price_display: "€15k-30k"
-calendly: "https://calendly.com/d/cxpd-p3r-k5h/salesforce-system-integration"
+calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=custom-integration"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "Which systems do you integrate?"

@@ -8,7 +8,7 @@ icon: "life-buoy"
 price: "28800"
 price_display: "€28,800"
 price_suffix: "/yr"
-calendly: "https://calendly.com/d/cxm6-42v-d7d/managed-support"
+calendly: "https://calendly.com/apx-revops/managed-partnership-interview?utm_source=website&utm_content=managed-support"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "What does the 24-hour response actually cover?"

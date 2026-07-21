@@ -6,7 +6,7 @@ service_type: "Salesforce Marketing Cloud Implementation"
 category: "Salesforce"
 icon: "mail"
 price_display: "Custom Quote"
-calendly: "https://calendly.com/d/cx6d-wj7-9g7/salesforce-marketing-cloud"
+calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=marketing-cloud"
 image: /assets/images/logos/APX_LOGO.png
 faq:
   - q: "Why is there no fixed price on this one?"

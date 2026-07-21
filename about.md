@@ -25,7 +25,7 @@ translation: /de/ueber-uns/
       "jobTitle": "Founder & Team Lead"
     },
     "sameAs": [
-      "https://www.linkedin.com/company/apexpalantir"
+      "https://www.linkedin.com/company/apx-revops-ltd/"
     ],
     "address": {
       "@type": "PostalAddress",

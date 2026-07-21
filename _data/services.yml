@@ -1,7 +1,7 @@
 # Service taxonomy for nav mega-menu, homepage grid, and /services pages.
 # Existing services keep their rich pages under /services/*. New tool-level
 # services use the lightweight `service-lite` layout. "Managed" houses the RUN offering.
-meeting_calendly: &meeting "https://calendly.com/d/cxgf-5fr-vxz/meet-apexpalantir"
+meeting_calendly: &meeting "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=service-card"
 
 categories:
   - name: "Audits"
@@ -19,7 +19,7 @@ categories:
         homepage_tagline: "Protect Your Investment"
         homepage_description: "We identify the hidden technical debt slowing down your Sales and Marketing teams."
         url: "/services/technical-health-audit"
-        calendly: "https://calendly.com/d/ctr7-n87-4hw/salesforce-technical-health-audit"
+        calendly: "https://calendly.com/apx-revops/audit-scoping?utm_source=website&utm_content=technical-health-audit"
       - title: "Data Quality Audit"
         icon: "database"
         price: "From €800"
@@ -27,7 +27,7 @@ categories:
         short_description_de: "Saubere Datenarchitektur."
         show_in_navbar: true
         url: "/services/data-quality-check"
-        calendly: "https://calendly.com/d/cx6s-v9y-7wp/salesforce-data-quality-check"
+        calendly: "https://calendly.com/apx-revops/audit-scoping?utm_source=website&utm_content=data-quality-check"
       - title: "GDPR Check"
         icon: "shield-alert"
         price: "~ €1,200"
@@ -35,7 +35,7 @@ categories:
         short_description_de: "DSGVO-Konformität."
         show_in_navbar: true
         url: "/services/gdpr-compliance"
-        calendly: "https://calendly.com/d/cxm4-2s3-bcp/salesforce-gdpr-check"
+        calendly: "https://calendly.com/apx-revops/audit-scoping?utm_source=website&utm_content=gdpr-compliance"
 
   - name: "Outbound"
     id: "outbound"
@@ -95,7 +95,7 @@ categories:
         short_description_de: "Enterprise-Konnektivität."
         show_in_navbar: true
         url: "/services/mulesoft-architecture"
-        calendly: "https://calendly.com/d/ct8w-6qf-2p7/mulesoft"
+        calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=mulesoft-architecture"
       - title: "Custom Integration"
         icon: "plug"
         price: "€15k - €30k"
@@ -103,7 +103,7 @@ categories:
         short_description_de: "Maßgeschneiderte API-Integration."
         show_in_navbar: true
         url: "/services/custom-integration"
-        calendly: "https://calendly.com/d/cxpd-p3r-k5h/salesforce-system-integration"
+        calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=custom-integration"
       - title: "Workato"
         icon: "workflow"
         price: "Custom Quote"
@@ -147,7 +147,7 @@ categories:
         short_description_de: "Pipeline-Beschleunigung."
         show_in_navbar: true
         url: "/services/sales-cloud-setup"
-        calendly: "https://calendly.com/d/cxhp-73b-c5y/salesforce-sales-cloud-velocity"
+        calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=sales-cloud-setup"
       - title: "Service Cloud"
         icon: "headphones"
         price: "€5k - €15k"
@@ -155,7 +155,7 @@ categories:
         short_description_de: "Support-Optimierung."
         show_in_navbar: true
         url: "/services/service-cloud-console"
-        calendly: "https://calendly.com/d/ctqn-xnb-4b2/salesforce-service-cloud-console"
+        calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=service-cloud-console"
       - title: "Marketing Cloud"
         icon: "mail"
         price: "Custom Quote"
@@ -163,7 +163,7 @@ categories:
         short_description_de: "Marketing-Automatisierung."
         show_in_navbar: true
         url: "/services/marketing-cloud"
-        calendly: "https://calendly.com/d/cx6d-wj7-9g7/salesforce-marketing-cloud"
+        calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=marketing-cloud"
       - title: "CPQ"
         icon: "receipt"
         price: "Custom Quote"
@@ -183,7 +183,7 @@ categories:
         homepage_tagline: "Accelerate Velocity"
         homepage_description: "Custom-built workflows and integrations that actually work."
         url: "/services/custom-development"
-        calendly: "https://calendly.com/d/ct96-tzf-nvg/salesforce-custom-development"
+        calendly: "https://calendly.com/apx-revops/intro-call?utm_source=website&utm_content=custom-development"
 
   - name: "HubSpot"
     id: "hubspot"
@@ -252,7 +252,7 @@ categories:
         short_description_de: "Support mit 24h-Reaktion."
         show_in_navbar: true
         url: "/services/managed-support"
-        calendly: "https://calendly.com/d/cxm6-42v-d7d/managed-support"
+        calendly: "https://calendly.com/apx-revops/managed-partnership-interview?utm_source=website&utm_content=managed-support"
       - title: "Managed Partner"
         icon: "crown"
         price: "Retainer"
@@ -264,4 +264,4 @@ categories:
         homepage_tagline: "Scalable Foundation"
         homepage_description: "Strategic technical leadership for RevOps and CEOs."
         url: "/services/managed-partner"
-        calendly: "https://calendly.com/d/ct8z-ypp-bbd/managed-partner"
+        calendly: "https://calendly.com/apx-revops/managed-partnership-interview?utm_source=website&utm_content=managed-partner"
