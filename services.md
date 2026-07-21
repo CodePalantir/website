@@ -92,5 +92,5 @@ translation: /de/leistungen/
   </div>
 </section>
 
-{% include sections/logos.html %}
+{% include sections/logo-marquee.html %}
 {% include sections/cta-band.html %}
