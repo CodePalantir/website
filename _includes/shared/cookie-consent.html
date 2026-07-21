@@ -24,7 +24,9 @@
 <script>
 // Cookie Consent Management
 (function() {
-  const CONSENT_COOKIE = 'apx_analytics_consent';
+  // v2: consent scope grew (analytics -> analytics + LinkedIn marketing),
+  // so earlier consents don't cover it; the new name re-prompts everyone once.
+  const CONSENT_COOKIE = 'apx_consent_v2';
   const CONSENT_DURATION = 365; // days
 
   // Cookie utilities
