@@ -10,7 +10,7 @@
 {%- endcomment -%}
 {%- comment -%} file | alt | viewport-scaling height {%- endcomment -%}
 {%- assign logos = "zech.webp|Zech Group|clamp(1.85rem,2.6vw,2.9rem), eigenherd.webp|Eigenherd|clamp(1.9rem,2.7vw,3rem), liqid.webp|LIQID|clamp(1.3rem,1.8vw,2.1rem), eventinc_log.webp|Event Inc|clamp(1.55rem,2.1vw,2.5rem), iu.webp|IU International University|clamp(2.9rem,4.2vw,4.9rem), hauser.webp|Hauser Maschinen|clamp(2rem,2.9vw,3.25rem)" | split: ", " -%}
-<section class="apx-marquee-band py-[clamp(2.5rem,4.5vw,4rem)] bg-paper border-y border-line/70 overflow-hidden scroll-mt-28">
+<section class="apx-marquee-band py-[clamp(2.5rem,4.5vw,4rem)] bg-surface border-y border-line/70 overflow-hidden scroll-mt-28">
   <p class="text-center text-[clamp(0.72rem,0.85vw,0.82rem)] font-semibold uppercase tracking-[0.18em] text-faint">{{ t.home.marquee_label }}</p>
   <div class="apx-marquee mt-[clamp(1.75rem,3vw,2.75rem)]">
     {% for pass in (1..2) %}
@@ -29,6 +29,9 @@
     display: flex;
     gap: var(--apx-gap);
     overflow: hidden;
+    /* the mask creates a stacking context, so the logos' mix-blend-multiply
+       needs a backdrop INSIDE it; without this the white logo plates show */
+    background: var(--color-surface);
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   }
