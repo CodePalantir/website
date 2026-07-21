@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Datenschutzerklärung
-description: "Datenschutzerklärung der APX REVOPS LTD – DSGVO-konforme Informationen zum Datenschutz. Erfahren Sie, wie wir Ihre personenbezogenen Daten erheben, nutzen und schützen."
+description: "Datenschutzerklärung der APX REVOPS LTD: DSGVO-konforme Informationen zum Datenschutz. Erfahren Sie, wie wir Ihre personenbezogenen Daten erheben, nutzen und schützen."
 image: /assets/images/logos/APX_LOGO.png
 permalink: /de/datenschutz/
 lang: de
